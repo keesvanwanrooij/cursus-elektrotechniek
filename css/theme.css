@@ -223,6 +223,7 @@ button { font: inherit; cursor: pointer; }
             margin-bottom:26px; gap:12px; flex-wrap:wrap; }
 .videocap b { color:var(--text); font-weight:600; }
 .vlag { width:18px; height:13px; border-radius:2px; vertical-align:-2px; box-shadow:0 0 0 1px var(--border); flex:none; }
+.icon { vertical-align:-3px; flex:none; }
 .videosearch {
   display:flex; align-items:center; gap:14px; background:var(--surface); border:1px dashed var(--border-strong);
   border-radius:var(--radius-lg); padding:18px; margin:8px 0 26px; text-decoration:none; color:inherit;
