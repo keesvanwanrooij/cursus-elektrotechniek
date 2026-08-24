@@ -1,7 +1,7 @@
 # ⚡ Cursus Elektrotechniek
 
 [![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-db61a2?style=flat-square&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/keesvanwanrooij)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/licentie-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/licentie-GPL%20v3-blue?style=flat-square&logo=gnu&logoColor=white)](LICENSE)
 [![PWA](https://img.shields.io/badge/installeerbaar-PWA-8a2be2?style=flat-square)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/)
 
 **Een gratis praktijkcursus elektrotechniek in het Nederlands, vrij te delen en aan te passen.**
@@ -63,8 +63,8 @@ hebben op de werkvloer.
 De hele cursus is één statische site: vanilla HTML, CSS en JavaScript, geen
 dependencies, geen build-stap. Clone de repo en open `index.html`, of fork
 hem en pas de lesinhoud aan in `content/`. Zie de codecommentaar en
-bestandsopbouw voor de details. Niet-commercieel gebruik, zie de
-licentiesectie hieronder.
+bestandsopbouw voor de details. Verspreid je een aangepaste versie, dan geldt
+de copyleft-verplichting uit de licentiesectie hieronder.
 
 ```bash
 git clone https://github.com/keesvanwanrooij/cursus-elektrotechniek.git
@@ -80,14 +80,17 @@ echte opleiding of een ervaren elektricien naast je.
 
 ## Licentie
 
-Vrijgegeven onder [CC BY-NC-SA 4.0](LICENSE)
-(Naamsvermelding, NietCommercieel, GelijkDelen).
+Vrijgegeven onder de [GNU General Public License v3.0](LICENSE).
 
-Je mag de cursus vrij delen en aanpassen, mits je:
+Iedereen, ook bedrijven, mag deze code en cursus gebruiken, kopiëren en
+aanpassen. De voorwaarde is copyleft: verspreid je een versie (aangepast of
+niet, ook als onderdeel van een groter product), dan moet die verspreide
+versie **ook onder de GPLv3 staan**, met de broncode erbij. Dat maakt
+gesloten, commerciële toe-eigening zonder de broncode terug te geven
+onmogelijk.
 
-- **naamsvermelding** geeft en aangeeft wat je hebt veranderd;
-- het **niet commercieel** gebruikt;
-- eigen aanpassingen weer **onder dezelfde licentie** deelt.
+Zelf gebruiken, leren, of intern aanpassen mag altijd, zonder enige
+verplichting.
 
 ---
 
