@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cursus Elektrotechniek</title>
+<link rel="stylesheet" href="css/theme.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <nav class="topnav">
+    <a href="#/" data-route="dash">Mijn cursus</a>
+    <a href="#/naslag" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden>⭳ App installeren</button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport">⭳ Voortgang exporteren</button>
+        <button id="btnImport">⭱ Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger">⟲ Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- gerenderd door views.js --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="js/markdown.js"></script>
+<script src="js/store.js"></script>
+<script src="content/index.js"></script>
+<script src="content/m01.js"></script>
+<script src="content/m02.js"></script>
+<script src="content/m03.js"></script>
+<script src="content/m04.js"></script>
+<script src="content/m05.js"></script>
+<script src="content/m06.js"></script>
+<script src="content/m07.js"></script>
+<script src="content/m08.js"></script>
+<script src="content/m09.js"></script>
+<script src="content/m10.js"></script>
+<script src="content/m11.js"></script>
+<script src="content/m12.js"></script>
+<script src="content/naslag.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

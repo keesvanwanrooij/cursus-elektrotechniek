@@ -1,0 +1,18 @@
+# Persoonlijke context, hoort niet in een publieke repo
+project/
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
