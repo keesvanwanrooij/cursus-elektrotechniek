@@ -1,0 +1,17 @@
+{
+  "name": "Cursus Elektrotechniek",
+  "short_name": "Elektro",
+  "description": "Persoonlijke praktijkcursus elektrotechniek: 12 modules, video's en voortgangsregistratie.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0F1216",
+  "theme_color": "#0F1216",
+  "lang": "nl",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
