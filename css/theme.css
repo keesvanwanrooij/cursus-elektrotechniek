@@ -60,6 +60,7 @@ button { font: inherit; cursor: pointer; }
         display:grid; place-items:center; font-size:15px; font-weight:900; }
 .brand small { display:block; font-weight:500; font-size:11px; color:var(--text-dim);
                letter-spacing:.06em; text-transform:uppercase; }
+#navToggle { display:none; }
 .topnav { display:flex; gap:4px; margin-left:14px; }
 .topnav a { padding:7px 12px; border-radius:8px; text-decoration:none; color:var(--text-muted);
             font-size:14px; font-weight:500; }
@@ -193,6 +194,7 @@ button { font: inherit; cursor: pointer; }
 .snav a:hover { background:var(--surface-2); color:var(--text); }
 .snav a.on { background:var(--accent-soft); color:var(--accent); font-weight:600; }
 .snav a .dot { width:7px; height:7px; border-radius:50%; background:var(--border-strong); margin-top:6px; flex:none; }
+.snavtxt { flex:1; min-width:0; overflow-wrap:break-word; }
 .snav a.done .dot { background:var(--ok); }
 .snav a.on .dot { background:var(--accent); }
 .sidebar hr { border:0; border-top:1px solid var(--border); margin:14px 0; }
@@ -282,6 +284,7 @@ button { font: inherit; cursor: pointer; }
 /* ============================== RESPONSIEF ============================== */
 @media (max-width: 900px) {
   .lesson-layout { grid-template-columns:1fr; }
+  .sidebar, .article { min-width:0; }
   .sidebar { position:static; max-height:none; }
   .modhead { grid-template-columns:1fr; }
   .stats { grid-template-columns:repeat(2,1fr); }
@@ -290,6 +293,20 @@ button { font: inherit; cursor: pointer; }
   .topnav a { padding:7px 9px; }
   .wrap { padding:20px 16px 50px; }
   .article h1 { font-size:26px; }
+}
+@media (max-width: 640px) {
+  .topbar { padding:0 14px; gap:10px; }
+  .brand small { display:none; }
+  #navToggle { display:grid; }
+  .topnav {
+    display:none; position:absolute; top:60px; left:0; right:0;
+    flex-direction:column; margin-left:0; gap:2px; background:var(--surface);
+    border-bottom:1px solid var(--border); box-shadow:var(--shadow); padding:8px;
+  }
+  .topnav.open { display:flex; }
+  .topnav a { padding:12px 14px; font-size:15px; }
+  #installBtn .btn-label { display:none; }
+  #installBtn { width:34px; height:34px; padding:0; justify-content:center; }
 }
 @media print {
   .topbar, .sidebar, .footnav, .sitefoot, .checklist input { display:none !important; }
