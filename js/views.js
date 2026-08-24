@@ -139,12 +139,14 @@ window.Views = (function () {
       '<div class="modname"><a href="#/module/' + m.id + '" style="text-decoration:none">' + E(m.titel) + '</a></div>' +
       '<nav class="snav">' + m.lessen.map(function (o) {
         return '<a href="#/les/' + o.id + '" class="' + (Store.isKlaar(o.id) ? 'done ' : '') +
-          (o.id === id ? 'on' : '') + '"><span class="dot"></span>' + E(o.nr) + ' ' + E(o.titel) + '</a>';
+          (o.id === id ? 'on' : '') + '"><span class="dot"></span><span class="snavtxt">' +
+          E(o.nr) + ' ' + E(o.titel) + '</span></a>';
       }).join('') + '</nav>';
     if (gerenderd.koppen.length) {
       zij += '<hr><h5>Op deze pagina</h5><nav class="snav">' +
         gerenderd.koppen.map(function (k) {
-          return '<a href="#' + k.id + '" data-anker="' + k.id + '">' + E(k.tekst) + '</a>';
+          return '<a href="#' + k.id + '" data-anker="' + k.id + '"><span class="snavtxt">' +
+            E(k.tekst) + '</span></a>';
         }).join('') + '</nav>';
     }
     zij += '</aside>';

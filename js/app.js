@@ -9,6 +9,7 @@
   /* ------------------------------- router ------------------------------- */
 
   function route() {
+    sluitNavMenu();
     var hash = location.hash.replace(/^#/, '') || '/';
 
     /* Ankers binnen een lespagina (#kop-id) niet als route behandelen. */
@@ -79,6 +80,29 @@
         if (doel) doel.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
+  }
+
+  /* --------------------------- mobiel navmenu --------------------------- */
+
+  var navToggle = document.getElementById('navToggle');
+  var topnav = document.getElementById('topnav');
+
+  navToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var open = topnav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.textContent = open ? '✕' : '☰';
+  });
+  document.addEventListener('click', function () { sluitNavMenu(); });
+  topnav.addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (e.target.closest('a')) sluitNavMenu();
+  });
+
+  function sluitNavMenu() {
+    topnav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.textContent = '☰';
   }
 
   /* -------------------------------- menu -------------------------------- */
