@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Schema lezen en tekenen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt een installatieschema lezen en zelf schetsen wat er elektrisch moet gebeuren voordat je gereedschap pakt. Gratis les uit de cursus elektrotechniek…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/schema-lezen-en-tekenen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Schema lezen en tekenen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt een installatieschema lezen en zelf schetsen wat er elektrisch moet gebeuren voordat je gereedschap pakt. Gratis les uit de cursus elektrotechniek…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/schema-lezen-en-tekenen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Schema lezen en tekenen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt een installatieschema lezen en zelf schetsen wat er elektrisch moet gebeuren voordat je gereedschap pakt. Gratis les uit de cursus elektrotechniek…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Schema lezen en tekenen","description":"Je kunt een installatieschema lezen en zelf schetsen wat er elektrisch moet gebeuren voordat je gereedschap pakt.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/schema-lezen-en-tekenen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner tot gemiddeld","timeRequired":"PT20M","teaches":"Je kunt een installatieschema lezen en zelf schetsen wat er elektrisch moet gebeuren voordat je gereedschap pakt.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Schakelingen en aansluitpunten","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 5: Schakelingen en aansluitpunten","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/"},{"@type":"ListItem","position":3,"name":"Schema lezen en tekenen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/schema-lezen-en-tekenen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 5</h5><div class="modname"><a href="/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/" style="text-decoration:none">Schakelingen en aansluitpunten</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/schema-lezen-en-tekenen/" class="on"><span class="dot"></span><span class="snavtxt">5.1 Schema lezen en tekenen</span></a><a href="/cursus-elektrotechniek/les/de-enkelpolige-schakeling/" class=""><span class="dot"></span><span class="snavtxt">5.2 De enkelpolige schakeling</span></a><a href="/cursus-elektrotechniek/les/wissel-en-kruisschakeling/" class=""><span class="dot"></span><span class="snavtxt">5.3 Wissel- en kruisschakeling</span></a><a href="/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/" class=""><span class="dot"></span><span class="snavtxt">5.4 Serieschakeling, dimmers en sensoren</span></a><a href="/cursus-elektrotechniek/les/wandcontactdozen-en-doorlussen/" class=""><span class="dot"></span><span class="snavtxt">5.5 Wandcontactdozen en doorlussen</span></a><a href="/cursus-elektrotechniek/les/vochtige-ruimtes-zones-en-ip-codering/" class=""><span class="dot"></span><span class="snavtxt">5.6 Vochtige ruimtes: zones en IP-codering</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/schema-lezen-en-tekenen/#twee-soorten-schema-s" data-anker="twee-soorten-schema-s"><span class="snavtxt">Twee soorten schema's</span></a><a href="/cursus-elektrotechniek/les/schema-lezen-en-tekenen/#waarom-je-eerst-tekent" data-anker="waarom-je-eerst-tekent"><span class="snavtxt">Waarom je eerst tekent</span></a><a href="/cursus-elektrotechniek/les/schema-lezen-en-tekenen/#de-symbolen-die-je-dagelijks-tegenkomt" data-anker="de-symbolen-die-je-dagelijks-tegenkomt"><span class="snavtxt">De symbolen die je dagelijks tegenkomt</span></a><a href="/cursus-elektrotechniek/les/schema-lezen-en-tekenen/#een-schema-maken-van-een-bestaande-installatie" data-anker="een-schema-maken-van-een-bestaande-installatie"><span class="snavtxt">Een schema maken van een bestaande installatie</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/">Module 5</a> › Les 5.1</div><h1>Schema lezen en tekenen</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 1 video's</span><span>📊 Beginner tot gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt een installatieschema lezen en zelf schetsen wat er elektrisch moet gebeuren voordat je gereedschap pakt.</p></div><h2 id="twee-soorten-schema-s">Twee soorten schema's</h2>
+<p>Een <strong>installatieschema</strong> (ook wel eendraadschema) toont wat er functioneel gebeurt: welke schakelaar bedient welk lichtpunt, hoeveel aders er tussen twee punten lopen. Compact, en bedoeld om de opzet te begrijpen.</p>
+<p>Een <strong>bedradingsschema</strong> toont elke ader afzonderlijk: welke draad op welke klem. Dat is wat je nodig hebt tijdens het monteren.</p>
+<p>Een goede elektricien kan het eerste lezen en het tweede zelf afleiden.</p>
+<h2 id="waarom-je-eerst-tekent">Waarom je eerst tekent</h2>
+<p>De verleiding is groot om direct te monteren en op je geheugen te vertrouwen: &quot;volgens mij zat die zwarte draad daar&quot;. Dat werkt tot het misgaat, en dan kost het uren.</p>
+<p>Tekenen dwingt je om drie vragen te beantwoorden vóórdat er iets vastzit:</p>
+<ol><li>Waar komt de permanente fase vandaan?</li><li>Waar loopt de nul heen, en langs welke weg terug?</li><li>Waar hoort de beschermingsleiding, en wat is er metaal dat geaard moet worden?</li></ol>
+<p>Een schets van dertig seconden op de achterkant van een doos verdient zichzelf vrijwel altijd terug.</p>
+<div class="callout kern"><h4>De volgorde van vakwerk</h4><p>Schema → montage → controle van de bedrading tegen het schema → continuïteitscontrole → visuele inspectie → pas dan spanning erop. Elke stap die je overslaat, moet je later alsnog doen, maar dan onder tijdsdruk en met spanning erop.</p></div>
+<h2 id="de-symbolen-die-je-dagelijks-tegenkomt">De symbolen die je dagelijks tegenkomt</h2>
+<table><thead><tr><th>Symbool</th><th>Betekenis</th></tr></thead><tbody><tr><td>Cirkel met kruis</td><td>Lichtpunt</td></tr><tr><td>Schuine streep met bolletje</td><td>Enkelpolige schakelaar</td></tr><tr><td>Twee schuine strepen</td><td>Wisselschakelaar</td></tr><tr><td>Kruis met vier aansluitingen</td><td>Kruisschakelaar</td></tr><tr><td>Halve cirkel met twee streepjes</td><td>Wandcontactdoos</td></tr><tr><td>Idem met streep erdoor</td><td>Wandcontactdoos met randaarde</td></tr><tr><td>Cirkel met punt</td><td>Centraaldoos of aftakdoos</td></tr><tr><td>Getal bij een lijn</td><td>Aantal aders in die leiding</td></tr></tbody></table>
+<p>Dat laatste is het meest gebruikte hulpmiddel bij het lezen van een woningschema: een &quot;3&quot; bij een leiding tussen schakelaar en centraaldoos vertelt je meteen dat het geen enkelvoudige schakeling is.</p>
+<h2 id="een-schema-maken-van-een-bestaande-installatie">Een schema maken van een bestaande installatie</h2>
+<p>Bij storingzoeken en verbouwingen kom je vaak een installatie tegen zonder enige documentatie. Dan teken je zelf, gaandeweg:</p>
+<ul><li>Begin bij de groepenkast en noteer welke groep welke ruimte voedt.</li><li>Teken per ruimte de aansluitpunten en de zichtbare centraaldozen.</li><li>Meet met een doorbelfunctie welke ader waar uitkomt - spanningsloos.</li><li>Noteer wat je aantreft, ook als het onlogisch is. Vooral dan.</li></ul>
+<p>Dat schema laat je achter bij de klant of in de meterkast. Het is vaak het meest gewaardeerde onderdeel van je werk, en het kost je een half uur.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/qA5iEeupYRo" title="Installatieschema (ElektroTube)"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Installatieschema (ElektroTube)</b></span><span>±12 min · <a href="https://www.youtube.com/watch?v=qA5iEeupYRo" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik teken het schema voordat ik begin met monteren</label><label><input type="checkbox" data-vinkje="1"> Ik kan de gangbare symbolen in een woningschema benoemen</label><label><input type="checkbox" data-vinkje="2"> Ik weet dat een getal bij een leiding het aantal aders aangeeft</label><label><input type="checkbox" data-vinkje="3"> Ik laat een schema achter bij werk dat ik heb aangepast</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/routing-trekontlasting-en-vakwerk/">← 4.5 Routing, trekontlasting en vakwerk</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/de-enkelpolige-schakeling/">5.2 De enkelpolige schakeling →</a></div></div><div class="src">bron: chatgpt.md M5 · gemini.md M5 · kimi.md M4</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

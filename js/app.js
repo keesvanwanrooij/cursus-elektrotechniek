@@ -6,38 +6,72 @@
 
   var app = document.getElementById('app');
 
+  /* ----------------------------- routing-modus ----------------------------- */
+
+  /* Via http(s): schone URL's (/les/waarom-elektriciteit-doodt/), goed vindbaar voor zoekmachines.
+     Via file://: hash-routes (#/les/m01l03), want een dubbelklik kent geen paden. */
+  if (location.protocol.indexOf('http') === 0) {
+    var basisMeta = document.querySelector('meta[name="site-base"]');
+    /* Homepage zonder meta: basis is de map zelf. Offline-fallback op een diepe URL: alles voor /les/, /module/ of /naslag/. */
+    var basis = basisMeta ? basisMeta.content
+      : location.pathname.replace(/index\.html$/, '').replace(/^(.*?\/)(?:les|module|naslag)\/.*$/, '$1');
+    if (basis.slice(-1) !== '/') basis += '/';
+    Seo.configureer({ path: true, base: basis, origin: location.origin });
+  }
+
+  /* Interne navigatie: pushState in pad-modus, hash in file://-modus. */
+  function ga(page, id) {
+    var href = Seo.path(page, id);
+    if (Seo.cfg.path) { history.pushState(null, '', href); route(); }
+    else location.hash = href;
+  }
+
+  function huidigeRoute() {
+    return Seo.cfg.path ? Seo.parsePad(location.pathname) : Seo.parseHash(location.hash);
+  }
+
   /* ------------------------------- router ------------------------------- */
 
   function route() {
     sluitNavMenu();
-    var hash = location.hash.replace(/^#/, '') || '/';
 
-    /* Ankers binnen een lespagina (#kop-id) niet als route behandelen. */
-    if (hash && hash.charAt(0) !== '/') {
-      var doel = document.getElementById(hash);
-      if (doel) { doel.scrollIntoView({ behavior: 'smooth' }); return; }
-      hash = '/';
+    if (Seo.cfg.path) {
+      /* Oude hash-links (#/les/m01l03) worden omgezet naar de schone URL. */
+      if (/^#\//.test(location.hash)) {
+        var oud = Seo.parseHash(location.hash);
+        history.replaceState(null, '', Seo.path(oud.page, oud.id));
+      }
+    } else {
+      /* Ankers binnen een lespagina (#kop-id) zijn geen route. */
+      var hash = location.hash.replace(/^#/, '') || '/';
+      if (hash && hash.charAt(0) !== '/') {
+        var doel = document.getElementById(hash);
+        if (doel) { doel.scrollIntoView({ behavior: 'smooth' }); return; }
+      }
     }
 
-    var delen = hash.split('/').filter(Boolean);
-    var pagina = delen[0] || 'dash';
+    var r = huidigeRoute();
 
-    if (pagina === 'module' && delen[1]) {
-      app.innerHTML = Views.modulePagina(delen[1]);
+    if (r.page === 'module') {
+      app.innerHTML = Views.modulePagina(r.id);
       markeerNav('dash');
-    } else if (pagina === 'les' && delen[1]) {
-      app.innerHTML = Views.lesPagina(delen[1]);
-      Store.bezoek(delen[1]);
-      koppelLesKnoppen(delen[1]);
+    } else if (r.page === 'les') {
+      app.innerHTML = Views.lesPagina(r.id);
+      Store.bezoek(r.id);
+      koppelLesKnoppen(r.id);
       markeerNav('dash');
-    } else if (pagina === 'naslag') {
+    } else if (r.page === 'naslag') {
       app.innerHTML = Views.naslag();
       markeerNav('naslag');
     } else {
       app.innerHTML = Views.dashboard();
       markeerNav('dash');
     }
-    window.scrollTo({ top: 0 });
+
+    Seo.pasToe(r.page, r.id);
+
+    var anker = Seo.cfg.path && location.hash.length > 1 ? document.getElementById(location.hash.slice(1)) : null;
+    if (anker) anker.scrollIntoView(); else window.scrollTo({ top: 0 });
   }
 
   function markeerNav(naam) {
@@ -60,7 +94,7 @@
           melding('Les afgerond. Voortgang opgeslagen.');
           var buren = CURSUS.buren(lesId);
           if (buren.volgende) {
-            setTimeout(function () { location.hash = '#/les/' + buren.volgende.les.id; }, 600);
+            setTimeout(function () { ga('les', buren.volgende.les.id); }, 600);
           }
         }
       });
@@ -158,12 +192,27 @@
 
   document.addEventListener('keydown', function (e) {
     if (e.target.matches('input, textarea, select')) return;
-    if (!location.hash.startsWith('#/les/')) return;
-    var id = location.hash.replace('#/les/', '');
-    var buren = CURSUS.buren(id);
-    if (e.key === 'ArrowRight' && buren.volgende) location.hash = '#/les/' + buren.volgende.les.id;
-    if (e.key === 'ArrowLeft' && buren.vorige) location.hash = '#/les/' + buren.vorige.les.id;
+    var r = huidigeRoute();
+    if (r.page !== 'les') return;
+    var buren = CURSUS.buren(r.id);
+    if (e.key === 'ArrowRight' && buren.volgende) ga('les', buren.volgende.les.id);
+    if (e.key === 'ArrowLeft' && buren.vorige) ga('les', buren.vorige.les.id);
   });
+
+  /* Links naar andere pagina's van de site: geen volledige herlaad, wel een nieuwe URL. */
+  document.addEventListener('click', function (e) {
+    if (!Seo.cfg.path || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a || a.target || a.hasAttribute('download')) return;
+    var u = new URL(a.href, location.href);
+    if (u.origin !== location.origin || u.pathname.indexOf(Seo.cfg.base) !== 0) return;
+    if (u.pathname === location.pathname && u.hash) return;
+    var p = Seo.parsePad(u.pathname);
+    if (p.page === 'dash' && u.pathname.replace(/index\.html$/, '') !== Seo.cfg.base) return;
+    e.preventDefault();
+    history.pushState(null, '', u.pathname + u.hash);
+    route();
+  }, true);
 
   /* ------------------------------- melding ------------------------------- */
 
@@ -186,7 +235,7 @@
      offline-cache en installatie zijn alleen actief als de site via http(s) draait. */
   if ('serviceWorker' in navigator && location.protocol.indexOf('http') === 0) {
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register('service-worker.js').catch(function (e) {
+      navigator.serviceWorker.register(Seo.cfg.path ? Seo.cfg.base + 'service-worker.js' : 'service-worker.js').catch(function (e) {
         console.warn('Service worker kon niet worden geregistreerd.', e);
       });
     });
@@ -218,7 +267,11 @@
 
   /* ------------------------------- opstart ------------------------------- */
 
-  window.addEventListener('hashchange', route);
+  window.addEventListener(Seo.cfg.path ? 'popstate' : 'hashchange', route);
+
+  /* Merklink en menu wijzen naar de juiste URL's in de gekozen modus. */
+  document.querySelectorAll('.brand, [data-route="dash"]').forEach(function (a) { a.setAttribute('href', Seo.path('dash')); });
+  document.querySelectorAll('[data-route="naslag"]').forEach(function (a) { a.setAttribute('href', Seo.path('naslag')); });
 
   if (!window.CURSUS || !CURSUS.modules.length) {
     app.innerHTML = '<div class="callout gevaar"><h4>Geen inhoud geladen</h4>' +

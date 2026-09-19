@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Buitenunit en binnenunit koppelen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt de voeding en de communicatiekabel tussen de units correct uitvoeren en de scheiding tussen sterk- en zwakstroom bewaken.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Buitenunit en binnenunit koppelen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt de voeding en de communicatiekabel tussen de units correct uitvoeren en de scheiding tussen sterk- en zwakstroom bewaken.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Buitenunit en binnenunit koppelen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt de voeding en de communicatiekabel tussen de units correct uitvoeren en de scheiding tussen sterk- en zwakstroom bewaken.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Buitenunit en binnenunit koppelen","description":"Je kunt de voeding en de communicatiekabel tussen de units correct uitvoeren en de scheiding tussen sterk- en zwakstroom bewaken.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT18M","teaches":"Je kunt de voeding en de communicatiekabel tussen de units correct uitvoeren en de scheiding tussen sterk- en zwakstroom bewaken.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Warmtepomp, airco en cv-ketel","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 9: Warmtepomp, airco en cv-ketel","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/"},{"@type":"ListItem","position":3,"name":"Buitenunit en binnenunit koppelen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 9</h5><div class="modname"><a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/" style="text-decoration:none">Warmtepomp, airco en cv-ketel</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/" class=""><span class="dot"></span><span class="snavtxt">9.1 Wat een warmtepomp elektrisch vraagt</span></a><a href="/cursus-elektrotechniek/les/eigen-groep-doorsnede-en-karakteristiek/" class=""><span class="dot"></span><span class="snavtxt">9.2 Eigen groep, doorsnede en karakteristiek</span></a><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/" class=""><span class="dot"></span><span class="snavtxt">9.3 Aardlektype bij frequentiegeregelde toestellen</span></a><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/" class="on"><span class="dot"></span><span class="snavtxt">9.4 Buitenunit en binnenunit koppelen</span></a><a href="/cursus-elektrotechniek/les/airco-en-split-units/" class=""><span class="dot"></span><span class="snavtxt">9.5 Airco en split-units</span></a><a href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/" class=""><span class="dot"></span><span class="snavtxt">9.6 Cv-ketel, thermostaat en gelijktijdigheid</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/#twee-soorten-verbindingen" data-anker="twee-soorten-verbindingen"><span class="snavtxt">Twee soorten verbindingen</span></a><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/#scheiding-tussen-sterk-en-zwakstroom" data-anker="scheiding-tussen-sterk-en-zwakstroom"><span class="snavtxt">Scheiding tussen sterk- en zwakstroom</span></a><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/#buiten-werken-dichtheid-en-bestendigheid" data-anker="buiten-werken-dichtheid-en-bestendigheid"><span class="snavtxt">Buiten werken: dichtheid en bestendigheid</span></a><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/#aarding-van-de-buitenunit" data-anker="aarding-van-de-buitenunit"><span class="snavtxt">Aarding van de buitenunit</span></a><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/#de-grens-van-jouw-werk" data-anker="de-grens-van-jouw-werk"><span class="snavtxt">De grens van jouw werk</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/">Module 9</a> › Les 9.4</div><h1>Buitenunit en binnenunit koppelen</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt de voeding en de communicatiekabel tussen de units correct uitvoeren en de scheiding tussen sterk- en zwakstroom bewaken.</p></div><h2 id="twee-soorten-verbindingen">Twee soorten verbindingen</h2>
+<p>Tussen binnen- en buitenunit lopen doorgaans twee elektrische verbindingen, en die hebben verschillende eisen:</p>
+<p><strong>De voeding</strong> - sterkstroom, 230 of 400 V. Sommige systemen voeden de buitenunit vanuit de binnenunit, andere voeden beide units apart vanuit de groepenkast. Welk van de twee, staat in het aansluitschema van de fabrikant en is niet uitwisselbaar.</p>
+<p><strong>De communicatiekabel</strong> (interlink, bus) - laagspanning of datacommunicatie, waarmee de units elkaar aansturen. Vaak twee of drie aders, soms afgeschermd.</p>
+<h2 id="scheiding-tussen-sterk-en-zwakstroom">Scheiding tussen sterk- en zwakstroom</h2>
+<p>De communicatiekabel is gevoelig voor storing. Loopt hij over een lange afstand strak naast de voedingskabel, dan kan de wisselspanning capacitief en inductief inkoppelen, met communicatiefouten of onverklaarbare storingsmeldingen als gevolg.</p>
+<p>Praktische regels:</p>
+<ul><li>houd afstand tussen voedings- en communicatiekabel waar dat kan;</li><li>kruis ze bij voorkeur haaks in plaats van dat ze parallel lopen;</li><li>gebruik een afgeschermde kabel wanneer de fabrikant dat voorschrijft, en sluit de</li></ul>
+<p>afscherming aan <strong>zoals voorgeschreven</strong> - meestal aan één zijde;</p>
+<ul><li>gebruik geen aders van de voedingskabel voor communicatie, ook al zijn er aders over.</li></ul>
+<div class="callout kern"><h4>Storingsmeldingen die geen storing zijn</h4><p>Een warmtepomp die willekeurige communicatiefouten geeft, is opvallend vaak een bekabelingsprobleem en geen defect toestel. Controleer bij zo'n melding eerst het kabeltracé, de scheiding en de aansluiting van de afscherming, voordat er onderdelen worden besteld.</p></div>
+<h2 id="buiten-werken-dichtheid-en-bestendigheid">Buiten werken: dichtheid en bestendigheid</h2>
+<ul><li><strong>Wartels</strong> passend bij de kabeldiameter, goed aangedraaid, en met de dichting op zijn</li></ul>
+<p>plaats. Een wartel die te ruim is, laat water door langs de kabel.</p>
+<ul><li><strong>Doorvoeren aflopend</strong> uitvoeren, of met een druppellus zodat water niet langs de</li></ul>
+<p>kabel naar binnen loopt.</p>
+<ul><li><strong>UV-bestendigheid</strong> bij kabels die in de zon liggen; gewone PVC-mantel verhardt en</li></ul>
+<p>scheurt na jaren buiten.</p>
+<ul><li><strong>Mechanische bescherming</strong> waar de kabel bereikbaar is voor grasmaaiers, schoppen en</li></ul>
+<p>kinderen.</p>
+<ul><li><strong>Trekontlasting</strong> vóór de klemmen, zoals overal.</li></ul>
+<h2 id="aarding-van-de-buitenunit">Aarding van de buitenunit</h2>
+<p>De metalen behuizing van een buitenunit wordt geaard via de beschermingsleiding in de voedingskabel. Controleer bij oplevering de doorverbinding met een continuïteitsmeting (module 7.3) - juist bij een buitenunit, waar corrosie en vocht op termijn hun werk doen.</p>
+<p>Let er ook op dat een buitenunit vaak op een frame of consoles staat. Metalen delen die aanraakbaar zijn en door een fout onder spanning kunnen komen, horen in de beoordeling meegenomen te worden.</p>
+<h2 id="de-grens-van-jouw-werk">De grens van jouw werk</h2>
+<p>De elektrische aansluiting is jouw domein. Het koudemiddelcircuit - de leidingen tussen binnen- en buitenunit, vacuümtrekken, vullen, afpersen - is dat niet: daarvoor gelden aparte eisen en certificering. Les 9.5 gaat daarop in.</p>
+<p>Een praktische werkverdeling is dan ook gebruikelijk: de elektricien legt de voeding, de groep, de werkschakelaar en de communicatiekabel; de gecertificeerde monteur doet het koudemiddelcircuit en de inbedrijfstelling.</p><h2 id="videos">Video's bij deze les</h2><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=warmtepomp%20buitenunit%20aansluiten%20interlink%20kabel"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> Buitenunit aansluiten: voeding en communicatiekabel</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “warmtepomp buitenunit aansluiten interlink kabel”</span></span></a><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik controleer in het schema van de fabrikant hoe beide units gevoed worden</label><label><input type="checkbox" data-vinkje="1"> Ik houd voedings- en communicatiekabel gescheiden</label><label><input type="checkbox" data-vinkje="2"> Ik sluit een afscherming aan zoals voorgeschreven, niet aan beide zijden</label><label><input type="checkbox" data-vinkje="3"> Ik controleer de aarding van de buitenunit met een continuïteitsmeting</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/">← 9.3 Aardlektype bij frequentiegeregelde toestellen</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/airco-en-split-units/">9.5 Airco en split-units →</a></div></div><div class="src">bron: nieuw geschreven</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

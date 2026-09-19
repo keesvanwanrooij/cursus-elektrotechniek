@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Cv-ketel, thermostaat en gelijktijdigheid | Cursus elektrotechniek</title>
+<meta name="description" content="Je kent de elektrische kant van een cv-installatie en kunt beoordelen of een aansluiting extra belasting aankan. Gratis les uit de cursus elektrotechniek…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cv-ketel, thermostaat en gelijktijdigheid | Cursus elektrotechniek">
+<meta property="og:description" content="Je kent de elektrische kant van een cv-installatie en kunt beoordelen of een aansluiting extra belasting aankan. Gratis les uit de cursus elektrotechniek…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cv-ketel, thermostaat en gelijktijdigheid | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kent de elektrische kant van een cv-installatie en kunt beoordelen of een aansluiting extra belasting aankan. Gratis les uit de cursus elektrotechniek…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Cv-ketel, thermostaat en gelijktijdigheid","description":"Je kent de elektrische kant van een cv-installatie en kunt beoordelen of een aansluiting extra belasting aankan.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT16M","teaches":"Je kent de elektrische kant van een cv-installatie en kunt beoordelen of een aansluiting extra belasting aankan.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Warmtepomp, airco en cv-ketel","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 9: Warmtepomp, airco en cv-ketel","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/"},{"@type":"ListItem","position":3,"name":"Cv-ketel, thermostaat en gelijktijdigheid","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 9</h5><div class="modname"><a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/" style="text-decoration:none">Warmtepomp, airco en cv-ketel</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/" class=""><span class="dot"></span><span class="snavtxt">9.1 Wat een warmtepomp elektrisch vraagt</span></a><a href="/cursus-elektrotechniek/les/eigen-groep-doorsnede-en-karakteristiek/" class=""><span class="dot"></span><span class="snavtxt">9.2 Eigen groep, doorsnede en karakteristiek</span></a><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/" class=""><span class="dot"></span><span class="snavtxt">9.3 Aardlektype bij frequentiegeregelde toestellen</span></a><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/" class=""><span class="dot"></span><span class="snavtxt">9.4 Buitenunit en binnenunit koppelen</span></a><a href="/cursus-elektrotechniek/les/airco-en-split-units/" class=""><span class="dot"></span><span class="snavtxt">9.5 Airco en split-units</span></a><a href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/" class="on"><span class="dot"></span><span class="snavtxt">9.6 Cv-ketel, thermostaat en gelijktijdigheid</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/#de-cv-ketel-elektrisch" data-anker="de-cv-ketel-elektrisch"><span class="snavtxt">De cv-ketel elektrisch</span></a><a href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/#thermostaatbedrading" data-anker="thermostaatbedrading"><span class="snavtxt">Thermostaatbedrading</span></a><a href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/#gelijktijdigheid-en-de-aansluitwaarde" data-anker="gelijktijdigheid-en-de-aansluitwaarde"><span class="snavtxt">Gelijktijdigheid en de aansluitwaarde</span></a><a href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/#wat-je-vastlegt" data-anker="wat-je-vastlegt"><span class="snavtxt">Wat je vastlegt</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/">Module 9</a> › Les 9.6</div><h1>Cv-ketel, thermostaat en gelijktijdigheid</h1><div class="lessmeta"><span>⏱ 16 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kent de elektrische kant van een cv-installatie en kunt beoordelen of een aansluiting extra belasting aankan.</p></div><h2 id="de-cv-ketel-elektrisch">De cv-ketel elektrisch</h2>
+<p>Een gasgestookte cv-ketel is elektrisch bescheiden: pomp, ventilator, ontsteking en besturing samen blijven ruim onder een halve kilowatt. Toch krijgt de ketel bij voorkeur een <strong>eigen groep</strong>, om dezelfde reden als bij de warmtepomp: je wilt niet dat de verwarming uitvalt door een storing elders.</p>
+<p>Aandachtspunten:</p>
+<ul><li><strong>Werkschakelaar of eigen wandcontactdoos</strong> bij de ketel, zodat de servicemonteur het</li></ul>
+<p>toestel spanningsloos kan maken.</p>
+<ul><li><strong>Polariteit</strong> klopt: fase op fase, nul op nul. Sommige ketelbesturingen controleren</li></ul>
+<p>de polariteit en weigeren te starten of geven een foutcode bij verwisseling.</p>
+<ul><li><strong>Aarding</strong> aanwezig en doorverbonden; controleer met een continuïteitsmeting.</li><li><strong>Vochtige opstelling</strong> (zolder, kelder, badkamer): let op de zone-indeling uit</li></ul>
+<p>module 5.6 en op de IP-waarde van de aansluiting.</p>
+<h2 id="thermostaatbedrading">Thermostaatbedrading</h2>
+<p>Er zijn twee gangbare varianten, en het verschil is belangrijk:</p>
+<p><strong>Aan/uit-thermostaat</strong> - twee aders, een simpel schakelcontact. De thermostaat sluit het contact als er warmte nodig is, en de ketel gaat op vol vermogen aan.</p>
+<p><strong>OpenTherm (modulerend)</strong> - twee aders, maar nu met communicatie in beide richtingen. De thermostaat vertelt de ketel welk vermogen nodig is, waardoor de ketel kan moduleren: zachter branden in plaats van steeds aan en uit. Dat is zuiniger en comfortabeler.</p>
+<p>Belangrijk: de aders zien er hetzelfde uit, maar de systemen zijn niet zomaar uitwisselbaar. Sluit je een OpenTherm-thermostaat aan op een klemmenstrook die voor aan/uit is bedoeld, dan werkt het niet of niet zoals bedoeld. Lees de aansluitgegevens van zowel de ketel als de thermostaat.</p>
+<p>Voor de thermostaatkabel geldt hetzelfde als voor de communicatiekabel bij een warmtepomp: gescheiden van sterkstroom leggen.</p>
+<h2 id="gelijktijdigheid-en-de-aansluitwaarde">Gelijktijdigheid en de aansluitwaarde</h2>
+<p>Dit is de les die het meest voorkomt in de praktijk. Een woning met een 1×35 A-aansluiting heeft ongeveer 8 kW beschikbaar. Tel op wat er tegenwoordig bij kan komen:</p>
+<table><thead><tr><th>Verbruiker</th><th>Opgenomen vermogen</th></tr></thead><tbody><tr><td>Inductiekookplaat, in gebruik</td><td>3 – 7 kW</td></tr><tr><td>Warmtepomp met bijverwarming</td><td>3 – 9 kW</td></tr><tr><td>Laadpaal 1-fase</td><td>3,7 kW</td></tr><tr><td>Elektrische boiler</td><td>2 kW</td></tr><tr><td>Wasmachine en droger</td><td>2 – 4 kW</td></tr></tbody></table>
+<p>Deze getallen lopen op een koude avond gemakkelijk op boven de beschikbare 8 kW. Het gevolg is een hoofdzekering die afschakelt - en dat is geen defect maar een ontwerpprobleem.</p>
+<div class="callout kern"><h4>De vraag bij elke zware toevoeging</h4><p>Voordat er iets zwaars bijkomt: wat is de aansluitwaarde, wat hangt er al aan, en wat is de realistische gelijktijdige belasting op het zwaarste moment? Is het antwoord krap, dan zijn de opties een netverzwaring aanvragen, load balancing toepassen (module 10.3), of de klant vertellen dat dit toestel hier niet past. Die derde optie is soms het juiste antwoord.</p></div>
+<h2 id="wat-je-vastlegt">Wat je vastlegt</h2>
+<p>Bij het toevoegen van een klimaatinstallatie leg je vast: de aansluitwaarde vóór en na, de nieuwe groep met doorsnede en beveiliging, het aardlektype, de faseverdeling, en de metingen. Bij een latere storing of een discussie over overbelasting is dat het enige document dat vertelt wat er is afgesproken en uitgevoerd.</p><h2 id="videos">Video's bij deze les</h2><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=cv%20ketel%20aansluiten%20voeding%20thermostaat%20opentherm%20bedrading"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> CV-ketel aansluiten: voeding, thermostaat en OpenTherm</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “cv ketel aansluiten voeding thermostaat opentherm bedrading”</span></span></a><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik geef een cv-ketel een eigen groep met werkschakelaar</label><label><input type="checkbox" data-vinkje="1"> Ik ken het verschil tussen aan/uit en OpenTherm-thermostaatbedrading</label><label><input type="checkbox" data-vinkje="2"> Ik controleer de aansluitwaarde voordat er een zware verbruiker bijkomt</label><label><input type="checkbox" data-vinkje="3"> Ik kan uitleggen wanneer netverzwaring of load balancing nodig is</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/airco-en-split-units/">← 9.5 Airco en split-units</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/">10.1 PV-installatie in hoofdlijnen →</a></div></div><div class="src">bron: nieuw geschreven</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

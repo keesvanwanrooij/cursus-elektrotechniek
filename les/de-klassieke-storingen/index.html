@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>De klassieke storingen | Cursus elektrotechniek</title>
+<meta name="description" content="Je herkent de meest voorkomende storingen aan hun symptoompatroon. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-klassieke-storingen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="De klassieke storingen | Cursus elektrotechniek">
+<meta property="og:description" content="Je herkent de meest voorkomende storingen aan hun symptoompatroon. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-klassieke-storingen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="De klassieke storingen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je herkent de meest voorkomende storingen aan hun symptoompatroon. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"De klassieke storingen","description":"Je herkent de meest voorkomende storingen aan hun symptoompatroon.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-klassieke-storingen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je herkent de meest voorkomende storingen aan hun symptoompatroon.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Storingzoeken en oplevering","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 8: Storingzoeken en oplevering","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/"},{"@type":"ListItem","position":3,"name":"De klassieke storingen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-klassieke-storingen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 8</h5><div class="modname"><a href="/cursus-elektrotechniek/module/storingzoeken-en-oplevering/" style="text-decoration:none">Storingzoeken en oplevering</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/het-negenstappenmodel/" class=""><span class="dot"></span><span class="snavtxt">8.1 Het negenstappenmodel</span></a><a href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/" class=""><span class="dot"></span><span class="snavtxt">8.2 Van symptoom naar hypothese</span></a><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/" class="on"><span class="dot"></span><span class="snavtxt">8.3 De klassieke storingen</span></a><a href="/cursus-elektrotechniek/les/een-aardlekstoring-lokaliseren/" class=""><span class="dot"></span><span class="snavtxt">8.4 Een aardlekstoring lokaliseren</span></a><a href="/cursus-elektrotechniek/les/afronden-controleren-en-uitleggen/" class=""><span class="dot"></span><span class="snavtxt">8.5 Afronden, controleren en uitleggen</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/#de-onderbroken-nul" data-anker="de-onderbroken-nul"><span class="snavtxt">De onderbroken nul</span></a><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/#de-losse-verbinding-en-de-overgangsweerstand" data-anker="de-losse-verbinding-en-de-overgangsweerstand"><span class="snavtxt">De losse verbinding en de overgangsweerstand</span></a><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/#de-doorgeslagen-aardlek" data-anker="de-doorgeslagen-aardlek"><span class="snavtxt">De doorgeslagen aardlek</span></a><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/#de-kortsluiting" data-anker="de-kortsluiting"><span class="snavtxt">De kortsluiting</span></a><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/#de-defecte-belasting" data-anker="de-defecte-belasting"><span class="snavtxt">De defecte belasting</span></a><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/#symptoompatronen-in-een-tabel" data-anker="symptoompatronen-in-een-tabel"><span class="snavtxt">Symptoompatronen in één tabel</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/storingzoeken-en-oplevering/">Module 8</a> › Les 8.3</div><h1>De klassieke storingen</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je herkent de meest voorkomende storingen aan hun symptoompatroon.</p></div><h2 id="de-onderbroken-nul">De onderbroken nul</h2>
+<p><strong>Symptomen:</strong> meerdere aansluitpunten werken niet terwijl er wel spanning meetbaar is; lampen die dof branden; vreemde spanningen tussen N en PE; apparatuur die zich onvoorspelbaar gedraagt afhankelijk van wat er nog meer aanstaat.</p>
+<p><strong>Waarom het verwarrend is:</strong> je meet 230 V tussen fase en aarde, dus je concludeert dat de voeding er is. Maar de retourweg ontbreekt, en de belastingen komen via elkaar in serie te staan.</p>
+<p><strong>Waar zoeken:</strong> de doorgeluste nul in een contactdoos, de nulrail in de kast, of een lasklem waar de nul doorheen loopt. Bij 3-fase: zie module 6.4 - dit is de gevaarlijkste variant.</p>
+<h2 id="de-losse-verbinding-en-de-overgangsweerstand">De losse verbinding en de overgangsweerstand</h2>
+<p><strong>Symptomen:</strong> intermitterende uitval, vaak samenhangend met belasting; verkleuring of brandlucht; een aansluitpunt dat warm aanvoelt; soms een knetterend geluid.</p>
+<p><strong>Waarom het verraderlijk is:</strong> een spanningsmeting zonder belasting toont niets, omdat er geen stroom loopt en dus geen spanningsval over de slechte verbinding ontstaat.</p>
+<p><strong>Hoe je het vindt:</strong> meten mét belasting, en de spanningsval over verdachte delen vergelijken. Verkleurde klemmen en verharde isolatie zijn zichtbare aanwijzingen.</p>
+<div class="callout gevaar"><h4>Verkleuring is een brandmelding</h4><p>Een bruin verkleurde klem, verhard of verkleurd isolatiemateriaal en een geur van heet plastic zijn geen cosmetische afwijkingen. Ze betekenen dat er langdurig te veel warmte is ontwikkeld. Herstellen betekent hier: de verbinding opnieuw maken én beoordelen of de geleider zelf nog deugt.</p></div>
+<h2 id="de-doorgeslagen-aardlek">De doorgeslagen aardlek</h2>
+<p><strong>Symptomen:</strong> aardlek schakelt af, direct of pas na verloop van tijd; soms alleen bij regen, bij het aanzetten van een specifiek apparaat, of 's ochtends.</p>
+<p><strong>Waar zoeken:</strong> zie les 8.4 voor de systematiek.</p>
+<h2 id="de-kortsluiting">De kortsluiting</h2>
+<p><strong>Symptomen:</strong> automaat schakelt direct af bij inschakelen; soms een hoorbare knal of zichtbare schade.</p>
+<p><strong>Waar zoeken:</strong> meestal bij recente werkzaamheden. Een schroef of spijker door een leiding, een verkeerd aangesloten component, of water in een buitendoos. Vraag altijd wat er kort geleden is gebeurd in die ruimte.</p>
+<h2 id="de-defecte-belasting">De defecte belasting</h2>
+<p><strong>Symptomen:</strong> één apparaat werkt niet, de rest wel; soms schakelt de automaat af bij het inschakelen van dat ene apparaat.</p>
+<p><strong>Hoe je het bevestigt:</strong> het apparaat op een andere, bekende werkende aansluiting testen. Werkt het daar ook niet, dan ligt het aan het apparaat en niet aan de installatie. Dat klinkt triviaal, maar het is de snelste test die er is en hij wordt vaak overgeslagen.</p>
+<h2 id="symptoompatronen-in-een-tabel">Symptoompatronen in één tabel</h2>
+<table><thead><tr><th>Patroon</th><th>Meest waarschijnlijke richting</th></tr></thead><tbody><tr><td>Eén apparaat, rest werkt</td><td>Apparaat of aansluitpunt</td></tr><tr><td>Eén groep, andere groepen werken</td><td>Automaat, bedrading of belasting in die groep</td></tr><tr><td>Meerdere groepen tegelijk</td><td>Aardlek, hoofdschakelaar, of een gedeelde nul</td></tr><tr><td>Hele woning</td><td>Aansluiting, hoofdzekering, netbeheerder</td></tr><tr><td>Alles werkt, maar vreemd</td><td>Onderbroken nul - meet direct N–PE</td></tr><tr><td>Alleen bij belasting</td><td>Overgangsweerstand of te dunne leiding</td></tr><tr><td>Alleen bij vocht</td><td>Isolatiefout, buitendoos, kruipruimte</td></tr></tbody></table><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/yxHuwt8p8-k" title="Electrical Troubleshooting for Beginners - Step-by-Step Guide"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> <b>Electrical Troubleshooting for Beginners - Step-by-Step Guide</b></span><span>±16 min · <a href="https://www.youtube.com/watch?v=yxHuwt8p8-k" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik herken de symptomen van een onderbroken nul</label><label><input type="checkbox" data-vinkje="1"> Ik weet waarom een losse verbinding zonder belasting niet zichtbaar is bij meten</label><label><input type="checkbox" data-vinkje="2"> Ik test een verdacht apparaat altijd op een bekende werkende aansluiting</label><label><input type="checkbox" data-vinkje="3"> Ik behandel verkleuring en brandlucht als een acuut veiligheidsprobleem</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/">← 8.2 Van symptoom naar hypothese</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/een-aardlekstoring-lokaliseren/">8.4 Een aardlekstoring lokaliseren →</a></div></div><div class="src">bron: chatgpt.md M8 · deekseek.md M5 · kimi.md M7 · grok.md M6</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

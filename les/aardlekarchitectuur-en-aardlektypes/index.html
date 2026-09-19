@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Aardlekarchitectuur en aardlektypes | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt bepalen welk type aardlekbeveiliging bij welke belasting hoort en waarom het verkeerde type blind kan zijn.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aardlekarchitectuur en aardlektypes | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt bepalen welk type aardlekbeveiliging bij welke belasting hoort en waarom het verkeerde type blind kan zijn.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aardlekarchitectuur en aardlektypes | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt bepalen welk type aardlekbeveiliging bij welke belasting hoort en waarom het verkeerde type blind kan zijn.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Aardlekarchitectuur en aardlektypes","description":"Je kunt bepalen welk type aardlekbeveiliging bij welke belasting hoort en waarom het verkeerde type blind kan zijn.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je kunt bepalen welk type aardlekbeveiliging bij welke belasting hoort en waarom het verkeerde type blind kan zijn.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Groepenkast: ontwerp en montage","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 6: Groepenkast: ontwerp en montage","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"},{"@type":"ListItem","position":3,"name":"Aardlekarchitectuur en aardlektypes","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 6</h5><div class="modname"><a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/" style="text-decoration:none">Groepenkast: ontwerp en montage</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/" class=""><span class="dot"></span><span class="snavtxt">6.1 Groepsindeling ontwerpen</span></a><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/" class=""><span class="dot"></span><span class="snavtxt">6.2 Karakteristiek en selectiviteit</span></a><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/" class="on"><span class="dot"></span><span class="snavtxt">6.3 Aardlekarchitectuur en aardlektypes</span></a><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/" class=""><span class="dot"></span><span class="snavtxt">6.4 3-fase en de nulgeleider</span></a><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/" class=""><span class="dot"></span><span class="snavtxt">6.5 Een kast opbouwen en opleveren</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/#waarom-er-verschillende-types-bestaan" data-anker="waarom-er-verschillende-types-bestaan"><span class="snavtxt">Waarom er verschillende types bestaan</span></a><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/#de-gevoeligheid" data-anker="de-gevoeligheid"><span class="snavtxt">De gevoeligheid</span></a><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/#aardlekschakelaar-of-aardlekautomaat" data-anker="aardlekschakelaar-of-aardlekautomaat"><span class="snavtxt">Aardlekschakelaar of aardlekautomaat</span></a><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/#waarom-een-aardlek-zomaar-afschakelt" data-anker="waarom-een-aardlek-zomaar-afschakelt"><span class="snavtxt">Waarom een aardlek &quot;zomaar&quot; afschakelt</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/">Module 6</a> › Les 6.3</div><h1>Aardlekarchitectuur en aardlektypes</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt bepalen welk type aardlekbeveiliging bij welke belasting hoort en waarom het verkeerde type blind kan zijn.</p></div><h2 id="waarom-er-verschillende-types-bestaan">Waarom er verschillende types bestaan</h2>
+<p>Een aardlekschakelaar meet het verschil tussen heen- en teruggaande stroom met een stroomtransformator: de geleiders lopen door een ringkern, en zolang de som nul is, wordt er in de meetwikkeling niets opgewekt.</p>
+<p>Die meting werkt alleen bij stroomvormen waarvoor het type is gebouwd. Moderne apparatuur met elektronica produceert lekstromen die niet meer op een nette sinus lijken, en dan wordt het type bepalend.</p>
+<table><thead><tr><th>Type</th><th>Detecteert</th><th>Waar nodig</th></tr></thead><tbody><tr><td>AC</td><td>Zuivere sinusvormige wisselstroomlekken</td><td>Verouderd; niet meer toereikend voor moderne installaties</td></tr><tr><td>A</td><td>Sinus én pulserende gelijkstroomlekken</td><td>De standaard voor woninginstallaties</td></tr><tr><td>F</td><td>Als A, plus samengestelde frequenties</td><td>Circuits met frequentieregelaars, wasmachines en warmtepompen van bepaalde typen</td></tr><tr><td>B</td><td>Als F, plus <strong>gladde gelijkstroomlekken</strong></td><td>Laadpalen, PV-omvormers, apparatuur met een DC-zijde</td></tr></tbody></table>
+<div class="callout gevaar"><h4>Blindheid bij het verkeerde type</h4><p>Een gladde gelijkstroomlekstroom kan de ringkern van een type-AC of type-A aardlek magnetisch verzadigen. Het gevolg is dat de aardlek niet alleen die lekstroom niet ziet, maar ook zijn vermogen verliest om normale wisselstroomlekken te detecteren. Hij hangt dan als een dood component in de kast, terwijl alles er goed uitziet en de testknop het gewoon doet. Dit is het argument achter de type-eisen bij laadpalen en omvormers.</p></div>
+<h2 id="de-gevoeligheid">De gevoeligheid</h2>
+<p><strong>30 mA</strong> is de standaard voor personenbeveiliging in woningen. Lager (10 mA) kom je tegen bij zeer specifieke toepassingen; hoger (100 of 300 mA) uitsluitend voor brandbeveiliging, niet voor personen.</p>
+<p>Naast de gevoeligheid bestaat er <strong>vertraging</strong>: een S-type schakelt bewust iets later zodat het onderliggende, snelle type eerst kan afschakelen. Dat is de manier om selectiviteit in aardlekbeveiliging te bereiken.</p>
+<h2 id="aardlekschakelaar-of-aardlekautomaat">Aardlekschakelaar of aardlekautomaat</h2>
+<table><thead><tr><th></th><th>Aardlekschakelaar (RCD) + automaten</th><th>Aardlekautomaat (RCBO) per groep</th></tr></thead><tbody><tr><td>Kosten</td><td>Lager</td><td>Hoger</td></tr><tr><td>Ruimte</td><td>Compacter</td><td>Breder</td></tr><tr><td>Bij een fout valt uit</td><td>Alle groepen achter die aardlek</td><td>Alleen die ene groep</td></tr><tr><td>Storingzoeken</td><td>Uitsluiten per groep nodig</td><td>Direct duidelijk welke groep</td></tr></tbody></table>
+<p>Voor kritische circuits - vriezer, cv, warmtepomp, serverkast, medische apparatuur - is een eigen RCBO vrijwel altijd de betere keuze. Voor de rest is een blok van maximaal vier groepen achter één aardlek gebruikelijk.</p>
+<h2 id="waarom-een-aardlek-zomaar-afschakelt">Waarom een aardlek &quot;zomaar&quot; afschakelt</h2>
+<p>Bij de melding &quot;de aardlek slaat er steeds uit&quot; zijn de gangbare oorzaken:</p>
+<ol><li><strong>Opgetelde normale lekstromen</strong> - te veel apparatuur achter één aardlek. Elk apparaat</li></ol>
+<p>lekt een beetje; samen komen ze bij de aanspreekwaarde.</p>
+<ol><li><strong>Vocht</strong> - buitenverlichting, tuinaansluiting, kruipruimte, of water in een armatuur.</li><li><strong>Defect apparaat</strong> - een element in een boiler, wasmachine of vaatwasser dat begint</li></ol>
+<p>te lekken naar de behuizing.</p>
+<ol><li><strong>Beschadigde kabel</strong> - een schroef of spijker door een leiding.</li><li><strong>Verkeerd type</strong> - zie hierboven; met een omvormer of laadpaal in de installatie kan</li></ol>
+<p>het type de oorzaak zijn.</p>
+<p>De systematische aanpak van dit zoekproces staat in module 8.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/c3JbmDrWe8Y" title="Een 4-polige aardlekautomaat installeren"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Een 4-polige aardlekautomaat installeren</b></span><span>±12 min · <a href="https://www.youtube.com/watch?v=c3JbmDrWe8Y" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik ken de vier aardlektypes en weet welke waar nodig is</label><label><input type="checkbox" data-vinkje="1"> Ik kan uitleggen hoe een gladde gelijkstroom een type-A aardlek blind maakt</label><label><input type="checkbox" data-vinkje="2"> Ik weet wanneer een RCBO per groep de betere keuze is</label><label><input type="checkbox" data-vinkje="3"> Ik kan de vijf gangbare oorzaken van een afschakelende aardlek opnoemen</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/">← 6.2 Karakteristiek en selectiviteit</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/">6.4 3-fase en de nulgeleider →</a></div></div><div class="src">bron: gemini.md M3 · copilot.md M5 · copilot.md M7 · kimi.md M5</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>De groepenkast van binnen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt de interne opbouw van een groepenkast beschrijven en de weg van een enkele groep volgen. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-groepenkast-van-binnen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="De groepenkast van binnen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt de interne opbouw van een groepenkast beschrijven en de weg van een enkele groep volgen. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-groepenkast-van-binnen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="De groepenkast van binnen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt de interne opbouw van een groepenkast beschrijven en de weg van een enkele groep volgen. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"De groepenkast van binnen","description":"Je kunt de interne opbouw van een groepenkast beschrijven en de weg van een enkele groep volgen.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-groepenkast-van-binnen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner tot gemiddeld","timeRequired":"PT18M","teaches":"Je kunt de interne opbouw van een groepenkast beschrijven en de weg van een enkele groep volgen.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"De Nederlandse woninginstallatie","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 3: De Nederlandse woninginstallatie","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/"},{"@type":"ListItem","position":3,"name":"De groepenkast van binnen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-groepenkast-van-binnen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 3</h5><div class="modname"><a href="/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/" style="text-decoration:none">De Nederlandse woninginstallatie</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/de-keten-van-net-tot-lamp/" class=""><span class="dot"></span><span class="snavtxt">3.1 De keten van net tot lamp</span></a><a href="/cursus-elektrotechniek/les/de-meterkast/" class=""><span class="dot"></span><span class="snavtxt">3.2 De meterkast</span></a><a href="/cursus-elektrotechniek/les/de-groepenkast-van-binnen/" class="on"><span class="dot"></span><span class="snavtxt">3.3 De groepenkast van binnen</span></a><a href="/cursus-elektrotechniek/les/mcb-rcd-en-rcbo-wat-beschermt-wat/" class=""><span class="dot"></span><span class="snavtxt">3.4 MCB, RCD en RCBO: wat beschermt wat</span></a><a href="/cursus-elektrotechniek/les/aarding-en-vereffening/" class=""><span class="dot"></span><span class="snavtxt">3.5 Aarding en vereffening</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/de-groepenkast-van-binnen/#de-weg-die-een-groep-aflegt" data-anker="de-weg-die-een-groep-aflegt"><span class="snavtxt">De weg die één groep aflegt</span></a><a href="/cursus-elektrotechniek/les/de-groepenkast-van-binnen/#de-onderdelen-op-de-rail" data-anker="de-onderdelen-op-de-rail"><span class="snavtxt">De onderdelen op de rail</span></a><a href="/cursus-elektrotechniek/les/de-groepenkast-van-binnen/#wat-je-van-een-kast-kunt-aflezen" data-anker="wat-je-van-een-kast-kunt-aflezen"><span class="snavtxt">Wat je van een kast kunt aflezen</span></a><a href="/cursus-elektrotechniek/les/de-groepenkast-van-binnen/#werken-in-een-bestaande-kast" data-anker="werken-in-een-bestaande-kast"><span class="snavtxt">Werken in een bestaande kast</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/">Module 3</a> › Les 3.3</div><h1>De groepenkast van binnen</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 1 video's</span><span>📊 Beginner tot gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt de interne opbouw van een groepenkast beschrijven en de weg van een enkele groep volgen.</p></div><h2 id="de-weg-die-een-groep-aflegt">De weg die één groep aflegt</h2>
+<p>Volg in gedachten de fase van één stopcontactgroep:</p>
+<ol><li>Vanaf de meter komt de fase op de <strong>hoofdschakelaar</strong>.</li><li>Van de hoofdschakelaar naar de <strong>aardlekschakelaar</strong> van dat blok.</li><li>Van de aardlek via een <strong>kamrail</strong> naar de bovenkant van de <strong>installatieautomaat</strong>.</li><li>Van de onderkant van die automaat vertrekt de <strong>fase van de eindgroep</strong> het huis in.</li></ol>
+<p>De nul loopt een parallelle route: van de meter naar de aardlek, en van de aardlek naar de <strong>nulrail</strong> die bij dat aardlekblok hoort. Van die nulrail vertrekt de nul van de eindgroep.</p>
+<p>De beschermingsleiding gaat rechtstreeks naar de <strong>aardrail</strong> en passeert geen enkele beveiliging. Hij wordt nooit geschakeld en nooit onderbroken.</p>
+<div class="callout gevaar"><h4>Nullen niet door elkaar halen</h4><p>Elke aardlekschakelaar heeft zijn eigen nulrail. Sluit je de nul van een groep aan op de nulrail van een ánder aardlekblok, dan ziet die aardlek een verschil tussen heen- en teruggaande stroom en schakelt hij af - of, bij twee kruislings verwisselde nullen, schakelen ze beide onvoorspelbaar. Dit is een van de meest voorkomende fouten bij het uitbreiden van een bestaande kast.</p></div>
+<h2 id="de-onderdelen-op-de-rail">De onderdelen op de rail</h2>
+<p><strong>DIN-rail</strong> - de metalen strip waarop alle componenten klikken. Standaard 35 mm.</p>
+<p><strong>Kamrail (of aansluitrail)</strong> - de vertande koperen strip die de fase van de aardlek naar meerdere automaten doorverbindt. Netjes ingekort en aan het uiteinde afgedekt, want een uitstekende kamrail in een gevoede kast is een kortsluiting die op een ongelukje wacht.</p>
+<p><strong>Nulrail</strong> - meestal blauw of ongemarkeerd, per aardlekblok gescheiden.</p>
+<p><strong>Aardrail</strong> - geelgroen, één per kast.</p>
+<p><strong>Modules (DIN-eenheden)</strong> - de breedte van componenten wordt uitgedrukt in modules van 17,5 mm. Een enkelpolige automaat is 1 module, een 4-polige aardlek 4 modules. Zo bepaal je of een uitbreiding nog past.</p>
+<h2 id="wat-je-van-een-kast-kunt-aflezen">Wat je van een kast kunt aflezen</h2>
+<p>Met alleen kijken kun je al veel vaststellen:</p>
+<ul><li><strong>Aantal fasen</strong> - één of drie aders naar de hoofdschakelaar.</li><li><strong>Aantal aardlekblokken</strong> en hoeveel groepen er per blok achter hangen.</li><li><strong>Aardlekautomaten</strong> - smalle componenten met zowel een testknop als een</li></ul>
+<p>automaatkarakteristiek: dat zijn RCBO's, één groep per stuk.</p>
+<ul><li><strong>Vrije posities</strong> - hoeveel modules er nog beschikbaar zijn voor uitbreiding.</li><li><strong>Ouderdom</strong> - een kast zonder aardlek, met stoppen of met een keramische</li></ul>
+<p>smeltveiligheid, vertelt je dat de installatie een grondige beoordeling verdient.</p>
+<h2 id="werken-in-een-bestaande-kast">Werken in een bestaande kast</h2>
+<p>Uitbreiden van een bestaande groepenkast is werk waarvoor je de kast spanningsloos maakt volgens de vijf stappen, met de nadrukkelijke kanttekening dat de aanvoer vanaf de meter gevoed blijft. In de praktijk betekent dat: hoofdschakelaar uit, vergrendelen, meten, en boven de hoofdschakelaar niets aanraken.</p>
+<p>Als beginner doe je dit met iemand ernaast. Niet omdat je het niet zou begrijpen, maar omdat de gevolgen van een fout in een groepenkast groter zijn dan waar dan ook in de installatie.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/ocH-caK-reg" title="De groepenkast - alles wat je moet weten"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>De groepenkast - alles wat je moet weten</b></span><span>±15 min · <a href="https://www.youtube.com/watch?v=ocH-caK-reg" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan de route van fase, nul en PE door de kast beschrijven</label><label><input type="checkbox" data-vinkje="1"> Ik weet waarom elke aardlek zijn eigen nulrail heeft</label><label><input type="checkbox" data-vinkje="2"> Ik kan aflezen hoeveel modules er nog vrij zijn in een kast</label><label><input type="checkbox" data-vinkje="3"> Ik heb vijf verschillende groepenkasten bekeken en geanalyseerd</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/de-meterkast/">← 3.2 De meterkast</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/mcb-rcd-en-rcbo-wat-beschermt-wat/">3.4 MCB, RCD en RCBO: wat beschermt wat →</a></div></div><div class="src">bron: chatgpt.md M3 · gemini.md M3 · kimi.md M5</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

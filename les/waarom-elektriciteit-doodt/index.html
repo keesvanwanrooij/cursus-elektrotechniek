@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Waarom elektriciteit doodt | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt uitleggen waarom niet de spanning maar de stroom door je lichaam bepalend is, en welke stroomsterkte welk effect heeft.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Waarom elektriciteit doodt | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt uitleggen waarom niet de spanning maar de stroom door je lichaam bepalend is, en welke stroomsterkte welk effect heeft.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Waarom elektriciteit doodt | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt uitleggen waarom niet de spanning maar de stroom door je lichaam bepalend is, en welke stroomsterkte welk effect heeft.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Waarom elektriciteit doodt","description":"Je kunt uitleggen waarom niet de spanning maar de stroom door je lichaam bepalend is, en welke stroomsterkte welk effect heeft.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Fundamenteel","timeRequired":"PT18M","teaches":"Je kunt uitleggen waarom niet de spanning maar de stroom door je lichaam bepalend is, en welke stroomsterkte welk effect heeft.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Veiligheid & NEN 3140","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/veiligheid-en-nen-3140/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 1: Veiligheid & NEN 3140","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/veiligheid-en-nen-3140/"},{"@type":"ListItem","position":3,"name":"Waarom elektriciteit doodt","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 1</h5><div class="modname"><a href="/cursus-elektrotechniek/module/veiligheid-en-nen-3140/" style="text-decoration:none">Veiligheid &amp; NEN 3140</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/" class="on"><span class="dot"></span><span class="snavtxt">1.1 Waarom elektriciteit doodt</span></a><a href="/cursus-elektrotechniek/les/wetgeving-en-bevoegdheden-wat-mag-jij/" class=""><span class="dot"></span><span class="snavtxt">1.2 Wetgeving en bevoegdheden: wat mag jij?</span></a><a href="/cursus-elektrotechniek/les/de-vijf-stappen-van-veiligstellen/" class=""><span class="dot"></span><span class="snavtxt">1.3 De vijf stappen van veiligstellen</span></a><a href="/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/" class=""><span class="dot"></span><span class="snavtxt">1.4 Spanningsloosheid aantonen: waarom geen multimeter</span></a><a href="/cursus-elektrotechniek/les/pbm-gereedschap-en-risico-op-de-werkplek/" class=""><span class="dot"></span><span class="snavtxt">1.5 PBM, gereedschap en risico op de werkplek</span></a><a href="/cursus-elektrotechniek/les/als-het-toch-misgaat/" class=""><span class="dot"></span><span class="snavtxt">1.6 Als het toch misgaat</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/#niet-de-spanning-doodt-maar-de-stroom-door-je-li" data-anker="niet-de-spanning-doodt-maar-de-stroom-door-je-li"><span class="snavtxt">Niet de spanning doodt, maar de stroom door je lichaam</span></a><a href="/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/#wat-een-stroom-door-het-lichaam-doet" data-anker="wat-een-stroom-door-het-lichaam-doet"><span class="snavtxt">Wat een stroom door het lichaam doet</span></a><a href="/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/#drie-factoren-bepalen-de-afloop" data-anker="drie-factoren-bepalen-de-afloop"><span class="snavtxt">Drie factoren bepalen de afloop</span></a><a href="/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/#waarom-50-hz-wisselstroom-ongunstig-is" data-anker="waarom-50-hz-wisselstroom-ongunstig-is"><span class="snavtxt">Waarom 50 Hz wisselstroom ongunstig is</span></a><a href="/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/#wat-dit-betekent-voor-hoe-je-werkt" data-anker="wat-dit-betekent-voor-hoe-je-werkt"><span class="snavtxt">Wat dit betekent voor hoe je werkt</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/veiligheid-en-nen-3140/">Module 1</a> › Les 1.1</div><h1>Waarom elektriciteit doodt</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 2 video's</span><span>📊 Fundamenteel</span><span class="chip danger">Veiligheidskritisch</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt uitleggen waarom niet de spanning maar de stroom door je lichaam bepalend is, en welke stroomsterkte welk effect heeft.</p></div><h2 id="niet-de-spanning-doodt-maar-de-stroom-door-je-li">Niet de spanning doodt, maar de stroom door je lichaam</h2>
+<p>Een spanning van 230 V klinkt bescheiden naast de 10.000 V van een hoogspanningsnet, en juist daarin zit de onderschatting. Wat een mens beschadigt is niet de spanning zelf maar de <strong>stroom</strong> die door het weefsel loopt, en die volgt gewoon uit de wet van Ohm:</p>
+<p><strong>I = U / R</strong></p>
+<p>Bij een droge, intacte huid kan je lichaamsweerstand oplopen tot 10.000 à 100.000 Ω. Bij een vochtige of bezwete huid, een schaafwondje, of contact via een groot oppervlak zakt die weerstand naar de orde van <strong>1000 Ω</strong>. Dan geldt:</p>
+<p><strong>I = 230 / 1000 = 0,23 A = 230 mA</strong></p>
+<p>Dat is een veelvoud van wat nodig is om het hart te ontregelen.</p>
+<h2 id="wat-een-stroom-door-het-lichaam-doet">Wat een stroom door het lichaam doet</h2>
+<p>De grenswaarden hieronder gelden bij wisselstroom van 50 Hz, de netfrequentie in Nederland, en bij een stroompad dat het hart passeert.</p>
+<table><thead><tr><th>Stroom</th><th>Effect op het lichaam</th></tr></thead><tbody><tr><td>0,5 – 1 mA</td><td>Net waarneembaar, tintelend gevoel</td></tr><tr><td>5 – 10 mA</td><td>Pijnlijk; spieren trekken samen</td></tr><tr><td>10 – 16 mA</td><td>Loslaatgrens: je kunt de geleider niet meer bewust loslaten</td></tr><tr><td>30 mA</td><td>Verkramping van de ademhalingsspieren</td></tr><tr><td>50 mA en meer</td><td>Reële kans op ventrikelfibrilleren: het hart trilt in plaats van pompt</td></tr></tbody></table>
+<p>Ventrikelfibrilleren is de belangrijkste doodsoorzaak bij elektrische ongevallen. Het hart stopt niet netjes, maar verliest zijn coördinatie. Zonder defibrillatie herstelt dat vrijwel nooit vanzelf.</p>
+<div class="callout gevaar"><h4>Waarom een uitgangspunt van &quot;even snel&quot; niet bestaat</h4><p>Bij 230 mA is de marge tot een dodelijk effect geen factor twee, maar een factor vier à vijf overschreden. De vraag is dan niet óf het gevaarlijk is, maar of het stroompad en de duur toevallig gunstig uitvallen. Daar wil je je leven niet van laten afhangen.</p></div>
+<h2 id="drie-factoren-bepalen-de-afloop">Drie factoren bepalen de afloop</h2>
+<p><strong>1. De stroomsterkte</strong> - volgt uit spanning gedeeld door je weerstand op dat moment.</p>
+<p><strong>2. De duur</strong> - hoe langer de stroom loopt, hoe groter de kans dat het hart in de kwetsbare fase van zijn ritme wordt geraakt. Dit is precies waarom een aardlekschakelaar niet alleen op stroomsterkte maar ook op <strong>snelheid</strong> wordt beoordeeld: afschakelen binnen tientallen milliseconden.</p>
+<p><strong>3. Het stroompad</strong> - de route door het lichaam. Hand naar hand en linkerhand naar voeten lopen dwars door de borstkas en zijn daarmee het gevaarlijkst. Hand naar voet aan dezelfde kant, of van vinger naar vinger van één hand, is minder ernstig maar nog steeds ernstig.</p>
+<h2 id="waarom-50-hz-wisselstroom-ongunstig-is">Waarom 50 Hz wisselstroom ongunstig is</h2>
+<p>Wisselstroom van 50 Hz zit ongelukkig genoeg in het frequentiegebied waar het hart het gevoeligst is voor fibrilleren. Daarnaast veroorzaakt wisselstroom een continue spiersamentrekking: de handspieren die de vuist sluiten zijn sterker dan die de vuist openen, waardoor je een geleider vastgrijpt in plaats van loslaat. Dat verklaart de loslaatgrens van 10 à 16 mA in de tabel hierboven.</p>
+<details><summary>Waarom werken vakmensen waar mogelijk met één hand?</summary><p>Door één hand in je zak of achter je rug te houden, voorkom je dat je lichaam een pad van hand naar hand vormt. Zonder dat pad loopt een eventuele stroom niet dwars door de borstkas. Het is geen vervanging voor spanningsloos werken, maar het is een gewoonte die het verschil kan maken op het moment dat er tóch onverwacht spanning staat.</p></details>
+<h2 id="wat-dit-betekent-voor-hoe-je-werkt">Wat dit betekent voor hoe je werkt</h2>
+<p>Bijna elk dodelijk ongeval in deze categorie begint niet met onwetendheid maar met een <strong>aanname</strong>: de groep zou uit staan, dit zou de juiste kabel zijn, hier stond gisteren ook geen spanning. De rest van deze module gaat over het systematisch uitsluiten van die aannames.</p>
+<p>Verder is er praktisch gedrag dat de kans op een ongunstige afloop verkleint: ringen, horloges en armbanden af, droge handen en droog schoeisel, en niet op een metalen ladder werken aan iets wat spanning kan voeren.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/GhS2xYbYRhA" title="Safety Precautions For Electrical Safety (TECH EHS)"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> <b>Safety Precautions For Electrical Safety (TECH EHS)</b></span><span>±10 min · <a href="https://www.youtube.com/watch?v=GhS2xYbYRhA" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/cUCp_mGzJF4" title="Complete Electrical Safety (HSE Study Guide)"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> <b>Complete Electrical Safety (HSE Study Guide)</b></span><span>±20 min · <a href="https://www.youtube.com/watch?v=cUCp_mGzJF4" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan uitleggen waarom 230 V bij 1000 Ω lichaamsweerstand ongeveer 230 mA oplevert</label><label><input type="checkbox" data-vinkje="1"> Ik weet bij welke stroomsterkte de loslaatgrens ligt en wat dat betekent</label><label><input type="checkbox" data-vinkje="2"> Ik kan de drie factoren noemen die de ernst van een schok bepalen</label><label><input type="checkbox" data-vinkje="3"> Ik draag geen ring of horloge meer tijdens elektrisch werk</label></div><div class="footnav"><span></span><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/wetgeving-en-bevoegdheden-wat-mag-jij/">1.2 Wetgeving en bevoegdheden: wat mag jij? →</a></div></div><div class="src">bron: gemini.md M1 · kimi.md M1 · chatgpt.md M1 · grok.md M1</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

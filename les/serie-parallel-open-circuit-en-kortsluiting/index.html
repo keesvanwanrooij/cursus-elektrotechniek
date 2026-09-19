@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Serie, parallel, open circuit en kortsluiting | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt serie- en parallelschakelingen doorrekenen en het verschil tussen overbelasting en kortsluiting uitleggen. Gratis les uit de cursus elektrotechniek…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Serie, parallel, open circuit en kortsluiting | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt serie- en parallelschakelingen doorrekenen en het verschil tussen overbelasting en kortsluiting uitleggen. Gratis les uit de cursus elektrotechniek…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Serie, parallel, open circuit en kortsluiting | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt serie- en parallelschakelingen doorrekenen en het verschil tussen overbelasting en kortsluiting uitleggen. Gratis les uit de cursus elektrotechniek…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Serie, parallel, open circuit en kortsluiting","description":"Je kunt serie- en parallelschakelingen doorrekenen en het verschil tussen overbelasting en kortsluiting uitleggen.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner","timeRequired":"PT20M","teaches":"Je kunt serie- en parallelschakelingen doorrekenen en het verschil tussen overbelasting en kortsluiting uitleggen.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Grondbeginselen elektriciteit","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 2: Grondbeginselen elektriciteit","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/"},{"@type":"ListItem","position":3,"name":"Serie, parallel, open circuit en kortsluiting","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 2</h5><div class="modname"><a href="/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/" style="text-decoration:none">Grondbeginselen elektriciteit</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/" class=""><span class="dot"></span><span class="snavtxt">2.1 Spanning, stroom en weerstand</span></a><a href="/cursus-elektrotechniek/les/vermogen-energie-en-rekenen-op-230-v/" class=""><span class="dot"></span><span class="snavtxt">2.2 Vermogen, energie en rekenen op 230 V</span></a><a href="/cursus-elektrotechniek/les/wisselstroom-sinus-50-hz-en-effectieve-waarde/" class=""><span class="dot"></span><span class="snavtxt">2.3 Wisselstroom: sinus, 50 Hz en effectieve waarde</span></a><a href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/" class="on"><span class="dot"></span><span class="snavtxt">2.4 Serie, parallel, open circuit en kortsluiting</span></a><a href="/cursus-elektrotechniek/les/1-fase-en-3-fase/" class=""><span class="dot"></span><span class="snavtxt">2.5 1-fase en 3-fase</span></a><a href="/cursus-elektrotechniek/les/van-vermogen-naar-groep-en-beveiliging/" class=""><span class="dot"></span><span class="snavtxt">2.6 Van vermogen naar groep en beveiliging</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/#serieschakeling" data-anker="serieschakeling"><span class="snavtxt">Serieschakeling</span></a><a href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/#parallelschakeling" data-anker="parallelschakeling"><span class="snavtxt">Parallelschakeling</span></a><a href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/#vier-toestanden-die-je-uit-elkaar-moet-houden" data-anker="vier-toestanden-die-je-uit-elkaar-moet-houden"><span class="snavtxt">Vier toestanden die je uit elkaar moet houden</span></a><a href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/#de-aardlek-hoort-in-dit-rijtje-niet-thuis" data-anker="de-aardlek-hoort-in-dit-rijtje-niet-thuis"><span class="snavtxt">De aardlek hoort in dit rijtje niet thuis</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/">Module 2</a> › Les 2.4</div><h1>Serie, parallel, open circuit en kortsluiting</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 1 video's</span><span>📊 Beginner</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt serie- en parallelschakelingen doorrekenen en het verschil tussen overbelasting en kortsluiting uitleggen.</p></div><h2 id="serieschakeling">Serieschakeling</h2>
+<p>Bij een serieschakeling loopt door alle componenten <strong>dezelfde stroom</strong>, en verdeelt de spanning zich over de componenten naar rato van hun weerstand.</p>
+<p><strong>R totaal = R1 + R2 + R3 …</strong></p>
+<p>Kenmerk: onderbreek je één component, dan valt de hele keten stil. Oude kerstverlichting werkte zo, en het is ook precies wat er gebeurt als er een onderbreking in je circuit zit.</p>
+<h2 id="parallelschakeling">Parallelschakeling</h2>
+<p>Bij een parallelschakeling staat over alle componenten <strong>dezelfde spanning</strong>, en verdeelt de stroom zich over de takken.</p>
+<p><strong>1 / R totaal = 1/R1 + 1/R2 + 1/R3 …</strong></p>
+<p>De totale weerstand is dus altijd kleiner dan de kleinste tak. Elke verbruiker die je erbij zet, verlaagt de totale weerstand en verhoogt de totale stroom.</p>
+<p>Zo is een woninginstallatie opgebouwd: alle stopcontacten van een groep staan parallel, allemaal op 230 V, en elk apparaat trekt de stroom die het nodig heeft. Daarom werkt de tweede lamp gewoon door als de eerste kapotgaat.</p>
+<div class="callout kern"><h4>Wat je in de praktijk ziet</h4><p>Verbruikers staan parallel. Schakelaars, zekeringen en beveiligingen staan in serie met wat ze bedienen of beschermen - anders zouden ze niets kunnen onderbreken.</p></div>
+<h2 id="vier-toestanden-die-je-uit-elkaar-moet-houden">Vier toestanden die je uit elkaar moet houden</h2>
+<p><strong>Normaal bedrijf</strong> - de belasting trekt de stroom waarvoor het circuit is ontworpen.</p>
+<p><strong>Open circuit (onderbreking)</strong> - de keten is verbroken, de weerstand is oneindig, er loopt geen stroom. Er kán wel gewoon spanning staan tot aan de onderbreking. Symptoom: het werkt niet, maar de automaat blijft ingeschakeld.</p>
+<p><strong>Overbelasting</strong> - er is te veel aangesloten, of een apparaat is defect en trekt meer dan het hoort. De stroom is bijvoorbeeld 20 A op een 16 A-groep: te hoog om lang vol te houden, maar niet extreem. De automaat schakelt af op het <strong>thermische</strong> deel, na seconden tot minuten.</p>
+<p><strong>Kortsluiting</strong> - fase raakt nul of fase raakt PE, vrijwel zonder weerstand ertussen. De stroom loopt op tot honderden of duizenden ampères. De automaat schakelt af op het <strong>magnetische</strong> deel, binnen milliseconden.</p>
+<table><thead><tr><th></th><th>Stroom</th><th>Afschakeling</th><th>Typische oorzaak</th></tr></thead><tbody><tr><td>Overbelasting</td><td>Iets te hoog</td><td>Traag, thermisch</td><td>Te veel apparaten, defecte motor</td></tr><tr><td>Kortsluiting</td><td>Extreem hoog</td><td>Direct, magnetisch</td><td>Draad geraakt bij boren, verkeerde aansluiting, waterinsluiting</td></tr></tbody></table>
+<p>Dat een installatieautomaat twee verschillende mechanismen heeft, is precies om beide situaties te kunnen onderscheiden. Module 6 gaat daar dieper op in.</p>
+<h2 id="de-aardlek-hoort-in-dit-rijtje-niet-thuis">De aardlek hoort in dit rijtje niet thuis</h2>
+<p>Een aardlekschakelaar reageert op geen van bovenstaande. Hij vergelijkt de stroom die via de fase de installatie ingaat met de stroom die via de nul terugkomt. Zijn die niet gelijk, dan verdwijnt er ergens stroom naar aarde - bijvoorbeeld door een mens heen. Bij een verschil van ongeveer 30 mA schakelt hij af.</p>
+<p>Een aardlek beschermt dus <strong>mensen tegen aanraking</strong>, en een automaat beschermt de <strong>leiding tegen te hoge stroom</strong>. Wie die twee door elkaar haalt, begrijpt de groepenkast niet.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/syaGf_XUMxA" title="Electrical Wiring Basics"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> <b>Electrical Wiring Basics</b></span><span>±20 min · <a href="https://www.youtube.com/watch?v=syaGf_XUMxA" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan uitleggen waarom verbruikers parallel staan en beveiligingen in serie</label><label><input type="checkbox" data-vinkje="1"> Ik kan overbelasting en kortsluiting uit elkaar houden aan de hand van afschakeltijd</label><label><input type="checkbox" data-vinkje="2"> Ik weet dat een aardlekschakelaar op iets heel anders reageert dan een automaat</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/wisselstroom-sinus-50-hz-en-effectieve-waarde/">← 2.3 Wisselstroom: sinus, 50 Hz en effectieve waarde</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/1-fase-en-3-fase/">2.5 1-fase en 3-fase →</a></div></div><div class="src">bron: chatgpt.md M2 · kimi.md M2 · deekseek.md M1</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

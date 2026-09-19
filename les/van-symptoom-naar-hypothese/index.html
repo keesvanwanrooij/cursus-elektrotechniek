@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Van symptoom naar hypothese | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt een vage klacht omzetten in een toetsbare hypothese en die gericht onderzoeken. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Van symptoom naar hypothese | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt een vage klacht omzetten in een toetsbare hypothese en die gericht onderzoeken. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Van symptoom naar hypothese | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt een vage klacht omzetten in een toetsbare hypothese en die gericht onderzoeken. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Van symptoom naar hypothese","description":"Je kunt een vage klacht omzetten in een toetsbare hypothese en die gericht onderzoeken.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT18M","teaches":"Je kunt een vage klacht omzetten in een toetsbare hypothese en die gericht onderzoeken.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Storingzoeken en oplevering","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 8: Storingzoeken en oplevering","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/"},{"@type":"ListItem","position":3,"name":"Van symptoom naar hypothese","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 8</h5><div class="modname"><a href="/cursus-elektrotechniek/module/storingzoeken-en-oplevering/" style="text-decoration:none">Storingzoeken en oplevering</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/het-negenstappenmodel/" class=""><span class="dot"></span><span class="snavtxt">8.1 Het negenstappenmodel</span></a><a href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/" class="on"><span class="dot"></span><span class="snavtxt">8.2 Van symptoom naar hypothese</span></a><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/" class=""><span class="dot"></span><span class="snavtxt">8.3 De klassieke storingen</span></a><a href="/cursus-elektrotechniek/les/een-aardlekstoring-lokaliseren/" class=""><span class="dot"></span><span class="snavtxt">8.4 Een aardlekstoring lokaliseren</span></a><a href="/cursus-elektrotechniek/les/afronden-controleren-en-uitleggen/" class=""><span class="dot"></span><span class="snavtxt">8.5 Afronden, controleren en uitleggen</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/#wat-een-klacht-wel-en-niet-vertelt" data-anker="wat-een-klacht-wel-en-niet-vertelt"><span class="snavtxt">Wat een klacht wel en niet vertelt</span></a><a href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/#doorvragen-bij-de-klant" data-anker="doorvragen-bij-de-klant"><span class="snavtxt">Doorvragen bij de klant</span></a><a href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/#van-hypothese-naar-meting" data-anker="van-hypothese-naar-meting"><span class="snavtxt">Van hypothese naar meting</span></a><a href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/#waarom-niet-meteen-vervangen" data-anker="waarom-niet-meteen-vervangen"><span class="snavtxt">Waarom niet meteen vervangen</span></a><a href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/#documenteer-wat-je-vindt" data-anker="documenteer-wat-je-vindt"><span class="snavtxt">Documenteer wat je vindt</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/storingzoeken-en-oplevering/">Module 8</a> › Les 8.2</div><h1>Van symptoom naar hypothese</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt een vage klacht omzetten in een toetsbare hypothese en die gericht onderzoeken.</p></div><h2 id="wat-een-klacht-wel-en-niet-vertelt">Wat een klacht wel en niet vertelt</h2>
+<p>&quot;De lamp doet het niet&quot; laat minstens negen oorzaken open:</p>
+<ul><li>geen voeding op de groep;</li><li>automaat afgeschakeld;</li><li>aardlek aangesproken;</li><li>schakelaar defect;</li><li>fase onderbroken;</li><li>nul onderbroken;</li><li>lamp defect;</li><li>verbinding los;</li><li>bedrading verkeerd na een eerdere ingreep.</li></ul>
+<p>Elk daarvan geeft een ander meetresultaat. Het doel van je eerste twee metingen is niet het vinden van de oorzaak, maar het schrappen van de helft van deze lijst.</p>
+<h2 id="doorvragen-bij-de-klant">Doorvragen bij de klant</h2>
+<p>De klant heeft informatie die je nergens kunt meten. Vraag altijd:</p>
+<ul><li><strong>Sinds wanneer?</strong> Een storing die gisteren begon heeft vaak een aanwijsbare oorzaak.</li><li><strong>Wat is er veranderd?</strong> Nieuw apparaat, verbouwing, schilder geweest, iets opgehangen,</li></ul>
+<p>onweer gehad, lekkage?</p>
+<ul><li><strong>Gebeurt het altijd of soms?</strong> Intermitterende storingen wijzen op vocht, temperatuur</li></ul>
+<p>of een marginale verbinding.</p>
+<ul><li><strong>Hangt het samen met iets?</strong> Alleen als de wasmachine draait, alleen 's ochtends,</li></ul>
+<p>alleen bij regen?</p>
+<ul><li><strong>Wat is er al geprobeerd?</strong> Voorkomt dat je hetzelfde nog eens doet, en verklaart soms</li></ul>
+<p>waarom de installatie er nu anders uitziet dan bedoeld.</p>
+<div class="callout kern"><h4>Intermitterend is informatie</h4><p>&quot;Het gebeurt maar af en toe&quot; is geen tegenslag maar een aanwijzing. Vocht (regen, douchen), temperatuur (opwarmen van een verbinding), belasting (alleen bij zware apparaten) en trilling zijn de vier gangbare variabelen. Vraag door tot je weet welke het is.</p></div>
+<h2 id="van-hypothese-naar-meting">Van hypothese naar meting</h2>
+<p>Een goede hypothese is toetsbaar en sluit iets uit:</p>
+<table><thead><tr><th>Hypothese</th><th>Meting</th><th>Wat een bevestiging betekent</th></tr></thead><tbody><tr><td>De fase komt niet tot de doos</td><td>Spanning L–N in de doos</td><td>Zoek stroomopwaarts richting de kast</td></tr><tr><td>De nul is onderbroken</td><td>Spanning L–N laag, L–PE normaal</td><td>Nulzijde onderzoeken</td></tr><tr><td>De schakelaar schakelt niet door</td><td>Doorbellen, spanningsloos</td><td>Schakelaar of bedrading ernaartoe</td></tr><tr><td>Het armatuur is defect</td><td>Armatuur op een bekende werkende voeding</td><td>Vervangen, en vaststellen waarom</td></tr></tbody></table>
+<p>De sleutel is dat je vooraf weet wat je gaat concluderen bij beide uitkomsten. Weet je dat niet, dan is de meting niet zinvol.</p>
+<h2 id="waarom-niet-meteen-vervangen">Waarom niet meteen vervangen</h2>
+<p>Een onderdeel vervangen dat toevallig ook stuk was, lost de storing niet op en kost je het overzicht. Erger: vervangen zonder de oorzaak te kennen betekent dat het nieuwe onderdeel om dezelfde reden opnieuw defect raakt.</p>
+<p>Een doorgebrande lamp is soms gewoon een doorgebrande lamp. Maar de derde lamp in hetzelfde armatuur binnen een jaar is een symptoom van iets anders: een slechte verbinding, een te hoge spanning, of een armatuur dat zijn warmte niet kwijt kan.</p>
+<h2 id="documenteer-wat-je-vindt">Documenteer wat je vindt</h2>
+<p>Noteer per storing: <strong>symptoom → onderzoek → oorzaak → meting → reparatie → les</strong>. Na honderd storingen heb je een eigen naslagwerk dat in geen enkel boek staat, en herken je patronen sneller dan iemand die twee jaar langer in het vak zit maar niets heeft bijgehouden.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/feeo1WUGyWQ" title="Fault Finding - The Real World Way for Electricians"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> <b>Fault Finding - The Real World Way for Electricians</b></span><span>±18 min · <a href="https://www.youtube.com/watch?v=feeo1WUGyWQ" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik vraag altijd door bij de klant voordat ik ga meten</label><label><input type="checkbox" data-vinkje="1"> Ik formuleer een toetsbare hypothese voor elke meting</label><label><input type="checkbox" data-vinkje="2"> Ik vervang geen onderdelen zonder de oorzaak te kennen</label><label><input type="checkbox" data-vinkje="3"> Ik houd een logboek bij van symptoom, oorzaak en les</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/het-negenstappenmodel/">← 8.1 Het negenstappenmodel</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/de-klassieke-storingen/">8.3 De klassieke storingen →</a></div></div><div class="src">bron: chatgpt.md M8 · deekseek.md M5 · grok.md M6</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

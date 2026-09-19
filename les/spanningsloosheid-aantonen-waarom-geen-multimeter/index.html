@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Spanningsloosheid aantonen: waarom geen multimeter | Cursus elektrotechniek</title>
+<meta name="description" content="Je begrijpt wat blindspanning is en waarom uitsluitend een tweepolige spanningstester geschikt is om spanningsloosheid aan te tonen.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spanningsloosheid aantonen: waarom geen multimeter | Cursus elektrotechniek">
+<meta property="og:description" content="Je begrijpt wat blindspanning is en waarom uitsluitend een tweepolige spanningstester geschikt is om spanningsloosheid aan te tonen.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spanningsloosheid aantonen: waarom geen multimeter | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je begrijpt wat blindspanning is en waarom uitsluitend een tweepolige spanningstester geschikt is om spanningsloosheid aan te tonen.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Spanningsloosheid aantonen: waarom geen multimeter","description":"Je begrijpt wat blindspanning is en waarom uitsluitend een tweepolige spanningstester geschikt is om spanningsloosheid aan te tonen.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Fundamenteel","timeRequired":"PT20M","teaches":"Je begrijpt wat blindspanning is en waarom uitsluitend een tweepolige spanningstester geschikt is om spanningsloosheid aan te tonen.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Veiligheid & NEN 3140","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/veiligheid-en-nen-3140/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 1: Veiligheid & NEN 3140","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/veiligheid-en-nen-3140/"},{"@type":"ListItem","position":3,"name":"Spanningsloosheid aantonen: waarom geen multimeter","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 1</h5><div class="modname"><a href="/cursus-elektrotechniek/module/veiligheid-en-nen-3140/" style="text-decoration:none">Veiligheid &amp; NEN 3140</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/" class=""><span class="dot"></span><span class="snavtxt">1.1 Waarom elektriciteit doodt</span></a><a href="/cursus-elektrotechniek/les/wetgeving-en-bevoegdheden-wat-mag-jij/" class=""><span class="dot"></span><span class="snavtxt">1.2 Wetgeving en bevoegdheden: wat mag jij?</span></a><a href="/cursus-elektrotechniek/les/de-vijf-stappen-van-veiligstellen/" class=""><span class="dot"></span><span class="snavtxt">1.3 De vijf stappen van veiligstellen</span></a><a href="/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/" class="on"><span class="dot"></span><span class="snavtxt">1.4 Spanningsloosheid aantonen: waarom geen multimeter</span></a><a href="/cursus-elektrotechniek/les/pbm-gereedschap-en-risico-op-de-werkplek/" class=""><span class="dot"></span><span class="snavtxt">1.5 PBM, gereedschap en risico op de werkplek</span></a><a href="/cursus-elektrotechniek/les/als-het-toch-misgaat/" class=""><span class="dot"></span><span class="snavtxt">1.6 Als het toch misgaat</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/#het-instrument-bepaalt-of-je-conclusie-klopt" data-anker="het-instrument-bepaalt-of-je-conclusie-klopt"><span class="snavtxt">Het instrument bepaalt of je conclusie klopt</span></a><a href="/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/#blindspanning-de-spanning-die-er-niet-echt-is" data-anker="blindspanning-de-spanning-die-er-niet-echt-is"><span class="snavtxt">Blindspanning: de spanning die er niet echt is</span></a><a href="/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/#wat-de-tweepolige-tester-anders-doet" data-anker="wat-de-tweepolige-tester-anders-doet"><span class="snavtxt">Wat de tweepolige tester anders doet</span></a><a href="/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/#praktische-eigenschappen-die-ertoe-doen" data-anker="praktische-eigenschappen-die-ertoe-doen"><span class="snavtxt">Praktische eigenschappen die ertoe doen</span></a><a href="/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/#wat-een-eenpolige-spanningzoeker-wel-is" data-anker="wat-een-eenpolige-spanningzoeker-wel-is"><span class="snavtxt">Wat een eenpolige spanningzoeker wél is</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/veiligheid-en-nen-3140/">Module 1</a> › Les 1.4</div><h1>Spanningsloosheid aantonen: waarom geen multimeter</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 2 video's</span><span>📊 Fundamenteel</span><span class="chip danger">Veiligheidskritisch</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je begrijpt wat blindspanning is en waarom uitsluitend een tweepolige spanningstester geschikt is om spanningsloosheid aan te tonen.</p></div><h2 id="het-instrument-bepaalt-of-je-conclusie-klopt">Het instrument bepaalt of je conclusie klopt</h2>
+<p>Bepaling 6.2.4 van NEN 3140 staat voor het aantonen van spanningsloosheid uitsluitend een <strong>tweepolige spanningstester</strong> volgens NEN-EN-IEC 61243-3 toe. Een gewone digitale multimeter en zeker een eenpolige spanningzoeker (de schroevendraaier met lampje) zijn hiervoor verboden. Dat is geen bureaucratie, maar volgt uit hoe de instrumenten elektrisch werken.</p>
+<h2 id="blindspanning-de-spanning-die-er-niet-echt-is">Blindspanning: de spanning die er niet echt is</h2>
+<p>Een moderne multimeter heeft een zeer hoge ingangsimpedantie, vaak 10 MΩ of meer. Hij trekt dus vrijwel geen stroom uit het circuit dat hij meet. Dat is precies wat je wilt bij het meten van een elektronische schakeling, en precies wat je niet wilt bij een installatiekabel.</p>
+<p>In een kabelgoot lopen aders vlak naast elkaar. Tussen een spanningvoerende ader en een spanningsloze ader ontstaat daardoor een kleine <strong>capaciteit</strong>, en via die capaciteit &quot;lekt&quot; wisselspanning over op de spanningsloze ader. Het resultaat heet blindspanning of fantoomspanning: je multimeter meet bijvoorbeeld 80 V of zelfs 200 V op een kabel die in werkelijkheid nauwelijks energie kan leveren.</p>
+<p>Dat is verwarrend, maar het levensgevaarlijke scenario is het omgekeerde: je went aan &quot;die 90 V is vast weer fantoomspanning&quot; en negeert op een dag een meting die wél echt is.</p>
+<h2 id="wat-de-tweepolige-tester-anders-doet">Wat de tweepolige tester anders doet</h2>
+<p>Een tweepolige spanningstester heeft een veel lagere interne weerstand en belast het circuit dus bewust. Betere modellen hebben daarnaast drukknoppen voor <strong>lastinschakeling</strong>: door ze in te drukken verlaag je de interne weerstand nog verder.</p>
+<p>Het effect is beslissend:</p>
+<ul><li>een capacitieve blindspanning heeft nauwelijks energie en **stort onder belasting</li></ul>
+<p>onmiddellijk in** naar bijna nul;</p>
+<ul><li>een echte netspanning levert moeiteloos die stroom en blijft gewoon staan.</li></ul>
+<p>Zo geeft het instrument je een eenduidig antwoord op de enige vraag die telt: kan hier gevaarlijke energie vrijkomen?</p>
+<div class="callout kern"><h4>De vraag vóór de meting</h4><p>Formuleer altijd eerst wat je wilt bewijzen. &quot;Ik wil bewijzen dat hier geen gevaarlijke spanning aanwezig is&quot; leidt tot een tweepolige tester. &quot;Ik wil weten waar in dit circuit de spanning verdwijnt&quot; leidt tot een multimeter. Beginnen met meten zonder die vraag is gokken met een instrument in je hand.</p></div>
+<h2 id="praktische-eigenschappen-die-ertoe-doen">Praktische eigenschappen die ertoe doen</h2>
+<ul><li><strong>Voor- en nacontrole</strong> op een bekend spanningvoerend punt, elke keer opnieuw.</li><li><strong>Trilalarm en akoestisch signaal</strong>, zodat je de waarschuwing ook krijgt in een</li></ul>
+<p>donkere kruipruimte of een lawaaiige bouwplaats.</p>
+<ul><li><strong>Meetcategorie</strong>: voor werk aan een vaste installatie heb je minimaal CAT III nodig,</li></ul>
+<p>in de meterkast bij voorkeur CAT IV. Die categorie zegt hoeveel spanningspiek het instrument kan verdragen zonder in je hand te exploderen.</p>
+<ul><li><strong>Beide polen tegelijk</strong>: je meet altijd tussen twee punten, nooit tussen één punt en</li></ul>
+<p>je eigen gevoel voor aarde.</p>
+<h2 id="wat-een-eenpolige-spanningzoeker-wel-is">Wat een eenpolige spanningzoeker wél is</h2>
+<p>Een indicatiemiddel, meer niet. Hij werkt door een minieme stroom door jouw lichaam naar aarde te laten lopen, is afhankelijk van je schoeisel en de vloer, en geeft geen betrouwbaar antwoord bij PV-installaties, bij onderbroken nul of achter een scheidingstransformator. Voor het aantonen van spanningsloosheid is hij ongeschikt, punt.</p>
+<details><summary>Mag ik met een multimeter dan helemaal niet aan een installatie meten?</summary><p>Jawel, en dat doe je ook voortdurend - maar voor andere vragen. Een multimeter is uitstekend voor het opsporen van waar spanning verdwijnt, het meten van weerstandswaarden en het doorbellen van geleiders. Alleen de conclusie &quot;hier is het veilig om aan te werken&quot; mag je er niet op baseren. Module 7 gaat hier uitgebreid op door.</p></details><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/EcDTpr1J--E" title="How to Verify a De-energized State with a Two-Pole Voltage Tester"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> <b>How to Verify a De-energized State with a Two-Pole Voltage Tester</b></span><span>±7 min · <a href="https://www.youtube.com/watch?v=EcDTpr1J--E" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/lkp09GUTEvE" title="Benning digitale Duspol - tweepolige spanningstester"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Benning digitale Duspol - tweepolige spanningstester</b></span><span>±9 min · <a href="https://www.youtube.com/watch?v=lkp09GUTEvE" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan uitleggen hoe blindspanning ontstaat</label><label><input type="checkbox" data-vinkje="1"> Ik weet waarom lastinschakeling het onderscheid maakt tussen echt en schijn</label><label><input type="checkbox" data-vinkje="2"> Ik weet welke meetcategorie ik nodig heb voor werk in de meterkast</label><label><input type="checkbox" data-vinkje="3"> Ik heb een tweepolige spanningstester tot mijn beschikking of weet welke ik ga aanschaffen</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/de-vijf-stappen-van-veiligstellen/">← 1.3 De vijf stappen van veiligstellen</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/pbm-gereedschap-en-risico-op-de-werkplek/">1.5 PBM, gereedschap en risico op de werkplek →</a></div></div><div class="src">bron: gemini.md M2 · chatgpt.md §1.3 · grok.md M2</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

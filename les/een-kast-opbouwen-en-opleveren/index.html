@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Een kast opbouwen en opleveren | Cursus elektrotechniek</title>
+<meta name="description" content="Je kent de volgorde en de kwaliteitseisen bij het bouwen van een verdeelinrichting, als observator en toekomstig uitvoerder.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Een kast opbouwen en opleveren | Cursus elektrotechniek">
+<meta property="og:description" content="Je kent de volgorde en de kwaliteitseisen bij het bouwen van een verdeelinrichting, als observator en toekomstig uitvoerder.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Een kast opbouwen en opleveren | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kent de volgorde en de kwaliteitseisen bij het bouwen van een verdeelinrichting, als observator en toekomstig uitvoerder.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Een kast opbouwen en opleveren","description":"Je kent de volgorde en de kwaliteitseisen bij het bouwen van een verdeelinrichting, als observator en toekomstig uitvoerder.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je kent de volgorde en de kwaliteitseisen bij het bouwen van een verdeelinrichting, als observator en toekomstig uitvoerder.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Groepenkast: ontwerp en montage","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 6: Groepenkast: ontwerp en montage","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"},{"@type":"ListItem","position":3,"name":"Een kast opbouwen en opleveren","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 6</h5><div class="modname"><a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/" style="text-decoration:none">Groepenkast: ontwerp en montage</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/" class=""><span class="dot"></span><span class="snavtxt">6.1 Groepsindeling ontwerpen</span></a><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/" class=""><span class="dot"></span><span class="snavtxt">6.2 Karakteristiek en selectiviteit</span></a><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/" class=""><span class="dot"></span><span class="snavtxt">6.3 Aardlekarchitectuur en aardlektypes</span></a><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/" class=""><span class="dot"></span><span class="snavtxt">6.4 3-fase en de nulgeleider</span></a><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/" class="on"><span class="dot"></span><span class="snavtxt">6.5 Een kast opbouwen en opleveren</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/#kijk-deze-module-eerst-als-observator" data-anker="kijk-deze-module-eerst-als-observator"><span class="snavtxt">Kijk deze module eerst als observator</span></a><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/#de-volgorde" data-anker="de-volgorde"><span class="snavtxt">De volgorde</span></a><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/#kwaliteitspunten-die-een-vakman-herkent" data-anker="kwaliteitspunten-die-een-vakman-herkent"><span class="snavtxt">Kwaliteitspunten die een vakman herkent</span></a><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/#wat-je-vastlegt-bij-oplevering" data-anker="wat-je-vastlegt-bij-oplevering"><span class="snavtxt">Wat je vastlegt bij oplevering</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/">Module 6</a> › Les 6.5</div><h1>Een kast opbouwen en opleveren</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 2 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kent de volgorde en de kwaliteitseisen bij het bouwen van een verdeelinrichting, als observator en toekomstig uitvoerder.</p></div><h2 id="kijk-deze-module-eerst-als-observator">Kijk deze module eerst als observator</h2>
+<p>Een groepenkast vervangen is geen werk waarmee je als beginner zelfstandig begint. Het raakt de voeding van de hele woning, er blijft een permanent gevoed deel over, en een fout heeft gevolgen voor elke groep tegelijk.</p>
+<p>Bekijk de video's met de vraag &quot;in welke volgorde werkt deze monteur en waarom&quot;, niet met de vraag &quot;kan ik dit nu ook&quot;.</p>
+<h2 id="de-volgorde">De volgorde</h2>
+<ol><li><strong>Inventariseren</strong> - bestaande groepen documenteren, aansluitwaarde vaststellen,</li></ol>
+<p>3-fase of 1-fase, wat er aan bijzondere verbruikers hangt (PV, laadpaal, warmtepomp).</p>
+<ol><li><strong>Ontwerpen</strong> - groepsindeling, aardlekblokken, types, faseverdeling, benodigde</li></ol>
+<p>modules. Hier hoort het schema bij dat straks in de kast komt.</p>
+<ol><li><strong>Voorbereiden</strong> - materiaal compleet, kast voorbedraden waar mogelijk, labels maken.</li><li><strong>Veiligstellen</strong> - de vijf stappen, met bewustzijn dat boven de hoofdschakelaar</li></ol>
+<p>spanning blijft staan.</p>
+<ol><li><strong>Demonteren en monteren</strong> - bestaande groepen gecontroleerd loskoppelen en</li></ol>
+<p>labelen vóór je iets weghaalt.</p>
+<ol><li><strong>Aansluiten</strong> - kamrails op maat, aders op lengte, aanhaalmomenten volgens fabrikant.</li><li><strong>Controleren</strong> - visueel, continuïteit, isolatieweerstand, polariteit.</li><li><strong>Inschakelen en testen</strong> - groep voor groep, met de aardlektest.</li><li><strong>Opleveren</strong> - schema in de kast, labeling, meetgegevens vastleggen, klant uitleggen.</li></ol>
+<h2 id="kwaliteitspunten-die-een-vakman-herkent">Kwaliteitspunten die een vakman herkent</h2>
+<ul><li><strong>Aders op lengte</strong>, met een kleine reservelus; niet strak getrokken en niet in</li></ul>
+<p>bossen overtollig draad.</p>
+<ul><li><strong>Kamrail op maat geknipt</strong> en de open uiteinden afgedekt.</li><li><strong>Aanhaalmomenten</strong> volgens de fabrikantopgave, en na verloop van tijd nagelopen bij</li></ul>
+<p>de zwaardere verbindingen.</p>
+<ul><li><strong>Nullen bij de juiste aardlek</strong>, gecontroleerd en niet aangenomen.</li><li><strong>Labeling</strong> die overeenkomt met de werkelijkheid, in leesbaar handschrift of gedrukt.</li><li><strong>Schema in de kast</strong>, met de faseverdeling erbij.</li><li><strong>Werkruimte</strong>: de kast moet later te openen zijn zonder dat er iets voor staat.</li></ul>
+<div class="callout kern"><h4>Wat oplevering betekent</h4><p>Een kast is niet af als hij werkt. Hij is af als een volgende monteur binnen vijf minuten kan zien wat waar zit, welke groep welke fase heeft en welke metingen er zijn gedaan. Dat is het punt waarop je werk overdraagbaar is - en overdraagbaarheid is de definitie van professioneel werk.</p></div>
+<h2 id="wat-je-vastlegt-bij-oplevering">Wat je vastlegt bij oplevering</h2>
+<ul><li>de gemeten isolatieweerstand per groep;</li><li>de gecontroleerde doorverbinding van de beschermingsleiding;</li><li>de uitgevoerde aardlektest;</li><li>de groepsindeling en faseverdeling;</li><li>datum, en wie het werk heeft uitgevoerd.</li></ul>
+<p>Dat document is niet alleen voor de klant. Het is jouw bewijs van wat je hebt aangetroffen en achtergelaten, en dat is bij discussies over schade of latere storingen het enige wat telt.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/SMUWcWRnJ9Y" title="Groepenkast vervangen (ABB groepenkast)"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Groepenkast vervangen (ABB groepenkast)</b></span><span>±25 min · <a href="https://www.youtube.com/watch?v=SMUWcWRnJ9Y" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/2fadiZPEkhM" title="Groepenkast generator tutorial (Elektramat)"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Groepenkast generator tutorial (Elektramat)</b></span><span>±10 min · <a href="https://www.youtube.com/watch?v=2fadiZPEkhM" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik ken de negen stappen in de juiste volgorde</label><label><input type="checkbox" data-vinkje="1"> Ik weet dat boven de hoofdschakelaar spanning blijft staan tijdens het werk</label><label><input type="checkbox" data-vinkje="2"> Ik ken de kwaliteitspunten waaraan een goede kast te herkennen is</label><label><input type="checkbox" data-vinkje="3"> Ik weet welke gegevens ik bij oplevering vastleg</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/">← 6.4 3-fase en de nulgeleider</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/welk-instrument-voor-welke-vraag/">7.1 Welk instrument voor welke vraag →</a></div></div><div class="src">bron: chatgpt.md M6 · gemini.md M3 · copilot.md M5 · kimi.md M5</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

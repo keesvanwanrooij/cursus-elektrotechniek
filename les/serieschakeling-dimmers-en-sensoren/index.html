@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Serieschakeling, dimmers en sensoren | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt de serieschakeling toepassen en weet waar je op let bij dimmers en bewegingsmelders met moderne verlichting.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Serieschakeling, dimmers en sensoren | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt de serieschakeling toepassen en weet waar je op let bij dimmers en bewegingsmelders met moderne verlichting.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Serieschakeling, dimmers en sensoren | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt de serieschakeling toepassen en weet waar je op let bij dimmers en bewegingsmelders met moderne verlichting.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Serieschakeling, dimmers en sensoren","description":"Je kunt de serieschakeling toepassen en weet waar je op let bij dimmers en bewegingsmelders met moderne verlichting.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner tot gemiddeld","timeRequired":"PT16M","teaches":"Je kunt de serieschakeling toepassen en weet waar je op let bij dimmers en bewegingsmelders met moderne verlichting.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Schakelingen en aansluitpunten","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 5: Schakelingen en aansluitpunten","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/"},{"@type":"ListItem","position":3,"name":"Serieschakeling, dimmers en sensoren","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 5</h5><div class="modname"><a href="/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/" style="text-decoration:none">Schakelingen en aansluitpunten</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/schema-lezen-en-tekenen/" class=""><span class="dot"></span><span class="snavtxt">5.1 Schema lezen en tekenen</span></a><a href="/cursus-elektrotechniek/les/de-enkelpolige-schakeling/" class=""><span class="dot"></span><span class="snavtxt">5.2 De enkelpolige schakeling</span></a><a href="/cursus-elektrotechniek/les/wissel-en-kruisschakeling/" class=""><span class="dot"></span><span class="snavtxt">5.3 Wissel- en kruisschakeling</span></a><a href="/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/" class="on"><span class="dot"></span><span class="snavtxt">5.4 Serieschakeling, dimmers en sensoren</span></a><a href="/cursus-elektrotechniek/les/wandcontactdozen-en-doorlussen/" class=""><span class="dot"></span><span class="snavtxt">5.5 Wandcontactdozen en doorlussen</span></a><a href="/cursus-elektrotechniek/les/vochtige-ruimtes-zones-en-ip-codering/" class=""><span class="dot"></span><span class="snavtxt">5.6 Vochtige ruimtes: zones en IP-codering</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/#de-serieschakeling-in-installatietermen" data-anker="de-serieschakeling-in-installatietermen"><span class="snavtxt">De serieschakeling in installatietermen</span></a><a href="/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/#dimmen-en-led" data-anker="dimmen-en-led"><span class="snavtxt">Dimmen en LED</span></a><a href="/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/#bewegingsmelders-en-aanwezigheidsmelders" data-anker="bewegingsmelders-en-aanwezigheidsmelders"><span class="snavtxt">Bewegingsmelders en aanwezigheidsmelders</span></a><a href="/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/#nagloeiende-led-s" data-anker="nagloeiende-led-s"><span class="snavtxt">Nagloeiende LED's</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/">Module 5</a> › Les 5.4</div><h1>Serieschakeling, dimmers en sensoren</h1><div class="lessmeta"><span>⏱ 16 min</span><span>📊 Beginner tot gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt de serieschakeling toepassen en weet waar je op let bij dimmers en bewegingsmelders met moderne verlichting.</p></div><h2 id="de-serieschakeling-in-installatietermen">De serieschakeling in installatietermen</h2>
+<p>Let op de terminologie: een <strong>serieschakelaar</strong> in de installatietechniek is niet hetzelfde als een serieschakeling in de elektrotechniek. Het is een schakelaar met twee onafhankelijke wippen in één inbouwdoos, die twee lichtpunten apart bedient - bekend van de badkamer, waar de ene wip het licht en de andere de ventilator schakelt.</p>
+<p>De fase komt binnen op een gemeenschappelijke klem en gaat via twee gescheiden contacten naar twee schakeldraden.</p>
+<h2 id="dimmen-en-led">Dimmen en LED</h2>
+<p>Het dimmen van een gloeilamp was eenvoudig: minder spanning, minder licht. LED-lampen werken fundamenteel anders - ze bevatten een elektronische driver, en die reageert niet lineair op een verlaagde spanning.</p>
+<p>Praktische aandachtspunten:</p>
+<ul><li>Gebruik een <strong>LED-geschikte dimmer</strong>, en controleer de opgegeven minimum- en</li></ul>
+<p>maximumbelasting. Veel dimmers hebben een ondergrens die met drie LED-lampjes al niet wordt gehaald, waardoor ze gaan flikkeren.</p>
+<ul><li>Let op <strong>fase-aansnijding versus fase-afsnijding</strong> (RL of RC). Welke variant nodig is,</li></ul>
+<p>hangt af van de driver in de lamp; de fabrikant van de lamp geeft dat aan.</p>
+<ul><li><strong>Combineer geen verschillende lamptypen</strong> op één dimmer.</li><li>Flikkeren, brommen of niet uitgaan is bijna altijd een combinatieprobleem van dimmer</li></ul>
+<p>en lamp, en zelden een defect.</p>
+<div class="callout kern"><h4>De vraag bij dimmerklachten</h4><p>Bij &quot;de lampen flikkeren&quot; is de eerste vraag niet welke dimmer kapot is, maar welke combinatie van dimmer en lamp er is toegepast en of die door beide fabrikanten wordt ondersteund. Dat scheelt vaak een onnodige vervanging.</p></div>
+<h2 id="bewegingsmelders-en-aanwezigheidsmelders">Bewegingsmelders en aanwezigheidsmelders</h2>
+<p>Een <strong>bewegingsmelder</strong> (PIR) reageert op warmtebeweging, een <strong>aanwezigheidsmelder</strong> is gevoeliger en houdt het licht aan bij kleine bewegingen.</p>
+<p>Bij de installatie let je op:</p>
+<ul><li><strong>Nuldraad nodig?</strong> Veel elektronische melders hebben een eigen voeding en dus een</li></ul>
+<p>nul in de schakeldoos. Dat is in het klassieke Nederlandse centraaldoosschema vaak niet aanwezig; controleer dit vóórdat je het component koopt.</p>
+<ul><li><strong>Minimale belasting.</strong> Sommige melders hebben, net als dimmers, een ondergrens die</li></ul>
+<p>met LED-verlichting niet wordt gehaald.</p>
+<ul><li><strong>Plaatsing.</strong> PIR-sensoren detecteren beweging dwars op hun kijkrichting beter dan</li></ul>
+<p>recht op zich af. Een sensor recht tegenover een deur werkt slechter dan een die de loopbeweging zijdelings ziet.</p>
+<ul><li><strong>Detectiegebied en nalooptijd</strong> stel je in samen met de klant, ter plekke. Wat op</li></ul>
+<p>papier redelijk lijkt, blijkt in de gang vaak te kort of te lang.</p>
+<h2 id="nagloeiende-led-s">Nagloeiende LED's</h2>
+<p>Een veelvoorkomende klacht: de LED-lamp gloeit zwak na als de schakelaar uit staat. Oorzaken zijn meestal een controlelampje in de schakelaar, een elektronische component die zijn eigen voeding via de lamp trekt, of capacitieve koppeling in een lange parallel lopende leiding.</p>
+<p>Oplossingen, in volgorde van voorkeur: het controlelampje verwijderen of het component vervangen door een variant met eigen nul, of een daarvoor bedoelde ontstoringscondensator parallel aan het armatuur plaatsen.</p><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik weet wat een serieschakelaar in installatietermen is</label><label><input type="checkbox" data-vinkje="1"> Ik controleer of dimmer en lamp een ondersteunde combinatie vormen</label><label><input type="checkbox" data-vinkje="2"> Ik controleer of er een nul beschikbaar is voordat ik een elektronisch component kies</label><label><input type="checkbox" data-vinkje="3"> Ik ken de oorzaken van nagloeiende LED-lampen</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/wissel-en-kruisschakeling/">← 5.3 Wissel- en kruisschakeling</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/wandcontactdozen-en-doorlussen/">5.5 Wandcontactdozen en doorlussen →</a></div></div><div class="src">bron: chatgpt.md M5 · copilot.md M6 · qwen.md M5</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

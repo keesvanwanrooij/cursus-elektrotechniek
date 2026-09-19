@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>De enkelpolige schakeling | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt de eenvoudigste lichtschakeling volledig doorredeneren en aanwijzen wat er elektrisch gebeurt bij het openen van de schakelaar.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-enkelpolige-schakeling/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="De enkelpolige schakeling | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt de eenvoudigste lichtschakeling volledig doorredeneren en aanwijzen wat er elektrisch gebeurt bij het openen van de schakelaar.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-enkelpolige-schakeling/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="De enkelpolige schakeling | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt de eenvoudigste lichtschakeling volledig doorredeneren en aanwijzen wat er elektrisch gebeurt bij het openen van de schakelaar.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"De enkelpolige schakeling","description":"Je kunt de eenvoudigste lichtschakeling volledig doorredeneren en aanwijzen wat er elektrisch gebeurt bij het openen van de schakelaar.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-enkelpolige-schakeling/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner tot gemiddeld","timeRequired":"PT18M","teaches":"Je kunt de eenvoudigste lichtschakeling volledig doorredeneren en aanwijzen wat er elektrisch gebeurt bij het openen van de schakelaar.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Schakelingen en aansluitpunten","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 5: Schakelingen en aansluitpunten","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/"},{"@type":"ListItem","position":3,"name":"De enkelpolige schakeling","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-enkelpolige-schakeling/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 5</h5><div class="modname"><a href="/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/" style="text-decoration:none">Schakelingen en aansluitpunten</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/schema-lezen-en-tekenen/" class=""><span class="dot"></span><span class="snavtxt">5.1 Schema lezen en tekenen</span></a><a href="/cursus-elektrotechniek/les/de-enkelpolige-schakeling/" class="on"><span class="dot"></span><span class="snavtxt">5.2 De enkelpolige schakeling</span></a><a href="/cursus-elektrotechniek/les/wissel-en-kruisschakeling/" class=""><span class="dot"></span><span class="snavtxt">5.3 Wissel- en kruisschakeling</span></a><a href="/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/" class=""><span class="dot"></span><span class="snavtxt">5.4 Serieschakeling, dimmers en sensoren</span></a><a href="/cursus-elektrotechniek/les/wandcontactdozen-en-doorlussen/" class=""><span class="dot"></span><span class="snavtxt">5.5 Wandcontactdozen en doorlussen</span></a><a href="/cursus-elektrotechniek/les/vochtige-ruimtes-zones-en-ip-codering/" class=""><span class="dot"></span><span class="snavtxt">5.6 Vochtige ruimtes: zones en IP-codering</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/de-enkelpolige-schakeling/#de-keten" data-anker="de-keten"><span class="snavtxt">De keten</span></a><a href="/cursus-elektrotechniek/les/de-enkelpolige-schakeling/#de-centraaldoos" data-anker="de-centraaldoos"><span class="snavtxt">De centraaldoos</span></a><a href="/cursus-elektrotechniek/les/de-enkelpolige-schakeling/#het-schakelmateriaal-zelf" data-anker="het-schakelmateriaal-zelf"><span class="snavtxt">Het schakelmateriaal zelf</span></a><a href="/cursus-elektrotechniek/les/de-enkelpolige-schakeling/#controleren-voordat-er-spanning-op-komt" data-anker="controleren-voordat-er-spanning-op-komt"><span class="snavtxt">Controleren voordat er spanning op komt</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/">Module 5</a> › Les 5.2</div><h1>De enkelpolige schakeling</h1><div class="lessmeta"><span>⏱ 18 min</span><span>📊 Beginner tot gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt de eenvoudigste lichtschakeling volledig doorredeneren en aanwijzen wat er elektrisch gebeurt bij het openen van de schakelaar.</p></div><h2 id="de-keten">De keten</h2>
+<p>De eenvoudigste lichtschakeling ziet er zo uit:</p>
+<p><strong>Fase → schakelaar → schakeldraad → lamp → nul → terug naar de kast</strong></p>
+<p>De beschermingsleiding loopt mee naar alle metalen delen die aangeraakt kunnen worden, en naar het armatuur als dat een metalen behuizing heeft.</p>
+<p>Wat er gebeurt als je de schakelaar opent: de keten wordt onderbroken, de weerstand wordt oneindig, er loopt geen stroom meer, en de lamp dooft. De volle netspanning staat nu over de geopende schakelaarcontacten. Voorbij de schakelaar, op de schakeldraad, staat geen spanning meer - in een correct uitgevoerde installatie.</p>
+<div class="callout gevaar"><h4>Schakel altijd de fase, nooit de nul</h4><p>Wordt de nul geschakeld in plaats van de fase, dan lijkt de lamp uit maar staat het hele armatuur nog steeds onder spanning. Wie dan een lamp vervangt, raakt een spanningvoerend deel aan terwijl de schakelaar op &quot;uit&quot; staat. Dit is een klassieke fout in oude en in ondeskundig aangepaste installaties, en een van de redenen dat je nooit op de stand van een schakelaar vertrouwt.</p></div>
+<h2 id="de-centraaldoos">De centraaldoos</h2>
+<p>In de Nederlandse woningbouw komen de leidingen samen in een <strong>centraaldoos</strong> in het plafond. Daar zitten meestal:</p>
+<ul><li>de permanente fase van de groep;</li><li>de nul van de groep;</li><li>de beschermingsleiding;</li><li>de leiding naar de schakelaar (fase heen, schakeldraad terug);</li><li>de leiding naar het lichtpunt.</li></ul>
+<p>De schakelaar krijgt dus de fase toegevoerd en stuurt hem als <strong>schakeldraad</strong> terug naar de doos, waar hij doorgaat naar de lamp. De nul gaat rechtstreeks van de doos naar de lamp en komt niet bij de schakelaar.</p>
+<p>Dat verklaart het praktijkprobleem bij slimme schakelaars: die hebben zelf voeding nodig en dus een nul in de schakeldoos, en die is er in dit klassieke schema niet. Module 11 gaat daarop door.</p>
+<h2 id="het-schakelmateriaal-zelf">Het schakelmateriaal zelf</h2>
+<ul><li><strong>Inbouwdoos</strong> waterpas plaatsen, en op de juiste diepte. Een doos die te diep zit,</li></ul>
+<p>maakt afmonteren onmogelijk; te ondiep en de afdekplaat sluit niet aan.</p>
+<ul><li><strong>Aders op lengte</strong> met een kleine reservelus, zodat je het component later kunt</li></ul>
+<p>uitnemen zonder alles los te halen.</p>
+<ul><li><strong>Klemmen</strong> volgens de aanduiding op het component: L voor de aanvoer, de</li></ul>
+<p>genummerde of gemarkeerde klem voor de schakeldraad.</p>
+<ul><li><strong>Afdekraam</strong> pas aan het eind, en controleer of het recht zit - dit is het enige</li></ul>
+<p>deel van je werk dat de klant elke dag ziet.</p>
+<h2 id="controleren-voordat-er-spanning-op-komt">Controleren voordat er spanning op komt</h2>
+<ol><li>Vergelijk de bedrading met je schema, ader voor ader.</li><li>Controleer met een doorbelmeting of de schakeldraad daadwerkelijk doorloopt naar de</li></ol>
+<p>lamp en of er geen sluiting is tussen fase en nul.</p>
+<ol><li>Controleer of de beschermingsleiding overal is doorverbonden.</li><li>Kijk visueel: geen blank koper, alle klemmen vast, alles zit netjes in de doos.</li><li>Pas daarna spanning erop, en test in beide standen.</li></ol><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan de volledige keten van fase naar nul beschrijven bij een lichtschakeling</label><label><input type="checkbox" data-vinkje="1"> Ik schakel altijd de fase en nooit de nul</label><label><input type="checkbox" data-vinkje="2"> Ik weet welke aders in een centraaldoos samenkomen</label><label><input type="checkbox" data-vinkje="3"> Ik doorloop de vijf controlestappen voordat ik spanning inschakel</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/schema-lezen-en-tekenen/">← 5.1 Schema lezen en tekenen</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/wissel-en-kruisschakeling/">5.3 Wissel- en kruisschakeling →</a></div></div><div class="src">bron: chatgpt.md M5 · kimi.md M4 · deekseek.md M2</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

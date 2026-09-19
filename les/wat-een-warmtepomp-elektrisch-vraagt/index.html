@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Wat een warmtepomp elektrisch vraagt | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt uit een typeplaatje of datablad afleiden welk elektrisch vermogen en welke stroom je moet aanhouden. Gratis les uit de cursus elektrotechniek voor…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wat een warmtepomp elektrisch vraagt | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt uit een typeplaatje of datablad afleiden welk elektrisch vermogen en welke stroom je moet aanhouden. Gratis les uit de cursus elektrotechniek voor…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wat een warmtepomp elektrisch vraagt | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt uit een typeplaatje of datablad afleiden welk elektrisch vermogen en welke stroom je moet aanhouden. Gratis les uit de cursus elektrotechniek voor…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Wat een warmtepomp elektrisch vraagt","description":"Je kunt uit een typeplaatje of datablad afleiden welk elektrisch vermogen en welke stroom je moet aanhouden.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je kunt uit een typeplaatje of datablad afleiden welk elektrisch vermogen en welke stroom je moet aanhouden.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Warmtepomp, airco en cv-ketel","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 9: Warmtepomp, airco en cv-ketel","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/"},{"@type":"ListItem","position":3,"name":"Wat een warmtepomp elektrisch vraagt","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 9</h5><div class="modname"><a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/" style="text-decoration:none">Warmtepomp, airco en cv-ketel</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/" class="on"><span class="dot"></span><span class="snavtxt">9.1 Wat een warmtepomp elektrisch vraagt</span></a><a href="/cursus-elektrotechniek/les/eigen-groep-doorsnede-en-karakteristiek/" class=""><span class="dot"></span><span class="snavtxt">9.2 Eigen groep, doorsnede en karakteristiek</span></a><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/" class=""><span class="dot"></span><span class="snavtxt">9.3 Aardlektype bij frequentiegeregelde toestellen</span></a><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/" class=""><span class="dot"></span><span class="snavtxt">9.4 Buitenunit en binnenunit koppelen</span></a><a href="/cursus-elektrotechniek/les/airco-en-split-units/" class=""><span class="dot"></span><span class="snavtxt">9.5 Airco en split-units</span></a><a href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/" class=""><span class="dot"></span><span class="snavtxt">9.6 Cv-ketel, thermostaat en gelijktijdigheid</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/#opgenomen-vermogen-versus-afgegeven-warmte" data-anker="opgenomen-vermogen-versus-afgegeven-warmte"><span class="snavtxt">Opgenomen vermogen versus afgegeven warmte</span></a><a href="/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/#wat-het-opgenomen-vermogen-niet-is" data-anker="wat-het-opgenomen-vermogen-niet-is"><span class="snavtxt">Wat het opgenomen vermogen niet is</span></a><a href="/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/#1-fase-of-3-fase" data-anker="1-fase-of-3-fase"><span class="snavtxt">1-fase of 3-fase</span></a><a href="/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/#de-vraag-die-je-stelt-voordat-er-iets-besteld-wo" data-anker="de-vraag-die-je-stelt-voordat-er-iets-besteld-wo"><span class="snavtxt">De vraag die je stelt vóórdat er iets besteld wordt</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/">Module 9</a> › Les 9.1</div><h1>Wat een warmtepomp elektrisch vraagt</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 2 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt uit een typeplaatje of datablad afleiden welk elektrisch vermogen en welke stroom je moet aanhouden.</p></div><h2 id="opgenomen-vermogen-versus-afgegeven-warmte">Opgenomen vermogen versus afgegeven warmte</h2>
+<p>Op de documentatie van een warmtepomp staan twee getallen die vaak worden verward:</p>
+<p><strong>Afgegeven thermisch vermogen</strong> - de warmte die het toestel aan de woning levert, bijvoorbeeld 9 kW.</p>
+<p><strong>Opgenomen elektrisch vermogen</strong> - wat het toestel van jouw installatie vraagt, bijvoorbeeld 3 kW.</p>
+<p>Het verschil komt doordat een warmtepomp geen warmte máákt maar warmte <strong>verplaatst</strong> van buiten naar binnen. De verhouding tussen beide heet de <strong>COP</strong> (Coefficient of Performance) op een bepaald werkpunt, of de <strong>SCOP</strong> over een heel seizoen.</p>
+<p>Voor jouw kabel en beveiliging telt uitsluitend het <strong>opgenomen elektrisch vermogen</strong>. De 9 kW warmte is voor de installateur van de verwarming; de 3 kW elektrisch is voor jou.</p>
+<div class="callout kern"><h4>Lees het typeplaatje, niet de brochure</h4><p>Op het toestel staat wat je nodig hebt: opgenomen vermogen, nominale stroom, maximale stroom, aanbevolen beveiliging en of het toestel 1-fase of 3-fase is. Die gegevens zijn leidend boven elke vuistregel, en boven wat de leverancier aan de telefoon zegt.</p></div>
+<h2 id="wat-het-opgenomen-vermogen-niet-is">Wat het opgenomen vermogen niet is</h2>
+<p>Er zijn drie situaties waarin de werkelijke stroom hoger is dan de nominale waarde:</p>
+<p><strong>1. Inschakelstroom.</strong> Het moment waarop de compressor start. Bij oudere, direct startende compressoren loopt dat op tot een veelvoud van de bedrijfsstroom. Moderne toestellen met een frequentieregelaar (inverter) starten zacht en hebben daar veel minder last van - een van de belangrijkste redenen dat inverters de standaard zijn geworden.</p>
+<p><strong>2. Elektrisch bijverwarmingselement.</strong> Veel warmtepompen hebben een elektrisch element voor koude dagen, voor de tapwaterbereiding of voor de legionellacyclus. Dat element van bijvoorbeeld 3 of 6 kW komt bovenop het compressorvermogen. Het maximale opgenomen vermogen ligt daardoor fors hoger dan het nominale.</p>
+<p><strong>3. Ontdooicyclus.</strong> Bij een lucht-waterwarmtepomp vriest de buitenunit bij bepaalde temperaturen aan en draait het proces tijdelijk om. Dat gaat gepaard met een afwijkend verbruikspatroon.</p>
+<p>Reken daarom altijd met de <strong>maximale</strong> opgenomen stroom uit de documentatie, niet met het nominale bedrijfspunt.</p>
+<h2 id="1-fase-of-3-fase">1-fase of 3-fase</h2>
+<table><thead><tr><th></th><th>1-fase</th><th>3-fase</th></tr></thead><tbody><tr><td>Typisch tot</td><td>ongeveer 5 à 7 kW opgenomen</td><td>daarboven</td></tr><tr><td>Voordeel</td><td>Eenvoudiger, past bij bestaande woningen</td><td>Lagere stroom per fase, minder spanningsdip bij starten</td></tr><tr><td>Aandachtspunt</td><td>Zware belasting op één fase</td><td>Faseverdeling in de kast opnieuw bekijken</td></tr></tbody></table>
+<p>Bij een 1-fase warmtepomp op een woning met een 1×35 A-aansluiting wordt de gelijktijdigheid al snel het knelpunt. Zie les 9.6.</p>
+<h2 id="de-vraag-die-je-stelt-voordat-er-iets-besteld-wo">De vraag die je stelt vóórdat er iets besteld wordt</h2>
+<ol><li>Wat is het maximale opgenomen vermogen, inclusief bijverwarming?</li><li>1-fase of 3-fase, en welke aansluitwaarde heeft de woning?</li><li>Welke beveiliging en welk aardlektype schrijft de fabrikant voor?</li><li>Hoe lang wordt de leiding naar de buitenunit?</li><li>Is er ruimte in de groepenkast, en op welke fase?</li></ol>
+<p>Wie deze vijf vragen stelt vóór de levering, voorkomt de situatie waarin het toestel op de stoep staat en de installatie het niet aankan.</p><h2 id="videos">Video's bij deze les</h2><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=warmtepomp%20elektrisch%20aansluiten%20groep%20aardlek"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> Warmtepomp elektrisch aansluiten - uitleg</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “warmtepomp elektrisch aansluiten groep aardlek”</span></span></a><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=heat%20pump%20electrical%20requirements%20breaker%20sizing"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> Heat pump electrical requirements explained</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “heat pump electrical requirements breaker sizing”</span></span></a><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik weet het verschil tussen afgegeven thermisch en opgenomen elektrisch vermogen</label><label><input type="checkbox" data-vinkje="1"> Ik reken met de maximale opgenomen stroom, inclusief bijverwarming</label><label><input type="checkbox" data-vinkje="2"> Ik lees de vereiste beveiliging van het typeplaatje en niet uit een vuistregel</label><label><input type="checkbox" data-vinkje="3"> Ik stel de vijf vragen voordat er een toestel besteld wordt</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/afronden-controleren-en-uitleggen/">← 8.5 Afronden, controleren en uitleggen</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/eigen-groep-doorsnede-en-karakteristiek/">9.2 Eigen groep, doorsnede en karakteristiek →</a></div></div><div class="src">bron: nieuw geschreven</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

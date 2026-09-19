@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Module 8: Storingzoeken en oplevering | Cursus elektrotechniek</title>
+<meta name="description" content="Iedereen kan iets monteren. Een goede monteur kan uitleggen wat er fout is, waarom het fout is, en hoe hij dat systematisch heeft vastgesteld.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Module 8: Storingzoeken en oplevering | Cursus elektrotechniek">
+<meta property="og:description" content="Iedereen kan iets monteren. Een goede monteur kan uitleggen wat er fout is, waarom het fout is, en hoe hij dat systematisch heeft vastgesteld.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Module 8: Storingzoeken en oplevering | Cursus elektrotechniek">
+<meta name="twitter:description" content="Iedereen kan iets monteren. Een goede monteur kan uitleggen wat er fout is, waarom het fout is, en hoe hij dat systematisch heeft vastgesteld.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"Course","name":"Storingzoeken en oplevering","description":"Iedereen kan iets monteren. Een goede monteur kan uitleggen wat er fout is, waarom het fout is, en hoe hij dat systematisch heeft vastgesteld.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/","inLanguage":"nl","isAccessibleForFree":true,"educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT8H","provider":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"isPartOf":{"@id":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/#cursus"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online"},"hasPart":[{"@type":"LearningResource","name":"Het negenstappenmodel","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/het-negenstappenmodel/"},{"@type":"LearningResource","name":"Van symptoom naar hypothese","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/"},{"@type":"LearningResource","name":"De klassieke storingen","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-klassieke-storingen/"},{"@type":"LearningResource","name":"Een aardlekstoring lokaliseren","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/een-aardlekstoring-lokaliseren/"},{"@type":"LearningResource","name":"Afronden, controleren en uitleggen","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/afronden-controleren-en-uitleggen/"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 8: Storingzoeken en oplevering","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › Module 8</div><div class="modhead"><div><span class="chip mut">Gemiddeld tot gevorderd</span><h1>Module 8 - Storingzoeken en oplevering</h1><p>Hier wordt het vak interessant. Iedereen kan iets monteren. Een goede monteur kan uitleggen wat er fout is, waarom het fout is, en hoe hij dat systematisch heeft vastgesteld.</p><div class="meta" style="gap:20px"><span>📚 5 lessen</span><span>🎬 3 video's</span><span>⏱ ±8 uur</span><span>📊 Gemiddeld tot gevorderd</span><span>✓ 0 van 5 afgerond</span></div></div><div class="goalbox"><h4>Na deze module kun je</h4><ul><li>Het negenstappenmodel toepassen op een willekeurige storing</li><li>Van symptoom naar hypothese redeneren in plaats van onderdelen vervangen</li><li>De klassieke storingen herkennen aan hun symptoompatroon</li><li>Een aardlekstoring systematisch lokaliseren met de halveringsmethode</li><li>Je eigen werk controleren en de bevindingen uitleggen aan de klant</li></ul></div></div><div class="lessons"><a class="lrow " href="/cursus-elektrotechniek/les/het-negenstappenmodel/"><div class="tick"></div><div class="txt"><b>8.1 · Het negenstappenmodel</b><span>Je kunt een storing benaderen via een vaste, herhaalbare volgorde in plaats van via ingevingen.</span></div><div class="kind">📖 Tekst · 🎬 1 · 20 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/"><div class="tick"></div><div class="txt"><b>8.2 · Van symptoom naar hypothese</b><span>Je kunt een vage klacht omzetten in een toetsbare hypothese en die gericht onderzoeken.</span></div><div class="kind">📖 Tekst · 🎬 1 · 18 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/de-klassieke-storingen/"><div class="tick"></div><div class="txt"><b>8.3 · De klassieke storingen</b><span>Je herkent de meest voorkomende storingen aan hun symptoompatroon.</span></div><div class="kind">📖 Tekst · 🎬 1 · 20 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/een-aardlekstoring-lokaliseren/"><div class="tick"></div><div class="txt"><b>8.4 · Een aardlekstoring lokaliseren</b><span>Je kunt systematisch bepalen welke groep en welk apparaat een aardlek laat afschakelen.</span></div><div class="kind">📖 Tekst · 20 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/afronden-controleren-en-uitleggen/"><div class="tick"></div><div class="txt"><b>8.5 · Afronden, controleren en uitleggen</b><span>Je kunt een reparatie afronden zodat de storing niet terugkomt en de klant begrijpt wat er is gebeurd.</span></div><div class="kind">📖 Tekst · 16 min</div></a></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

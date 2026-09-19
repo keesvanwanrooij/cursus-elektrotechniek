@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Karakteristiek en selectiviteit | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt een B- of C-karakteristiek kiezen en uitleggen wat selectiviteit betekent voor de installatie. Gratis les uit de cursus elektrotechniek voor…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Karakteristiek en selectiviteit | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt een B- of C-karakteristiek kiezen en uitleggen wat selectiviteit betekent voor de installatie. Gratis les uit de cursus elektrotechniek voor…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Karakteristiek en selectiviteit | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt een B- of C-karakteristiek kiezen en uitleggen wat selectiviteit betekent voor de installatie. Gratis les uit de cursus elektrotechniek voor…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Karakteristiek en selectiviteit","description":"Je kunt een B- of C-karakteristiek kiezen en uitleggen wat selectiviteit betekent voor de installatie.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je kunt een B- of C-karakteristiek kiezen en uitleggen wat selectiviteit betekent voor de installatie.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Groepenkast: ontwerp en montage","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 6: Groepenkast: ontwerp en montage","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"},{"@type":"ListItem","position":3,"name":"Karakteristiek en selectiviteit","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 6</h5><div class="modname"><a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/" style="text-decoration:none">Groepenkast: ontwerp en montage</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/" class=""><span class="dot"></span><span class="snavtxt">6.1 Groepsindeling ontwerpen</span></a><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/" class="on"><span class="dot"></span><span class="snavtxt">6.2 Karakteristiek en selectiviteit</span></a><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/" class=""><span class="dot"></span><span class="snavtxt">6.3 Aardlekarchitectuur en aardlektypes</span></a><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/" class=""><span class="dot"></span><span class="snavtxt">6.4 3-fase en de nulgeleider</span></a><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/" class=""><span class="dot"></span><span class="snavtxt">6.5 Een kast opbouwen en opleveren</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/#wat-de-karakteristiek-beschrijft" data-anker="wat-de-karakteristiek-beschrijft"><span class="snavtxt">Wat de karakteristiek beschrijft</span></a><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/#waarom-c-bestaat-de-inschakelstroom" data-anker="waarom-c-bestaat-de-inschakelstroom"><span class="snavtxt">Waarom C bestaat: de inschakelstroom</span></a><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/#veel-led-verlichting-op-een-groep" data-anker="veel-led-verlichting-op-een-groep"><span class="snavtxt">Veel LED-verlichting op één groep</span></a><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/#selectiviteit" data-anker="selectiviteit"><span class="snavtxt">Selectiviteit</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/">Module 6</a> › Les 6.2</div><h1>Karakteristiek en selectiviteit</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt een B- of C-karakteristiek kiezen en uitleggen wat selectiviteit betekent voor de installatie.</p></div><h2 id="wat-de-karakteristiek-beschrijft">Wat de karakteristiek beschrijft</h2>
+<p>De letter op een installatieautomaat - B, C of D - beschrijft bij welke veelvoud van de nominale stroom het <strong>magnetische</strong> deel direct afschakelt. Het thermische deel is voor alle karakteristieken vergelijkbaar.</p>
+<table><thead><tr><th>Karakteristiek</th><th>Magnetische afschakeling bij</th><th>Toepassing</th></tr></thead><tbody><tr><td>B</td><td>ongeveer 3 tot 5 × In</td><td>Verlichting, contactdozen, gewone woningcircuits</td></tr><tr><td>C</td><td>ongeveer 5 tot 10 × In</td><td>Motoren, transformatoren, veel LED-drivers, warmtepompen</td></tr><tr><td>D</td><td>ongeveer 10 tot 20 × In</td><td>Zware inschakelstromen, industrieel</td></tr></tbody></table>
+<p>Bij een B16 betekent dat: magnetisch afschakelen bij ruwweg 48 tot 80 A.</p>
+<h2 id="waarom-c-bestaat-de-inschakelstroom">Waarom C bestaat: de inschakelstroom</h2>
+<p>Veel apparaten trekken bij het inschakelen kortstondig een veelvoud van hun bedrijfsstroom:</p>
+<ul><li>een motor die opstart, tot vijf à zeven keer;</li><li>een transformator, door de magnetisering van de kern;</li><li>LED-drivers en schakelende voedingen, doordat hun ingangscondensatoren in een</li></ul>
+<p>fractie van een milliseconde worden opgeladen;</p>
+<ul><li>een warmtepompcompressor, afhankelijk van de aansturing.</li></ul>
+<p>Die piek duurt milliseconden en is voor de kabel volstrekt onschadelijk - maar een B-automaat ziet hem als een kortsluiting en schakelt af. Het gevolg is een installatie die &quot;af en toe zomaar uitvalt bij het aanzetten&quot;.</p>
+<p>De oplossing is dan een C-karakteristiek, mits de kabel en de foutstroomsituatie dat toelaten.</p>
+<div class="callout gevaar"><h4>C is geen gratis oplossing</h4><p>Een C-automaat schakelt pas bij een hogere stroom magnetisch af. Aan het eind van een lange leiding kan de kortsluitstroom te laag zijn om die drempel te halen, waardoor de automaat pas via het langzame thermische deel afschakelt - of, in het slechtste geval, niet binnen de vereiste tijd. Bij lange leidingen hoort daarom een berekening of meting van de kortsluitstroom (Zs), zie module 7.</p></div>
+<h2 id="veel-led-verlichting-op-een-groep">Veel LED-verlichting op één groep</h2>
+<p>Een praktijkgeval dat je zeker tegenkomt: een groep met tientallen LED-armaturen die bij het inschakelen de automaat laat afslaan, terwijl de totale belasting nog geen 200 W is.</p>
+<p>Dat is geen defect. De ingangscondensatoren van alle drivers samen vormen op het moment van inschakelen bijna een kortsluiting. Oplossingen: de verlichting over meerdere groepen verdelen, een C-karakteristiek toepassen, of armaturen kiezen met een lagere opgegeven inschakelstroom.</p>
+<h2 id="selectiviteit">Selectiviteit</h2>
+<p>Selectiviteit betekent dat bij een fout <strong>alleen de dichtstbijzijnde beveiliging</strong> afschakelt, en niet de bovenliggende. Zonder selectiviteit legt een kortsluiting in een tafellamp de hele woning plat.</p>
+<p>In een woninginstallatie kijk je vooral naar de keten hoofdzekering → aardlekschakelaar → automaat. De hoofdzekering van de netbeheerder is doorgaans zwaarder en trager dan de automaten erachter, waardoor de selectiviteit meestal vanzelf goed uitpakt.</p>
+<p>Waar het misgaat is bij aardlekbeveiliging: twee aardlekken in serie met dezelfde gevoeligheid (bijvoorbeeld 30 mA achter 30 mA) schakelen bij een lekstroom onvoorspelbaar, mogelijk allebei. Wil je selectiviteit in aardlekbeveiliging, dan is de bovenliggende beveiliging minder gevoelig én vertraagd uitgevoerd (een S-type).</p>
+<p>Volledige selectiviteitsberekeningen zijn specialistisch werk. Wat je in deze fase moet kunnen: het begrip herkennen, en signaleren wanneer een installatie zich niet selectief gedraagt.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/1SDChIaziCQ" title="Welke installatieautomaat heb je nodig? 1 fase / 3 fase"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Welke installatieautomaat heb je nodig? 1 fase / 3 fase</b></span><span>±10 min · <a href="https://www.youtube.com/watch?v=1SDChIaziCQ" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan uitleggen wat de letter op een automaat betekent</label><label><input type="checkbox" data-vinkje="1"> Ik weet wanneer een C-karakteristiek nodig is en wat het nadeel ervan is</label><label><input type="checkbox" data-vinkje="2"> Ik kan verklaren waarom veel LED-verlichting een B-automaat kan laten afslaan</label><label><input type="checkbox" data-vinkje="3"> Ik kan uitleggen wat selectiviteit is en waar het bij aardlekken misgaat</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/">← 6.1 Groepsindeling ontwerpen</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/">6.3 Aardlekarchitectuur en aardlektypes →</a></div></div><div class="src">bron: gemini.md M3 · chatgpt.md M6 · copilot.md M5</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>
