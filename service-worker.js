@@ -4,7 +4,10 @@
    Video's blijven internet nodig hebben; tekst, navigatie en voortgang niet.
    ========================================================================== */
 
-var CACHE_NAAM = 'cursus-elektro-v3';
+/* Alle cursussen op keesvanwanrooij.github.io delen dezelfde origin, en dus dezelfde Cache Storage.
+   Daarom ruimt deze worker uitsluitend caches op met dit voorvoegsel, nooit die van een andere cursus. */
+var CACHE_VOORVOEGSEL = 'cursus-elektro-';
+var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v4';
 
 var APP_SHELL = [
   './',
@@ -46,7 +49,7 @@ self.addEventListener('activate', function (event) {
   event.waitUntil(
     caches.keys().then(function (namen) {
       return Promise.all(
-        namen.filter(function (n) { return n !== CACHE_NAAM; })
+        namen.filter(function (n) { return n.indexOf(CACHE_VOORVOEGSEL) === 0 && n !== CACHE_NAAM; })
              .map(function (n) { return caches.delete(n); })
       );
     }).then(function () { return self.clients.claim(); })
