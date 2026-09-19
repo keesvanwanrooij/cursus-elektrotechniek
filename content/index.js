@@ -9,8 +9,11 @@ window.CURSUS = {
   ondertitel: 'Van beginner tot beginnend vakbekwaam',
   modules: [],
 
-  /* Steun het project. Zet actief op false om alle donatie-elementen te verbergen. */
-  donatie: { actief: true, url: 'https://github.com/sponsors/keesvanwanrooij' },
+  /* Steun het project. Zet actief op true zodra de GitHub Sponsors-pagina live is
+     (github.com/sponsors/keesvanwanrooij toont dan een echte pagina i.p.v. door te sturen naar het profiel).
+     Zolang het uit staat verdwijnen de knoppen, de mijlpaalkaart en de footerknop. tools/build-seo.js meldt
+     bij elke build of de pagina al live is. Ander kanaal (Ko-fi, PayPal.me)? Alleen url aanpassen. */
+  donatie: { actief: false, url: 'https://github.com/sponsors/keesvanwanrooij' },
 
   addModule: function (m) {
     /* Leesbare URL-slugs (zoekwoorden in het pad). Uniek per soort, bij dubbelen komt het lesnummer erbij. */

@@ -291,6 +291,9 @@
 
   window.addEventListener(Seo.cfg.path ? 'popstate' : 'hashchange', route);
 
+  /* Footer opnieuw opbouwen in de gekozen modus (hash-links via file://, schone URL's via http). */
+  document.getElementById('sitefoot').innerHTML = Views.footer();
+
   /* Merklink en menu wijzen naar de juiste URL's in de gekozen modus. */
   document.querySelectorAll('.brand, [data-route="dash"]').forEach(function (a) { a.setAttribute('href', Seo.path('dash')); });
   document.querySelectorAll('[data-route="naslag"]').forEach(function (a) { a.setAttribute('href', Seo.path('naslag')); });
