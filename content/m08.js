@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Gemiddeld tot gevorderd',
   studietijd: 8,
   intro: 'Iedereen kan iets monteren. Een goede monteur kan uitleggen wat er fout is, waarom het fout is, en hoe hij dat systematisch heeft vastgesteld.',
+  inleiding: [
+    "Elektrotechniek voor beginners gaat vaak over monteren, maar het vak wordt pas echt interessant bij storingzoeken. Met het negenstappenmodel leer je systematisch werken: symptoom, bereik, voeding, beveiliging, meten en herstellen.",
+    "Onderbroken nullen, losse verbindingen en aardlekken die steeds afslaan komen uitgebreid langs. Zo sluit je het fundament af met de stap van weten hoe iets werkt naar kunnen uitleggen waarom het niet werkt."
+  ],
   leerdoelen: [
     'Het negenstappenmodel toepassen op een willekeurige storing',
     'Van symptoom naar hypothese redeneren in plaats van onderdelen vervangen',

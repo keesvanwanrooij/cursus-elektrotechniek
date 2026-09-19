@@ -122,7 +122,16 @@ window.Views = (function () {
       '<div class="goalbox"><h4>Na deze module kun je</h4><ul>' +
         m.leerdoelen.map(function (d) { return '<li>' + E(d) + '</li>'; }).join('') +
       '</ul></div></div>' +
+      inleidingBlok(m) +
+      '<h2 class="lessen-kop">Lessen in module ' + m.nr + '</h2>' +
       '<div class="lessons">' + m.lessen.map(function (l) { return lesRij(m, l); }).join('') + '</div>';
+  }
+
+  /* Korte inleiding per module: leesbare tekst voor bezoekers en zoekmachines. */
+  function inleidingBlok(m) {
+    if (!m.inleiding || !m.inleiding.length) return '';
+    return '<section class="inleiding"><h2>Over deze module</h2>' +
+      m.inleiding.map(function (p) { return '<p>' + E(p) + '</p>'; }).join('') + '</section>';
   }
 
   function lesRij(m, l) {

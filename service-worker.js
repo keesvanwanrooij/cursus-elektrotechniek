@@ -4,7 +4,7 @@
    Video's blijven internet nodig hebben; tekst, navigatie en voortgang niet.
    ========================================================================== */
 
-var CACHE_NAAM = 'cursus-elektro-v2';
+var CACHE_NAAM = 'cursus-elektro-v3';
 
 var APP_SHELL = [
   './',

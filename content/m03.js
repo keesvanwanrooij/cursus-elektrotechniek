@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Beginner tot gemiddeld',
   studietijd: 5,
   intro: 'De hele keten van de aansluiting van de netbeheerder tot het laatste stopcontact, en wat elk onderdeel in de meterkast en groepenkast precies doet.',
+  inleiding: [
+    "Hoe komt de stroom van de netbeheerder tot in je stopcontact? In deze module volg je de hele keten door een Nederlandse woning: de aansluiting, de meterkast, de groepenkast, de installatieautomaten en de aardlekschakelaars.",
+    "Je leert wat een MCB, een RCD en een RCBO doen en waarom aarding en vereffening bestaan. Handig als je elektrotechniek wilt leren voor je eigen huis, of als eerste stap richting het werk als elektricien."
+  ],
   leerdoelen: [
     'De keten van netaansluiting tot verbruiker in de juiste volgorde benoemen',
     'De onderdelen van een meterkast herkennen en aanwijzen',

@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Gemiddeld',
   studietijd: 4,
   intro: 'PV-installaties en laadpalen komen in vrijwel elke woning voor. Ook als je ze niet zelf installeert, veranderen ze de manier waarop je aan die installatie werkt.',
+  inleiding: [
+    "Zonnepanelen en laadpalen zijn in steeds meer woningen aanwezig. Je leert hoe een PV-installatie is opgebouwd, waarom de gelijkspanningszijde altijd onder spanning staat en hoe dat je manier van veilig werken verandert.",
+    "Bij de laadpaal ga je in op de eigen groep, het aardlektype B en load balancing. Zo sluit deze module van de gratis online cursus elektrotechniek aan op wat je in de praktijk dagelijks tegenkomt."
+  ],
   leerdoelen: [
     'De opbouw van een PV-installatie benoemen: string, DC-zijde, omvormer, AC-zijde',
     'Uitleggen waarom PV je procedure voor spanningsloos werken verandert',

@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Beginner tot gemiddeld',
   studietijd: 5,
   intro: 'Welk gereedschap je echt nodig hebt, hoe je werk aflevert dat een volgende monteur begrijpt, waar je bevoegdheid ophoudt, en wat er komt kijken bij zelfstandig werken.',
+  inleiding: [
+    "Een goede elektricien wordt niet alleen beoordeeld op kennis. Deze slotmodule van de cursus elektrotechniek gaat over je gereedschapskist, de juiste meetapparatuur, netjes opleveren en het gesprek met de klant.",
+    "Je leest ook wat een VOP- of VP-aanwijzing, VCA en een verzekering betekenen als je zelfstandig gaat werken. Deze zelfstudie geeft geen diploma, maar helpt je wel om goed van start te gaan."
+  ],
   leerdoelen: [
     'Een basisuitrusting samenstellen en weten welke investeringen kunnen wachten',
     'Meetapparatuur kiezen die past bij je werkzaamheden en meetcategorie',
