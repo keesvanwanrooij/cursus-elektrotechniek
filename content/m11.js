@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Gemiddeld',
   studietijd: 3,
   intro: 'Slimme schakelaars, bussystemen en de voorbereidingen die je tijdens gewoon installatiewerk treft zodat domotica later mogelijk blijft.',
+  inleiding: [
+    "Slimme schakelaars, bussystemen en een woning die op commando reageert. Je leert waarom slimme schakelaars een nuldraad nodig hebben en wat het verschil is tussen centrale en decentrale sturing.",
+    "Het belangrijkste dat je meeneemt is voorbereiding: met loze leidingen en een extra ader maak je een woning geschikt voor domotica zonder nu al een systeem te kiezen. Dat scheelt later veel hakwerk."
+  ],
   leerdoelen: [
     'Uitleggen waarom slimme schakelaars een nuldraad in de schakeldoos nodig hebben',
     'Het verschil tussen centrale en decentrale sturing benoemen',

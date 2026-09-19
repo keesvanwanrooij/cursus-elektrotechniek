@@ -145,6 +145,11 @@ button { font: inherit; cursor: pointer; }
 .pagehead h1 { margin:0 0 8px; font-size:30px; line-height:1.2; letter-spacing:-.025em; }
 .pagehead p { margin:0; max-width:70ch; color:var(--text-muted); font-size:16px; }
 
+.inleiding { max-width:74ch; margin:0 0 30px; }
+.inleiding h2 { font-size:19px; margin:0 0 8px; letter-spacing:-.01em; }
+.inleiding p { margin:0 0 12px; color:var(--text-muted); }
+.lessen-kop { font-size:19px; margin:0 0 12px; letter-spacing:-.01em; }
+
 .faq details { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
                padding:12px 16px; margin:0 0 10px; }
 .faq summary { cursor:pointer; font-weight:600; font-size:15px; }

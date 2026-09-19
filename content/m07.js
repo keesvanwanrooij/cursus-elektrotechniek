@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Gemiddeld tot gevorderd',
   studietijd: 7,
   intro: 'Van de multimeter tot de isolatieweerstandsmeting: welk instrument beantwoordt welke vraag, en wat probeer je met een meting eigenlijk te bewijzen.',
+  inleiding: [
+    "Wie niet kan meten, werkt blind. Deze module leert je welk meetinstrument bij welke vraag hoort: de tweepolige spanningstester, de multimeter, de doorbelmeting en de isolatieweerstandsmeter.",
+    "Ook leer je wat er in een opleverrapport volgens NEN 1010 hoort te staan. In een zelfstudie elektrotechniek is dit de module waarin theorie en praktijk samenkomen, want elke meting begint met de vraag wat je wilt bewijzen."
+  ],
   leerdoelen: [
     'Per meetvraag het juiste instrument kiezen',
     'Een multimeter correct instellen en veilig gebruiken',

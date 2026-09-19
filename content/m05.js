@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Beginner tot gemiddeld',
   studietijd: 8,
   intro: 'Schema lezen en tekenen, en daarna de schakelingen bouwen die je in vrijwel elke woning tegenkomt: enkelpolig, wissel, kruis, en de wandcontactdozen eromheen.',
+  inleiding: [
+    "Licht aan, licht uit, en soms vanaf twee of drie plekken tegelijk. In deze module leer je de schakelingen kennen die je in bijna elke woning tegenkomt: enkelpolig, wissel, kruis en serie, plus de wandcontactdozen eromheen.",
+    "Je leert installatieschema's lezen en tekenen, dimmers en sensoren kiezen en de badkamerzones toepassen. Zo leer je stap voor stap een schema begrijpen in plaats van draden na te doen."
+  ],
   leerdoelen: [
     'Een installatieschema lezen en zelf een schema tekenen voordat je monteert',
     'De enkelpolige schakeling volledig doorredeneren van fase tot nul',

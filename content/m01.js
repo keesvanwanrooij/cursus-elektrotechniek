@@ -8,6 +8,10 @@ CURSUS.addModule({
   studietijd: 6,
   kritiek: true,
   intro: 'Je leert waarom een lage spanning als 230 V dodelijk is, welke handelingen je met welke aanwijzing mag verrichten, en hoe je een installatie aantoonbaar spanningsloos maakt volgens de vijf stappen.',
+  inleiding: [
+    "Elke gratis cursus elektrotechniek voor beginners hoort te beginnen bij veiligheid, en dat doet deze cursus ook. In deze eerste module leer je waarom 230 V dodelijk kan zijn, wat NEN 3140 en het Arbobesluit van je vragen en wat een VOP, een VP en een WV mogen doen.",
+    "Daarna oefen je de vijf stappen van veiligstellen en het aantonen van spanningsloosheid met een tweepolige spanningstester. Het is het onderdeel van deze zelfstudie dat je niet overslaat, ook niet als je al een beetje ervaring hebt."
+  ],
   leerdoelen: [
     'Uitleggen waarom 50 mA door het lichaam al dodelijk kan zijn',
     'Het verschil benoemen tussen NEN 3140 en NEN 1010',

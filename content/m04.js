@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Beginner tot gemiddeld',
   studietijd: 6,
   intro: 'Een circuit kan elektrisch functioneren en tóch slecht zijn aangelegd. Deze module gaat over kabelkeuze, doorsnede en verbindingen die over twintig jaar nog steeds betrouwbaar zijn.',
+  inleiding: [
+    "Een installatie die werkt is nog geen goede installatie. Hier leer je welke kabels en draden je in Nederland gebruikt, hoe je een doorsnede kiest en hoe je verbindingen maakt die over twintig jaar nog veilig zijn.",
+    "Strippen, lasklemmen, adereindhulzen en trekontlasting oefen je het beste zelf op restmateriaal. Dat praktische werk hoort bij elke serieuze zelfstudie elektrotechniek, en de checklists helpen je om je eigen werk kritisch te beoordelen."
+  ],
   leerdoelen: [
     'De gangbare Nederlandse kabel- en draadtypen herkennen en benoemen',
     'Uitleggen hoe doorsnede, lengte en installatiemethode de belastbaarheid bepalen',

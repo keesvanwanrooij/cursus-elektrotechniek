@@ -17,6 +17,10 @@ window.Seo = (function () {
     'Leer stap voor stap veilig werken, de wet van Ohm, de groepenkast, meten en storingzoeken. ' +
     'Twaalf modules met video\'s, in je eigen tempo, ook offline te volgen.';
 
+  var KEYWORDS = ['cursus elektrotechniek', 'elektrotechniek voor beginners', 'gratis cursus elektrotechniek',
+    'zelfstudie elektrotechniek', 'basiscursus elektrotechniek', 'gratis online cursus elektrotechniek',
+    'NEN 3140', 'groepenkast', 'elektricien'];
+
   var DESC_HOME = 'Gratis online basiscursus elektrotechniek voor beginners: 12 modules, 62 lessen en video\'s in het Nederlands. Zelfstudie in je eigen tempo, ook offline.';
   var DESC_NASLAG = 'Naslag elektrotechniek voor beginners en elektriciens: formules, stroom bij 230 V, kabeldoorsnedes, aardlektypes, IP-codes en badkamerzones. Gratis.';
 
@@ -105,6 +109,9 @@ window.Seo = (function () {
       inLanguage: 'nl',
       isAccessibleForFree: true,
       educationalLevel: 'Beginner',
+      keywords: KEYWORDS.join(', '),
+      audience: { '@type': 'EducationalAudience', educationalRole: 'student', audienceType: 'Beginnende elektriciens, zij-instromers en doe-het-zelvers' },
+      about: [{ '@type': 'Thing', name: 'Elektrotechniek' }, { '@type': 'Thing', name: 'Elektrische installaties' }, { '@type': 'Thing', name: 'NEN 3140' }],
       timeRequired: 'PT' + uren() + 'H',
       provider: AUTEUR,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR', category: 'Free', availability: 'https://schema.org/InStock' },
@@ -231,7 +238,7 @@ window.Seo = (function () {
   }
 
   return {
-    cfg: cfg, configureer: configureer, H1: H1, INTRO: INTRO, FAQ: FAQ, NAAM: NAAM,
+    cfg: cfg, configureer: configureer, H1: H1, KEYWORDS: KEYWORDS, INTRO: INTRO, FAQ: FAQ, NAAM: NAAM,
     path: path, rel: rel, anchor: anchor, absoluut: absoluut,
     parsePad: parsePad, parseHash: parseHash, meta: meta, pasToe: pasToe, uren: uren
   };

@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Gemiddeld tot gevorderd',
   studietijd: 7,
   intro: 'De verdeelinrichting bepaalt rechtstreeks de brand- en aanraakveiligheid van een woning. Deze module gaat over het ontwerp: welke groep, welke karakteristiek, welk type aardlek en waarom.',
+  inleiding: [
+    "De groepenkast bepaalt de veiligheid van een hele woning. In deze module ontwerp je een groepsindeling, kies je tussen de B- en C-karakteristiek en bepaal je welk type aardlek bij welke belasting hoort.",
+    "Ook 3-fase, faseverdeling en een onderbroken nul komen aan bod. In de praktijk kijk je eerst mee als observator: dit is het deel van de cursus elektrotechniek waar begrijpen voorop staat en zelf uitvoeren pas daarna komt."
+  ],
   leerdoelen: [
     'Een groepsindeling opstellen op basis van belasting en gebruik',
     'De karakteristieken B en C kiezen op basis van inschakelstroom',

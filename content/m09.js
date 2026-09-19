@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Gemiddeld tot gevorderd',
   studietijd: 6,
   intro: 'Wat een warmtepomp, airco of cv-ketel elektrisch van de installatie vraagt: eigen groep, doorsnede, aardlektype, inschakelstroom en de scheiding tussen sterk- en zwakstroom.',
+  inleiding: [
+    "Warmtepompen en airco's zijn een van de snelst groeiende klussen voor installateurs. Deze module gaat over de elektrische kant: de eigen groep, de kabeldoorsnede naar de buitenunit, het juiste type aardlek en de communicatiekabel tussen binnen- en buitenunit.",
+    "Ook de cv-ketel en de vraag of de aansluiting van de woning de extra belasting aankan komen aan bod. Het koudemiddelcircuit hoort niet bij de elektricien, dus dat leggen we ook duidelijk uit."
+  ],
   leerdoelen: [
     'Uit de technische gegevens van een warmtepomp de elektrische eisen afleiden',
     'Een geschikte groep, doorsnede en karakteristiek bepalen voor een klimaatinstallatie',

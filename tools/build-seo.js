@@ -60,7 +60,7 @@ function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-/* JSON in een <script>: < wordt < zodat </script> nooit voortijdig sluit. */
+/* JSON in een script-tag: elke < wordt een unicode-escape, zodat een sluittag in de tekst nooit voortijdig sluit. */
 function jsonVeilig(obj) {
   return JSON.stringify(obj).replace(/</g, String.fromCharCode(92) + 'u003c');
 }
@@ -168,8 +168,80 @@ schrijf('sitemap.xml',
     return '  <url><loc>' + esc(u.loc) + '</loc><lastmod>' + DATUM + '</lastmod></url>';
   }).join('\n') + '\n</urlset>\n');
 
+/* robots.txt: iedereen welkom, ook de bekende AI-crawlers (bewust expliciet gemaakt). */
+var AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot',
+  'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'CCBot'];
 schrijf('robots.txt',
-  'User-agent: *\nAllow: /\n\nSitemap: ' + SITE + BASE + 'sitemap.xml\n');
+  'User-agent: *\nAllow: /\n\n' +
+  AI_BOTS.map(function (b) { return 'User-agent: ' + b + '\nAllow: /\n'; }).join('\n') +
+  '\nSitemap: ' + SITE + BASE + 'sitemap.xml\n');
+
+/* ------------------------- llms.txt en llms-full.txt ------------------------- */
+
+var HOME = SITE + BASE;
+
+/* Onze eigen opmaak (!!! callouts, ?? verdiepingen) omzetten naar gewone markdown. */
+function platteMarkdown(tekst) {
+  var uit = [], blok = null;
+  String(tekst).split('\n').forEach(function (regel) {
+    var k = regel.trim();
+    var c = k.match(/^!!!\s*(gevaar|kern|info)\s*(.*)$/);
+    var d = k.match(/^\?\?\s+(.*)$/);
+    if (!blok && c) { blok = '!!!'; uit.push('> **' + (c[2] || (c[1] === 'gevaar' ? 'Let op' : 'Kernpunt')) + '**'); return; }
+    if (!blok && d) { blok = '??'; uit.push('> **' + d[1] + '**'); return; }
+    if (blok && k === blok) { blok = null; return; }
+    if (blok) { uit.push(k === '' ? '>' : '> ' + regel); return; }
+    /* koppen een niveau lager, zodat ze onder de leskop blijven vallen */
+    uit.push(regel.replace(/^(#{2,3}) /, function (_, h) { return h + '# '; }));
+  });
+  return uit.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+}
+
+var lijstModules = CURSUS.modules.map(function (m) {
+  return '## Module ' + m.nr + ': ' + m.titel + '\n\n' +
+    m.lessen.map(function (l) {
+      return '- [' + l.nr + ' ' + l.titel + '](' + Seo.absoluut('les', l.id) + '): ' + l.leerdoel;
+    }).join('\n');
+}).join('\n\n');
+
+schrijf('llms.txt',
+  '# Cursus Elektrotechniek\n\n' +
+  '> Gratis online basiscursus elektrotechniek voor beginners, in het Nederlands. Zelfstudie in 12 modules en ' +
+  aantalLessen + ' lessen (ongeveer ' + Seo.uren() + ' uur), van veilig werken volgens NEN 3140 en de wet van Ohm ' +
+  'tot de groepenkast, meten, storingzoeken, warmtepompen, zonnepanelen en laadpalen.\n\n' +
+  'Deze cursus is bedoeld voor aankomend elektriciens, zij-instromers en doe-het-zelvers die elektrotechniek willen leren. ' +
+  'De teksten zijn onderwijskundig en verwijzen naar NEN 1010 en NEN 3140 zonder de normtekst te vervangen. ' +
+  'De cursus geeft geen diploma en geen VOP- of VP-aanwijzing. Inhoud en broncode zijn vrij te gebruiken onder de GPLv3-licentie.\n\n' +
+  '- Startpagina: ' + HOME + '\n' +
+  '- Taal: Nederlands\n' +
+  '- Auteur: Kees van Wanrooij\n\n' +
+  lijstModules + '\n\n' +
+  '## Naslag\n\n' +
+  '- [Naslag elektrotechniek](' + Seo.absoluut('naslag') + '): formules, stroom bij 230 V, aderkleuren, kabeldoorsnedes, aardlektypes, IP-codes, badkamerzones en meten.\n\n' +
+  '## Optioneel\n\n' +
+  '- [Volledige cursustekst in een bestand](' + HOME + 'llms-full.txt): alle lessen als doorlopende markdown\n' +
+  '- [Sitemap](' + HOME + 'sitemap.xml)\n' +
+  '- [Broncode op GitHub](https://github.com/keesvanwanrooij/cursus-elektrotechniek)\n');
+
+schrijf('llms-full.txt',
+  '# Cursus Elektrotechniek: volledige tekst\n\n' +
+  '> Gratis online basiscursus elektrotechniek voor beginners in het Nederlands. Bron: ' + HOME + '\n' +
+  '> Licentie: GPLv3. Deze cursus geeft geen erkend diploma en geen NEN 3140-aanwijzing.\n\n' +
+  CURSUS.modules.map(function (m) {
+    return '## Module ' + m.nr + ': ' + m.titel + '\n\n' +
+      'URL: ' + Seo.absoluut('module', m.id) + '\n\n' +
+      m.intro + '\n\n' + (m.inleiding || []).join('\n\n') + '\n\n' +
+      '**Na deze module kun je:**\n\n' + m.leerdoelen.map(function (d) { return '- ' + d; }).join('\n') + '\n\n' +
+      m.lessen.map(function (l) {
+        return '### Les ' + l.nr + ': ' + l.titel + '\n\n' +
+          'URL: ' + Seo.absoluut('les', l.id) + '\n\n' +
+          '**Leerdoel:** ' + l.leerdoel + '\n\n' +
+          platteMarkdown(l.tekst).replace(/^(#{3,4}) /gm, function (_, h) { return h + '# '; }) + '\n\n' +
+          (l.checklist && l.checklist.length ? '**Controleer jezelf:**\n\n' + l.checklist.map(function (c) { return '- ' + c; }).join('\n') + '\n' : '');
+      }).join('\n');
+  }).join('\n') +
+  '\n## Naslag elektrotechniek\n\nURL: ' + Seo.absoluut('naslag') + '\n\n' +
+  ctx.NASLAG.map(function (k) { return '### ' + k.titel + '\n\n' + k.inhoud.trim() + '\n'; }).join('\n'));
 
 /* 404: nuttige pagina met links, bewust niet geindexeerd. */
 schrijf('404.html',

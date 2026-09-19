@@ -7,6 +7,10 @@ CURSUS.addModule({
   niveau: 'Beginner',
   studietijd: 7,
   intro: 'Spanning, stroom, weerstand en vermogen, en het verschil tussen wissel- en gelijkstroom. Zonder dit fundament blijft installeren het onthouden van trucjes.',
+  inleiding: [
+    "Deze module is de basis van de cursus elektrotechniek: spanning, stroom, weerstand en vermogen. Wie elektrotechniek voor beginners zoekt zonder dure boeken, begint hier met de wet van Ohm, wisselstroom en het verschil tussen 1-fase en 3-fase.",
+    "Je rekent met echte voorbeelden op 230 V, zoals de stroom van een waterkoker of de kosten van vloerverwarming. Zo bouw je een solide basiscursus elektrotechniek op waar alle volgende modules op voortbouwen."
+  ],
   leerdoelen: [
     'De wet van Ohm en de vermogensformules toepassen zonder rekenmachine',
     'Uitleggen waarom een apparaat stroom trekt in plaats van dat een automaat stroom levert',
