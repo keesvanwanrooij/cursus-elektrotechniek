@@ -112,13 +112,15 @@ function mainBlok(page, id) {
 
 var TEMPLATE = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 var RE_HEAD = /<!-- seo:head:start -->[\s\S]*?<!-- seo:head:end -->/;
+var RE_FOOT = /<!-- seo:foot:start -->[\s\S]*?<!-- seo:foot:end -->/;
 var RE_MAIN = /<!-- seo:main:start -->[\s\S]*?<!-- seo:main:end -->/;
-if (!RE_HEAD.test(TEMPLATE) || !RE_MAIN.test(TEMPLATE)) throw new Error('markers ontbreken in index.html');
+if (!RE_HEAD.test(TEMPLATE) || !RE_MAIN.test(TEMPLATE) || !RE_FOOT.test(TEMPLATE)) throw new Error('markers ontbreken in index.html');
 
 function pagina(page, id, sub) {
   var html = TEMPLATE
     .replace(RE_HEAD, function () { return '<!-- seo:head:start -->\n' + headBlok(page, id, sub) + '\n<!-- seo:head:end -->'; })
-    .replace(RE_MAIN, function () { return '<!-- seo:main:start -->' + mainBlok(page, id) + '<!-- seo:main:end -->'; });
+    .replace(RE_MAIN, function () { return '<!-- seo:main:start -->' + mainBlok(page, id) + '<!-- seo:main:end -->'; })
+    .replace(RE_FOOT, function () { return '<!-- seo:foot:start -->' + Views.footer() + '<!-- seo:foot:end -->'; });
   if (sub) {
     /* Diepere pagina's: alle relatieve verwijzingen worden absoluut vanaf de site-basis. */
     html = html
@@ -265,3 +267,19 @@ schrijf('404.html',
   '</div></main>\n</body>\n</html>\n');
 
 console.log('Klaar: ' + (1 + 1 + CURSUS.modules.length + aantalLessen) + ' pagina\'s, sitemap met ' + urls.length + ' URL\'s (' + SITE + BASE + ')');
+
+/* Controle: is de donatiepagina bereikbaar? Alleen een melding, de instelling blijft handmatig
+   (CURSUS.donatie.actief in content/index.js), zodat er nooit een dode knop online komt. */
+(async function () {
+  var url = CURSUS.donatie && CURSUS.donatie.url;
+  if (!url) return;
+  try {
+    var r = await fetch(url, { method: 'HEAD', redirect: 'manual' });
+    var live = r.status === 200;
+    if (live && !CURSUS.donatie.actief) console.log('\n>>> De donatiepagina is LIVE (' + url + '). Zet CURSUS.donatie.actief op true in content/index.js en bouw opnieuw.');
+    else if (!live && CURSUS.donatie.actief) console.log('\n>>> WAARSCHUWING: donatie staat aan, maar ' + url + ' geeft status ' + r.status + ' (nog niet live). Zet actief op false.');
+    else console.log('Donatie: ' + (live ? 'live en aan' : 'pagina nog niet live, knoppen staan uit') + '.');
+  } catch (e) {
+    console.log('Donatie: kon ' + url + ' niet controleren (' + e.message + ').');
+  }
+})();

@@ -153,6 +153,45 @@ window.Views = (function () {
       '<button type="button" class="uit" data-steun-uit>Niet meer tonen</button></aside>';
   }
 
+  /* ================================== FOOTER ================================== */
+
+  var REPO = 'https://github.com/keesvanwanrooij/cursus-elektrotechniek';
+
+  function footer() {
+    function modLink(m) {
+      return '<li><a href="' + Seo.path('module', m.id) + '">' + m.nr + '. ' + E(m.titel) + '</a></li>';
+    }
+    function ext(url, tekst) {
+      return '<li><a href="' + url + '" target="_blank" rel="noopener">' + tekst + '</a></li>';
+    }
+    var deel1 = CURSUS.modules.filter(function (m) { return m.deel !== 2; });
+    var deel2 = CURSUS.modules.filter(function (m) { return m.deel === 2; });
+    var steun = CURSUS.donatie && CURSUS.donatie.actief;
+
+    return '<div class="foot-grid">' +
+        '<div class="foot-col foot-about">' +
+          '<div class="foot-logo"><span class="bolt">⚡</span><b>Cursus Elektrotechniek</b></div>' +
+          '<p>Gratis online cursus elektrotechniek voor beginners, in het Nederlands. Zelfstudie in je eigen tempo, ook offline.</p>' +
+          (steun ? '<a class="btn ghost sm" href="' + E(CURSUS.donatie.url) + '" target="_blank" rel="noopener">' + HART + ' Steun het project</a>' : '') +
+        '</div>' +
+        '<nav class="foot-col" aria-label="Fundament"><h3>Fundament</h3><ul>' + deel1.map(modLink).join('') + '</ul></nav>' +
+        '<nav class="foot-col" aria-label="Specialisaties"><h3>Specialisaties</h3><ul>' + deel2.map(modLink).join('') + '</ul>' +
+          '<h3>Naslag</h3><ul><li><a href="' + Seo.path('naslag') + '">Formules en tabellen</a></li></ul></nav>' +
+        '<nav class="foot-col" aria-label="Project"><h3>Project</h3><ul>' +
+          '<li><a href="' + Seo.path('dash') + '">Mijn cursus</a></li>' +
+          ext(REPO, 'Broncode op GitHub') +
+          ext(REPO + '/issues/new', 'Fout of suggestie melden') +
+          ext('https://www.gnu.org/licenses/gpl-3.0.html', 'Licentie GPLv3') +
+        '</ul></nav>' +
+      '</div>' +
+      '<div class="foot-base">' +
+        '<p class="foot-disclaimer"><strong>Let op:</strong> deze zelfstudie is geen erkend diploma en geen NEN 3140-aanwijzing. ' +
+        'Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig. ' +
+        'Werk onder begeleiding van een ervaren elektricien.</p>' +
+        '<p class="foot-copy">© 2026 Kees van Wanrooij · Gratis en open source onder de GPLv3-licentie</p>' +
+      '</div>';
+  }
+
   function lesRij(m, l) {
     var klaar = Store.isKlaar(l.id);
     var volgende = Store.volgendeLes();
@@ -244,7 +283,6 @@ window.Views = (function () {
         '</div>' +
       '</div>' +
       (m.kritiek ? '' : steunBlok('stil')) +
-      (l.bronnen && l.bronnen.length ? '<div class="src">bron: ' + E(l.bronnen.join(' · ')) + '</div>' : '') +
       '</article>';
 
     return '<div class="lesson-layout">' + zij + artikel + '</div>';
@@ -263,5 +301,5 @@ window.Views = (function () {
       '</div>';
   }
 
-  return { steunBlok: steunBlok, dashboard: dashboard, modulePagina: modulePagina, lesPagina: lesPagina, naslag: naslag };
+  return { footer: footer, steunBlok: steunBlok, dashboard: dashboard, modulePagina: modulePagina, lesPagina: lesPagina, naslag: naslag };
 })();
