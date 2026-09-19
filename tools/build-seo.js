@@ -26,6 +26,8 @@ process.argv.slice(2).forEach(function (a) {
 var SITE = args.site || 'https://keesvanwanrooij.github.io';
 var BASE = args.base || '/cursus-elektrotechniek/';
 var OUT = path.resolve(args.out || ROOT);
+/* Google Search Console: verificatie via HTML-tag, alleen op de homepage van de URL-prefix property. */
+var GOOGLE_VERIFICATIE = 'Xix5E2WkjMEBGf1mt4B_nutdCvRRq8GmWnGjFAxBCes';
 var DATUM = process.env.BUILD_DATE || new Date().toISOString().slice(0, 10);
 
 /* ------------------------- app-code laden in een sandbox ------------------------- */
@@ -95,6 +97,7 @@ function headBlok(page, id, sub) {
     '<meta name="twitter:description" content="' + esc(m.description) + '">',
     '<meta name="twitter:image" content="' + esc(img) + '">'
   ];
+  if (page === 'dash') r.push('<meta name="google-site-verification" content="' + GOOGLE_VERIFICATIE + '">');
   if (sub) r.push('<meta name="site-base" content="' + esc(BASE) + '">');
   r.push('<script type="application/ld+json" id="jsonld">' + jsonVeilig(m.jsonld) + '</script>');
   return r.join('\n');
