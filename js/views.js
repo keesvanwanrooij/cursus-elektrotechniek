@@ -134,6 +134,25 @@ window.Views = (function () {
       m.inleiding.map(function (p) { return '<p>' + E(p) + '</p>'; }).join('') + '</section>';
   }
 
+  /* ============================ STEUN HET PROJECT ============================ */
+
+  var HART = '<svg class="hart" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 17.5 8.9 16.5C4.9 12.9 2.5 10.7 2.5 8 2.5 5.8 4.2 4.1 6.4 4.1c1.2 0 2.4.6 3.6 1.9 1.2-1.3 2.4-1.9 3.6-1.9 2.2 0 3.9 1.7 3.9 3.9 0 2.7-2.4 4.9-6.4 8.5z"/></svg>';
+
+  function steunAan() {
+    return CURSUS.donatie && CURSUS.donatie.actief && !Store.instelling('donatieUit');
+  }
+
+  /* soort 'stil': een rustige regel onder elke les. soort 'mijlpaal': na het afronden van een module. */
+  function steunBlok(soort, kop) {
+    if (!steunAan()) return '';
+    var mijlpaal = soort === 'mijlpaal';
+    return '<aside class="steun' + (mijlpaal ? ' mijlpaal' : '') + '">' + HART +
+      '<p>' + (kop ? '<strong>' + E(kop) + '</strong> ' : '') +
+      'Deze cursus is gratis en blijft dat. Heeft hij je geholpen? Dan kun je het project steunen.</p>' +
+      '<a class="btn ' + (mijlpaal ? '' : 'ghost ') + 'sm" href="' + E(CURSUS.donatie.url) + '" target="_blank" rel="noopener">Steun het project</a>' +
+      '<button type="button" class="uit" data-steun-uit>Niet meer tonen</button></aside>';
+  }
+
   function lesRij(m, l) {
     var klaar = Store.isKlaar(l.id);
     var volgende = Store.volgendeLes();
@@ -224,6 +243,7 @@ window.Views = (function () {
           (buren.volgende ? '<a class="btn ghost sm" href="' + Seo.path('les', buren.volgende.les.id) + '">' + E(buren.volgende.les.nr) + ' ' + E(buren.volgende.les.titel) + ' →</a>' : '') +
         '</div>' +
       '</div>' +
+      (m.kritiek ? '' : steunBlok('stil')) +
       (l.bronnen && l.bronnen.length ? '<div class="src">bron: ' + E(l.bronnen.join(' · ')) + '</div>' : '') +
       '</article>';
 
@@ -243,5 +263,5 @@ window.Views = (function () {
       '</div>';
   }
 
-  return { dashboard: dashboard, modulePagina: modulePagina, lesPagina: lesPagina, naslag: naslag };
+  return { steunBlok: steunBlok, dashboard: dashboard, modulePagina: modulePagina, lesPagina: lesPagina, naslag: naslag };
 })();
