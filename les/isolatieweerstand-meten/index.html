@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Isolatieweerstand meten | Cursus elektrotechniek</title>
+<meta name="description" content="Je begrijpt wat een isolatiemeting bewijst, waarom die op 500 V DC gebeurt en welke voorbereiding verplicht is. Gratis les uit de cursus elektrotechniek…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/isolatieweerstand-meten/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Isolatieweerstand meten | Cursus elektrotechniek">
+<meta property="og:description" content="Je begrijpt wat een isolatiemeting bewijst, waarom die op 500 V DC gebeurt en welke voorbereiding verplicht is. Gratis les uit de cursus elektrotechniek…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/isolatieweerstand-meten/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Isolatieweerstand meten | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je begrijpt wat een isolatiemeting bewijst, waarom die op 500 V DC gebeurt en welke voorbereiding verplicht is. Gratis les uit de cursus elektrotechniek…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Isolatieweerstand meten","description":"Je begrijpt wat een isolatiemeting bewijst, waarom die op 500 V DC gebeurt en welke voorbereiding verplicht is.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/isolatieweerstand-meten/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je begrijpt wat een isolatiemeting bewijst, waarom die op 500 V DC gebeurt en welke voorbereiding verplicht is.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Meten, testen en verifiëren","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/meten-testen-en-verifieren/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 7: Meten, testen en verifiëren","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/meten-testen-en-verifieren/"},{"@type":"ListItem","position":3,"name":"Isolatieweerstand meten","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/isolatieweerstand-meten/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 7</h5><div class="modname"><a href="/cursus-elektrotechniek/module/meten-testen-en-verifieren/" style="text-decoration:none">Meten, testen en verifiëren</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/welk-instrument-voor-welke-vraag/" class=""><span class="dot"></span><span class="snavtxt">7.1 Welk instrument voor welke vraag</span></a><a href="/cursus-elektrotechniek/les/de-multimeter-beheersen/" class=""><span class="dot"></span><span class="snavtxt">7.2 De multimeter beheersen</span></a><a href="/cursus-elektrotechniek/les/continuiteit-en-de-beschermingsleiding/" class=""><span class="dot"></span><span class="snavtxt">7.3 Continuïteit en de beschermingsleiding</span></a><a href="/cursus-elektrotechniek/les/isolatieweerstand-meten/" class="on"><span class="dot"></span><span class="snavtxt">7.4 Isolatieweerstand meten</span></a><a href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/" class=""><span class="dot"></span><span class="snavtxt">7.5 Aardlektest, Zs en de installatietester</span></a><a href="/cursus-elektrotechniek/les/opleveren-wat-je-aantoont-en-vastlegt/" class=""><span class="dot"></span><span class="snavtxt">7.6 Opleveren: wat je aantoont en vastlegt</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/isolatieweerstand-meten/#wat-je-wilt-weten" data-anker="wat-je-wilt-weten"><span class="snavtxt">Wat je wilt weten</span></a><a href="/cursus-elektrotechniek/les/isolatieweerstand-meten/#waarom-500-v-gelijkspanning" data-anker="waarom-500-v-gelijkspanning"><span class="snavtxt">Waarom 500 V gelijkspanning</span></a><a href="/cursus-elektrotechniek/les/isolatieweerstand-meten/#de-meting-uitvoeren" data-anker="de-meting-uitvoeren"><span class="snavtxt">De meting uitvoeren</span></a><a href="/cursus-elektrotechniek/les/isolatieweerstand-meten/#de-uitkomst-interpreteren" data-anker="de-uitkomst-interpreteren"><span class="snavtxt">De uitkomst interpreteren</span></a><a href="/cursus-elektrotechniek/les/isolatieweerstand-meten/#waar-dit-in-de-praktijk-het-meest-oplevert" data-anker="waar-dit-in-de-praktijk-het-meest-oplevert"><span class="snavtxt">Waar dit in de praktijk het meest oplevert</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/meten-testen-en-verifieren/">Module 7</a> › Les 7.4</div><h1>Isolatieweerstand meten</h1><div class="lessmeta"><span>⏱ 20 min</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je begrijpt wat een isolatiemeting bewijst, waarom die op 500 V DC gebeurt en welke voorbereiding verplicht is.</p></div><h2 id="wat-je-wilt-weten">Wat je wilt weten</h2>
+<p>De isolatie tussen geleiders onderling en tussen geleiders en aarde is de barrière die alles bij elkaar houdt. Die barrière veroudert: door warmte, vocht, uv-licht, mechanische belasting en knaagdieren.</p>
+<p>Een multimeter kan dit niet beoordelen. Die meet met enkele volts, en bij die spanning lijkt vrijwel elke aangetaste isolatie nog prima. Isolatie faalt pas onder spanning.</p>
+<h2 id="waarom-500-v-gelijkspanning">Waarom 500 V gelijkspanning</h2>
+<p>Voor 230/400 V-installaties schrijft de norm een testspanning van <strong>500 V DC</strong> voor, met een minimale isolatieweerstand van <strong>1 MΩ</strong>. In een droge, nieuwe installatie meet je in de praktijk waarden ver boven 10 MΩ; een uitkomst van net boven 1 MΩ is dus geen geruststelling maar een signaal.</p>
+<p>Waarom gelijkspanning en geen wisselspanning: elke kabel heeft een parasitaire capaciteit tussen de aders. Met wisselspanning zou daar continu een reactieve stroom doorheen lopen die de werkelijke ohmse isolatieweerstand maskeert. Met gelijkspanning laadt die capaciteit eenmalig op, waarna alleen de echte lekstroom overblijft.</p>
+<div class="callout gevaar"><h4>Verbruikers eerst loskoppelen</h4><p>500 V op een circuit waaraan nog een tv, een cv-ketel, domotica of LED-drivers hangen, vernielt die apparatuur onherroepelijk. Alle verbruikers gaan er fysiek af, en apparatuur die vast is aangesloten wordt afgeklemd of overbrugd volgens de opgave van de fabrikant. Dit is de belangrijkste voorbereidingsstap van de hele meting.</p></div>
+<h2 id="de-meting-uitvoeren">De meting uitvoeren</h2>
+<ol><li>Installatie spanningsloos en aangetoond spanningsloos.</li><li>Alle verbruikers ontkoppelen; schakelaars in de stand waarin het circuit doorloopt.</li><li>Meten tussen de geleiders onderling (L–N) en tussen elke geleider en aarde (L–PE, N–PE).</li><li>Testspanning 500 V DC aanleggen en de waarde aflezen nadat die zich heeft gestabiliseerd.</li><li>Na de meting het circuit <strong>ontladen</strong> - een goede meter doet dat zelf, maar controleer</li></ol>
+<p>het. Een opgeladen kabelcapaciteit kan een onaangename schok geven.</p>
+<ol><li>Waarden noteren per groep.</li></ol>
+<h2 id="de-uitkomst-interpreteren">De uitkomst interpreteren</h2>
+<table><thead><tr><th>Waarde</th><th>Interpretatie</th></tr></thead><tbody><tr><td>&gt; 10 MΩ</td><td>Normaal voor een gezonde, droge installatie</td></tr><tr><td>1 – 10 MΩ</td><td>Voldoet aan de minimumeis, maar verdient aandacht en herhaling</td></tr><tr><td>&lt; 1 MΩ</td><td>Voldoet niet; zoek de oorzaak voordat de installatie in gebruik gaat</td></tr><tr><td>Bijna 0</td><td>Directe sluiting; niet inschakelen</td></tr></tbody></table>
+<p>Vaak voorkomende oorzaken van een lage waarde: vocht in een buitendoos of kruipruimte, een beschadigde kabel na boren of hakken, een vergeten aangesloten verbruiker, of een element in een boiler of vloerverwarming dat begint te lekken.</p>
+<h2 id="waar-dit-in-de-praktijk-het-meest-oplevert">Waar dit in de praktijk het meest oplevert</h2>
+<ul><li><strong>Vóór inbedrijfstelling</strong> van nieuw werk: bewijst dat je tijdens de aanleg niets</li></ul>
+<p>hebt beschadigd.</p>
+<ul><li><strong>Bij vloerverwarming</strong>: vóór en ná het tegelen meten, en beide waarden noteren.</li></ul>
+<p>Dat is het enige bewijs of het element bij het leggen is beschadigd.</p>
+<ul><li><strong>Bij aardlekstoringen</strong> die niet aan één apparaat toe te schrijven zijn.</li><li><strong>Bij aankoop of overname</strong> van een oudere installatie.</li></ul><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik weet waarom een isolatiemeting op 500 V DC gebeurt en niet met AC</label><label><input type="checkbox" data-vinkje="1"> Ik weet dat de minimumeis 1 MΩ is en waarom een waarde net daarboven een signaal is</label><label><input type="checkbox" data-vinkje="2"> Ik koppel altijd alle verbruikers los voordat ik meet</label><label><input type="checkbox" data-vinkje="3"> Ik controleer of het circuit na de meting ontladen is</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/continuiteit-en-de-beschermingsleiding/">← 7.3 Continuïteit en de beschermingsleiding</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/">7.5 Aardlektest, Zs en de installatietester →</a></div></div><div class="src">bron: gemini.md M2 · chatgpt.md M7 · kimi.md M6 · copilot.md M4</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

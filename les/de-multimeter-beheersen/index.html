@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>De multimeter beheersen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt een multimeter correct instellen voor spanning, weerstand en doorbelmeting, en weet waarom stroommeting anders is.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-multimeter-beheersen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="De multimeter beheersen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt een multimeter correct instellen voor spanning, weerstand en doorbelmeting, en weet waarom stroommeting anders is.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-multimeter-beheersen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="De multimeter beheersen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt een multimeter correct instellen voor spanning, weerstand en doorbelmeting, en weet waarom stroommeting anders is.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"De multimeter beheersen","description":"Je kunt een multimeter correct instellen voor spanning, weerstand en doorbelmeting, en weet waarom stroommeting anders is.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-multimeter-beheersen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je kunt een multimeter correct instellen voor spanning, weerstand en doorbelmeting, en weet waarom stroommeting anders is.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Meten, testen en verifiëren","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/meten-testen-en-verifieren/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 7: Meten, testen en verifiëren","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/meten-testen-en-verifieren/"},{"@type":"ListItem","position":3,"name":"De multimeter beheersen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-multimeter-beheersen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 7</h5><div class="modname"><a href="/cursus-elektrotechniek/module/meten-testen-en-verifieren/" style="text-decoration:none">Meten, testen en verifiëren</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/welk-instrument-voor-welke-vraag/" class=""><span class="dot"></span><span class="snavtxt">7.1 Welk instrument voor welke vraag</span></a><a href="/cursus-elektrotechniek/les/de-multimeter-beheersen/" class="on"><span class="dot"></span><span class="snavtxt">7.2 De multimeter beheersen</span></a><a href="/cursus-elektrotechniek/les/continuiteit-en-de-beschermingsleiding/" class=""><span class="dot"></span><span class="snavtxt">7.3 Continuïteit en de beschermingsleiding</span></a><a href="/cursus-elektrotechniek/les/isolatieweerstand-meten/" class=""><span class="dot"></span><span class="snavtxt">7.4 Isolatieweerstand meten</span></a><a href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/" class=""><span class="dot"></span><span class="snavtxt">7.5 Aardlektest, Zs en de installatietester</span></a><a href="/cursus-elektrotechniek/les/opleveren-wat-je-aantoont-en-vastlegt/" class=""><span class="dot"></span><span class="snavtxt">7.6 Opleveren: wat je aantoont en vastlegt</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/de-multimeter-beheersen/#spanning-meten" data-anker="spanning-meten"><span class="snavtxt">Spanning meten</span></a><a href="/cursus-elektrotechniek/les/de-multimeter-beheersen/#weerstand-en-doorbellen" data-anker="weerstand-en-doorbellen"><span class="snavtxt">Weerstand en doorbellen</span></a><a href="/cursus-elektrotechniek/les/de-multimeter-beheersen/#stroom-meten" data-anker="stroom-meten"><span class="snavtxt">Stroom meten</span></a><a href="/cursus-elektrotechniek/les/de-multimeter-beheersen/#wat-de-meter-je-niet-vertelt" data-anker="wat-de-meter-je-niet-vertelt"><span class="snavtxt">Wat de meter je niet vertelt</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/meten-testen-en-verifieren/">Module 7</a> › Les 7.2</div><h1>De multimeter beheersen</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 2 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt een multimeter correct instellen voor spanning, weerstand en doorbelmeting, en weet waarom stroommeting anders is.</p></div><h2 id="spanning-meten">Spanning meten</h2>
+<p>Spanning meet je <strong>parallel</strong>: de meter komt naast het te meten deel te staan, tussen twee punten.</p>
+<ul><li>Stand op wisselspanning (V~) voor netspanning, gelijkspanning (V=) voor accu's,</li></ul>
+<p>PV-strings en elektronica.</p>
+<ul><li>Meet altijd de combinaties die je nodig hebt: L–N, L–PE en N–PE. Een spanning tussen</li></ul>
+<p>N en PE die meer is dan enkele volts wijst op een probleem in de nul of de aarding.</p>
+<ul><li>Bij een moderne automatische meter kies je alleen AC of DC; bij een handmatige meter</li></ul>
+<p>begin je op het hoogste bereik en schakel je terug.</p>
+<h2 id="weerstand-en-doorbellen">Weerstand en doorbellen</h2>
+<p>Weerstand meet je <strong>uitsluitend spanningsloos</strong>. Een weerstandsmeting op een gevoed circuit levert een onjuiste waarde op en kan het instrument beschadigen.</p>
+<p>De <strong>doorbelfunctie</strong> (het geluidssymbool) is een weerstandsmeting met een drempel: onder ongeveer 30 Ω geeft de meter een pieptoon. Dat is de snelste manier om aders te identificeren en doorverbindingen te controleren.</p>
+<p>Praktische toepassingen:</p>
+<ul><li>welke ader in de meterkast hoort bij welke ader in de doos boven;</li><li>of een schakelaar in beide standen doet wat hij hoort te doen;</li><li>of een geleider ergens is onderbroken;</li><li>of er sluiting is tussen fase en nul vóórdat je inschakelt.</li></ul>
+<div class="callout gevaar"><h4>Doorbellen op een gevoed circuit</h4><p>Zet je de meter in de weerstandsstand en prik je in een circuit dat nog spanning voert, dan meet je niet alleen onzin - je kunt de meter opblazen en zelf letsel oplopen. Eerst spanningsloos maken en aantonen, dan pas de weerstandsstand kiezen.</p></div>
+<h2 id="stroom-meten">Stroom meten</h2>
+<p>Stroom meet je <strong>in serie</strong>: de meter moet in de kring worden opgenomen, zodat de stroom er letterlijk doorheen loopt. In een vaste installatie is dat zelden praktisch en vaak onveilig: het betekent een circuit onderbreken en de meter ertussen zetten.</p>
+<p>Daarom gebruik je in de praktijk een <strong>stroomtang</strong>: die meet het magnetische veld rond een geleider en hoeft het circuit niet te onderbreken. Belangrijk: de tang moet om <strong>één</strong> geleider, niet om de hele kabel. Om een complete kabel meet je het verschil tussen heen- en teruggaande stroom, wat in een gezond circuit nul is - precies zoals een aardlekschakelaar werkt.</p>
+<p>Een stroomtang die om de hele kabel iets aanwijst, vertelt je dus dat er een lekstroom is. Dat is een uitstekende diagnostische truc bij aardlekstoringen.</p>
+<h2 id="wat-de-meter-je-niet-vertelt">Wat de meter je niet vertelt</h2>
+<ul><li><strong>Of het veilig is.</strong> Zie les 1.4: daarvoor is de tweepolige tester het instrument.</li><li><strong>Of de isolatie deugt.</strong> De meetspanning van een multimeter is enkele volts; isolatie</li></ul>
+<p>faalt pas bij honderden.</p>
+<ul><li><strong>Of de afschakeltijd binnen de norm valt.</strong> Daarvoor is een installatietester nodig.</li></ul>
+<p>De multimeter is het instrument voor het opsporen van waar iets verdwijnt of onderbroken is. Voor het bewijzen van veiligheid heb je ander gereedschap.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/5NgMbtf621s" title="Hoe werkt een multimeter?"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Hoe werkt een multimeter?</b></span><span>±12 min · <a href="https://www.youtube.com/watch?v=5NgMbtf621s" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/fAmGyqSPxoY" title="Demonstratie spanning meten met multimeter"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Demonstratie spanning meten met multimeter</b></span><span>±8 min · <a href="https://www.youtube.com/watch?v=fAmGyqSPxoY" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik meet spanning parallel en weerstand uitsluitend spanningsloos</label><label><input type="checkbox" data-vinkje="1"> Ik weet wat de doorbelfunctie doet en waar ik hem voor gebruik</label><label><input type="checkbox" data-vinkje="2"> Ik weet waarom een stroomtang om één geleider moet en niet om de hele kabel</label><label><input type="checkbox" data-vinkje="3"> Ik weet welke drie dingen een multimeter mij niet kan vertellen</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/welk-instrument-voor-welke-vraag/">← 7.1 Welk instrument voor welke vraag</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/continuiteit-en-de-beschermingsleiding/">7.3 Continuïteit en de beschermingsleiding →</a></div></div><div class="src">bron: chatgpt.md M7 · gemini.md M2 · kimi.md M6 · deekseek.md M4</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

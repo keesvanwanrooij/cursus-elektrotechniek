@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Het negenstappenmodel | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt een storing benaderen via een vaste, herhaalbare volgorde in plaats van via ingevingen. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/het-negenstappenmodel/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Het negenstappenmodel | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt een storing benaderen via een vaste, herhaalbare volgorde in plaats van via ingevingen. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/het-negenstappenmodel/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Het negenstappenmodel | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt een storing benaderen via een vaste, herhaalbare volgorde in plaats van via ingevingen. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Het negenstappenmodel","description":"Je kunt een storing benaderen via een vaste, herhaalbare volgorde in plaats van via ingevingen.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/het-negenstappenmodel/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je kunt een storing benaderen via een vaste, herhaalbare volgorde in plaats van via ingevingen.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Storingzoeken en oplevering","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 8: Storingzoeken en oplevering","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/storingzoeken-en-oplevering/"},{"@type":"ListItem","position":3,"name":"Het negenstappenmodel","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/het-negenstappenmodel/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 8</h5><div class="modname"><a href="/cursus-elektrotechniek/module/storingzoeken-en-oplevering/" style="text-decoration:none">Storingzoeken en oplevering</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/het-negenstappenmodel/" class="on"><span class="dot"></span><span class="snavtxt">8.1 Het negenstappenmodel</span></a><a href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/" class=""><span class="dot"></span><span class="snavtxt">8.2 Van symptoom naar hypothese</span></a><a href="/cursus-elektrotechniek/les/de-klassieke-storingen/" class=""><span class="dot"></span><span class="snavtxt">8.3 De klassieke storingen</span></a><a href="/cursus-elektrotechniek/les/een-aardlekstoring-lokaliseren/" class=""><span class="dot"></span><span class="snavtxt">8.4 Een aardlekstoring lokaliseren</span></a><a href="/cursus-elektrotechniek/les/afronden-controleren-en-uitleggen/" class=""><span class="dot"></span><span class="snavtxt">8.5 Afronden, controleren en uitleggen</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/het-negenstappenmodel/#waarom-een-model" data-anker="waarom-een-model"><span class="snavtxt">Waarom een model</span></a><a href="/cursus-elektrotechniek/les/het-negenstappenmodel/#de-negen-stappen" data-anker="de-negen-stappen"><span class="snavtxt">De negen stappen</span></a><a href="/cursus-elektrotechniek/les/het-negenstappenmodel/#de-halveringsmethode" data-anker="de-halveringsmethode"><span class="snavtxt">De halveringsmethode</span></a><a href="/cursus-elektrotechniek/les/het-negenstappenmodel/#een-voorbeeld" data-anker="een-voorbeeld"><span class="snavtxt">Een voorbeeld</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/storingzoeken-en-oplevering/">Module 8</a> › Les 8.1</div><h1>Het negenstappenmodel</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt een storing benaderen via een vaste, herhaalbare volgorde in plaats van via ingevingen.</p></div><h2 id="waarom-een-model">Waarom een model</h2>
+<p>Zonder methode gaat storingzoeken zo: je vermoedt iets, je vervangt dat, het werkt niet, je vermoedt iets anders. Na twintig minuten heb je vier dingen losgehaald, weet je niet meer wat de uitgangssituatie was, en is het probleem er nog.</p>
+<p>Met een methode weet je na elke stap méér dan ervoor, en kun je op elk moment uitleggen waar je staat.</p>
+<h2 id="de-negen-stappen">De negen stappen</h2>
+<p><strong>1. Symptom</strong> - wat gebeurt er daadwerkelijk? Niet wat de klant denkt dat er aan de hand is, maar wat er waarneembaar is. &quot;De lamp doet het niet&quot; is een symptoom; &quot;de schakelaar is kapot&quot; is al een conclusie.</p>
+<p><strong>2. Scope</strong> - hoe groot is het bereik? Eén apparaat, één aansluitpunt, één groep, meerdere groepen, of de hele woning? Dit is de belangrijkste stap, want hij halveert het zoekgebied meteen.</p>
+<p><strong>3. Supply</strong> - is er voeding? Staat de automaat in, is de aardlek ingeschakeld, komt er spanning tot aan het punt waar je begint?</p>
+<p><strong>4. Protection</strong> - wat doen de beveiligingen? Staat er iets uit, en zo ja, schakelt het direct opnieuw af of blijft het staan?</p>
+<p><strong>5. Circuit</strong> - waar loopt het verwachte pad? Teken het als het niet gedocumenteerd is. Zonder verwacht pad kun je geen afwijking vaststellen.</p>
+<p><strong>6. Divide</strong> - splits het circuit op een logisch punt. Meet in het midden en niet aan het uiteinde: elke meting halveert het zoekgebied.</p>
+<p><strong>7. Measure</strong> - test één hypothese per meting. Formuleer vooraf wat de uitkomst zou betekenen bij beide mogelijke resultaten.</p>
+<p><strong>8. Repair</strong> - verhelp de gevonden oorzaak, niet het symptoom. En als je iets vervangt, weet dan waaróm het defect raakte.</p>
+<p><strong>9. Verify</strong> - controleer de volledige werking en de veiligheid opnieuw, in alle schakelstanden. Een reparatie die één stand herstelt en een andere sloopt, is een terugkomklus.</p>
+<div class="callout kern"><h4>De vraag die alles verandert</h4><p>Begin nooit met &quot;waarschijnlijk is X kapot&quot;. Begin met: <strong>wat weet ik zeker?</strong> Dat lijkt trager en is in de praktijk vrijwel altijd sneller.</p></div>
+<h2 id="de-halveringsmethode">De halveringsmethode</h2>
+<p>Stap 6 verdient uitwerking, want het is de kern van efficiënt zoeken. Bij een circuit met tien mogelijke faalpunten:</p>
+<ul><li>meet je aan het uiteinde, dan weet je na één meting één ding;</li><li>meet je in het midden, dan weet je na één meting in welke helft het probleem zit.</li></ul>
+<p>Na drie metingen op de juiste punten heb je een circuit met tien punten teruggebracht tot één of twee. Dit werkt op elk niveau: eerst welke groep, dan welk deel van de groep, dan welke doos, dan welke klem.</p>
+<h2 id="een-voorbeeld">Een voorbeeld</h2>
+<p>Melding: &quot;de lamp in de gang doet het niet.&quot;</p>
+<ul><li><strong>Symptom</strong>: lamp brandt niet in beide schakelaarstanden.</li><li><strong>Scope</strong>: andere lampen op dezelfde groep werken wel → geen groepsprobleem.</li><li><strong>Supply</strong>: automaat staat in, aardlek staat in.</li><li><strong>Protection</strong>: niets afgeschakeld.</li><li><strong>Circuit</strong>: wisselschakeling met twee schakelaars, centraaldoos in het plafond.</li><li><strong>Divide</strong>: eerst meten bij de centraaldoos, niet bij de lamp.</li><li><strong>Measure</strong>: staat er in de doos spanning op de permanente fase? Ja → het probleem</li></ul>
+<p>zit stroomafwaarts. Komt de schakeldraad in een van de standen onder spanning? Nee → het probleem zit in het schakeldeel, niet in de lamp.</p>
+<ul><li>Vervolgens: spanningsloos maken en de wisselschakeling doorbellen.</li></ul>
+<p>Merk op dat het lampje zelf pas als laatste in beeld komt, terwijl dat de eerste ingeving zou zijn geweest.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/_yOIM9cuIZw" title="Student's Guide - Fault Finding"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> <b>Student's Guide - Fault Finding</b></span><span>±15 min · <a href="https://www.youtube.com/watch?v=_yOIM9cuIZw" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan de negen stappen opnoemen</label><label><input type="checkbox" data-vinkje="1"> Ik bepaal altijd eerst het bereik van de storing</label><label><input type="checkbox" data-vinkje="2"> Ik meet in het midden van een circuit in plaats van aan het uiteinde</label><label><input type="checkbox" data-vinkje="3"> Ik formuleer vooraf wat beide uitkomsten van een meting zouden betekenen</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/opleveren-wat-je-aantoont-en-vastlegt/">← 7.6 Opleveren: wat je aantoont en vastlegt</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/">8.2 Van symptoom naar hypothese →</a></div></div><div class="src">bron: chatgpt.md M8 · deekseek.md M5 · grok.md M6</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

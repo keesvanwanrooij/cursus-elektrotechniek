@@ -1,18 +1,24 @@
-# ⚡ Cursus Elektrotechniek
+# ⚡ Cursus Elektrotechniek: gratis online cursus voor beginners
 
 [![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-db61a2?style=flat-square&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/keesvanwanrooij)
 [![License: GPL v3](https://img.shields.io/badge/licentie-GPL%20v3-blue?style=flat-square&logo=gnu&logoColor=white)](LICENSE)
 [![PWA](https://img.shields.io/badge/installeerbaar-PWA-8a2be2?style=flat-square)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/)
 
-**Een gratis praktijkcursus elektrotechniek in het Nederlands, vrij te delen en aan te passen.**
-Voor iedereen die het vak wil leren: aankomend elektriciens, zij-instromers,
-doe-het-zelvers die het serieus willen begrijpen, of iedereen die nieuwsgierig is
-naar hoe hun eigen meterkast werkt.
+**Een gratis online basiscursus elektrotechniek voor beginners, in het Nederlands.**
+Zelfstudie in je eigen tempo voor aankomend elektriciens, zij-instromers en
+doe-het-zelvers die het vak serieus willen begrijpen, of iedereen die
+nieuwsgierig is naar hoe de eigen meterkast werkt.
 
-**[→ Open de cursus](https://keesvanwanrooij.github.io/cursus-elektrotechniek/)**
+**[→ Start de gratis cursus elektrotechniek](https://keesvanwanrooij.github.io/cursus-elektrotechniek/)**
 
-Geen account, geen betaalmuur, geen tracking. Werkt in de browser, offline
-installeerbaar als app op telefoon en laptop.
+Geen account, geen betaalmuur, geen tracking. Werkt in de browser en is
+offline te installeren als app op telefoon en laptop.
+
+Direct naar: [veilig werken en NEN 3140](https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/veiligheid-en-nen-3140/) ·
+[grondbeginselen elektriciteit](https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/) ·
+[de groepenkast](https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/) ·
+[meten en testen](https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/meten-testen-en-verifieren/) ·
+[naslag met formules en tabellen](https://keesvanwanrooij.github.io/cursus-elektrotechniek/naslag/)
 
 ---
 
@@ -61,7 +67,7 @@ hebben op de werkvloer.
 ## Zelf hosten of aanpassen
 
 De hele cursus is één statische site: vanilla HTML, CSS en JavaScript, geen
-dependencies, geen build-stap. Clone de repo en open `index.html`, of fork
+dependencies en geen build-stap nodig om te draaien. Clone de repo en open `index.html`, of fork
 hem en pas de lesinhoud aan in `content/`. Zie de codecommentaar en
 bestandsopbouw voor de details. Verspreid je een aangepaste versie, dan geldt
 de copyleft-verplichting uit de licentiesectie hieronder.
@@ -69,6 +75,17 @@ de copyleft-verplichting uit de licentiesectie hieronder.
 ```bash
 git clone https://github.com/keesvanwanrooij/cursus-elektrotechniek.git
 ```
+
+De site is voorgerenderd voor zoekmachines: elke les en module heeft een eigen
+schone URL met echte HTML. Na een wijziging in `content/`, `js/views.js` of
+`js/seo.js` bouw je die pagina's opnieuw (Node.js nodig, geen dependencies):
+
+```bash
+node tools/build-seo.js
+```
+
+Draai je de cursus op een eigen domein, gebruik dan
+`node tools/build-seo.js --site=https://jouwdomein.nl --base=/`.
 
 ## Belangrijk
 

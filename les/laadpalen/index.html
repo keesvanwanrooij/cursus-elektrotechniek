@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Laadpalen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kent de elektrische eisen van een laadpaal en kunt beoordelen of een woning er een aankan. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/laadpalen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Laadpalen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kent de elektrische eisen van een laadpaal en kunt beoordelen of een woning er een aankan. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/laadpalen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Laadpalen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kent de elektrische eisen van een laadpaal en kunt beoordelen of een woning er een aankan. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Laadpalen","description":"Je kent de elektrische eisen van een laadpaal en kunt beoordelen of een woning er een aankan.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/laadpalen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld","timeRequired":"PT18M","teaches":"Je kent de elektrische eisen van een laadpaal en kunt beoordelen of een woning er een aankan.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Zonnepanelen en laadpalen","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 10: Zonnepanelen en laadpalen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/"},{"@type":"ListItem","position":3,"name":"Laadpalen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/laadpalen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 10</h5><div class="modname"><a href="/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/" style="text-decoration:none">Zonnepanelen en laadpalen</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/" class=""><span class="dot"></span><span class="snavtxt">10.1 PV-installatie in hoofdlijnen</span></a><a href="/cursus-elektrotechniek/les/waarom-pv-je-veiligheidsprocedure-verandert/" class=""><span class="dot"></span><span class="snavtxt">10.2 Waarom PV je veiligheidsprocedure verandert</span></a><a href="/cursus-elektrotechniek/les/laadpalen/" class="on"><span class="dot"></span><span class="snavtxt">10.3 Laadpalen</span></a><a href="/cursus-elektrotechniek/les/slimme-meter-netbelasting-en-verzwaring/" class=""><span class="dot"></span><span class="snavtxt">10.4 Slimme meter, netbelasting en verzwaring</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/laadpalen/#wat-een-laadpaal-vraagt" data-anker="wat-een-laadpaal-vraagt"><span class="snavtxt">Wat een laadpaal vraagt</span></a><a href="/cursus-elektrotechniek/les/laadpalen/#eigen-groep-en-aardlektype-b" data-anker="eigen-groep-en-aardlektype-b"><span class="snavtxt">Eigen groep en aardlektype B</span></a><a href="/cursus-elektrotechniek/les/laadpalen/#load-balancing" data-anker="load-balancing"><span class="snavtxt">Load balancing</span></a><a href="/cursus-elektrotechniek/les/laadpalen/#het-trace-naar-buiten" data-anker="het-trace-naar-buiten"><span class="snavtxt">Het tracé naar buiten</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/">Module 10</a> › Les 10.3</div><h1>Laadpalen</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kent de elektrische eisen van een laadpaal en kunt beoordelen of een woning er een aankan.</p></div><h2 id="wat-een-laadpaal-vraagt">Wat een laadpaal vraagt</h2>
+<table><thead><tr><th>Uitvoering</th><th>Vermogen</th><th>Stroom</th><th>Typische doorsnede</th></tr></thead><tbody><tr><td>1-fase 16 A</td><td>3,7 kW</td><td>16 A</td><td>2,5 mm², meer bij lengte</td></tr><tr><td>1-fase 32 A</td><td>7,4 kW</td><td>32 A</td><td>6 mm² of meer</td></tr><tr><td>3-fase 16 A</td><td>11 kW</td><td>3×16 A</td><td>2,5 – 6 mm² naar lengte</td></tr><tr><td>3-fase 32 A</td><td>22 kW</td><td>3×32 A</td><td>6 – 10 mm² naar lengte</td></tr></tbody></table>
+<p>Het bepalende verschil met andere verbruikers: een laadpaal trekt zijn stroom <strong>uren achter elkaar op vrijwel het maximum</strong>. Waar een oven af en toe piekt, is een laadsessie een continue volle belasting. Kabel, beveiliging en verbindingen worden hier dus echt belast, en een marginale verbinding komt hier als eerste aan het licht.</p>
+<h2 id="eigen-groep-en-aardlektype-b">Eigen groep en aardlektype B</h2>
+<p>Een laadpaal krijgt altijd een eigen eindgroep. Het aardlektype is hier geen keuze maar een eis: door de elektronica in de auto en de laadpaal kan er een <strong>gladde gelijkstroomlekstroom</strong> ontstaan, die een type-A aardlek blind maakt (zie module 9.3).</p>
+<p>De oplossing is een <strong>type B</strong> aardlekbeveiliging, of een laadpaal met ingebouwde DC-lekstroomdetectie in combinatie met een type A - wat de fabrikant dan expliciet opgeeft. Wat het ook wordt: dit lees je in de documentatie van de laadpaal en je vult het niet zelf in.</p>
+<div class="callout gevaar"><h4>Nooit structureel laden via een verlengsnoer</h4><p>Een auto laden via een gewoon stopcontact met een verlengsnoer is de klassieke oorzaak van smeltende stekkers en gevelbranden. Het gaat om uren continue belasting op een verbinding die daar niet voor is gemaakt, vaak opgerold op een haspel zodat de warmte niet weg kan. Bij de vraag &quot;kan ik hier mijn auto opladen&quot; is het eerlijke antwoord: niet zo, wel met een vaste aansluiting.</p></div>
+<h2 id="load-balancing">Load balancing</h2>
+<p>Een woning met een 1×35 A-aansluiting heeft ongeveer 8 kW beschikbaar. Een laadpaal van 7,4 kW gebruikt dat vrijwel volledig. Wordt er tegelijk gekookt, dan schakelt de hoofdzekering af.</p>
+<p><strong>Load balancing</strong> lost dat op: een meetmodule in de meterkast bewaakt de totale belasting en stuurt de laadpaal aan om minder vermogen af te nemen zodra de rest van de woning meer vraagt. De auto laadt dan langzamer, maar het huis valt niet uit.</p>
+<p>Varianten:</p>
+<ul><li><strong>Statisch</strong> - de laadpaal is ingesteld op een vast maximum, ongeacht de rest.</li><li><strong>Dynamisch</strong> - de laadpaal past zich continu aan de werkelijke belasting aan. Dit</li></ul>
+<p>vereist een meetmodule om de hoofdaansluiting.</p>
+<p>Bij vrijwel elke laadpaal in een bestaande woning is dynamische load balancing de verstandige keuze.</p>
+<h2 id="het-trace-naar-buiten">Het tracé naar buiten</h2>
+<p>Dezelfde aandachtspunten als bij een buitenunit in module 9.2: werkelijke lengte meten, grondkabel op voldoende diepte, uv-bestendigheid, waterdichte doorvoeren, mechanische bescherming, en trekontlasting.</p>
+<p>Aanvullend bij laadpalen: houd rekening met de plaats van de auto en de lengte van de laadkabel, en met de mogelijkheid dat er later een tweede laadpunt bij komt. Een lege mantelbuis meeleggen kost bijna niets en scheelt later een compleet nieuw tracé.</p><h2 id="videos">Video's bij deze les</h2><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=laadpaal%20installeren%20eisen%20groep%20aardlek%20type%20B"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> Laadpaal installeren: eisen en aansluiting</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “laadpaal installeren eisen groep aardlek type B”</span></span></a><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik weet waarom een laadpaal een zwaardere belasting is dan het vermogen suggereert</label><label><input type="checkbox" data-vinkje="1"> Ik weet dat een type B aardlek of gelijkwaardige detectie vereist is</label><label><input type="checkbox" data-vinkje="2"> Ik kan uitleggen wat dynamische load balancing doet</label><label><input type="checkbox" data-vinkje="3"> Ik adviseer nooit structureel laden via een verlengsnoer</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/waarom-pv-je-veiligheidsprocedure-verandert/">← 10.2 Waarom PV je veiligheidsprocedure verandert</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/slimme-meter-netbelasting-en-verzwaring/">10.4 Slimme meter, netbelasting en verzwaring →</a></div></div><div class="src">bron: copilot.md M7 · qwen.md M5 · grok.md M6</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

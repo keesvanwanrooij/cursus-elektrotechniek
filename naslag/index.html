@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Naslag elektrotechniek: formules, tabellen en spiekbriefjes</title>
+<meta name="description" content="Naslag elektrotechniek voor beginners en elektriciens: formules, stroom bij 230 V, kabeldoorsnedes, aardlektypes, IP-codes en badkamerzones. Gratis.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/naslag/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Naslag elektrotechniek: formules, tabellen en spiekbriefjes">
+<meta property="og:description" content="Naslag elektrotechniek voor beginners en elektriciens: formules, stroom bij 230 V, kabeldoorsnedes, aardlektypes, IP-codes en badkamerzones. Gratis.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/naslag/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Naslag elektrotechniek: formules, tabellen en spiekbriefjes">
+<meta name="twitter:description" content="Naslag elektrotechniek voor beginners en elektriciens: formules, stroom bij 230 V, kabeldoorsnedes, aardlektypes, IP-codes en badkamerzones. Gratis.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Naslag elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/naslag/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › Naslag</div><div class="sect-h"><h1>Naslag elektrotechniek</h1><span>formules, tabellen en spiekbriefjes voor op de werkvloer</span></div><div class="naslaggrid"><div class="naslagcard"><h3>🧮 Formules</h3><table><thead><tr><th>Formule</th><th>Waarvoor</th></tr></thead><tbody><tr><td>U = I × R</td><td>Wet van Ohm</td></tr><tr><td>I = U / R</td><td>Stroom uit spanning en weerstand</td></tr><tr><td>P = U × I</td><td>Vermogen</td></tr><tr><td>I = P / U</td><td>Stroom uit vermogen - het meest gebruikt</td></tr><tr><td>P = U² / R</td><td>Vermogen bij bekende weerstand</td></tr><tr><td>P = I² × R</td><td>Warmte in een verbinding - verklaart brand</td></tr><tr><td>U tussen fasen = 230 × √3 ≈ 400 V</td><td>3-fase</td></tr><tr><td>U piek = 230 × √2 ≈ 325 V</td><td>Effectieve waarde versus piek</td></tr><tr><td>Energie (kWh) = P (kW) × t (uur)</td><td>Verbruik en kosten</td></tr></tbody></table></div><div class="naslagcard"><h3>⚡ Stroom bij 230 V</h3><table><thead><tr><th>Vermogen</th><th>Stroom</th><th>Typisch</th></tr></thead><tbody><tr><td>500 W</td><td>2,2 A</td><td>Tv, kleine koelkast</td></tr><tr><td>1000 W</td><td>4,3 A</td><td>Stofzuiger</td></tr><tr><td>1500 W</td><td>6,5 A</td><td>Vloerverwarming klein</td></tr><tr><td>2000 W</td><td>8,7 A</td><td>Föhn, kleine oven</td></tr><tr><td>2300 W</td><td>10,0 A</td><td>Waterkoker</td></tr><tr><td>3000 W</td><td>13,0 A</td><td>Zwaar element</td></tr><tr><td>3500 W</td><td>15,2 A</td><td>Grens van een 16 A-groep</td></tr><tr><td>3680 W</td><td>16,0 A</td><td>Theoretisch maximum 16 A-groep</td></tr></tbody></table>
+<p>Vuistregel: <strong>vermogen ÷ 230</strong>, of onthoud 2300 W = 10 A en schaal vanaf daar.</p></div><div class="naslagcard"><h3>🎨 Aderkleuren</h3><table><thead><tr><th>Kleur</th><th>Functie</th></tr></thead><tbody><tr><td>Bruin</td><td>Fase (L of L1)</td></tr><tr><td>Zwart</td><td>Fase (L2) of schakeldraad</td></tr><tr><td>Grijs</td><td>Fase (L3) of schakeldraad</td></tr><tr><td>Blauw</td><td>Nul (N)</td></tr><tr><td>Geelgroen</td><td>Beschermingsleiding (PE) - uitsluitend hiervoor</td></tr></tbody></table>
+<p>In oude installaties gelden andere kleuren en soms andere betekenissen. <strong>Kleur is een aanwijzing, meten is het bewijs.</strong></p></div><div class="naslagcard"><h3>📏 Doorsnede en beveiliging</h3><table><thead><tr><th>Doorsnede</th><th>Gangbare beveiliging</th><th>Toepassing</th></tr></thead><tbody><tr><td>1,5 mm²</td><td>16 A</td><td>Licht, gewone contactdozen</td></tr><tr><td>2,5 mm²</td><td>16 – 20 A</td><td>Keuken, wasmachine, zwaardere groepen</td></tr><tr><td>4 mm²</td><td>20 – 25 A</td><td>Kookgroep, langere leidingen</td></tr><tr><td>6 mm²</td><td>25 – 35 A</td><td>Kookgroep 3-fase, laadpaal, warmtepomp</td></tr><tr><td>10 mm²</td><td>40 A en hoger</td><td>Voedingskabels</td></tr></tbody></table>
+<p>Vuistregel voor de ongunstigste gangbare situatie (in buis, in de wand). Bij lange leidingen, bundeling of isolatie hoort een echte berekening. <strong>De beveiliging hoort bij de kabel, niet bij het apparaat.</strong></p></div><div class="naslagcard"><h3>🔒 De vijf stappen van veiligstellen</h3><ol><li><strong>Scheiden</strong> - alle voedingsbronnen, ook PV, UPS en laadpaal</li><li><strong>Beveiligen</strong> tegen wederinschakeling - LOTOTO: slot en label</li><li><strong>Controleren</strong> - tweepolige tester, test de tester vóór én na</li><li><strong>Aarden en kortsluiten</strong> - bij onoverzichtelijke installaties</li><li><strong>Afschermen</strong> - nabijgelegen delen die onder spanning blijven</li></ol>
+<blockquote>Uitschakelen is een handeling. Spanningsloosheid is een toestand die je moet vaststellen.</blockquote>
+<p>Meet in een 3-fase kast álle combinaties: L1–N, L2–N, L3–N, L1–L2, L2–L3, L1–L3, en elke fase naar PE.</p></div><div class="naslagcard"><h3>🛡️ MCB, RCD en RCBO</h3><table><thead><tr><th>Component</th><th>Beschermt</th><th>Reageert op</th></tr></thead><tbody><tr><td>MCB (installatieautomaat)</td><td>De leiding</td><td>Overbelasting (thermisch) en kortsluiting (magnetisch)</td></tr><tr><td>RCD (aardlekschakelaar)</td><td>De mens</td><td>Verschilstroom naar aarde, 30 mA</td></tr><tr><td>RCBO (aardlekautomaat)</td><td>Beide, per groep</td><td>Beide</td></tr></tbody></table>
+<p><strong>Karakteristiek</strong></p>
+<table><thead><tr><th>Letter</th><th>Magnetisch bij</th><th>Waarvoor</th></tr></thead><tbody><tr><td>B</td><td>3 – 5 × In</td><td>Licht, contactdozen</td></tr><tr><td>C</td><td>5 – 10 × In</td><td>Motoren, LED-drivers, warmtepompen</td></tr><tr><td>D</td><td>10 – 20 × In</td><td>Zware inschakelstromen</td></tr></tbody></table>
+<p>Een aardlek beschermt <strong>niet</strong> bij aanraking van fase én nul tegelijk.</p></div><div class="naslagcard"><h3>🔀 Aardlektypes</h3><table><thead><tr><th>Type</th><th>Detecteert</th><th>Waar</th></tr></thead><tbody><tr><td>AC</td><td>Zuivere wisselstroom</td><td>Verouderd, niet meer toepassen</td></tr><tr><td>A</td><td>Wisselstroom + pulserende DC</td><td>Standaard in woningen</td></tr><tr><td>F</td><td>Als A + samengestelde frequenties</td><td>Frequentieregelaars, veel warmtepompen</td></tr><tr><td>B</td><td>Als F + gladde gelijkstroom</td><td>Laadpalen, PV-omvormers</td></tr></tbody></table>
+<p>Een gladde gelijkstroomlek kan een type-AC of type-A aardlek <strong>verzadigen</strong>: hij ziet dan ook gewone lekstromen niet meer, terwijl de testknop nog gewoon werkt.</p>
+<p>Maximaal <strong>4 eindgroepen</strong> achter één aardlek - lekstromen tellen op.</p></div><div class="naslagcard"><h3>💧 IP-codering</h3><p><strong>IP + vaste voorwerpen + water</strong></p>
+<table><thead><tr><th>1e cijfer</th><th>Betekent</th></tr></thead><tbody><tr><td>2</td><td>Vingerveilig</td></tr><tr><td>4</td><td>Voorwerpen vanaf 1 mm</td></tr><tr><td>5</td><td>Beperkt stofdicht</td></tr><tr><td>6</td><td>Volledig stofdicht</td></tr></tbody></table>
+<table><thead><tr><th>2e cijfer</th><th>Betekent</th></tr></thead><tbody><tr><td>1</td><td>Druppelwater</td></tr><tr><td>3</td><td>Sproeiwater tot 60°</td></tr><tr><td>4</td><td>Spatwater uit elke richting</td></tr><tr><td>5</td><td>Waterstralen</td></tr><tr><td>7</td><td>Tijdelijke onderdompeling</td></tr></tbody></table>
+<p>IP44 = gangbare minimumeis buiten en in vochtige ruimtes. De waarde geldt voor het <strong>correct gemonteerde geheel</strong>, inclusief wartel en klep.</p></div><div class="naslagcard"><h3>🚿 Badkamerzones</h3><table><thead><tr><th>Zone</th><th>Waar</th><th>Kort</th></tr></thead><tbody><tr><td>0</td><td>In bad of douchebak</td><td>Alleen daarvoor bestemde apparatuur, zeer lage veiligheidsspanning</td></tr><tr><td>1</td><td>Boven bad/douche tot 2,25 m</td><td>Zeer beperkt, geen contactdozen</td></tr><tr><td>2</td><td>60 cm rondom zone 1</td><td>Voldoende IP-waarde vereist</td></tr><tr><td>3</td><td>Daarbuiten</td><td>Regulier, met aardlekbeveiliging</td></tr></tbody></table>
+<p>Hoe dichter bij het water, hoe strenger. Beoordeel <strong>per zone</strong>, niet per ruimte. Bij een verbouwing verschuiven de zones - opnieuw beoordelen.</p></div><div class="naslagcard"><h3>🔍 Storingzoeken in 9 stappen</h3><ol><li><strong>Symptom</strong> - wat gebeurt er echt?</li><li><strong>Scope</strong> - hoe groot is het bereik?</li><li><strong>Supply</strong> - is er voeding?</li><li><strong>Protection</strong> - wat doen de beveiligingen?</li><li><strong>Circuit</strong> - waar loopt het verwachte pad?</li><li><strong>Divide</strong> - splits in het midden, niet aan het uiteinde</li><li><strong>Measure</strong> - één hypothese per meting</li><li><strong>Repair</strong> - de oorzaak, niet het symptoom</li><li><strong>Verify</strong> - alle standen, en de veiligheid opnieuw</li></ol>
+<blockquote>Begin nooit met &quot;waarschijnlijk is X kapot&quot;. Begin met: <strong>wat weet ik zeker?</strong></blockquote></div><div class="naslagcard"><h3>🧭 Symptoom naar richting</h3><table><thead><tr><th>Patroon</th><th>Zoekrichting</th></tr></thead><tbody><tr><td>Eén apparaat, rest werkt</td><td>Apparaat of aansluitpunt</td></tr><tr><td>Eén groep uit</td><td>Automaat, bedrading of belasting in die groep</td></tr><tr><td>Meerdere groepen</td><td>Aardlek, hoofdschakelaar, gedeelde nul</td></tr><tr><td>Hele woning</td><td>Aansluiting, hoofdzekering, netbeheerder</td></tr><tr><td>Alles werkt maar vreemd</td><td><strong>Onderbroken nul</strong> - meet N–PE</td></tr><tr><td>Alleen bij belasting</td><td>Overgangsweerstand of te dunne leiding</td></tr><tr><td>Alleen bij vocht of regen</td><td>Isolatiefout, buitendoos, kruipruimte</td></tr><tr><td>Sinds er PV of een laadpaal is</td><td>Aardlektype controleren</td></tr><tr><td>Bij inschakelen van veel LED</td><td>Inschakelstroom, C-karakteristiek overwegen</td></tr></tbody></table></div><div class="naslagcard"><h3>☠️ Stroom door het lichaam</h3><table><thead><tr><th>Stroom</th><th>Effect (50 Hz, pad via het hart)</th></tr></thead><tbody><tr><td>0,5 – 1 mA</td><td>Net waarneembaar</td></tr><tr><td>5 – 10 mA</td><td>Pijnlijk, spieren trekken samen</td></tr><tr><td>10 – 16 mA</td><td><strong>Loslaatgrens</strong> - je kunt niet meer loslaten</td></tr><tr><td>30 mA</td><td>Verkramping ademhalingsspieren</td></tr><tr><td>50 mA +</td><td>Reële kans op ventrikelfibrilleren</td></tr></tbody></table>
+<p>Bij 230 V en 1000 Ω lichaamsweerstand (vochtig): <strong>230 mA</strong>.</p>
+<p><strong>Bij een ongeval:</strong> eerst stroom uit, dan pas aanraken. 112 bellen. Ook zonder zichtbaar letsel medisch laten beoordelen - hartritmestoornissen kunnen uren later optreden.</p></div><div class="naslagcard"><h3>🔌 Aansluitwaarden</h3><table><thead><tr><th>Aansluiting</th><th>Beschikbaar</th></tr></thead><tbody><tr><td>1×25 A</td><td>≈ 5,7 kW</td></tr><tr><td>1×35 A</td><td>≈ 8,0 kW</td></tr><tr><td>1×40 A</td><td>≈ 9,2 kW</td></tr><tr><td>3×25 A</td><td>≈ 17,3 kW</td></tr><tr><td>3×35 A</td><td>≈ 24,2 kW</td></tr></tbody></table>
+<p><strong>Gelijktijdige belasting inschatten</strong></p>
+<table><thead><tr><th>Verbruiker</th><th>Vermogen</th></tr></thead><tbody><tr><td>Inductiekookplaat in gebruik</td><td>3 – 7 kW</td></tr><tr><td>Warmtepomp incl. bijverwarming</td><td>3 – 9 kW</td></tr><tr><td>Laadpaal 1-fase</td><td>3,7 kW</td></tr><tr><td>Laadpaal 3-fase</td><td>11 – 22 kW</td></tr><tr><td>Elektrische boiler</td><td>2 kW</td></tr><tr><td>Wasmachine + droger</td><td>2 – 4 kW</td></tr></tbody></table></div><div class="naslagcard"><h3>📐 Meten: instrument en categorie</h3><p><strong>Welk instrument</strong></p>
+<table><thead><tr><th>Vraag</th><th>Instrument</th></tr></thead><tbody><tr><td>Staat hier geen gevaarlijke spanning?</td><td>Tweepolige tester</td></tr><tr><td>Waar verdwijnt de spanning?</td><td>Multimeter</td></tr><tr><td>Loopt deze geleider door?</td><td>Doorbelfunctie</td></tr><tr><td>Deugt de isolatie?</td><td>Isolatiemeter, 500 V DC, min. 1 MΩ</td></tr><tr><td>Schakelt de aardlek op tijd?</td><td>Installatietester, RCD-test</td></tr><tr><td>Schakelt de automaat snel genoeg?</td><td>Installatietester, Zs</td></tr><tr><td>Hoeveel stroom loopt er nu?</td><td>Stroomtang</td></tr></tbody></table>
+<p><strong>Meetcategorie</strong></p>
+<table><thead><tr><th>CAT</th><th>Waar</th></tr></thead><tbody><tr><td>II</td><td>Stopcontact en aangesloten apparatuur</td></tr><tr><td>III</td><td>Vaste installatie, verdeelinrichting</td></tr><tr><td>IV</td><td>Aansluiting netbeheerder, meterkast</td></tr></tbody></table>
+<p>Weerstand meten <strong>uitsluitend spanningsloos</strong>. Isolatiemeting: alle verbruikers eraf.</p></div></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

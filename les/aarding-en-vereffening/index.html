@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Aarding en vereffening | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt uitleggen waarom aarding bestaat, wat vereffening toevoegt, en wat er misgaat als de aarding ontbreekt. Gratis les uit de cursus elektrotechniek…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aarding-en-vereffening/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aarding en vereffening | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt uitleggen waarom aarding bestaat, wat vereffening toevoegt, en wat er misgaat als de aarding ontbreekt. Gratis les uit de cursus elektrotechniek…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aarding-en-vereffening/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aarding en vereffening | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt uitleggen waarom aarding bestaat, wat vereffening toevoegt, en wat er misgaat als de aarding ontbreekt. Gratis les uit de cursus elektrotechniek…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Aarding en vereffening","description":"Je kunt uitleggen waarom aarding bestaat, wat vereffening toevoegt, en wat er misgaat als de aarding ontbreekt.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aarding-en-vereffening/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner tot gemiddeld","timeRequired":"PT18M","teaches":"Je kunt uitleggen waarom aarding bestaat, wat vereffening toevoegt, en wat er misgaat als de aarding ontbreekt.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"De Nederlandse woninginstallatie","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 3: De Nederlandse woninginstallatie","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/"},{"@type":"ListItem","position":3,"name":"Aarding en vereffening","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aarding-en-vereffening/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 3</h5><div class="modname"><a href="/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/" style="text-decoration:none">De Nederlandse woninginstallatie</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/de-keten-van-net-tot-lamp/" class=""><span class="dot"></span><span class="snavtxt">3.1 De keten van net tot lamp</span></a><a href="/cursus-elektrotechniek/les/de-meterkast/" class=""><span class="dot"></span><span class="snavtxt">3.2 De meterkast</span></a><a href="/cursus-elektrotechniek/les/de-groepenkast-van-binnen/" class=""><span class="dot"></span><span class="snavtxt">3.3 De groepenkast van binnen</span></a><a href="/cursus-elektrotechniek/les/mcb-rcd-en-rcbo-wat-beschermt-wat/" class=""><span class="dot"></span><span class="snavtxt">3.4 MCB, RCD en RCBO: wat beschermt wat</span></a><a href="/cursus-elektrotechniek/les/aarding-en-vereffening/" class="on"><span class="dot"></span><span class="snavtxt">3.5 Aarding en vereffening</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/aarding-en-vereffening/#waarom-aarding-bestaat" data-anker="waarom-aarding-bestaat"><span class="snavtxt">Waarom aarding bestaat</span></a><a href="/cursus-elektrotechniek/les/aarding-en-vereffening/#waar-de-aarde-vandaan-komt" data-anker="waar-de-aarde-vandaan-komt"><span class="snavtxt">Waar de aarde vandaan komt</span></a><a href="/cursus-elektrotechniek/les/aarding-en-vereffening/#hoofdvereffening" data-anker="hoofdvereffening"><span class="snavtxt">Hoofdvereffening</span></a><a href="/cursus-elektrotechniek/les/aarding-en-vereffening/#wat-er-misgaat-zonder-goede-aarding" data-anker="wat-er-misgaat-zonder-goede-aarding"><span class="snavtxt">Wat er misgaat zonder goede aarding</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/">Module 3</a> › Les 3.5</div><h1>Aarding en vereffening</h1><div class="lessmeta"><span>⏱ 18 min</span><span>📊 Beginner tot gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt uitleggen waarom aarding bestaat, wat vereffening toevoegt, en wat er misgaat als de aarding ontbreekt.</p></div><h2 id="waarom-aarding-bestaat">Waarom aarding bestaat</h2>
+<p>Stel: in een wasmachine raakt de fasedraad de metalen behuizing. Zonder beschermingsleiding staat die behuizing nu op 230 V ten opzichte van aarde. Er gebeurt verder niets - geen vonk, geen geluid - tot iemand de machine aanraakt en zelf het pad naar aarde vormt.</p>
+<p>Mét een beschermingsleiding gebeurt er wél iets. De foutstroom loopt onmiddellijk via de PE weg. Dat levert twee mogelijke reddingen op:</p>
+<ol><li>De stroom is zo hoog dat de <strong>installatieautomaat</strong> direct afschakelt, want vanuit</li></ol>
+<p>het circuit gezien is dit een kortsluiting.</p>
+<ol><li>De <strong>aardlekschakelaar</strong> ziet dat de teruggaande stroom niet klopt en schakelt af</li></ol>
+<p>bij 30 mA.</p>
+<p>In beide gevallen wordt de fout omgezet in een afschakeling, vóórdat er een mens bij betrokken is. Dat is de volledige functie van aarding: een fout omzetten in een detecteerbare gebeurtenis.</p>
+<h2 id="waar-de-aarde-vandaan-komt">Waar de aarde vandaan komt</h2>
+<p>In Nederlandse woningen komt de aarding uit een van deze bronnen:</p>
+<ul><li>een <strong>aardelektrode</strong>: een koperen staaf of band in de grond bij de woning;</li><li>de <strong>aarde van de netbeheerder</strong>, meegevoerd met de aansluiting;</li><li>een combinatie van beide.</li></ul>
+<p>Die komen samen op de <strong>hoofdaardrail</strong> in de meterkast. Vanaf daar loopt de aardrail de kast in en gaat de beschermingsleiding mee met elke eindgroep.</p>
+<h2 id="hoofdvereffening">Hoofdvereffening</h2>
+<p>Naast aarding kent een installatie <strong>vereffening</strong>: het onderling verbinden van metalen delen die géén onderdeel van de installatie zijn maar wel geleidend, zodat er tussen die delen geen gevaarlijk spanningsverschil kan ontstaan.</p>
+<p>Klassieke vereffeningspunten in een woning: metalen waterleiding, gasleiding, metalen cv-leidingen en de metalen constructie van het gebouw. Ze worden met een geelgroene geleider verbonden met de hoofdaardrail.</p>
+<p>De redenering: raak je tegelijkertijd een defecte wasmachine en de metalen kraan aan, dan wil je niet dat er tussen die twee 230 V staat. Zijn ze vereffend, dan bewegen ze samen en blijft het verschil klein.</p>
+<div class="callout gevaar"><h4>Kunststof leidingen veranderen het beeld</h4><p>Steeds meer woningen hebben kunststof water- en gasleidingen. Een vereffeningsdraad die aan een kunststof leiding is bevestigd of aan een stuk metaal dat inmiddels van de rest is losgekoppeld, doet niets - terwijl hij er wel geruststellend uitziet. Bij een renovatie is dit een expliciet controlepunt.</p></div>
+<h2 id="wat-er-misgaat-zonder-goede-aarding">Wat er misgaat zonder goede aarding</h2>
+<ul><li><strong>Geen afschakeling bij een lichaamsfout.</strong> De behuizing blijft onder spanning staan.</li><li><strong>Aardlek werkt niet zoals bedoeld.</strong> Bij een fout naar een niet-geaarde behuizing</li></ul>
+<p>is er geen pad naar aarde en dus geen verschilstroom - tot een mens dat pad vormt.</p>
+<ul><li><strong>Overspanningsbeveiliging werkt niet.</strong> Die moet zijn energie ergens naartoe afvoeren.</li></ul>
+<p>Woningen van vóór 1975, met name in de oudere delen van een installatie, hebben regelmatig groepen zonder beschermingsleiding. Kom je die tegen - bijvoorbeeld een tweeaderige leiding naar een oude wandcontactdoos zonder randaarde - dan is dat geen detail maar een bevinding die je meldt en niet stilzwijgend uitbreidt.</p>
+<details><summary>Waarom mag je PE en N in een eindgroep niet doorverbinden?</summary><p>Omdat de aardlekschakelaar dan bedrijfsstroom over de beschermingsleiding ziet lopen. De balans tussen fase en nul klopt niet meer en de aardlek schakelt af, of erger: hij ziet een deel van de foutstroom niet meer op het moment dat het ertoe doet. Bovendien komt er bedrijfsspanning te staan op leidingen die per definitie aanraakbaar zijn. De scheiding tussen N en PE in de eindgroepen is een van de dingen waar je nooit creatief mee omgaat.</p></details><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan uitleggen wat aarding doet bij een fase die de behuizing raakt</label><label><input type="checkbox" data-vinkje="1"> Ik weet wat hoofdvereffening is en welke leidingen daarvoor in aanmerking komen</label><label><input type="checkbox" data-vinkje="2"> Ik weet waarom kunststof leidingen de vereffening kunnen ondermijnen</label><label><input type="checkbox" data-vinkje="3"> Ik weet waarom N en PE in een eindgroep nooit verbonden worden</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/mcb-rcd-en-rcbo-wat-beschermt-wat/">← 3.4 MCB, RCD en RCBO: wat beschermt wat</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/kabels-en-draden-herkennen/">4.1 Kabels en draden herkennen →</a></div></div><div class="src">bron: gemini.md M3 · kimi.md M1 · deekseek.md M3 · qwen.md M3</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

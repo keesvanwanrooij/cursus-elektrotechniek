@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Groepsindeling ontwerpen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt een verdeling in eindgroepen opstellen die past bij het gebruik van de woning. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/groepsindeling-ontwerpen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Groepsindeling ontwerpen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt een verdeling in eindgroepen opstellen die past bij het gebruik van de woning. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/groepsindeling-ontwerpen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Groepsindeling ontwerpen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt een verdeling in eindgroepen opstellen die past bij het gebruik van de woning. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Groepsindeling ontwerpen","description":"Je kunt een verdeling in eindgroepen opstellen die past bij het gebruik van de woning.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/groepsindeling-ontwerpen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT20M","teaches":"Je kunt een verdeling in eindgroepen opstellen die past bij het gebruik van de woning.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Groepenkast: ontwerp en montage","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 6: Groepenkast: ontwerp en montage","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"},{"@type":"ListItem","position":3,"name":"Groepsindeling ontwerpen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/groepsindeling-ontwerpen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 6</h5><div class="modname"><a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/" style="text-decoration:none">Groepenkast: ontwerp en montage</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/" class="on"><span class="dot"></span><span class="snavtxt">6.1 Groepsindeling ontwerpen</span></a><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/" class=""><span class="dot"></span><span class="snavtxt">6.2 Karakteristiek en selectiviteit</span></a><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/" class=""><span class="dot"></span><span class="snavtxt">6.3 Aardlekarchitectuur en aardlektypes</span></a><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/" class=""><span class="dot"></span><span class="snavtxt">6.4 3-fase en de nulgeleider</span></a><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/" class=""><span class="dot"></span><span class="snavtxt">6.5 Een kast opbouwen en opleveren</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/#waarom-je-niet-indeelt-op-ruimte-maar-op-gebruik" data-anker="waarom-je-niet-indeelt-op-ruimte-maar-op-gebruik"><span class="snavtxt">Waarom je niet indeelt op ruimte maar op gebruik</span></a><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/#een-realistische-indeling-voor-een-eengezinswoni" data-anker="een-realistische-indeling-voor-een-eengezinswoni"><span class="snavtxt">Een realistische indeling voor een eengezinswoning</span></a><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/#de-maximale-groepen-per-aardlek" data-anker="de-maximale-groepen-per-aardlek"><span class="snavtxt">De maximale groepen per aardlek</span></a><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/#ruimte-in-de-kast" data-anker="ruimte-in-de-kast"><span class="snavtxt">Ruimte in de kast</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/">Module 6</a> › Les 6.1</div><h1>Groepsindeling ontwerpen</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt een verdeling in eindgroepen opstellen die past bij het gebruik van de woning.</p></div><h2 id="waarom-je-niet-indeelt-op-ruimte-maar-op-gebruik">Waarom je niet indeelt op ruimte maar op gebruik</h2>
+<p>De verleiding is om per kamer een groep te maken. Dat lijkt overzichtelijk, maar het klopt zelden met de werkelijke belasting. Een slaapkamer trekt vrijwel niets, een keuken trekt meer dan de rest van de woning bij elkaar.</p>
+<p>Uitgangspunten die wél werken:</p>
+<ol><li><strong>Zware, langdurige verbruikers krijgen een eigen groep.</strong> Wasmachine, droger, oven,</li></ol>
+<p>kookplaat, vaatwasser, warmtepomp, laadpaal.</p>
+<ol><li><strong>Kritische verbruikers krijgen een eigen beveiliging.</strong> Een vriezer of een</li></ol>
+<p>cv-installatie wil je niet laten uitvallen door een lekstroom in de tuinverlichting.</p>
+<ol><li><strong>Verlichting en contactdozen gescheiden.</strong> Slaat de contactdozengroep af, dan sta</li></ol>
+<p>je niet in het donker met een defect apparaat in je handen.</p>
+<ol><li><strong>Buiten en schuur apart.</strong> Vocht en mechanische schade zijn daar het grootst.</li><li><strong>Ruimte voor later.</strong> Laat vrije posities over: een warmtepomp, laadpaal of</li></ol>
+<p>zonnepanelen komen er in vrijwel elke woning nog bij.</p>
+<h2 id="een-realistische-indeling-voor-een-eengezinswoni">Een realistische indeling voor een eengezinswoning</h2>
+<table><thead><tr><th>Groep</th><th>Wat</th><th>Beveiliging</th></tr></thead><tbody><tr><td>1</td><td>Verlichting begane grond</td><td>16 A</td></tr><tr><td>2</td><td>Verlichting verdieping</td><td>16 A</td></tr><tr><td>3</td><td>Contactdozen woonkamer</td><td>16 A</td></tr><tr><td>4</td><td>Contactdozen slaapkamers</td><td>16 A</td></tr><tr><td>5</td><td>Keuken contactdozen</td><td>16 A of 20 A</td></tr><tr><td>6</td><td>Vaatwasser</td><td>16 A</td></tr><tr><td>7</td><td>Wasmachine</td><td>16 A</td></tr><tr><td>8</td><td>Droger</td><td>16 A</td></tr><tr><td>9</td><td>Kookgroep</td><td>16/20/25 A naar toestel</td></tr><tr><td>10</td><td>Buiten en schuur</td><td>16 A</td></tr><tr><td>11</td><td>Cv-installatie</td><td>16 A</td></tr><tr><td>Res.</td><td>Vrije posities voor warmtepomp, laadpaal, PV</td><td>-</td></tr></tbody></table>
+<p>Dit is geen voorschrift maar een startpunt om over te praten met de klant en met je collega. De werkelijke indeling volgt uit het gebruik en uit wat er al ligt.</p>
+<div class="callout kern"><h4>De vraag die je bij elke groep stelt</h4><p>Niet &quot;past deze automaat&quot;, maar: welke functie moet deze beveiliging vervullen, welk circuit beschermt hij, en past dat bij de kabel die eraan hangt. Dat is het verschil tussen onderdelen monteren en elektrotechniek bedrijven.</p></div>
+<h2 id="de-maximale-groepen-per-aardlek">De maximale groepen per aardlek</h2>
+<p>Een gangbare regel in Nederlandse woninginstallaties is dat er niet meer dan vier eindgroepen achter één aardlekschakelaar hangen. De achterliggende redenen zijn praktisch:</p>
+<ul><li><strong>Lekstromen tellen op.</strong> Elk apparaat heeft een kleine, volstrekt normale lekstroom</li></ul>
+<p>naar aarde. Hang je er te veel achter één aardlek, dan komt de som in de buurt van de aanspreekwaarde en gaat de aardlek &quot;spontaan&quot; afschakelen.</p>
+<ul><li><strong>Storingzoeken.</strong> Vier groepen zijn te overzien; twaalf niet.</li><li><strong>Beschikbaarheid.</strong> Bij een fout valt niet je hele woning uit.</li></ul>
+<h2 id="ruimte-in-de-kast">Ruimte in de kast</h2>
+<p>Componentbreedte wordt uitgedrukt in <strong>modules</strong> van 17,5 mm. Bij het ontwerpen tel je: hoofdschakelaar, aardlekken, automaten, eventuele overspanningsbeveiliging, en laat je bewust ruimte over.</p>
+<p>Een kast die op de dag van oplevering exact vol zit, is een kast waarin de volgende uitbreiding een complete vervanging wordt.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/POJz32s91B8" title="Groepenkast / installatie uitbreiden - eindgroep en kamrails"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Groepenkast / installatie uitbreiden - eindgroep en kamrails</b></span><span>±12 min · <a href="https://www.youtube.com/watch?v=POJz32s91B8" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan een groepsindeling opstellen op basis van gebruik in plaats van kamers</label><label><input type="checkbox" data-vinkje="1"> Ik weet waarom kritische verbruikers een eigen beveiliging krijgen</label><label><input type="checkbox" data-vinkje="2"> Ik kan uitleggen waarom er maximaal vier groepen achter één aardlek horen</label><label><input type="checkbox" data-vinkje="3"> Ik laat bewust vrije posities over in een nieuwe kast</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/vochtige-ruimtes-zones-en-ip-codering/">← 5.6 Vochtige ruimtes: zones en IP-codering</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/">6.2 Karakteristiek en selectiviteit →</a></div></div><div class="src">bron: gemini.md M3 · chatgpt.md M6 · kimi.md M5 · grok.md M4</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

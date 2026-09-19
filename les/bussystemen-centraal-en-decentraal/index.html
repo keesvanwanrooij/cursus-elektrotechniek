@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Bussystemen: centraal en decentraal | Cursus elektrotechniek</title>
+<meta name="description" content="Je begrijpt het principe van een bussysteem en waarin dat verschilt van conventionele installatietechniek. Gratis les uit de cursus elektrotechniek voor…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bussystemen: centraal en decentraal | Cursus elektrotechniek">
+<meta property="og:description" content="Je begrijpt het principe van een bussysteem en waarin dat verschilt van conventionele installatietechniek. Gratis les uit de cursus elektrotechniek voor…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bussystemen: centraal en decentraal | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je begrijpt het principe van een bussysteem en waarin dat verschilt van conventionele installatietechniek. Gratis les uit de cursus elektrotechniek voor…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Bussystemen: centraal en decentraal","description":"Je begrijpt het principe van een bussysteem en waarin dat verschilt van conventionele installatietechniek.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld","timeRequired":"PT16M","teaches":"Je begrijpt het principe van een bussysteem en waarin dat verschilt van conventionele installatietechniek.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Domotica en slimme installaties","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/domotica-en-slimme-installaties/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 11: Domotica en slimme installaties","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/domotica-en-slimme-installaties/"},{"@type":"ListItem","position":3,"name":"Bussystemen: centraal en decentraal","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 11</h5><div class="modname"><a href="/cursus-elektrotechniek/module/domotica-en-slimme-installaties/" style="text-decoration:none">Domotica en slimme installaties</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/slimme-schakelaars-en-de-nuldraad/" class=""><span class="dot"></span><span class="snavtxt">11.1 Slimme schakelaars en de nuldraad</span></a><a href="/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/" class="on"><span class="dot"></span><span class="snavtxt">11.2 Bussystemen: centraal en decentraal</span></a><a href="/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/" class=""><span class="dot"></span><span class="snavtxt">11.3 Voorbereiden zonder nu al te kiezen</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/#het-principe" data-anker="het-principe"><span class="snavtxt">Het principe</span></a><a href="/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/#wat-dat-oplevert" data-anker="wat-dat-oplevert"><span class="snavtxt">Wat dat oplevert</span></a><a href="/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/#centraal-versus-decentraal" data-anker="centraal-versus-decentraal"><span class="snavtxt">Centraal versus decentraal</span></a><a href="/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/#wat-je-hiervan-moet-weten-als-beginner" data-anker="wat-je-hiervan-moet-weten-als-beginner"><span class="snavtxt">Wat je hiervan moet weten als beginner</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/domotica-en-slimme-installaties/">Module 11</a> › Les 11.2</div><h1>Bussystemen: centraal en decentraal</h1><div class="lessmeta"><span>⏱ 16 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je begrijpt het principe van een bussysteem en waarin dat verschilt van conventionele installatietechniek.</p></div><h2 id="het-principe">Het principe</h2>
+<p>Bij conventionele installatie loopt er sterkstroom naar de schakelaar en weer terug. De schakelaar onderbreekt de stroom naar de lamp.</p>
+<p>Bij een <strong>bussysteem</strong> doet de schakelaar dat niet. Hij stuurt een <strong>bericht</strong> over een buskabel: &quot;knop 1 ingedrukt&quot;. Een actor in de verdeelkast ontvangt dat bericht en schakelt de betreffende groep.</p>
+<p>Het gevolg: de sterkstroom loopt uitsluitend tussen verdeelkast en verbruiker, en de bediening loopt over een aparte, laagspanningskabel.</p>
+<h2 id="wat-dat-oplevert">Wat dat oplevert</h2>
+<ul><li><strong>Elke knop kan alles bedienen.</strong> Wat een knop doet, is een instelling en geen</li></ul>
+<p>bedrading. Wil de klant dat de schakelaar in de hal ook de buitenverlichting doet, dan is dat een wijziging in de configuratie.</p>
+<ul><li><strong>Scenario's</strong>: één druk die meerdere dingen tegelijk doet.</li><li><strong>Integratie</strong> met verwarming, zonwering, aanwezigheidsdetectie en beveiliging.</li><li><strong>Minder sterkstroombekabeling naar bedieningspunten</strong>, meer naar verbruikers.</li></ul>
+<p>En wat het kost:</p>
+<ul><li><strong>Hogere investering</strong> in componenten en in de configuratie.</li><li><strong>Kennis en software</strong> zijn nodig voor het programmeren; dat is een vak apart.</li><li><strong>Afhankelijkheid</strong>: valt de centrale sturing uit, dan werkt de bediening niet meer,</li></ul>
+<p>tenzij dat expliciet is ondervangen.</p>
+<h2 id="centraal-versus-decentraal">Centraal versus decentraal</h2>
+<p><strong>Centraal</strong>: alle actoren zitten in de verdeelkast. Vanuit elk verbruikspunt loopt een eigen kabel naar de kast. Veel bekabeling, maar maximale flexibiliteit en alle techniek op één bereikbare plaats. Dit is de gebruikelijke opzet bij KNX en vergelijkbare systemen.</p>
+<p><strong>Decentraal</strong>: modules zitten bij de verbruikers, in centraaldozen of armaturen. Minder bekabeling, maar techniek verspreid door het huis en dus lastiger te onderhouden.</p>
+<div class="callout kern"><h4>De echte kostenpost zit in de bekabeling</h4><p>Bij een centrale opzet vertrekt vanuit elk lichtpunt en elk bedieningspunt een eigen kabel naar de kast. Dat is bij nieuwbouw of een casco-renovatie goed te doen, en bij een bewoonde woning met afgewerkte wanden vrijwel onbetaalbaar. Het moment waarop je deze keuze maakt, is daarom veel bepalender dan het merk dat je kiest.</p></div>
+<h2 id="wat-je-hiervan-moet-weten-als-beginner">Wat je hiervan moet weten als beginner</h2>
+<p>Je hoeft geen KNX-programmeur te worden. Wat je moet kunnen:</p>
+<ul><li>het principe uitleggen aan een klant die erover nadenkt;</li><li>herkennen wanneer een woning zich in een fase bevindt waarin dit nog kan (casco, groot</li></ul>
+<p>onderhoud) en wanneer het schip is gevaren;</p>
+<ul><li>de infrastructuur voorbereiden zodat de optie openblijft, zonder dat de klant nu al</li></ul>
+<p>hoeft te kiezen. Dat is precies waar de volgende les over gaat.</p><h2 id="videos">Video's bij deze les</h2><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=KNX%20domotica%20uitleg%20installatie%20principe"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> KNX domotica uitleg voor installateurs</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “KNX domotica uitleg installatie principe”</span></span></a><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan het principe van een bussysteem uitleggen aan een klant</label><label><input type="checkbox" data-vinkje="1"> Ik ken het verschil tussen centrale en decentrale opzet</label><label><input type="checkbox" data-vinkje="2"> Ik weet dat de bekabeling de bepalende kostenpost is</label><label><input type="checkbox" data-vinkje="3"> Ik herken wanneer een woning zich in de juiste fase bevindt voor deze keuze</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/slimme-schakelaars-en-de-nuldraad/">← 11.1 Slimme schakelaars en de nuldraad</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/">11.3 Voorbereiden zonder nu al te kiezen →</a></div></div><div class="src">bron: copilot.md M6 · qwen.md M5</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

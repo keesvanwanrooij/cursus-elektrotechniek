@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Aardlektype bij frequentiegeregelde toestellen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt onderbouwen waarom een inverter-toestel een type A, F of B aardlek vraagt en wat er misgaat met het verkeerde type.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aardlektype bij frequentiegeregelde toestellen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt onderbouwen waarom een inverter-toestel een type A, F of B aardlek vraagt en wat er misgaat met het verkeerde type.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aardlektype bij frequentiegeregelde toestellen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt onderbouwen waarom een inverter-toestel een type A, F of B aardlek vraagt en wat er misgaat met het verkeerde type.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Aardlektype bij frequentiegeregelde toestellen","description":"Je kunt onderbouwen waarom een inverter-toestel een type A, F of B aardlek vraagt en wat er misgaat met het verkeerde type.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT18M","teaches":"Je kunt onderbouwen waarom een inverter-toestel een type A, F of B aardlek vraagt en wat er misgaat met het verkeerde type.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Warmtepomp, airco en cv-ketel","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 9: Warmtepomp, airco en cv-ketel","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/"},{"@type":"ListItem","position":3,"name":"Aardlektype bij frequentiegeregelde toestellen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 9</h5><div class="modname"><a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/" style="text-decoration:none">Warmtepomp, airco en cv-ketel</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/" class=""><span class="dot"></span><span class="snavtxt">9.1 Wat een warmtepomp elektrisch vraagt</span></a><a href="/cursus-elektrotechniek/les/eigen-groep-doorsnede-en-karakteristiek/" class=""><span class="dot"></span><span class="snavtxt">9.2 Eigen groep, doorsnede en karakteristiek</span></a><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/" class="on"><span class="dot"></span><span class="snavtxt">9.3 Aardlektype bij frequentiegeregelde toestellen</span></a><a href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/" class=""><span class="dot"></span><span class="snavtxt">9.4 Buitenunit en binnenunit koppelen</span></a><a href="/cursus-elektrotechniek/les/airco-en-split-units/" class=""><span class="dot"></span><span class="snavtxt">9.5 Airco en split-units</span></a><a href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/" class=""><span class="dot"></span><span class="snavtxt">9.6 Cv-ketel, thermostaat en gelijktijdigheid</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/#waarom-een-warmtepomp-anders-is-dan-een-lamp" data-anker="waarom-een-warmtepomp-anders-is-dan-een-lamp"><span class="snavtxt">Waarom een warmtepomp anders is dan een lamp</span></a><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/#wat-dat-met-de-aardlek-doet" data-anker="wat-dat-met-de-aardlek-doet"><span class="snavtxt">Wat dat met de aardlek doet</span></a><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/#welk-type-wanneer" data-anker="welk-type-wanneer"><span class="snavtxt">Welk type wanneer</span></a><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/#praktische-gevolgen" data-anker="praktische-gevolgen"><span class="snavtxt">Praktische gevolgen</span></a><a href="/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/#bij-een-storing" data-anker="bij-een-storing"><span class="snavtxt">Bij een storing</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/">Module 9</a> › Les 9.3</div><h1>Aardlektype bij frequentiegeregelde toestellen</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt onderbouwen waarom een inverter-toestel een type A, F of B aardlek vraagt en wat er misgaat met het verkeerde type.</p></div><h2 id="waarom-een-warmtepomp-anders-is-dan-een-lamp">Waarom een warmtepomp anders is dan een lamp</h2>
+<p>Vrijwel elke moderne warmtepomp en airco heeft een <strong>frequentieregelaar</strong> (inverter). Die zet de netspanning eerst om naar gelijkspanning en daarna weer naar wisselspanning met een regelbare frequentie, zodat de compressor toerental kan variëren.</p>
+<p>Het gevolg is dat er in het toestel een <strong>gelijkspanningstussenkring</strong> zit. Ontstaat er een isolatiefout aan die kant, dan is de lekstroom naar aarde geen nette sinus meer maar kan hij een gelijkstroomcomponent bevatten.</p>
+<h2 id="wat-dat-met-de-aardlek-doet">Wat dat met de aardlek doet</h2>
+<p>Een aardlekschakelaar meet met een stroomtransformator: een ringkern waar de geleiders doorheen lopen. Zolang de som van heen- en teruggaande stroom nul is, wordt er niets opgewekt.</p>
+<p>Een <strong>gladde gelijkstroom</strong> door die ringkern doet iets vervelends: hij magnetiseert de kern in één richting en kan die verzadigen. Een verzadigde kern reageert nauwelijks meer op veranderingen - dus ook niet meer op een gewone wisselstroomlek die er daarna overheen komt.</p>
+<div class="callout gevaar"><h4>De aardlek die er nog hangt maar niets meer doet</h4><p>Dit is de reden dat het aardlektype bij inverter-toestellen geen detail is. Een type-AC of type-A aardlek die door een gelijkstroomlek verzadigd raakt, blijft er onveranderd uitzien, blijft ingeschakeld, en de testknop werkt gewoon - terwijl hij bij een echte fout niet meer afschakelt. Het is een beveiliging die alleen nog symbolisch aanwezig is.</p></div>
+<h2 id="welk-type-wanneer">Welk type wanneer</h2>
+<table><thead><tr><th>Type</th><th>Detecteert</th><th>Toepassing bij klimaatinstallaties</th></tr></thead><tbody><tr><td>AC</td><td>Alleen zuivere wisselstroom</td><td>Niet toepassen</td></tr><tr><td>A</td><td>Wisselstroom en pulserende gelijkstroom</td><td>De ondergrens; voldoende voor veel toestellen die dat expliciet opgeven</td></tr><tr><td>F</td><td>Als A, plus samengestelde frequenties</td><td>Vaak voorgeschreven bij frequentiegeregelde apparatuur</td></tr><tr><td>B</td><td>Als F, plus gladde gelijkstroom</td><td>Waar het toestel een gelijkstroomlek kan veroorzaken, en standaard bij laadpalen en omvormers</td></tr></tbody></table>
+<p>De fabrikant schrijft voor welk type nodig is. Staat er niets, dan is dat geen vrijbrief maar een reden om het na te vragen - bij de leverancier, of bij iemand met meer ervaring in klimaatinstallaties.</p>
+<h2 id="praktische-gevolgen">Praktische gevolgen</h2>
+<p>Een type F of B aardlekbeveiliging is aanzienlijk duurder dan een type A en breder in de kast. Dat betekent:</p>
+<ul><li>neem het mee in de offerte, niet als verrassing achteraf;</li><li>reserveer de ruimte in de groepenkast bij het ontwerp;</li><li>controleer bij bestaande installaties waar een warmtepomp bijkomt, welk type er nu</li></ul>
+<p>hangt - dat is vaak nog type AC of A.</p>
+<h2 id="bij-een-storing">Bij een storing</h2>
+<p>Schakelt de aardlek af sinds de warmtepomp erin zit, dan zijn de gangbare oorzaken:</p>
+<ol><li><strong>Verkeerd type</strong> - het toestel produceert een lekstroom die dit type niet aankan.</li><li><strong>Optellende lekstromen</strong> - de normale lekstroom van de inverter komt bovenop wat er</li></ol>
+<p>al was; zie module 8.4.</p>
+<ol><li><strong>Werkelijke fout</strong> - vocht in de buitenunit, een beschadigde kabel in het tracé, of</li></ol>
+<p>een defect in het toestel.</p>
+<p>De volgorde van onderzoeken is: eerst vaststellen welk type er hangt en wat de fabrikant voorschrijft, dan de lekstroom meten met een stroomtang, en pas daarna het toestel verdenken.</p><h2 id="videos">Video's bij deze les</h2><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=aardlekschakelaar%20type%20A%20F%20B%20verschil%20uitleg"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> Aardlekschakelaar types A, F en B uitgelegd</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “aardlekschakelaar type A F B verschil uitleg”</span></span></a><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan uitleggen waarom een inverter een gelijkstroomlek kan veroorzaken</label><label><input type="checkbox" data-vinkje="1"> Ik weet hoe verzadiging een type-A aardlek onbruikbaar maakt</label><label><input type="checkbox" data-vinkje="2"> Ik controleer altijd welk aardlektype de fabrikant voorschrijft</label><label><input type="checkbox" data-vinkje="3"> Ik controleer bij bestaande installaties welk type er nu hangt</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/eigen-groep-doorsnede-en-karakteristiek/">← 9.2 Eigen groep, doorsnede en karakteristiek</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/">9.4 Buitenunit en binnenunit koppelen →</a></div></div><div class="src">bron: nieuw geschreven · gemini.md M3 (aardlekprincipe)</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

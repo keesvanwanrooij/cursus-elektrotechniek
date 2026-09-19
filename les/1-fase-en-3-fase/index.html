@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>1-fase en 3-fase | Cursus elektrotechniek</title>
+<meta name="description" content="Je begrijpt waarom er tussen twee fasen 400 V staat en waarom faseverdeling belangrijk is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/1-fase-en-3-fase/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1-fase en 3-fase | Cursus elektrotechniek">
+<meta property="og:description" content="Je begrijpt waarom er tussen twee fasen 400 V staat en waarom faseverdeling belangrijk is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/1-fase-en-3-fase/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="1-fase en 3-fase | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je begrijpt waarom er tussen twee fasen 400 V staat en waarom faseverdeling belangrijk is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"1-fase en 3-fase","description":"Je begrijpt waarom er tussen twee fasen 400 V staat en waarom faseverdeling belangrijk is.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/1-fase-en-3-fase/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner","timeRequired":"PT18M","teaches":"Je begrijpt waarom er tussen twee fasen 400 V staat en waarom faseverdeling belangrijk is.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Grondbeginselen elektriciteit","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 2: Grondbeginselen elektriciteit","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/"},{"@type":"ListItem","position":3,"name":"1-fase en 3-fase","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/1-fase-en-3-fase/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 2</h5><div class="modname"><a href="/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/" style="text-decoration:none">Grondbeginselen elektriciteit</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/" class=""><span class="dot"></span><span class="snavtxt">2.1 Spanning, stroom en weerstand</span></a><a href="/cursus-elektrotechniek/les/vermogen-energie-en-rekenen-op-230-v/" class=""><span class="dot"></span><span class="snavtxt">2.2 Vermogen, energie en rekenen op 230 V</span></a><a href="/cursus-elektrotechniek/les/wisselstroom-sinus-50-hz-en-effectieve-waarde/" class=""><span class="dot"></span><span class="snavtxt">2.3 Wisselstroom: sinus, 50 Hz en effectieve waarde</span></a><a href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/" class=""><span class="dot"></span><span class="snavtxt">2.4 Serie, parallel, open circuit en kortsluiting</span></a><a href="/cursus-elektrotechniek/les/1-fase-en-3-fase/" class="on"><span class="dot"></span><span class="snavtxt">2.5 1-fase en 3-fase</span></a><a href="/cursus-elektrotechniek/les/van-vermogen-naar-groep-en-beveiliging/" class=""><span class="dot"></span><span class="snavtxt">2.6 Van vermogen naar groep en beveiliging</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/1-fase-en-3-fase/#een-fase-het-gewone-huishouden" data-anker="een-fase-het-gewone-huishouden"><span class="snavtxt">Eén fase: het gewone huishouden</span></a><a href="/cursus-elektrotechniek/les/1-fase-en-3-fase/#drie-fasen-drie-sinussen-uit-fase" data-anker="drie-fasen-drie-sinussen-uit-fase"><span class="snavtxt">Drie fasen: drie sinussen uit fase</span></a><a href="/cursus-elektrotechniek/les/1-fase-en-3-fase/#waarom-3-fase" data-anker="waarom-3-fase"><span class="snavtxt">Waarom 3-fase</span></a><a href="/cursus-elektrotechniek/les/1-fase-en-3-fase/#faseverdeling-waarom-het-je-werk-raakt" data-anker="faseverdeling-waarom-het-je-werk-raakt"><span class="snavtxt">Faseverdeling: waarom het je werk raakt</span></a><a href="/cursus-elektrotechniek/les/1-fase-en-3-fase/#krachtstroom-perilex-en-2-230-v" data-anker="krachtstroom-perilex-en-2-230-v"><span class="snavtxt">Krachtstroom, Perilex en 2×230 V</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/">Module 2</a> › Les 2.5</div><h1>1-fase en 3-fase</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 1 video's</span><span>📊 Beginner</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je begrijpt waarom er tussen twee fasen 400 V staat en waarom faseverdeling belangrijk is.</p></div><h2 id="een-fase-het-gewone-huishouden">Eén fase: het gewone huishouden</h2>
+<p>De meeste Nederlandse woningen hebben een <strong>1-fase aansluiting</strong>: één fasegeleider, één nul, één beschermingsleiding. Tussen fase en nul staat 230 V. De aansluitwaarde is meestal 1×25 A of 1×35 A, wat neerkomt op ongeveer 5,7 respectievelijk 8 kW.</p>
+<h2 id="drie-fasen-drie-sinussen-uit-fase">Drie fasen: drie sinussen uit fase</h2>
+<p>Bij een <strong>3-fase aansluiting</strong> krijg je drie fasegeleiders (L1, L2, L3) plus nul en PE. Die drie spanningen zijn identiek van vorm maar 120° in tijd verschoven: als L1 op zijn piek zit, zitten L2 en L3 op andere punten in hun cyclus.</p>
+<p>Tussen elke fase en de nul staat 230 V. Tussen twee fasen onderling staat <strong>niet</strong> 460 V, maar:</p>
+<p><strong>U tussen fasen = 230 × √3 ≈ 230 × 1,732 ≈ 400 V</strong></p>
+<p>Dat komt doordat de twee sinussen niet gelijktijdig op hun maximum zitten. De faktor √3 is het directe gevolg van die 120° verschuiving.</p>
+<div class="callout gevaar"><h4>400 V tussen twee fasen</h4><p>In een 3-fase groepenkast kun je twee punten aanraken die beide &quot;gewoon 230 V&quot; lijken, en er 400 V tussen krijgen. Meet daarom in een 3-fase kast altijd álle combinaties bij het aantonen van spanningsloosheid: L1–N, L2–N, L3–N, L1–L2, L2–L3, L1–L3, en elke fase naar PE.</p></div>
+<h2 id="waarom-3-fase">Waarom 3-fase</h2>
+<p><strong>Meer vermogen bij dezelfde kabeldikte.</strong> Een 3×25 A-aansluiting levert ongeveer 17 kW, tegenover 5,7 kW bij 1×25 A.</p>
+<p><strong>Draaiveld voor motoren.</strong> Drie fasen wekken in een motor een roterend magnetisch veld op, waardoor een 3-fase motor eenvoudiger en robuuster kan zijn dan een 1-fase motor.</p>
+<p><strong>Betere benutting van de nul.</strong> Bij een gelijkmatige verdeling over de drie fasen heffen de retourstromen elkaar grotendeels op en loopt er weinig stroom door de nulgeleider.</p>
+<h2 id="faseverdeling-waarom-het-je-werk-raakt">Faseverdeling: waarom het je werk raakt</h2>
+<p>Dat laatste punt heeft een praktische keerzijde. Hangt alle zware belasting aan L1 en niets aan L2 en L3, dan is de aansluiting scheef belast: L1 loopt tegen zijn grens terwijl er nog ruimte zat is. De hoofdbeveiliging kan afschakelen terwijl de totale belasting ruim binnen de aansluitwaarde ligt.</p>
+<p>Bij het indelen van een groepenkast verdeel je daarom bewust: kookgroep op de ene fase, warmtepomp op de tweede, de zwaardere lichtgroepen en wasmachine op de derde.</p>
+<h2 id="krachtstroom-perilex-en-2-230-v">Krachtstroom, Perilex en 2×230 V</h2>
+<p>In woningen kom je 3-fase vooral tegen bij kooktoestellen. Let op de begrippen:</p>
+<ul><li><strong>Perilex</strong> is een specifieke 5-polige contactdoos, meestal met twee of drie fasen.</li><li><strong>Krachtstroom</strong> is spreektaal voor een 3-fase aansluiting, vaak een CEE-contactdoos.</li><li><strong>2×230 V</strong> is een kookaansluiting met twee fasen en twee gescheiden nullen, waarbij</li></ul>
+<p>het respecteren van die scheiding essentieel is.</p>
+<p>Een inductiekookplaat aansluiten begint dan ook met het lezen van het schema op de achterkant van het toestel en het controleren welke bruggen wel of niet geplaatst moeten worden. Nooit uit het hoofd.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/1SDChIaziCQ" title="Welke installatieautomaat heb je nodig? 1 fase / 3 fase"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Welke installatieautomaat heb je nodig? 1 fase / 3 fase</b></span><span>±10 min · <a href="https://www.youtube.com/watch?v=1SDChIaziCQ" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan uitleggen waarom er tussen twee fasen 400 V staat en niet 460 V</label><label><input type="checkbox" data-vinkje="1"> Ik weet welke spanningscombinaties ik in een 3-fase kast moet meten</label><label><input type="checkbox" data-vinkje="2"> Ik kan uitleggen waarom faseverdeling belangrijk is</label><label><input type="checkbox" data-vinkje="3"> Ik weet dat ik bij een kooktoestel altijd eerst het schema op het toestel lees</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/">← 2.4 Serie, parallel, open circuit en kortsluiting</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/van-vermogen-naar-groep-en-beveiliging/">2.6 Van vermogen naar groep en beveiliging →</a></div></div><div class="src">bron: chatgpt.md M3 · kimi.md M2 · gemini.md M4 · qwen.md M2</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

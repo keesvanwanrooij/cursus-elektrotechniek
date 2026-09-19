@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>De meterkast | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt elk onderdeel van een Nederlandse meterkast benoemen en aanwijzen wat wel en niet van jou is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-meterkast/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="De meterkast | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt elk onderdeel van een Nederlandse meterkast benoemen en aanwijzen wat wel en niet van jou is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-meterkast/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="De meterkast | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt elk onderdeel van een Nederlandse meterkast benoemen en aanwijzen wat wel en niet van jou is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"De meterkast","description":"Je kunt elk onderdeel van een Nederlandse meterkast benoemen en aanwijzen wat wel en niet van jou is.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-meterkast/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner tot gemiddeld","timeRequired":"PT18M","teaches":"Je kunt elk onderdeel van een Nederlandse meterkast benoemen en aanwijzen wat wel en niet van jou is.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"De Nederlandse woninginstallatie","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 3: De Nederlandse woninginstallatie","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/"},{"@type":"ListItem","position":3,"name":"De meterkast","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/de-meterkast/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 3</h5><div class="modname"><a href="/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/" style="text-decoration:none">De Nederlandse woninginstallatie</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/de-keten-van-net-tot-lamp/" class=""><span class="dot"></span><span class="snavtxt">3.1 De keten van net tot lamp</span></a><a href="/cursus-elektrotechniek/les/de-meterkast/" class="on"><span class="dot"></span><span class="snavtxt">3.2 De meterkast</span></a><a href="/cursus-elektrotechniek/les/de-groepenkast-van-binnen/" class=""><span class="dot"></span><span class="snavtxt">3.3 De groepenkast van binnen</span></a><a href="/cursus-elektrotechniek/les/mcb-rcd-en-rcbo-wat-beschermt-wat/" class=""><span class="dot"></span><span class="snavtxt">3.4 MCB, RCD en RCBO: wat beschermt wat</span></a><a href="/cursus-elektrotechniek/les/aarding-en-vereffening/" class=""><span class="dot"></span><span class="snavtxt">3.5 Aarding en vereffening</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/de-meterkast/#wat-je-in-een-meterkast-aantreft" data-anker="wat-je-in-een-meterkast-aantreft"><span class="snavtxt">Wat je in een meterkast aantreft</span></a><a href="/cursus-elektrotechniek/les/de-meterkast/#wat-de-aansluitwaarde-je-vertelt" data-anker="wat-de-aansluitwaarde-je-vertelt"><span class="snavtxt">Wat de aansluitwaarde je vertelt</span></a><a href="/cursus-elektrotechniek/les/de-meterkast/#labeling-onbetrouwbaar-tot-bewezen" data-anker="labeling-onbetrouwbaar-tot-bewezen"><span class="snavtxt">Labeling: onbetrouwbaar tot bewezen</span></a><a href="/cursus-elektrotechniek/les/de-meterkast/#wat-je-hier-nog-niet-zelf-doet" data-anker="wat-je-hier-nog-niet-zelf-doet"><span class="snavtxt">Wat je hier nog niet zelf doet</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/">Module 3</a> › Les 3.2</div><h1>De meterkast</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 1 video's</span><span>📊 Beginner tot gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt elk onderdeel van een Nederlandse meterkast benoemen en aanwijzen wat wel en niet van jou is.</p></div><h2 id="wat-je-in-een-meterkast-aantreft">Wat je in een meterkast aantreft</h2>
+<p>Van boven naar beneden en van links naar rechts wisselt de indeling per woning, maar de onderdelen zijn vrijwel altijd dezelfde:</p>
+<p><strong>Hoofdaansluitkast</strong> - waar de kabel van de netbeheerder binnenkomt, met daarin de <strong>hoofdzekering</strong> (vaak een mespatroon of smeltveiligheid) die de aansluitwaarde bepaalt: 1×25 A, 1×35 A, 3×25 A enzovoort. Verzegeld, eigendom van de netbeheerder.</p>
+<p><strong>kWh-meter</strong> - tegenwoordig meestal een slimme meter met P1-poort. Meet het verbruik en, bij zonnepanelen, de teruglevering. Ook verzegeld.</p>
+<p><strong>Hoofdschakelaar</strong> - de eerste component die van de eigenaar is. Schakelt de gehele installatie ná de meter uit. Meestal 1- of 3-polig, soms gecombineerd met de aardlekschakelaar.</p>
+<p><strong>Aardlekschakelaar(s)</strong> - beschermen mensen tegen aanraking. Zie les 3.4.</p>
+<p><strong>Installatieautomaten</strong> - één per eindgroep.</p>
+<p><strong>Nulrail en aardrail</strong> - de verzamelpunten voor de nul- en beschermingsleidingen.</p>
+<p><strong>Hoofdaardrail en aardelektrode</strong> - de verbinding naar de aarde, zie les 3.5.</p>
+<p><strong>Overspanningsbeveiliging</strong> - in nieuwere installaties, beschermt tegen spanningspieken door bliksem of schakelhandelingen in het net.</p>
+<h2 id="wat-de-aansluitwaarde-je-vertelt">Wat de aansluitwaarde je vertelt</h2>
+<p>De hoofdzekering bepaalt hoeveel vermogen er beschikbaar is:</p>
+<table><thead><tr><th>Aansluiting</th><th>Beschikbaar vermogen</th><th>Situatie</th></tr></thead><tbody><tr><td>1×25 A</td><td>≈ 5,7 kW</td><td>Standaard oudere woning</td></tr><tr><td>1×35 A</td><td>≈ 8,0 kW</td><td>Woning met elektrisch koken</td></tr><tr><td>3×25 A</td><td>≈ 17,3 kW</td><td>Woning met warmtepomp, laadpaal of zwaar koken</td></tr><tr><td>3×35 A</td><td>≈ 24,2 kW</td><td>Ruime woning of klein bedrijf</td></tr></tbody></table>
+<p>Bij het toevoegen van een warmtepomp of laadpaal is dit het eerste getal dat je opzoekt. Past het niet, dan is verzwaring nodig - en dat is een aanvraag bij de netbeheerder met levertijd, geen kwestie van een dikkere kabel trekken.</p>
+<div class="callout kern"><h4>De eerste vijf minuten in elke meterkast</h4><p>Kijk voordat je iets aanraakt: welke aansluitwaarde, 1- of 3-fase, hoeveel aardlekken, hoeveel groepen, welke vrij, en klopt de labeling met wat je verwacht. Die vijf minuten voorkomen de meeste verrassingen.</p></div>
+<h2 id="labeling-onbetrouwbaar-tot-bewezen">Labeling: onbetrouwbaar tot bewezen</h2>
+<p>Groepsaanduidingen in Nederlandse meterkasten zijn beroemd om hun onbetrouwbaarheid. Ze zijn vaak jaren geleden geschreven, na verbouwingen niet bijgewerkt, of gebaseerd op een indeling die inmiddels is gewijzigd.</p>
+<p>Een label is dus een hypothese, geen bewijs. De enige manier om zeker te weten welke groep bij welk circuit hoort, is meten - en dat is precies waarom stap 3 van het veiligstellen bestaat.</p>
+<p>Laat je bij het opleveren van eigen werk daarom altijd een correcte, leesbare labeling achter. Het is het goedkoopste cadeau dat je aan de volgende monteur en aan jezelf over drie jaar kunt geven.</p>
+<h2 id="wat-je-hier-nog-niet-zelf-doet">Wat je hier nog niet zelf doet</h2>
+<p>Werk aan of nabij de verzegelde delen, het verwisselen van een hoofdzekering en het wijzigen van de aansluiting zijn geen taken voor een beginnend elektricien. Kom je een situatie tegen waarin dat nodig lijkt, dan is de juiste actie het melden bij je leidinggevende of het inschakelen van de netbeheerder.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/oHwq5tNtpIM" title="Demonstratie: meterkast van de elektrische installatie"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>Demonstratie: meterkast van de elektrische installatie</b></span><span>±12 min · <a href="https://www.youtube.com/watch?v=oHwq5tNtpIM" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan alle onderdelen van een meterkast benoemen en aanwijzen</label><label><input type="checkbox" data-vinkje="1"> Ik kan de aansluitwaarde aflezen en omrekenen naar beschikbaar vermogen</label><label><input type="checkbox" data-vinkje="2"> Ik behandel groepslabels als hypothese en niet als bewijs</label><label><input type="checkbox" data-vinkje="3"> Ik heb een echte meterkast doorgelopen met een ervaren elektricien</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/de-keten-van-net-tot-lamp/">← 3.1 De keten van net tot lamp</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/de-groepenkast-van-binnen/">3.3 De groepenkast van binnen →</a></div></div><div class="src">bron: chatgpt.md M3 · kimi.md M3 · gemini.md M3 · deekseek.md M3</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

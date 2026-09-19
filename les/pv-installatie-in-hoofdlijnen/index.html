@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>PV-installatie in hoofdlijnen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt de onderdelen van een zonnestroominstallatie benoemen en de weg van paneel naar groepenkast volgen. Gratis les uit de cursus elektrotechniek voor…">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PV-installatie in hoofdlijnen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt de onderdelen van een zonnestroominstallatie benoemen en de weg van paneel naar groepenkast volgen. Gratis les uit de cursus elektrotechniek voor…">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PV-installatie in hoofdlijnen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt de onderdelen van een zonnestroominstallatie benoemen en de weg van paneel naar groepenkast volgen. Gratis les uit de cursus elektrotechniek voor…">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"PV-installatie in hoofdlijnen","description":"Je kunt de onderdelen van een zonnestroominstallatie benoemen en de weg van paneel naar groepenkast volgen.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld","timeRequired":"PT18M","teaches":"Je kunt de onderdelen van een zonnestroominstallatie benoemen en de weg van paneel naar groepenkast volgen.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Zonnepanelen en laadpalen","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 10: Zonnepanelen en laadpalen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/"},{"@type":"ListItem","position":3,"name":"PV-installatie in hoofdlijnen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 10</h5><div class="modname"><a href="/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/" style="text-decoration:none">Zonnepanelen en laadpalen</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/" class="on"><span class="dot"></span><span class="snavtxt">10.1 PV-installatie in hoofdlijnen</span></a><a href="/cursus-elektrotechniek/les/waarom-pv-je-veiligheidsprocedure-verandert/" class=""><span class="dot"></span><span class="snavtxt">10.2 Waarom PV je veiligheidsprocedure verandert</span></a><a href="/cursus-elektrotechniek/les/laadpalen/" class=""><span class="dot"></span><span class="snavtxt">10.3 Laadpalen</span></a><a href="/cursus-elektrotechniek/les/slimme-meter-netbelasting-en-verzwaring/" class=""><span class="dot"></span><span class="snavtxt">10.4 Slimme meter, netbelasting en verzwaring</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/#de-keten" data-anker="de-keten"><span class="snavtxt">De keten</span></a><a href="/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/#wat-er-met-de-opgewekte-stroom-gebeurt" data-anker="wat-er-met-de-opgewekte-stroom-gebeurt"><span class="snavtxt">Wat er met de opgewekte stroom gebeurt</span></a><a href="/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/#waarom-de-dc-zijde-bijzonder-is" data-anker="waarom-de-dc-zijde-bijzonder-is"><span class="snavtxt">Waarom de DC-zijde bijzonder is</span></a><a href="/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/#de-aansluiting-in-de-kast" data-anker="de-aansluiting-in-de-kast"><span class="snavtxt">De aansluiting in de kast</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/">Module 10</a> › Les 10.1</div><h1>PV-installatie in hoofdlijnen</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 2 video's</span><span>📊 Gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt de onderdelen van een zonnestroominstallatie benoemen en de weg van paneel naar groepenkast volgen.</p></div><h2 id="de-keten">De keten</h2>
+<p><strong>Panelen → string (DC) → omvormer → AC-zijde → groep in de kast → installatie en net</strong></p>
+<p><strong>Panelen</strong> wekken gelijkspanning op zodra er licht op valt. Eén paneel levert enkele tientallen volts.</p>
+<p><strong>Een string</strong> is een serieschakeling van panelen. De spanningen tellen op: tien panelen in serie kunnen samen enkele honderden volts gelijkspanning leveren.</p>
+<p><strong>De omvormer</strong> zet die gelijkspanning om naar 230 V wisselspanning, synchroon met het net, en levert die aan de installatie.</p>
+<p><strong>De AC-zijde</strong> is een gewone eindgroep in de groepenkast, met eigen beveiliging.</p>
+<h2 id="wat-er-met-de-opgewekte-stroom-gebeurt">Wat er met de opgewekte stroom gebeurt</h2>
+<p>De omvormer levert stroom aan de installatie. Wat de woning op dat moment zelf verbruikt, wordt direct gebruikt; het overschot gaat het net op. Dat heet <strong>teruglevering</strong>, en de slimme meter registreert dat apart.</p>
+<p>Voor jou als elektricien is het belangrijke punt niet de administratie maar de fysica: <strong>een deel van de installatie wordt gevoed vanuit een bron die niet in de meterkast zit.</strong></p>
+<h2 id="waarom-de-dc-zijde-bijzonder-is">Waarom de DC-zijde bijzonder is</h2>
+<table><thead><tr><th></th><th>AC-zijde</th><th>DC-zijde</th></tr></thead><tbody><tr><td>Spanning</td><td>230 V wisselspanning</td><td>Enkele honderden volts gelijkspanning</td></tr><tr><td>Uit te schakelen</td><td>Ja, met de automaat in de kast</td><td>Nee - panelen leveren zolang er licht is</td></tr><tr><td>Vlamboog</td><td>Dooft bij elke nuldoorgang, 100× per seconde</td><td>Dooft niet vanzelf: er is geen nuldoorgang</td></tr></tbody></table>
+<p>Dat laatste is het gevaarlijkste verschil. Een vlamboog in een gelijkspanningscircuit blijft branden zolang de bron levert, omdat de spanning nooit door nul gaat. Daarom zitten er speciale DC-schakelaars bij omvormers, en daarom mag je een DC-connector nooit onder belasting loskoppelen.</p>
+<div class="callout gevaar"><h4>Panelen kun je niet uitschakelen</h4><p>De DC-zijde van een PV-installatie staat onder spanning zodra er licht op de panelen valt - ook bij bewolking, ook in de winter, ook als de omvormer uit staat en de automaat in de kast eruit is. Werk aan de DC-zijde is specialistisch werk. Ga daar als beginnend elektricien niet zelfstandig aan beginnen.</p></div>
+<h2 id="de-aansluiting-in-de-kast">De aansluiting in de kast</h2>
+<p>De omvormer wordt aangesloten op een eigen eindgroep met een eigen beveiliging. Punten die daarbij horen:</p>
+<ul><li><strong>Aardlektype B</strong> is bij PV-omvormers vaak vereist, om dezelfde reden als bij</li></ul>
+<p>inverters in module 9.3: er kan een gelijkstroomcomponent in de lekstroom zitten.</p>
+<ul><li><strong>Doorsnede</strong> afgestemd op het maximale vermogen van de omvormer, en op de vaak</li></ul>
+<p>aanzienlijke lengte tussen zolder of dak en de meterkast.</p>
+<ul><li><strong>Labeling</strong>: in de meterkast hoort duidelijk te zijn dat er een PV-installatie is,</li></ul>
+<p>inclusief waar de omvormer staat en hoe die is uit te schakelen.</p>
+<p>Die labeling is een veiligheidsvoorziening, geen administratieve verplichting. Zie de volgende les.</p><h2 id="videos">Video's bij deze les</h2><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=zonnepanelen%20installatie%20omvormer%20string%20uitleg"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> Hoe werkt een zonnepaneelinstallatie</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “zonnepanelen installatie omvormer string uitleg”</span></span></a><a class="videosearch" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=how%20solar%20pv%20system%20works%20inverter%20string%20explained"><span class="ic">🔎</span><span><b><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> How solar PV systems work</b><span>Nog geen vaste video gekozen - dit opent een YouTube-zoekopdracht op “how solar pv system works inverter string explained”</span></span></a><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan de keten van paneel tot groepenkast benoemen</label><label><input type="checkbox" data-vinkje="1"> Ik weet waarom een DC-vlamboog niet vanzelf dooft</label><label><input type="checkbox" data-vinkje="2"> Ik weet dat panelen spanning leveren zodra er licht op valt</label><label><input type="checkbox" data-vinkje="3"> Ik weet welk aardlektype bij een omvormer hoort</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/">← 9.6 Cv-ketel, thermostaat en gelijktijdigheid</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/waarom-pv-je-veiligheidsprocedure-verandert/">10.2 Waarom PV je veiligheidsprocedure verandert →</a></div></div><div class="src">bron: copilot.md M7 · qwen.md M5</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

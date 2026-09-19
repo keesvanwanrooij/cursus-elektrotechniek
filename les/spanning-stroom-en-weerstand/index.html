@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Spanning, stroom en weerstand | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt de drie basisgrootheden beschrijven en uitleggen waarom stroom een gevolg is en geen oorzaak. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spanning, stroom en weerstand | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt de drie basisgrootheden beschrijven en uitleggen waarom stroom een gevolg is en geen oorzaak. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spanning, stroom en weerstand | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt de drie basisgrootheden beschrijven en uitleggen waarom stroom een gevolg is en geen oorzaak. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Spanning, stroom en weerstand","description":"Je kunt de drie basisgrootheden beschrijven en uitleggen waarom stroom een gevolg is en geen oorzaak.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Beginner","timeRequired":"PT20M","teaches":"Je kunt de drie basisgrootheden beschrijven en uitleggen waarom stroom een gevolg is en geen oorzaak.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Grondbeginselen elektriciteit","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 2: Grondbeginselen elektriciteit","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/"},{"@type":"ListItem","position":3,"name":"Spanning, stroom en weerstand","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 2</h5><div class="modname"><a href="/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/" style="text-decoration:none">Grondbeginselen elektriciteit</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/" class="on"><span class="dot"></span><span class="snavtxt">2.1 Spanning, stroom en weerstand</span></a><a href="/cursus-elektrotechniek/les/vermogen-energie-en-rekenen-op-230-v/" class=""><span class="dot"></span><span class="snavtxt">2.2 Vermogen, energie en rekenen op 230 V</span></a><a href="/cursus-elektrotechniek/les/wisselstroom-sinus-50-hz-en-effectieve-waarde/" class=""><span class="dot"></span><span class="snavtxt">2.3 Wisselstroom: sinus, 50 Hz en effectieve waarde</span></a><a href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/" class=""><span class="dot"></span><span class="snavtxt">2.4 Serie, parallel, open circuit en kortsluiting</span></a><a href="/cursus-elektrotechniek/les/1-fase-en-3-fase/" class=""><span class="dot"></span><span class="snavtxt">2.5 1-fase en 3-fase</span></a><a href="/cursus-elektrotechniek/les/van-vermogen-naar-groep-en-beveiliging/" class=""><span class="dot"></span><span class="snavtxt">2.6 Van vermogen naar groep en beveiliging</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/#drie-grootheden-een-samenhang" data-anker="drie-grootheden-een-samenhang"><span class="snavtxt">Drie grootheden, één samenhang</span></a><a href="/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/#waarom-een-apparaat-stroom-trekt" data-anker="waarom-een-apparaat-stroom-trekt"><span class="snavtxt">Waarom een apparaat stroom trekt</span></a><a href="/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/#geleiders-isolatoren-en-waarom-koper" data-anker="geleiders-isolatoren-en-waarom-koper"><span class="snavtxt">Geleiders, isolatoren en waarom koper</span></a><a href="/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/#de-wet-van-ohm-in-de-praktijk-gebruiken" data-anker="de-wet-van-ohm-in-de-praktijk-gebruiken"><span class="snavtxt">De wet van Ohm in de praktijk gebruiken</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/">Module 2</a> › Les 2.1</div><h1>Spanning, stroom en weerstand</h1><div class="lessmeta"><span>⏱ 20 min</span><span>🎬 1 video's</span><span>📊 Beginner</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt de drie basisgrootheden beschrijven en uitleggen waarom stroom een gevolg is en geen oorzaak.</p></div><h2 id="drie-grootheden-een-samenhang">Drie grootheden, één samenhang</h2>
+<p><strong>Spanning (U, in volt)</strong> is een potentiaalverschil: het verschil in elektrische &quot;druk&quot; tussen twee punten. Spanning bestaat dus altijd <em>tussen</em> twee punten, nooit op één punt. Wanneer iemand zegt &quot;op deze draad staat 230 V&quot;, is de volledige zin &quot;tussen deze draad en de nul staat 230 V&quot;.</p>
+<p><strong>Stroom (I, in ampère)</strong> is de hoeveelheid lading die per seconde door een doorsnede van de geleider gaat. Eén ampère is één coulomb per seconde.</p>
+<p><strong>Weerstand (R, in ohm)</strong> is de tegenwerking die een geleider of verbruiker biedt aan die stroom.</p>
+<p>De samenhang is de wet van Ohm:</p>
+<p><strong>U = I × R</strong> en dus <strong>I = U / R</strong> en <strong>R = U / I</strong></p>
+<h2 id="waarom-een-apparaat-stroom-trekt">Waarom een apparaat stroom trekt</h2>
+<p>Dit is een denkfout die veel beginners lang meeslepen: het idee dat een automaat van 16 A &quot;16 ampère in het circuit duwt&quot;. Dat is niet wat er gebeurt.</p>
+<p>Het net levert een vrijwel constante spanning van 230 V. Wat er aan stroom gaat lopen, wordt bepaald door de weerstand van wat je aansluit:</p>
+<ul><li>een lamp van 2300 Ω trekt 230 / 2300 = 0,1 A;</li><li>een waterkoker met een element van 23 Ω trekt 230 / 23 = 10 A;</li><li>een kortsluiting met bijna 0 Ω trekt honderden ampères.</li></ul>
+<p>De automaat <em>begrenst</em> alleen: hij schakelt af zodra de stroom te lang te hoog is. Hij bepaalt niet hoeveel stroom er onder normale omstandigheden loopt.</p>
+<div class="callout kern"><h4>De richting van het oorzakelijk verband</h4><p>Spanning wordt aangeboden. Weerstand bepaalt de stroom. De beveiliging grijpt in als die stroom onacceptabel wordt. Wie dit omdraait, begrijpt geen enkele storing.</p></div>
+<h2 id="geleiders-isolatoren-en-waarom-koper">Geleiders, isolatoren en waarom koper</h2>
+<p>Koper geleidt goed omdat de buitenste elektronen van koperatomen makkelijk bewegen. Aluminium geleidt ook, maar slechter per doorsnede en het is lastiger betrouwbaar te klemmen. Kunststof isolatie houdt de stroom binnen de geleider.</p>
+<p>Dat &quot;goed geleiden&quot; is relatief: ook koper heeft weerstand. Een lange, dunne kabel heeft meer weerstand dan een korte dikke, en dat verklaart spanningsval en opwarming, twee onderwerpen uit module 4.</p>
+<h2 id="de-wet-van-ohm-in-de-praktijk-gebruiken">De wet van Ohm in de praktijk gebruiken</h2>
+<p>Een halogeenspot brandt niet. Je meet 230 V tussen de fase en de nul aan het armatuur. Wat weet je nu?</p>
+<p>Dat er spanning wordt aangeboden. Meer niet. Als er 230 V staat en er loopt geen stroom, is de weerstand oneindig: een onderbreking. Die zit dan in de lamp zelf, in de fitting of in een verbinding voorbij het meetpunt.</p>
+<p>Zou je 0 V meten, dan ontbreekt de spanning en zoek je stroomopwaarts: schakelaar, bedrading, automaat. Twee metingen, twee volledig verschillende zoekrichtingen. Dat is het verschil tussen diagnosticeren en onderdelen vervangen.</p>
+<details><summary>Waarom voelt een 9V-batterij op je tong wel iets, en een stopcontact niet &quot;een beetje&quot;?</summary><p>Omdat de weerstand van je tong laag is en die van je droge hand hoog, maar vooral omdat 230 V hoog genoeg is om door de huidweerstand heen te breken. Bij 9 V blijft de stroom in de orde van microampères. De sprong tussen &quot;je voelt iets&quot; en &quot;je hart raakt ontregeld&quot; zit niet in de spanning zelf, maar in wat die spanning door je heen kan duwen.</p></details><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/nYuVSG89vg0" title="Electrical Basics Made Easy"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 60 30" aria-label="Engels"><rect width="60" height="30" fill="#00247d"/><path d="M0,0 60,30 M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30 M60,0 0,30" stroke="#cf142b" stroke-width="2"/><path d="M30,0 30,30 M0,15 60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 30,30 M0,15 60,15" stroke="#cf142b" stroke-width="6"/></svg> <b>Electrical Basics Made Easy</b></span><span>±25 min · <a href="https://www.youtube.com/watch?v=nYuVSG89vg0" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik kan uitleggen waarom spanning altijd tussen twee punten gemeten wordt</label><label><input type="checkbox" data-vinkje="1"> Ik kan uitleggen waarom een apparaat stroom trekt en de automaat die niet levert</label><label><input type="checkbox" data-vinkje="2"> Ik kan uit een meting van 230 V zonder werking afleiden dat er een onderbreking is</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/als-het-toch-misgaat/">← 1.6 Als het toch misgaat</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/vermogen-energie-en-rekenen-op-230-v/">2.2 Vermogen, energie en rekenen op 230 V →</a></div></div><div class="src">bron: chatgpt.md M2 · kimi.md M2 · deekseek.md M1</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

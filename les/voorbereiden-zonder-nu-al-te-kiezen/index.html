@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Voorbereiden zonder nu al te kiezen | Cursus elektrotechniek</title>
+<meta name="description" content="Je kunt bij regulier installatiewerk voorbereidingen treffen die latere uitbreiding mogelijk houden. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Voorbereiden zonder nu al te kiezen | Cursus elektrotechniek">
+<meta property="og:description" content="Je kunt bij regulier installatiewerk voorbereidingen treffen die latere uitbreiding mogelijk houden. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Voorbereiden zonder nu al te kiezen | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je kunt bij regulier installatiewerk voorbereidingen treffen die latere uitbreiding mogelijk houden. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Voorbereiden zonder nu al te kiezen","description":"Je kunt bij regulier installatiewerk voorbereidingen treffen die latere uitbreiding mogelijk houden.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld","timeRequired":"PT14M","teaches":"Je kunt bij regulier installatiewerk voorbereidingen treffen die latere uitbreiding mogelijk houden.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Domotica en slimme installaties","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/domotica-en-slimme-installaties/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 11: Domotica en slimme installaties","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/domotica-en-slimme-installaties/"},{"@type":"ListItem","position":3,"name":"Voorbereiden zonder nu al te kiezen","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 11</h5><div class="modname"><a href="/cursus-elektrotechniek/module/domotica-en-slimme-installaties/" style="text-decoration:none">Domotica en slimme installaties</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/slimme-schakelaars-en-de-nuldraad/" class=""><span class="dot"></span><span class="snavtxt">11.1 Slimme schakelaars en de nuldraad</span></a><a href="/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/" class=""><span class="dot"></span><span class="snavtxt">11.2 Bussystemen: centraal en decentraal</span></a><a href="/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/" class="on"><span class="dot"></span><span class="snavtxt">11.3 Voorbereiden zonder nu al te kiezen</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/#de-goedkoopste-momenten-zijn-nu" data-anker="de-goedkoopste-momenten-zijn-nu"><span class="snavtxt">De goedkoopste momenten zijn nu</span></a><a href="/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/#de-maatregelen-van-goedkoop-naar-duurder" data-anker="de-maatregelen-van-goedkoop-naar-duurder"><span class="snavtxt">De maatregelen, van goedkoop naar duurder</span></a><a href="/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/#het-gesprek-met-de-klant" data-anker="het-gesprek-met-de-klant"><span class="snavtxt">Het gesprek met de klant</span></a><a href="/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/#wat-je-niet-moet-doen" data-anker="wat-je-niet-moet-doen"><span class="snavtxt">Wat je niet moet doen</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/domotica-en-slimme-installaties/">Module 11</a> › Les 11.3</div><h1>Voorbereiden zonder nu al te kiezen</h1><div class="lessmeta"><span>⏱ 14 min</span><span>📊 Gemiddeld</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je kunt bij regulier installatiewerk voorbereidingen treffen die latere uitbreiding mogelijk houden.</p></div><h2 id="de-goedkoopste-momenten-zijn-nu">De goedkoopste momenten zijn nu</h2>
+<p>Bijna alles wat domotica later duur maakt, is bekabeling in afgewerkte wanden. Tijdens regulier werk - een verbouwing, een nieuwe groepenkast, een uitbreiding - kun je met weinig extra kosten opties openhouden.</p>
+<h2 id="de-maatregelen-van-goedkoop-naar-duurder">De maatregelen, van goedkoop naar duurder</h2>
+<p><strong>1. Loze leidingen.</strong> Een lege mantelbuis van de meterkast naar de zolder, naar de tuin, naar de garage. Kost tijdens een verbouwing bijna niets en maakt later elke kabel mogelijk zonder hakwerk.</p>
+<p><strong>2. Nul meetrekken naar schakeldozen.</strong> Bij nieuw werk kost een extra ader vrijwel niets, en het lost het probleem uit les 11.1 op voordat het bestaat.</p>
+<p><strong>3. Buis van de centraaldoos naar de schakeldoos ruim genoeg.</strong> Zodat er later een extra ader bij kan.</p>
+<p><strong>4. UTP-kabel meetrekken.</strong> Naar de meterkast, naar de plek van de router, naar de plekken waar later een camera, een access point of een bedieningspaneel kan komen. UTP is de meest veelzijdige kabel die er is en veroudert nauwelijks in bruikbaarheid.</p>
+<p><strong>5. Ruimte in de groepenkast.</strong> Vrije modules voor toekomstige groepen, actoren of meetmodules. Zie module 6.1.</p>
+<p><strong>6. Bereikbare centraaldozen.</strong> Een centraaldoos die achter gipsplaat verdwijnt, is verloren. Houd ze bereikbaar, of documenteer waar ze zitten.</p>
+<div class="callout kern"><h4>Documenteren is de zevende maatregel</h4><p>Loze leidingen die niemand kan vinden, zijn geen loze leidingen. Leg vast waar ze lopen, waar ze beginnen en eindigen, en laat dat achter bij de klant en in de meterkast. Een foto van de wand vóór het stucwerk is daarbij het waardevolste document dat je kunt maken - en het kost tien seconden.</p></div>
+<h2 id="het-gesprek-met-de-klant">Het gesprek met de klant</h2>
+<p>De meeste klanten weten tijdens een verbouwing nog niet of ze domotica willen. De juiste vraag is dan niet &quot;wilt u domotica&quot; maar:</p>
+<blockquote>&quot;Als u er over vijf jaar wél iets mee wilt, wilt u dan dat we nu een paar dingen voorbereiden zodat het dan zonder hakwerk kan? Het kost nu weinig extra.&quot;</blockquote>
+<p>Dat is een vraag die vrijwel iedereen begrijpt, en het maakt van een technische keuze een eenvoudige afweging.</p>
+<h2 id="wat-je-niet-moet-doen">Wat je niet moet doen</h2>
+<p>Geen half systeem installeren omdat het nu leuk lijkt. Domotica die halverwege blijft steken - twee slimme lampen, een app die niemand gebruikt, een schakelaar die het soms doet - is slechter dan geen domotica. Het levert klachten op, en die komen bij jou terug.</p>
+<p>Kies met de klant: óf een doordacht systeem, óf een goed voorbereide conventionele installatie. De tussenweg is de enige verkeerde optie.</p><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik leg loze leidingen aan tijdens verbouwingen</label><label><input type="checkbox" data-vinkje="1"> Ik trek standaard een nul mee naar schakeldozen bij nieuw werk</label><label><input type="checkbox" data-vinkje="2"> Ik fotografeer wanden voordat ze dichtgaan</label><label><input type="checkbox" data-vinkje="3"> Ik stel de klant de vraag over voorbereiden in plaats van over kiezen</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/">← 11.2 Bussystemen: centraal en decentraal</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/je-gereedschapskist/">12.1 Je gereedschapskist →</a></div></div><div class="src">bron: copilot.md M6 · qwen.md M5 · chatgpt.md professional quality</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

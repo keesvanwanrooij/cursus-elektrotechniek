@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Module 2: Grondbeginselen elektriciteit | Cursus elektrotechniek</title>
+<meta name="description" content="Spanning, stroom, weerstand en vermogen, en het verschil tussen wissel- en gelijkstroom. Zonder dit fundament blijft installeren het onthouden van trucjes.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Module 2: Grondbeginselen elektriciteit | Cursus elektrotechniek">
+<meta property="og:description" content="Spanning, stroom, weerstand en vermogen, en het verschil tussen wissel- en gelijkstroom. Zonder dit fundament blijft installeren het onthouden van trucjes.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Module 2: Grondbeginselen elektriciteit | Cursus elektrotechniek">
+<meta name="twitter:description" content="Spanning, stroom, weerstand en vermogen, en het verschil tussen wissel- en gelijkstroom. Zonder dit fundament blijft installeren het onthouden van trucjes.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"Course","name":"Grondbeginselen elektriciteit","description":"Spanning, stroom, weerstand en vermogen, en het verschil tussen wissel- en gelijkstroom. Zonder dit fundament blijft installeren het onthouden van trucjes.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/","inLanguage":"nl","isAccessibleForFree":true,"educationalLevel":"Beginner","timeRequired":"PT7H","provider":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"isPartOf":{"@id":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/#cursus"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online"},"hasPart":[{"@type":"LearningResource","name":"Spanning, stroom en weerstand","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/"},{"@type":"LearningResource","name":"Vermogen, energie en rekenen op 230 V","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/vermogen-energie-en-rekenen-op-230-v/"},{"@type":"LearningResource","name":"Wisselstroom: sinus, 50 Hz en effectieve waarde","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/wisselstroom-sinus-50-hz-en-effectieve-waarde/"},{"@type":"LearningResource","name":"Serie, parallel, open circuit en kortsluiting","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/"},{"@type":"LearningResource","name":"1-fase en 3-fase","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/1-fase-en-3-fase/"},{"@type":"LearningResource","name":"Van vermogen naar groep en beveiliging","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/van-vermogen-naar-groep-en-beveiliging/"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 2: Grondbeginselen elektriciteit","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › Module 2</div><div class="modhead"><div><span class="chip mut">Beginner</span><h1>Module 2 - Grondbeginselen elektriciteit</h1><p>Het mentale model waarop al het latere foutzoeken rust. Spanning, stroom, weerstand en vermogen, en het verschil tussen wissel- en gelijkstroom. Zonder dit fundament blijft installeren het onthouden van trucjes.</p><div class="meta" style="gap:20px"><span>📚 6 lessen</span><span>🎬 5 video's</span><span>⏱ ±7 uur</span><span>📊 Beginner</span><span>✓ 0 van 6 afgerond</span></div></div><div class="goalbox"><h4>Na deze module kun je</h4><ul><li>De wet van Ohm en de vermogensformules toepassen zonder rekenmachine</li><li>Uitleggen waarom een apparaat stroom trekt in plaats van dat een automaat stroom levert</li><li>Serie- en parallelschakelingen herkennen en doorrekenen</li><li>Het verschil tussen open circuit, kortsluiting en overbelasting benoemen</li><li>Uitleggen wat 1-fase en 3-fase betekenen en waarom 400 V geen 460 V is</li><li>Uit een vermogen de te verwachten stroom en een passende beveiliging afleiden</li></ul></div></div><div class="lessons"><a class="lrow " href="/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/"><div class="tick"></div><div class="txt"><b>2.1 · Spanning, stroom en weerstand</b><span>Je kunt de drie basisgrootheden beschrijven en uitleggen waarom stroom een gevolg is en geen oorzaak.</span></div><div class="kind">📖 Tekst · 🎬 1 · 20 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/vermogen-energie-en-rekenen-op-230-v/"><div class="tick"></div><div class="txt"><b>2.2 · Vermogen, energie en rekenen op 230 V</b><span>Je kunt uit een opgegeven vermogen de stroom bepalen en inschatten welke groep en beveiliging daarbij horen.</span></div><div class="kind">📖 Tekst · 🎬 1 · 22 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/wisselstroom-sinus-50-hz-en-effectieve-waarde/"><div class="tick"></div><div class="txt"><b>2.3 · Wisselstroom: sinus, 50 Hz en effectieve waarde</b><span>Je begrijpt wat wisselspanning is, wat 230 V precies betekent, en waarom fase en nul niet gelijkwaardig zijn.</span></div><div class="kind">📖 Tekst · 🎬 1 · 18 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/"><div class="tick"></div><div class="txt"><b>2.4 · Serie, parallel, open circuit en kortsluiting</b><span>Je kunt serie- en parallelschakelingen doorrekenen en het verschil tussen overbelasting en kortsluiting uitleggen.</span></div><div class="kind">📖 Tekst · 🎬 1 · 20 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/1-fase-en-3-fase/"><div class="tick"></div><div class="txt"><b>2.5 · 1-fase en 3-fase</b><span>Je begrijpt waarom er tussen twee fasen 400 V staat en waarom faseverdeling belangrijk is.</span></div><div class="kind">📖 Tekst · 🎬 1 · 18 min</div></a><a class="lrow " href="/cursus-elektrotechniek/les/van-vermogen-naar-groep-en-beveiliging/"><div class="tick"></div><div class="txt"><b>2.6 · Van vermogen naar groep en beveiliging</b><span>Je kunt uit een gevraagde belasting afleiden welke groep, doorsnede en beveiliging in de richting van het juiste antwoord liggen.</span></div><div class="kind">📖 Tekst · 20 min</div></a></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

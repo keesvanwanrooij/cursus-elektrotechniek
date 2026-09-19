@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>3-fase en de nulgeleider | Cursus elektrotechniek</title>
+<meta name="description" content="Je begrijpt waarom faseverdeling telt en waarom een onderbroken nul bij 3-fase catastrofaal is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3-fase en de nulgeleider | Cursus elektrotechniek">
+<meta property="og:description" content="Je begrijpt waarom faseverdeling telt en waarom een onderbroken nul bij 3-fase catastrofaal is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3-fase en de nulgeleider | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je begrijpt waarom faseverdeling telt en waarom een onderbroken nul bij 3-fase catastrofaal is. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"3-fase en de nulgeleider","description":"Je begrijpt waarom faseverdeling telt en waarom een onderbroken nul bij 3-fase catastrofaal is.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT18M","teaches":"Je begrijpt waarom faseverdeling telt en waarom een onderbroken nul bij 3-fase catastrofaal is.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Groepenkast: ontwerp en montage","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 6: Groepenkast: ontwerp en montage","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/"},{"@type":"ListItem","position":3,"name":"3-fase en de nulgeleider","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 6</h5><div class="modname"><a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/" style="text-decoration:none">Groepenkast: ontwerp en montage</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/groepsindeling-ontwerpen/" class=""><span class="dot"></span><span class="snavtxt">6.1 Groepsindeling ontwerpen</span></a><a href="/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/" class=""><span class="dot"></span><span class="snavtxt">6.2 Karakteristiek en selectiviteit</span></a><a href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/" class=""><span class="dot"></span><span class="snavtxt">6.3 Aardlekarchitectuur en aardlektypes</span></a><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/" class="on"><span class="dot"></span><span class="snavtxt">6.4 3-fase en de nulgeleider</span></a><a href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/" class=""><span class="dot"></span><span class="snavtxt">6.5 Een kast opbouwen en opleveren</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/#faseverdeling-in-de-praktijk" data-anker="faseverdeling-in-de-praktijk"><span class="snavtxt">Faseverdeling in de praktijk</span></a><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/#wat-de-nulgeleider-in-een-3-fase-systeem-doet" data-anker="wat-de-nulgeleider-in-een-3-fase-systeem-doet"><span class="snavtxt">Wat de nulgeleider in een 3-fase systeem doet</span></a><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/#herkennen-van-een-nulonderbreking" data-anker="herkennen-van-een-nulonderbreking"><span class="snavtxt">Herkennen van een nulonderbreking</span></a><a href="/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/#4-polige-componenten" data-anker="4-polige-componenten"><span class="snavtxt">4-polige componenten</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/">Module 6</a> › Les 6.4</div><h1>3-fase en de nulgeleider</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 2 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je begrijpt waarom faseverdeling telt en waarom een onderbroken nul bij 3-fase catastrofaal is.</p></div><h2 id="faseverdeling-in-de-praktijk">Faseverdeling in de praktijk</h2>
+<p>Bij een 3-fase aansluiting verdeel je de eindgroepen bewust over L1, L2 en L3. Het doel is dat de belasting per fase ongeveer gelijk is, zodat de hoofdbeveiliging niet afschakelt terwijl er op de andere fasen nog ruimte zat is.</p>
+<p>Praktische aanpak bij het indelen:</p>
+<ul><li>Zware, voorspelbare verbruikers eerst verdelen: kookgroep op de ene fase, warmtepomp</li></ul>
+<p>op de tweede, laadpaal op de derde.</p>
+<ul><li>Daarna de gewone groepen zo goed mogelijk spreiden.</li><li>Noteer de verdeling in het schema in de kast, zodat een volgende monteur de</li></ul>
+<p>verdeling niet ongemerkt scheeftrekt.</p>
+<p>Bij het uitbreiden van een bestaande kast betekent dit dat je niet zomaar de eerstvolgende vrije positie pakt: je kijkt eerst welke fase daar zit en of dat past.</p>
+<h2 id="wat-de-nulgeleider-in-een-3-fase-systeem-doet">Wat de nulgeleider in een 3-fase systeem doet</h2>
+<p>Bij een gelijkmatige, symmetrische belasting heffen de drie fasestromen elkaar in de nulgeleider grotendeels op - er loopt dan weinig tot geen stroom door de nul. Bij een ongelijke verdeling voert de nul het verschil af.</p>
+<p>Dat verklaart waarom de nulgeleider bij 3-fase net zo serieus genomen moet worden als de fasen zelf, en waarom hij nooit &quot;even losgenomen&quot; wordt.</p>
+<div class="callout gevaar"><h4>De onderbroken nul bij 3-fase</h4><p>Valt de gezamenlijke nulgeleider weg terwijl er 1-fase apparatuur op de drie fasen hangt, dan komen de belastingen in serie te staan tussen twee fasen - dus over 400 V in plaats van 230 V. De spanning verdeelt zich naar rato van de weerstand: een licht belaste fase krijgt een veel te hoge spanning, een zwaar belaste een te lage.</p><p>Het resultaat is een woning waarin apparatuur op de ene fase doorbrandt terwijl op de andere de lampen dof branden. Dit is een van de meest destructieve storingen die er bestaan, en de reden dat de nulverbinding in een 3-fase installatie met bijzondere zorg wordt uitgevoerd en gecontroleerd.</p></div>
+<h2 id="herkennen-van-een-nulonderbreking">Herkennen van een nulonderbreking</h2>
+<p>Symptomen die je richting deze diagnose sturen:</p>
+<ul><li>Meerdere groepen met vreemd gedrag tegelijk, niet één.</li><li>Lampen die feller of doffer branden dan normaal, soms wisselend met wat er aan staat.</li><li>Meetwaarden die niet kloppen: 150 V op de ene fase, 290 V op de andere.</li><li>Apparatuur die defect raakt zonder aanwijsbare oorzaak.</li></ul>
+<p>Bij dit patroon schakel je uit en meet je gericht, in plaats van door te zoeken naar een defect apparaat.</p>
+<h2 id="4-polige-componenten">4-polige componenten</h2>
+<p>In een 3-fase kast kom je 4-polige hoofdschakelaars en aardlekschakelaars tegen: drie fasen plus de nul. De nul wordt daarbij mee geschakeld, zodat de installatie werkelijk volledig van het net gescheiden kan worden.</p>
+<p>Let bij montage op de aanduiding van de nulklem - die zit doorgaans op een vaste positie en is gemarkeerd. Een nul die op een fasepositie wordt aangesloten, levert direct 400 V op een circuit dat 230 V verwacht.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/WbizGG0jiSc" title="3 fase groepenkast vervangen (Dutch Electrician)"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>3 fase groepenkast vervangen (Dutch Electrician)</b></span><span>±18 min · <a href="https://www.youtube.com/watch?v=WbizGG0jiSc" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/BuyfpPYw_jM" title="3 FASE GROEPENKAST zelf bouwen (Dutch Electrician Amsterdam)"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>3 FASE GROEPENKAST zelf bouwen (Dutch Electrician Amsterdam)</b></span><span>±20 min · <a href="https://www.youtube.com/watch?v=BuyfpPYw_jM" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik verdeel zware verbruikers bewust over de drie fasen</label><label><input type="checkbox" data-vinkje="1"> Ik kan uitleggen wat er gebeurt bij een onderbroken nul in een 3-fase installatie</label><label><input type="checkbox" data-vinkje="2"> Ik herken de symptomen van een nulonderbreking</label><label><input type="checkbox" data-vinkje="3"> Ik controleer bij 4-polige componenten de positie van de nulklem</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/">← 6.3 Aardlekarchitectuur en aardlektypes</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/">6.5 Een kast opbouwen en opleveren →</a></div></div><div class="src">bron: gemini.md M4 · chatgpt.md M6 · copilot.md M5</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

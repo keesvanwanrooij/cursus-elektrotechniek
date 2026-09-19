@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Aardlektest, Zs en de installatietester | Cursus elektrotechniek</title>
+<meta name="description" content="Je weet wat een RCD-test en een Zs-meting bewijzen en waarom de testknop daarvoor niet volstaat. Gratis les uit de cursus elektrotechniek voor beginners.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aardlektest, Zs en de installatietester | Cursus elektrotechniek">
+<meta property="og:description" content="Je weet wat een RCD-test en een Zs-meting bewijzen en waarom de testknop daarvoor niet volstaat. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aardlektest, Zs en de installatietester | Cursus elektrotechniek">
+<meta name="twitter:description" content="Je weet wat een RCD-test en een Zs-meting bewijzen en waarom de testknop daarvoor niet volstaat. Gratis les uit de cursus elektrotechniek voor beginners.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","name":"Aardlektest, Zs en de installatietester","description":"Je weet wat een RCD-test en een Zs-meting bewijzen en waarom de testknop daarvoor niet volstaat.","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/","inLanguage":"nl","isAccessibleForFree":true,"learningResourceType":"Les","educationalLevel":"Gemiddeld tot gevorderd","timeRequired":"PT18M","teaches":"Je weet wat een RCD-test en een Zs-meting bewijzen en waarom de testknop daarvoor niet volstaat.","author":{"@type":"Person","name":"Kees van Wanrooij","url":"https://github.com/keesvanwanrooij"},"license":"https://www.gnu.org/licenses/gpl-3.0.html","isPartOf":{"@type":"Course","name":"Meten, testen en verifiëren","url":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/meten-testen-en-verifieren/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Module 7: Meten, testen en verifiëren","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/meten-testen-en-verifieren/"},{"@type":"ListItem","position":3,"name":"Aardlektest, Zs en de installatietester","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="lesson-layout"><aside class="sidebar"><h5>Module 7</h5><div class="modname"><a href="/cursus-elektrotechniek/module/meten-testen-en-verifieren/" style="text-decoration:none">Meten, testen en verifiëren</a></div><nav class="snav"><a href="/cursus-elektrotechniek/les/welk-instrument-voor-welke-vraag/" class=""><span class="dot"></span><span class="snavtxt">7.1 Welk instrument voor welke vraag</span></a><a href="/cursus-elektrotechniek/les/de-multimeter-beheersen/" class=""><span class="dot"></span><span class="snavtxt">7.2 De multimeter beheersen</span></a><a href="/cursus-elektrotechniek/les/continuiteit-en-de-beschermingsleiding/" class=""><span class="dot"></span><span class="snavtxt">7.3 Continuïteit en de beschermingsleiding</span></a><a href="/cursus-elektrotechniek/les/isolatieweerstand-meten/" class=""><span class="dot"></span><span class="snavtxt">7.4 Isolatieweerstand meten</span></a><a href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/" class="on"><span class="dot"></span><span class="snavtxt">7.5 Aardlektest, Zs en de installatietester</span></a><a href="/cursus-elektrotechniek/les/opleveren-wat-je-aantoont-en-vastlegt/" class=""><span class="dot"></span><span class="snavtxt">7.6 Opleveren: wat je aantoont en vastlegt</span></a></nav><hr><h5>Op deze pagina</h5><nav class="snav"><a href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/#de-testknop-versus-de-meting" data-anker="de-testknop-versus-de-meting"><span class="snavtxt">De testknop versus de meting</span></a><a href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/#wat-een-rcd-test-meet" data-anker="wat-een-rcd-test-meet"><span class="snavtxt">Wat een RCD-test meet</span></a><a href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/#zs-de-kortsluitstroom-aan-het-eind-van-de-leidin" data-anker="zs-de-kortsluitstroom-aan-het-eind-van-de-leidin"><span class="snavtxt">Zs: de kortsluitstroom aan het eind van de leiding</span></a><a href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/#de-installatietester-in-de-praktijk" data-anker="de-installatietester-in-de-praktijk"><span class="snavtxt">De installatietester in de praktijk</span></a><a href="/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/#wat-je-nu-al-doet" data-anker="wat-je-nu-al-doet"><span class="snavtxt">Wat je nu al doet</span></a></nav></aside><article class="article"><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › <a href="/cursus-elektrotechniek/module/meten-testen-en-verifieren/">Module 7</a> › Les 7.5</div><h1>Aardlektest, Zs en de installatietester</h1><div class="lessmeta"><span>⏱ 18 min</span><span>🎬 1 video's</span><span>📊 Gemiddeld tot gevorderd</span></div><div class="callout kern"><h4>Leerdoel van deze les</h4><p>Je weet wat een RCD-test en een Zs-meting bewijzen en waarom de testknop daarvoor niet volstaat.</p></div><h2 id="de-testknop-versus-de-meting">De testknop versus de meting</h2>
+<p>De <strong>T-knop</strong> op een aardlekschakelaar maakt intern een lekstroom en controleert of het mechanisme nog beweegt. Nuttig als periodieke controle, en het advies is die knop regelmatig te bedienen zodat het mechanisme niet vastloopt.</p>
+<p>Maar de testknop bewijst niet:</p>
+<ul><li>bij welke lekstroom de schakelaar precies afschakelt;</li><li>hoe snel hij afschakelt;</li><li>of hij dat ook doet bij het type lekstroom dat in deze installatie kan optreden.</li></ul>
+<p>Daarvoor is een <strong>installatietester</strong> met RCD-functie nodig. Die legt een gedefinieerde lekstroom aan en meet de afschakeltijd in milliseconden.</p>
+<h2 id="wat-een-rcd-test-meet">Wat een RCD-test meet</h2>
+<p>Een installatietester test doorgaans op meerdere niveaus:</p>
+<ul><li><strong>bij een halve nominale waarde</strong> (15 mA bij een 30 mA-aardlek): de schakelaar mag</li></ul>
+<p>dan juist <strong>niet</strong> afschakelen - anders is hij te gevoelig en krijg je onverklaarbare uitval;</p>
+<ul><li><strong>bij de nominale waarde</strong> (30 mA): hij moet afschakelen binnen de voorgeschreven tijd;</li><li><strong>bij een veelvoud</strong> (bijvoorbeeld 5×): hij moet zeer snel afschakelen.</li></ul>
+<p>De gemeten tijden noteer je bij de oplevering. Ze zijn ook waardevol bij een latere storing: een aardlek die vandaag in 25 ms afschakelt en over drie jaar in 200 ms, is aan het verouderen.</p>
+<h2 id="zs-de-kortsluitstroom-aan-het-eind-van-de-leidin">Zs: de kortsluitstroom aan het eind van de leiding</h2>
+<p>De <strong>Zs-meting</strong> (impedantie van de foutlus) bepaalt hoeveel stroom er zou lopen bij een kortsluiting tussen fase en beschermingsleiding op het verste punt van een groep.</p>
+<p>Die waarde is bepalend voor de vraag of de automaat <strong>snel genoeg</strong> afschakelt. Is de lusimpedantie te hoog - door een lange leiding, een te dunne doorsnede of een slechte verbinding - dan komt de kortsluitstroom niet boven de magnetische drempel van de automaat en duurt het afschakelen seconden in plaats van milliseconden.</p>
+<div class="callout kern"><h4>Waarom Zs het sluitstuk is</h4><p>Alle eerdere metingen bewijzen dat de installatie in orde is in rusttoestand. De Zs-meting bewijst dat de beveiliging bij een echte fout ook daadwerkelijk op tijd ingrijpt. Dat is het verschil tussen &quot;het is netjes aangelegd&quot; en &quot;het beschermt&quot;.</p></div>
+<h2 id="de-installatietester-in-de-praktijk">De installatietester in de praktijk</h2>
+<p>Een multifunctionele installatietester combineert doorgaans:</p>
+<ul><li>isolatieweerstandsmeting (250 / 500 / 1000 V);</li><li>lage-weerstandsmeting voor continuïteit, met meetdraadcompensatie;</li><li>lusimpedantie Zs en de bijbehorende kortsluitstroom;</li><li>RCD-test met verschillende stromen en golfvormen;</li><li>vaak ook aardverspreidingsweerstand en fasevolgorde.</li></ul>
+<p>Het is een aanzienlijke investering en je gebruikt hem pas zinvol als je begrijpt wat elke meting bewijst. Voor een beginnend elektricien is de volgorde: eerst de tweepolige tester, dan een goede multimeter, en de installatietester zodra je zelfstandig oplevert - of eerder, als je werkgever er al een heeft die je mag gebruiken.</p>
+<h2 id="wat-je-nu-al-doet">Wat je nu al doet</h2>
+<p>Ook zonder eigen installatietester kun je bij metingen van een collega meekijken en de vraag stellen: wat bewijst deze meting, en wat zou een afwijkende waarde betekenen? Dat is precies de kennis die je nodig hebt op het moment dat je het instrument zelf in handen krijgt.</p><h2 id="videos">Video's bij deze les</h2><div class="video"><iframe loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" src="https://www.youtube-nocookie.com/embed/faWnyuwPjxc" title="NEN 3140 keurmeester: wat doet de keurmeester?"></iframe></div><div class="videocap"><span><svg class="vlag" viewBox="0 0 3 2" aria-label="Nederlands"><rect width="3" height="2" fill="#21468B"/><rect width="3" height="1.333" fill="#FFFFFF"/><rect width="3" height="0.667" fill="#AE1C28"/></svg> <b>NEN 3140 keurmeester: wat doet de keurmeester?</b></span><span>±10 min · <a href="https://www.youtube.com/watch?v=faWnyuwPjxc" target="_blank" rel="noopener">openen op YouTube ↗</a></span></div><div class="checklist"><h4>Voordat je verdergaat</h4><label><input type="checkbox" data-vinkje="0"> Ik weet wat de testknop wel en niet bewijst</label><label><input type="checkbox" data-vinkje="1"> Ik ken de drie niveaus waarop een RCD-test wordt uitgevoerd</label><label><input type="checkbox" data-vinkje="2"> Ik kan uitleggen wat de Zs-meting bewijst</label><label><input type="checkbox" data-vinkje="3"> Ik heb bij een collega meegekeken bij metingen met een installatietester</label></div><div class="footnav"><a class="btn ghost sm" href="/cursus-elektrotechniek/les/isolatieweerstand-meten/">← 7.4 Isolatieweerstand meten</a><div class="right"><button class="btn" id="btnKlaar">✓ Markeer als afgerond</button><a class="btn ghost sm" href="/cursus-elektrotechniek/les/opleveren-wat-je-aantoont-en-vastlegt/">7.6 Opleveren: wat je aantoont en vastlegt →</a></div></div><div class="src">bron: gemini.md M2 · kimi.md M6 · copilot.md M4 · chatgpt.md M7</div></article></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot">
+  <p><strong>Let op:</strong> deze zelfstudiecursus is geen erkend diploma en geen NEN 3140-aanwijzing.
+  Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig.
+  Werk onder begeleiding van een ervaren elektricien.</p>
+</footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>
