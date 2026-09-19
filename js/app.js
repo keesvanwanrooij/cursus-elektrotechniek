@@ -92,6 +92,8 @@
         knop.textContent = nu ? '✓ Afgerond' : '✓ Markeer als afgerond';
         if (nu) {
           melding('Les afgerond. Voortgang opgeslagen.');
+          /* Module of hele cursus afgerond: even stilstaan en een uitnodiging tonen, niet doorschakelen. */
+          if (toonMijlpaal(lesId)) return;
           var buren = CURSUS.buren(lesId);
           if (buren.volgende) {
             setTimeout(function () { ga('les', buren.volgende.les.id); }, 600);
@@ -115,6 +117,26 @@
       });
     });
   }
+
+  /* Donatie-uitnodiging op een gevoelig moment: als je iets hebt afgerond. Nooit willekeurig. */
+  function toonMijlpaal(lesId) {
+    var x = CURSUS.les(lesId);
+    var alles = CURSUS.alleLessen().every(function (o) { return Store.isKlaar(o.les.id); });
+    if (!alles && Store.moduleVoortgang(x.module).procent !== 100) return false;
+    var html = Views.steunBlok('mijlpaal', alles ? 'Je hebt de hele cursus afgerond!' : 'Module ' + x.module.nr + ' afgerond!');
+    if (!html) return false;
+    var oud = document.querySelector('.steun');
+    if (oud) oud.outerHTML = html;
+    else { var nav = document.querySelector('.footnav'); if (nav) nav.insertAdjacentHTML('afterend', html); }
+    return true;
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest || !e.target.closest('[data-steun-uit]')) return;
+    Store.zetInstelling('donatieUit', true);
+    document.querySelectorAll('.steun').forEach(function (el) { el.remove(); });
+    melding('Goed, ik vraag het niet meer.');
+  });
 
   /* --------------------------- mobiel navmenu --------------------------- */
 

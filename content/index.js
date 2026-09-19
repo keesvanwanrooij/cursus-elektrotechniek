@@ -9,6 +9,9 @@ window.CURSUS = {
   ondertitel: 'Van beginner tot beginnend vakbekwaam',
   modules: [],
 
+  /* Steun het project. Zet actief op false om alle donatie-elementen te verbergen. */
+  donatie: { actief: true, url: 'https://github.com/sponsors/keesvanwanrooij' },
+
   addModule: function (m) {
     /* Leesbare URL-slugs (zoekwoorden in het pad). Uniek per soort, bij dubbelen komt het lesnummer erbij. */
     var self = this;

@@ -73,6 +73,13 @@ window.Store = (function () {
 
   /* ---------------------------- instellingen ---------------------------- */
 
+  function instelling(sleutel) { return data.instellingen[sleutel]; }
+
+  function zetInstelling(sleutel, waarde) {
+    data.instellingen[sleutel] = waarde;
+    bewaar();
+  }
+
   function thema() { return data.instellingen.thema || 'werkplaats'; }
 
   function zetThema(naam) {
@@ -162,7 +169,7 @@ window.Store = (function () {
 
   return {
     les: les, isKlaar: isKlaar, zetKlaar: zetKlaar, zetVinkje: zetVinkje, bezoek: bezoek,
-    thema: thema, zetThema: zetThema,
+    thema: thema, zetThema: zetThema, instelling: instelling, zetInstelling: zetInstelling,
     statistiek: statistiek, moduleVoortgang: moduleVoortgang, volgendeLes: volgendeLes,
     exporteer: exporteer, importeer: importeer, wis: wis
   };
