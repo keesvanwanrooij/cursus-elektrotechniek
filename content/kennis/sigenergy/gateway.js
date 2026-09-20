@@ -49,7 +49,7 @@ KENNIS.addProduct({
 - **Verbinden.** Het net komt binnen op de netpoort. Van daaruit gaat het vermogen naar de omvormer (die ook zon en batterij bedient) en naar de huisgroepen.
 - **Back-up bij netuitval.** Valt het net weg, dan koppelt de gateway het huis los van het net en voedt de omvormer met batterij het huis. De handleiding noemt dat de *off-grid stand*. Het vakwoord is *islanding* (eilandbedrijf): een deel van de installatie draait los van het net.
 - **Omschakelen zonder onderbreking.** De brochure noemt 0 ms onderbreking aan de belastingszijde, maar alleen als de gateway samen met een Sigen Energy Controller en een Sigen Battery wordt gebruikt.
-- **Generator en slimme belastingen.** De HomePro-varianten kunnen een dieselgenerator starten via een droog contact (een potentiaalvrij schakelcontact dat zelf geen spanning levert) en hebben een poort voor slimme belastingen.
+- **Generator.** Een dieselgenerator start via een droog contact (een potentiaalvrij schakelcontact dat zelf geen spanning levert). De brochure noemt dat ondersteund.
 
 ### Back-up: alles of met prioriteit
 
@@ -57,7 +57,7 @@ De brochure noemt **back-up voor het hele huis** en **slimme back-up met priorit
 
 ### Bypass
 
-Aan de voorzijde zit een handbediende **overbruggingsschakelaar, QS1** (bypass: een omweg langs de gateway-elektronica). In alle gidsen blijft QS1 in normaal bedrijf **uit**. Wanneer je hem wel gebruikt, legt de handleiding niet uit.
+In de kast zit een **overbruggingsschakelaar, QS1** (bypass: een omweg langs de gateway-elektronica). In alle gidsen blijft QS1 in normaal bedrijf **uit**. Wanneer je hem wel gebruikt, legt de handleiding niet uit.
 
 !!! info Home of HomePro
 De handleiding legt niet uit wat "Home" en "HomePro", of "SP", "TP", "F" en "L" betekenen. SP is bij de kabels en omvormers eenfasig, TP driefasig. Voor de rest vergelijk je de poortlijsten.
@@ -83,7 +83,7 @@ De handleiding legt niet uit wat "Home" en "HomePro", of "SP", "TP", "F" en "L" 
 
 ### EV-lader en stroomsensor
 
-De gidsen tonen de EV AC Charger alleen als apparaat op FE2. De brochure noemt V2X (de auto als bron) als een van de bronnen waartussen de gateway naadloos schakelt. De **stroomsensor** komt in de gidsen niet aan bod. De alarmlijst noemt wel meldingen over een elektriciteitsmeter en stroomtransformatoren, met de aanwijzing te controleren of de sensor op de gateway of de meter zit.
+De gidsen tonen de EV AC Charger alleen als apparaat op FE2. De brochure noemt V2X (de auto als bron) als een van de bronnen waartussen de gateway naadloos schakelt. De **stroomsensor** komt in de gidsen niet aan bod. De alarmlijst heeft wel meldingen over een meter en stroomtransformatoren, met de aanwijzing te controleren of de sensor op de gateway of de meter zit.
 
 !!! kern Waarom dit ertoe doet
 Met een gateway kunnen batterij en zon spanning op de installatie zetten terwijl het net weg is. Dat verandert hoe je veilig werkt. Zie de cursusles over PV en je veiligheidsprocedure.
@@ -112,7 +112,7 @@ De gateway moet bij de aansluiting van het huis en de omvormer passen. **SP** is
 
 ### Aantal omvormers
 
-Home SP 12K heeft twee omvormerpoorten: poort 1 voor een eenfasige omvormer van 8,0 tot 12,0 kW, poort 2 voor 6,0 kW, samen maximaal 12,0 kW. Bij HomePro TP en TP-L is een tweede omvormer optioneel, met een automaat die de eigenaar zelf levert. Bij SP-F noemt de gids omvormer 2 en 3 optioneel.`
+Home SP 12K heeft twee omvormerpoorten (8,0 tot 12,0 kW en 6,0 kW), samen maximaal 12,0 kW. Bij HomePro TP en TP-L is een tweede omvormer optioneel, met een zelf aangeleverde automaat. Bij SP-F zijn omvormer 2 en 3 optioneel.`
     },
     {
       id: 'specificaties',
@@ -131,11 +131,11 @@ Home SP 12K heeft twee omvormerpoorten: poort 1 voor een eenfasige omvormer van 
 | Afmetingen B / H / D | 450 / 570 / 197 mm | 450 / 695 / 177 mm | 450 / 695 / 163 mm |
 | Gewicht | 25 kg | 25 kg | 25 kg |
 
-Voor alle drie: 50 / 60 Hz, schakeltijd bij wegvallen van het net 0 ms, overspanningscategorie III, natuurlijke convectiekoeling, communicatie via FE, RS485 en droog contact, wandmontage. Afmetingen zijn zonder decoratieve afdekking. Een eenfasige omvormer van 8,0 tot 12,0 kW hoort bij SP op de eerste omvormerpoort, een van 3,0 tot 6,0 kW op de tweede, samen maximaal 12 kW.
+Voor alle drie: 50 / 60 Hz, schakeltijd bij wegvallen van het net 0 ms, overspanningscategorie III, natuurlijke convectiekoeling, communicatie via FE, RS485 en droog contact, wandmontage. Afmetingen zijn zonder decoratieve afdekking. 
 
 ### Omgeving en beschermingsgraad
 
-Brochure: bedrijf van -30 tot 55 graden Celsius, opslag van -40 tot 70 graden, tot 4000 m hoogte, IP55. De omgevingstekening in alle zes gidsen toont IP54 en 0 tot 95 % relatieve vochtigheid. Bij SP-F staat erbij dat het vermogen terugloopt (derating) boven 50 graden. De tekeningen geven voor SP-F en TP een hoogte van 650 mm, de brochure 695 mm. Ga bij twijfel uit van de strengste waarde.
+Brochure: bedrijf van -30 tot 55 graden Celsius, opslag van -40 tot 70 graden, tot 4000 m hoogte, IP55. De omgevingstekening in alle zes gidsen toont IP54 en 0 tot 95 % relatieve vochtigheid. Bij SP-F staat erbij dat het vermogen terugloopt (derating) boven 50 graden. Ga bij twijfel uit van de strengste waarde.
 
 ### Uit de installatiegidsen
 
@@ -155,17 +155,17 @@ Functionele aardingskabel: 6 tot 10 mm2, bij HomePro SP en SP-F 10 tot 16 mm2. O
       kop: 'Installatie in hoofdlijnen',
       tekst: `De gidsen volgen ongeveer dezelfde route, maar verschillen in poorten, automaten en kabels. Lees dus altijd de volledige gids van jouw variant. Alleen getraind en gekwalificeerd personeel mag aan de apparatuur werken.
 
-1. **Plaats en ruimtes.** Binnen of buiten, maar beschut: geen direct zonlicht, regen, stilstaand water, sneeuw of stof. Niet in brandgevaarlijke of explosieve ruimtes, niet binnen bereik van kinderen, minstens 500 m van corrosiebronnen. Binnen: zorg voor ventilatie, de ruimte mag maximaal 3 graden opwarmen. De tekening geeft afstanden: minstens 300 mm boven, 200 mm zijkant, 400 mm onder, 700 mm voor, en 2 m tot een warmtebron van 60 graden.
+1. **Plaats en ruimtes.** Binnen of buiten, maar beschut tegen zon, regen, stilstaand water, sneeuw en stof. Niet in brandgevaarlijke of explosieve ruimtes, niet binnen bereik van kinderen, minstens 500 m van corrosiebronnen. Binnen: ventileren, de ruimte mag maximaal 3 graden opwarmen. De tekening vraagt minstens 300 mm boven, 200 mm opzij, 400 mm onder, 700 mm voor en 2 m tot een warmtebron van 60 graden.
 2. **Controle vooraf.** Paklijst nalopen, PBM en gereedschap controleren en kijken of de vooraf aangedraaide schroeven nog kloppen: hun streepmarkeringen moeten op een lijn liggen.
-3. **Montage.** Wandmontage, horizontaal, op een niet-brandbare, draagkrachtige, vlakke ondergrond zonder leidingen of kabels in de boorlijn. De stappen staan als tekening in de gids. Bij HomePro TP en TP-L hoort daar een optionele stap bij: een zelf aangeleverde automaat voor omvormer 2 plaatsen.
-4. **Kabels en klemmen.** Deur open, kabels door de wartels, aansluiten op de labels (GRID, INV, BACKUP, X1, SMART-PORT, COM). Bij HomePro SP kies je kabelinvoer onder of achter (achter: gat waterdicht maken, zo nodig met brandwerende kit). De gids geeft per klem de kabellengte die je moet reserveren. Verwijder geen gereserveerde doorvoergaten.
+3. **Montage.** Wandmontage, horizontaal, op een niet-brandbare, draagkrachtige, vlakke ondergrond zonder leidingen of kabels in de boorlijn. De stappen staan als tekening in de gids. Bij HomePro TP en TP-L kan een zelf aangeleverde automaat voor omvormer 2 erbij.
+4. **Kabels en klemmen.** Deur open, kabels door de wartels, aansluiten op de labels (GRID, INV, BACKUP, X1, SMART-PORT, COM). Bij HomePro SP kies je kabelinvoer onder of achter (achter: gat waterdicht maken). De gids geeft per klem de te reserveren kabellengte. Verwijder geen gereserveerde doorvoergaten.
 5. **Net.** Kabel op QF1, L, N en PE in volgorde (bij 3-fase L1, L2, L3, N, PE). Meet later de spanning op QF1: die moet binnen het lokaal toegestane bereik liggen.
 6. **Huis en back-up.** Back-upgroepen op de back-uppoort, niet-back-upgroepen op klem X1 (Home, HomePro SP).
 7. **Generator en slimme belastingen.** Droog contact DO3 voor de generatorstart, op NO/COM of NC/COM al naargelang het startgedrag. DO2 meldt de generatorcontactor terug, DO1 de netschakelaar. DI2 is voor een externe ATS: lage impedantie (kortsluiting) betekent net, hoge (open) betekent generator. Bij Home en HomePro SP is DI1 de terugmelding van de bypass-schakelaar, bij SP-F, TP en TP-L een noodstopingang.
 8. **Omvormer met PV en batterij.** Per omvormerpoort een eigen automaat. Bij HomePro SP slechts een van QF3 en QF4. De kabeldoorsnede volgt uit het omvormervermogen.
 9. **Communicatie en sensor.** RJ45 naar de omvormer (FE1) en naar EV-lader, router of extra omvormer (FE2): afgeschermd getwist, 8-aderig, maximaal 100 m per kabel. DI/DO: tweeaderig afgeschermd, 0,2 tot 1,5 mm2. De sensor: zie de documenten van de sensor.
 10. **Aarding.** Zie hieronder.
-11. **Controle en dichtmaken.** Apparaat stevig geplaatst, aarding-, AC- en signaalkabels compleet en juist, klemmen zonder speling, geen bramen bij de kabelbinders, geen restafval. Daarna het binnenpaneel of de beschermkap plaatsen.
+11. **Controle en dichtmaken.** Apparaat stevig geplaatst, alle kabels compleet en juist, klemmen zonder speling, geen bramen of restafval. Daarna het binnenpaneel of de beschermkap plaatsen.
 
 ### Aarding
 
@@ -199,7 +199,7 @@ De nummers zijn de labels op de automaten in de kast en verschillen per variant.
 4. **Voer na elke bedradingswijziging een bedradingscontrole uit in de mobiele app**, voor je verdergaat.
 5. Sluit de deur. Bij SP-F, TP en TP-L vergrendel je ook de zijpanelen met de bijgeleverde sleutel.
 
-Instellingen in de app, zoals prioriteiten voor back-up en slimme belastingen, staan niet in deze gidsen. Ze eindigen bij het inschakelen en de bedradingscontrole.`
+Instellingen in de app, zoals prioriteiten, staan niet in deze gidsen. Ze eindigen bij het inschakelen.`
     },
     {
       id: 'veiligheid',
@@ -215,21 +215,20 @@ Sluit eerst de aardingskabel aan en verwijder hem bij vervanging als laatste. Me
 !!!
 
 - **Personeel.** Alleen opgeleid, gekwalificeerd personeel dat de lokale wetten, normen en de werking van het systeem kent.
-- **PBM.** Beschermende en isolerende handschoenen, veiligheidsschoenen, helm, geen geleidende sieraden, isolatiegereedschap.
-- **Weer.** Niet werken tijdens onweer, regen, sneeuw of storm.
-- **Kabels.** Niet kruisen, geen beschadigde isolatie, weg van warmtebronnen. Onder 0 graden wordt de mantel bros: kabels die lang onder 0 graden lagen, 24 uur ervoor naar een ruimte boven 0 graden brengen.
-- **Onderhoud.** Schakel uit en wacht zolang het vertragingslabel op de apparatuur aangeeft. Pas weer inschakelen als de storing volledig is verholpen.
+- **PBM en weer.** Isolerende handschoenen en schoenen, helm, geen geleidende sieraden, isolatiegereedschap. Niet werken tijdens onweer, regen, sneeuw of storm.
+- **Kabels.** Niet kruisen, geen beschadigde isolatie. Onder 0 graden wordt de mantel bros: kabels die lang onder 0 graden lagen, 24 uur ervoor naar een ruimte boven 0 graden brengen.
+- **Onderhoud.** Schakel uit en wacht zolang het vertragingslabel op de apparatuur aangeeft.
 - **Overspanningsbeveiliging.** Bij SP-F, TP en TP-L waarschuwt de gids dat een uitgeschakelde beveiliging tot schade aan huishoudelijke verbruikers en de gateway kan leiden.
 - **Transport en opslag.** Niet kantelen, maximaal 15 graden helling in de verpakking en 10 graden uitgepakt, opslag van -40 tot 70 graden (20 tot 30 aanbevolen).
-- **Ladders en boren.** Alleen na instructie, houten of glasvezel ladders, een tweede persoon in de buurt. Bij boren veiligheidsbril en handschoenen, nooit in de apparatuur boren.
-- **Garantie.** De documenten sommen op wanneer de fabrikant niet aansprakelijk is, onder meer bij afwijking van normen, verkeerde kabels of gereedschap en wijzigingen aan de software.
+- **Ladders en boren.** Alleen na instructie, houten of glasvezel ladders. Bij boren veiligheidsbril en handschoenen, nooit in de apparatuur boren.
+- **Aansprakelijkheid.** De fabrikant sluit die uit bij onder meer afwijking van normen, verkeerde kabels en wijzigingen aan de software.
 
 De Nederlandse procedure (de vijf stappen, NEN 3140) noemen deze documenten niet. Neem zelf mee dat het huis met een batterij ook onder spanning kan staan als het net weg is.`
     },
     {
       id: 'alarmen-en-storingen',
       kop: 'Alarmen en storingen',
-      tekst: `De **Lijst van alarmeringen** (23 pagina's, versie 05 van 24/10/2025) is voor alle zes varianten dezelfde. Het is een lange tabel voor het hele Sigenergy-systeem, niet alleen voor de gateway. Je moet er dus in zoeken.
+      tekst: `De **Lijst van alarmeringen** (23 pagina's, versie 05 van 24/10/2025) is voor alle zes varianten dezelfde. Het is een lange tabel voor het hele Sigenergy-systeem, dus je moet er gericht in zoeken.
 
 ### Zo is hij opgebouwd
 
@@ -249,7 +248,7 @@ Controleer de exacte codes in de lijst zelf.
 
 ### Wat je in de aanbevelingen terugziet
 
-Vaak: eerst een stand-by of uitschakelinstructie via de app, de netschakelaar losmaken, enkele minuten wachten, dan herstellen en inschakelen. Blijft de fout, dan meld je hem via de mySigen-app onder Support en troubleshooting of neem je contact op met Sigenergy. Bij de bypass-melding staat dat je de bypass-schakelaar opnieuw moet verbreken. Een dieselgenerator heet in de lijst soms "oliegenerator" of "oliemotor".
+Vaak: eerst een stand-by of uitschakelinstructie via de app, de netschakelaar losmaken, enkele minuten wachten, herstellen en inschakelen. Blijft de fout, dan meld je hem via de mySigen-app onder Support en troubleshooting of neem je contact op met Sigenergy. Een dieselgenerator heet in de lijst soms "oliegenerator" of "oliemotor".
 
 !!! kern Zo gebruik je de lijst
 Noteer bij een melding foutcode en ID uit de app, zoek die op in de lijst en volg de stappen in de kolom Aanbeveling.
@@ -265,11 +264,7 @@ Noteer bij een melding foutcode en ID uit de app, zoek die op in de lijst en vol
 - Wanneer je de bypass-schakelaar QS1 gebruikt.
 - Hoe je back-up met prioriteit instelt (dat zit in de app) en hoe de stroomsensor op de gateway wordt aangesloten.
 - De brochure (IP55, 695 mm hoog) en de gidsen (IP54, 650 mm hoog) noemen niet dezelfde waarden voor HomePro.
-- Bij de generatorcontacten zeggen in SP-F, TP en TP-L beide regels "open". Bij Home en HomePro SP staat "open" en "gesloten". Lees de tabel zelf na.
-
-?? Waarom zijn er zes installatiegidsen?
-De gidsen zijn per variant geschreven en tonen andere poorten, automaten en kabels. De Belangrijke informatie en de alarmlijst zijn gedeeld en staan daarom een keer in de lijst met documenten.
-??`
+- Bij de generatorcontacten zeggen in SP-F, TP en TP-L beide regels "open". Bij Home en HomePro SP staat "open" en "gesloten". Lees de tabel zelf na.`
     }
   ],
 
