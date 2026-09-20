@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="nl" data-theme="werkplaats">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- seo:head:start -->
+<title>Merken en producten voor installateurs | Cursus elektrotechniek</title>
+<meta name="description" content="Overzicht van merken (Sigenergy) met uitleg en per product een samenvatting van de handleiding.">
+<link rel="canonical" href="https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Kees van Wanrooij">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Cursus Elektrotechniek">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Merken en producten voor installateurs | Cursus elektrotechniek">
+<meta property="og:description" content="Overzicht van merken (Sigenergy) met uitleg en per product een samenvatting van de handleiding.">
+<meta property="og:url" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/">
+<meta property="og:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gratis cursus elektrotechniek voor beginners">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Merken en producten voor installateurs | Cursus elektrotechniek">
+<meta name="twitter:description" content="Overzicht van merken (Sigenergy) met uitleg en per product een samenvatting van de handleiding.">
+<meta name="twitter:image" content="https://keesvanwanrooij.github.io/cursus-elektrotechniek/og-image.png">
+<meta name="site-base" content="/cursus-elektrotechniek/">
+<script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cursus elektrotechniek","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/"},{"@type":"ListItem","position":2,"name":"Merken","item":"https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/"}]}]}</script>
+<!-- seo:head:end -->
+<link rel="stylesheet" href="/cursus-elektrotechniek/css/theme.css">
+<link rel="manifest" href="/cursus-elektrotechniek/manifest.json">
+<link rel="icon" href="/cursus-elektrotechniek/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/cursus-elektrotechniek/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0F1216">
+<script>
+  // Thema vóór de eerste render zetten, anders flitst het scherm.
+  try {
+    var opgeslagen = JSON.parse(localStorage.getItem('cursus-elektro-voortgang') || '{}');
+    if (opgeslagen.instellingen && opgeslagen.instellingen.thema) {
+      document.documentElement.dataset.theme = opgeslagen.instellingen.thema;
+    }
+  } catch (e) { /* eerste start */ }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/cursus-elektrotechniek/">
+    <span class="bolt">⚡</span>
+    <span>Elektrotechniek<small>Praktijkcursus</small></span>
+  </a>
+  <button class="iconbtn navToggle" id="navToggle" title="Menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav class="topnav" id="topnav">
+    <a href="/cursus-elektrotechniek/" data-route="dash">Mijn cursus</a>
+    <a href="/cursus-elektrotechniek/toepassingen/" data-route="toepassingen">Toepassingen</a>
+    <a href="/cursus-elektrotechniek/merken/" data-route="merken">Merken</a>
+    <a href="/cursus-elektrotechniek/naslag/" data-route="naslag">Naslag</a>
+  </nav>
+  <span class="spacer"></span>
+  <div class="topactions">
+    <button class="btn sm" id="installBtn" hidden><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg><span class="btn-label"> App installeren</span></button>
+    <button class="iconbtn" id="themeToggle" title="Wissel tussen donker en licht thema" aria-label="Wissel thema">◐</button>
+    <div class="menu">
+      <button class="iconbtn" id="menuBtn" title="Voortgang beheren" aria-label="Menu">⋯</button>
+      <div class="menupanel" id="menuPanel" hidden>
+        <button id="btnExport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v8"/><path d="M5.5 7 9 10.5 12.5 7"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang exporteren</button>
+        <button id="btnImport"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5v-8"/><path d="M5.5 5.5 9 2l3.5 3.5"/><path d="M3 13.5v1a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-1"/></svg> Voortgang importeren</button>
+        <hr>
+        <button id="btnReset" class="danger"><svg class="icon" viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9A5 5 0 1 1 12.5 5.3"/><path d="M14 2.5V6h-3.5"/></svg> Voortgang wissen</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"><!-- seo:main:start --><div class="crumbs"><a href="/cursus-elektrotechniek/">Mijn cursus</a> › Merken</div><header class="pagehead"><h1>Merken en producten</h1><p>Per merk een uitleg van het ecosysteem en per product een samenvatting van de handleiding, met verwijzingen naar hoofdstuk en pagina.</p></header><div class="modgrid"><a class="modcard" href="/cursus-elektrotechniek/merken/sigenergy/"><div class="num">China</div><h3>Sigenergy</h3><p>Sigenergy maakt thuisenergiesystemen: hybride omvormers, batterijen, gateways voor noodstroom, laadpalen en de mySigen-app. Hier zie je in een oogopslag welk onderdeel wat doet en waar je in de handleidingen moet zijn.</p><div class="meta"><span>8 producten met samenvatting</span></div></a></div><!-- seo:main:end --></main>
+
+<input type="file" id="fileInput" accept="application/json" hidden>
+
+<footer class="sitefoot" id="sitefoot"><!-- seo:foot:start --><div class="foot-grid"><div class="foot-col foot-about"><div class="foot-logo"><span class="bolt">⚡</span><b>Cursus Elektrotechniek</b></div><p>Gratis online cursus elektrotechniek voor beginners, in het Nederlands. Zelfstudie in je eigen tempo, ook offline.</p></div><nav class="foot-col" aria-label="Fundament"><h3>Fundament</h3><ul><li><a href="/cursus-elektrotechniek/module/veiligheid-en-nen-3140/">1. Veiligheid &amp; NEN 3140</a></li><li><a href="/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/">2. Grondbeginselen elektriciteit</a></li><li><a href="/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/">3. De Nederlandse woninginstallatie</a></li><li><a href="/cursus-elektrotechniek/module/kabel-draad-en-verbindingen/">4. Kabel, draad en verbindingen</a></li><li><a href="/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/">5. Schakelingen en aansluitpunten</a></li><li><a href="/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/">6. Groepenkast: ontwerp en montage</a></li><li><a href="/cursus-elektrotechniek/module/meten-testen-en-verifieren/">7. Meten, testen en verifiëren</a></li><li><a href="/cursus-elektrotechniek/module/storingzoeken-en-oplevering/">8. Storingzoeken en oplevering</a></li></ul></nav><nav class="foot-col" aria-label="Specialisaties"><h3>Specialisaties</h3><ul><li><a href="/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/">9. Warmtepomp, airco en cv-ketel</a></li><li><a href="/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/">10. Zonnepanelen en laadpalen</a></li><li><a href="/cursus-elektrotechniek/module/domotica-en-slimme-installaties/">11. Domotica en slimme installaties</a></li><li><a href="/cursus-elektrotechniek/module/gereedschap-kwaliteit-en-ondernemen/">12. Gereedschap, kwaliteit en ondernemen</a></li></ul></nav><nav class="foot-col" aria-label="Kennisbank"><h3>Toepassingen</h3><ul><li><a href="/cursus-elektrotechniek/toepassingen/laadpaal/">Laadpaal</a></li><li><a href="/cursus-elektrotechniek/toepassingen/thuisbatterij/">Thuisbatterij</a></li></ul><h3>Merken</h3><ul><li><a href="/cursus-elektrotechniek/merken/sigenergy/">Sigenergy</a></li></ul></nav><nav class="foot-col" aria-label="Project"><h3>Project</h3><ul><li><a href="/cursus-elektrotechniek/">Mijn cursus</a></li><li><a href="/cursus-elektrotechniek/naslag/">Naslag: formules en tabellen</a></li><li><a href="https://github.com/keesvanwanrooij/cursus-elektrotechniek" target="_blank" rel="noopener">Broncode op GitHub</a></li><li><a href="https://github.com/keesvanwanrooij/cursus-elektrotechniek/issues/new" target="_blank" rel="noopener">Fout of suggestie melden</a></li><li><a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">Licentie GPLv3</a></li></ul></nav></div><div class="foot-base"><p class="foot-disclaimer"><strong>Let op:</strong> deze zelfstudie is geen erkend diploma en geen NEN 3140-aanwijzing. Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig. Werk onder begeleiding van een ervaren elektricien.</p><p class="foot-copy">© 2026 Kees van Wanrooij · Gratis en open source onder de GPLv3-licentie</p></div><!-- seo:foot:end --></footer>
+
+<script src="/cursus-elektrotechniek/js/markdown.js"></script>
+<script src="/cursus-elektrotechniek/js/store.js"></script>
+<script src="/cursus-elektrotechniek/content/index.js"></script>
+<script src="/cursus-elektrotechniek/content/m01.js"></script>
+<script src="/cursus-elektrotechniek/content/m02.js"></script>
+<script src="/cursus-elektrotechniek/content/m03.js"></script>
+<script src="/cursus-elektrotechniek/content/m04.js"></script>
+<script src="/cursus-elektrotechniek/content/m05.js"></script>
+<script src="/cursus-elektrotechniek/content/m06.js"></script>
+<script src="/cursus-elektrotechniek/content/m07.js"></script>
+<script src="/cursus-elektrotechniek/content/m08.js"></script>
+<script src="/cursus-elektrotechniek/content/m09.js"></script>
+<script src="/cursus-elektrotechniek/content/m10.js"></script>
+<script src="/cursus-elektrotechniek/content/m11.js"></script>
+<script src="/cursus-elektrotechniek/content/m12.js"></script>
+<script src="/cursus-elektrotechniek/content/naslag.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/index.js"></script>
+<!-- kennis:start -->
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/batterij.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/ev-ac-lader.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/ev-dc-module.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/gateway.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/hybrid-omvormer.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/merk.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/mysigen-app.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/power-sensor.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/sigenergy/sigenstor-home.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/toepassing-laadpaal.js"></script>
+<script src="/cursus-elektrotechniek/content/kennis/toepassing-thuisbatterij.js"></script>
+<!-- kennis:end -->
+<script src="/cursus-elektrotechniek/js/seo.js"></script>
+<script src="/cursus-elektrotechniek/js/views.js"></script>
+<script src="/cursus-elektrotechniek/js/kennisviews.js"></script>
+<script src="/cursus-elektrotechniek/js/app.js"></script>
+</body>
+</html>

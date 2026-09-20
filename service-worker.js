@@ -7,7 +7,7 @@
 /* Alle cursussen op keesvanwanrooij.github.io delen dezelfde origin, en dus dezelfde Cache Storage.
    Daarom ruimt deze worker uitsluitend caches op met dit voorvoegsel, nooit die van een andere cursus. */
 var CACHE_VOORVOEGSEL = 'cursus-elektro-';
-var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v4';
+var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v5';
 
 var APP_SHELL = [
   './',
@@ -18,6 +18,7 @@ var APP_SHELL = [
   './js/store.js',
   './js/seo.js',
   './js/views.js',
+  './js/kennisviews.js',
   './js/app.js',
   './content/index.js',
   './content/m01.js',
@@ -33,6 +34,20 @@ var APP_SHELL = [
   './content/m11.js',
   './content/m12.js',
   './content/naslag.js',
+  /* kennis:start */
+  './content/kennis/index.js',
+  './content/kennis/sigenergy/batterij.js',
+  './content/kennis/sigenergy/ev-ac-lader.js',
+  './content/kennis/sigenergy/ev-dc-module.js',
+  './content/kennis/sigenergy/gateway.js',
+  './content/kennis/sigenergy/hybrid-omvormer.js',
+  './content/kennis/sigenergy/merk.js',
+  './content/kennis/sigenergy/mysigen-app.js',
+  './content/kennis/sigenergy/power-sensor.js',
+  './content/kennis/sigenergy/sigenstor-home.js',
+  './content/kennis/toepassing-laadpaal.js',
+  './content/kennis/toepassing-thuisbatterij.js',
+  /* kennis:end */
   './icons/icon-192.png',
   './icons/icon-512.png'
 ];

@@ -14,7 +14,7 @@
     var basisMeta = document.querySelector('meta[name="site-base"]');
     /* Homepage zonder meta: basis is de map zelf. Offline-fallback op een diepe URL: alles voor /les/, /module/ of /naslag/. */
     var basis = basisMeta ? basisMeta.content
-      : location.pathname.replace(/index\.html$/, '').replace(/^(.*?\/)(?:les|module|naslag)\/.*$/, '$1');
+      : location.pathname.replace(/index\.html$/, '').replace(/^(.*?\/)(?:les|module|naslag|toepassingen|merken)\/.*$/, '$1');
     if (basis.slice(-1) !== '/') basis += '/';
     Seo.configureer({ path: true, base: basis, origin: location.origin });
   }
@@ -54,25 +54,37 @@
 
     if (r.page === 'module') {
       app.innerHTML = Views.modulePagina(r.id);
-      markeerNav('dash');
     } else if (r.page === 'les') {
       app.innerHTML = Views.lesPagina(r.id);
       Store.bezoek(r.id);
       koppelLesKnoppen(r.id);
-      markeerNav('dash');
     } else if (r.page === 'naslag') {
       app.innerHTML = Views.naslag();
-      markeerNav('naslag');
+    } else if (r.page === 'toepassingen') {
+      app.innerHTML = KennisViews.toepassingenOverzicht();
+    } else if (r.page === 'toepassing') {
+      app.innerHTML = KennisViews.toepassingPagina(r.id);
+    } else if (r.page === 'merken') {
+      app.innerHTML = KennisViews.merkenOverzicht();
+    } else if (r.page === 'merk') {
+      app.innerHTML = KennisViews.merkPagina(r.id);
+    } else if (r.page === 'product') {
+      app.innerHTML = KennisViews.productPagina(r.id);
     } else {
       app.innerHTML = Views.dashboard();
-      markeerNav('dash');
     }
+    markeerNav(NAV_VAN[r.page] || 'dash');
+    koppelAnkers();
 
     Seo.pasToe(r.page, r.id);
 
     var anker = Seo.cfg.path && location.hash.length > 1 ? document.getElementById(location.hash.slice(1)) : null;
     if (anker) anker.scrollIntoView(); else window.scrollTo({ top: 0 });
   }
+
+  /* Welk menu-item bij welke pagina hoort. */
+  var NAV_VAN = { naslag: 'naslag', toepassingen: 'toepassingen', toepassing: 'toepassingen',
+                  merken: 'merken', merk: 'merken', product: 'merken' };
 
   function markeerNav(naam) {
     document.querySelectorAll('.topnav a').forEach(function (a) {
@@ -107,15 +119,6 @@
         Store.zetVinkje(lesId, parseInt(input.dataset.vinkje, 10), input.checked);
       });
     });
-
-    /* Zij-navigatie naar koppen: soepel scrollen zonder de route te wijzigen. */
-    document.querySelectorAll('[data-anker]').forEach(function (a) {
-      a.addEventListener('click', function (e) {
-        e.preventDefault();
-        var doel = document.getElementById(a.dataset.anker);
-        if (doel) doel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
   }
 
   /* Donatie-uitnodiging op een gevoelig moment: als je iets hebt afgerond. Nooit willekeurig. */
@@ -137,6 +140,17 @@
     document.querySelectorAll('.steun').forEach(function (el) { el.remove(); });
     melding('Goed, ik vraag het niet meer.');
   });
+
+  /* Zij-navigatie naar koppen: soepel scrollen zonder de route te wijzigen. Voor alle pagina's met een zijbalk. */
+  function koppelAnkers() {
+    document.querySelectorAll('[data-anker]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var doel = document.getElementById(a.dataset.anker);
+        if (doel) doel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  }
 
   /* --------------------------- mobiel navmenu --------------------------- */
 
@@ -296,7 +310,9 @@
 
   /* Merklink en menu wijzen naar de juiste URL's in de gekozen modus. */
   document.querySelectorAll('.brand, [data-route="dash"]').forEach(function (a) { a.setAttribute('href', Seo.path('dash')); });
-  document.querySelectorAll('[data-route="naslag"]').forEach(function (a) { a.setAttribute('href', Seo.path('naslag')); });
+  ['naslag', 'toepassingen', 'merken'].forEach(function (r) {
+    document.querySelectorAll('[data-route="' + r + '"]').forEach(function (a) { a.setAttribute('href', Seo.path(r)); });
+  });
 
   if (!window.CURSUS || !CURSUS.modules.length) {
     app.innerHTML = '<div class="callout gevaar"><h4>Geen inhoud geladen</h4>' +

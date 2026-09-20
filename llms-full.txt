@@ -5164,3 +5164,1828 @@ optreden.
 | IV | Aansluiting netbeheerder, meterkast |
 
 Weerstand meten **uitsluitend spanningsloos**. Isolatiemeting: alle verbruikers eraf.
+
+
+## Kennisbank
+
+### Toepassing: Laadpaal
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/toepassingen/laadpaal/
+
+Een laadpaal laadt een elektrische auto thuis of op het bedrijf. Hier leer je het verschil tussen AC- en DC-laden, wat een installatie vraagt en welke merken en producten er zijn.
+
+#### Wat is een laadpaal
+
+Een elektrische auto heeft een grote accu, meestal tussen de 40 en 100 kWh. Om die op te laden is een verbinding met veel vermogen nodig, langdurig. Een gewoon stopcontact is daar niet voor gemaakt. Een laadpaal is een vaste, beveiligde aansluiting met een eigen regeling die met de auto communiceert, zodat er alleen stroom loopt als de verbinding veilig is en de auto er klaar voor is.
+
+Er zijn twee hoofdsoorten, die je duidelijk uit elkaar moet houden. Zie de volgende sectie.
+
+#### AC-laden en DC-laden
+
+| | AC-laadpaal | DC-lader |
+|---|---|---|
+| **Wat levert hij** | Wisselstroom uit het net | Gelijkstroom rechtstreeks naar de accu |
+| **Wie zet om** | De boordlader in de auto | De lader zelf |
+| **Vermogen thuis** | 3,7 tot 22 kW | Tientallen kW, thuisuitvoeringen vanaf ongeveer 12 kW |
+| **Aansluiting auto** | Type 2 | Meestal CCS |
+| **Kosten en complexiteit** | Lager | Hoger |
+| **Bidirectioneel (V2H, V2G)** | Meestal niet | Kan, afhankelijk van lader en auto |
+
+Voor thuis is een AC-paal het gangbare antwoord. De snelheid wordt begrensd door de boordlader van de auto: een auto met een 11 kW-boordlader laadt niet sneller dan 11 kW, hoe krachtig de paal ook is.
+
+> **Waarom is een DC-lader thuis interessant?**
+> Omdat je de accu van de auto dan kunt gebruiken als opslag voor het huis (V2H) of zelfs voor het net (V2G). Dat vraagt zowel een lader die dat kan als een auto die het ondersteunt, en op dit moment is dat nog beperkt beschikbaar.
+
+#### Vermogen, fasen en stroom
+
+Het laadvermogen volgt uit spanning, stroom en het aantal fasen. Dit is de bekende rekensom uit module 2, nu met een langdurige belasting.
+
+| Uitvoering | Vermogen | Stroom | Typisch |
+|---|---|---|---|
+| 1-fase, 16 A | 3,7 kW | 16 A | Standaard 1-fase aansluiting |
+| 1-fase, 32 A | 7,4 kW | 32 A | Vraagt een ruimere aansluiting |
+| 3-fase, 16 A | 11 kW | 3 x 16 A | Veelgebruikt bij 3-fase woningen |
+| 3-fase, 32 A | 22 kW | 3 x 32 A | Zelden nodig thuis |
+
+> **Denk aan de aansluiting van de woning**
+> Een 7,4 kW-paal op een 1 x 35 A-aansluiting neemt bijna al het beschikbare vermogen. Koken, wassen en laden tegelijk laat dan de hoofdzekering afschakelen. Het antwoord heet load balancing, zie de sectie over slim laden.
+
+#### Slim laden en load balancing
+
+Laden duurt uren en hoeft niet altijd op vol vermogen. Een slimme paal past zich aan:
+
+- **Dynamisch laadbeheer (load balancing).** Een sensor meet het huisverbruik en de paal verlaagt zijn vermogen als de rest van het huis meer nodig heeft. De auto laadt dan langzamer, maar de hoofdzekering blijft heel.
+- **Laden op zonne-overschot.** De paal laadt alleen met wat de zonnepanelen over hebben.
+- **Gepland laden.** Starten op een vast tijdstip, bijvoorbeeld 's nachts of bij een laag tarief.
+- **Authenticatie.** Starten met een pas (RFID), de app of zonder controle. Bij een paal die door meer mensen wordt gebruikt is dat belangrijk.
+
+Voor slim laden heeft de paal een verbinding nodig (wifi, bekabeld of mobiel) en, voor het meten van het huisverbruik, een sensor. Zonder die twee is de paal domweg een beveiligd stopcontact.
+
+#### Wat komt er bij een installatie kijken
+
+1. **Opname.** Aansluitwaarde, 1- of 3-fase, groepenkast, beschikbare ruimte, en de afstand van de meterkast naar de laadplek. Meet het werkelijke kabeltracé, niet hemelsbreed.
+2. **Ontwerp.** Een eigen eindgroep, de juiste doorsnede voor stroom en lengte, en het aardlektype dat de fabrikant voorschrijft. Een laadpaal is een langdurige belasting op vrijwel het maximum, dus verbindingen moeten van uitstekende kwaliteit zijn.
+3. **Netbeheerder.** Past de belasting nog binnen de aansluiting? In sommige regio's kan verzwaring lang duren door netcongestie. Load balancing is dan vaak het antwoord.
+4. **Montage.** Op muur of paal, buiten met de juiste beschermingsgraad, met trekontlasting en waterdichte doorvoeren.
+5. **Inbedrijfstelling.** Instellingen, communicatie, meting van het huisverbruik, en een test met een auto of testapparaat.
+6. **Oplevering.** Metingen vastleggen, uitleg aan de klant en een overzicht van de instellingen.
+
+#### Veiligheid en let op
+
+> **Nooit structureel laden via een verlengsnoer**
+> Een verlengsnoer op een haspel laat de warmte van uren belasting niet weg. Het is een klassieke oorzaak van smeltende stekkers en brand. Wie geen paal wil, heeft een vaste aansluiting nodig.
+
+- **Aardlek.** Bij laadpalen kan een gelijkstroomlek voorkomen. Volg de voorschriften van de fabrikant: een type B aardlek, of een paal met ingebouwde gelijkstroomdetectie (vaak 6 mA) in combinatie met een type A. Zie les 6.3 over aardlektypes.
+- **Eigen groep** met beveiliging afgestemd op de kabel, niet op de paal.
+- **Beschermingsgraad** passend bij de plek. Een buitenpaal hoort bestand te zijn tegen regen en stoten.
+- **Spanningsloos werken** volgens de vijf stappen, ook als de paal naast een zonne-installatie of batterij staat.
+
+#### Veelgemaakte fouten
+
+- De kabellengte schatten in plaats van meten, waardoor spanningsval of afschakeltijd niet klopt.
+- Een 3-fase paal aansluiten op een 1-fase aansluiting zonder de instelling aan te passen.
+- Geen load balancing bij een krappe aansluiting.
+- Het aardlektype niet controleren tegen de handleiding van de paal.
+- Vergeten dat de auto de snelheid bepaalt: een kleinere boordlader haalt het vermogen van de paal nooit.
+
+### Toepassing: Thuisbatterij
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/toepassingen/thuisbatterij/
+
+Een thuisbatterij slaat zonne-energie of goedkope stroom op om later in huis te gebruiken. Hier leer je hoe het werkt, welke onderdelen erbij horen en welke merken en producten er zijn.
+
+#### Wat is een thuisbatterij
+
+Een thuisbatterij is een grote accu die je aan een woning koppelt. Overdag wekken zonnepanelen vaak meer stroom op dan het huis op dat moment nodig heeft. Zonder batterij gaat dat overschot het net op. Met batterij wordt het opgeslagen en 's avonds gebruikt.
+
+Het verschil met de accu in een telefoon is vooral schaal en sturing. Een thuisbatterij slaat typisch tussen de 5 en 30 kWh op, wordt aangestuurd door een energiemanagementsysteem (EMS) en moet aan veel strengere veiligheidseisen voldoen, omdat er veel energie in een kleine ruimte zit.
+
+> **Twee dingen die beginners door elkaar halen**
+> **Capaciteit** (kWh) is hoeveel energie de batterij kan opslaan. **Vermogen** (kW) is hoe snel hij die kan leveren of opnemen. Een batterij van 10 kWh met 5 kW vermogen kan dus twee uur lang 5 kW leveren, maar niet in een kwartier een oven en een laadpaal tegelijk voeden.
+
+#### Waarom een thuisbatterij
+
+Klanten hebben meestal een van deze redenen. Vraag altijd door welke, want ze leiden tot een ander ontwerp.
+
+- **Meer eigen zonne-energie gebruiken.** Zonder batterij gebruikt een gemiddeld huishouden vaak maar een deel van de eigen opbrengst direct. De rest gaat het net op.
+- **Minder afhankelijk van terugleververgoeding.** In Nederland verandert de regeling voor teruglevering. Controleer altijd de actuele regels en het contract van de klant, want dit bepaalt of een batterij financieel zinvol is.
+- **Dynamisch tarief benutten.** Bij een variabel uurtarief laadt de batterij als stroom goedkoop is en levert hij als het duur is.
+- **Noodstroom.** Bij een storing op het net blijft (een deel van) het huis werken. Dit vraagt een gateway of een back-upuitgang en is geen vanzelfsprekende eigenschap van elke batterij.
+- **Piekbelasting beperken.** Handig als de aansluiting krap is, bijvoorbeeld met een warmtepomp en een laadpaal.
+
+> **Is een thuisbatterij altijd de moeite waard?**
+> Nee. Het hangt af van verbruik, aantal zonnepanelen, tarief en wat het systeem kost. Een eerlijk advies rekent het door met het werkelijke verbruik van de klant en belooft geen terugverdientijd die je niet kunt onderbouwen.
+
+#### Hoe werkt het
+
+In een woning met batterij lopen vier energiestromen door elkaar: **zon**, **batterij**, **huis** en **net**. Het systeem kiest steeds welke stroom waarheen gaat.
+
+1. Er is zon en het huis verbruikt weinig: de zon voedt het huis en laadt de batterij.
+2. De batterij is vol: het overschot gaat naar het net.
+3. Het wordt donker: de batterij voedt het huis, het net levert alleen wat de batterij niet kan.
+4. De batterij is leeg: het net voedt het huis.
+
+Wat het systeem wanneer doet, bepaalt de **sturing**. Die kan eenvoudig zijn (eigen verbruik maximaliseren) of slim (rekening houden met weer, tarieven en gewoontes). Om te kunnen sturen meet het systeem continu het vermogen op de hoofdaansluiting. Daarom is de sensor een onmisbaar onderdeel.
+
+##### Waar wordt omgezet
+Zonnepanelen en batterij leveren **gelijkspanning** (DC). Het huis werkt op **wisselspanning** (AC). Een omvormer zet om, en dat kan op twee plekken in het systeem. Dat verschil bepaalt het ontwerp.
+
+#### AC-gekoppeld, DC-gekoppeld en all-in-one
+
+| Soort | Hoe | Goed om te weten |
+|---|---|---|
+| **DC-gekoppeld** (hybride omvormer) | Zonnepanelen en batterij hangen aan dezelfde omvormer, de energie hoeft maar een keer te worden omgezet | Meestal het efficientst bij een nieuwe installatie |
+| **AC-gekoppeld** | De batterij heeft een eigen omvormer en wordt aan de wisselstroomkant aangesloten | Handig om een batterij achteraf aan een bestaande PV-installatie toe te voegen |
+| **All-in-one** | Omvormer, batterij en regeling als een geheel geleverd | Weinig keuzes, snelle installatie, minder flexibel |
+
+Bij een **hybride omvormer** komt de batterij meestal via een aparte batterijcontroller met modules. Je kunt vaak later modules toevoegen, waardoor de capaciteit meegroeit met de wens van de klant.
+
+#### Begrippen die je moet kennen
+
+| Begrip | Wat het is |
+|---|---|
+| **kWh** | Capaciteit: hoeveel energie erin past |
+| **kW** | Vermogen: hoe snel energie eruit of erin kan |
+| **SoC** | State of Charge: hoe vol de batterij is, in procenten |
+| **SoH** | State of Health: hoeveel capaciteit er nog over is ten opzichte van nieuw |
+| **Ontlaaddiepte (DoD)** | Hoeveel van de capaciteit je werkelijk mag gebruiken. Fabrikanten geven vaak een bruikbare capaciteit op die lager is dan de totale |
+| **Cyclus** | Een keer volledig laden en ontladen. Het aantal cycli bepaalt de levensduur |
+| **LFP** | Lithium-ijzerfosfaat, een celtype dat als veilig en duurzaam bekend staat |
+| **EMS** | Energiemanagementsysteem: de software die bepaalt wat het systeem wanneer doet |
+| **Back-up of EPS** | Noodstroom bij netuitval, voor het hele huis of een aparte groep |
+| **Zero-export** | Instelling waarbij niets naar het net wordt teruggeleverd |
+
+#### Wat komt er bij een installatie kijken
+
+Geen handleiding vervangt een goede opname. Een verstandige volgorde:
+
+1. **Opname van de bestaande installatie.** Groepenkast, aansluitwaarde, aardlektypes, aanwezige zonnepanelen, fasen, kabellengtes en beschikbare ruimte.
+2. **Keuze van systeem en plek.** Denk aan vrije ruimte rond de omvormer, temperatuur, vocht en bereikbaarheid. Volg de handleiding van de fabrikant voor toegestane plaatsen. Een batterij hoort niet in een vluchtroute.
+3. **Ontwerp van de aansluiting.** Een eigen groep met de juiste beveiliging, de plek van de stroomsensor en (bij noodstroom) welke groepen op de back-up komen.
+4. **Aanmelden.** Nieuwe of gewijzigde productie- en opslaginstallaties moeten bij de netbeheerder gemeld worden. Controleer de actuele procedure.
+5. **Montage en aansluiting** volgens de installatiegids, met veiligstellen van alle bronnen (module 1).
+6. **Inbedrijfstelling** met de app: instellingen, netcode, meting controleren, test van de back-up als die er is.
+7. **Oplevering** met metingen, schema, uitleg aan de klant en een overzicht van waar de handleidingen te vinden zijn.
+
+#### Veiligheid
+
+> **Uitschakelen is hier geen spanningsloos**
+> Een woning met zonnepanelen en batterij heeft meerdere energiebronnen. De gelijkspanningszijde van panelen blijft onder spanning zolang er licht is, en een batterij blijft onder spanning ook als alles is uitgeschakeld. Werken aan zo'n installatie vraagt de vijf stappen uit module 1, aangevuld met alle extra bronnen. Lees les 10.2 voordat je aan een installatie met PV of opslag begint.
+
+Verder geldt in het algemeen:
+
+- Volg de handleiding van de fabrikant voor plaatsing, afstanden en toegestane omgevingstemperatuur. Dat is geen advies maar een voorwaarde voor garantie en verzekering.
+- Let op de brandveiligheid: rookmelders in de buurt, een vrije vluchtroute en geen brandbare materialen direct tegen de batterij.
+- Vraag de klant om de verzekeraar te informeren als dat in de polis wordt gevraagd.
+- Batterijen zijn zwaar. Til nooit alleen en volg de aanwijzingen voor transport en opslag.
+
+#### Veelgemaakte fouten
+
+- Het noodstroomvermogen niet controleren tegen wat de klant op back-up verwacht (bijvoorbeeld een warmtepomp of inductiekookplaat).
+- De stroomsensor verkeerd om of op de verkeerde plek monteren, waardoor het systeem verkeerd stuurt.
+- Vergeten dat een 3-fase huis ook een 3-fase systeem of meting vraagt.
+- Capaciteit verkopen zonder naar het werkelijke verbruik te kijken.
+- De netcode of het land verkeerd instellen bij inbedrijfstelling.
+- Geen schema en geen instellingen vastleggen bij oplevering.
+
+### Merk: Sigenergy
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/
+
+Sigenergy maakt thuisenergiesystemen: hybride omvormers, batterijen, gateways voor noodstroom, laadpalen en de mySigen-app. Hier zie je in een oogopslag welk onderdeel wat doet en waar je in de handleidingen moet zijn.
+
+#### Over Sigenergy
+
+Sigenergy ontwikkelt energieoplossingen voor woningen en bedrijven: opslagsystemen, omvormers voor zonne-energie en EV-laders. De visie is "geniet van groene energie" en de missie is het leiden in AI-gestuurde innovatie voor PV en energieopslag, met nadruk op veiligheid, eenvoud en prestaties.
+
+Wat het merk onderscheidt, in de woorden van de brochure samengevat:
+
+- **Alles binnen een ecosysteem.** Omvormer, batterij, gateway, sensoren, lader en app zijn op elkaar afgestemd en worden vanuit een app en een cloudplatform beheerd.
+- **DC-gekoppelde architectuur.** Zonnepanelen, batterij en lader hangen aan een gezamenlijke gelijkspanningsleiding (de DC-bus), zodat er minder omgezet hoeft te worden.
+- **Modulaire batterij.** Je begint met een of meer modules en breidt later uit. De brochure noemt "gemengd gebruik" van batterijpakketten, maar de voorwaarden staan in de handleiding van de batterij.
+- **Noodstroom via een gateway** met een omschakeltijd die de fabrikant op 0 ms zet, mits de onderdelen samen worden gebruikt.
+- **V2X.** Met de EV DC Charging Module kan de auto in de toekomst ook energie teruggeven aan het huis. De brochure zegt zelf dat dit beperkt wordt door de auto en door normen die nog moeten verschijnen.
+
+> **Lees de brochure als verkoopdocument**
+> De brochure laat zien wat het merk kan, niet wat in jouw situatie mag of past. Voor elke keuze in de praktijk geldt de handleiding van het onderdeel dat je installeert.
+
+#### De familie in een oogopslag
+
+Voor een beginner lijkt het aanbod een woud van namen. Deze tabel ordent het. De rol-kolom is de gemeenschappelijke taal van de kennisbank: dezelfde rollen zie je terug bij elke toepassing.
+
+| Naam | Wat het is | Rol |
+|---|---|---|
+| **SigenStor Home** | Compleet thuisenergiesysteem: Energy Controller met batterijmodules, gateway, sensor en app | Compleet systeem |
+| **Sigen Energy Controller (EC)** | De omvormer in het SigenStor-systeem, 1-fase of 3-fase | Omvormer |
+| **Sigen Hybrid (SP2 en TP2)** | Dunne hybride omvormer die met een batterijcontroller en batterijmodules werkt | Omvormer |
+| **SigenStor BC en BAT** | Batterijcontroller en modulaire batterij | Batterij |
+| **Sigen Gateway (Home en HomePro)** | Schakelpunt voor net, batterij, zon en generator, en voor noodstroom | Gateway |
+| **Sigen EV AC Charger** | Laadpaal voor wisselstroom, 7, 11 of 22 kW | Laadpaal en lader |
+| **Sigen EV DC Charging Module (SigenStor EVDC)** | Bidirectionele DC-lader voor thuis | Laadpaal en lader |
+| **Sigen Power Sensor en Communication Module** | Meting van stroom en vermogen, en een 4G-module voor de verbinding | Meting en sensoren |
+| **mySigen-app en Sigen Cloud** | Bewaking voor de klant en beheer voor de installateur | App en cloud |
+| **SigenMicro** | Micro-omvormers per paneel (400 tot 1000 W), voor dak en balkon | Omvormer |
+
+De producten met een eigen pagina in de kennisbank vind je hieronder. Voor SigenMicro is nog geen handleiding verwerkt.
+
+#### Hoe de onderdelen samenwerken
+
+Er zijn twee hoofdroutes om een Sigen-systeem op te bouwen. Begrijp het verschil en je weet welke handleiding je nodig hebt.
+
+##### Route 1: SigenStor Home
+De **Energy Controller** is een omvormer die zonnepanelen en batterij regelt. Daaraan hang je een of meer **BAT-modules**. Samen met de gateway, een sensor en de app vormen ze het SigenStor Home-systeem. De 1-fase en 3-fase versies hebben elk hun eigen handleidingen.
+
+##### Route 2: Hybrid-omvormer met batterij
+Je begint met een **Sigen Hybrid-omvormer** (SP2 voor 1-fase, TP2 voor 3-fase). De batterij sluit je via een **SigenStor BC** (batterijcontroller) met **BAT-modules** aan. Dit is de route als je een omvormer wilt kiezen op basis van het aantal panelen en fasen en de batterij apart wilt schalen.
+
+##### Wat er bij beide bij hoort
+- Een **Gateway** als de klant noodstroom wil. Zonder gateway is er geen back-up.
+- Een **Power Sensor** op het aansluitpunt van het net, zodat het systeem huisverbruik en teruglevering kan meten.
+- De **mySigen-app** voor het aanmaken en instellen van het systeem.
+- Een **EV-lader** als de klant een auto laadt: AC voor de gewone laadpaal, DC voor bidirectioneel laden.
+
+> **Namen lezen**
+> **SP** staat voor 1-fase en **TP** voor 3-fase. Het getal is het vermogen in kW, dus een 5.0 TP is een 3-fase omvormer van 5 kW. **EC** is de Energy Controller, **BC** de batterijcontroller, **BAT** de batterijmodule, **EVAC** en **EVDC** de AC- en DC-lader. **A1** is een uitvoeringsversie van het complete systeem.
+
+#### Welke handleiding bij welke vraag
+
+De handleidingen zijn volgens een vast patroon opgebouwd. Als je het patroon kent, weet je meteen waar je moet zoeken.
+
+| Document | Voor wie | Waarvoor |
+|---|---|---|
+| **Beknopte handleiding** | Installateur en gebruiker | Eerste overzicht, vooral tekeningen |
+| **Gebruikershandleiding** | Eindgebruiker | Bediening, app en dagelijks gebruik |
+| **01 Belangrijke informatie** | Installateur | Veiligheid, transport, opslag, algemene regels |
+| **02 Installatiegids** | Installateur | Montage, aansluiting, inbedrijfstelling |
+| **03 Lijst van alarmeringen** | Installateur | Alle foutcodes met oorzaak en aanbeveling |
+| **04 Onderhoud** | Installateur | Vervangen en onderhouden van onderdelen |
+| **Brochure en datasheet** | Verkoop en ontwerp | Overzicht en specificaties |
+
+Twee praktische tips: de paginaverwijzingen in de kennisbank zijn pdf-paginanummers (de eerste pagina is 1) en de handleidingen bestaan in versies. Controleer de versie op de titelpagina van het document dat je gebruikt, want getallen en schakelaargroottes kunnen tussen versies verschillen.
+
+#### Algemene veiligheidsregels van Sigenergy
+
+De documenten "Belangrijke informatie" van de Gateway, de Hybrid-omvormers en SigenStor Home volgen dezelfde opzet en herhalen dezelfde basisregels. Die vormen de veiligheidsbasis voor elk Sigen-product.
+
+- **Kwalificatie.** De documenten zijn bedoeld voor opgeleid installatiepersoneel. Wie installeert moet de lokale wetten en normen kennen, de werking van het systeem begrijpen en de kwalificaties hebben die het land vraagt. Sigenergy is niet aansprakelijk bij een onjuiste installatieomgeving, kabels of gereedschap die niet aan de normen voldoen, het negeren van labels en instructies, of ongeautoriseerde wijzigingen.
+- **Spanningsloos werken.** Werk niet onder spanning, meet de spanning op het contactpunt voordat je een klem aanraakt en koppel de schakelaars voor en achter het apparaat los. Voor onderhoud schakel je uit en wacht je zoals het vertragingslabel op het apparaat aangeeft. De documenten geven zelf geen wachttijd in minuten.
+- **Aarding eerst.** Sluit de aardkabel als eerste aan en verwijder hem bij vervanging als laatste.
+- **Persoonlijke bescherming.** Isolatiehandschoenen, isolerende schoenen, helm, isolerend gereedschap, geen metalen sieraden. Werk niet door bij vervorming of een vreemde geur.
+- **Kabels, ladders en boren.** Geen beschadigde isolatie, aandacht voor scherpe randen, niet kruisen. Kabels die lang onder 0 graden lagen, leg je eerst 24 uur boven 0 graden. Ladders en boren alleen met de juiste training en een tweede persoon als toezicht.
+- **Transport en opslag.** Niet kantelen, langzaam tillen, nooit onder een heftruckvork lopen. Voor opslagtemperaturen en vochtigheid geldt per product de handleiding. Batterijen vallen onder de gevaarlijke goederen (klasse 9) en de SigenStor-documenten zijn strenger over opslag en laadtoestand.
+- **Batterij.** Een pakket dat is gevallen, een schok heeft gehad of nat is geworden, gebruik je niet meer zonder beoordeling door een vakman. Vervang alleen met pakketten van Sigenergy en meng geen merken. Een defect pakket kan heet zijn en brandbare en giftige gassen afgeven.
+
+> **Wat deze documenten niet zeggen**
+> De regels over de gelijkspanningszijde en de batterij staan vooral in de SigenStor-documenten, niet in die van de Gateway en de Hybrid. Milieu, afdanking en toestemming van de netbeheerder komen in deze drie documenten niet uitgebreid aan bod. Pas die dus toe vanuit de cursus (module 1 en les 10.2) en de lokale regels.
+
+#### Alarmen en foutcodes
+
+Alle Sigen-omvormers en gateways delen dezelfde **Lijst van alarmeringen** (23 pagina's, versie 05 van oktober 2025). Hij staat in de installateurshandleidingen van de Hybrid-omvormers en de Gateway-varianten.
+
+##### Hoe je een alarm leest
+Elke rij heeft een **foutcode** (vier cijfers), een **foutnaam**, een **ID** (het subalarm binnen die code), een **ID-naam**, de **oorzaak** en een **aanbeveling voor reparatie**. Een alarm is dus code plus ID. De cellen in de pdf zijn samengevoegd: een tekstblok geldt vaak voor meerdere ID's, dus lees het hele blok naast de code.
+
+##### Waar de codes over gaan
+| Codes | Onderwerp |
+|---|---|
+| 1001 tot 1031 | Omvormer: PV-strings, het net, lekstroom, communicatie, isolatie, temperatuur, nulleider en de ingebouwde gateway |
+| 2001 tot 2304 | Energieopslag en batterij: versies, isolatie, temperatuur, spanning van modules, vermogensbeperking |
+| 3001 tot 3019 | Gateway: temperatuur, relais, net, generator, belasting, noodstop, bypass |
+| 4001 tot 4006 | Kast en aansluitingen: deur, onderbrekers, meter en sensor, netvermogenslimiet |
+| 5001 tot 5106 | EV-laders: net, lekstroom, aarding, laadkabel, temperatuur |
+
+##### Drie soorten reactie
+Het document noemt geen ernstniveaus, maar in de aanbevelingen zie je drie soorten:
+
+1. **Het herstelt vanzelf.** Wachten tot het net, de belasting of de temperatuur weer normaal is.
+2. **Handmatig wissen of herstarten.** Een alarm in de app wissen of het apparaat via de vaste procedure uit- en inschakelen.
+3. **Storingsrapport.** Blijft het terugkomen, dan meld je het via de mySigen-app (Support, troubleshooting) of neem je contact op met Sigenergy.
+
+##### Een vaste aanpak
+1. Noteer foutcode, ID en ID-naam uit de app.
+2. Zoek de code op en lees oorzaak en aanbeveling van het hele blok.
+3. Kijk of het een eenmalige verstoring was. Meestal koppelt het apparaat dan zelf weer aan.
+4. Controleer wat de lijst noemt: netspanning en frequentie meten, kabels en aansluitingen, ventilatie, direct zonlicht.
+5. Voor een herstart: standby of uit via de app, DC- en AC-schakelaars uit, een paar minuten wachten tot alles uit is, en dan weer in.
+6. Bij polariteit of stringproblemen wacht je tot de stringstroom onder 0,5 A is en zet je eerst de DC-schakelaar uit.
+7. Beveiligingswaarden voor het net pas aanpassen met toestemming van de lokale elektriciteitsmaatschappij.
+
+##### Voorbeelden
+| Code | Betekenis | Meestal |
+|---|---|---|
+| 1002 | Lage isolatieweerstand | Aardsluiting op de PV-string of een lang vochtige omgeving: DC-kabel nameten |
+| 1006 | Hoge PV-stringspanning | Te veel panelen in serie: stringspanning meten en aantal verlagen |
+| 1007 | PV-string omgekeerd aangesloten | Wachten tot de stroom onder 0,5 A is en polariteit herstellen |
+| 1010 tot 1014 | Netuitval, netspanning of netfrequentie | Meestal koppelt het apparaat zelf weer aan, anders het net meten |
+| 1023 | Abnormale nulleider | Nulaansluiting en fasevolgorde controleren |
+| 2110 | Clustervermogen batterij beperkt | Cluster uit- en inschakelen, ventilatie en zon controleren |
+| 4005 | Netvoedingsvermogen boven de limiet | Terugstroombeveiliging instellen op een toegestane waarde |
+
+> **Waarom pas op met exacte codes?**
+> De alarmlijst is een pdf met samengevoegde cellen, en de Nederlandse tekst bevat schrijffouten. Bij twijfel is de originele pagina leidend. In de kennisbank verwijzen we naar de pagina's zodat je die snel vindt.
+
+### Product: SigenStor-batterij (BC-controller en BAT-modules)
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/batterij/
+
+De batterijcontroller SigenStor BC en de batterijmodules SigenStor BAT vormen samen het energieopslagsysteem dat je op een Sigen Hybrid-omvormer (SP2 of TP2) of op een Energy Controller aansluit. Let op: de installatiegids voor het BC/BAT-systeem zit niet in de kennisbank, alleen de veiligheidskennisgeving, de brochure en de gidsen van de omvormers.
+
+#### Wat is het
+
+##### De bouwstenen
+
+Het batterijsysteem van Sigenergy bestaat uit twee soorten onderdelen:
+
+- **SigenStor BAT** is de batterijmodule: een behuizing met accucellen. De brochure beschrijft de types BAT 6.0 en BAT 10.0.
+- **SigenStor BC** is de batterijcontroller: het onderdeel tussen de modules en de omvormer. Aan één controller kun je 1 tot 6 modules hangen.
+
+Een **cel** is de kleinste eenheid die energie opslaat, vergelijk het met één penlite. Een **module** bevat meerdere cellen. Sigenergy gebruikt cellen van 314 Ah (ampère-uur: hoeveel lading er in de cel past) met **LFP**-chemie, de afkorting voor lithium-ijzerfosfaat (LiFePO4). In de brochure staat dat de cellen zijn gemaakt voor 10.000 **cycli**. Een cyclus is één keer volledig laden en ontladen.
+
+##### Wat doet de controller?
+
+De handleidingen in de kennisbank leggen niet uit wat de BC intern doet. Wat ze wel zeggen:
+
+- Wie een Sigen Hybrid SP2 of TP2 op de Sigen-batterij aansluit, **moet** een BC gebruiken (voetnoot 4 bij de specificaties in de brochure).
+- De BC en de modules praten met elkaar via **CAN**, een veelgebruikt communicatiesysteem in batterijen en voertuigen.
+- Op de omvormer zit een aparte COM-aansluiting voor de verbinding met de SigenStor BC.
+
+##### Waarom modulair?
+
+De brochure noemt als voordelen: nieuwe en oude modules mengen, eenvoudig uitbreiden en optimalisatie per pakket, met actieve balancering (het gelijktrekken van de laadtoestand tussen modules). Je begint klein en breidt later uit, tot 6 modules per controller.
+
+> **Mengen is niet altijd hetzelfde**
+> De brochure bedoelt het mengen van nieuwe en oude **Sigen**-modules. De veiligheidskennisgeving verbiedt het mengen met batterijen van **andere merken** en het combineren met omvormers van andere merken.
+
+#### Plek in het systeem
+
+##### DC-gekoppeld aan de omvormer
+
+De brochure beschrijft een **DC-gekoppelde architectuur**: PV, batterij en de EV-lader zitten op een gezamenlijke gelijkspanningsverbinding, de DC-bus. De batterij hangt dus aan de gelijkspanningskant, net als de zonnepanelen.
+
+De keten in de bronnen:
+
+**PV-panelen + Sigen Hybrid SP2/TP2 (of Energy Controller) - SigenStor BC - SigenStor BAT (1 tot 6 modules)**
+
+Op de omvormer zit een batterij-ingang met de markering BAT+/BAT-, plus een COM-poort met een aansluiting voor de SigenStor BC. In de kabeltabel staat een CAT6-netwerkkabel van omvormer naar accu, maximaal 20 m per kabel.
+
+##### Spanningsbereik en compatibiliteit
+
+| Omvormer | Spanningsbereik batterijmodules |
+|---|---|
+| Sigen Hybrid SP2 (eenfase, 2.0-6.0 kW) | 300 ~ 600 V |
+| Sigen Hybrid TP2 (driefase, 3.0-12.0 kW) | 600 ~ 900 V |
+
+De BAT-modules zijn volgens de brochure compatibel met de SigenStor EC-serie en de Sigen Hybrid SP2/TP2-serie. De BC wordt genoemd bij de Sigen Hybrid SP2/TP2-serie. Hoe een BAT-stapel precies op de EC wordt gekoppeld, staat niet in deze samenvatting.
+
+##### Noodstroom
+
+Voor noodstroom komt de Sigen Gateway erbij: 0 ms onderbreking aan de belastingszijde, mits Gateway, omvormer en Sigen-batterij samen worden gebruikt (brochure). Zie de pagina over de gateway.
+
+#### Specificaties in het kort
+
+De belangrijkste getallen (capaciteit, vermogen, gewicht, afmetingen) staan in de tabel bovenaan deze pagina. Hieronder de rest, allemaal uit de brochure, pagina 11.
+
+##### BAT 6.0 en 10.0: gemeenschappelijk
+
+| Eigenschap | Waarde |
+|---|---|
+| Opslagtemperatuur | -25 ~ 60 °C |
+| Bedrijfstemperatuur | -20 ~ 55 °C |
+| Relatieve vochtigheid | 5% ~ 95% |
+| Max. werkhoogte | 4000 m |
+| Koeling | Natuurlijke convectie |
+| Beschermingsklasse | IP66 |
+| Montage | Vloer of muur |
+| Modules per controller | 1 ~ 6 |
+| Normen | IEC/EN 60730-1, UN 38.3, IEC/EN 62619, IEC/EN 63056, IEC/EN 62477 |
+
+##### SigenStor BC (controller)
+
+| Eigenschap | Waarde |
+|---|---|
+| Bedrijfsspanningsbereik eenfase | 300 ~ 600 V |
+| Bedrijfsspanningsbereik driefase | 600 ~ 900 V |
+| Gewicht | 8 kg |
+| Afmetingen (B / H / D) | 765 / 109 / 260 mm (zonder decoratieve afdekking) |
+| Compatibele batterij | SigenStor BAT-serie |
+| Compatibele omvormer | Sigen Hybrid SP2/TP2-serie |
+| Communicatie | CAN |
+
+##### Wat de getallen betekenen
+
+- **Beschikbare capaciteit** is de bruikbare energie, iets onder de totale capaciteit. **Ontlaaddiepte (DoD)** is hoeveel je mag leegtrekken: Sigenergy noemt 100%.
+- De **10.000 cycli** gelden onder voorwaarden: 25 ± 2 °C, laden en ontladen met 0,5C (een halve capaciteit per uur) en tot een **SOH** van 60%. SOH (state of health) is hoeveel capaciteit de batterij nog heeft ten opzichte van nieuw. Het cijfer komt van de celfabrikant.
+- Een batterij die volledig leeg is geweest, moet **binnen 7 dagen** weer worden opgeladen om gezond te blijven (voetnoot 3).
+
+Het datablad van Sigenergy zegt dat gegevens zonder voorafgaande kennisgeving kunnen wijzigen. Gebruik voor een offerte altijd de actuele documentatie.
+
+#### Veiligheid en let op
+
+##### Vijf beveiligingslagen
+
+De brochure noemt vijf lagen bescherming rond de batterij:
+
+1. Temperatuurbewaking op celniveau
+2. Een interne brandbluskit
+3. Geïsoleerde kussens met hoge temperatuursweerstand
+4. Pads met aerogel-isolatie
+5. Een decompressieklep (laat druk ontsnappen)
+
+De status van de batterij is in real time te volgen in de mySigen-app.
+
+##### Brandrisico
+
+Volgens de kennisgeving hebben batterij-energieopslagsystemen een hoog brandrisico. Defecte pakketten kunnen brandbare en giftige gassen afgeven en aan de buitenkant erg heet zijn: niet met blote handen aanraken. Vervangen mag alleen door of onder toezicht van professionals.
+
+> **Niet werken onder spanning**
+> Voer geen handelingen uit zolang de apparatuur is ingeschakeld. Zet vooraf alle voeding uit: net, omvormer en dieselgenerator. Meet de spanning op het aansluitpunt voordat je een klem aanraakt. Sluit bij het aansluiten eerst de aarde aan en haal die bij het verwijderen als laatste los. (Hoofdstuk 5.1)
+
+##### Wat je niet doet
+
+- Een module gebruiken die gevallen is, een schok kreeg of in het water heeft gelegen.
+- In het apparaat boren, of het schoonmaken met water, alcohol of olie.
+- Mengen met batterijen of omvormers van andere merken: dan is de fabrikant niet aansprakelijk.
+- Doorgaan bij een vervormde behuizing of een vreemde geur.
+
+Installeren en onderhouden mag alleen getraind, gecertificeerd personeel (Hoofdstuk 2).
+
+##### Transport
+
+De apparatuur valt onder gevaarlijke goederen klasse 9 en is goedgekeurd volgens UN38.3. Belangrijk voor je bus:
+
+- Verpakt maximaal 15° kantelen, uitgepakt maximaal 10°.
+- Nooit samen met brandbare, explosieve of corrosieve stoffen, en niet met voedsel, medicijnen of dierenvoer. Moet het toch samen met gewone goederen, dan is de tussenruimte 0,8 m met isolatie ertussen (het vergelijkingsteken is in de tekst onleesbaar, controleer in de pdf of dit een minimum is).
+- Per spoor en door de lucht is vervoer verboden. Over de weg geldt ADR, over zee de IMDG-code.
+
+##### Opslag
+
+Opgeslagen batterijen bewaar je apart van andere spullen, met blusmiddelen in de buurt, droog, uit de zon en beschermd tegen ongedierte. De opslagtemperatuur is -25 tot 60 °C, aanbevolen 20 tot 30 °C. Zet de batterij weg op **40% ± 5% SOC** (state of charge: laadtoestand). Daarna moet je op tijd bijladen:
+
+| Werkelijke opslagtemperatuur | Oplaadperiode |
+|---|---|
+| onder -25 °C | niet toegestaan |
+| -25 tot 25 °C | 15 maanden |
+| 25 tot 35 °C | 9 maanden |
+| 35 tot 60 °C | 6 maanden |
+| boven 60 °C | niet toegestaan |
+
+Na de eerste 12 maanden bewaren is het onomkeerbare capaciteitsverlies 3% tot 10%. Oudere voorraad moet vóór gebruik door gekwalificeerd personeel worden gecontroleerd.
+
+#### Installatie en plaatsing
+
+> **Wat hier ontbreekt**
+> De installatiegids voor het BC/BAT-systeem zit niet in de kennisbank. De veiligheidskennisgeving beschrijft geen montagestappen en geen bedrading. Voor de aansluiting van de BC verwijzen de gidsen van de omvormers naar de installatiehandleiding van het betreffende model.
+
+##### Wat de kennisgeving wel zegt
+
+- **Tillen (5.2):** zorg dat je het gewicht echt kunt dragen. Een BAT weegt 62 of 78 kg.
+- **Ladders en boren (5.2):** alleen geschikte ladders (bij elektrisch werk hout of glasvezel), en een veiligheidsbril en handschoenen bij het boren.
+- **Kabels (5.3):** schakelaars aan voor- en achterzijde uit voordat je kabels aansluit of losmaakt, per categorie bundelen, weg van warmtebronnen. Installeer bij meer dan 0 °C. Lag de kabel lang in de kou, laat hem dan minstens 24 uur opwarmen.
+- **Onderhoud (5.4):** eerst uitschakelen en de wachttijd op het etiket afwachten.
+
+##### Wat de omvormer- en Home-gidsen zeggen
+
+- De gidsen van de SP2- en TP2-omvormer beschrijven de batterij-ingang, de COM-poort naar de BC en de netwerkkabel. Voor de BC zelf verwijzen ze naar de handleiding van het betreffende model.
+- De gids van SigenStor Home (hoofdstuk 4) behandelt de plaatsing van omvormer en BAT-modules: zes BAT's voor vloerinstallatie, twee voor wandinstallatie, en een hulpmiddel om te tillen vanaf drie modules op de vloer. Kan er water op de vloer staan, monteer dan op een platform of direct aan de muur. Een BAT die gevallen is mag je niet meer gebruiken.
+- Na installatie tonen lampjes op de omvormer of de BAT's laden, ontladen of defect zijn (hoofdstuk 7 bij SP2/TP2, hoofdstuk 8 bij Home).
+
+Let op: de Home-gids noemt de modellen BAT 5.0 tot 10.0, de brochure alleen BAT 6.0 en 10.0, en de BC komt in de tekst van de Home-gids niet voor. Hoe dat samenhangt, staat niet in de kennisbank.
+
+### Product: Sigen EV AC Charger (7, 11 en 22 kW)
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/ev-ac-lader/
+
+Een wandgemonteerde wisselstroom-laadpaal van Sigenergy voor buiten en binnen, met Type 2-connector of Type 2-stopcontact met afsluiting, in drie vermogens (7, 11 en 22 kW). Laadt met zonne-overschot en dynamisch laadbeheer als hij met de Sigen Power Sensor werkt.
+
+#### Wat is het
+
+De Sigen EV AC Charger is een laadpaal die aan de muur hangt en een elektrische auto laadt met wisselspanning (AC). Bij AC-laden krijgt de auto gewone wisselstroom en zet de lader in de auto die om naar gelijkstroom voor de accu. Bij DC-laden gebeurt die omzetting in het laadstation zelf, daarom zijn DC-laders groter en duurder en kunnen ze sneller laden.
+
+##### Uitvoeringen
+
+Er zijn drie vermogens: 7, 11 en 22 kW. Elk bestaat in twee uitvoeringen die je aan de modelcode herkent (de installatiegids noemt ze T2 en T2SH, plus UK-varianten):
+
+- **T2:** een vaste laadkabel met een Type 2-connector. **Type 2** is de Europese standaardstekker voor AC-laden van auto's. De brochure noemt een geïntegreerde laadkabel van 5 m. Op de muur komt een houder om de stekker in op te bergen.
+- **T2SH:** geen kabel, maar een Type 2-stopcontact met beschermklep (de brochure zegt "met afsluiting"). De bestuurder gebruikt dan zijn eigen laadkabel.
+
+##### Authenticatie: wie mag laden
+
+Je kunt de lader op drie manieren laten starten: met een **RFID-kaart** (een pasje dat je tegen het leesvlak houdt), via de app, of met auto-opladen zonder authenticatie. In dat laatste geval begint het laden zodra de auto is aangesloten.
+
+##### Slim laden
+
+De brochure noemt drie laadwijzen:
+
+- **Slim schema:** je stelt start- en stoptijden in, hoe vaak het schema herhaalt en welke laadmodus geldt. Per tijdslot kies je apart tussen laden met zonne-overschot en snel laden.
+- **Laden met PV-overschot:** de auto krijgt alleen de stroom die de zonnepanelen (PV) over hebben. De brochure spreekt van 100% groene stroom. De brochure noemt daarnaast Battery Boost Charging met een SOC-afschakelinstelling (SOC is de laadtoestand: het percentage dat de batterij nog vol is). Het gaat dus om extra stroom uit de thuisbatterij, met een ondergrens die je instelt. Ook laden via het net wordt genoemd.
+- **Snel laden:** het systeem haalt tegelijk stroom uit het net en uit de zonnepanelen, voor de hoogst mogelijke snelheid.
+
+> **Slim laden werkt niet alleen**
+> Volgens de voetnoten bij de brochure vraagt slim laden met PV-overschot een SigenStor of een externe omvormer die met de Sigen Power Sensor is gekoppeld. Dynamisch lastbeheer en overtollig opladen met een omvormer van een ander merk vragen ook de Sigen Power Sensor. Een losse lader zonder die onderdelen kan dit dus niet.
+
+#### Plek in het systeem
+
+##### Voeding en beveiliging ervoor
+
+De lader krijgt zijn stroom uit de groepenkast via een eigen kabel. Ervoor komt een **pre-AC-schakelaar** (in de handleiding ook pre-MCB genoemd). Dat is de automaat (MCB, een kleine installatieautomaat die de kabel beveiligt tegen overbelasting en kortsluiting) die de lader in- en uitschakelt. De installatiegids schrijft een MCB met **karakteristiek B** voor conform IEC/EN 60898 (waarden: zie de tabel met varianten). Is er al een geschikte AC-schakelaar geïnstalleerd, dan mag je die gebruiken. Let op: dit "type B" gaat over de uitschakelkarakteristiek van de automaat en is iets anders dan een aardlekschakelaar type B.
+
+De lader heeft zelf **DC-foutdetectie van 6 mA** en **AC-foutdetectie van 30 mA** ingebouwd. Dat betekent: hij meet zelf of er gelijkstroom of wisselstroom naar aarde weglekt en schakelt dan uit. Gewone aardlekschakelaars herkennen gelijkstroomlekkage slecht, daarom is dit bij laadpalen belangrijk. Volgens de brochure is dit onderdeel (een RDC-PD) getest volgens IEC 62955. Of je daarnaast nog een aardlekschakelaar in de groepenkast nodig hebt en welk type, staat niet in de handleiding. Zie de cursuslessen.
+
+##### Ondersteunde netvormen
+
+Hoofdstuk 5.1 van de installatiegids toont vier netvormen: eenfase (L/N/PE), driefasen vijfdraads (L1/L2/L3/N/PE), driefasen vierdraads (L1/L2/L3/PE) en twee fasen (L1/L2/PE). Als aardingssysteem noemt de installatiegids TT, TN-S, TN-C-S en IT.
+
+##### Communicatie
+
+De lader kan praten via **4G** (met een SIM-kaart die je zelf levert), **Wi-Fi** en **Ethernet** (een netwerkkabel naar een router). Voor de meting via een aparte meter gebruikt hij **RS-485 met Modbus RTU**: een tweedraads seriële verbinding waarop apparaten data uitwisselen. Voor het aansturen via een laadplatform noemt de brochure OCPP 1.6J.
+
+De Sigen Gateway heeft een Ethernetpoort (FE2) die volgens de installatiegids van de gateway bedoeld is voor het aansluiten van een Sigen EV AC Charger. 
+
+##### Load balancing en dynamisch laadbeheer
+
+**Load balancing** betekent dat de lader zijn vermogen aanpast aan wat de rest van het huis gebruikt, zodat de hoofdzekering niet uitschakelt. Bij Sigen heet dit dynamisch lastbeheer (in de brochure), bedoeld om overbelasting te voorkomen. Volgens de voetnoten werkt het alleen met de **Sigen Power Sensor**, die via RS485 op de lader wordt aangesloten. De installatiegids noemt de sensor Sigen Sensor TP-CT120-DH (SDM630 MCT 40mA). Ook "fase schakelen" wordt in de brochure als ondersteund genoemd, maar hoe dat werkt legt de brochure niet uit.
+
+##### Koppeling met het Sigen-systeem en de app
+
+Op het overzichtsplaatje van Sigenergy (brochure, pagina 4) staat de lader naast SigenStor, gateway, hybride omvormer en de mySigen-app. Na de eerste inschakeling maak je de lader aan als nieuw systeem in de **mySigen-app** (zie inbedrijfstelling). De brochure noemt de app als weergave en als manier om een laadsessie te starten. Waar je de schema's precies instelt, staat niet uitdrukkelijk in de documenten. De ingebouwde indicator op de lader komt aan bod bij alarmen en storingen.
+
+#### Specificaties in het kort
+
+De getallen komen uit de brochure (pagina 17) en de installatiegids. Waar ze elkaar aanvullen staat dat erbij.
+
+##### Elektrisch
+
+| Onderdeel | Waarde |
+|---|---|
+| Nominaal laadvermogen | 7 / 11 / 22 kW |
+| Nominale spanning | 7 kW: 220 tot 240 V, 1 fase (1W+N+PE). 11 en 22 kW: 220 tot 240 V en 380 tot 415 V, 3 fasen (3W+N+PE) |
+| Uitgangsstroom | 7 kW: 6 tot 32 A. 11 kW: 6 tot 16 A. 22 kW: 6 tot 32 A |
+| Frequentie | 50 / 60 Hz |
+| Kabeldoorsnede voeding (brochure) | 2,5 tot 6,0 mm² |
+| Stand-by zelfverbruik | minder dan 3,6 W |
+
+##### Kabels volgens de installatiegids
+
+- **AC-voeding:** koperen kabel voor buiten, geschikt tot 90 graden Celsius, buitendiameter 13 tot 20 mm. Doorsneden per model: zie de tabel met varianten.
+- **RS485- en DO-signaalkabel:** afgeschermd getwist paar (draden om elkaar gedraaid tegen storing) van 0,2 tot 1,5 mm², buitendiameter 5 tot 7 mm.
+- **RJ45-netwerkkabel:** afgeschermd getwist paar, buitendiameter 5 tot 7 mm.
+- **PEN-controlelijn (optioneel, alleen Verenigd Koninkrijk):** 2-aderige koperen kabel van 0,75 tot 1,5 mm².
+
+##### Beveiligingen
+
+De brochure noemt als ondersteund: bescherming tegen over- en onderspanning, overbelasting, oververhitting, aardlekfouten en pieken, en **PEN-bescherming**. Dat laatste is een beveiliging voor het geval de gecombineerde nul- en aardleiding (PEN-geleider) van het net onderbroken raakt. Dan kan er gevaarlijke spanning op geleidende delen komen te staan. In het Verenigd Koninkrijk kan hiervoor optioneel een Sigen EVAC Slimme PEN Breaker worden aangesloten. Verder noemt de brochure een **willekeurige laadvertraging** als ondersteund. Wat dat precies doet, legt de brochure niet uit.
+
+Ingebouwd zijn verder DC-foutdetectie (6 mA) en AC-foutdetectie (30 mA), en de brandvertragingsklasse UL94-5VB van de behuizing.
+
+##### Omgeving en behuizing
+
+| Onderdeel | Waarde |
+|---|---|
+| Beschermingsgraad | IP65 en IK10 (IP: bescherming tegen stof en water; IK: bescherming tegen mechanische slag) |
+| Afmetingen (B / H / D) | 234 / 384 / 126 mm |
+| Gewicht | 4,5 / 6,4 kg (de brochure zegt niet welk gewicht bij welke uitvoering hoort) |
+| Temperatuur in bedrijf | -30 tot 55 graden Celsius |
+| Relatieve luchtvochtigheid | 5% tot 95% |
+| Koeling | natuurlijke convectie (geen ventilator) |
+| Kabelinvoer | onder-, boven- en achterkant |
+
+Communicatie: 4G, Wi-Fi en Ethernet, protocol RS-485 Modbus RTU, OCPP 1.6J. Weergave via een LED-indicator en de app. Genoemde norm onder meer: EN IEC 61851-1.
+
+#### Installatie in hoofdlijnen
+
+De installatiegids is grotendeels beeld met weinig tekst. Onderstaande stappen volgen de hoofdstukken 2 tot en met 5 (pagina 4 tot en met 19 van de installatiegids).
+
+##### Voor je begint
+
+Controleer de paklijst, je beschermingsmiddelen, je gereedschap en de kabels die de klant levert. De lader mag alleen worden bediend door getraind of ervaren elektrisch personeel.
+
+##### De stappen
+
+1. **Locatie kiezen en monteren.** Kies een beschutte plek: niet rokerig, ontvlambaar, explosief of corrosief, geen direct zonlicht, regen, stilstaand water of sneeuw, en minstens 500 m van bronnen van zout- of zuurcorrosie (zeekust, chemische fabrieken). Monteer horizontaal op een niet-brandbare, liefst stenen ondergrond, buiten bereik van kinderen. In een garage niet op een plek waar de auto langs komt. Laat de indicator zichtbaar. Zorg dat er geen leidingen in de muur zitten voordat je boort.
+2. **Uitpakken en demonteren.** Haal de lader uit de verpakking en het frontpaneel eraf, zodat je bij het aansluitblok komt. Bij doorvoer achter boor je daarvoor een opening in de muur.
+3. **Vastzetten.** Maak het apparaat vast aan de wand volgens de afbeelding op pagina 10.
+4. **Voorbeveiliging en kabel.** Zorg dat pre-AC-schakelaar en voedingskabel bij het model passen (zie de tabel met varianten) en werk spanningsloos.
+5. **Kabels aansluiten.** Kies de route: onder (aanbevolen), boven of achter. Bij boven of achter moet je de bovenkant goed beschermen tegen langdurig blijvend water. De installatiegids geeft striplengtes per klem (L3, L2, L1, N en PE) en per routering. Sluit de AC-voeding aan volgens het netschema. Een verkeerd aangesloten PE-draad is een veiligheidsrisico en de lader werkt dan niet.
+6. **Communicatie aansluiten.** RS485 naar de Sigen Power Sensor (klem A en B), optioneel de DO-uitgang (met de aansluitingen COM en NC, 1 A en 30 V gelijkspanning; waarvoor die dient, staat niet in de handleiding), bij een Sigen EVAC met MCB-aansluitingen optioneel de PEN-controlelijn (alleen Verenigd Koninkrijk), de netwerkkabel naar de router en desgewenst de SIM-kaart voor 4G. De SIM-kaart is standaardformaat en wordt door de gebruiker geleverd. Aanbevolen wordt capaciteit van 64 KB en 128 MB dataverkeer per maand.
+7. **Afsluiten.** Loop de controlelijst voor het paneel door (o.a. alle kabels correct, schroeven vast, ongebruikte poorten dicht met waterdichte afdekkingen of pluggen, niets achtergebleven in de lader). Monteer daarna het paneel. Bij de T2-uitvoering plaats je tot slot de kabelhouder aan de muur en hang je de laadconnector erin.
+
+> **Kabelroute**
+> De installatiegids raadt aan om kabels via de onderste geleidingsgaten in te voeren (gaten 3 en 5). Bij boven of achter: de lader op een beschutte plek hangen, want water kan anders binnendringen na langdurige ophoping aan de bovenkant. Bij achterdoorvoer wordt één communicatiekabel per doorvoer aangeraden.
+
+#### Inbedrijfstelling
+
+Het hoofdstuk "6 Aanmaken en inschakelen nieuw systeem" is kort:
+
+1. Zet de pre-AC-schakelaar aan.
+2. Kijk naar de indicator op het voorpaneel. Die laat zien in welke toestand de lader zit (zie alarmen en storingen).
+3. Zodra de indicator groen wordt en constant brandt of knippert, maak je in de **mySigen-app** een nieuw systeem aan.
+
+De stappen voor de app staan op pagina 21. Voor een account ga je naar de website van Sigenergy naar "Partner" en dan "Nu registreren". Daarna download je de mySigen-app en maak je een nieuw systeem aan voor het apparaat. De exacte stappen verschillen per situatie. Voor details verwijst de installatiegids naar de aparte "mySigen App Creating New Systems Guide", die niet bij onze bestanden zit.
+
+Een lijst met instellingen die je bij oplevering moet controleren of een testprocedure staat niet in de handleiding. Volg je eigen opleveringsprocedure.
+
+#### Veiligheid en let op
+
+Het document "Belangrijke informatie" (15 pagina's) is een algemeen veiligheidsdocument voor installateurs en technische dienst. Wat het als kritisch noemt, in eigen woorden.
+
+> **Werk nooit onder spanning**
+> De handleiding verbiedt uitdrukkelijk om de lader onder spanning te installeren, te bedraden of te vervangen. Voordat je kabels aansluit of losmaakt, moeten de schakelaars vóór en achter de lader en de schakelaars van het apparaat zelf uit staan. Meet de spanning op het contactpunt voordat je een aansluitklem aanraakt.
+
+##### Aarding en aansluitvolgorde
+
+Sluit de aardingskabel **als eerste** aan. Haal hem bij het vervangen **als laatste** los. Controleer of de kabel naar de lader goed is aangesloten voordat je de pre-MCB inschakelt. Raak na het inschakelen de aansluitpunten niet aan.
+
+##### Persoonlijke veiligheid
+
+Draag isolatiehandschoenen, isolerende schoenen en een veiligheidshelm, gebruik isolerend gereedschap en draag geen geleidende sieraden. Bij het boren draag je een veiligheidsbril en handschoenen. Boor niet in de lader zelf en maak de gaten direct schoon.
+
+##### Gebruik en omgeving
+
+- Gebruik de lader niet bij slecht weer (onweer, regen, sneeuw, orkaan) en reinig hem niet met water, alcohol of olie.
+- Controleer op schade of afwijkingen (vervormd, vreemde geur) en gebruik hem dan niet.
+- Gebruik de lader alleen om voertuigen te laden en niet met een eigen generator als stroombron.
+
+##### Kabels
+
+Gebruik een kabel van voldoende lengte, geen verlengkabel. Kruis of verstrengel kabels niet, gebruik geen kabels met beschadigde isolatie en let op scherpe randen bij doorvoeren. Houd ze uit de buurt van warmtebronnen. Bij temperaturen rond 0 graden wordt de mantel bros: installeer voorzichtig, en leg kabels die langer onder 0 graden lagen 24 uur van tevoren in een warmere ruimte.
+
+##### Kortsluitwaarde van de laadaansluiting
+
+De handleiding noemt maximale I²t-waarden (de doorlaatenergie bij kortsluiting) voor de aansluiting: 80.000 A²s voor de laadconnector (Case C, vaste kabel) en 75.000 A²s voor het stopcontact (Case B). De tekst spreekt van een "Model 3-lader", vermoedelijk laadmodus 3 (mode 3). Wat je hiermee moet doen bij de keuze van de voorbeveiliging, legt de handleiding niet uit.
+
+##### Onderhoud en vervanging
+
+Sluit de stroomtoevoer af voor onderhoud of vervanging en zet hem pas weer aan als alles klaar is.
+
+##### Personeel en aansprakelijkheid
+
+Alleen opgeleid en gekwalificeerd personeel mag de lader installeren en onderhouden. Sigenergy is niet aansprakelijk voor schade door onder meer een installatieomgeving die niet aan de normen voldoet, verkeerde kabels of gereedschap, het niet volgen van de instructies of eigen software-aanpassingen.
+
+#### Alarmen en storingen
+
+De installatiegids kent **geen foutcodes** met een nummer. Alle informatie over de toestand en storingen zit in de indicator op het voorpaneel, in de tabel bij hoofdstuk 6 op pagina 20 van de installatiegids. Een aparte lijst met alarmeringen zoals bij de gateway staat niet bij de documenten voor deze lader.
+
+De indicator bestaat uit lampjes die genummerd zijn (1 tot en met 5). De tabel geeft per situatie aan welke lampjes branden, in welke kleur en of ze constant branden of knipperen.
+
+> **Kleur en aantal lampjes**
+> De kleurkolom van de tabel is in de tekstversie van de pdf niet leesbaar. In dit overzicht staan daarom alleen de lampjes en het patroon. Dezelfde combinatie van lampjes en patroon komt voor bij verschillende betekenissen, dus de kleur is waarschijnlijk nodig om ze te onderscheiden. Gebruik daarom altijd de originele tabel op pagina 20.
+
+##### Normale toestanden
+
+| Lampjes | Patroon | Betekenis |
+|---|---|---|
+| Alle, veelkleurig | Constant aan | Configuratie starten en initialiseren |
+| 1 | Constant aan | Stand-by, geen internet, connector niet in de auto |
+| 1 | Toenemend knipperen | Stand-by, wel internet, connector niet in de auto |
+| Alle | Constant aan | RFID-kaart niet gelezen, connector zit in de auto. Of: opladen voltooid |
+| Alle | Toenemend knipperen | Oplaadtijd geregistreerd en connector zit al in de auto |
+| Alle | Knipperen | RFID-kaart gelezen, klaar om te laden |
+| Alle | Vloeiend knipperen | Bezig met laden |
+| Geen | Uit | Niet ingeschakeld, of te lage spanning |
+
+##### Storingen
+
+| Lampjes | Patroon | Betekenis |
+|---|---|---|
+| 1 | Knipperen | Elektrische lekkage in de apparatuur |
+| 1 | Constant aan | Relais in de apparatuur is vastgeplakt (kwam vast te zitten) |
+| 1 en 2 | Knipperen | Over- of onderspanningsbeveiliging |
+| 1 tot en met 3 | Knipperen | Overstroombeveiliging |
+| 1 tot en met 4 | Knipperen | Overtemperatuurbeveiliging |
+| 1 tot en met 5 | Knipperen | Aardingsstoring |
+| Alle | Knipperen | Communicatiestoring tussen de lader en de auto |
+| 1 en 2 | Constant aan | Overige storingen |
+
+Wat je bij een storing moet doen (resetten, meten, contact opnemen met Sigenergy), staat niet in de handleiding.
+
+> **Wat betekent "relais vastgeplakt"?**
+> De lader schakelt de stroom naar de auto met een relais (een elektrisch bediende schakelaar). Zitten de contacten vast, dan kan de lader de stroom niet meer echt afschakelen.
+
+### Product: Sigen EV DC Charging Module (SigenStor EVDC, 12,5 en 25 kW)
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/ev-dc-module/
+
+Een bidirectionele DC-lader voor thuis die op de DC-bus van het Sigen-systeem zit. Hij laadt een auto met CCS2-stekker en kan, als de auto het ondersteunt, ook energie uit de auto terug naar het huis leveren (V2X).
+
+#### Wat is het
+
+De Sigen EV DC Charging Module (in de handleidingen kortweg **SigenStor EVDC**) is een wandlader voor een elektrische auto. Het is geen gewone AC-laadpaal maar een **DC-lader**. Bij AC-laden geeft de paal wisselspanning en zet de lader in de auto die om naar gelijkspanning voor de accu. Bij DC-laden gebeurt die omzetting in de lader zelf en gaat gelijkspanning rechtstreeks de autoaccu in. Daarom werkt de EVDC met een hoge spanning (150 tot 1000 V).
+
+##### Bidirectioneel
+De handleiding noemt het een **bidirectioneel DC/DC oplaad- en ontlaadsysteem**: de energie kan twee kanten op. Je kunt de auto laden, maar ook de autoaccu ontladen. Laden en ontladen kan met hetzelfde vermogen: 12,5 kW (EVDC 12) of 25 kW (EVDC 25).
+
+##### V2X, V2H en V2G
+De brochure gebruikt **V2X** (vehicle-to-everything: de auto als energiebron). Twee vormen worden genoemd:
+
+- **V2H** (vehicle-to-home): de auto levert stroom aan je woning, bijvoorbeeld als back-up.
+- **V2G** (vehicle-to-grid): de auto levert terug aan het net. De brochure koppelt dit aan piekafvlakking en VPP-dispatch (VPP = virtuele centrale: veel kleine opslagsystemen die samen als een centrale worden aangestuurd).
+
+> **V2X hangt af van de auto**
+> De bron zegt het zelf: de V2X-functionaliteit is beperkt door de mogelijkheden van de EV (elektrische auto). Zodra de relevante normen zijn gepubliceerd, kan de functie volgens de brochure via een OTA-update (softwareupdate via internet) worden uitgebreid. Welke auto's officieel ondersteund worden, staat niet in de handleidingen; de brochure verwijst naar de website van Sigenergy.
+
+##### De stekker: CCS2
+De modellen met typecode S2 hebben een **CCS2**-aansluiting (CCS Combo2), de Europese standaardstekker voor DC-laden. De installatiegids noemt ook typen 7.5GBT en 10GBT. Wat GBT betekent, legt de handleiding niet uit. Ze hebben een ander uiterlijk dan de S2-modellen.
+
+De module heeft een laadkabel met stekker, een houder voor die stekker, een leesgebied voor de RFID-kaart en een kabelhouder. De kabellengte zit in het type: 5, 7,5 of 10 m.
+
+**Waar lees je dit na:** Gebruikershandleiding 2.1 en 2.2 (p9-10), Installatiegids 1.1 (p2), Brochure p7 en p10.
+
+#### Plek in het systeem
+
+De EVDC werkt niet los. Hij wordt gebruikt met een SigenStor EC, SigenStor AC of Sigen Hybrid (de omvormers) en met het accupakket SigenStor BAT.
+
+##### De DC-bus
+De brochure noemt de architectuur "met DC gekoppeld". De **DC-bus** is een gemeenschappelijke gelijkspanningsverbinding waar zonnepanelen (PV), thuisaccu (ESS, energy storage system) en EV-lader direct op zitten. Stroom van de panelen kan zo naar accu of auto zonder telkens om te zetten naar wisselspanning en terug. Volgens de brochure verhoogt dat het rendement. Dat is een claim van de fabrikant.
+
+##### Scenario's uit de installatiegids
+De installatiegids (p3) noemt vier situaties:
+
+1. SigenStor EC, AC of Sigen Hybrid + EVDC + accu: EVDC toevoegen aan een bestaand systeem.
+2. Dezelfde combinatie, alles voor het eerst geplaatst.
+3. Sigen Hybrid + EVDC: EVDC toevoegen aan een bestaande installatie.
+4. Sigen Hybrid + EVDC, alles voor het eerst geplaatst.
+
+De modules worden op elkaar gestapeld: accupakket, dan EVDC, dan omvormer (p17). De koppeling gaat volgens de tekst met steekverbindingen (mannelijke en vrouwelijke connector). Een losse DC-kabel tussen kasten wordt niet beschreven.
+
+> **Energy Controller of ook Hybrid?**
+> De brochure (p10, voetnoot 1) zegt dat de module samen met de Sigen Energy Controller moet worden gebruikt. De installatiegids noemt ook combinaties met de Sigen Hybrid. Vraag bij twijfel Sigenergy.
+
+##### Wat er nog omheen hangt
+Het netwerkschema in de gebruikershandleiding (2.5, p13-14) toont naast PV, omvormer, EVDC, accu en auto ook:
+
+- een **gateway**, met een dieselgenerator als back-upbron voor langdurig off-grid gebruik;
+- verdeelpanelen voor back-up en niet-back-up;
+- een **vermogenssensor** op het aansluitpunt van het net. Bij een "nul-netaansluiting" hoort die erbij (wat dat precies is, legt de bron niet uit);
+- mySigen-app, router, antenne en CommMod (communicatiemodule). Aanbevolen: bekabeld netwerk (FE) en wifi. Na twee jaar moet de gebruiker zelf een 4G-abonnement voor de CommMod nemen.
+
+**Waar lees je dit na:** Gebruikershandleiding 2.2 en 2.5 (p10, 13-14), Installatiegids 1.2 (p3), Brochure p4 en p7.
+
+#### Specificaties in het kort
+
+Deze waarden komen uit de brochure (p10). De gebruikershandleiding verwijst voor alle technische parameters naar het gegevensblad (hoofdstuk 7, p34).
+
+| | EVDC 12 | EVDC 25 |
+|---|---|---|
+| Max. laadvermogen | 12,5 kW | 25 kW |
+| Max. afvoervermogen (ontladen) | 12,5 kW | 25 kW |
+| Bedrijfsspanningsbereik | 150 tot 1000 V | 150 tot 1000 V |
+| Max. bedrijfsstroom | 40 A | 80 A |
+| Aansluiting | CCS2 | CCS2 |
+
+Voor beide typen:
+
+- **Afmetingen** (B / H / D): 700 / 270 / 260 mm.
+- **Gewicht**: 37, 39 of 41 kg bij 5, 7,5 of 10 m kabel (zonder buitenkant en wandbeugels).
+- **Beschermingsgraad**: IP66 (stofdicht en bestand tegen krachtige waterstralen). Volgens de brochure onderhoudsvrij.
+- **Koeling**: intelligente luchtkoeling.
+- **Temperatuur**: in bedrijf -30 tot 60 graden Celsius, opslag -40 tot 70 graden.
+- **Vochtigheid**: 5% tot 95%. **Maximale hoogte**: 4000 m.
+- **Beveiligingen** (alle "ondersteund"): kortsluiting, over- en onderspanning, overbelasting, oververhitting, omgekeerde polariteit en "inspectie van lasnaden". Dat laatste is een vreemde vertaling; wat er gecontroleerd wordt staat niet in de handleiding. Isolatiebewaking (controle of de gelijkspanningskant geen stroom naar aarde lekt) komt in deze documenten niet voor.
+- **Authenticatie**: RFID-kaart, app of geen.
+- **Beheer**: led-indicator, app en RFID; OTA en diagnose op afstand; OCPP 1.6J ED 2 (standaardprotocol voor communicatie met een laadbeheersysteem).
+- **Normen**: EN IEC 61851-1, EN 61851-23, EN IEC 61851-21-2 en ETSI EN 303 645.
+
+> **Kabellengte: de bronnen spreken elkaar tegen**
+> Het typenummer en het gewicht noemen 5, 7,5 en 10 m. De specificatietabel van de brochure noemt bij de kabellengte alleen "7.5 / 10". Ga bij twijfel uit van het typenummer op de module en het gegevensblad.
+
+De beknopte handleiding (p1) toont afstanden rond de module (0,2 m, 0,7 m, 0,85 m, 1 m) en een waarde R per kabellengte: 4,85 m bij 5 m kabel, 7,35 m bij 7,5 m en 9,85 m bij 10 m. Waar R vanaf gemeten wordt, laat alleen de tekening zien.
+
+**Waar lees je dit na:** Brochure p10, Gebruikershandleiding 2.1 (p9) en hoofdstuk 7 (p34), Beknopte handleiding p1.
+
+#### Installatie in hoofdlijnen
+
+Installeren mag alleen door een installateur die door Sigenergy gecertificeerd is (Gebruikershandleiding hoofdstuk 4, p18). De installatiegids (versie 05, 04/01/2026) beschrijft de volgorde, maar veel stappen staan alleen als tekening in het document.
+
+##### Voor je begint
+1. **Controleer de levering** aan de hand van de paklijst (installatiegids hoofdstuk 2, p4).
+2. **Beschermingsmiddelen**: helm, bril, stofmasker, beschermende en isolerende handschoenen, isolerende schoenen.
+3. **Gereedschap**: onder meer boormachine met stofzuiger, striptang, krimpgereedschap, geïsoleerde schroevendraaierset, verstelbare steeksleutel met koppel (opening 53 mm), geïsoleerde momentsleutelset, waterpas en meetlint.
+4. **Kabels**: heeft de eigenaar bij een bestaand systeem genoeg kabellengte? Zo niet, dan levert de installateur een kabel met de juiste specificaties.
+5. **Kies de plek** (hoofdstuk 3, p5-6), zie Veiligheid en let op.
+
+##### Montage
+6. **Alles spanningsloos**: ook de netzijde, omvormers en generatoren (p7).
+7. **Boor de montagegaten** voor de omvormer. Expansiebouten M8 x 120 RVS met sluitringen worden aanbevolen en zijn niet meegeleverd. Laat de decoratieve afdekking tijdens het boren zitten (p7-8).
+8. **Bestaande installatie:** kabel uit de omvormer halen en de omvormer van de wand nemen (p11, p24).
+9. **Plaats de EVDC** volgens de tekeningen (p12-14, p25-26) en de omvormer weer erboven.
+10. **Nieuwe installatie:** eerst het accupakket, dan de EVDC, dan de omvormer (p17). De gids geeft formules voor de hoogte van de montagegaten (L1, L2) bij N accumodules. Met een enkele SigenStor BAT hoeft de omvormer niet aan de muur (p18).
+11. **Kabel van de omvormer terugplaatsen.** Voor de bedrading zelf verwijst de gids naar de Installatiegids van het betreffende SigenStor Home-model (p16, p27, p31).
+12. **Connectorhouder en laadconnector plaatsen** (hoofdstuk 5, p32-34).
+
+##### Aarding, DC-aansluiting en communicatie
+De installatiegids beschrijft geen aardingspunt, aanhaalmomenten of aparte communicatiekabel voor de EVDC. Wat er wel staat:
+
+- Aarding als algemene regel (Belangrijke informatie p11): aardingskabel eerst aansluiten, bij vervanging als laatste losmaken.
+- De koppeling van accu, EVDC en omvormer gaat via steekverbindingen. Staan pinnen in de mannelijke connector scheef en toont de lichtstrip een afwijkende status, dan de pinnen rechtzetten en opnieuw verbinden (p16, p23).
+
+Welke groep, kabeldoorsnede en aardlekschakelaar de netaansluiting vraagt, staat niet in deze documenten.
+
+**Waar lees je dit na:** Installatiegids hoofdstuk 2 tot 5 (p4-34), Belangrijke informatie 5.2 (p13).
+
+#### Inbedrijfstelling
+
+De installatiegids heeft twee blokken: inschakelen (hoofdstuk 6, p35) en een nieuw systeem maken in de app (hoofdstuk 7, p36-37).
+
+##### Inschakelen
+1. Controleer of alle kabels goed zijn aangesloten. Belangrijke informatie (p11) eist dat vóór je de stroomopwaartse MCB (automaat) inschakelt.
+2. Zet de stroomopwaartse schakelaar aan.
+3. Zet de **DC SWITCH** van de omvormer op ON (niet nodig bij de SigenStor AC).
+4. Lees de status van de **DC-laderindicator** op het voorpaneel van de SigenStor EC, AC of Hybrid.
+
+| Indicator | Betekenis |
+|---|---|
+| Uit | Uitgeschakeld |
+| Constant aan | Ingeschakeld, connector niet op de auto |
+| Constant aan | Connector zit in de auto, of laden voltooid |
+| Snel knipperend | Laden start, systeem klaar |
+| Knipperend | Aan het laden |
+| Constant aan | Alarm |
+| Constant aan | Storing in de apparatuur |
+
+De kleuren die deze toestanden onderscheiden, staan niet in de tekstlaag van de PDF. Kijk in de PDF zelf.
+
+Na het starten van het laden hoor je na ruim 30 seconden een piep waarna het laden begint. Vier pieptonen betekenen dat het laden voortijdig is gestopt (door gebruiker of auto, of door een fout tijdens de wachttijd).
+
+##### Nieuw systeem in de app
+1. De installateur maakt een account via de website van Sigenergy ("Partner", "Nu aanmelden").
+2. Download de **mySigen**-app en maak een nieuw systeem aan. Voor de stappen verwijst de gids naar de mySigen App Creating New Systems Guide.
+3. Voeg je de EVDC toe aan een bestaande installatie, dan herkent het systeem de apparaten automatisch.
+
+##### Upgraden van 12 naar 25 kW
+Een EVDC 12 kan met een licentie naar 25 kW. Koop en activeer die in de mySigen-app (installatiegids p40).
+
+**Waar lees je dit na:** Installatiegids hoofdstuk 6 en 7 (p35-37) en Veelgestelde vragen (p38-40).
+
+#### Gebruik in het dagelijks leven
+
+Hoofdstuk 5 van de gebruikershandleiding is voor de eigenaar geschreven: app, RFID-kaart, starten en stoppen.
+
+##### Aanmelden in de app
+Download de mySigen-app en meld je aan met een e-mailaccount. Activeer het account via de e-mail van "sigencloud" en stel het eerste wachtwoord in (p20). De tekst spreekt van het "installatieprogramma", dus het lijkt om het installateursaccount te gaan. Andere app-instellingen staan in de aparte mySigen App User Manual (p32).
+
+##### Laden starten
+Er zijn drie manieren: met de **app**, met een **Sigen RFID-kaart** of **zonder authenticatie**. De eerste twee worden aanbevolen.
+
+1. Steek de connector in de auto.
+2. Start in de app of houd de gekoppelde RFID-kaart voor het leesgebied. Een kaart moet eerst aan de app gebonden zijn; bij een fout kun je hem verwijderen onder "Kaartmanagement" (p21).
+3. De module doet een zelftest, legt contact met de auto en begint na ongeveer 30 tot 40 seconden. Wacht rustig: niet opnieuw op de app drukken, de kaart niet herhaaldelijk scannen en de connector niet opnieuw insteken.
+4. Lukt het niet? Steek de connector opnieuw in, controleer of hij goed vastzit en start opnieuw.
+
+Staat "Authenticatie" uit, dan kan iedere auto de module gebruiken (p24).
+
+##### Laden stoppen
+- Vanzelf als de auto vol is.
+- Met de RFID-kaart: opnieuw scannen.
+- Met de app: bij een enkel systeem via THUIS, Lader, STOPPEN; bij meerdere parallelle SigenStor-systemen via Apparaat, SigenStor, Lader, STOPPEN (p25, p31).
+
+##### Slim laden
+De brochure (p10) noemt:
+
+- **Gepland laden**: je stelt starttijden in.
+- **Laden met PV-overschot**: zonnestroom die het huis niet nodig heeft, zodat het laden groen is.
+- **Battery Boost Charging**: de thuisaccu helpt mee, met een instelbare afkapwaarde voor de laadstatus (SOC, state of charge).
+- **Snel laden**: stroom van net en PV tegelijk.
+- **Slim beheer van belasting** (load management).
+
+##### V2H in het dagelijks gebruik
+Hoe je stroom uit de auto naar het huis instelt of start, staat niet in de gebruikershandleiding (versie 01, juni 2024) en niet in de installatiegids. De brochure noemt V2H alleen als functie, afhankelijk van de auto.
+
+##### Onderhoud
+Hoofdstuk 6 (p33) vraagt om periodiek schoonmaken met de module uitgeschakeld, zonder gereedschap dat de isolatie beschadigt (zoals draadborstels). De tabel noemt een cyclus van eenmaal per drie of per zes maanden zonder uit te leggen wanneer welke geldt. Verder: let op schade, vervorming en vreemde geluiden en controleer de parameters.
+
+**Waar lees je dit na:** Gebruikershandleiding hoofdstuk 5 (p19-32) en 6 (p33), Brochure p10.
+
+#### Veiligheid en let op
+
+Alle documenten zeggen: alleen getrainde en gekwalificeerde personen mogen aan de apparatuur werken (Installatiegids p2, Belangrijke informatie p8). Schade door het niet volgen van de instructies valt buiten de garantie.
+
+> **Hoogspanning binnenin**
+> Volgens het etiket staat de module binnenin onder hoogspanning zodra hij is ingeschakeld. Open de behuizing niet tijdens bedrijf. Na het uitschakelen ontladen interne onderdelen vertraagd: wacht 5 minuten (Gebruikershandleiding 2.4, p12). Het bedrijfsspanningsbereik loopt tot 1000 V.
+
+##### Regels voor de installateur
+Uit Belangrijke informatie 5.1 tot 5.3 (p11-14):
+
+> **Niet werken onder spanning**
+> Werken aan de apparatuur terwijl die onder spanning staat (installatie, bedrading, vervanging) is verboden. Meet eerst de spanning op het contactpunt voordat je een aansluiting aanraakt. Schakel de stroom uit vóór onderhoud of vervanging.
+
+- Draag isolatiehandschoenen, isolatieschoenen en helm, geen geleidende sieraden, en gebruik geïsoleerd gereedschap.
+- **Aarding:** aardingskabel eerst aansluiten, bij vervanging als laatste losmaken.
+- Kabel goed aansluiten voordat je de stroomopwaartse MCB inschakelt.
+- Geen eigen generator als stroombron en geen kabels of adapters die er niet voor bedoeld zijn.
+- Niet werken bij onweer, regen, sneeuw of storm. Niet schoonspuiten of met alcohol of olie reinigen.
+- Bij het boren: niet in het apparaat zelf boren, bril en handschoenen dragen en boorstof snel opruimen.
+- Volg bij het plaatsen de bedieningsstappen exact: anders kan er na het inschakelen hoogspanning op de apparatuur staan (installatiegids p25, p29).
+
+##### Plaatsing
+Uit hoofdstuk 3 van installatiegids en gebruikershandleiding:
+
+- Beschut, niet in direct zonlicht, regen, sneeuw of stof; niet in rokerige, ontvlambare of explosieve ruimtes.
+- Minstens 500 m van corrosiebronnen zoals kustgebieden en chemische fabrieken.
+- Niet op een brandbare ondergrond; beton of massief metselwerk, vlak en zonder leidingen of elektra in de wand.
+- Niet binnen kinderbereik en niet in een afgesloten, slecht geventileerde ruimte zonder brandbeveiliging. Binnen mag de temperatuur door de module niet meer dan 3 graden stijgen.
+- In een garage niet op de rijlijn van de auto, wel dicht bij de parkeerplek.
+- Niet in campers, schepen of treinen.
+
+##### Regels voor de gebruiker
+- Geen vloeistof in connector of stopcontact, connector niet laten vallen, kabel niet laten platrijden.
+- Het koellichaam is heet.
+- Alleen voor het laden van voertuigen, niet op openbare infrastructuur, medische noodapparatuur of liften.
+- Radiogolven kunnen pacemakers en gehoorapparaten beïnvloeden: vraag de fabrikant van het medische apparaat.
+
+> **Wat past hier uit de cursus?**
+> Niet werken onder spanning en spanningloosheid aantonen horen bij de vijf stappen van veiligstellen (m01l03). Bij een systeem met PV en accu blijft de DC-zijde leven (m10l02). Meet daarom altijd zelf en ga niet alleen op de wachttijd van 5 minuten af.
+
+**Waar lees je dit na:** Belangrijke informatie p5-14, Gebruikershandleiding hoofdstuk 1 en 3 (p6-8, p15-17), Installatiegids p2, p4-6, p25, p29.
+
+#### Alarmen en storingen
+
+Er is in de bronnen geen lijst met alarmcodes of een stappenplan voor storingzoeken. Wat er wel staat:
+
+- **De led-indicator** (Gebruikershandleiding 5.1, p19; Installatiegids hoofdstuk 6, p35) onderscheidt "alarmeren" en "storing in apparatuur". De handleiding zegt niet hoe je die twee oplost.
+- **Vier pieptonen** na het starten van het laden betekenen dat het laden voortijdig is gestopt (installatiegids p35).
+- **Afwijkende lichtstrip na inschakelen:** controleer of de pinnen in de mannelijke connector scheef staan. Zet ze recht en steek de connectoren opnieuw in elkaar (installatiegids p16 en p23).
+- **Laden lukt niet:** connector opnieuw insteken, controleren of hij goed in de auto zit, opnieuw starten (Gebruikershandleiding p23). Blijft het mislukken, neem contact op met de verkoper (p8).
+- **Iets lijkt niet normaal:** neem contact op met je installateur of vertegenwoordiger. De gebruiker mag het apparaat niet zelf demonteren (Beknopte handleiding p2).
+- **Na een stoot of ongeluk:** meteen stoppen met gebruik. Professioneel personeel moet het apparaat eerst beoordelen (p7).
+- **Diagnose op afstand:** de brochure noemt die (p10). Hoe dat werkt staat in de mySigen-documentatie, niet hier.
+
+Een foutcodetabel, meetwaarden voor storingzoeken en herstelprocedures staan **niet in de handleiding**. Voor een installateur betekent dat: terugvallen op de Sigenergy-website of de partnerondersteuning.
+
+**Waar lees je dit na:** Gebruikershandleiding p8, p19, p23, Installatiegids p16, p35, Beknopte handleiding p2.
+
+### Product: Sigen Gateway (Home en HomePro)
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/gateway/
+
+De Sigen Gateway is het schakelpunt tussen het net, de omvormer met batterij, de huisgroepen en eventueel een generator. Hij verzorgt de back-up bij netuitval en schakelt zonder merkbare onderbreking om. Er zijn zes varianten: Home SP 12K en Home TP 30K, en HomePro SP, SP-F, TP en TP-L.
+
+#### Wat is het
+
+De Sigen Gateway is een wandkast met automaten, een bypass-schakelaar en contactoren die tussen **het openbare net**, **de omvormer met batterij** en **de groepen in je huis** zit. Je kunt hem zien als de verkeersregelaar van een Sigenergy-thuisbatterijsysteem. Waar een gewone installatie het net rechtstreeks op de groepenkast zet, loopt hier alles eerst door de gateway.
+
+##### Wat doet hij
+
+- **Verbinden.** Het net komt binnen op de netpoort. Van daaruit gaat het vermogen naar de omvormer (die ook zonnepanelen en batterij bedient) en naar de huisgroepen.
+- **Back-up bij netuitval.** Valt het net weg, dan koppelt de gateway het huis los van het net en laat de omvormer met batterij het huis voeden. De handleiding noemt dat de *off-grid stand*. Vakwoord: *islanding* of eilandbedrijf, een deel van de installatie draait dan los van het net.
+- **Omschakelen zonder onderbreking.** De brochure noemt 0 ms onderbreking aan de belastingszijde. Dat geldt alleen als de gateway samen met een Sigen Energy Controller en een Sigen Battery wordt gebruikt.
+- **Generator en slimme belastingen.** De HomePro-varianten kunnen een dieselgenerator starten via een droog contact (een potentiaalvrij schakelcontact, dat zelf geen spanning levert) en hebben een poort voor slimme belastingen. Zie hieronder.
+
+##### Back-up: alles of met prioriteit
+
+De brochure noemt twee manieren: **back-up voor het hele huis** en **slimme back-up met prioriteit**. In de installatiegidsen zie je hoe dat in de kast terugkomt: er zijn aparte uitgangen. Wat achter de *back-uppoort* hangt (in de gids: huishoudelijke belastingen zoals verlichting en een router) blijft bij netuitval gevoed. Op de *slimme poort* hoort de zware belasting: warmtepomp, zwembadverwarming, wasdroger, dompelaar of een omvormer van een ander merk. Die kan worden uitgeschakeld als de opslag bijna leeg raakt. Een *klem voor niet-back-upbelasting* (bij de Home-varianten en HomePro SP) is voor groepen die bij netuitval niet gevoed worden. Hoe je de prioriteiten instelt staat niet in deze installatiegidsen.
+
+##### Bypass
+
+Aan de voorzijde zit een handbediende **overbruggingsschakelaar, QS1** (bypass: een omweg langs de gateway-elektronica). De brochure noemt een ingebouwd bypass-circuit voor meer betrouwbaarheid. In alle gidsen geldt: QS1 blijft in normaal bedrijf **uit**. Een terugmelding van die schakelaar loopt via ingang DI1. Wanneer je hem wel gebruikt, legt de handleiding niet uit.
+
+##### Generator
+
+De brochure meldt dat een generator via een tweedraads startsignaal (een contact dat sluit of opent) wordt gestart en noemt dat ondersteund. De terugmelding via een externe automatische omschakelaar (ATS, een schakelaar die zelf kiest tussen net en generator) staat onder *Installatie in hoofdlijnen*.
+
+> **Home of HomePro**
+> De handleiding legt niet uit wat "Home" en "HomePro" of "SP", "TP", "F" en "L" betekenen. SP en TP zijn hier te lezen als 1-fase en 3-fase, want dat zeggen de gidsen zelf bij de kabels en de omvormers. Voor de rest moet je de poortlijsten vergelijken.
+
+#### Plek in het systeem
+
+Teken in gedachten een lijn van links naar rechts. Links de buitenwereld, rechts het huis, in het midden de gateway.
+
+##### Van net naar huis
+
+1. **Het net** (de aansluiting van de netbeheerder, via je meterkast) komt op de netpoort *GRID*, achter automaat QF1. Binnen zit een netcontactor, KM1, waarmee de gateway het net kan loskoppelen.
+2. **De omvormer** hangt aan de omvormerpoort *INV*. Dat is de Sigen Energy Controller (SigenStor EC) of een Sigen Hybrid. Aan de gelijkstroomkant van die omvormer zitten de zonnepanelen en de batterij.
+3. **De huisgroepen** hangen aan de *BACKUP*-poort. Alles daarachter wordt bij netuitval door batterij en zon gedragen.
+4. **Niet-back-up.** Bij de Home-varianten en HomePro SP is er een aparte klem, *X1* (*Non-BACKUP*), voor groepen die bij netuitval uitvallen.
+5. **Slimme belastingen of generator** op de poort *SMART-PORT* (HomePro SP, SP-F en TP). Bij TP-L is die poort in de gids "niet beschikbaar". De Home-varianten hebben geen aparte poort, maar wel een droog contact (DO3) voor het startsignaal en ingang DI2 voor terugmelding van een externe ATS.
+
+##### Praten met de rest
+
+- **Poort FE1** (Fast Ethernet, een gewone netwerkkabel) naar de omvormer.
+- **Poort FE2** naar andere apparaten, zoals een Sigen EV AC Charger, een extra omvormer of de router.
+- **RS485** staat in de gidsen als gereserveerd.
+- **Droge contacten** (DI/DO) voor bypass-terugmelding, ATS-terugmelding en generatorstart.
+
+##### EV-lader en stroomsensor
+
+De gidsen laten de EV AC Charger alleen zien als apparaat op FE2. De brochure noemt V2X (de auto als bron of afnemer) als een van de bronnen waartussen de gateway naadloos schakelt. De **stroomsensor** komt in de installatiegidsen niet aan bod. In de alarmlijst staan wel meldingen over een elektriciteitsmeter en stroomtransformatoren, met de aanwijzing te controleren of de sensor op de gateway of de meter is aangesloten. Lees voor die aansluiting de documenten van de sensor zelf.
+
+> **Waarom dit ertoe doet**
+> Een gateway voegt een tweede spanningsbron toe aan het huis: batterij en zon kunnen spanning op de installatie zetten terwijl het net weg is. Dat verandert hoe je veilig werkt. Zie de cursusles over PV en je veiligheidsprocedure.
+
+#### De varianten vergeleken
+
+De tabel bovenaan de pagina zet de zes varianten naast elkaar. Hier de keuzehulp in woorden. Dit is mijn lezing van de poortlijsten en de brochure, geen advies van de fabrikant.
+
+##### Eerst: 1-fase of 3-fase
+
+De fase van de gateway moet bij de aansluiting van het huis en de omvormer passen. **SP** is eenfasig (Home SP 12K, HomePro SP, HomePro SP-F). **TP** is driefasig (Home TP 30K, HomePro TP, HomePro TP-L). Bij TP moeten L1, L2, L3, N en PE in volgorde worden aangesloten.
+
+##### Dan: Home of HomePro
+
+- **Home** (SP 12K en TP 30K): kleinere kast (400 x 550 mm), geen aparte generator- of slimme-belastingenpoort, wel een klem voor niet-back-upbelasting.
+- **HomePro**: heeft bij SP, SP-F en TP een poort voor generator of slimme belastingen. De brochure geeft de spanning van een generator op die poort en meldt tweedraads generatorstart als ondersteund.
+
+##### Keuzehulp
+
+1. Eenfasig, omvormers samen tot 12 kW, geen generator: **Home SP 12K**.
+2. Eenfasig met generator of een grote slimme belasting, 12 kW: **HomePro SP**.
+3. Eenfasig met een hoger vermogen (100 A, 22 kW): **HomePro SP-F**.
+4. Driefasig, tot 30 kW, geen slimme poort nodig: **Home TP 30K** (met klem voor niet-back-up) of **HomePro TP-L** (zonder slimme poort en zonder niet-back-upklem).
+5. Driefasig met slimme belasting of generator: **HomePro TP**.
+
+##### Let op bij het aantal omvormers
+
+Home SP 12K heeft twee omvormerpoorten. Poort 1 is voor een eenfasige omvormer van 8,0 tot 12,0 kW, poort 2 voor 6,0 kW. Samen mogen ze niet boven 12,0 kW komen. Bij HomePro TP en TP-L is een tweede omvormer optioneel, met een automaat die de eigenaar zelf levert. Bij SP-F noemt de gids omvormer 2 en 3 optioneel.
+
+> **Wat je hier niet vindt**
+> Nominale stroom van de Home-varianten en van TP-L, en het gewicht van Home en TP-L, staan niet in de tekst van de gidsen. Afmetingen zie je alleen in de tekening bij hoofdstuk 1.1.
+
+#### Specificaties in het kort
+
+De brochure (pagina 14) geeft alleen de specificaties van HomePro SP, SP-F en TP. Voor de andere drie moet je het doen met wat de installatiegidsen zeggen.
+
+##### HomePro volgens de brochure
+
+| Onderwerp | HomePro SP | HomePro SP-F | HomePro TP |
+|---|---|---|---|
+| Net | 1-fase, 220 / 230 / 240 V | 1-fase, 220 / 230 / 240 V | 3-fase, 380 / 400 V |
+| Nominale stroom (net en back-uppoort) | 54,6 A | 100 A | 45,6 A |
+| Nominaal vermogen | 12 kW | 22 kW | 30 kW |
+| Omvormerpoort | 54,6 A / 32 A, 12 kW / 6 kW | 55 A, 12 kW | 45,6 A, 30 kW |
+| Slimme poort of generator | 54,6 A, 12 kW | 55 A, 12 kW | 45,6 A, 30 kW |
+| Afmetingen B / H / D | 450 / 570 / 197 mm | 450 / 695 / 177 mm | 450 / 695 / 163 mm |
+| Gewicht | 25 kg | 25 kg | 25 kg |
+
+Voor alle drie: frequentie 50 / 60 Hz, schakeltijd bij wegvallen van het net 0 ms, overspanningscategorie III, koeling door natuurlijke convectie, communicatie via FE, RS485 en droog contact, wandmontage. Afmetingen zijn zonder decoratieve afdekking. Bij SP staat erbij dat bedrading aan de achterzijde kan. De omvormerregel van SP volgt de voetnoot: een eenfasige omvormer van 8,0 tot 12,0 kW hoort op de eerste omvormerpoort, een van 3,0 tot 6,0 kW op de tweede. Het totaal blijft maximaal 12 kW.
+
+##### Omgeving en beschermingsgraad
+
+Brochure: bedrijf van -30 tot 55 graden Celsius, opslag van -40 tot 70 graden, 0 tot 100 % vochtigheid, tot 4000 m hoogte, IP55. De installatiegidsen tonen in hun omgevingstekening voor alle zes varianten IP54 en 0 tot 95 % relatieve vochtigheid. Bij SP-F staat erbij dat het vermogen terugloopt (derating) boven 50 graden. De tekeningen in de gidsen geven voor SP-F 650 mm hoogte en voor TP en TP-L 650 mm (689 mm met wartels), waar de brochure 695 mm noemt. Ga bij twijfel uit van de strengste waarde en lees zelf na.
+
+##### Waarden per variant uit de installatiegidsen
+
+| Variant | Omvormerpoorten en automaten | Netkabel | Functionele aarding |
+|---|---|---|---|
+| Home SP 12K | INV1 (QF2, 8-12 kW) en INV2 (QF3, 6 kW), backup QF4, niet-backup X1 | 16 mm2, 3-aderig, 9 tot 25 mm buitendiameter | 6 tot 10 mm2 |
+| Home TP 30K | een driefasige omvormer (QF2), backup QF3, niet-backup X1 | 16 mm2, 5-aderig, 9 tot 25 mm | 6 tot 10 mm2 |
+| HomePro SP | een omvormerpoort: QF3 (8-12 kW) of QF4 (5-6 kW), niet allebei; backup QF5; generator/slim QF2 | 16 mm2, 3-aderig, 9 tot 25 mm | 10 tot 16 mm2 |
+| HomePro SP-F | omvormer 1 op QF3, omvormer 2 en 3 gereserveerd; backup QF4; slim/generator QF2 | 35 mm2, 3-aderig, 19 tot 32 mm | 10 tot 16 mm2 |
+| HomePro TP | omvormer 1 op QF3, omvormer 2 optioneel; backup QF4; slim/generator QF2 | 16 mm2, 5-aderig, 19 tot 32 mm | 6 tot 10 mm2 |
+| HomePro TP-L | omvormer 1 op QF2, omvormer 2 optioneel; backup QF3 | 16 mm2, 5-aderig, 19 tot 32 mm | 6 tot 10 mm2 |
+
+Kabel voor de omvormer, eenaderig per omvormervermogen (Home TP 30K, HomePro TP en TP-L): 5-8 kW 4 mm2, 10-15 kW 6 mm2, 17-20 kW 10 mm2, 25-30 kW 16 mm2. Voor een eenfasige omvormer (Home SP, HomePro SP en SP-F): 3,0 kW 4 mm2, 3,6 tot 6,0 kW 6 mm2, 8,0 tot 12,0 kW 16 mm2.
+
+##### Zelf aangeleverde automaat voor omvormer 2 (HomePro TP en TP-L)
+
+De gidsen geven een tabel per driefasig omvormervermogen: 5, 6 en 8 kW: C16 (bij TP ook 4 mm2); 10, 12 en 15 kW: C32 (6 mm2); 17 en 20 kW: C40 (10 mm2); 25 en 30 kW: C63 (16 mm2). De kolom met kabeldoorsnede staat alleen in de gids van HomePro TP.
+
+#### Installatie in hoofdlijnen
+
+De gidsen volgen ongeveer dezelfde route, maar verschillen in poorten, automaten en kabels. Lees dus altijd de volledige gids van jouw variant. Alleen getraind en gekwalificeerd personeel mag aan de apparatuur werken.
+
+1. **Plaats en ruimtes.** Binnen of buiten, maar beschut: geen direct zonlicht, regen, stilstaand water, sneeuw of stof. Niet in rokerige, brandgevaarlijke of explosieve ruimtes, niet binnen bereik van kinderen, niet in een garage waar auto's langs rijden. Minstens 500 m van corrosiebronnen (zout, zuur). Bij binnenopstelling zorgen voor ventilatie zodat de kamer niet meer dan 3 graden opwarmt. De tekening geeft afstanden: minstens 300 mm boven, 200 mm zijkant, 400 mm onder, 700 mm voor, en 2 m afstand tot een warmtebron van 60 graden.
+2. **Controle vooraf.** Paklijst nalopen, PBM en gereedschap controleren, en kijken of de vooraf aangedraaide schroeven nog kloppen: elke schroef heeft een streepmarkering die op een lijn moet liggen.
+3. **Montage.** Wandmontage, horizontaal, op een niet-brandbare, draagkrachtige en vlakke ondergrond, zonder leidingen of kabels in de boorlijn. Massieve baksteen of beton wordt aanbevolen. De montagestappen staan als tekening in de gids. Bij HomePro TP en TP-L hoort daar een optionele stap 4.2 bij: een zelf aangeleverde automaat voor omvormer 2 plaatsen.
+4. **Kabels en klemmen.** Deur open, dan de kabels door de wartels. Sluit aan op de labels (GRID, INV, BACKUP, X1, SMART-PORT, COM). Bij HomePro SP kies je kabelinvoer onderaan of achterin (achterin: gat waterdicht maken, zo nodig met brandwerende kit). De gids geeft per klem hoeveel kabellengte je moet reserveren in mm. Verwijder geen gereserveerde doorvoergaten.
+5. **Net.** Kabel op QF1, L, N en PE in volgorde. Meet later de spanning op QF1 en controleer dat die binnen het lokaal toegestane bereik valt.
+6. **Huis en back-up.** Back-upgroepen op de back-uppoort. De klem X1 (Home, HomePro SP) is voor niet-back-upgroepen.
+7. **Generator en slimme belastingen.** Poort SMART-PORT (HomePro SP, SP-F, TP). Voor de generatorstart is er droog contact DO3, op NO/COM of NC/COM al naargelang het startgedrag van de generator. DO2 meldt de generatorcontactor terug, DO1 de netschakelaar. Ingang DI2 is voor de terugmelding van een externe ATS: een lage impedantie (kortsluiting) betekent net, een hoge (open) betekent generator. Bij SP-F, TP en TP-L is DI3 (gereserveerd) daarvoor bedoeld voor de slimme poort en is DI1 een noodstopingang (open circuit betekent noodstop). Bij Home en HomePro SP is DI1 de terugmelding van de bypass-schakelaar.
+8. **Omvormer met PV en batterij.** Per omvormerpoort een eigen automaat. Bij HomePro SP kan QF3 of QF4 worden gebruikt, maar slechts een van de twee. De kabeldoorsnede volgt uit het omvormervermogen (zie Specificaties).
+9. **Communicatie en sensor.** RJ45 naar de omvormer (FE1) en eventueel EV-lader, router of extra omvormer (FE2): afgeschermd getwist 8-aderig, maximaal 100 m per kabel, want een te lange kabel verslechtert de verbinding. DI/DO: tweeaderig afgeschermd, 0,2 tot 1,5 mm2. De sensor: zie de documenten van de sensor.
+10. **Aarding.** Zie hieronder.
+11. **Controle en dichtmaken.** Vijf punten: apparaat stevig geplaatst, aarding-, AC- en signaalkabels compleet en juist, moeren en klemmen zonder speling, geen bramen bij de kabelbinders, geen restafval in of om de kast. Daarna beschermkap of binnenpaneel plaatsen.
+
+##### Aarding
+
+Voor de functionele aardingskabel geldt: is het apparaat **betrouwbaar geaard**, dan **moet** die kabel worden aangesloten (GND op de koperen aardrail). Is dat niet zo, dan sluit je hem niet aan en blijft GND vrij van de aardrail. De reden: in off-grid stand koppelt het interne relais de N-draad aan de functionele aarding, zodat er een eigen aardsysteem ontstaat en de lekstroombeveiliging bij een fout kan afschakelen.
+
+> **Aarding eerst**
+> Bij het aansluiten van kabels komt de aardingskabel als eerste. Bij het verwijderen of vervangen als laatste.
+
+In de gids zelf komt de aarding (hoofdstuk 5.3 of 5.4) vóór de hoofdkabels. Dat past bij de regel uit de Belangrijke informatie. Volg die volgorde, ook al staat de aarding in dit overzicht als laatste.
+
+#### Inbedrijfstelling
+
+Elke gids sluit af met hoofdstuk 6: "Inschakelen" bij Home en HomePro SP, "De apparatuur inschakelen" bij SP-F, TP en TP-L. Het draait om een vaste volgorde. Schakel een automaat nooit in als er geen apparaat op is aangesloten.
+
+##### Volgorde per variant
+
+| Variant | Volgorde |
+|---|---|
+| Home SP 12K | QF1 (net), QF2 of QF3 (omvormer aanzetten), QF4 (backup), deur dicht |
+| Home TP 30K | QF1 (net), QF2 (omvormer aanzetten), QF3 (backup), deur dicht |
+| HomePro SP | QF1 (net), QF3 of QF4 (omvormer, wachten tot die aan is), QF2 (generator/slim), QF5 (backup), deur dicht |
+| HomePro SP-F | QF5 (overspanningsbeveiliging), QF1 (net), QF3 (omvormer 1), wachten, QF2 (slim/generator), QF4 (backup); voorpaneel dicht en zijpanelen op slot |
+| HomePro TP | QF5 (overspanningsbeveiliging), QF1, QF3 (omvormer 1), eventueel omvormer 2, wachten, QF2 (slim/generator), QF4 (backup); paneel dicht en zijkanten op slot |
+| HomePro TP-L | QF4 (overspanningsbeveiliging), QF1, QF2 (omvormer 1), eventueel omvormer 2, wachten, QF3 (backup); paneel dicht en zijkanten op slot |
+
+De nummers zijn de labels op de automaten in de kast. Ze verschillen per variant, dus gebruik de gids van jouw type.
+
+##### Wat altijd geldt
+
+1. Zet eerst de voorste schakelaar van de apparatuur aan.
+2. De bypass-schakelaar QS1 blijft uit (bij HomePro SP: "in normale gevallen uit").
+3. Meet de spanning op QF1 (netzijde) voor je het binnenpaneel of de beschermkap plaatst.
+4. **Voer na elke bedradingswijziging een bedradingscontrole uit in de mobiele app**, voor je verdergaat. Die app is mySigen.
+5. Sluit de deur en, bij SP-F, TP en TP-L, vergrendel de zijpanelen met de bijgeleverde sleutel.
+
+##### Wat er niet staat
+
+Instellingen in de app, zoals prioriteiten voor back-up en slimme belastingen, staan niet in deze gidsen. De gidsen eindigen bij het inschakelen en de bedradingscontrole.
+
+#### Veiligheid en let op
+
+De **Belangrijke informatie** (16 pagina's) is voor alle zes varianten vrijwel identiek. Hij noemt vier soorten tekens: gevaar, waarschuwing, wees voorzichtig en informatie. Dit zijn de punten die de documenten zelf als kritiek behandelen.
+
+> **Werk niet onder spanning**
+> Voer geen handeling uit terwijl de apparatuur is ingeschakeld. Dat geldt voor installeren, bedraden en onderdelen vervangen. Zorg dat alle voedingen naar de gateway uit zijn: de netschakelaar, de omvormerschakelaar en de schakelaar van de dieselgenerator. Voor je kabels aansluit of verwijdert, moeten ook de voorste en achterste schakelaars van de apparatuur en de eigen schakelaars zijn losgekoppeld.
+
+> **Aarding en spanning meten**
+> Sluit eerst de aardingskabel aan, verwijder hem bij vervanging als laatste. Meet de spanning op het contactpunt voor je een aansluitklem aanraakt. Er is een risico op een elektrische schok als de gateway niet geaard is.
+
+##### Verder
+
+- **Personeel.** Alleen opgeleid, gekwalificeerd personeel dat de plaatselijke wetten, normen en de werking van het energiesysteem kent.
+- **PBM en gereedschap.** Beschermende handschoenen, veiligheidsschoenen, isolatiehandschoenen en helm. Geen geleidende sieraden. Isolatiegereedschap bij het aansluiten van kabels.
+- **Weer.** Niet werken tijdens onweer, regen, sneeuw of storm. Niet met water, alcohol of olie reinigen.
+- **Kabels.** Niet kruisen of verstrengelen, geen beschadigde isolatie, uit de buurt van warmtebronnen, geen scherpe randen. Onder 0 graden wordt de mantel bros. Kabels die lang onder 0 graden lagen, 24 uur ervoor naar een ruimte boven 0 graden brengen.
+- **Onderhoud.** Schakel uit en wacht zolang het vertragingslabel op de apparatuur aangeeft voor je onderhoud of vervanging begint. Pas weer inschakelen als de storing volledig is verholpen.
+- **Overspanningsbeveiliging.** Bij SP-F, TP en TP-L waarschuwt de gids dat een uitgeschakelde overspanningsbeveiliging kan leiden tot schade aan huishoudelijke verbruikers en de gateway.
+- **Automaten.** Nooit een automaat inschakelen die niet op zijn apparaat is aangesloten. Bypass QS1 uit.
+- **Transport en opslag.** Kantel of draai de apparatuur niet, maximaal 15 graden helling in de verpakking en 10 graden uitgepakt, opslag van -40 tot 70 graden (20 tot 30 graden aanbevolen), 0 tot 95 % vochtigheid.
+- **Ladders en boren.** Alleen na instructie, houten of glasvezel ladders bij elektrisch werk, helling 60 tot 70 graden, een tweede persoon in de buurt. Bij boren veiligheidsbril en handschoenen, nooit in de apparatuur boren.
+- **Garantie en aansprakelijkheid.** De documenten sommen op wanneer de fabrikant niet aansprakelijk is, onder meer bij niet-naleven van normen en lokale regels, verkeerde kabels of gereedschap, en wijzigingen aan de software.
+
+In Nederland komt daar je eigen procedure bij: de vijf stappen en NEN 3140. De gateway-documenten noemen die niet. Dat het huis met een batterij ook onder spanning kan staan als het net weg is, moet je zelf in je aanpak meenemen.
+
+#### Alarmen en storingen
+
+De **Lijst van alarmeringen** (23 pagina's, versie 05 van 24/10/2025) is voor alle zes varianten dezelfde. Het is een lange tabel voor het hele Sigenergy-systeem, niet alleen voor de gateway. Je moet er dus in zoeken.
+
+##### Zo is hij opgebouwd
+
+Elke regel heeft zes kolommen: **Foutcode**, **Foutnaam**, **ID**, **ID-naam**, **Oorzaak van de fout** en **Aanbeveling voor reparatie**. Een foutcode heeft één of meer ID's: verschillende deelfouten onder dezelfde naam. De aanbeveling geeft genummerde stappen.
+
+##### Waar kijk je
+
+De lijst zelf geeft geen categorienamen. Aan de foutnamen zie je blokken van codes:
+
+- **1001 tot 1031**: omvormer en PV-kant (o.a. isolatie, netspanning, AFCI). 1028 tot 1031 gaan over een *ingebouwde* Gateway.
+- **2001 tot 2304**: batterij en energieopslag.
+- **3001 tot 3019**: lijkt de gateway zelf te betreffen. Denk aan netfasevolgorde (3006), netfaseverlies (3008), noodstop (3013), bypass-schakelaar open of aan (3014 en 3015), overbelasting van een contactorspoel (3016), kastdeur open (3017), overbelasting van de frame-stroomonderbreker (3018) en levensduur van die automaat (3019).
+- **4001 tot 4006**: communicatie (met gateway, meter of stroomsensor), bekabelingsfouten van sensor of meter, en overschrijding van het netvoedingsvermogen, naast enkele meldingen die ik niet kon plaatsen (motorstart, CLS, DI-storing).
+- **5001 tot 5106**: lijkt EV-lader te zijn (bijvoorbeeld "Oplaadkabel abnormaal").
+
+Deze indeling is een lezing van de namen. Controleer de exacte codes in de lijst zelf.
+
+##### Wat je in de aanbevelingen terugziet
+
+Vaak: eerst een stand-by of uitschakelinstructie via de app, de netschakelaar losmaken en enkele minuten wachten, dan herstellen en weer inschakelen. Blijft de fout, dan meld je hem via de mySigen-app onder Support en troubleshooting, of neem je contact op met het klantenservicecentrum van Sigenergy. Bij de bypass-melding staat dat je de bypass-schakelaar opnieuw moet openen (verbreken).
+
+Let op de vertaling: een dieselgenerator heet in de lijst soms "oliegenerator" of "oliemotor".
+
+> **Zo gebruik je de lijst**
+> Noteer bij een melding altijd foutcode en ID uit de app, zoek die code op in de lijst en volg de stappen in de kolom Aanbeveling.
+
+#### Wat niet in de handleiding staat
+
+Wat wil je nog weten dat hier niet staat? Dit ontbreekt in de documenten die ik heb gelezen.
+
+- De nominale stroom van Home SP 12K, Home TP 30K en HomePro TP-L, en het gewicht van Home en TP-L (afmetingen zie je wel in tekeningen).
+- Wat "Home", "HomePro", "F" en "L" betekenen.
+- Wanneer je de bypass-schakelaar QS1 gebruikt.
+- Hoe je back-up met prioriteit instelt. Dat zit in de app.
+- Hoe de stroomsensor op de gateway wordt aangesloten.
+- Afstanden rond de kast en afmetingen staan alleen in tekeningen, niet in de lopende tekst.
+- De brochure (IP55, hoogte 695 mm) en de gidsen (IP54, hoogte 650 mm) noemen niet dezelfde waarden voor HomePro.
+- In de gidsen van SP-F, TP en TP-L zeggen beide generatorregels bij de droge contacten "open". Bij de Home-varianten staat "open" en "gesloten". Lees de tabel zelf na.
+
+> **Waarom staan er verschillende gidsen voor bijna hetzelfde apparaat?**
+> De gidsen zijn per variant geschreven en tonen andere poorten, automaten en kabels. De Belangrijke informatie en de alarmlijst zijn wel gedeeld. Daarom staan die eenmaal in de lijst met documenten.
+
+### Product: Sigen Hybrid-omvormer (SP2 1-fase en TP2 3-fase)
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/hybrid-omvormer/
+
+De omvormer die zonnepanelen en thuisbatterij samenbrengt en er wisselspanning voor huis en net van maakt. De SP2-serie is 1-fase (2.0 tot 6.0 kW), de TP2-serie is 3-fase (3.0 tot 12.0 kW). Deze pagina vat de installateurshandleidingen samen en wijst je de weg naar hoofdstuk en pagina.
+
+#### Wat is het
+
+Een **omvormer** zet gelijkspanning (DC) om in wisselspanning (AC). Zonnepanelen leveren DC, een batterij werkt op DC, maar je huis en het openbare net werken op AC. Een **hybride omvormer** bedient zowel de zonnepanelen als de thuisbatterij, zodat je niet twee losse omvormers nodig hebt.
+
+De Sigen Hybrid bestaat in twee series die in dezelfde handleidingstructuur zijn beschreven:
+
+- **SP2**: 1-fase, van 2.0 tot 6.0 kW (2.0, 3.0, 3.6, 4.0, 4.6, 5.0 en 6.0).
+- **TP2**: 3-fase, van 3.0 tot 12.0 kW (3.0, 4.0, 5.0, 6.0, 8.0, 10.0 en 12.0).
+
+Beide hangen aan de muur, hebben beschermingsgraad **IP66** (dat is de code voor stof- en waterbescherming), koelen door natuurlijke convectie en communiceren via WLAN, Fast Ethernet (netwerkkabel), RS485 of de Sigen CommMod (4G-module). Volgens het datablad zitten er onder meer deze beveiligingen in: bescherming tegen omgekeerde DC-polariteit, isolatie- en reststroombewaking, een lichtboogfoutonderbreker (AFCI, herkent een gevaarlijke vonkverbinding in de DC-bedrading), overstroom-, overspanning- en kortsluitbeveiliging en anti-eilandbeveiliging (de omvormer levert niet door aan een net dat is uitgevallen).
+
+> **Wat je hier waarschijnlijk nog niet weet**
+> - De omvormer heeft de batterij niet zelf aan boord. Die hangt eraan via een **batterijcontroller** (SigenStor BC) met daaronder batterijmodules (SigenStor BAT). Die onderdelen staan op een eigen pagina.
+> - Het maximale PV-vermogen is twee keer het nominale AC-vermogen (bij de 2.0 SP2: 4000 W PV op 2000 W AC). Die verhouding heet **DC/AC-verhouding**. De brochure noemt 200%. Je mag dus meer panelen aansluiten dan de omvormer als wisselstroom kan leveren. Volgens de brochure is dat bedoeld voor een hogere opbrengst.
+> - Het datablad en de installatiegids zijn voor beide series bijna hetzelfde. Kijk telkens goed of je in het SP2- of het TP2-document leest.
+
+#### Plek in het systeem
+
+De omvormer is het middelpunt waar alles op aansluit. Bekijk het als een verkeersplein met deze aansluitingen (zie hoofdstuk 1.2 Poortintroductie):
+
+| Aansluiting | Markering | SP2 | TP2 |
+|---|---|---|---|
+| PV-strings (DC-aansluitblok) | PV1+/PV1- en PV2+/PV2- (TP2 ook PV3+/PV3-) | 2 ingangen | 3 ingangen (PV1 tot PV3) |
+| Batterij (ingang accu) | BAT+/BAT- | ja | ja |
+| CommMod (4G) en antenne (WLAN) | 4G en ANT | ja | ja |
+| Communicatiepoort | COM | ja | ja |
+| Wisselspanning (net en huis) | AC | ja | ja |
+| Aardingspunten (2x) | - | ja | ja |
+| DC-schakelaar | DC SWITCH | ja | ja |
+
+Bij de TP2 gaat de PV3-ingang alleen bij de grotere modellen (10.0 en 12.0 kW) in gebruik. Zo werkt de keten:
+
+- **PV-strings.** Een **string** is een rij in serie geschakelde zonnepanelen. Elke string gaat naar een PV-ingang. De omvormer heeft twee **MPPT's**: dat is een regeling die per ingangsgroep het werkpunt zoekt waarop de panelen het meeste vermogen leveren. Bij de SP2 hoort 1 string bij elke MPPT. Bij de TP2 van 10.0 en 12.0 kW delen PV2 en PV3 samen één MPPT.
+- **Batterij.** De batterij komt via de SigenStor BC op de BAT+/BAT- ingang. Een netwerkkabel (CAT6, maximaal 20 m) verbindt omvormer en batterij voor de communicatie. Per controller kunnen 1 tot 6 batterijmodules met een spanning van 300 tot 600 V (datablad). De aansluiting op de BC staat in de handleiding van de BC, niet in deze.
+- **Net en huis.** De AC-aansluiting gaat naar de groepenkast en het net. Een **vermogenssensor** (energiemeter) meet wat het huis van het net afneemt of teruglevert en gaat via RS485 naar de COM-poort. Sensoren moeten via het officiële kanaal van Sigenergy worden aangeschaft.
+- **Back-up.** Het datablad noemt een AC-uitgang voor **noodstroom** (back-up): stroom voor het huis als het net uitvalt. De omschakeltijd is 0 ms, maar alleen als je de Sigen Gateway samen met de controller en de batterij gebruikt (voetnoot in het datablad). In de poortenlijst van de omvormer staat maar een AC-aansluiting. Hoe je de noodstroom precies bedraadt, staat niet in de installatiegids van de omvormer.
+- **Router en cloud.** Via de Fast Ethernet-poort (FE, onderdeel van COM), WLAN of 4G komt het systeem online en kun je het in de mySigen-app beheren.
+- **Reserve-aansluitingen op COM.** De COM-poort heeft ook ingangen DI1 tot DI5 (bedoeld voor energieplanning, zoals DRM en rimpelspanning) en twee droge contacten DO1 en DO2 voor slimme apparatuur van derden, zoals een schakelcontroller of warmtepomp. De handleiding markeert die als gereserveerd.
+
+> **Wat betekent netgekoppeld en netonafhankelijk?**
+> In de statuslampjes (hoofdstuk 6 en 7) noemt de handleiding twee standen. **Netgekoppeld** betekent dat de omvormer aan het openbare net hangt en levert of afneemt. **Netonafhankelijk** betekent dat hij zonder openbaar net werkt (noodstroom of *off-grid*). De lampjes aan de AC-kant hebben voor beide een eigen status.
+
+Zie ook de pagina's van de batterij, de gateway, de vermogenssensor en de mySigen-app voor hun kant van de verbinding.
+
+#### Specificaties in het kort
+
+De waarden hieronder komen uit het datablad voor België en de brochure (pagina 13). De modeltabel bovenaan geeft per model het vermogen. Hier staan de waarden die voor de hele serie gelden.
+
+##### Vergelijking SP2 en TP2
+
+| Onderdeel | SP2 (1-fase) | TP2 (3-fase) |
+|---|---|---|
+| **PV-ingang** | | |
+| Max. DC-ingangsspanning | 600 V | 1100 V |
+| Nominale DC-ingangsspanning | 350 V | 600 V |
+| Startspanning | 100 V | 180 V |
+| MPPT-spanningsbereik | 50 ~ 550 V | 160 ~ 1000 V |
+| Aantal MPPT's | 2 | 2 |
+| Strings per MPPT | 1 | 1 (10.0 en 12.0: 1 of 2) |
+| Max. ingangsstroom per MPPT | 16 A | 16 A (10.0 en 12.0: 16 of 32 A) |
+| Max. kortsluitstroom per MPPT | 22 A | 22 A (10.0 en 12.0: 22 of 44 A) |
+| **Batterij** | | |
+| Controller en modules | SigenStor BC en BAT-serie | SigenStor BC en BAT-serie |
+| Modules per controller | 1 ~ 6 | 1 ~ 6 |
+| Spanning van de modules | 300 ~ 600 V | 300 ~ 600 V (brochure: 600 ~ 900 V) |
+| **AC-uitvoer op het net** | | |
+| Nominale spanning | 220 / 230 / 240 V | 220/380, 230/400, 240/415 V (3W/N+PE) |
+| Netfrequentie | 50 / 60 Hz | 50 / 60 Hz |
+| **Back-up (noodstroom)** | | |
+| Piekvermogen (10 seconden) | 2 keer het nominale vermogen (brochure) | 2 keer het nominale vermogen |
+| Nominale spanning | 220 / 230 / 240 V (brochure) | 220/380, 230/400, 240/415 V |
+| Omschakeltijd back-upswitch | 0 ms (met Sigen Gateway) | 0 ms (met Sigen Gateway) |
+| **Rendement** | | |
+| Maximaal (datablad) | 98,3 tot 98,5% | 98,0 tot 98,7% |
+| **Algemeen** | | |
+| Beschermingsgraad | IP66 | IP66 |
+| Afmetingen (B / H / D) | 373 / 473 / 99 mm | 477 / 568 / 99 mm |
+| Gewicht | 11,5 kg | 19,5 kg |
+| Bedrijfstemperatuur | -30 tot 60 °C | -30 tot 60 °C |
+| Opslagtemperatuur | -40 tot 70 °C | -40 tot 70 °C |
+| Max. werkhoogte | 4000 m | 4000 m |
+| Geluid en nachtverbruik | 25 dB, 2,5 W | 28 dB, 3 W |
+
+##### Kabels die jij levert (installatiegids, hoofdstuk 2)
+
+| Kabel | SP2 | TP2 |
+|---|---|---|
+| Aardingskabel | 4 mm² (2 tot 3,6 kW), 6 mm² (4 tot 6 kW) | 4 mm² (3 tot 8 kW), 6 mm² (10 tot 12 kW) |
+| AC-kabel | 3-aderig (L, N, PE), buitendiameter 10 tot 21 mm, doorsnede 4 mm² (2 tot 3,6 kW) of 6 mm² (4 tot 6 kW) | 5-aderig (L1, L2, L3, N, PE), buitendiameter 13 tot 21 mm, doorsnede 4 mm² (3 tot 8 kW) of 6 mm² (10 tot 12 kW) |
+| DC-ingangskabel (PV) | 4 tot 6 mm², buitendiameter 4,5 tot 7,8 mm | 4 tot 6 mm², buitendiameter 4,5 tot 7,8 mm |
+| RS485 (sensor) | afgeschermd getwist paar, 0,5 tot 0,75 mm² (flexibel, met adereindhulzen) | 0,5 tot 0,75 mm² (flexibel, met adereindhulzen) |
+| Netwerkkabel naar router | CAT6, afgeschermd, tot 100 m | CAT6, afgeschermd, tot 100 m |
+| Netwerkkabel naar batterij | CAT6, afgeschermd, tot 20 m | CAT6, afgeschermd, tot 20 m |
+
+Het datablad noemt bij de back-up voor de SP2 andere waarden (piek 6000 tot 24000 W en een driefasige spanning). Dat lijkt niet te kloppen voor een 1-fase model, dus gebruik de brochure en controleer de actuele documenten op de Sigenergy-website.
+
+Let op dat de handleidingen bij alle kabels zeggen dat ze aan de regels van jouw land en regio moeten voldoen. Deze waarden zijn een aanbeveling, geen vervanging van je eigen berekening.
+
+#### Installatie in hoofdlijnen
+
+De installatiegids (hoofdstuk 2 tot 5) volgt deze volgorde. Voor bijna alles zijn er tekeningen; de tekst zelf is kort.
+
+1. **Controle en voorbereiding (hoofdstuk 2).** Vergelijk de inhoud van de doos met de paklijst, kijk of alles heel is en zorg voor persoonlijke beschermingsmiddelen (helm, veiligheidsbril, stofmasker, isolerende handschoenen en schoenen) en het gereedschap. De gids noemt onder andere een momentsleutel, een krimptang voor de PV-connectoren (model H4TC0003, Amphenol) en een steeksleutel (H4TW0001).
+2. **Plaatsing en ruimte (hoofdstuk 3).** Kies een beschutte plek: geen direct zonlicht, regen, stilstaand water of stof, geen brandgevaar, geen sterke elektromagnetische storing en niet binnen bereik van kinderen. De omvormer moet horizontaal en op een stevige, vlakke, onbrandbare muur (baksteen of beton wordt aanbevolen) hangen, met vrije ruimte rondom volgens het diagram (het diagram staat als afbeelding, niet als tekst).
+3. **Montage (hoofdstuk 4).** Kies het montageschema dat past bij de meegeleverde onderdelen: massieve baksteen of beton, of een houten wand. Er mogen geen leidingen of kabels achter de boorplek zitten.
+4. **Aarding (5.3).** De beschermende aardingskabel gaat op het aardingspunt van de omvormer. Er zijn twee aardingspunten: één verbonden met de accu en één voor de beschermende aardingskabel.
+5. **AC-net (5.4).** Sluit de AC-kabel aan in de volgorde L, N, PE (SP2) of L1, L2, L3, N, PE (TP2). De gids zegt dat je de volgorde niet mag mengen.
+6. **Communicatie (5.5 tot 5.10).** Houd voedings- en signaalkabels gescheiden. Sluit de RS485-kabel van de vermogenssensor aan op de COM-poort (RS485-2), de netwerkkabel naar de router op de FE-poort en de batterijcommunicatie op BAT. Plaats waar nodig de Sigen CommMod (4G, eventueel met andere SIM-kaart) of de WLAN-antenne en de sierafdekking.
+7. **PV-aansluiting (5.6).** De gids vraagt dat de stroomonderbreker aan de PV-zijde "elektrisch neutraal" is voordat je aansluit. Lees dat als: uitgeschakeld en spanningsloos gemaakt zover dat kan. Verbind positieve en negatieve string met de bijpassende connectoren. Meet de polariteit: een negatieve spanning wijst op een polariteitsfout. Bij de TP2: 3 tot 8 kW sluit je 2 strings aan, 10 tot 12 kW sluit je 3 aan. PV2 en PV3 delen één MPPT en moeten hetzelfde model en hetzelfde aantal panelen hebben (de gids zegt: model en aantal van de aangesloten string).
+8. **Batterij (via SigenStor BC).** Voor de aansluiting op de batterijcontroller verwijst de gids naar de installatiehandleiding van het betreffende BC-model (hoofdstuk 5.1).
+9. **Back-up-uitgang.** Staat niet in de installatiegids van de omvormer.
+
+Voordat je begint: de omvormer en alles wat eraan hangt moet spanningsloos zijn (hoofdstuk 5.1).
+
+#### Inbedrijfstelling
+
+Na de installatie volgen hoofdstuk 6, 7 en 8 van de installatiegids.
+
+##### Controle na installatie (hoofdstuk 6)
+
+De gids geeft zeven controlepunten. Loop ze na voordat je inschakelt:
+
+1. De omvormer zit veilig vast.
+2. Aardings-, DC-, AC- en signaalkabels zitten er allemaal en juist op.
+3. Schroeven en connectoren zitten stevig en zonder speling.
+4. Doorvoeren van kabelbinders zijn vrij van bramen en scherpe randen.
+5. De **DC SWITCH staat op OFF**.
+6. Ongebruikte poorten zijn dicht met waterdichte kleppen of pluggen.
+7. Er ligt geen bouwafval in of op de omvormer.
+
+##### Inschakelen (hoofdstuk 7)
+
+1. Schakel de AC-schakelaar boven de omvormer in.
+2. Draai de DC SWITCH naar ON.
+3. Volg het statuslampje aan de voorkant.
+
+De lampjes tonen apart de DC-kant (aangesloten, actief, uit, knipperend of fout), de AC-kant (netgekoppeld, netonafhankelijk, overbelasting of defect), de verbinding met het beheersysteem (app dichtbij, FE of WLAN, 4G, te weinig dataverkeer) en de batterij (laden, ontladen, niet actief of defect). De volledige tabel staat op pagina 17 en 18 van de installatiegids.
+
+##### App en cloud (hoofdstuk 8)
+
+Maak eerst een installateursaccount aan via de website van Sigenergy ("Partner", "Register Now"). Download daarna de mySigen-app en maak een nieuw systeem aan. Scan de SN-code van de omvormer, die staat op de bijgevoegde papieren of op de zijkant van de omvormer. De installateur moet de eigenaar vragen om binnen 24 uur de e-mail met de titel "sigencloud" te controleren en het account te activeren.
+
+De stappen in de app staan in de aparte "Handleiding Nieuwe systemen maken van de app mySigen". Die zit niet bij deze pdf's.
+
+#### Veiligheid en let op
+
+Dit is wat de handleidingen als kritisch benoemen. Alles komt uit "Belangrijke informatie" (hoofdstuk 5) en de installatiegids.
+
+> **Werken onder spanning is verboden**
+> De handleiding zegt dat het verboden is om de apparatuur onder spanning te gebruiken. Dat geldt voor installeren, bedraden en vervangen. Meet de spanning op het contactpunt voordat je een aansluitklem aanraakt. Draag isolatiehandschoenen, isolerende schoenen en een veiligheidshelm, geen geleidende sieraden, en gebruik geïsoleerd gereedschap.
+
+> **Aarding eerst**
+> Apparaten die geaard moeten worden, moeten permanent met de beschermingsaarding zijn verbonden. Sluit bij het aansluiten van kabels als eerste de aardingskabel aan. Bij het vervangen haal je de aardingskabel als laatste los.
+
+> **Schakelaars los, wachten na uitschakelen**
+> Voor het aansluiten of losmaken van kabels moeten de schakelaars aan de voor- en achterkant van de apparatuur en de eigen schakelaars los zijn. Voor onderhoud of vervanging schakel je uit en wacht je op de tijd op het vertragingslabel op de apparatuur.
+
+- **DC van de panelen.** Zonnepanelen leveren spanning zodra er licht op valt, ook als je de DC SWITCH uitzet. Dat staat niet uitdrukkelijk in deze handleidingen; het is vakkennis (zie les m10l02). De gids zegt wel dat de PV-zijde voor het aansluiten "elektrisch neutraal" moet zijn (5.6) en dat de DC SWITCH bij de controle na installatie op OFF staat (hoofdstuk 6).
+- **Netcode.** De **netcode** is de set regels van de netbeheerder waar een omvormer aan moet voldoen. Staat niet in de installatiegids.
+- **Plaatsing.** Geen rokerige, ontvlambare of explosieve ruimte. Minstens 500 m van corrosiebronnen zoals kust of chemische industrie (in een gebied met gunstig zeeklimaat, zoals Noorwegen, noemt de gids meer dan 200 m tot de kust). Niet in een afgesloten, slecht geventileerde ruimte zonder brandbeveiliging en niet in mobiele toepassingen als camper, schip of trein.
+- **Temperatuur.** Werktemperatuur -30 tot 60 °C. Binnenshuis mag de kamertemperatuur door de omvormer niet meer dan 3 °C stijgen, anders neemt het vermogen af. Bij kabels: onder 0 °C worden de mantels bros. Kabels die lang onder 0 °C lagen, 24 uur in een ruimte boven 0 °C leggen voor je ze gebruikt.
+- **Aansluitvolgorde en polariteit.** L, N, PE (SP2) of L1, L2, L3, N, PE (TP2) in die volgorde. PV-polariteit meten voor het inschakelen: negatieve spanning betekent verkeerd om.
+- **Alleen gekwalificeerd personeel.** Getraind, met kennis van elektrotechniek en van de lokale regels.
+- **Ladder, boren, transport.** Ladder onder 60 tot 70 graden, niet in de apparatuur boren, doos niet kantelen.
+
+#### Alarmen en storingen
+
+De alarmen staan in een apart document: "03-Lijst van alarmeringen_NL" (23 pagina's, versie 05, uitgavedatum 24/10/2025). Voor de SP2 en TP2 is dit precies hetzelfde bestand.
+
+De lijst is opgebouwd als een tabel met zes kolommen: **foutcode**, **foutnaam**, **ID** (deelfout), **ID-naam**, **oorzaak** en **aanbeveling voor reparatie**. Eén foutcode heeft vaak veel ID's, bijvoorbeeld per string of per MPPT.
+
+De lijst geldt voor meerdere Sigen-apparaten. De eerste cijfers van de code wijzen naar de groep:
+
+- **1xxx** (pagina 2 tot 12): omvormer en ingebouwde gateway, zoals PV-stringspanning (1006), omgekeerd aangesloten string (1007), AFCI (1009), netfouten en fasevolgorde (1024).
+- **2xxx** (pagina 12 tot 17): batterij en energieopslag.
+- **3xxx en 4xxx** (pagina 18 tot 21): gateway, generator en kast.
+- **5xxx** (pagina 21 tot 23): laders.
+
+Deze indeling volgt uit de foutnamen; de lijst zelf noemt de groepen niet.
+
+Waar te beginnen als er iets mis gaat:
+
+- De aanbevelingen zijn meestal: controleer kabels, ventilatie, zoninval en netspanning, start de omvormer opnieuw op (DC- en AC-schakelaar uit en weer in) en meld het anders. Bij hoge temperatuur (pagina 2) begint het met ventilatie en direct zonlicht.
+- Bij een omgekeerde string moet de stringstroom eerst onder 0,5 A zijn, dan de DC-schakelaar uit en dan de polariteit aanpassen (pagina 4).
+- Blijft de fout, dan vraagt de lijst om een storingsrapport in de mySigen-app onder Support, Troubleshooting, of contact met het Sigenergy-klantenservicecentrum.
+
+De hele lijst overschrijven heeft geen zin. Zoek op foutcode in het document en lees de kolom aanbeveling.
+
+#### Wat niet in de handleiding staat
+
+Om te voorkomen dat je iets aanneemt dat niet gedocumenteerd is:
+
+- De bedrading van de back-up-uitgang (via de gateway).
+- Welke netcode je instelt en hoe.
+- Aanhaalmomenten: de gids noemt een momentsleutel, maar in de tekst staat geen getal.
+- Maximale stringlengte in panelen: alleen de spanningsgrenzen uit het datablad.
+- De vrije ruimte rondom de omvormer: die staat als afbeelding.
+- Het schema "Alle optische netwerken" op pagina 9: de tekst legt niet uit wat dat inhoudt.
+
+### Product: mySigen-app en Sigen Cloud
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/mysigen-app/
+
+De mySigen-app laat de eigenaar de energiestroom van zijn huis in realtime zien en bevat een AI-modus voor slimme planning. Sigen Cloud is het platform voor installateurs voor bewaking, alarmen, parameters op afstand en het beheer van klanten en collega's.
+
+#### Wat is het
+
+Sigenergy heeft twee digitale onderdelen die je in de handleidingen steeds door elkaar ziet:
+
+- De **mySigen-app** voor Android en iOS. De eigenaar gebruikt hem om zijn systeem te volgen en te bedienen, en de installateur gebruikt hem om een nieuw systeem aan te maken.
+- **Sigen Cloud**, in de brochure omschreven als een platform voor het beheer van de levenscyclus van apparaten en voor zakelijke beslissingen. Dat is vooral het gereedschap voor installateurs en hun bedrijf.
+
+Beide werken met gegevens die het systeem via internet naar Sigenergy stuurt. De omvormer heeft dus een verbinding nodig: netwerkkabel (**FE**), wifi (**WLAN**) of 4G via de Sigen CommMod. FE en WLAN worden aanbevolen. De app werkt op **Android 6.0 of hoger** en **iOS 12.0 of hoger**.
+
+> **Waarom een elektricien dit moet kennen**
+> Een nieuw systeem is pas klaar als je het in de app hebt aangemaakt. Zonder die stap kan de eigenaar niets zien en de installateur niets op afstand doen. En veel storingsmeldingen verwijzen je naar de app.
+
+De gidsen verwijzen naar drie aparte app-handleidingen: de "mySigen App Creating New Systems Guide", de "mySigen APP Installer Manual" en de "mySigen App User Manual". Die zitten niet in dit overzicht. Wat hier staat komt uit de brochure, de flyer en losse hoofdstukken van de gidsen.
+
+#### Voor de eindgebruiker
+
+##### Zien wat er gebeurt
+
+Op het startscherm volgt de gebruiker de energiestroom in realtime. De gegevens worden elke 10 seconden ververst. Het **Sankey-diagram** toont de stromen als banden waarvan de dikte de hoeveelheid aangeeft. Zo zie je op systeemniveau waar elke watt vandaan komt en naartoe gaat. Op laadniveau zie je welke bron achter een verbruiker zit, bijvoorbeeld de wasdroger, de boiler, de oven, de warmtepomp of de airco: zonne-energie, het net of de batterij. Een aparte weergave toont de samenstelling van de energie in de batterij.
+
+##### De AI-modus
+
+De **Sigen AI-modus** maakt een planningsstrategie die rekening houdt met het weer, de PV-voorspelling, het verbruikspatroon en het **dynamisch tarief** (een stroomprijs die per uur verschilt) van de komende 24 uur. De flyer toont prijs en laadtoestand van de accu (SOC, *state of charge*) voor de komende 24 uur naast een terugblik op de afgelopen 24 uur, met uitleg van de strategie in gewone taal. De brochure noemt ook een **Sigen AI-assistent** die op GPT werkt en vragen beantwoordt. Wat de AI precies beslist en met welke regels, staat niet in deze documenten.
+
+##### Instellen en bedienen
+
+- **Werkmodi:** de gebruikershandleiding beschrijft onder andere de modus voor eigenverbruik en de tijdgestuurde modus. Bij de tijdgestuurde modus stel je zelf in de app de laad- en ontlaadperiodes in.
+- **Reserve back-up:** heeft het systeem een Gateway, dan stel je in de app een SOC in waaronder de accu niet verder ontlaadt zolang het net er is. Bij netuitval is die reserve beschikbaar als noodstroom.
+- **Planning:** de flyer noemt het plannen van verbruikers op basis van de batterij-SOC en het voorrang geven aan overtollige zonne-energie. Hoe dat in de app werkt, staat niet in de documenten.
+- **Aan en uit:** in de app kan het apparaat via de knop Instellingen worden in- of uitgeschakeld.
+- **Slim huis:** volgens de flyer kun je Shelly-apparaten (een merk voor slimme huisapparatuur) via Bluetooth toevoegen.
+
+De flyer noemt verder een ontwikkelaarsportaal met API's en een **VPP-sandbox** (VPP: *virtual power plant*, veel kleine systemen samen aangestuurd), plus een leercentrum en hulpvideo's op YouTube.
+
+#### Voor de installateur (Sigen Cloud)
+
+De brochure beschrijft Sigen Cloud met zeven onderdelen: bedrijfsvoering, efficiënt onderhoud, systeembewaking, apparaatbewaking, klantendienst, organisatiebeheer en services met toegevoegde waarde. Welke functie onder welk onderdeel valt, is in de tekst van de brochure niet altijd af te lezen. De functies zelf zijn duidelijk:
+
+##### Bewaken
+
+- Realtime systeemgegevens met een interval van 10 seconden en energiegrafieken per systeem.
+- Systeemrapporten om te zoeken en te downloaden.
+- Bedrijfsstatus op **celniveau**, over meerdere lagen van de batterij.
+- Beheer van Sigen-apparaten en van apparaten van derden, ingedeeld per categorie.
+
+##### Beheren en onderhouden
+
+- **Alarmbeheer:** alarmen van de systemen die je beheert.
+- **Parameters op afstand** controleren en instellen, ook in batch voor meerdere systemen. Een commando dat niet lukt wordt automatisch opnieuw geprobeerd.
+- Opzoeken van de **garantieperiode** van een apparaat.
+- Beheer van systeemeigendom en van groepen systemen, en beheer op basis van systeemstatus.
+
+##### Het bedrijf zelf
+
+- **Ledenbeheer** binnen de organisatie, bedrijfsinformatie en hiërarchisch beheer van een installateursbedrijf.
+- Een interactief dashboard (BI, *business intelligence*) en een dashboard met installatiepunten.
+- Een centrum om **punten** in te wisselen. De brochure legt niet uit hoe je die verdient.
+- Integratie van een **VPP van derden** en een open **northbound-integratie** (een koppeling waarmee andere software gegevens kan ophalen). Details staan niet in de brochure.
+
+##### Storing melden
+
+De alarmlijst verwijst bij bijna elke storing naar de app: dien op de pagina **Support en dan troubleshooting** een storingsrapport in als het advies niet helpt.
+
+> **Wat de bronnen niet geven**
+> Er staat geen inlogadres, geen beschrijving van schermen en geen lijst van rechten per gebruikersrol in Sigen Cloud. Alleen de brochurepagina met de functies is beschikbaar.
+
+#### Inbedrijfstelling met de app
+
+De installatiegidsen van SigenStor Home, de Hybrid-serie, de laadpaal en de DC-lader hebben elk een kort hoofdstuk over het aanmaken van een nieuw systeem. De volgorde is overal ongeveer gelijk:
+
+1. **Account voor de installateur.** Ga naar de website van Sigenergy, kies Partner en dan Nu registreren, en maak je account aan.
+2. **App installeren.** Download de mySigen-app en start daarmee het aanmaken van een nieuw systeem voor het apparaat.
+3. **Apparaat aanzetten en indicator controleren.** Bij de laadpaal geldt: zodra de indicator groen wordt (constant of knipperend), maak je het nieuwe systeem aan in de app. Bij de omvormer laat een led zien of de verbinding er is: uit is niet verbonden, knipperen is verbonden met de lokale app, constant aan is verbonden via FE of WLAN of via 4G. Knipperen kan ook betekenen dat er onvoldoende 4G-verkeer is voor de CommMod.
+4. **Nieuw systeem aanmaken.** Scan het SN-label op het meegeleverde papierwerk of, als dat kwijt is, op de zijkant van de omvormer. Volg de aanwijzingen op het scherm of de "mySigen App Creating New Systems Guide".
+5. **Eigenaar laten activeren.** Zeg de eigenaar dat hij binnen 24 uur de e-mail van "sigencloud" moet openen en zijn account moet activeren. De gebruikershandleiding van de DC-lader beschrijft dit vanuit de eigenaar: hij krijgt de e-mail, stelt zijn eerste wachtwoord in, activeert het account en meldt zich aan in de app.
+
+##### Andere apparaten toevoegen
+
+Een **Sigen EV DC Charging Module** die aan een bestaande installatie wordt toegevoegd, wordt volgens de installatiegids automatisch herkend en toegevoegd, zonder handmatige stappen.
+
+##### Daarna nog in de app instellen
+
+- De **planning** voor de droge contacten van de omvormer, en het opnieuw activeren van de planningsparameters. De gids neemt RCR als voorbeeld.
+- De parameters van de **NS-beveiliging** (netbeveiliging, de gids legt dit begrip niet uit).
+- Werkmodus en reserve-SOC, zoals in de vorige sectie.
+- Licentie voor het uitbreiden van de DC-lader van 12 naar 25 kW. De gids verwijst voor koop en activatie naar de "mySigen APP Installer Manual" en de "mySigen App User Manual".
+
+> **Wat de gidsen niet uitleggen**
+> De schermen en foutmeldingen bij het aanmaken van een systeem staan niet in de gidsen zelf. Ze verwijzen naar de app-handleidingen. Haal die op bij Sigenergy voordat je het voor een klant doet.
+
+### Product: Sigen Power Sensor en communicatiemodule
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/power-sensor/
+
+De stroom- en vermogenssensoren van Sigenergy (SP-CT100, TP-CT100, SP-DH, TP-DH en de draadloze WI-varianten voor SigenMicro) meten wat het huis van het net afneemt of teruglevert. De Sigen Communication Module (CommMod) is de USB-steker met simkaart waarmee een omvormer via 4G met de cloud praat.
+
+#### Wat is het
+
+Een **vermogenssensor** (Engels: *power sensor*) meet op een vast punt hoeveel stroom en vermogen er loopt. Sigenergy heeft **SP-modellen** voor een 1-fase aansluiting en **TP-modellen** voor 3-fase. Binnen elke familie zijn er twee soorten:
+
+- **DH-typen** (SP-DH en TP-DH): de sensor meet zelf, zonder losse stroomklemmen, tot 100 A.
+- **CT-typen** (SP-CT100 en TP-CT100): de sensor werkt met een of drie **CT's**. Een CT (*current transformer*, stroomtransformator) is een ring of klem die je om de draad legt en die de stroom meet via het magnetische veld, zonder de draad te onderbreken. Het principe lijkt op de stroomtang uit de les over meten. De CT's zijn bedoeld voor maximaal 100 A.
+
+De **WI-varianten** (SP-CT100-WI en TP-CT100-WI) zijn alleen voor de SigenMicro-serie (micro-omvormers). Ze hebben WLAN op 2,4 GHz en verbinden volgens de brochure direct met de cloud. De afkorting WI wordt niet uitgelegd.
+
+##### De communicatiemodule
+
+De **Sigen Communication Module** (in de gidsen **CommMod**) is een compact kastje met USB-aansluiting, micro-simkaart en led-lampjes. Hij meet niets, maar geeft een omvormer mobiel internet (2G, 3G of 4G), zodat het systeem ook zonder wifi of netwerkkabel met de cloud en de app praat.
+
+> **De sensor meet, de CommMod verbindt**
+> De sensor vertelt het systeem wat er bij het net gebeurt. De CommMod brengt de gegevens naar de cloud. Je komt ze vaak samen tegen in dezelfde installatiegids.
+
+#### Plek in het systeem
+
+##### Waarom is de sensor nodig
+
+Een omvormer weet wat hij zelf levert, maar niet wat het huis verbruikt of naar het net gaat. Daarvoor moet je meten op het **aansluitpunt met het net**. De gidsen tekenen de sensor daarom aan de netzijde. Zo kan het systeem bepalen hoeveel zonne-energie er over is voor de batterij of de auto.
+
+Wanneer je de sensor nodig hebt, hangt af van de opstelling:
+
+- Bij **gedeeltelijke back-up** (alleen een deel van de groepen blijft aan bij netuitval) hoeft de sensor niet geconfigureerd te worden. Wil je daarbij een netaansluiting **zonder stroomtoevoer** (de handleiding legt dat niet verder uit), dan wel.
+- In het schema voor **back-up van het hele huis** staat geen sensor getekend, in het schema **zonder back-up** wel.
+- De **Sigen EV AC Charger** kan dynamisch lastbeheer (overbelasting van het huis voorkomen) alleen met de Sigen Power Sensor.
+
+##### RS485 en Modbus
+
+De sensor praat met de omvormer over **RS485**: een tweedraads seriële bus (draden A+ en B-) die tegen storing kan. De taal heet **Modbus RTU**, veelgebruikt voor meters en industriële apparatuur, met 9600 bps. Dit past bij de les over bussystemen: een bus is een kabel waarover berichten gaan.
+
+##### Draadloos
+
+De SP-DH, SP-CT100, TP-DH en TP-CT100 kunnen draadloos werken met de **Sigen Sensor Sub1G Kit** (868 MHz, IEEE 802.11ah, ook WiFi HaLow). De kit kent twee werkmodi: **AP** (*access point*, hoofdapparaat) en **STA** (*station*, slaveapparaat). In open ruimte haalt hij volgens laboratoriumtests tot 200 m, met muren ertussen minder. De COM-poort van de Sigen Hybrid heeft een gereserveerde 5 V-voeding voor de Sub1G-module. Hoe je de modules koppelt, staat niet in de brochure.
+
+##### CommMod en verbinding
+
+De gidsen raden **FE** (netwerkkabel) en **WLAN** aan. De CommMod is voor 4G en past in de poort met opdruk 4G. Er zit gratis 4G-verkeer bij (hoeveel staat er niet). Is dat op, of ontbreekt de simkaart, dan vervang je de simkaart door een kaart uit het land van installatie, met een dataplan van 50 MB per maand maal het aantal omvormers. Volgens de gebruikershandleiding moet de gebruiker na twee jaar zelf zijn 4G-abonnement opwaarderen.
+
+#### Specificaties
+
+De tabel bovenaan vergelijkt de types. Overige waarden uit de brochure (pagina 16, 18 en 19):
+
+##### Sensoren
+
+| Eigenschap | Waarde |
+|---|---|
+| Frequentie | 50 of 60 Hz |
+| Nauwkeurigheid spanning / vermogen | 0,5 % / 1 % |
+| Montage | DIN-rail 35 mm |
+| Beschermingsgraad | IP20 |
+| Werktemperatuur (p. 18) | -25 tot 65 graden C |
+| CT-kabel, binnendiameter CT | 1 m, 24 of 16 mm |
+
+Voor de CT-typen geeft de brochure twee waarden voor diameter en gewicht. Een voetnoot zegt dat sensoren van twee fabrikanten door elkaar geleverd worden omdat ze functioneel gelijk zijn. Kijk dus naar wat je ontvangt. Het ingangsbereik van de 3-fase-types is in de brochuretekst lastig te lezen (173 tot 480 V fase-fase, 176 tot 276 V fase-nul): controleer het in de pdf.
+
+##### Sub1G-kit en communicatiemodule
+
+| Eigenschap | Sub1G-kit | CommMod |
+|---|---|---|
+| Aansluiting | RS485 of draadloos | USB, plug-and-play |
+| Bereik of netwerk | 868 MHz, tot 200 m open ruimte | LTE, WCDMA en GSM, micro-SIM |
+| Voeding | 85 tot 277 V wissel | minder dan 4 W |
+| Afmetingen (mm) | 18 / 118 / 66 | 52 / 112 / 33 |
+| Bescherming | niet vermeld | IP66 |
+| Past bij | sensoren | Sigen Energy Controller- en Hybrid-serie |
+
+#### Installatie in hoofdlijnen
+
+De sensor gaat op een DIN-rail van 35 mm. De bedrading van de sensor zelf staat in de handleiding **in de verpakking van de sensor**. De installatiegidsen beschrijven vooral de kant van de omvormer.
+
+1. **Kies de sensor** bij het systeem: 1-fase of 3-fase, met of zonder CT's, via het officiële kanaal.
+2. **Verbind RS485** met de COM-poort van de omvormer. **RS485-2** is voor de sensor aan de netzijde, **RS485-1** is een aanpasbare poort voor bijvoorbeeld een energiemanagementsysteem van een ander merk, een meter of een warmtepomp. Bij de 3-fasetypen gaat A+ naar klem 14 en B- naar klem 13 van de sensor, met een afgeschermde kabel.
+3. **De laadpaal** gebruikt dezelfde RS485-verbinding naar de sensor (bij de TP-CT120-DH ook op klem 14 en 13).
+4. **CommMod:** steek hem in de poort 4G. De lampjes: langzaam knipperen is verbinden of stand-by, snel knipperen is gegevens versturen.
+5. **Maak het systeem aan in de mySigen-app.** Bij een Gateway met gedeeltelijke back-up moeten Gateway en sensor geactiveerd worden. Hoe, staat niet in deze gidsen.
+
+##### Let op: de types verschillen per document
+
+De brochure noemt SP-CT100 en TP-CT100. De installatiegidsen noemen **TP-DH, TP-CT120-DH, TP-CT300-DH en TP-CT600-DH** (3-fase) en **SP-DH en SP-CT120-DH** (1-fase), met een metertype erachter, bijvoorbeeld SDM630MCT 40mA/120A. Wat DH betekent, staat nergens. Ga uit van wat op de sensor en in de meegeleverde handleiding staat. De sensoraansluiting staat niet in de Gateway-installatiegidsen (Home en HomePro), wel in die van de omvormers.
+
+#### Veiligheid
+
+Alleen wat de handleidingen zelf zeggen:
+
+> **Spanningsloos werken**
+> Voor het bedraden moeten omvormer en aangesloten apparatuur spanningsloos zijn. Bij de driefasige SigenStor Home hoort daarbij: DC-schakelaar UIT, voorste AC-schakelaar uit en alle stroomtoevoer uit, ook net, omvormer en dieselgenerator. Werk niet aan ingeschakelde apparatuur.
+
+- Alleen **getrainde of gekwalificeerde personen** mogen aan de apparatuur werken.
+- Koop sensoren via het **officiële kanaal** van Sigenergy.
+- Houd de **voedingskabel gescheiden van de signaalkabel** en beperk de lengte van de signaalkabel.
+- **Verkeerd aangesloten CT's** geven een alarm (omgekeerde aansluiting per fase A, B of C, of verkeerde bedrading). Het advies is herbedraden. Ook een communicatiefout met de sensor is een alarm.
+
+> **Wat hier niet staat**
+> De handleidingen bevatten geen waarschuwing over CT's die je nooit open mag laten onder belasting. Dat staat niet in de handleiding. Kijk in de handleiding bij de sensor en vraag het een ervaren collega.
+
+> **Wat is het verschil tussen 1P2W en 3P3W/3P4W?**
+> 1P2W is een enkelfasig net met twee draden (fase en nul). 3P3W is 3-fase met drie draden, 3P4W is 3-fase met vier draden (drie fasen plus nul). Zie de les over 1-fase en 3-fase.
+
+### Product: SigenStor Home (1-fase en 3-fase)
+
+URL: https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/sigenstor-home/
+
+Het complete thuisenergiesysteem van Sigenergy: een Energy Controller (omvormer) met een of meer SigenStor BAT-batterijmodules, een gateway voor noodstroom, een vermogenssensor en de mySigen-app. Verkrijgbaar in een 1-fase en een 3-fase uitvoering, versie A1.
+
+#### Wat is het
+
+SigenStor Home is geen los apparaat maar een **compleet thuisenergiesysteem**. Het combineert de omvormer, de batterij en de bijbehorende meet- en communicatieonderdelen tot een geheel dat zonnestroom opslaat en later weer aan het huis levert. (Gebruikershandleiding p. 16).
+
+##### De onderdelen in één oogopslag
+
+- **SigenStor EC (Energy Controller):** de omvormer. Hij zet de gelijkspanning (DC) van zonnepanelen en batterij om in wisselspanning (AC) voor het huis en het net, en hij stuurt de energiestromen aan. Hij moet volgens de handleiding samen met PV-modules en SigenStor BAT worden gebruikt.
+- **SigenStor BAT:** de batterijmodule. Meerdere modules kunnen aan één EC hangen (1 tot 6 stuks volgens de brochure).
+- **Sigen Gateway:** schakelt tussen net en systeem en zorgt voor noodstroom. Zonder gateway heb je geen back-up.
+- **Sigen Power Sensor (vermogenssensor):** meet bij het aansluitpunt van het net hoeveel stroom er heen of weer loopt.
+- **Sigen CommMod:** een module voor communicatie via 4G, als alternatief voor kabel of wifi.
+- **mySigen-app:** hiermee maak je het systeem aan, stel je het in en volg je het.
+
+> **Welke handleiding bij welke vraag**
+> De set bestaat uit een beknopte handleiding, een gebruikershandleiding, "Belangrijke informatie" (veiligheid, transport, opslag), een installatiegids en een onderhoudshandleiding. De installatiegids en de onderhoudshandleiding zijn geschreven voor het 3-fase systeem. Voor de 1-fase uitvoering staat in deze set alleen de beknopte handleiding en de brochure; staat iets voor 1-fase niet in de handleiding, vraag de leverancier.
+
+##### Twee begrippen vooraf
+
+Bij "p." staat de positie in de PDF (1 is de eerste pagina). **MPPT** is de regeling die per groep zonnepanelen (string) het punt met het hoogste vermogen opzoekt. **EMS** (energiemanagementsysteem) is de software in de omvormer die bepaalt wanneer de batterij laadt, ontlaadt of het net wordt gebruikt.
+
+#### Plek in het systeem
+
+Het systeem zit tussen de zonnepanelen, het net en de groepenkast van het huis.
+
+##### Hoe de stroom loopt
+
+De handleiding beschrijft het zo (Gebruikershandleiding p. 16): de zonnepanelen leveren gelijkstroom. Die gaat naar de batterij, of wordt door de omvormer omgezet in wisselstroom voor de verbruikers in huis, of gaat naar het net. Als de zon niet genoeg levert, geeft de batterij energie af. Volgens de brochure (p. 7) is de architectuur **DC-gekoppeld**: PV, batterij en eventueel een EV-lader hangen aan een gezamenlijke gelijkspanningsleiding, de **DC-bus**. Dat scheelt omzettingen, dus verlies.
+
+##### Drie manieren van aansluiten
+
+De gebruikershandleiding toont drie netwerkschema's (p. 17-20), de installatiegids herhaalt ze (p. 2):
+
+1. **Back-up voor het hele huis:** gateway en een back-up distributiepaneel. Valt het net uit, dan blijft het huis voorzien.
+2. **Gedeeltelijke back-up:** naast het back-up paneel is er een niet-back-up paneel. Alleen de belangrijkste groepen krijgen noodstroom. Hier hoort de vermogenssensor bij wanneer je met de gateway ook netaansluiting zonder stroomtoevoer wilt (p. 18-19).
+3. **Zonder back-up:** een AC-schakelaar en distributiepaneel, plus vermogenssensor. Geen gateway.
+
+> **Noodstroom en back-up**
+> **Back-up** of **noodstroom** betekent dat de batterij en de zon het huis blijven voeden als het net uitvalt. De brochure noemt een schakeltijd van 0 ms naar back-up, maar alleen als gateway, Energy Controller en batterij samen worden gebruikt (Brochure p. 8-9, voetnoot). In de installatiegids staat dat de gateway een must-have is voor back-upnetwerken (p. 3). Bij uitval van het net levert de omvormer tot twee keer het nominale vermogen, maximaal 10 seconden.
+
+##### Slimme verbruikers
+
+Apparaten met een hoog verbruik (warmtepomp, wasdroger, boiler) kun je als slimme verbruiker aansluiten, zodat ze uitgaan als de batterij bijna leeg is (Installatiegids p. 4). Een dieselgenerator kan via de gateway als back-upbron dienen.
+
+##### Uitbreiden
+
+Overleg met de eigenaar of hij later batterijmodules of de **Sigen EV DC Charging Module** (een bidirectionele EV-lader) wil toevoegen, en laat ruimte en kabellengte over (Installatiegids p. 2). De laadmodule is een aparte productfamilie met een eigen installatiegids.
+
+#### Specificaties in het kort
+
+De waarden komen uit de brochure (p. 8, 9 en 11) en zijn bereiken over de hele reeks. Voor het exacte model: zie de tabel per model of het gegevensblad, en controleer kritische getallen in de originele PDF.
+
+##### Energy Controller
+
+| Waarde | 1-fase (SP) | 3-fase (TP) |
+|---|---|---|
+| Nominaal AC-vermogen | 3,0 tot 12,0 kW | 5,0 tot 30,0 kW |
+| Max. PV-vermogen | 6000 tot 24000 W | 8000 tot 48000 W |
+| Max. DC-ingangsspanning | 600 V | 1100 V |
+| Nominale DC-ingangsspanning | 350 V | 600 V |
+| MPPT-spanningsbereik | 50 tot 550 V | 160 tot 1000 V |
+| Aantal MPPT's | 2 tot 4 | 2 tot 4 |
+| Max. ingangsstroom per MPPT | 16 A | 16 A |
+| Max. uitgangsstroom (net) | 15,0 tot 54,6 A | 8,4 tot 50,0 A |
+| Nominale uitgangsspanning | 220 / 230 / 240 V | 380 / 400 V (3 fasen + N + PE) |
+| Spanningsbereik batterij | 300 tot 600 V | 600 tot 900 V |
+| Batterijmodules per EC | 1 tot 6 | 1 tot 6 |
+| Beschermingsklasse | IP66 | IP66 |
+| Omgevingstemperatuur in bedrijf | -30 tot 60 °C | -30 tot 60 °C |
+
+**IP66** betekent stofdicht en beschermd tegen krachtige waterstralen. De installatiegids wil de omvormer toch beschut geplaatst hebben (p. 10).
+
+##### SigenStor BAT (brochure p. 11)
+
+| Waarde | BAT 6.0 | BAT 10.0 |
+|---|---|---|
+| Celtype | LiFePO4 (**LFP**, lithium-ijzerfosfaat) | LiFePO4 |
+| Totale energie | 6,02 kWh | 9,04 kWh |
+| Bruikbare energie | 5,84 kWh | 8,76 kWh |
+| Continu laden en ontladen | 3000 W | 4600 W |
+| Piek (10 seconden) | 4500 W | 6900 W |
+| Ontlaaddiepte | 100% | 100% |
+| Gewicht | 62 kg | 78 kg |
+| Afmetingen (B/H/D) | 767 / 270 / 265 mm | 767 / 270 / 265 mm |
+| Bedrijfstemperatuur | -20 tot 55 °C | -20 tot 55 °C |
+
+De brochure noemt 10.000 cycli, met de kanttekening dat dit door de celfabrikant is opgegeven onder testomstandigheden (25 ± 2 °C, 0,5C, SOH 60%). De batterij moet binnen 7 dagen na volledig ontladen weer worden opgeladen.
+
+#### Installatie in hoofdlijnen
+
+Alles hieronder komt uit de installatiegids voor het 3-fase systeem (versie 07 van 2025-09-29). Installeren mag alleen door getraind of ervaren elektrisch personeel (Installatiegids p. 2).
+
+##### Voorbereiding
+
+1. Lees de installatiegids en "Belangrijke informatie". Overleg met de eigenaar over uitbreidingen (p. 2).
+2. Controleer met de paklijst of alles compleet en heel is. Handgreep en hangslot blijven van de eigenaar (p. 7).
+3. Zorg voor beschermingsmiddelen (helm, bril, isolerende handschoenen en schoenen) en gereedschap, waaronder momentsleutel en multimeter (p. 7).
+4. Kies de plek volgens hoofdstuk 3 (p. 10-12), zie Veiligheid.
+5. Leg de kabels klaar. De handleiding geeft voor de AC-kabel een vijfaderige flexibele koperkabel op: 4 tot 6 mm² bij 5 tot 15 kW, 6 tot 10 mm² bij 17 tot 20 kW, 10 tot 16 mm² bij 25 kW en 16 mm² bij 30 kW. Kabels voor PV, netwerk en signaal: p. 8-9.
+
+##### Montage
+
+1. Kies vloermontage (hoofdstuk 4.1, p. 13-21) of wandmontage (4.2, p. 22-23). Op de vloer passen tot zes BAT-modules, aan de wand twee. Bij drie of meer BAT's op de vloer is een lift nodig.
+2. Zet de batterijmodules waterpas met nivelleerplaten of verstelbare voeten (niet in aardbevingsgebied).
+3. Til met de meegeleverde handgreep (4,5 N·m aandraaien, maximaal 100 keer gebruiken, p. 16).
+4. Plaats de Energy Controller en zet de basisbeugel vast (p. 18-20). Het hangslot is optioneel en helpt tegen diefstal (p. 21).
+
+##### Elektrische aansluiting
+
+Hoofdstuk 5 (p. 24-29 en 35):
+
+1. Alles eerst uit: DC-schakelaar op UIT en de voorliggende AC-schakelaar uit (p. 24).
+2. Sluit **eerst de aarding** aan (5.3, p. 26).
+3. Sluit de AC-uitgang aan (5.4, p. 26-29). L1, L2, L3, N en PE in de juiste volgorde.
+4. Sluit de PV-strings aan (5.6, p. 35): 5,0 tot 8,0 kW heeft twee kanalen, 10,0 tot 15,0 kW drie en 17,0 tot 30,0 kW vier. Gebruik alleen de meegeleverde PV-connectors.
+5. Bepaal de AC-schakelaar in de groepenkast: minimaal 380 V AC, met aanbevolen stroom van 25 A (5,0-8,0 kW), 32 A (10,0-15,0 kW), 40 A (17,0-20,0 kW), 50 A (25,0 kW) of 63 A (30,0 kW), zie Installatiegids p. 3.
+
+##### Communicatie
+
+1. **RS485 naar de vermogenssensor** en optioneel naar een energiemanagementsysteem van derden of een warmtepomp (5.5, p. 30-31).
+2. **Droge contacten en digitale ingangen** voor externe apparaten, netplanning en de **NS-beveiliging** (p. 32-34).
+3. **Netwerk:** twee RJ45-poorten, één naar de router en één naar andere apparaten zoals omvormers of gateways (5.7, p. 36).
+4. **Wifi-antenne** vastdraaien (5.8) of **CommMod** voor 4G plaatsen (5.10, p. 37). Bij verbruikte gratis data vervang je de SIM-kaart (5.9).
+
+Sluit af met de controle na installatie (hoofdstuk 6, p. 38) en plaats de decoratieve afdekking (hoofdstuk 7, p. 39).
+
+#### Inbedrijfstelling
+
+De inbedrijfstelling staat in hoofdstuk 8 en 9 van de installatiegids (p. 40-43). De stappen in het kort:
+
+1. **Zet de voorliggende AC-schakelaar aan.**
+2. **Draai de DC-SCHAKELAAR naar AAN** (p. 40).
+3. **Lees de LED-indicatoren op de voorzijde van de omvormer.** Er zijn indicatoren voor DC-zijde, AC-zijde, energieopslag en communicatie. Ze tonen onder meer of de DC-zijde actief is, of het systeem netgekoppeld of off-grid draait, of de batterij laadt of ontlaadt en hoe de verbinding loopt. De volledige tabel staat op p. 40 (installatiegids) en p. 28-29 (gebruikershandleiding).
+4. **Maak een account** via het Partner-gedeelte van de website van Sigenergy en registreer daar (p. 41).
+5. **Download de mySigen-app** en maak een nieuw systeem aan. Scan het serienummer (SN) van het label op het doosmateriaal, of van de zijkant van de omvormer (p. 41-42).
+6. **Laat de eigenaar zijn e-mail van sigencloud controleren** en zijn account binnen 24 uur activeren (p. 42).
+7. **Plaats de resterende decoratieve afdekkingen** (p. 43).
+
+##### Instellingen
+
+De instellingen doe je in de mySigen-app. Volgens de gebruikershandleiding (p. 25-27) kent het systeem vier werkmodi:
+
+- **Sigen AI-modus:** leert het verbruik en de stroomprijs en stuurt daarop (alleen in bepaalde landen).
+- **Volledige voeding van het net:** zoveel mogelijk PV-opbrengst terugleveren.
+- **Eigenverbruik:** zon gaat eerst naar het huis, dan de batterij, dan het net.
+- **Tijdsgebaseerde regeling:** je stelt handmatig laad- en ontlaadperiodes in.
+
+Met een gateway kun je ook een **reserve back-up** instellen: het minimale laadniveau (SOC, state of charge) dat de batterij bewaart voor noodstroom (p. 27). Netplanning en NS-beveiliging worden eveneens in de app ingesteld (Installatiegids p. 31-34). Voor de exacte menu's verwijst de handleiding naar aparte mySigen-documenten die niet in deze set zitten.
+
+Apparaat aan of uit via de app: Instellingen, aan/uit. Handmatig: verwijder de decoratieve afdekking en houd de AAN/UIT-knop langer dan 3 seconden ingedrukt, met meer dan 10 seconden tussen uit en aan (Gebruikershandleiding p. 32).
+
+#### Veiligheid en let op
+
+> **Spanningsloos werken en meten**
+> Werk niet aan het systeem terwijl het aan staat. Zet alle toevoer uit: net, omvormer en eventuele dieselgenerator (Installatiegids p. 24). Na uitschakelen ontladen interne onderdelen vertraagd: het etiket noemt 10 minuten wachten (Gebruikershandleiding p. 15). Meet de spanning op het aansluitpunt voor je iets aanraakt (Belangrijke informatie p. 14).
+
+> **DC-zijde en batterij**
+> De handleiding zegt niet met zoveel woorden dat de DC-zijde onder spanning blijft na uitschakelen. Uit de cursus weet je wel: panelen leveren spanning zolang er licht is en een batterij blijft een bron. Meet dus altijd na.
+
+##### Aarding en aansluiten
+
+- Aardingskabel **eerst** aansluiten en bij vervanging **als laatste** losmaken (Belangrijke informatie p. 14).
+- Tussen gateway en huishoudelijke belasting hoort een aardlekschakelaar (RCD) tegen elektrische schok bij lekstroom (Installatiegids p. 3). Voor het niet-back-up paneel noemt de handleiding minimaal het aantal omvormers x 100 mA (p. 4), waarschijnlijk de nominale reststroom.
+- Monteer op de PV-ingang alleen de meegeleverde connectors en corrigeer omgekeerde polariteit direct (p. 35).
+- Kabels alleen verwerken boven 0 °C; na lange kou eerst minimaal 24 uur opwarmen (Belangrijke informatie p. 17).
+
+##### Plaatsing en vrije ruimte
+
+- Niet in een omgeving met rook of ontvlambare of explosieve stoffen, niet in direct zonlicht, regen of stof, en niet in een afgesloten, slecht geventileerde ruimte zonder brandbeveiliging (Installatiegids p. 10).
+- Minimaal 500 m van bronnen van zout- of zuurcorrosie zoals de zeekust (p. 10).
+- Niet op een brandbare ondergrond, niet waar leidingen of kabels in de wand lopen en niet binnen bereik van kinderen (p. 10-11). In een garage niet waar een voertuig kan aanrijden.
+- Binnen goed ventileren: de binnentemperatuur mag niet met meer dan 3 °C stijgen door het apparaat (p. 10).
+- Dek de afdekking nooit af en houd het warmteafvoerkanaal van 300 tot 600 mm vrij (Gebruikershandleiding p. 8). Maatschema's: Installatiegids p. 11-12, Beknopte handleiding p. 1.
+
+##### Temperatuur
+
+Bedrijfstemperatuur -20 tot 55 °C, optimaal 10 tot 35 °C. Onder 0 °C laadt de batterij niet meteen: de ingebouwde verwarming start eerst (en verbruikt stroom). Boven 40 °C daalt het vermogen en slijt het apparaat sneller (Gebruikershandleiding p. 23).
+
+##### Batterij en brand
+
+> **Batterijveiligheid**
+> Batterijsystemen hebben een hoog brandrisico en defecte modules kunnen brandbare en giftige gassen afgeven. Vervangen mag alleen door of onder toezicht van professionals. Meng geen batterijen van andere merken en gebruik een module na een val of schok niet meer (Belangrijke informatie p. 18, Installatiegids p. 13). Bij brand: veilig uitschakelen, kleine brand blussen met CO2 of ABC-poeder, anders het gebouw verlaten en de brandweer bellen (Gebruikershandleiding p. 35).
+
+- Elektrolyt (de batterijvloeistof) is bijtend: bij contact met de ogen minstens 15 minuten spoelen en medische hulp inschakelen (Gebruikershandleiding p. 36).
+- De batterij moet tijdig worden opgeladen: binnen 30 dagen bij een lading vanaf 10%, binnen 7 dagen bij 0 tot 10% (p. 34).
+- Opslag van modules: -25 tot 60 °C, op 40 ± 5% lading, en afhankelijk van de temperatuur na 6 tot 15 maanden bijladen (Belangrijke informatie p. 12-13).
+- Niet gebruiken voor kritische toepassingen zoals medische noodapparatuur of liften (Gebruikershandleiding p. 9).
+
+#### Alarmen en storingen
+
+Het systeem meldt zich op drie manieren:
+
+- **LED-indicatoren op de omvormer** voor DC-zijde, AC-zijde, batterij en communicatie, met een tabel voor vaste en knipperende lampjes (Installatiegids p. 40, Gebruikershandleiding p. 28-29). Bij de batterij betekent knipperen laden of ontladen en een vaste lamp dat alle modules defect zijn.
+- **CommMod-lampjes** voor het 4G-netwerk (p. 37 en p. 29).
+- **De mySigen-app**, waarin je de batterijstatus in real-time volgt. De brochure noemt ook een slimme diagnose in de app (Brochure p. 5-6).
+
+##### Alarmlijst
+
+Een **lijst met alarmcodes** voor SigenStor Home zit niet in deze set. De installateursdocumenten zijn genummerd 01, 02 en 04; nummer 03 ontbreekt. Bij andere Sigen-producten heet document 03 "Lijst van alarmeringen", maar of dat hier ook zo is, staat niet in de handleiding: vraag de leverancier.
+
+Wat de handleiding wel zegt bij storingen: bij afwijkingen (lekkage, vervorming) niet zelf demonteren maar de installateur bellen (Beknopte handleiding p. 2), en het systeem niet gebruiken als het niet wil opladen (Gebruikershandleiding p. 9).
+
+#### Onderhoud
+
+##### Routineonderhoud (Gebruikershandleiding p. 31)
+
+- **Reiniging:** kijk regelmatig of de decoratieve afdekking vuil of beschadigd is en reinig zo nodig. Gebruik geen staalborstels of natte doeken, en schakel het systeem hiervoor uit. De tabel noemt "elke drie maanden" en "elke zes maanden"; welk interval waarvoor geldt, is uit de tekst niet op te maken.
+- **Controle tijdens werking:** kijk naar schade of vervorming, luister naar vreemde geluiden en controleer of de parameters kloppen. Dit kan zonder uit te schakelen.
+- Bij langdurige inactiviteit geeft het systeem een herinnering en schakelt het uit veiligheidsoverwegingen uiteindelijk zelf uit (p. 33).
+
+##### Vervanging van onderdelen (Onderhoudshandleiding p. 9-12)
+
+De onderhoudshandleiding beschrijft alleen de **vervanging van de ventilator**, in drie stappen: systeem uitschakelen (2.1), ventilator verwijderen en nieuwe plaatsen (2.2), systeem inschakelen (2.3). De handleiding bestaat vooral uit tekeningen. Je hebt onder meer een momentsleutel en isolerend schroevendraaiergereedschap nodig (p. 7), en dezelfde etikettenwaarschuwingen gelden: 10 minuten wachten (p. 8).
+
+Voor onderhoud of vervanging geldt verder (Belangrijke informatie p. 18): uitschakelen, wachten tot de vertragingstijd op het etiket is verstreken, pas inschakelen na herstel. Bij krassen in de lak tijdig bijwerken, want roest valt niet onder de garantie (p. 15).

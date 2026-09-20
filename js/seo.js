@@ -48,6 +48,15 @@ window.Seo = (function () {
     if (page === 'module') { var m = CURSUS.module(id); return m ? 'module/' + m.slug + '/' : ''; }
     if (page === 'les') { var x = CURSUS.les(id); return x ? 'les/' + x.les.slug + '/' : ''; }
     if (page === 'naslag') return 'naslag/';
+    if (!window.KENNIS) return '';
+    if (page === 'toepassingen') return 'toepassingen/';
+    if (page === 'toepassing') { var t = KENNIS.toepassing(id); return t ? 'toepassingen/' + t.slug + '/' : ''; }
+    if (page === 'merken') return 'merken/';
+    if (page === 'merk') { var mk = KENNIS.merk(id); return mk ? 'merken/' + mk.slug + '/' : ''; }
+    if (page === 'product') {
+      var pr = KENNIS.product(id), pm = pr && KENNIS.merk(pr.merk);
+      return pr && pm ? 'merken/' + pm.slug + '/' + pr.slug + '/' : '';
+    }
     return '';
   }
 
@@ -56,6 +65,8 @@ window.Seo = (function () {
     if (cfg.path) return cfg.base + rel(page, id);
     if (page === 'dash') return '#/';
     if (page === 'naslag') return '#/naslag';
+    if (page === 'toepassingen') return '#/toepassingen';
+    if (page === 'merken') return '#/merken';
     return '#/' + page + '/' + id;
   }
 
@@ -75,6 +86,18 @@ window.Seo = (function () {
     if (d[0] === 'module' && d[1]) { var m = CURSUS.moduleBijSlug(d[1]); if (m) return { page: 'module', id: m.id }; }
     if (d[0] === 'les' && d[1]) { var x = CURSUS.lesBijSlug(d[1]); if (x) return { page: 'les', id: x.les.id }; }
     if (d[0] === 'naslag') return { page: 'naslag' };
+    if (window.KENNIS) {
+      if (d[0] === 'toepassingen') {
+        if (!d[1]) return { page: 'toepassingen' };
+        var t = KENNIS.toepassingBijSlug(d[1]); if (t) return { page: 'toepassing', id: t.id };
+      }
+      if (d[0] === 'merken') {
+        if (!d[1]) return { page: 'merken' };
+        var mk = KENNIS.merkBijSlug(d[1]);
+        if (mk && !d[2]) return { page: 'merk', id: mk.id };
+        var pr = mk && KENNIS.productBijSlug(mk.id, d[2]); if (pr) return { page: 'product', id: pr.id };
+      }
+    }
     return { page: 'dash' };
   }
 
@@ -83,6 +106,13 @@ window.Seo = (function () {
     if (d[0] === 'module' && d[1] && CURSUS.module(d[1])) return { page: 'module', id: d[1] };
     if (d[0] === 'les' && d[1] && CURSUS.les(d[1])) return { page: 'les', id: d[1] };
     if (d[0] === 'naslag') return { page: 'naslag' };
+    if (window.KENNIS) {
+      if (d[0] === 'toepassingen') return { page: 'toepassingen' };
+      if (d[0] === 'merken') return { page: 'merken' };
+      if (d[0] === 'toepassing' && d[1] && KENNIS.toepassing(d[1])) return { page: 'toepassing', id: d[1] };
+      if (d[0] === 'merk' && d[1] && KENNIS.merk(d[1])) return { page: 'merk', id: d[1] };
+      if (d[0] === 'product' && d[1] && KENNIS.product(d[1])) return { page: 'product', id: d[1] };
+    }
     return { page: 'dash' };
   }
 
@@ -175,6 +205,48 @@ window.Seo = (function () {
           { naam: 'Module ' + mod.nr + ': ' + mod.titel, url: absoluut('module', mod.id) },
           { naam: l.titel, url: canon }
         ])
+      ];
+    } else if (page === 'toepassingen') {
+      var tn = KENNIS.toepassingen.map(function (t) { return t.naam.toLowerCase(); });
+      titel = 'Toepassingen: ' + tn.join(' en ') + ' | Cursus elektrotechniek';
+      desc = kort('Beginnersgids voor ' + tn.join(' en ') + ': hoe het werkt, welke onderdelen je nodig hebt en welke merken en producten er zijn.', 158);
+      graph = [broodkruimel([{ naam: 'Cursus elektrotechniek', url: absoluut('dash') }, { naam: 'Toepassingen', url: canon }])];
+    } else if (page === 'toepassing') {
+      var ta = KENNIS.toepassing(id);
+      titel = ta.seoTitel || (ta.naam + ': uitleg voor beginners, onderdelen en merken');
+      desc = kort(ta.seoBeschrijving || ta.intro, 158);
+      type = 'article';
+      graph = [
+        { '@type': 'Article', headline: ta.naam, description: ta.intro, url: canon, inLanguage: 'nl', author: AUTEUR,
+          license: 'https://www.gnu.org/licenses/gpl-3.0.html', isPartOf: { '@id': cfg.origin + cfg.base + '#cursus' } },
+        broodkruimel([{ naam: 'Cursus elektrotechniek', url: absoluut('dash') }, { naam: 'Toepassingen', url: absoluut('toepassingen') }, { naam: ta.naam, url: canon }])
+      ];
+    } else if (page === 'merken') {
+      titel = 'Merken en producten voor installateurs | Cursus elektrotechniek';
+      desc = kort('Overzicht van merken (' + KENNIS.merken.map(function (m) { return m.naam; }).join(', ') + ') met uitleg en per product een samenvatting van de handleiding.', 158);
+      graph = [broodkruimel([{ naam: 'Cursus elektrotechniek', url: absoluut('dash') }, { naam: 'Merken', url: canon }])];
+    } else if (page === 'merk') {
+      var mm = KENNIS.merk(id);
+      titel = mm.naam + ': merk, producten en handleidingen uitgelegd';
+      desc = kort(mm.intro, 158);
+      type = 'article';
+      graph = [
+        { '@type': 'Article', headline: mm.naam + ': merk en producten', description: mm.intro, url: canon, inLanguage: 'nl', author: AUTEUR,
+          about: { '@type': 'Brand', name: mm.naam, url: mm.website }, license: 'https://www.gnu.org/licenses/gpl-3.0.html' },
+        broodkruimel([{ naam: 'Cursus elektrotechniek', url: absoluut('dash') }, { naam: 'Merken', url: absoluut('merken') }, { naam: mm.naam, url: canon }])
+      ];
+    } else if (page === 'product') {
+      var pp = KENNIS.product(id), pmk = KENNIS.merk(pp.merk);
+      titel = pp.naam + ': uitleg en handleiding samengevat';
+      desc = kort(pp.korteOmschrijving, 158);
+      type = 'article';
+      graph = [
+        { '@type': 'TechArticle', headline: pp.naam + ': uitleg en handleiding samengevat', description: pp.korteOmschrijving, url: canon,
+          inLanguage: 'nl', author: AUTEUR, license: 'https://www.gnu.org/licenses/gpl-3.0.html',
+          about: { '@type': 'Product', name: pp.naam, brand: { '@type': 'Brand', name: pmk.naam } },
+          isPartOf: { '@type': 'WebPage', url: absoluut('merk', pmk.id), name: pmk.naam } },
+        broodkruimel([{ naam: 'Cursus elektrotechniek', url: absoluut('dash') }, { naam: 'Merken', url: absoluut('merken') },
+          { naam: pmk.naam, url: absoluut('merk', pmk.id) }, { naam: pp.naam, url: canon }])
       ];
     } else if (page === 'naslag') {
       titel = 'Naslag elektrotechniek: formules, tabellen en spiekbriefjes';
