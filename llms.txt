@@ -110,6 +110,23 @@ Deze cursus is bedoeld voor aankomend elektriciens, zij-instromers en doe-het-ze
 
 - [Naslag elektrotechniek](https://keesvanwanrooij.github.io/cursus-elektrotechniek/naslag/): formules, stroom bij 230 V, aderkleuren, kabeldoorsnedes, aardlektypes, IP-codes, badkamerzones en meten.
 
+## Kennisbank: toepassingen
+
+- [Laadpaal](https://keesvanwanrooij.github.io/cursus-elektrotechniek/toepassingen/laadpaal/): Een laadpaal laadt een elektrische auto thuis of op het bedrijf. Hier leer je het verschil tussen AC- en DC-laden, wat een installatie vraagt en welke merken en producten er zijn.
+- [Thuisbatterij](https://keesvanwanrooij.github.io/cursus-elektrotechniek/toepassingen/thuisbatterij/): Een thuisbatterij slaat zonne-energie of goedkope stroom op om later in huis te gebruiken. Hier leer je hoe het werkt, welke onderdelen erbij horen en welke merken en producten er zijn.
+
+## Kennisbank: merken en producten
+
+- [Sigenergy](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/): Sigenergy maakt thuisenergiesystemen: hybride omvormers, batterijen, gateways voor noodstroom, laadpalen en de mySigen-app. Hier zie je in een oogopslag welk onderdeel wat doet en waar je in de handleidingen moet zijn.
+  - [SigenStor-batterij (BC-controller en BAT-modules)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/batterij/): De batterijcontroller SigenStor BC en de batterijmodules SigenStor BAT vormen samen het energieopslagsysteem dat je op een Sigen Hybrid-omvormer (SP2 of TP2) of op een Energy Controller aansluit. Let op: de installatiegids voor het BC/BAT-systeem zit niet in de kennisbank, alleen de veiligheidskennisgeving, de brochure en de gidsen van de omvormers.
+  - [Sigen EV AC Charger (7, 11 en 22 kW)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/ev-ac-lader/): Een wandgemonteerde wisselstroom-laadpaal van Sigenergy voor buiten en binnen, met Type 2-connector of Type 2-stopcontact met afsluiting, in drie vermogens (7, 11 en 22 kW). Laadt met zonne-overschot en dynamisch laadbeheer als hij met de Sigen Power Sensor werkt.
+  - [Sigen EV DC Charging Module (SigenStor EVDC, 12,5 en 25 kW)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/ev-dc-module/): Een bidirectionele DC-lader voor thuis die op de DC-bus van het Sigen-systeem zit. Hij laadt een auto met CCS2-stekker en kan, als de auto het ondersteunt, ook energie uit de auto terug naar het huis leveren (V2X).
+  - [Sigen Gateway (Home en HomePro)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/gateway/): De Sigen Gateway is het schakelpunt tussen het net, de omvormer met batterij, de huisgroepen en eventueel een generator. Hij verzorgt de back-up bij netuitval en schakelt zonder merkbare onderbreking om. Er zijn zes varianten: Home SP 12K en Home TP 30K, en HomePro SP, SP-F, TP en TP-L.
+  - [Sigen Hybrid-omvormer (SP2 1-fase en TP2 3-fase)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/hybrid-omvormer/): De omvormer die zonnepanelen en thuisbatterij samenbrengt en er wisselspanning voor huis en net van maakt. De SP2-serie is 1-fase (2.0 tot 6.0 kW), de TP2-serie is 3-fase (3.0 tot 12.0 kW). Deze pagina vat de installateurshandleidingen samen en wijst je de weg naar hoofdstuk en pagina.
+  - [mySigen-app en Sigen Cloud](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/mysigen-app/): De mySigen-app laat de eigenaar de energiestroom van zijn huis in realtime zien en bevat een AI-modus voor slimme planning. Sigen Cloud is het platform voor installateurs voor bewaking, alarmen, parameters op afstand en het beheer van klanten en collega's.
+  - [Sigen Power Sensor en communicatiemodule](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/power-sensor/): De stroom- en vermogenssensoren van Sigenergy (SP-CT100, TP-CT100, SP-DH, TP-DH en de draadloze WI-varianten voor SigenMicro) meten wat het huis van het net afneemt of teruglevert. De Sigen Communication Module (CommMod) is de USB-steker met simkaart waarmee een omvormer via 4G met de cloud praat.
+  - [SigenStor Home (1-fase en 3-fase)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/sigenergy/sigenstor-home/): Het complete thuisenergiesysteem van Sigenergy: een Energy Controller (omvormer) met een of meer SigenStor BAT-batterijmodules, een gateway voor noodstroom, een vermogenssensor en de mySigen-app. Verkrijgbaar in een 1-fase en een 3-fase uitvoering, versie A1.
+
 ## Optioneel
 
 - [Volledige cursustekst in een bestand](https://keesvanwanrooij.github.io/cursus-elektrotechniek/llms-full.txt): alle lessen als doorlopende markdown

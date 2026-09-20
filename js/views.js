@@ -71,6 +71,7 @@ window.Views = (function () {
       '<div class="sect-h"><h2>Deel II - Specialisaties</h2>' +
         '<span>na het fundament, in de volgorde die je werk vraagt</span></div>' +
       '<div class="modgrid">' + deel2.map(moduleKaart).join('') + '</div>' +
+      (window.KennisViews ? KennisViews.dashboardBlok() : '') +
       faqBlok();
   }
 
@@ -175,10 +176,17 @@ window.Views = (function () {
           (steun ? '<a class="btn ghost sm" href="' + E(CURSUS.donatie.url) + '" target="_blank" rel="noopener">' + HART + ' Steun het project</a>' : '') +
         '</div>' +
         '<nav class="foot-col" aria-label="Fundament"><h3>Fundament</h3><ul>' + deel1.map(modLink).join('') + '</ul></nav>' +
-        '<nav class="foot-col" aria-label="Specialisaties"><h3>Specialisaties</h3><ul>' + deel2.map(modLink).join('') + '</ul>' +
-          '<h3>Naslag</h3><ul><li><a href="' + Seo.path('naslag') + '">Formules en tabellen</a></li></ul></nav>' +
+        '<nav class="foot-col" aria-label="Specialisaties"><h3>Specialisaties</h3><ul>' + deel2.map(modLink).join('') + '</ul></nav>' +
+        (window.KENNIS && KENNIS.toepassingen.length
+          ? '<nav class="foot-col" aria-label="Kennisbank"><h3>Toepassingen</h3><ul>' +
+              KENNIS.toepassingen.map(function (t) { return '<li><a href="' + Seo.path('toepassing', t.id) + '">' + E(t.naam) + '</a></li>'; }).join('') +
+            '</ul><h3>Merken</h3><ul>' +
+              KENNIS.merken.map(function (m) { return '<li><a href="' + Seo.path('merk', m.id) + '">' + E(m.naam) + '</a></li>'; }).join('') +
+            '</ul></nav>'
+          : '') +
         '<nav class="foot-col" aria-label="Project"><h3>Project</h3><ul>' +
           '<li><a href="' + Seo.path('dash') + '">Mijn cursus</a></li>' +
+          '<li><a href="' + Seo.path('naslag') + '">Naslag: formules en tabellen</a></li>' +
           ext(REPO, 'Broncode op GitHub') +
           ext(REPO + '/issues/new', 'Fout of suggestie melden') +
           ext('https://www.gnu.org/licenses/gpl-3.0.html', 'Licentie GPLv3') +

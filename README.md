@@ -53,6 +53,15 @@ checklist om te toetsen of de stof beklijft. Er is een aparte **naslagsectie**
 met formules, tabellen en spiekbriefjes, bedoeld om op je telefoon open te
 hebben op de werkvloer.
 
+### Kennisbank: toepassingen, merken en producten
+
+Naast de cursus is er een kennisbank die uitlegt hoe een installatie in elkaar zit en
+welke producten daarbij horen. Begin bij een [toepassing](https://keesvanwanrooij.github.io/cursus-elektrotechniek/toepassingen/)
+(thuisbatterij, laadpaal), of bij een [merk](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/)
+(nu Sigenergy) met per product een uitleg in gewone taal en verwijzingen naar het
+juiste hoofdstuk en de juiste pagina in de originele handleiding. De handleidingen
+zelf staan hier niet: de kennisbank is een wegwijzer, de fabrikant blijft de bron.
+
 ## Hoe het werkt
 
 - **In de browser:** open de link hierboven, of dubbelklik lokaal op
