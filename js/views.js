@@ -154,6 +154,44 @@ window.Views = (function () {
       '<button type="button" class="uit" data-steun-uit>Niet meer tonen</button></aside>';
   }
 
+  /* ===================== KEES VAN WANROOIJ: ECOSYSTEEM ===================== */
+
+  /* Identiek blok in alle sites van het merk (hub, methode, cursus-elektrotechniek, cursus-cv-ketels).
+     Wijzig je de lijst, pas dan alle vier aan. 'hier' markeert de huidige site. */
+  var HUB = 'https://keesvanwanrooij.github.io';
+  var ECO = [
+    { kop: 'Beleggen', links: [
+      { id: 'belegger-kees', url: 'https://beleggerkees.nl', tekst: 'Belegger Kees' },
+      { id: 'methode', url: HUB + '/belegger-kees-methode/', tekst: 'Belegger Kees Methode' },
+      { id: 'beleggen', url: HUB + '/beleggen/', tekst: 'Beleggen met GARP en NLP' }
+    ] },
+    { kop: 'Gratis cursussen', links: [
+      { id: 'elektro', url: HUB + '/cursus-elektrotechniek/', tekst: 'Cursus Elektrotechniek' },
+      { id: 'cv', url: HUB + '/cursus-cv-ketels/', tekst: 'Cursus CV-ketels' }
+    ] },
+    { kop: 'Kees van Wanrooij', links: [
+      { id: 'home', url: HUB + '/', tekst: 'Home' },
+      { id: 'over-mij', url: HUB + '/over-mij/', tekst: 'Over mij' },
+      { id: 'linkedin', url: 'https://www.linkedin.com/in/keesvanwanrooij/', tekst: 'LinkedIn' },
+      { id: 'instagram', url: 'https://www.instagram.com/beleggerkees/', tekst: 'Instagram' },
+      { id: 'github', url: 'https://github.com/keesvanwanrooij', tekst: 'GitHub' }
+    ] }
+  ];
+  var ECO_HIER = 'elektro';
+
+  function ecosysteem() {
+    return '<div class="foot-eco"><div class="foot-eco-grid">' +
+      '<div class="foot-col foot-about"><p class="foot-eco-brand">Kees van Wanrooij<span class="eco-dot" aria-hidden="true">.</span></p>' +
+        '<p>Belegger en NLP-practitioner. Oprichter van Belegger Kees. Educatie, geen beleggingsadvies.</p></div>' +
+      ECO.map(function (k) {
+        return '<nav class="foot-col" aria-label="' + E(k.kop) + '"><h3>' + E(k.kop) + '</h3><ul>' +
+          k.links.map(function (l) {
+            return '<li><a href="' + l.url + '"' + (l.id === ECO_HIER ? ' aria-current="true"' : '') + '>' + E(l.tekst) + '</a></li>';
+          }).join('') + '</ul></nav>';
+      }).join('') +
+    '</div></div>';
+  }
+
   /* ================================== FOOTER ================================== */
 
   var REPO = 'https://github.com/keesvanwanrooij/cursus-elektrotechniek';
@@ -192,6 +230,7 @@ window.Views = (function () {
           ext('https://www.gnu.org/licenses/gpl-3.0.html', 'Licentie GPLv3') +
         '</ul></nav>' +
       '</div>' +
+      ecosysteem() +
       '<div class="foot-base">' +
         '<p class="foot-disclaimer"><strong>Let op:</strong> deze zelfstudie is geen erkend diploma en geen NEN 3140-aanwijzing. ' +
         'Voor zelfstandig werken aan installaties is doorgaans een VOP- of VP-aanwijzing nodig. ' +
