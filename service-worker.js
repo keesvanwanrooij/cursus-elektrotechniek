@@ -4,7 +4,7 @@
    Video's blijven internet nodig hebben; tekst, navigatie en voortgang niet.
    ========================================================================== */
 
-/* Alle cursussen op keesvanwanrooij.github.io delen dezelfde origin, en dus dezelfde Cache Storage.
+/* Alle cursussen op keesvanwanrooij.nl delen dezelfde origin, en dus dezelfde Cache Storage.
    Daarom ruimt deze worker uitsluitend caches op met dit voorvoegsel, nooit die van een andere cursus. */
 var CACHE_VOORVOEGSEL = 'cursus-elektro-';
 var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v5';

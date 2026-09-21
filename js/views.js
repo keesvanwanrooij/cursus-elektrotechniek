@@ -158,7 +158,7 @@ window.Views = (function () {
 
   /* Identiek blok in alle sites van het merk (hub, methode, cursus-elektrotechniek, cursus-cv-ketels).
      Wijzig je de lijst, pas dan alle vier aan. 'hier' markeert de huidige site. */
-  var HUB = 'https://keesvanwanrooij.github.io';
+  var HUB = 'https://keesvanwanrooij.nl';
   var ECO = [
     { kop: 'Beleggen', links: [
       { id: 'belegger-kees', url: 'https://beleggerkees.nl', tekst: 'Belegger Kees' },

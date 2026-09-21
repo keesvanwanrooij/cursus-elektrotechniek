@@ -2,23 +2,23 @@
 
 [![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-db61a2?style=flat-square&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/keesvanwanrooij)
 [![License: GPL v3](https://img.shields.io/badge/licentie-GPL%20v3-blue?style=flat-square&logo=gnu&logoColor=white)](LICENSE)
-[![PWA](https://img.shields.io/badge/installeerbaar-PWA-8a2be2?style=flat-square)](https://keesvanwanrooij.github.io/cursus-elektrotechniek/)
+[![PWA](https://img.shields.io/badge/installeerbaar-PWA-8a2be2?style=flat-square)](https://keesvanwanrooij.nl/cursus-elektrotechniek/)
 
 **Een gratis online basiscursus elektrotechniek voor beginners, in het Nederlands.**
 Zelfstudie in je eigen tempo voor aankomend elektriciens, zij-instromers en
 doe-het-zelvers die het vak serieus willen begrijpen, of iedereen die
 nieuwsgierig is naar hoe de eigen meterkast werkt.
 
-**[→ Start de gratis cursus elektrotechniek](https://keesvanwanrooij.github.io/cursus-elektrotechniek/)**
+**[→ Start de gratis cursus elektrotechniek](https://keesvanwanrooij.nl/cursus-elektrotechniek/)**
 
 Geen account, geen betaalmuur, geen tracking. Werkt in de browser en is
 offline te installeren als app op telefoon en laptop.
 
-Direct naar: [veilig werken en NEN 3140](https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/veiligheid-en-nen-3140/) ·
-[grondbeginselen elektriciteit](https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/) ·
-[de groepenkast](https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/) ·
-[meten en testen](https://keesvanwanrooij.github.io/cursus-elektrotechniek/module/meten-testen-en-verifieren/) ·
-[naslag met formules en tabellen](https://keesvanwanrooij.github.io/cursus-elektrotechniek/naslag/)
+Direct naar: [veilig werken en NEN 3140](https://keesvanwanrooij.nl/cursus-elektrotechniek/module/veiligheid-en-nen-3140/) ·
+[grondbeginselen elektriciteit](https://keesvanwanrooij.nl/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/) ·
+[de groepenkast](https://keesvanwanrooij.nl/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/) ·
+[meten en testen](https://keesvanwanrooij.nl/cursus-elektrotechniek/module/meten-testen-en-verifieren/) ·
+[naslag met formules en tabellen](https://keesvanwanrooij.nl/cursus-elektrotechniek/naslag/)
 
 ---
 
@@ -56,8 +56,8 @@ hebben op de werkvloer.
 ### Kennisbank: toepassingen, merken en producten
 
 Naast de cursus is er een kennisbank die uitlegt hoe een installatie in elkaar zit en
-welke producten daarbij horen. Begin bij een [toepassing](https://keesvanwanrooij.github.io/cursus-elektrotechniek/toepassingen/)
-(thuisbatterij, laadpaal), of bij een [merk](https://keesvanwanrooij.github.io/cursus-elektrotechniek/merken/)
+welke producten daarbij horen. Begin bij een [toepassing](https://keesvanwanrooij.nl/cursus-elektrotechniek/toepassingen/)
+(thuisbatterij, laadpaal), of bij een [merk](https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/)
 (nu Sigenergy) met per product een uitleg in gewone taal en verwijzingen naar het
 juiste hoofdstuk en de juiste pagina in de originele handleiding. De handleidingen
 zelf staan hier niet: de kennisbank is een wegwijzer, de fabrikant blijft de bron.
