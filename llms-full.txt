@@ -1,11 +1,11 @@
 # Cursus Elektrotechniek: volledige tekst
 
-> Gratis online basiscursus elektrotechniek voor beginners in het Nederlands. Bron: https://keesvanwanrooij.nl/cursus-elektrotechniek/
+> Gratis online basiscursus elektrotechniek voor beginners in het Nederlands. Bron: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/
 > Licentie: GPLv3. Deze cursus geeft geen erkend diploma en geen NEN 3140-aanwijzing.
 
 ## Module 1: Veiligheid & NEN 3140
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/veiligheid-en-nen-3140/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/veiligheid-en-nen-3140/
 
 Je leert waarom een lage spanning als 230 V dodelijk is, welke handelingen je met welke aanwijzing mag verrichten, en hoe je een installatie aantoonbaar spanningsloos maakt volgens de vijf stappen.
 
@@ -24,7 +24,7 @@ Daarna oefen je de vijf stappen van veiligstellen en het aantonen van spanningsl
 
 ### Les 1.1: Waarom elektriciteit doodt
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/waarom-elektriciteit-doodt/
 
 **Leerdoel:** Je kunt uitleggen waarom niet de spanning maar de stroom door je lichaam bepalend is, en welke stroomsterkte welk effect heeft.
 
@@ -114,7 +114,7 @@ metalen ladder werken aan iets wat spanning kan voeren.
 
 ### Les 1.2: Wetgeving en bevoegdheden: wat mag jij?
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/wetgeving-en-bevoegdheden-wat-mag-jij/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/wetgeving-en-bevoegdheden-wat-mag-jij/
 
 **Leerdoel:** Je kent het verschil tussen NEN 3140 en NEN 1010, en je weet welke handelingen bij welke aanwijzing horen.
 
@@ -204,7 +204,7 @@ Pas als die zeven vragen beantwoord zijn, begint het technische werk.
 
 ### Les 1.3: De vijf stappen van veiligstellen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/de-vijf-stappen-van-veiligstellen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/de-vijf-stappen-van-veiligstellen/
 
 **Leerdoel:** Je kunt de vijf stappen in de juiste volgorde uitvoeren en uitleggen waarom elke stap er staat.
 
@@ -299,7 +299,7 @@ toestand die iemand anders op elk moment ongedaan kan maken.
 
 ### Les 1.4: Spanningsloosheid aantonen: waarom geen multimeter
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/spanningsloosheid-aantonen-waarom-geen-multimeter/
 
 **Leerdoel:** Je begrijpt wat blindspanning is en waarom uitsluitend een tweepolige spanningstester geschikt is om spanningsloosheid aan te tonen.
 
@@ -383,7 +383,7 @@ punt.
 
 ### Les 1.5: PBM, gereedschap en risico op de werkplek
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/pbm-gereedschap-en-risico-op-de-werkplek/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/pbm-gereedschap-en-risico-op-de-werkplek/
 
 **Leerdoel:** Je weet welke beschermingsmiddelen en gereedschapseisen horen bij elektrotechnisch werk, en welke omgevingsfactoren het risico vergroten.
 
@@ -465,7 +465,7 @@ gebruikt.
 
 ### Les 1.6: Als het toch misgaat
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/als-het-toch-misgaat/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/als-het-toch-misgaat/
 
 **Leerdoel:** Je weet wat je moet doen bij een elektrisch ongeval zonder zelf het tweede slachtoffer te worden.
 
@@ -537,7 +537,7 @@ Die derde vraag is de enige die iets oplevert.
 
 ## Module 2: Grondbeginselen elektriciteit
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/grondbeginselen-elektriciteit/
 
 Spanning, stroom, weerstand en vermogen, en het verschil tussen wissel- en gelijkstroom. Zonder dit fundament blijft installeren het onthouden van trucjes.
 
@@ -556,7 +556,7 @@ Je rekent met echte voorbeelden op 230 V, zoals de stroom van een waterkoker of 
 
 ### Les 2.1: Spanning, stroom en weerstand
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/spanning-stroom-en-weerstand/
 
 **Leerdoel:** Je kunt de drie basisgrootheden beschrijven en uitleggen waarom stroom een gevolg is en geen oorzaak.
 
@@ -633,7 +633,7 @@ het verschil tussen diagnosticeren en onderdelen vervangen.
 
 ### Les 2.2: Vermogen, energie en rekenen op 230 V
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/vermogen-energie-en-rekenen-op-230-v/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/vermogen-energie-en-rekenen-op-230-v/
 
 **Leerdoel:** Je kunt uit een opgegeven vermogen de stroom bepalen en inschatten welke groep en beveiliging daarbij horen.
 
@@ -716,7 +716,7 @@ wattage. Bij motoren, warmtepompen en airco's komt dit terug - module 9 gaat ero
 
 ### Les 2.3: Wisselstroom: sinus, 50 Hz en effectieve waarde
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/wisselstroom-sinus-50-hz-en-effectieve-waarde/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/wisselstroom-sinus-50-hz-en-effectieve-waarde/
 
 **Leerdoel:** Je begrijpt wat wisselspanning is, wat 230 V precies betekent, en waarom fase en nul niet gelijkwaardig zijn.
 
@@ -790,7 +790,7 @@ wanneer het nodig is.
 
 ### Les 2.4: Serie, parallel, open circuit en kortsluiting
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/serie-parallel-open-circuit-en-kortsluiting/
 
 **Leerdoel:** Je kunt serie- en parallelschakelingen doorrekenen en het verschil tussen overbelasting en kortsluiting uitleggen.
 
@@ -866,7 +866,7 @@ groepenkast niet.
 
 ### Les 2.5: 1-fase en 3-fase
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/1-fase-en-3-fase/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/1-fase-en-3-fase/
 
 **Leerdoel:** Je begrijpt waarom er tussen twee fasen 400 V staat en waarom faseverdeling belangrijk is.
 
@@ -939,7 +939,7 @@ moeten worden. Nooit uit het hoofd.
 
 ### Les 2.6: Van vermogen naar groep en beveiliging
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/van-vermogen-naar-groep-en-beveiliging/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/van-vermogen-naar-groep-en-beveiliging/
 
 **Leerdoel:** Je kunt uit een gevraagde belasting afleiden welke groep, doorsnede en beveiliging in de richting van het juiste antwoord liggen.
 
@@ -1009,7 +1009,7 @@ kunt inschatten - niet dat je hem alleen afhandelt.
 
 ## Module 3: De Nederlandse woninginstallatie
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/de-nederlandse-woninginstallatie/
 
 De hele keten van de aansluiting van de netbeheerder tot het laatste stopcontact, en wat elk onderdeel in de meterkast en groepenkast precies doet.
 
@@ -1027,7 +1027,7 @@ Je leert wat een MCB, een RCD en een RCBO doen en waarom aarding en vereffening 
 
 ### Les 3.1: De keten van net tot lamp
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/de-keten-van-net-tot-lamp/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/de-keten-van-net-tot-lamp/
 
 **Leerdoel:** Je kunt de volledige keten benoemen en bij een storing bepalen op welk punt in die keten je moet zoeken.
 
@@ -1097,7 +1097,7 @@ volgende monteur straks wel en niet apart kan uitschakelen.
 
 ### Les 3.2: De meterkast
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/de-meterkast/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/de-meterkast/
 
 **Leerdoel:** Je kunt elk onderdeel van een Nederlandse meterkast benoemen en aanwijzen wat wel en niet van jou is.
 
@@ -1178,7 +1178,7 @@ leidinggevende of het inschakelen van de netbeheerder.
 
 ### Les 3.3: De groepenkast van binnen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/de-groepenkast-van-binnen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/de-groepenkast-van-binnen/
 
 **Leerdoel:** Je kunt de interne opbouw van een groepenkast beschrijven en de weg van een enkele groep volgen.
 
@@ -1254,7 +1254,7 @@ installatie.
 
 ### Les 3.4: MCB, RCD en RCBO: wat beschermt wat
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/mcb-rcd-en-rcbo-wat-beschermt-wat/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/mcb-rcd-en-rcbo-wat-beschermt-wat/
 
 **Leerdoel:** Je kunt exact aangeven wat een installatieautomaat, een aardlekschakelaar en een aardlekautomaat beschermen, en waartegen niet.
 
@@ -1336,7 +1336,7 @@ huis dan niet die groep meeneemt.
 
 ### Les 3.5: Aarding en vereffening
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/aarding-en-vereffening/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/aarding-en-vereffening/
 
 **Leerdoel:** Je kunt uitleggen waarom aarding bestaat, wat vereffening toevoegt, en wat er misgaat als de aarding ontbreekt.
 
@@ -1419,7 +1419,7 @@ detail maar een bevinding die je meldt en niet stilzwijgend uitbreidt.
 
 ## Module 4: Kabel, draad en verbindingen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/kabel-draad-en-verbindingen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/kabel-draad-en-verbindingen/
 
 Een circuit kan elektrisch functioneren en tóch slecht zijn aangelegd. Deze module gaat over kabelkeuze, doorsnede en verbindingen die over twintig jaar nog steeds betrouwbaar zijn.
 
@@ -1437,7 +1437,7 @@ Strippen, lasklemmen, adereindhulzen en trekontlasting oefen je het beste zelf o
 
 ### Les 4.1: Kabels en draden herkennen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/kabels-en-draden-herkennen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/kabels-en-draden-herkennen/
 
 **Leerdoel:** Je kunt de gangbare kabeltypen benoemen en zeggen waar elk type wel en niet voor bedoeld is.
 
@@ -1514,7 +1514,7 @@ visuele veiligheidsinformatie die de volgende monteur heeft.
 
 ### Les 4.2: Doorsnede, belastbaarheid en spanningsval
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/doorsnede-belastbaarheid-en-spanningsval/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/doorsnede-belastbaarheid-en-spanningsval/
 
 **Leerdoel:** Je begrijpt waarom een doorsnede niet één vast getal aan ampères kan voeren, en welke factoren dat beïnvloeden.
 
@@ -1602,7 +1602,7 @@ echte berekening bij - en die maak je in deze fase samen met iemand met meer erv
 
 ### Les 4.3: Strippen en termineren
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/strippen-en-termineren/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/strippen-en-termineren/
 
 **Leerdoel:** Je kunt een geleider strippen en aansluiten zodat de verbinding elektrisch en mechanisch in orde is.
 
@@ -1688,7 +1688,7 @@ Loop na elke verbinding deze lijst af. Na een paar honderd keer doe je het autom
 
 ### Les 4.4: Lasklemmen en overgangsweerstand
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/lasklemmen-en-overgangsweerstand/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/lasklemmen-en-overgangsweerstand/
 
 **Leerdoel:** Je kunt uitleggen waarom een losse verbinding brand veroorzaakt, en de gangbare verbindingsmethoden beoordelen.
 
@@ -1758,7 +1758,7 @@ zoeken en sloopwerk.
 
 ### Les 4.5: Routing, trekontlasting en vakwerk
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/routing-trekontlasting-en-vakwerk/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/routing-trekontlasting-en-vakwerk/
 
 **Leerdoel:** Je kunt een kabeltracé plannen en afmonteren zodat het werk ook over jaren nog te begrijpen en te onderhouden is.
 
@@ -1833,7 +1833,7 @@ werk altijd minstens zo netjes achterlaten als je het aantrof.
 
 ## Module 5: Schakelingen en aansluitpunten
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/schakelingen-en-aansluitpunten/
 
 Schema lezen en tekenen, en daarna de schakelingen bouwen die je in vrijwel elke woning tegenkomt: enkelpolig, wissel, kruis, en de wandcontactdozen eromheen.
 
@@ -1851,7 +1851,7 @@ Je leert installatieschema's lezen en tekenen, dimmers en sensoren kiezen en de 
 
 ### Les 5.1: Schema lezen en tekenen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/schema-lezen-en-tekenen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/schema-lezen-en-tekenen/
 
 **Leerdoel:** Je kunt een installatieschema lezen en zelf schetsen wat er elektrisch moet gebeuren voordat je gereedschap pakt.
 
@@ -1925,7 +1925,7 @@ gewaardeerde onderdeel van je werk, en het kost je een half uur.
 
 ### Les 5.2: De enkelpolige schakeling
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/de-enkelpolige-schakeling/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/de-enkelpolige-schakeling/
 
 **Leerdoel:** Je kunt de eenvoudigste lichtschakeling volledig doorredeneren en aanwijzen wat er elektrisch gebeurt bij het openen van de schakelaar.
 
@@ -1998,7 +1998,7 @@ Module 11 gaat daarop door.
 
 ### Les 5.3: Wissel- en kruisschakeling
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/wissel-en-kruisschakeling/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/wissel-en-kruisschakeling/
 
 **Leerdoel:** Je kunt een wisselschakeling en een kruisschakeling opbouwen en de veelgemaakte fouten erin herkennen.
 
@@ -2078,7 +2078,7 @@ inschakelen.
 
 ### Les 5.4: Serieschakeling, dimmers en sensoren
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/serieschakeling-dimmers-en-sensoren/
 
 **Leerdoel:** Je kunt de serieschakeling toepassen en weet waar je op let bij dimmers en bewegingsmelders met moderne verlichting.
 
@@ -2152,7 +2152,7 @@ parallel aan het armatuur plaatsen.
 
 ### Les 5.5: Wandcontactdozen en doorlussen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/wandcontactdozen-en-doorlussen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/wandcontactdozen-en-doorlussen/
 
 **Leerdoel:** Je kunt wandcontactdozen correct aansluiten, doorlussen en beoordelen wanneer een aparte groep nodig is.
 
@@ -2224,7 +2224,7 @@ je daarom voor een uitvoering waarbij de kabeldoorvoer zelf dicht is.
 
 ### Les 5.6: Vochtige ruimtes: zones en IP-codering
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/vochtige-ruimtes-zones-en-ip-codering/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/vochtige-ruimtes-zones-en-ip-codering/
 
 **Leerdoel:** Je kunt de badkamerzones benoemen en bepalen welke apparatuur waar is toegestaan.
 
@@ -2297,7 +2297,7 @@ Twee praktische punten die je vaak tegenkomt:
 
 ## Module 6: Groepenkast: ontwerp en montage
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/groepenkast-ontwerp-en-montage/
 
 De verdeelinrichting bepaalt rechtstreeks de brand- en aanraakveiligheid van een woning. Deze module gaat over het ontwerp: welke groep, welke karakteristiek, welk type aardlek en waarom.
 
@@ -2315,7 +2315,7 @@ Ook 3-fase, faseverdeling en een onderbroken nul komen aan bod. In de praktijk k
 
 ### Les 6.1: Groepsindeling ontwerpen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/groepsindeling-ontwerpen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/groepsindeling-ontwerpen/
 
 **Leerdoel:** Je kunt een verdeling in eindgroepen opstellen die past bij het gebruik van de woning.
 
@@ -2392,7 +2392,7 @@ uitbreiding een complete vervanging wordt.
 
 ### Les 6.2: Karakteristiek en selectiviteit
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/karakteristiek-en-selectiviteit/
 
 **Leerdoel:** Je kunt een B- of C-karakteristiek kiezen en uitleggen wat selectiviteit betekent voor de installatie.
 
@@ -2474,7 +2474,7 @@ gedraagt.
 
 ### Les 6.3: Aardlekarchitectuur en aardlektypes
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/aardlekarchitectuur-en-aardlektypes/
 
 **Leerdoel:** Je kunt bepalen welk type aardlekbeveiliging bij welke belasting hoort en waarom het verkeerde type blind kan zijn.
 
@@ -2549,7 +2549,7 @@ De systematische aanpak van dit zoekproces staat in module 8.
 
 ### Les 6.4: 3-fase en de nulgeleider
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/3-fase-en-de-nulgeleider/
 
 **Leerdoel:** Je begrijpt waarom faseverdeling telt en waarom een onderbroken nul bij 3-fase catastrofaal is.
 
@@ -2621,7 +2621,7 @@ en is gemarkeerd. Een nul die op een fasepositie wordt aangesloten, levert direc
 
 ### Les 6.5: Een kast opbouwen en opleveren
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/een-kast-opbouwen-en-opleveren/
 
 **Leerdoel:** Je kent de volgorde en de kwaliteitseisen bij het bouwen van een verdeelinrichting, als observator en toekomstig uitvoerder.
 
@@ -2689,7 +2689,7 @@ het enige wat telt.
 
 ## Module 7: Meten, testen en verifiëren
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/meten-testen-en-verifieren/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/meten-testen-en-verifieren/
 
 Van de multimeter tot de isolatieweerstandsmeting: welk instrument beantwoordt welke vraag, en wat probeer je met een meting eigenlijk te bewijzen.
 
@@ -2707,7 +2707,7 @@ Ook leer je wat er in een opleverrapport volgens NEN 1010 hoort te staan. In een
 
 ### Les 7.1: Welk instrument voor welke vraag
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/welk-instrument-voor-welke-vraag/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/welk-instrument-voor-welke-vraag/
 
 **Leerdoel:** Je formuleert vóór elke meting wat je wilt bewijzen, en kiest daar het instrument bij.
 
@@ -2776,7 +2776,7 @@ Controleer daarnaast altijd:
 
 ### Les 7.2: De multimeter beheersen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/de-multimeter-beheersen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/de-multimeter-beheersen/
 
 **Leerdoel:** Je kunt een multimeter correct instellen voor spanning, weerstand en doorbelmeting, en weet waarom stroommeting anders is.
 
@@ -2847,7 +2847,7 @@ is. Voor het bewijzen van veiligheid heb je ander gereedschap.
 
 ### Les 7.3: Continuïteit en de beschermingsleiding
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/continuiteit-en-de-beschermingsleiding/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/continuiteit-en-de-beschermingsleiding/
 
 **Leerdoel:** Je kunt aantonen dat de beschermingsleiding overal is doorverbonden en waarom die meting essentieel is.
 
@@ -2923,7 +2923,7 @@ daadwerkelijk metaal raakt en niet op een inmiddels kunststof stuk leiding?
 
 ### Les 7.4: Isolatieweerstand meten
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/isolatieweerstand-meten/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/isolatieweerstand-meten/
 
 **Leerdoel:** Je begrijpt wat een isolatiemeting bewijst, waarom die op 500 V DC gebeurt en welke voorbereiding verplicht is.
 
@@ -2995,7 +2995,7 @@ element in een boiler of vloerverwarming dat begint te lekken.
 
 ### Les 7.5: Aardlektest, Zs en de installatietester
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/aardlektest-zs-en-de-installatietester/
 
 **Leerdoel:** Je weet wat een RCD-test en een Zs-meting bewijzen en waarom de testknop daarvoor niet volstaat.
 
@@ -3074,7 +3074,7 @@ handen krijgt.
 
 ### Les 7.6: Opleveren: wat je aantoont en vastlegt
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/opleveren-wat-je-aantoont-en-vastlegt/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/opleveren-wat-je-aantoont-en-vastlegt/
 
 **Leerdoel:** Je weet welke controles en metingen samen de verificatie van een installatie vormen.
 
@@ -3147,7 +3147,7 @@ meer dan de kwaliteit die hij niet kan zien.
 
 ## Module 8: Storingzoeken en oplevering
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/storingzoeken-en-oplevering/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/storingzoeken-en-oplevering/
 
 Iedereen kan iets monteren. Een goede monteur kan uitleggen wat er fout is, waarom het fout is, en hoe hij dat systematisch heeft vastgesteld.
 
@@ -3165,7 +3165,7 @@ Onderbroken nullen, losse verbindingen en aardlekken die steeds afslaan komen ui
 
 ### Les 8.1: Het negenstappenmodel
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/het-negenstappenmodel/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/het-negenstappenmodel/
 
 **Leerdoel:** Je kunt een storing benaderen via een vaste, herhaalbare volgorde in plaats van via ingevingen.
 
@@ -3253,7 +3253,7 @@ ingeving zou zijn geweest.
 
 ### Les 8.2: Van symptoom naar hypothese
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/van-symptoom-naar-hypothese/
 
 **Leerdoel:** Je kunt een vage klacht omzetten in een toetsbare hypothese en die gericht onderzoeken.
 
@@ -3334,7 +3334,7 @@ heeft bijgehouden.
 
 ### Les 8.3: De klassieke storingen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/de-klassieke-storingen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/de-klassieke-storingen/
 
 **Leerdoel:** Je herkent de meest voorkomende storingen aan hun symptoompatroon.
 
@@ -3415,7 +3415,7 @@ Dat klinkt triviaal, maar het is de snelste test die er is en hij wordt vaak ove
 
 ### Les 8.4: Een aardlekstoring lokaliseren
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/een-aardlekstoring-lokaliseren/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/een-aardlekstoring-lokaliseren/
 
 **Leerdoel:** Je kunt systematisch bepalen welke groep en welk apparaat een aardlek laat afschakelen.
 
@@ -3485,7 +3485,7 @@ is defect", en het voorkomt dat de klant onnodig een apparaat vervangt.
 
 ### Les 8.5: Afronden, controleren en uitleggen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/afronden-controleren-en-uitleggen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/afronden-controleren-en-uitleggen/
 
 **Leerdoel:** Je kunt een reparatie afronden zodat de storing niet terugkomt en de klant begrijpt wat er is gebeurd.
 
@@ -3563,7 +3563,7 @@ het meest wordt gewaardeerd.
 
 ## Module 9: Warmtepomp, airco en cv-ketel
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/warmtepomp-airco-en-cv-ketel/
 
 Wat een warmtepomp, airco of cv-ketel elektrisch van de installatie vraagt: eigen groep, doorsnede, aardlektype, inschakelstroom en de scheiding tussen sterk- en zwakstroom.
 
@@ -3581,7 +3581,7 @@ Ook de cv-ketel en de vraag of de aansluiting van de woning de extra belasting a
 
 ### Les 9.1: Wat een warmtepomp elektrisch vraagt
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/wat-een-warmtepomp-elektrisch-vraagt/
 
 **Leerdoel:** Je kunt uit een typeplaatje of datablad afleiden welk elektrisch vermogen en welke stroom je moet aanhouden.
 
@@ -3660,7 +3660,7 @@ de stoep staat en de installatie het niet aankan.
 
 ### Les 9.2: Eigen groep, doorsnede en karakteristiek
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/eigen-groep-doorsnede-en-karakteristiek/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/eigen-groep-doorsnede-en-karakteristiek/
 
 **Leerdoel:** Je kunt de groep voor een klimaatinstallatie dimensioneren, rekening houdend met lengte en inschakelgedrag.
 
@@ -3749,7 +3749,7 @@ zo'n schakelaar in de praktijk vrijwel altijd wordt gevraagd door de onderhoudsm
 
 ### Les 9.3: Aardlektype bij frequentiegeregelde toestellen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/aardlektype-bij-frequentiegeregelde-toestellen/
 
 **Leerdoel:** Je kunt onderbouwen waarom een inverter-toestel een type A, F of B aardlek vraagt en wat er misgaat met het verkeerde type.
 
@@ -3826,7 +3826,7 @@ verdenken.
 
 ### Les 9.4: Buitenunit en binnenunit koppelen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/buitenunit-en-binnenunit-koppelen/
 
 **Leerdoel:** Je kunt de voeding en de communicatiekabel tussen de units correct uitvoeren en de scheiding tussen sterk- en zwakstroom bewaken.
 
@@ -3903,7 +3903,7 @@ koudemiddelcircuit en de inbedrijfstelling.
 
 ### Les 9.5: Airco en split-units
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/airco-en-split-units/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/airco-en-split-units/
 
 **Leerdoel:** Je kent de elektrische aansluiting van een split-unit en weet waar de grens ligt tussen elektrotechnisch en koeltechnisch werk.
 
@@ -3979,7 +3979,7 @@ het toestel jarenlang, continu en onbeheerd draait.
 
 ### Les 9.6: Cv-ketel, thermostaat en gelijktijdigheid
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/cv-ketel-thermostaat-en-gelijktijdigheid/
 
 **Leerdoel:** Je kent de elektrische kant van een cv-installatie en kunt beoordelen of een aansluiting extra belasting aankan.
 
@@ -4059,7 +4059,7 @@ document dat vertelt wat er is afgesproken en uitgevoerd.
 
 ## Module 10: Zonnepanelen en laadpalen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/zonnepanelen-en-laadpalen/
 
 PV-installaties en laadpalen komen in vrijwel elke woning voor. Ook als je ze niet zelf installeert, veranderen ze de manier waarop je aan die installatie werkt.
 
@@ -4076,7 +4076,7 @@ Bij de laadpaal ga je in op de eigen groep, het aardlektype B en load balancing.
 
 ### Les 10.1: PV-installatie in hoofdlijnen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/pv-installatie-in-hoofdlijnen/
 
 **Leerdoel:** Je kunt de onderdelen van een zonnestroominstallatie benoemen en de weg van paneel naar groepenkast volgen.
 
@@ -4147,7 +4147,7 @@ volgende les.
 
 ### Les 10.2: Waarom PV je veiligheidsprocedure verandert
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/waarom-pv-je-veiligheidsprocedure-verandert/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/waarom-pv-je-veiligheidsprocedure-verandert/
 
 **Leerdoel:** Je kunt benoemen welke aanpassingen in het veiligstellen nodig zijn bij een installatie met PV of opslag.
 
@@ -4220,7 +4220,7 @@ PV, controleer dan of het verschil maakt of de omvormer actief is.
 
 ### Les 10.3: Laadpalen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/laadpalen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/laadpalen/
 
 **Leerdoel:** Je kent de elektrische eisen van een laadpaal en kunt beoordelen of een woning er een aankan.
 
@@ -4294,7 +4294,7 @@ mantelbuis meeleggen kost bijna niets en scheelt later een compleet nieuw tracé
 
 ### Les 10.4: Slimme meter, netbelasting en verzwaring
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/slimme-meter-netbelasting-en-verzwaring/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/slimme-meter-netbelasting-en-verzwaring/
 
 **Leerdoel:** Je kunt beoordelen wanneer een aansluiting niet meer toereikend is en wat de opties zijn.
 
@@ -4352,7 +4352,7 @@ meest waardevolle wat je kunt leveren.
 
 ## Module 11: Domotica en slimme installaties
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/domotica-en-slimme-installaties/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/domotica-en-slimme-installaties/
 
 Slimme schakelaars, bussystemen en de voorbereidingen die je tijdens gewoon installatiewerk treft zodat domotica later mogelijk blijft.
 
@@ -4368,7 +4368,7 @@ Het belangrijkste dat je meeneemt is voorbereiding: met loze leidingen en een ex
 
 ### Les 11.1: Slimme schakelaars en de nuldraad
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/slimme-schakelaars-en-de-nuldraad/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/slimme-schakelaars-en-de-nuldraad/
 
 **Leerdoel:** Je kunt beoordelen of een bestaande installatie geschikt is voor een slimme schakelaar en welke alternatieven er zijn.
 
@@ -4430,7 +4430,7 @@ onnodig dichttimmeren.
 
 ### Les 11.2: Bussystemen: centraal en decentraal
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/bussystemen-centraal-en-decentraal/
 
 **Leerdoel:** Je begrijpt het principe van een bussysteem en waarin dat verschilt van conventionele installatietechniek.
 
@@ -4496,7 +4496,7 @@ Je hoeft geen KNX-programmeur te worden. Wat je moet kunnen:
 
 ### Les 11.3: Voorbereiden zonder nu al te kiezen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/voorbereiden-zonder-nu-al-te-kiezen/
 
 **Leerdoel:** Je kunt bij regulier installatiewerk voorbereidingen treffen die latere uitbreiding mogelijk houden.
 
@@ -4563,7 +4563,7 @@ installatie. De tussenweg is de enige verkeerde optie.
 
 ## Module 12: Gereedschap, kwaliteit en ondernemen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/module/gereedschap-kwaliteit-en-ondernemen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/module/gereedschap-kwaliteit-en-ondernemen/
 
 Welk gereedschap je echt nodig hebt, hoe je werk aflevert dat een volgende monteur begrijpt, waar je bevoegdheid ophoudt, en wat er komt kijken bij zelfstandig werken.
 
@@ -4581,7 +4581,7 @@ Je leest ook wat een VOP- of VP-aanwijzing, VCA en een verzekering betekenen als
 
 ### Les 12.1: Je gereedschapskist
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/je-gereedschapskist/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/je-gereedschapskist/
 
 **Leerdoel:** Je kunt een werkbare basisuitrusting samenstellen en onderscheiden wat noodzakelijk is van wat kan wachten.
 
@@ -4656,7 +4656,7 @@ uur; een goed gevulde bus voorkomt er tientallen per jaar.
 
 ### Les 12.2: Meetapparatuur kiezen
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/meetapparatuur-kiezen/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/meetapparatuur-kiezen/
 
 **Leerdoel:** Je kunt meetapparatuur selecteren op basis van meetcategorie, functie en het werk dat je doet.
 
@@ -4720,7 +4720,7 @@ Ze kosten weinig en kunnen alles kosten.
 
 ### Les 12.3: Vakwerk afleveren
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/vakwerk-afleveren/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/vakwerk-afleveren/
 
 **Leerdoel:** Je kunt werk opleveren dat technisch klopt én zichtbaar goed is, en dat overdraagbaar is aan een volgende monteur.
 
@@ -4788,7 +4788,7 @@ het meest aan hebben.
 
 ### Les 12.4: Bevoegdheden, certificering en aansprakelijkheid
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/bevoegdheden-certificering-en-aansprakelijkheid/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/bevoegdheden-certificering-en-aansprakelijkheid/
 
 **Leerdoel:** Je kunt benoemen wat je mag, welke certificering daarbij hoort, en welke risico's je loopt bij zelfstandig werk.
 
@@ -4863,7 +4863,7 @@ collega's het meest waarderen.
 
 ### Les 12.5: Klantcommunicatie
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/les/klantcommunicatie/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/les/klantcommunicatie/
 
 **Leerdoel:** Je kunt verwachtingen managen, technische bevindingen begrijpelijk uitleggen en nee zeggen wanneer dat nodig is.
 
@@ -4939,7 +4939,7 @@ goedkoper dan elke vorm van reclame en het is bovendien inhoudelijk het juiste o
 
 ## Naslag elektrotechniek
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/naslag/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/naslag/
 
 ### Formules
 
@@ -5170,7 +5170,7 @@ Weerstand meten **uitsluitend spanningsloos**. Isolatiemeting: alle verbruikers 
 
 ### Toepassing: Laadpaal
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/toepassingen/laadpaal/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/toepassingen/laadpaal/
 
 Een laadpaal laadt een elektrische auto thuis of op het bedrijf. Hier leer je het verschil tussen AC- en DC-laden, wat een installatie vraagt en welke merken en producten er zijn.
 
@@ -5250,7 +5250,7 @@ Voor slim laden heeft de paal een verbinding nodig (wifi, bekabeld of mobiel) en
 
 ### Toepassing: Thuisbatterij
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/toepassingen/thuisbatterij/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/toepassingen/thuisbatterij/
 
 Een thuisbatterij slaat zonne-energie of goedkope stroom op om later in huis te gebruiken. Hier leer je hoe het werkt, welke onderdelen erbij horen en welke merken en producten er zijn.
 
@@ -5350,7 +5350,7 @@ Verder geldt in het algemeen:
 
 ### Merk: Sigenergy
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/
 
 Sigenergy maakt thuisenergiesystemen: hybride omvormers, batterijen, gateways voor noodstroom, laadpalen en de mySigen-app. Hier zie je in een oogopslag welk onderdeel wat doet en waar je in de handleidingen moet zijn.
 
@@ -5486,7 +5486,7 @@ Het document noemt geen ernstniveaus, maar in de aanbevelingen zie je drie soort
 
 ### Product: SigenStor-batterij (BC-controller en BAT-modules)
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/batterij/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/batterij/
 
 De batterijcontroller SigenStor BC en de batterijmodules SigenStor BAT vormen samen het energieopslagsysteem dat je op een Sigen Hybrid-omvormer (SP2 of TP2) of op een Energy Controller aansluit. Let op: de installatiegids voor het BC/BAT-systeem zit niet in de kennisbank, alleen de veiligheidskennisgeving, de brochure en de gidsen van de omvormers.
 
@@ -5653,7 +5653,7 @@ Let op: de Home-gids noemt de modellen BAT 5.0 tot 10.0, de brochure alleen BAT 
 
 ### Product: Sigen EV AC Charger (7, 11 en 22 kW)
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/ev-ac-lader/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/ev-ac-lader/
 
 Een wandgemonteerde wisselstroom-laadpaal van Sigenergy voor buiten en binnen, met Type 2-connector of Type 2-stopcontact met afsluiting, in drie vermogens (7, 11 en 22 kW). Laadt met zonne-overschot en dynamisch laadbeheer als hij met de Sigen Power Sensor werkt.
 
@@ -5863,7 +5863,7 @@ Wat je bij een storing moet doen (resetten, meten, contact opnemen met Sigenergy
 
 ### Product: Sigen EV DC Charging Module (SigenStor EVDC, 12,5 en 25 kW)
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/ev-dc-module/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/ev-dc-module/
 
 Een bidirectionele DC-lader voor thuis die op de DC-bus van het Sigen-systeem zit. Hij laadt een auto met CCS2-stekker en kan, als de auto het ondersteunt, ook energie uit de auto terug naar het huis leveren (V2X).
 
@@ -6115,7 +6115,7 @@ Een foutcodetabel, meetwaarden voor storingzoeken en herstelprocedures staan **n
 
 ### Product: Sigen Gateway (Home en HomePro)
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/gateway/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/gateway/
 
 De Sigen Gateway is het schakelpunt tussen het net, de omvormer met batterij, de huisgroepen en eventueel een generator. Hij verzorgt de back-up bij netuitval en schakelt zonder merkbare onderbreking om. Er zijn zes varianten: Home SP 12K en Home TP 30K, en HomePro SP, SP-F, TP en TP-L.
 
@@ -6333,7 +6333,7 @@ Dit ontbreekt in de documenten die ik heb gelezen:
 
 ### Product: Sigen Hybrid-omvormer (SP2 1-fase en TP2 3-fase)
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/hybrid-omvormer/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/hybrid-omvormer/
 
 De omvormer die zonnepanelen en thuisbatterij samenbrengt en er wisselspanning voor huis en net van maakt. De SP2-serie is 1-fase (2.0 tot 6.0 kW), de TP2-serie is 3-fase (3.0 tot 12.0 kW). Deze pagina vat de installateurshandleidingen samen en wijst je de weg naar hoofdstuk en pagina.
 
@@ -6538,7 +6538,7 @@ Om te voorkomen dat je iets aanneemt dat niet gedocumenteerd is:
 
 ### Product: mySigen-app en Sigen Cloud
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/mysigen-app/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/mysigen-app/
 
 De mySigen-app laat de eigenaar de energiestroom van zijn huis in realtime zien en bevat een AI-modus voor slimme planning. Sigen Cloud is het platform voor installateurs voor bewaking, alarmen, parameters op afstand en het beheer van klanten en collega's.
 
@@ -6634,7 +6634,7 @@ Een **Sigen EV DC Charging Module** die aan een bestaande installatie wordt toeg
 
 ### Product: Sigen Power Sensor en communicatiemodule
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/power-sensor/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/power-sensor/
 
 De stroom- en vermogenssensoren van Sigenergy (SP-CT100, TP-CT100, SP-DH, TP-DH en de draadloze WI-varianten voor SigenMicro) meten wat het huis van het net afneemt of teruglevert. De Sigen Communication Module (CommMod) is de USB-steker met simkaart waarmee een omvormer via 4G met de cloud praat.
 
@@ -6740,7 +6740,7 @@ Alleen wat de handleidingen zelf zeggen:
 
 ### Product: SigenStor Home (1-fase en 3-fase)
 
-URL: https://keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/sigenstor-home/
+URL: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/merken/sigenergy/sigenstor-home/
 
 Het complete thuisenergiesysteem van Sigenergy: een Energy Controller (omvormer) met een of meer SigenStor BAT-batterijmodules, een gateway voor noodstroom, een vermogenssensor en de mySigen-app. Verkrijgbaar in een 1-fase en een 3-fase uitvoering, versie A1.
 
