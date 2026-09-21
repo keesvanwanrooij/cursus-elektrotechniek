@@ -34,4 +34,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://keesvanwanrooij.nl/cursus-elektrotechniek/sitemap.xml
+Sitemap: https://www.keesvanwanrooij.nl/cursus-elektrotechniek/sitemap.xml
