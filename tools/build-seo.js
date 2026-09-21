@@ -23,7 +23,7 @@ process.argv.slice(2).forEach(function (a) {
   if (m) args[m[1]] = m[2];
 });
 
-var SITE = args.site || 'https://keesvanwanrooij.github.io';
+var SITE = args.site || 'https://keesvanwanrooij.nl';
 var BASE = args.base || '/cursus-elektrotechniek/';
 var OUT = path.resolve(args.out || ROOT);
 /* Google Search Console: verificatie via HTML-tag, alleen op de homepage van de URL-prefix property. */
