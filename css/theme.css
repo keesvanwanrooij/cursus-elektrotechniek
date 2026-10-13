@@ -108,16 +108,8 @@ button { font: inherit; cursor: pointer; }
 .foot-base p { margin:0; font-size:12.5px; color:var(--text-dim); line-height:1.55; }
 .foot-disclaimer { flex:1; min-width:280px; max-width:80ch; }
 .foot-copy { white-space:nowrap; }
+.foot-copy a { color:inherit; }
 
-/* Kees van Wanrooij ecosysteem: hetzelfde blok in alle sites van het merk */
-.foot-eco { max-width:var(--maxw); margin:0 auto; padding:0 22px; }
-.foot-eco-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:30px; padding:28px 0 30px; border-top:1px solid var(--border); }
-.foot-eco-brand { margin:0; font-size:16px; font-weight:700; }
-.foot-eco-brand .eco-dot { color:var(--accent); }
-.foot-eco .foot-about p:not(.foot-eco-brand) { margin:8px 0 0; }
-.foot-eco a[aria-current] { color:var(--text); font-weight:600; }
-@media (max-width: 900px) { .foot-eco-grid { grid-template-columns:1fr 1fr; } .foot-eco .foot-about { grid-column:1 / -1; } }
-@media (max-width: 640px) { .foot-eco-grid { grid-template-columns:1fr; gap:22px; } }
 
 
 /* ============================== KNOPPEN ============================== */

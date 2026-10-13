@@ -8,7 +8,7 @@
    Zoekmachines krijgen zo echte HTML per URL. In de browser neemt app.js over.
 
    Gebruik:   node tools/build-seo.js
-   Test:      node tools/build-seo.js --out=<map> --base=/cursus-elektrotechniek/
+   Test:      node tools/build-seo.js --out=<map>
    Opnieuw draaien na elke wijziging aan content/, js/views.js of js/seo.js.
    ========================================================================== */
 
@@ -23,8 +23,9 @@ process.argv.slice(2).forEach(function (a) {
   if (m) args[m[1]] = m[2];
 });
 
-var SITE = args.site || 'https://www.keesvanwanrooij.nl';
-var BASE = args.base || '/cursus-elektrotechniek/';
+/* Eigen subdomein sinds oktober 2026 (daarvoor www.keesvanwanrooij.nl/cursus-elektrotechniek/). */
+var SITE = args.site || 'https://elektrotechniek.keesvanwanrooij.nl';
+var BASE = args.base || '/';
 var OUT = path.resolve(args.out || ROOT);
 /* Google Search Console: verificatie via HTML-tag, alleen op de homepage van de URL-prefix property. */
 var GOOGLE_VERIFICATIE = '';
