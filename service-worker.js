@@ -4,10 +4,10 @@
    Video's blijven internet nodig hebben; tekst, navigatie en voortgang niet.
    ========================================================================== */
 
-/* Alle cursussen op www.keesvanwanrooij.nl delen dezelfde origin, en dus dezelfde Cache Storage.
-   Daarom ruimt deze worker uitsluitend caches op met dit voorvoegsel, nooit die van een andere cursus. */
+/* Deze worker ruimt uitsluitend caches op met dit eigen voorvoegsel. Dat was nodig toen de
+   cursussen samen op www.keesvanwanrooij.nl stonden, en het blijft een veilige gewoonte. */
 var CACHE_VOORVOEGSEL = 'cursus-elektro-';
-var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v5';
+var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v6';
 
 var APP_SHELL = [
   './',

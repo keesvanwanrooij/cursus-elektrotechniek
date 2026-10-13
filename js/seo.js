@@ -10,7 +10,7 @@ window.Seo = (function () {
   var cfg = { path: false, base: '/', origin: '' };
 
   var NAAM = 'Cursus Elektrotechniek';
-  var AUTEUR = { '@type': 'Person', name: 'Kees van Wanrooij', url: 'https://github.com/keesvanwanrooij' };
+  var AUTEUR = { '@type': 'Person', name: 'Kees van Wanrooij', url: 'https://www.keesvanwanrooij.nl/' };
 
   var H1 = 'Gratis cursus elektrotechniek voor beginners';
   var INTRO = 'Een gratis online basiscursus elektrotechniek voor zelfstudie, in het Nederlands. ' +
