@@ -177,7 +177,7 @@ window.Views = (function () {
 
     return '<div class="foot-grid">' +
         '<div class="foot-col foot-about">' +
-          '<div class="foot-logo"><span class="bolt">⚡</span><b>Cursus Elektrotechniek</b></div>' +
+          '<div class="foot-logo"><span class="bolt"><svg viewBox="0 0 100 100" width="28" height="28" aria-hidden="true" focusable="false"><polygon points="55.76,19.76 35.60,54.32 47.12,54.32 41.36,80.24 65.84,44.24 52.88,44.24 58.64,19.76" fill="currentColor"/></svg></span><b>Cursus Elektrotechniek</b></div>' +
           '<p>Gratis online cursus elektrotechniek voor beginners, in het Nederlands. Zelfstudie in je eigen tempo, ook offline.</p>' +
           (steun ? '<a class="btn ghost sm" href="' + E(CURSUS.donatie.url) + '" target="_blank" rel="noopener">' + HART + ' Steun het project</a>' : '') +
         '</div>' +

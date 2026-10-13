@@ -173,7 +173,7 @@ if (OUT !== ROOT) {
   ['css', 'js', 'content', 'icons'].forEach(function (d) {
     fs.cpSync(path.join(ROOT, d), path.join(OUT, d), { recursive: true });
   });
-  ['manifest.json', 'service-worker.js', 'og-image.png'].forEach(function (f) {
+  ['manifest.json', 'service-worker.js', 'og-image.png', 'favicon.ico'].forEach(function (f) {
     if (fs.existsSync(path.join(ROOT, f))) fs.copyFileSync(path.join(ROOT, f), path.join(OUT, f));
   });
 }
@@ -187,34 +187,55 @@ schrijf('index.html', pagina('dash', null, false));
 })();
 schrijf('naslag/index.html', pagina('naslag', null, true));
 
-var urls = [{ loc: Seo.absoluut('dash') }, { loc: Seo.absoluut('naslag') }];
+/* lastmod per pagina: datum van de laatste commit op het bronbestand, niet de bouwdatum. */
+var execFileSync = require('child_process').execFileSync;
+var gitDatumCache = {};
+function gitDatum(bestanden) {
+  var lijst = [].concat(bestanden).filter(Boolean), nieuwste = '';
+  lijst.forEach(function (b) {
+    if (!(b in gitDatumCache)) {
+      try { gitDatumCache[b] = execFileSync('git', ['log', '-1', '--format=%cs', '--', b], { cwd: ROOT, encoding: 'utf8' }).trim(); }
+      catch (e) { gitDatumCache[b] = ''; }
+    }
+    if (gitDatumCache[b] > nieuwste) nieuwste = gitDatumCache[b];
+  });
+  return nieuwste || DATUM;
+}
+function kennisBron(id) {
+  var gevonden = KENNIS_BESTANDEN.filter(function (f) {
+    return fs.readFileSync(path.join(ROOT, f), 'utf8').indexOf("id: '" + id + "'") !== -1;
+  });
+  return gevonden.length ? gevonden : KENNIS_BESTANDEN;
+}
+
+var urls = [{ loc: Seo.absoluut('dash'), bron: ['content/index.js', 'js/views.js'] }, { loc: Seo.absoluut('naslag'), bron: ['content/naslag.js'] }];
 
 CURSUS.modules.forEach(function (m) {
   schrijf(Seo.rel('module', m.id) + 'index.html', pagina('module', m.id, true));
-  urls.push({ loc: Seo.absoluut('module', m.id) });
+  urls.push({ loc: Seo.absoluut('module', m.id), bron: ['content/' + m.id + '.js'] });
 });
 
 schrijf('toepassingen/index.html', pagina('toepassingen', null, true));
-urls.push({ loc: Seo.absoluut('toepassingen') });
+urls.push({ loc: Seo.absoluut('toepassingen'), bron: KENNIS_BESTANDEN });
 KENNIS.toepassingen.forEach(function (t) {
   schrijf(Seo.rel('toepassing', t.id) + 'index.html', pagina('toepassing', t.id, true));
-  urls.push({ loc: Seo.absoluut('toepassing', t.id) });
+  urls.push({ loc: Seo.absoluut('toepassing', t.id), bron: kennisBron(t.id) });
 });
 schrijf('merken/index.html', pagina('merken', null, true));
-urls.push({ loc: Seo.absoluut('merken') });
+urls.push({ loc: Seo.absoluut('merken'), bron: KENNIS_BESTANDEN });
 KENNIS.merken.forEach(function (m) {
   schrijf(Seo.rel('merk', m.id) + 'index.html', pagina('merk', m.id, true));
-  urls.push({ loc: Seo.absoluut('merk', m.id) });
+  urls.push({ loc: Seo.absoluut('merk', m.id), bron: kennisBron(m.id) });
 });
 KENNIS.producten.forEach(function (p) {
   schrijf(Seo.rel('product', p.id) + 'index.html', pagina('product', p.id, true));
-  urls.push({ loc: Seo.absoluut('product', p.id) });
+  urls.push({ loc: Seo.absoluut('product', p.id), bron: kennisBron(p.id) });
 });
 
 var aantalLessen = 0;
 CURSUS.alleLessen().forEach(function (x) {
   schrijf(Seo.rel('les', x.les.id) + 'index.html', pagina('les', x.les.id, true));
-  urls.push({ loc: Seo.absoluut('les', x.les.id) });
+  urls.push({ loc: Seo.absoluut('les', x.les.id), bron: ['content/' + x.les.id.slice(0, 3) + '.js'] });
   aantalLessen++;
 });
 
@@ -222,7 +243,7 @@ schrijf('sitemap.xml',
   '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
   urls.map(function (u) {
-    return '  <url><loc>' + esc(u.loc) + '</loc><lastmod>' + DATUM + '</lastmod></url>';
+    return '  <url><loc>' + esc(u.loc) + '</loc><lastmod>' + gitDatum(u.bron) + '</lastmod></url>';
   }).join('\n') + '\n</urlset>\n');
 
 /* robots.txt: iedereen welkom, ook de bekende AI-crawlers (bewust expliciet gemaakt). */
@@ -256,6 +277,7 @@ function platteMarkdown(tekst) {
 
 var lijstModules = CURSUS.modules.map(function (m) {
   return '## Module ' + m.nr + ': ' + m.titel + '\n\n' +
+    '- [Moduleoverzicht](' + Seo.absoluut('module', m.id) + '): ' + m.intro + '\n' +
     m.lessen.map(function (l) {
       return '- [' + l.nr + ' ' + l.titel + '](' + Seo.absoluut('les', l.id) + '): ' + l.leerdoel;
     }).join('\n');
@@ -264,11 +286,11 @@ var lijstModules = CURSUS.modules.map(function (m) {
 
 /* Kennisbank: toepassingen, merken en producten voor llms.txt en llms-full.txt. */
 function kennisLijst() {
-  return '## Kennisbank: toepassingen\n\n' +
+  return '## Kennisbank: toepassingen\n\n- [Alle toepassingen](' + Seo.absoluut('toepassingen') + '): wat je kunt installeren en welke merken en producten erbij horen\n' +
     KENNIS.toepassingen.map(function (t) {
       return '- [' + t.naam + '](' + Seo.absoluut('toepassing', t.id) + '): ' + t.intro;
     }).join('\n') + '\n\n' +
-    '## Kennisbank: merken en producten\n\n' +
+    '## Kennisbank: merken en producten\n\n- [Alle merken](' + Seo.absoluut('merken') + '): merken, producten en verwijzingen naar de handleidingen\n' +
     KENNIS.merken.map(function (m) {
       return '- [' + m.naam + '](' + Seo.absoluut('merk', m.id) + '): ' + m.intro + '\n' +
         KENNIS.productenVanMerk(m.id).map(function (p) {
@@ -343,7 +365,7 @@ schrijf('404.html',
   '<title>Pagina niet gevonden | Cursus Elektrotechniek</title>\n' +
   '<meta name="robots" content="noindex">\n' +
   '<link rel="stylesheet" href="' + BASE + 'css/theme.css">\n' +
-  '<link rel="icon" href="' + BASE + 'icons/favicon-32.png" sizes="32x32">\n</head>\n<body>\n' +
+  '<link rel="icon" href="' + BASE + 'icons/favicon.svg" type="image/svg+xml">\n<link rel="icon" href="' + BASE + 'icons/favicon-32.png" sizes="32x32">\n</head>\n<body>\n' +
   '<main class="wrap"><div class="pagehead"><h1>Pagina niet gevonden</h1>' +
   '<p>Deze pagina bestaat niet (meer). Ga terug naar de gratis cursus elektrotechniek of bekijk de modules.</p></div>\n' +
   '<p><a class="btn" href="' + BASE + '">Naar de cursus</a> ' +

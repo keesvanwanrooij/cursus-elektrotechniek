@@ -83,3 +83,8 @@ def maak_og_image():
 
 maak_og_image()
 print("klaar")
+
+
+# Aanvulling: favicon-48.png, favicon.ico (16/32/48, ook in de root) en favicon.svg
+# zijn met dezelfde BOLT-polygon gemaakt. favicon.svg gebruikt een viewBox van 100 met
+# marge 14 en schaal 0,72: x' = 14 + 0,72 x en y' = 14 + 0,72 y.

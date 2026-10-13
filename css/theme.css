@@ -56,8 +56,9 @@ button { font: inherit; cursor: pointer; }
   position:sticky; top:0; z-index:60;
 }
 .brand { display:flex; align-items:center; gap:10px; font-weight:700; text-decoration:none; letter-spacing:-.01em; }
-.bolt { width:28px; height:28px; border-radius:8px; background:var(--accent); color:var(--accent-ink);
-        display:grid; place-items:center; font-size:15px; font-weight:900; }
+.bolt { width:28px; height:28px; border-radius:6px; background:var(--accent); color:var(--accent-ink);
+        display:grid; place-items:center; flex:none; }
+.bolt svg { display:block; width:100%; height:100%; }
 .brand small { display:block; font-weight:500; font-size:11px; color:var(--text-dim);
                letter-spacing:.06em; text-transform:uppercase; }
 #navToggle { display:none; }
