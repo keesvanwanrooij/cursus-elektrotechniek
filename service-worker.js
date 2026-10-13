@@ -7,7 +7,7 @@
 /* Deze worker ruimt uitsluitend caches op met dit eigen voorvoegsel. Dat was nodig toen de
    cursussen samen op www.keesvanwanrooij.nl stonden, en het blijft een veilige gewoonte. */
 var CACHE_VOORVOEGSEL = 'cursus-elektro-';
-var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v6';
+var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v7';
 
 var APP_SHELL = [
   './',
