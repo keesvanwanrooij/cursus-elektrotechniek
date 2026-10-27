@@ -7,7 +7,7 @@
 /* Deze worker ruimt uitsluitend caches op met dit eigen voorvoegsel. Dat was nodig toen de
    cursussen samen op www.keesvanwanrooij.nl stonden, en het blijft een veilige gewoonte. */
 var CACHE_VOORVOEGSEL = 'cursus-elektro-';
-var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v7';
+var CACHE_NAAM = CACHE_VOORVOEGSEL + 'v8';
 
 var APP_SHELL = [
   './',
@@ -36,6 +36,17 @@ var APP_SHELL = [
   './content/naslag.js',
   /* kennis:start */
   './content/kennis/index.js',
+  './content/kennis/enphase/iq-battery-5p.js',
+  './content/kennis/enphase/iq-ev-charger-2.js',
+  './content/kennis/enphase/iq-gateway.js',
+  './content/kennis/enphase/iq-system-controller-3.js',
+  './content/kennis/enphase/iq8-micro-omvormers.js',
+  './content/kennis/enphase/merk.js',
+  './content/kennis/goodwe/esa-3-10kw.js',
+  './content/kennis/goodwe/esa-5-30kw.js',
+  './content/kennis/goodwe/esa-5kw-10-8kwh.js',
+  './content/kennis/goodwe/esa-athena.js',
+  './content/kennis/goodwe/merk.js',
   './content/kennis/sigenergy/batterij.js',
   './content/kennis/sigenergy/ev-ac-lader.js',
   './content/kennis/sigenergy/ev-dc-module.js',
@@ -47,6 +58,10 @@ var APP_SHELL = [
   './content/kennis/sigenergy/sigenstor-home.js',
   './content/kennis/toepassing-laadpaal.js',
   './content/kennis/toepassing-thuisbatterij.js',
+  './content/kennis/toepassing-zonnepanelen.js',
+  './content/kennis/zaptec/go-2.js',
+  './content/kennis/zaptec/go.js',
+  './content/kennis/zaptec/merk.js',
   /* kennis:end */
   './icons/icon-192.png',
   './icons/icon-512.png'

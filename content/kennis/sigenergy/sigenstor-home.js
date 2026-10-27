@@ -10,7 +10,7 @@ KENNIS.addProduct({
   slug: 'sigenstor-home',
   naam: 'SigenStor Home (1-fase en 3-fase)',
   rol: 'systeem',
-  toepassingen: ['thuisbatterij', 'laadpaal'],
+  toepassingen: ['thuisbatterij', 'laadpaal', 'zonnepanelen'],
   korteOmschrijving: 'Het complete thuisenergiesysteem van Sigenergy: een Energy Controller (omvormer) met een of meer SigenStor BAT-batterijmodules, een gateway voor noodstroom, een vermogenssensor en de mySigen-app. Verkrijgbaar in een 1-fase en een 3-fase uitvoering, versie A1.',
 
   varianten: {
