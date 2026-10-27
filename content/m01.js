@@ -31,8 +31,8 @@ CURSUS.addModule({
   type: 'les',
   leerdoel: 'Je kunt uitleggen waarom niet de spanning maar de stroom door je lichaam bepalend is, en welke stroomsterkte welk effect heeft.',
   videos: [
-    { taal: 'en', titel: 'Safety Precautions For Electrical Safety (TECH EHS)', yt: 'GhS2xYbYRhA', duur: '±10 min' },
-    { taal: 'en', titel: 'Complete Electrical Safety (HSE Study Guide)', yt: 'cUCp_mGzJF4', duur: '±20 min' }
+    { taal: 'nl', titel: 'Veiligheid en elektriciteit (Jorrit van den Boogaard)', yt: '7MdFEnlKPC4', duur: '±16 min' },
+    { taal: 'en', titel: 'Safety Precautions For Electrical Safety (TECH EHS)', yt: 'GhS2xYbYRhA', duur: '±10 min' }
   ],
   tekst: `
 ## Niet de spanning doodt, maar de stroom door je lichaam
@@ -525,7 +525,10 @@ gebruikt.
   duur: 12,
   type: 'les',
   leerdoel: 'Je weet wat je moet doen bij een elektrisch ongeval zonder zelf het tweede slachtoffer te worden.',
-  videos: [],
+  videos: [
+    { taal: 'nl', titel: 'Leerfilm: Elektriciteit (Veiligheidsregio Noord- en Oost-Gelderland)', yt: '6lmk5p13be0', duur: '±17 min' },
+    { taal: 'en', titel: 'Electrical Safety Basics for Employees (SafetyVideos.com)', yt: 'eFV82ZEXtCM', duur: '±17 min' }
+  ],
   tekst: `
 ## De eerste reflex is de verkeerde
 
