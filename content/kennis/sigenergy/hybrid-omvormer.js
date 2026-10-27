@@ -12,7 +12,7 @@ KENNIS.addProduct({
   slug: 'hybrid-omvormer',
   naam: 'Sigen Hybrid-omvormer (SP2 1-fase en TP2 3-fase)',
   rol: 'omvormer',
-  toepassingen: ['thuisbatterij'],
+  toepassingen: ['thuisbatterij', 'zonnepanelen'],
   korteOmschrijving: 'De omvormer die zonnepanelen en thuisbatterij samenbrengt en er wisselspanning voor huis en net van maakt. De SP2-serie is 1-fase (2.0 tot 6.0 kW), de TP2-serie is 3-fase (3.0 tot 12.0 kW). Deze pagina vat de installateurshandleidingen samen en wijst je de weg naar hoofdstuk en pagina.',
 
   varianten: {

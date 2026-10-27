@@ -208,8 +208,9 @@ window.Seo = (function () {
       ];
     } else if (page === 'toepassingen') {
       var tn = KENNIS.toepassingen.map(function (t) { return t.naam.toLowerCase(); });
-      titel = 'Toepassingen: ' + tn.join(' en ') + ' | Cursus elektrotechniek';
-      desc = kort('Beginnersgids voor ' + tn.join(' en ') + ': hoe het werkt, welke onderdelen je nodig hebt en welke merken en producten er zijn.', 158);
+      var opsomming = tn.length > 1 ? tn.slice(0, -1).join(', ') + ' en ' + tn[tn.length - 1] : tn.join('');
+      titel = 'Toepassingen: ' + opsomming + ' | Cursus elektrotechniek';
+      desc = kort('Beginnersgids voor ' + opsomming + ': hoe het werkt, welke onderdelen je nodig hebt en welke merken en producten er zijn.', 158);
       graph = [broodkruimel([{ naam: 'Cursus elektrotechniek', url: absoluut('dash') }, { naam: 'Toepassingen', url: canon }])];
     } else if (page === 'toepassing') {
       var ta = KENNIS.toepassing(id);
