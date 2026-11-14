@@ -306,8 +306,8 @@ installaties, en of jouw situatie eronder valt.
 
 ## Praktische route
 
-Voor de situatie waarin je nu zit - meewerken met je broertje, volgend jaar samen met
-je vader - is de verstandige volgorde:
+Werk je mee in een klein bedrijf, bijvoorbeeld bij familie of een zzp'er, dan is dit een
+verstandige volgorde:
 
 1. Deze cursus afmaken voor het begrip.
 2. **NEN 3140 VOP of VP** volgen, passend bij wat je gaat doen.

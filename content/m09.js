@@ -433,8 +433,8 @@ certificering vereist die losstaat van elke elektrotechnische aanwijzing. Als
 elektricien doe je de elektrische kant; het koudemiddelcircuit laat je aan een
 gecertificeerde koeltechnicus.
 
-Bespreek dit expliciet met je vader, die praktijkkennis heeft van wat binnen jullie
-bedrijf wel en niet mag, en leg de werkverdeling vooraf vast.
+Bespreek dit vooraf met je leidinggevende of de koeltechnicus waar je mee werkt, want
+die weet wat binnen jullie bedrijf wel en niet mag. Leg de werkverdeling vast voor je begint.
 !!!
 
 ## Wat je bij een airco-installatie doet
@@ -459,7 +459,7 @@ het toestel jarenlang, continu en onbeheerd draait.
     'Ik weet dat een split-airco elektrisch dezelfde eisen stelt als een kleine warmtepomp',
     'Ik controleer bij multi-split hoe de binnenunits gevoed worden',
     'Ik weet dat het koudemiddelcircuit aparte certificering vereist',
-    'Ik heb de werkverdeling elektro versus koeltechniek besproken met mijn vader'
+    'Ik heb de werkverdeling elektro tegenover koeltechniek vooraf afgesproken'
   ],
   bronnen: ['nieuw geschreven']
 },

@@ -3949,8 +3949,8 @@ IP-waarde van wat zich in dat gebied bevindt.
 > elektricien doe je de elektrische kant; het koudemiddelcircuit laat je aan een
 > gecertificeerde koeltechnicus.
 >
-> Bespreek dit expliciet met je vader, die praktijkkennis heeft van wat binnen jullie
-> bedrijf wel en niet mag, en leg de werkverdeling vooraf vast.
+> Bespreek dit vooraf met je leidinggevende of de koeltechnicus waar je mee werkt, want
+> die weet wat binnen jullie bedrijf wel en niet mag. Leg de werkverdeling vast voor je begint.
 
 #### Wat je bij een airco-installatie doet
 
@@ -3975,7 +3975,7 @@ het toestel jarenlang, continu en onbeheerd draait.
 - Ik weet dat een split-airco elektrisch dezelfde eisen stelt als een kleine warmtepomp
 - Ik controleer bij multi-split hoe de binnenunits gevoed worden
 - Ik weet dat het koudemiddelcircuit aparte certificering vereist
-- Ik heb de werkverdeling elektro versus koeltechniek besproken met mijn vader
+- Ik heb de werkverdeling elektro tegenover koeltechniek vooraf afgesproken
 
 ### Les 9.6: Cv-ketel, thermostaat en gelijktijdigheid
 
@@ -4834,8 +4834,8 @@ installaties, en of jouw situatie eronder valt.
 
 #### Praktische route
 
-Voor de situatie waarin je nu zit - meewerken met je broertje, volgend jaar samen met
-je vader - is de verstandige volgorde:
+Werk je mee in een klein bedrijf, bijvoorbeeld bij familie of een zzp'er, dan is dit een
+verstandige volgorde:
 
 1. Deze cursus afmaken voor het begrip.
 2. **NEN 3140 VOP of VP** volgen, passend bij wat je gaat doen.
