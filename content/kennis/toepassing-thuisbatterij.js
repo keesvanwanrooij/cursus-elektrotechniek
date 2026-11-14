@@ -80,7 +80,7 @@ Bij een **hybride omvormer** komt de batterij meestal via een aparte batterijcon
       id: 'merken-vergelijken',
       kop: 'Zo bouwen de merken in de kennisbank het op',
       tekst: `
-Elk merk kiest een van de opbouwen hierboven. Als je weet welke, weet je ook waar de batterij aangesloten wordt, wat er voor noodstroom nodig is en welke handleiding je moet pakken.
+Elk merk kiest een van de opbouwen hierboven. Weet je welke, dan weet je ook waar de batterij op aangesloten wordt, wat je nodig hebt voor noodstroom en welke handleiding je moet pakken.
 
 | Merk | Opbouw | Omvormer | Noodstroom | Meting |
 |---|---|---|---|---|
@@ -88,14 +88,15 @@ Elk merk kiest een van de opbouwen hierboven. Als je weet welke, weet je ook waa
 | **GoodWe** | DC-gekoppeld all-in-one (ESA), ook als AC-gekoppelde uitvoering | Hybride omvormer in de ESA-stapel | BACK-UP-poort en bypass in de omvormer zelf, geen aparte gateway | Slimme meter of stroomtang |
 | **Enphase** | AC-gekoppeld | Micro-omvormers onder de panelen, en ingebouwde micro-omvormers in de IQ Battery | IQ System Controller | IQ Gateway met stroomtransformatoren |
 
-Drie dingen om te onthouden:
+Het woord "gateway" betekent niet overal hetzelfde. Bij Sigenergy is de gateway het onderdeel voor noodstroom. Bij Enphase is de IQ Gateway juist het kastje voor meten en communicatie, en zit de noodstroom in de IQ System Controller.
 
-- **Het woord "gateway" betekent niet overal hetzelfde.** Bij Sigenergy is de gateway het onderdeel voor noodstroom. Bij Enphase is de IQ Gateway het meet- en communicatiekastje, en zit de noodstroom in de IQ System Controller.
-- **Bij AC-gekoppeld heeft de batterij zijn eigen omvormers.** Een IQ Battery van Enphase sluit je dus aan als een AC-apparaat op een groep, niet op de DC-ingang van een omvormer.
-- **Bij all-in-one kies je het systeem, niet de losse delen.** GoodWe ESA en SigenStor Home zijn stapels waarin omvormer en batterij bij elkaar horen.
-- **Er bestaan ook kleine stekkerbatterijen.** De GoodWe ESA-Athena is zo'n systeem met een veel kleiner vermogen. Lees op de productpagina wat de handleiding zegt over aansluiten en toestemming.
+Bij AC-gekoppeld heeft de batterij zijn eigen omvormers. Een IQ Battery van Enphase sluit je dus aan als AC-apparaat op een groep, niet op de DC-ingang van een omvormer.
 
-Details, varianten en paginaverwijzingen staan op de productpagina's hieronder. De opbouw met zonnepanelen en de soorten omvormers staan bij de toepassing Zonnepanelen en omvormers.
+Bij een all-in-one kies je het systeem en niet de losse delen. GoodWe ESA en SigenStor Home zijn stapels waarin omvormer en batterij bij elkaar horen.
+
+Er bestaan ook kleine stekkerbatterijen, zoals de GoodWe ESA-Athena. Die heeft een veel kleiner vermogen. Wat de handleiding zegt over aansluiten en toestemming, lees je op de productpagina.
+
+De details, varianten en paginaverwijzingen staan op de productpagina's hieronder. Hoe het met zonnepanelen en de soorten omvormers zit, lees je bij Zonnepanelen en omvormers.
 `
     },
     {

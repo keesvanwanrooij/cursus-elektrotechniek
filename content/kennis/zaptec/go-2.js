@@ -13,7 +13,7 @@ KENNIS.addProduct({
   naam: 'Zaptec Go 2',
   rol: 'lader',
   toepassingen: ['laadpaal'],
-  korteOmschrijving: 'De opvolger van de Zaptec Go: een compact wandlaadstation voor wisselstroom met Type 2-contactdoos, tot 22 kW, nu met een scherm, een MID-gecertificeerde energiemeter, automatisch wisselen tussen 3 en 1 fase en een steviger behuizing (IK10). Instellen gaat met de Zaptec-app via een QR-code op het scherm.',
+  korteOmschrijving: 'De opvolger van de Zaptec Go: een compact wandlaadstation voor wisselstroom met Type 2-contactdoos, tot 22 kW. Nieuw zijn een scherm, een MID-gecertificeerde energiemeter, automatisch wisselen tussen 3 en 1 fase en een steviger behuizing (IK10). Je stelt hem in met de Zaptec-app via een QR-code op het scherm.',
 
   varianten: {
     kop: ['Uitvoering', 'Contactdoos', 'Markt', 'Kabel bij 32 A', 'Bron'],
@@ -34,24 +34,24 @@ KENNIS.addProduct({
     {
       id: 'wat-is-het',
       kop: 'Wat is het',
-      tekst: `De Zaptec Go 2 is een laadstation voor wisselstroom (AC) dat aan de muur of op een paal hangt. Net als de Zaptec Go heeft hij geen vaste kabel maar een **Type 2-contactdoos**: de bestuurder steekt zijn eigen laadkabel erin. Hij laadt tot 22 kW bij 3 fasen en 32 A, en werkt met één model op 1 of 3 fasen.
+      tekst: `De Zaptec Go 2 is een laadstation voor wisselstroom (AC) dat aan de muur of op een paal hangt. Net als de Zaptec Go heeft hij geen vaste kabel maar een **Type 2-contactdoos**, dus de bestuurder steekt zijn eigen laadkabel erin. Eén model laadt op 1 of 3 fasen, tot 22 kW bij 3 fasen en 32 A.
 
 Aan de voorkant zitten vier onderdelen (installatiehandleiding, pagina 2): A het **statuslampje** (een ledring), B het **scherm**, C het leesvlak voor de **laadpas (RFID)** en D de **Type 2-contactdoos** met klep.
 
 ### Wat nieuw is ten opzichte van de Go
 
-- **Een scherm.** Het verlichte LCD-scherm toont wat de lader doet, hoeveel kWh er in deze sessie is geladen en eventuele fouten. Bij het eerste inschakelen staat er een QR-code op voor de installatie.
-- **Een MID-meter.** De ingebouwde energiemeter is gecertificeerd volgens MID klasse B. MID is de Europese richtlijn voor meetinstrumenten. Met een MID-meter kun je laadsessies officieel afrekenen, bijvoorbeeld met een werkgever die de stroom vergoedt (algemene vakkennis).
-- **Automatisch wisselen tussen 3 en 1 fase.** De Go 2 kan tijdens het laden van 3 naar 1 fase overschakelen. Wil je dat niet, dan kies je bij het instellen "1-fase".
-- **Steviger en warmtebestendiger.** IK10 in plaats van IK08, en een bedrijfstemperatuur tot 50 in plaats van 40 graden Celsius.
-- **Voorbereid op ISO 15118.** De hardware ondersteunt deze norm voor communicatie tussen auto en lader. Wat daar nu al mee kan, zeggen de documenten niet.
+- **Een scherm.** Het verlichte LCD-scherm laat zien wat de lader doet, hoeveel kWh er in deze sessie is geladen en of er fouten zijn. Bij het eerste inschakelen staat er een QR-code op voor de installatie.
+- **Een MID-meter.** De ingebouwde energiemeter is gecertificeerd volgens MID klasse B, de Europese richtlijn voor meetinstrumenten. Daarmee kun je laadsessies officieel afrekenen, bijvoorbeeld met een werkgever die de stroom vergoedt (algemene vakkennis).
+- **Automatisch wisselen tussen 3 en 1 fase.** De Go 2 kan tijdens het laden van 3 naar 1 fase gaan. Wil je dat niet, dan kies je bij het instellen "1-fase".
+- **Steviger en beter tegen warmte.** IK10 in plaats van IK08 en een bedrijfstemperatuur tot 50 in plaats van 40 graden Celsius.
+- **Voorbereid op ISO 15118.** De hardware ondersteunt deze norm voor communicatie tussen auto en lader. Wat daar nu al mee kan, staat er helaas niet in.
 
-De kleuren van het statuslampje, de draaischakelaar en de aansluitklemmen zijn gelijk aan die van de Go.`
+Kleuren van het statuslampje, draaischakelaar en aansluitklemmen zijn gelijk aan die van de Go.`
     },
     {
       id: 'verschil-met-go',
       kop: 'Verschillen met de Zaptec Go',
-      tekst: `Deze tabel zet de documenten van beide laders naast elkaar. Alles komt uit de handleidingen en productbladen in de map, behalve waar anders staat.
+      tekst: `Alles in deze tabel komt uit de handleidingen en productbladen in de map, behalve waar anders staat.
 
 | Onderdeel | Zaptec Go | Zaptec Go 2 |
 |---|---|---|
@@ -76,7 +76,7 @@ De kleuren van het statuslampje, de draaischakelaar en de aansluitklemmen zijn g
 !!! info Als je Sigenergy al kent
 De Sigen EV AC Charger komt in drie vermogens (7, 11 en 22 kW) en met vaste kabel of contactdoos. De Go 2 is één model met contactdoos. Voor jou als installateur:
 
-- **Lekstroom:** Sigen heeft 6 mA DC- en 30 mA AC-detectie ingebouwd. De Go 2 alleen de **6 mA DC-detectie (RDC-DD)** en vraagt een **externe aardlek type A 30 mA** of gelijkwaardige RCBO.
+- **Lekstroom:** Sigen heeft 6 mA DC- en 30 mA AC-detectie ingebouwd. De Go 2 alleen de **6 mA DC-detectie (RDC-DD)**, dus die vraagt een **externe aardlek type A 30 mA** of gelijkwaardige RCBO.
 - **Automaat:** Sigen schrijft karakteristiek B voor. Bij Zaptec noemt de Nederlandse tekst C-karakteristiek, de Engelse tekst alleen "volgens lokale voorschriften".
 - **Meting:** beide laders hebben nu een ingebouwde meter, maar alleen de Go 2 noemt een MID-certificering in de documenten.
 - **Load balancing:** Sigen met de Sigen Power Sensor via RS485, Zaptec met de **Zaptec Sense** in de meterkast via de cloud.
@@ -90,23 +90,23 @@ De Sigen EV AC Charger komt in drie vermogens (7, 11 en 22 kW) en met vaste kabe
       kop: 'Hoe het werkt en hoe het in het systeem past',
       tekst: `### Laden en toegang
 
-Starten: laadkabel in de auto en in de lader. Knippert het statuslampje **blauw**, dan laadt de auto. Stoppen: pauzeren in de app of de stekker uit de auto halen. De kabel aan de laderkant blijft vergrendeld tot het laden klaar is of door de auto is gestopt (gebruikershandleiding, pagina 40).
+Steek de laadkabel in de auto en in de lader. Knippert het statuslampje **blauw**, dan laadt de auto. Stoppen gaat met pauzeren in de app of door de stekker uit de auto te halen. De kabel aan de laderkant blijft vergrendeld tot het laden klaar is of door de auto is gestopt (gebruikershandleiding, pagina 40).
 
-De eigenaar kan de lader privé maken en anderen toegang geven via de app. Laden met een RFID-pas of Zaptec-sleutel kan ook; die koppel je in de app aan een account. De Go 2 leest MIFARE Classic en MIFARE DESFire.
+De eigenaar kan de lader privé maken en anderen toegang geven via de app. Laden met een RFID-pas of Zaptec-sleutel kan ook, die koppel je in de app aan een account. De Go 2 leest MIFARE Classic en MIFARE DESFire.
 
 ### Meerdere laders en load balancing
 
-Tot **drie Go 2's per adres** kunnen het vermogen automatisch verdelen (gebruikershandleiding, pagina 39). Bij het activeren van een extra lader kies je in de app **Link naar een bestaande installatie** (installatiehandleiding, pagina 7). De eigenaar kan de installateur ook achteraf toegang geven met een **partnercode van 4 tekens** en servicetoestemming.
+Tot **drie Go 2's per adres** verdelen het vermogen automatisch (gebruikershandleiding, pagina 39). Bij het activeren van een extra lader kies je in de app **Link naar een bestaande installatie** (installatiehandleiding, pagina 7). De eigenaar kan je ook achteraf toegang geven met een **partnercode van 4 tekens** en servicetoestemming.
 
-Voor load balancing met de rest van het huis noemt de gebruikershandleiding van de Go 2 de Zaptec Sense niet. Volgens de website van Zaptec werkt de **Zaptec Sense** met de Go en de Go 2: hij meet het verbruik van het gebouw via de P1-poort (Benelux) en laat de lader terugschakelen voordat de hoofdzekering wordt overbelast. Laden met zonne-overschot via de Sense is volgens de website beschikbaar in onder meer Nederland en België, te beginnen met geselecteerde particuliere TN-installaties.
+Voor load balancing met de rest van het huis noemt de gebruikershandleiding van de Go 2 de Zaptec Sense niet. Volgens de website van Zaptec werkt de **Zaptec Sense** wel met de Go en de Go 2. Hij meet het verbruik van het gebouw via de P1-poort (Benelux) en laat de lader terugschakelen voordat de hoofdzekering wordt overbelast. Laden met zonne-overschot via de Sense kan volgens de website in onder meer Nederland en België, te beginnen met geselecteerde particuliere TN-installaties.
 
 ### Gepland laden
 
-De gebruikershandleiding (pagina 41) noemt **gepland laden**, bedoeld om in de daluren te laden. In het Verenigd Koninkrijk staat de lader standaard zo ingesteld dat hij op werkdagen in de piekuren niet laadt; dat kun je in de app aanpassen. Voor Nederland is daar niets standaard ingesteld volgens de handleiding.
+De gebruikershandleiding (pagina 41) noemt **gepland laden**, om in de daluren te laden. In het Verenigd Koninkrijk laadt de lader standaard niet in de piekuren op werkdagen. Dat kun je in de app aanpassen. Voor Nederland is volgens de handleiding niets standaard ingesteld.
 
 ### Cloud, app en Portal
 
-De Go 2 is via wifi of 4G verbonden met de cloud van Zaptec. Daaraan hangen de **Zaptec-app** en het **Zaptec Portal**. Software-updates gaan via de app of het Portal; Zaptec belooft minimaal vijf jaar updates. Als je de lader in de app activeert, krijgt de eigenaar automatisch een melding over zijn nieuwe Go 2 (installatiehandleiding, pagina 8). Voor koppelingen met andere systemen noemt het productblad een API, webhooks en OCPP 1.6J, zowel via de cloud als rechtstreeks op de lader.`
+De Go 2 is via wifi of 4G verbonden met de cloud van Zaptec, met daaraan de **Zaptec-app** en het **Zaptec Portal**. Software-updates gaan via de app of het Portal en Zaptec belooft minimaal vijf jaar updates. Activeer je de lader in de app, dan krijgt de eigenaar automatisch een melding over zijn nieuwe Go 2 (installatiehandleiding, pagina 8). Voor koppelingen met andere systemen noemt het productblad een API, webhooks en OCPP 1.6J, zowel via de cloud als rechtstreeks op de lader.`
     },
     {
       id: 'specificaties',
@@ -127,7 +127,7 @@ De Go 2 is via wifi of 4G verbonden met de cloud van Zaptec. Daaraan hangen de *
 | Ingebouwde DC-lekdetectie | RDC-DD, 6 mA DC, IEC 62955:2018 |
 | Energiemeter | MID klasse B, 3 x 230/400 V, 0,25 tot 5 (32) A, testuitgang 10.000 impulsen per kWh (in de app aan te zetten) |
 
-Let op: het productblad noemt IT 3 fasen niet (alleen 22 kW TN 3 fasen en 7,4 kW bij 1 fase op TN en IT). De gebruikershandleiding noemt wel 12,7 kW voor IT 3 fasen.
+Het productblad noemt IT 3 fasen niet, alleen 22 kW bij TN 3 fasen en 7,4 kW bij 1 fase op TN en IT. De gebruikershandleiding noemt wel 12,7 kW voor IT 3 fasen.
 
 ### Mechanisch en omgeving
 
@@ -146,59 +146,59 @@ Let op: het productblad noemt IT 3 fasen niet (alleen 22 kW TN 3 fasen en 7,4 kW
 
 ### Verbinding
 
-4G LTE Cat 1, wifi 802.11b/g/n op 2,4 GHz, Bluetooth 4.2, NFC/RFID op 13,56 MHz en hardware-ondersteuning voor ISO 15118. In de tekst over software-updates (gebruikershandleiding, pagina 41) staat nog "4G LTE-M", zoals bij de Go; de specificaties en het productblad zeggen LTE Cat 1.`
+4G LTE Cat 1, wifi 802.11b/g/n op 2,4 GHz, Bluetooth 4.2, NFC/RFID op 13,56 MHz en hardware-ondersteuning voor ISO 15118. In de tekst over software-updates (gebruikershandleiding, pagina 41) staat nog "4G LTE-M", net als bij de Go. De specificaties en het productblad zeggen LTE Cat 1.`
     },
     {
       id: 'veiligheid',
       kop: 'Veiligheid en let op',
       tekst: `De regels zijn gelijk aan die van de Go (installatiehandleiding pagina 3, gebruikershandleiding pagina 38):
 
-- Alleen **gekwalificeerd personeel** installeert, repareert en onderhoudt. Reparaties door Zaptec of een goedgekeurde werkplaats. Niet volgen van de handleiding betekent: geen garantie.
+- Alleen **gekwalificeerd personeel** installeert, repareert en onderhoudt. Reparaties door Zaptec of een goedgekeurde werkplaats. Volg je de handleiding niet, dan vervalt de garantie.
 - Lokale en landelijke regels volgen (in Nederland onder meer NEN 1010, algemene vakkennis).
 - Geen beschadigd product installeren of gebruiken, alleen goedgekeurde bekabeling.
 - Geen extreme temperaturen of volle zon.
 - **Geen verlengkabels.** Adapters alleen als de autofabrikant of Zaptec ze goedkeurt.
 - Niets in de Type 2-contactdoos steken, niet schoonmaken met een hogedrukreiniger.
 
-Werk spanningsloos volgens de vijf stappen (les 1.3). De handleiding zegt daar zelf niets over.
+Werk spanningsloos volgens de vijf stappen (les 1.3), want de handleiding zegt daar zelf niets over.
 
 ### Onderhoud en pincode
 
-Afvegen met een vochtige doek, contactdoos vrijhouden van vuil, controleren op schade (gebruikershandleiding, pagina 41). Een **openbaar toegankelijke** lader jaarlijks laten inspecteren door gekwalificeerd personeel. De lader heeft een **pincode** voor bepaalde instellingen. De sticker met de code hoort op de voorkant van de gebruikershandleiding.`
+Afvegen met een vochtige doek, de contactdoos vrijhouden van vuil en controleren op schade (gebruikershandleiding, pagina 41). Een **openbaar toegankelijke** lader jaarlijks laten inspecteren door gekwalificeerd personeel. De lader heeft een **pincode** voor bepaalde instellingen en de sticker met de code hoort op de voorkant van de gebruikershandleiding.`
     },
     {
       id: 'montage',
       kop: 'Plaatsing en montage',
       tekst: `### In de doos (installatiehandleiding, pagina 4)
 
-De lader, T20-schroeven (de afbeelding toont 4, 2 en 2 stuks), doorvoertules voor **12 tot 18 mm** en **8 tot 14 mm** en een kabelklem. De afbeelding noemt bij de montage een maximaal aanhaalmoment van 3 Nm.
+De lader, T20-schroeven (de afbeelding toont 4, 2 en 2 stuks), doorvoertules voor **12 tot 18 mm** en **8 tot 14 mm** en een kabelklem. Bij de montage noemt de afbeelding een maximaal aanhaalmoment van 3 Nm.
 
 ### Monteren
 
-Haal de kap eraf, hang de lader recht met de **ingebouwde waterpas** en monteer hem op een open oppervlak op de juiste hoogte. Anders dan bij de Go noemt de tekst van de Go 2 **geen minimale hoogte**. Voor de Go stond er minimaal 900 mm; houd die als richtlijn aan als de klant geen andere eis heeft, maar dat is een keuze van jou en geen voorschrift uit deze handleiding.
+Haal de kap eraf, hang de lader recht met de **ingebouwde waterpas** en monteer hem op een open oppervlak op de juiste hoogte. Anders dan bij de Go noemt de tekst van de Go 2 **geen minimale hoogte**. De minimaal 900 mm van de Go kun je als richtlijn aanhouden als de klant niets anders wil, maar dan is het jouw keuze en geen voorschrift uit deze handleiding.
 
 ### Boortekening
 
-De "Base Hole Layout" van de Go 2 is hetzelfde bestand als die van de Go: een maattekening van de achterplaat (ZM900090) op schaal 1:1 op A3, bedoeld als gatenpatroon voor de installateur. Controleer bij het printen of de schaal echt 100% is (algemene vakkennis).
+De "Base Hole Layout" van de Go 2 is hetzelfde bestand als die van de Go: een maattekening van de achterplaat (ZM900090) op schaal 1:1 op A3, bedoeld als gatenpatroon voor de installateur. Controleer bij het printen even of de schaal echt 100% is (algemene vakkennis).
 
 ### Kabelinvoer
 
-Kies **boven, achter of onder**. Bij de Go 2 wordt **onder aanbevolen**. Boor het gat uit en trek het klemmendeksel voorzichtig naar beneden. Volgens de specificaties is het invoergat 25 mm en past er met de meegeleverde tule een kabel met een buitendiameter van 8 tot 20 mm door.`
+Kies **boven, achter of onder**, maar bij de Go 2 wordt **onder aanbevolen**. Boor het gat uit en trek het klemmendeksel voorzichtig naar beneden. Volgens de specificaties is het invoergat 25 mm en past er met de meegeleverde tule een kabel van 8 tot 20 mm buitendiameter door.`
     },
     {
       id: 'aansluiting',
       kop: 'Elektrische aansluiting en beveiliging',
-      tekst: `De afbeelding en tekst staan op pagina 5 van de installatiehandleiding (gedrukte pagina 8 en 9), de eisen op pagina 12.
+      tekst: `Afbeelding en tekst staan op pagina 5 van de installatiehandleiding (gedrukte pagina 8 en 9), de eisen op pagina 12.
 
 ### Voorbeveiliging en aardlek
 
-Hier spreken de talen elkaar tegen:
+Hier spreken de talen elkaar helaas tegen:
 
 - De **Engelse** tekst vraagt een installatieautomaat **volgens de lokale voorschriften** en een meerpolige **aardlek type A van 30 mA of een gelijkwaardige RCBO**.
 - De **Nederlandse** tekst noemt een zekering van **maximaal 40 A met C-karakteristiek (aanbevolen)** en een aardlek type A 30 mA. Dat is letterlijk de eis uit de handleiding van de Go.
-- De Nederlandse specificaties (pagina 12) en het productblad zeggen: zekering en aardlekschakelaar zijn vereist volgens de lokale voorschriften.
+- De Nederlandse specificaties (pagina 12) en het productblad zeggen dat zekering en aardlekschakelaar vereist zijn volgens de lokale voorschriften.
 
-Wat overblijft (algemene vakkennis): een eigen groep met een automaat die past bij de kabel en de ingestelde laadstroom, en een aardlek type A van 30 mA. De keuze van waarde en karakteristiek van de automaat is jouw ontwerp volgens NEN 1010 (les 6.2), want deze handleiding geeft geen eenduidige waarde.
+Wat overblijft is een eigen groep met een automaat die past bij de kabel en de ingestelde laadstroom, plus een aardlek type A van 30 mA (algemene vakkennis). De waarde en karakteristiek van de automaat ontwerp je zelf volgens NEN 1010 (les 6.2), want deze handleiding geeft geen eenduidige waarde.
 
 De lader bewaakt zelf **gelijkstroomlek vanaf 6 mA** met een ingebouwde **RDC-DD**. Daarom vraagt Zaptec een type A en geen type B (zie les 6.3 en 10.3). Volgens het productblad reset deze beveiliging automatisch als je de Type 2-kabel opnieuw insteekt.
 
@@ -213,11 +213,11 @@ De afbeelding toont dezelfde vier aansluitingen als bij de Go:
 | IT 3 fasen | PE, L1, L2, L3 |
 | IT 1 fase | PE, L1, L2 |
 
-Het productblad noemt **TN, IT en TT**. Een aparte tekening voor TT staat niet in de handleiding; zoek dat op bij Zaptec en in de NEN 1010 (les 3.5). Voor IT-netten en voor meerdere laders verwijst de handleiding naar help.zaptec.com.
+Het productblad noemt **TN, IT en TT**, maar een tekening voor TT staat niet in de handleiding. Zoek dat op bij Zaptec en in de NEN 1010 (les 3.5). Voor IT-netten en meerdere laders verwijst de handleiding naar help.zaptec.com.
 
 ### Kabeldoorsnede
 
-De klemmen nemen **1,5 tot 6 mm²**. Voor een installatie van **32 A** schrijft de handleiding **6 mm²** voor. Adereindhulzen zijn optioneel. De afbeelding noemt "Max 12 mm" bij de ader, waarschijnlijk de striplengte; kijk dat na in de afbeelding. Of 6 mm² bij jouw kabellengte genoeg is voor de spanningsval, reken je zelf uit (les 4.2).
+De klemmen nemen **1,5 tot 6 mm²**. Voor een installatie van **32 A** schrijft de handleiding **6 mm²** voor. Adereindhulzen zijn optioneel. Bij de ader noemt de afbeelding "Max 12 mm", waarschijnlijk de striplengte, dus kijk dat na in de afbeelding. Of 6 mm² bij jouw kabellengte genoeg is voor de spanningsval, reken je zelf uit (les 4.2).
 
 ### Aansluiten
 
@@ -225,7 +225,7 @@ Sluit alle aders aan en druk de hendels stevig naar beneden. Zet de kabel vast m
 
 ### Fasen instellen
 
-Bij een 3-fase aansluiting wisselt de Go 2 **automatisch tussen 3 en 1 fase**. Wil je dat voorkomen, kies dan bij het instellen in de app **1-fase** (installatiehandleiding, pagina 7). Met de draaischakelaar kun je geen fasen kiezen. Wanneer de lader precies omschakelt, staat niet in de handleiding.`
+Bij een 3-fase aansluiting wisselt de Go 2 **automatisch tussen 3 en 1 fase**. Wil je dat niet, kies dan bij het instellen in de app **1-fase** (installatiehandleiding, pagina 7). Met de draaischakelaar kun je geen fasen kiezen. Wanneer de lader precies omschakelt, staat niet in de handleiding.`
     },
     {
       id: 'inbedrijfstelling',
@@ -233,32 +233,33 @@ Bij een 3-fase aansluiting wisselt de Go 2 **automatisch tussen 3 en 1 fase**. W
       tekst: `### Instellen met de app (pagina 7)
 
 1. Schakel de automaat in. Op het scherm verschijnt een **QR-code**.
-2. Scan de code. Die brengt je naar de installatiepagina in de **Zaptec-app**.
+2. Scan de code, dan kom je op de installatiepagina in de **Zaptec-app**.
 3. Volg de stappen om de lader in te stellen en te activeren. Kies **1-fase** alleen als je de automatische faseomschakeling niet wilt. Komt er een lader bij op hetzelfde adres, kies dan **Link naar een bestaande installatie**.
 4. Na het instellen verdwijnt de QR-code. Het scherm toont 30 seconden de **MID-modus** en gaat daarna naar de normale modus.
 
 ### Zonder app: de draaischakelaar
 
-Gelijk aan de Go: stand 0 = app, 1 = 6 A, 2 = 10 A, 3 = 13 A, 4 = 16 A, 5 = 20 A, 6 = 25 A, 7 = 32 A, 8 en 9 niet gebruikt. Draai van 0 naar de gewenste stand. Geen fasekeuze en minder functies.
+Gelijk aan de Go: stand 0 = app, 1 = 6 A, 2 = 10 A, 3 = 13 A, 4 = 16 A, 5 = 20 A, 6 = 25 A, 7 = 32 A, 8 en 9 niet gebruikt. Draai van 0 naar de stand die je wilt. Je kunt dan geen fasen kiezen en hebt minder functies.
 
 ### Afronden (pagina 8)
 
-1. Plaats de kap terug (de afbeelding noemt maximaal 1 Nm) en controleer dat het statuslampje **wit** is.
+1. Plaats de kap terug (de afbeelding noemt maximaal 1 Nm) en kijk of het statuslampje **wit** is.
 2. Open in de app vanaf Home **Producten configureren** en voer de **pincode** in.
 3. Controleer of de lader **online** is, werk de **firmware** bij en **test de aardlekschakelaar**.
 4. Geef de klant de gebruikershandleiding en laat zien waar de pincode staat.
 
-Heb je de lader in de app geactiveerd, dan krijgt de eigenaar automatisch een melding. Hoe het **Zaptec Portal** werkt, staat niet in deze handleidingen. Volgens het helpcentrum van Zaptec stel je daar per installatie onder meer het netstelsel en de hoofdzekering in, en heb je als installateur een bedrijfsaccount en een Zaptec Academy-certificering nodig.
+Heb je de lader in de app geactiveerd, dan krijgt de eigenaar automatisch een melding. Hoe het **Zaptec Portal** werkt, staat niet in deze handleidingen. Volgens het helpcentrum van Zaptec stel je daar per installatie onder meer het netstelsel en de hoofdzekering in. Je hebt als installateur een bedrijfsaccount en een Zaptec Academy-certificering nodig.
 
 ### MID-modus en het scherm
 
-De gebruikershandleiding (pagina 38) legt de twee schermmodi uit:
+De gebruikershandleiding (pagina 38) legt de twee schermmodi uit.
 
-- **Normale modus:** wat je dagelijks ziet. Pictogrammen voor laden, permanente kabelvergrendeling, laden gepauzeerd, RFID-autorisatie vereist, geweigerd of verleend, een kleine fout en een ernstige fout. Daarbij de kWh van deze sessie.
-- **MID-modus:** voor de wettelijke meting. Je ziet de totale energie die over de levensduur door de lader is opgenomen en afgegeven (in kWh) en de software-identificatie. De modus verschijnt bij het inschakelen. Je roept hem ook op door **binnen 5 seconden tweemaal een laadkabel in te steken en eruit te halen** zonder auto eraan. Staat permanente kabelvergrendeling aan, zet die dan eerst uit. Na ongeveer 30 seconden sluit de modus vanzelf.
+In de **normale modus** zie je wat er dagelijks speelt: pictogrammen voor laden, permanente kabelvergrendeling, laden gepauzeerd, RFID-autorisatie vereist, geweigerd of verleend, een kleine fout en een ernstige fout. Daarbij staat de kWh van deze sessie.
+
+De **MID-modus** is voor de wettelijke meting. Je ziet de totale energie in kWh die de lader over zijn levensduur heeft opgenomen en afgegeven, plus de software-identificatie. De modus verschijnt bij het inschakelen. Je roept hem ook op door **binnen 5 seconden tweemaal een laadkabel in te steken en eruit te halen** zonder auto eraan. Staat permanente kabelvergrendeling aan, zet die dan eerst uit. Na ongeveer 30 seconden sluit de modus vanzelf.
 
 !!! kern Meterstand alleen geldig met MID
-Lees je een meterstand af voor een vergoeding, controleer dan dat de letters **MID** in het authenticatievak van het scherm staan. Staan ze er niet, dan is de meting volgens de handleiding ongeldig.
+Lees je een meterstand af voor een vergoeding, kijk dan of de letters **MID** in het authenticatievak van het scherm staan. Staan ze er niet, dan is de meting volgens de handleiding ongeldig.
 !!!`
     },
     {
@@ -266,7 +267,7 @@ Lees je een meterstand af voor een vergoeding, controleer dan dat de letters **M
       kop: 'Led-indicaties, schermmeldingen en storingen',
       tekst: `### Statuslampje
 
-Dezelfde kleuren als bij de Go (gebruikershandleiding, pagina 40). In de tekstversie van de pdf staan kleuren en betekenissen in losse kolommen; de koppeling hieronder volgt de volgorde van de tabel en de zin "knippert blauw = laden". Controleer bij twijfel de originele tabel.
+Dezelfde kleuren als bij de Go (gebruikershandleiding, pagina 40). In de tekstversie van de pdf staan kleuren en betekenissen in losse kolommen. De koppeling hieronder volgt de volgorde van de tabel en de zin "knippert blauw = laden". Kijk bij twijfel in de originele tabel.
 
 | Kleur | Betekenis |
 |---|---|
@@ -279,7 +280,7 @@ Dezelfde kleuren als bij de Go (gebruikershandleiding, pagina 40). In de tekstve
 | Rood | Fout gevonden |
 | Paars | Firmware wordt bijgewerkt, duurt meestal een paar minuten |
 
-Bij de Go heet de groene toestand "Eco-modus", bij de Go 2 "Slim Laden". De Nederlandse tekst bij "geen licht" zegt "controleer het vermogen", een vertaalfout: de Engelse tekst bedoelt de voeding.
+Bij de Go heet de groene toestand "Eco-modus", bij de Go 2 "Slim Laden". Bij "geen licht" zegt de Nederlandse tekst "controleer het vermogen". Dat is een vertaalfout, want de Engelse tekst bedoelt de voeding.
 
 ### Wat te doen bij rood
 
@@ -287,7 +288,7 @@ Koppel de auto los en start de lader opnieuw op. Blijft het rood, neem dan conta
 
 ### Foutcodes op het scherm
 
-De Go 2 is de eerste van de twee met een foutcode. Bij een fout in de **MID-module** toont het scherm een code in het rood die begint met de letter **E** (het voorbeeld in de handleiding is E00018C), met MID in het authenticatievak. Zie je die, neem dan contact op met de servicepartner. Een lijst met alle codes en hun betekenis staat **niet** in de handleiding. Het scherm onderscheidt verder een **kleine fout** en een **ernstige fout**; bij een ernstige fout verwijst de handleiding naar de servicepartner.`
+De Go 2 is de eerste van de twee met een foutcode. Bij een fout in de **MID-module** toont het scherm een rode code die begint met de letter **E** (het voorbeeld in de handleiding is E00018C), met MID in het authenticatievak. Zie je die, neem dan contact op met de servicepartner. Een lijst met alle codes en wat ze betekenen staat er **niet** in. Verder onderscheidt het scherm een **kleine fout** en een **ernstige fout**. Bij een ernstige fout verwijst de handleiding naar de servicepartner.`
     },
     {
       id: 'niet-in-handleiding',
@@ -298,8 +299,8 @@ De Go 2 is de eerste van de twee met een foutcode. Bij een fout in de **MID-modu
 - **Wanneer de faseomschakeling ingrijpt** en wat de auto daarvoor moet kunnen.
 - **Een lijst met foutcodes** van het scherm.
 - **Het werken in het Zaptec Portal** en de installatie van de Zaptec Sense.
-- **De T2S-uitvoering.** Die staat alleen in het helpcentrum van Zaptec, met een eigen handleiding die niet in onze map zit. Die uitvoering is voor Frankrijk; in Nederland kom je hem normaal niet tegen.
-- **ISO 15118 en terugleveren.** De hardware ondersteunt ISO 15118 en de MID-modus toont ook afgegeven energie, maar wat er nu al mee kan, staat niet in de documenten.
+- **De T2S-uitvoering.** Die staat alleen in het helpcentrum van Zaptec, met een eigen handleiding die niet in onze map zit. Hij is voor Frankrijk, dus in Nederland kom je hem normaal niet tegen.
+- **ISO 15118 en terugleveren.** De hardware ondersteunt ISO 15118 en de MID-modus toont ook afgegeven energie. Wat er nu al mee kan, staat niet in de documenten.
 - **Melding bij de netbeheerder** en controle van de hoofdaansluiting (les 10.4).`
     }
   ],

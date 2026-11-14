@@ -12,7 +12,7 @@ KENNIS.addProduct({
   naam: 'GoodWe ESA 3-10kW (1-fase, hybride en AC-gekoppeld)',
   rol: 'systeem',
   toepassingen: ['thuisbatterij', 'zonnepanelen', 'laadpaal'],
-  korteOmschrijving: 'Het eenfasige alles-in-een thuisbatterijsysteem van GoodWe: een omvormer van 3 tot 10 kW die op een stapel Lynx D G2-batterijmodules wordt geklikt, met ingebouwde back-uppoort, ingebouwde meter met CT en optioneel een statische schakelkast (STS). Leverbaar als hybride uitvoering met zonnepaneelingangen (EHA) en als AC-gekoppelde uitvoering zonder zonnepaneelingangen (BHA).',
+  korteOmschrijving: 'De eenfasige alles-in-een thuisbatterij van GoodWe. Een omvormer van 3 tot 10 kW klik je op een stapel Lynx D G2-batterijmodules, met een ingebouwde back-uppoort, een ingebouwde meter met CT en als optie een statische schakelkast (STS). Er is een hybride uitvoering met zonnepaneelingangen (EHA) en een AC-gekoppelde uitvoering zonder (BHA).',
 
   varianten: {
     kop: ['Onderdeel', 'Uitvoering', 'Vermogen of capaciteit', 'Bijzonderheid', 'Waar in de bronnen'],
@@ -44,22 +44,22 @@ KENNIS.addProduct({
     {
       id: 'wat-is-het',
       kop: 'Wat is het',
-      tekst: `De ESA 3-10kW is een **alles-in-een thuisbatterij voor een 1-fase aansluiting**. Omvormer en batterij zitten niet in losse kasten aan de muur, maar worden op elkaar gestapeld: onderop een voetstuk, daarop een of meer batterijmodules en bovenop de omvormer. De modules maken onderling contact via een **blinde stekker** (blind connector): een stekkerverbinding die vanzelf in elkaar valt als je de modules goed op elkaar zet. De aarding van de batterij loopt ook via die stekker (Gebruikershandleiding p. 48-49, 148).
+      tekst: `De ESA 3-10kW is een **alles-in-een thuisbatterij voor een 1-fase aansluiting**. Alles staat op elkaar: onderop een voetstuk, daarop een of meer batterijmodules en bovenop de omvormer. De modules maken contact via een **blinde stekker** (blind connector) die vanzelf in elkaar valt als je ze goed stapelt. Ook de aarding van de batterij loopt daardoor (Gebruikershandleiding p. 48-49, 148).
 
 ### De onderdelen
 
-- **Omvormer (EHA of BHA):** zet gelijkspanning om in wisselspanning en regelt met een ingebouwd energiemanagementsysteem (EMS) waar de energie heen gaat: huis, batterij of net (p. 51).
+- **Omvormer (EHA of BHA):** zet gelijkspanning om in wisselspanning. Een ingebouwd energiemanagementsysteem (EMS) bepaalt waar de energie heen gaat: huis, batterij of net (p. 51).
 - **Batterijmodules Lynx D G2:** LFP-modules (lithium-ijzerfosfaat) van 5,1, 6,0, 8,3 of 9,0 kWh. Elke module heeft een multifunctionele knop, een eigen batterijschakelaar en een statuslampje (p. 54-55).
-- **Ingebouwde meter met CT:** de omvormer meet zelf met een meegeleverde stroomtransformator (CT, een klemtang die om de kabel gaat) hoeveel het huis afneemt of teruglevert. Een losse slimme meter (GMK110, GM330 of GMK330) is optioneel (p. 32-33).
-- **Communicatiestick:** de WiFi/LAN Kit-20 brengt het systeem online en maakt via Bluetooth de app-verbinding (p. 34).
+- **Ingebouwde meter met CT:** de omvormer meet zelf wat het huis afneemt of teruglevert, met een meegeleverde stroomtransformator (CT): een klemtang om de kabel. Een losse slimme meter (GMK110, GM330 of GMK330) is optioneel (p. 32-33).
+- **Communicatiestick:** de WiFi/LAN Kit-20 zet het systeem online en verbindt via Bluetooth met de app (p. 34).
 - **Statische schakelkast (STS):** optioneel. Een aparte kast voor net, generator en een extra SMART-PORT, met een handbediende bypass (p. 56-57).
 
 !!! kern Welke handleiding bij welke vraag
-Er is een Nederlandse gebruikershandleiding (V1.8, juli 2026) en een nieuwere Engelse (V2.0, oktober 2026). Beide zijn ruim 330 pagina's en bevatten alles: veiligheid, scenario's, montage, bedrading, inbedrijfstelling, foutcodes en technische gegevens. Deze pagina verwijst naar de Nederlandse versie. De Engelse versie heeft een paar aanvullingen, die hieronder apart worden genoemd. De beknopte installatiegids (QIG) is vooral tekeningen met maten, kabeldoorsneden en aanhaalmomenten.
+Er is een Nederlandse gebruikershandleiding (V1.8, juli 2026) en een nieuwere Engelse (V2.0, oktober 2026). Beide zijn ruim 330 pagina's en hebben alles: veiligheid, scenario's, montage, bedrading, inbedrijfstelling, foutcodes en technische gegevens. Deze pagina verwijst naar de Nederlandse versie en noemt de Engelse alleen waar die meer heeft. De beknopte installatiegids (QIG) is vooral tekeningen met maten, kabeldoorsneden en aanhaalmomenten.
 !!!
 
 !!! info Als je Sigenergy al kent
-Bij SigenStor Home heb je voor noodstroom een **aparte Sigen Gateway** nodig. Bij de ESA zit de noodstroomaansluiting (BACK-UP-poort) en het netrelais **in de omvormer zelf**. De STS is optioneel en vooral bedoeld voor een generator of extra groep. Verder: Sigenergy noemt 0 ms omschakeltijd (alleen met gateway), GoodWe noemt minder dan 4 ms (Datasheet p. 1). Sigenergy werkt met de mySigen-app, GoodWe met SEMS+. En let op het blussen: Sigenergy noemt ABC-poeder als mogelijkheid, GoodWe verbiedt ABC-poeder juist (zie Veiligheid).
+SigenStor Home heeft voor noodstroom een **aparte Sigen Gateway** nodig. Bij de ESA zitten de BACK-UP-poort en het netrelais **in de omvormer zelf**. De optionele STS is vooral voor een generator of een extra groep. Sigenergy noemt 0 ms omschakeltijd (alleen met gateway), GoodWe minder dan 4 ms (Datasheet p. 1). De app is bij Sigenergy mySigen, bij GoodWe SEMS+. Let ook op bij blussen: Sigenergy noemt ABC-poeder als mogelijkheid, GoodWe verbiedt het juist (zie Veiligheid).
 !!!
 
 ### Begrippen vooraf
@@ -69,7 +69,7 @@ Bij SigenStor Home heb je voor noodstroom een **aparte Sigen Gateway** nodig. Bi
     {
       id: 'hybride-of-ac',
       kop: 'Hybride of AC-gekoppeld, en welke reeks',
-      tekst: `De reeks bestaat uit twee omvormertypes met dezelfde vermogensstappen (Gebruikershandleiding p. 3). De letters in de typecode vertellen welke je hebt.
+      tekst: `De reeks heeft twee omvormertypes met dezelfde vermogensstappen (Gebruikershandleiding p. 3). Aan de letters in de typecode zie je welke je hebt.
 
 | Kenmerk | Hybride (EHA) | AC-gekoppeld (BHA) |
 |---|---|---|
@@ -82,9 +82,11 @@ Bij SigenStor Home heb je voor noodstroom een **aparte Sigen Gateway** nodig. Bi
 
 ### Hoe je kiest
 
-- **Nieuwe panelen en een batterij tegelijk:** de hybride uitvoering. De panelen gaan op de PV-ingangen, de batterij laadt direct uit de zon.
-- **Er hangt al een gewone netomvormer met panelen:** de AC-gekoppelde uitvoering is daarvoor bedoeld. Het AC-datasheet noemt uitdrukkelijk integratie met bestaande PV-installaties (AC-datasheet p. 1). De bestaande omvormer sluit je dan aan op de GRID-zijde (koppelingsscenario) of op de BACK-UP-poort (microgrid), zie het volgende hoofdstuk.
-- **Vermogen:** kies op het verbruik en de netaansluiting. De omvormer is 1-fase: 230 V tussen L en N (Datasheet p. 2).
+Leg je nieuwe panelen en een batterij tegelijk, dan neem je de hybride uitvoering. De panelen gaan op de PV-ingangen en de batterij laadt direct uit de zon.
+
+Hangt er al een gewone netomvormer met panelen, dan is de AC-gekoppelde uitvoering daarvoor bedoeld. Het AC-datasheet noemt uitdrukkelijk integratie met bestaande PV-installaties (AC-datasheet p. 1). De bestaande omvormer komt dan op de GRID-zijde (koppelingsscenario) of op de BACK-UP-poort (microgrid), zie het volgende hoofdstuk.
+
+Het vermogen kies je op verbruik en netaansluiting. De omvormer is 1-fase: 230 V tussen L en N (Datasheet p. 2).
 
 ### Verschil met de reeks 5-30kW
 
@@ -97,31 +99,31 @@ Bij SigenStor Home heb je voor noodstroom een **aparte Sigen Gateway** nodig. Bi
 | Koeling | Natuurlijke koeling, geen ventilator | Ventilatoren |
 | Typecode | EHA (hybride), BHA (AC) | ETA (hybride), BTA (AC) |
 
-De batterijmodules zijn in beide reeksen dezelfde Lynx D G2-modules. Het datasheet noemt voor dezelfde module twee spanningsbereiken, een voor 1-fase- en een voor 3-fasesystemen (Lynx D G2-datasheet p. 2).
+Beide reeksen gebruiken dezelfde Lynx D G2-modules, dus het datasheet noemt per module twee spanningsbereiken: een voor 1-fase- en een voor 3-fasesystemen (Lynx D G2-datasheet p. 2).
 
 ### Batterijcapaciteit
 
-Het systeem ondersteunt 5 tot 108 kWh (Gebruikershandleiding p. 32). Op een vloervoetstuk gaan maximaal 6 modules op een stapel, met maximaal 3 uitbreidingsgroepen en 12 modules in totaal. Aan een muurbeugel gaan er minder op: 3 van de kleine modules (5.1 en 6.0) of 2 van de grote (8.3 en 9.0) (p. 49, 98). Modules van verschillende capaciteit mogen door elkaar, maar dan werkt de batterijverwarming niet (p. 32).`
+Het systeem kan 5 tot 108 kWh aan (Gebruikershandleiding p. 32). Op een vloervoetstuk gaan maximaal 6 modules op een stapel, met maximaal 3 uitbreidingsgroepen en 12 modules in totaal. Aan een muurbeugel passen 3 kleine modules (5.1 en 6.0) of 2 grote (8.3 en 9.0) (p. 49, 98). Modules van verschillende capaciteit mogen door elkaar, maar dan werkt de batterijverwarming niet (p. 32).`
     },
     {
       id: 'plek-in-systeem',
       kop: 'Hoe het werkt en hoe het in de installatie past',
       tekst: `De omvormer heeft twee AC-poorten (Gebruikershandleiding p. 52):
 
-- **ON-GRID (GRID):** naar het net, via een ingebouwd netrelais. In off-grid-modus gaat dat relais open (p. 107).
+- **ON-GRID (GRID):** naar het net, via een ingebouwd netrelais dat in off-grid-modus opengaat (p. 107).
 - **BACK-UP:** naar de groepen die bij een stroomstoring moeten blijven werken. Deze poort staat onder spanning zodra de omvormer aan staat, ook als het net wegvalt (p. 107).
 
 ### Volledige of gedeeltelijke back-up
 
-Bij **gedeeltelijke back-up** hangen alleen de belangrijke groepen aan BACK-UP. Bij **volledige back-up** hangt het hele huis eraan. Dat kan omdat de omvormer bij aanwezig net tot 63 A doorlaat via een interne bypass (Datasheet p. 2, voetnoot 4). Bij een storing moet de totale belasting wel onder het nominale vermogen blijven, anders schakelt de omvormer af op overbelasting (p. 107). In off-grid zijn de grenzen voor motoren en compressoren (inductieve belasting) beperkt: 2,2 kVA per apparaat, en 2,2 tot 3,7 kVA in totaal (p. 28).
+Bij **gedeeltelijke back-up** hangen alleen de belangrijke groepen aan BACK-UP, bij **volledige back-up** het hele huis. Dat kan omdat de omvormer bij aanwezig net tot 63 A doorlaat via een interne bypass (Datasheet p. 2, voetnoot 4). Bij een storing moet de totale belasting wel onder het nominale vermogen blijven, anders schakelt de omvormer af op overbelasting (p. 107). Motoren en compressoren (inductieve belasting) zijn in off-grid beperkt tot 2,2 kVA per apparaat en 2,2 tot 3,7 kVA in totaal (p. 28).
 
 ### Drie scenario's
 
 1. **Algemeen scenario:** alleen de ESA, eventueel met STS (p. 28-34).
-2. **Microgrid:** een gewone netomvormer hangt aan de BACK-UP-poort van de ESA. Bij een storing blijft die omvormer dan ook produceren. Geen generator mogelijk in dit scenario (p. 34-41).
+2. **Microgrid:** een gewone netomvormer hangt aan de BACK-UP-poort van de ESA, zodat die bij een storing ook blijft produceren. Een generator kan in dit scenario niet (p. 34-41).
 3. **Koppelingsscenario:** een netomvormer hangt aan de GRID-zijde (p. 41-48). Met een GoodWe-netomvormer (DNS G3, MS G3) gaat er een RS485-kabel naar de EMS-poort op COM2 (p. 41).
 
-De tekst over het vermogen van de netomvormer is in de Nederlandse handleiding onvolledig vertaald: er ontbreekt een woord tussen "het nominale uitgangsvermogen van de netgekoppelde omvormer" en "het nominale uitgangsvermogen van de energieopslagomvormer" (p. 41, 48). Bedoeld is vermoedelijk dat de netomvormer niet groter mag zijn dan de ESA, maar controleer dat bij de leverancier.
+De zin over het vermogen van de netomvormer is in de Nederlandse handleiding helaas onvolledig vertaald. Tussen "het nominale uitgangsvermogen van de netgekoppelde omvormer" en "het nominale uitgangsvermogen van de energieopslagomvormer" ontbreekt een woord (p. 41, 48). Vermoedelijk mag de netomvormer niet groter zijn dan de ESA, maar check dat bij de leverancier.
 
 ### Meting
 
@@ -129,20 +131,27 @@ Met de ingebouwde meter en de meegeleverde CT (kabel 10 m, verlengbaar tot 30 m 
 
 ### Generator, laadpaal en parallel
 
-- **Generator:** zonder STS via de GRID-poort met een externe meter en een ATS met vergrendeling; met STS op de SMART-PORT zonder externe meter (p. 120).
-- **Laadpaal:** de handleiding noemt dat een **GoodWe AC-laadpaal** kan worden aangesloten (p. 31, 37). Daarvoor is er een RS485-aansluiting op de communicatiepoort, gedeeld met EMS en netomvormer (p. 145, 165). Hoe je de laadpaal configureert, staat niet in deze handleiding.
-- **Parallel:** tot 10 omvormers, bij meer dan 6 eerst de klantenservice bellen. Elke omvormer heeft een WiFi/LAN Kit-20 nodig (p. 31). De nieuwere Engelse handleiding beschrijft ook een systeem met de dataverzamelaar EzManager3000 (User Manual EN p. 48-52).
+- **Generator:** zonder STS via de GRID-poort met een externe meter en een ATS met vergrendeling. Met STS gaat hij op de SMART-PORT, zonder externe meter (p. 120).
+- **Laadpaal:** je kunt een **GoodWe AC-laadpaal** aansluiten (p. 31, 37), via een RS485-aansluiting op de communicatiepoort die hij deelt met EMS en netomvormer (p. 145, 165). Hoe je de laadpaal configureert, staat er niet in.
+- **Parallel:** tot 10 omvormers. Bij meer dan 6 bel je eerst de klantenservice. Elke omvormer heeft een WiFi/LAN Kit-20 nodig (p. 31). De nieuwere Engelse handleiding beschrijft ook een systeem met de dataverzamelaar EzManager3000 (User Manual EN p. 48-52).
 
 ### Werkmodi
 
-De handleiding noemt zes modi (p. 61-71): **zelfverbruik** (zon eerst naar huis, dan batterij, dan net), **back-up** (batterij blijft gevuld tot een reserve-SOC), **TOU** (laden en ontladen op tijden met goedkope of dure stroom), **slim laden** (pieken boven de terugleverlimiet in de batterij), **vraagbeheer** (pieken in afname afvlakken, vooral zakelijk) en **off-grid**. Na de eerste inbedrijfstelling laadt het systeem de batterij eerst automatisch helemaal op om het BMS te kalibreren (p. 61).
+De handleiding noemt zes modi (p. 61-71):
 
-Via droge contacten kan de omvormer ook verbruikers schakelen, bijvoorbeeld een **SG Ready-warmtepomp** (p. 72-73, 165).`
+1. **Zelfverbruik:** zon eerst naar huis, dan batterij, dan net.
+2. **Back-up:** de batterij blijft gevuld tot een reserve-SOC.
+3. **TOU:** laden en ontladen op tijden met goedkope of dure stroom.
+4. **Slim laden:** pieken boven de terugleverlimiet gaan in de batterij.
+5. **Vraagbeheer:** pieken in afname afvlakken, vooral zakelijk.
+6. **Off-grid.**
+
+Na de eerste inbedrijfstelling laadt het systeem de batterij eerst automatisch helemaal op om het BMS te kalibreren (p. 61). Via droge contacten kan de omvormer ook verbruikers schakelen, bijvoorbeeld een **SG Ready-warmtepomp** (p. 72-73, 165).`
     },
     {
       id: 'specificaties',
       kop: 'Specificaties in het kort',
-      tekst: `Waarden uit de datasheets. Controleer kritische getallen in de originele PDF.
+      tekst: `De waarden komen uit de datasheets. Check kritische getallen in de originele PDF.
 
 | Waarde | Hybride EHA | AC-gekoppeld BHA |
 |---|---|---|
@@ -162,7 +171,7 @@ Via droge contacten kan de omvormer ook verbruikers schakelen, bijvoorbeeld een 
 | Gewicht omvormer | 24 tot 26 kg | 16,9 tot 17,7 kg |
 | Afmetingen omvormer | 800 x 300 x 270 mm | 800 x 300 x 270 mm |
 
-Bronnen: Datasheet p. 1-2, AC-datasheet p. 1-2. Let op de tegenstrijdige omschakeltijd in het AC-datasheet. Het hybride datasheet voor EMEA noemt geen 9,999 kW-model maar wel een 5,75 kW-model dat alleen in Ierland wordt verkocht.
+Bronnen: Datasheet p. 1-2, AC-datasheet p. 1-2. Bij de omschakeltijd spreekt het AC-datasheet zichzelf tegen. Het hybride datasheet voor EMEA noemt geen 9,999 kW-model, wel een 5,75 kW-model dat alleen in Ierland wordt verkocht.
 
 ### Batterijmodules (Datasheet p. 3, Lynx D G2-datasheet p. 2)
 
@@ -174,34 +183,34 @@ Bronnen: Datasheet p. 1-2, AC-datasheet p. 1-2. Let op de tegenstrijdige omschak
 | Gewicht | 57,5 kg | 79 kg | 61 kg | 77 kg |
 | Cycli (laboratorium) | 8000 | 8000 | 10000 | 10000 |
 
-Alle modules zijn 800 x 326 x 270 mm, IP66, met ingebouwde verwarming en een **aerosolblusser** (een ingebouwd blussysteem dat bij brand een blusnevel vrijgeeft). Het datasheet geeft het laad- en ontlaadvermogen per batterijtype. Hoe dat optelt bij meerdere modules, staat er niet in.`
+Alle modules zijn 800 x 326 x 270 mm en IP66, met een ingebouwde verwarming en een **aerosolblusser** die bij brand een blusnevel vrijgeeft. Het datasheet geeft het laad- en ontlaadvermogen per batterijtype. Hoe dat optelt bij meerdere modules, staat er helaas niet in.`
     },
     {
       id: 'veiligheid',
       kop: 'Veiligheid en let op',
       tekst: `!!! gevaar Spanningsloos werken
-Schakel voor elk aansluitwerk alle voorliggende schakelaars uit: de AC-automaat en de DC-schakelaar. Werken onder spanning is verboden (Gebruikershandleiding p. 14-15, 105). Na uitschakelen ontladen interne onderdelen vertraagd: het etiket noemt **5 minuten wachten** (p. 22). De BACK-UP-poort staat onder spanning zolang de omvormer aan is, ook zonder net (p. 107).
+Schakel voor elk aansluitwerk alle voorliggende schakelaars uit: de AC-automaat en de DC-schakelaar. Werken onder spanning is verboden (Gebruikershandleiding p. 14-15, 105). Interne onderdelen ontladen vertraagd, dus het etiket zegt **5 minuten wachten** na uitschakelen (p. 22). De BACK-UP-poort staat onder spanning zolang de omvormer aan is, ook zonder net (p. 107).
 !!!
 
 !!! info DC-zijde en batterij
-De batterijen zijn hoogspanning-DC (350 tot 550 V). Uit de cursus weet je: zonnepanelen leveren spanning zolang er licht is, en een batterij blijft een bron. Volg de uitschakelvolgorde (zie Inbedrijfstelling) en meet na voordat je iets aanraakt.
+De batterijen zijn hoogspanning-DC (350 tot 550 V). Zonnepanelen leveren spanning zolang er licht is en een batterij blijft ook een bron. Volg dus de uitschakelvolgorde (zie Inbedrijfstelling) en meet na voordat je iets aanraakt.
 !!!
 
 ### Batterij en brand
 
 !!! gevaar Brand en blussen
-Boven 150 °C bestaat brandgevaar en kunnen giftige gassen vrijkomen. De handleiding vraagt om een blusser met **koolstofdioxide (CO2) of water** in de buurt en verbiedt **ABC-poeder** (p. 20). Tegelijk staat in de symbolentabel een etiket dat blussen met water verbiedt (p. 23). Die twee spreken elkaar tegen. Volg het etiket op het apparaat en vraag de leverancier welk middel geldt.
+Boven 150 °C is er brandgevaar en kunnen giftige gassen vrijkomen. De handleiding vraagt om een blusser met **koolstofdioxide (CO2) of water** in de buurt en verbiedt **ABC-poeder** (p. 20). Maar in de symbolentabel staat een etiket dat blussen met water juist verbiedt (p. 23). Die twee spreken elkaar tegen. Volg het etiket op het apparaat en vraag de leverancier welk middel geldt.
 !!!
 
 - Niet demonteren, niet laten vallen, niet in de zon of bij een warmtebron. Boven 60 °C omgevingstemperatuur kan brand ontstaan (p. 19).
-- Een beschadigde module niet gebruiken. Gelekt elektrolyt is bijtend: ogen minstens 15 minuten spoelen en medische hulp zoeken (p. 19-20).
-- Heeft een module met optionele brandbeveiliging die beveiliging geactiveerd, dan direct de hoofdschakelaar uit, controleren op schade en de module apart zetten (p. 20-21).
+- Gebruik geen beschadigde module. Gelekt elektrolyt is bijtend: ogen minstens 15 minuten spoelen en medische hulp zoeken (p. 19-20).
+- Heeft een module met optionele brandbeveiliging die beveiliging geactiveerd, zet dan direct de hoofdschakelaar uit, controleer op schade en zet de module apart (p. 20-21).
 - Volgens de veiligheidsbrochure heeft de Lynx D een overdrukventiel, temperatuursensoren per module, thermische isolatie tussen batterij- en DC/DC-deel en een polariteitsdetectie (Veiligheidsbrochure p. 1-4).
 
 ### Overige waarschuwingen
 
 - Niet geschikt voor levensreddende medische apparatuur (p. 26).
-- Off-grid niet onder 30% SOC laten zakken en de batterij elk half jaar volledig laden en ontladen om de SOC te kalibreren (p. 26-27).
+- Laat de SOC off-grid niet onder 30% zakken. Laad en ontlaad de batterij elk half jaar volledig om de SOC te kalibreren (p. 26-27).
 - Gebruik alleen de meegeleverde connectoren (p. 15).
 - PV-strings mogen niet geaard zijn. De isolatieweerstand moet minimaal de max. ingangsspanning gedeeld door 30 mA zijn. Panelen moeten aan IEC 61730 klasse A voldoen (p. 17).`
     },
@@ -210,28 +219,28 @@ Boven 150 °C bestaat brandgevaar en kunnen giftige gassen vrijkomen. De handlei
       kop: 'Plaatsing en montage',
       tekst: `### Omgeving (Gebruikershandleiding p. 89-91)
 
-- Binnen en buiten mogelijk (IP66), maar bij voorkeur beschut tegen zon, regen en sneeuw. De meter hoort binnen.
+- Binnen en buiten kan (IP66), maar het liefst beschut tegen zon, regen en sneeuw. De meter hoort binnen.
 - Niet in een brandbare, explosieve of corrosieve omgeving en buiten bereik van kinderen.
-- Binnen 500 m van de kust eerst overleggen met de fabrikant (zoutschade).
-- Niet in de koude luchtstroom van een airco: temperatuurverschil geeft condens.
-- Boven -18 °C (G20), boven 2 °C (G21) of boven -20 °C (6.0 en 9.0) kan de batterij weer laden. Daaronder kan de batterij na ontladen niet meer bijladen en gaat in onderspanning (p. 89).
+- Binnen 500 m van de kust eerst overleggen met de fabrikant, vanwege zoutschade.
+- Niet in de koude luchtstroom van een airco, want het temperatuurverschil geeft condens.
+- Boven -18 °C (G20), boven 2 °C (G21) of boven -20 °C (6.0 en 9.0) kan de batterij weer laden. Is het kouder, dan kan de batterij na ontladen niet meer bijladen en gaat hij in onderspanning (p. 89).
 
-De nieuwere Engelse handleiding voegt toe: **niet in een woonruimte** zoals slaapkamer, woonkamer of kinderkamer, en niet in een gang of onder een trap, tenzij afgesloten (User Manual EN p. 93). Die regel staat niet in de Nederlandse V1.8.
+De nieuwere Engelse handleiding voegt toe: **niet in een woonruimte** zoals slaapkamer, woonkamer of kinderkamer. Ook niet in een gang of onder een trap, tenzij afgesloten (User Manual EN p. 93). Die regel staat niet in de Nederlandse V1.8.
 
 ### Vrije ruimte en kabellengtes
 
-De vrije ruimte rond het systeem staat alleen als tekening in de handleiding en in de QIG (met maten van 300 tot 600 mm, QIG p. 1). Kabellengtes staan wel in tekst (p. 93-94): parallelkabel tussen omvormers maximaal 5 m (CAT5E/6E) of 10 m (CAT7E), CT-kabel maximaal 30 m, RS485 naar de meter maximaal 100 m.
+De vrije ruimte rond het systeem staat alleen als tekening in de handleiding en in de QIG, met maten van 300 tot 600 mm (QIG p. 1). Kabellengtes staan wel in de tekst (p. 93-94): parallelkabel tussen omvormers maximaal 5 m (CAT5E/6E) of 10 m (CAT7E), CT-kabel maximaal 30 m, RS485 naar de meter maximaal 100 m.
 
 ### Montage (p. 97-101)
 
 1. Boor niet in leidingen en scherm de batterijen af met karton tegen boorstof.
 2. De omvormer komt altijd **boven** de batterijen, nooit eronder.
-3. Voetstuk op de vloer: 50 tot 60 mm van de muur, waterpas met de stelvoetjes, kantelbeveiliging aan de muur. Of het voetstuk aan een muurbeugel; controleer dan het draagvermogen van de muur.
+3. Voetstuk op de vloer: 50 tot 60 mm van de muur, waterpas met de stelvoetjes, kantelbeveiliging aan de muur. Hangt het voetstuk aan een muurbeugel, check dan het draagvermogen van de muur.
 4. Haal de beschermkap van de blinde stekker voordat je stapelt. Gebruik hijsgereedschap bij meer dan 3 modules. Hijsbanden moeten 185 kg (kleine) of 240 kg (grote modules) dragen (p. 96).
 5. Schroef de modules aan elkaar en zet de bovenste module met een kantelbeugel aan de muur vast.
-6. Omvormer bovenop zetten en vastschroeven. Bij een gesplitste opstelling (tweede stapel) komt er een afdekkap op de batterij.
+6. Zet de omvormer bovenop en schroef hem vast. Bij een gesplitste opstelling (tweede stapel) komt er een afdekkap op de batterij.
 
-De STS hangt op een achterplaat aan de muur (p. 101-102). Aanhaalmomenten staan alleen in de tekeningen van de QIG (bijvoorbeeld M5 4 N·m en M10 20 N·m). Welke waarde bij welke schroef hoort, zie je alleen in de tekening.`
+De STS hangt op een achterplaat aan de muur (p. 101-102). Aanhaalmomenten staan alleen in de tekeningen van de QIG (bijvoorbeeld M5 4 N·m en M10 20 N·m), dus welke waarde bij welke schroef hoort, zie je alleen daar.`
     },
     {
       id: 'aansluiting',
@@ -246,75 +255,75 @@ De STS hangt op een achterplaat aan de muur (p. 101-102). Aanhaalmomenten staan 
 | 8K | 50 A | 63 A |
 | 9.999K en 10K | 63 A | 63 A |
 
-Geldt voor EHA en BHA. Elke omvormer een eigen automaat, nooit een verbruiker tussen omvormer en die automaat (p. 139). Gebruik je de BACK-UP-poort niet, dan kies je de netautomaat op de maximale netstroom (p. 141).
+Dit geldt voor EHA en BHA. Elke omvormer krijgt een eigen automaat, zonder verbruiker ertussen (p. 139). Gebruik je de BACK-UP-poort niet, dan kies je de netautomaat op de maximale netstroom (p. 141).
 
-**Aardlek:** de handleiding adviseert aan de AC-uitgang een **type A met 300 mA** (onder 30 kVA) en zegt dat je volgens de lokale regels mag kiezen (p. 142). De omvormer heeft ook een eigen lekstroombewaking (RCMU, p. 154). In een parallelsysteem geen RCD per omvormer, maar centraal bij het netpunt (p. 111).
+**Aardlek:** de handleiding adviseert aan de AC-uitgang een **type A met 300 mA** (onder 30 kVA) en zegt dat je volgens de lokale regels mag kiezen (p. 142). De omvormer heeft ook een eigen lekstroombewaking (RCMU, p. 154). In een parallelsysteem komt er geen RCD per omvormer, maar een centrale bij het netpunt (p. 111).
 
 !!! info Algemene vakkennis: 300 mA is geen persoonsbeveiliging
-300 mA beschermt tegen brand, niet tegen een schok. De eindgroepen in de woning, ook die achter de BACK-UP-poort, hebben in Nederland gewoon hun eigen 30 mA-aardlekbeveiliging nodig. Welk type bij omvormers past, zie de les over aardlektypes.
+300 mA beschermt tegen brand, niet tegen een schok. De eindgroepen in de woning hebben in Nederland gewoon hun eigen 30 mA-aardlekbeveiliging nodig, ook achter de BACK-UP-poort. Welk type bij omvormers past, staat in de les over aardlektypes.
 !!!
 
 ### Kabels (p. 142-147)
 
-- **AC (GRID en BACK-UP):** koper, 4-16 mm² (3K, 3.6K), 6-16 mm² (5K, 6K) en 10-16 mm² (8K tot 10K). De QIG noemt voor 8K 6-16 mm² (QIG p. 2), de handleiding 10-16 mm². Kies bij twijfel de zwaarste en altijd passend bij de automaat.
+- **AC (GRID en BACK-UP):** koper, 4-16 mm² (3K, 3.6K), 6-16 mm² (5K, 6K) en 10-16 mm² (8K tot 10K). De QIG noemt voor 8K 6-16 mm² (QIG p. 2), de handleiding 10-16 mm². Kies bij twijfel de zwaarste, altijd passend bij de automaat.
 - **Aarde kast:** koper 5,2 tot 6 mm². **PV (alleen EHA):** PV-kabel 4-6 mm².
-- **Communicatie:** afgeschermde twisted pair 0,2-0,4 mm² voor meter, EMS en laadpaal; CAT5E of beter voor CT en parallel.
+- **Communicatie:** afgeschermde twisted pair 0,2-0,4 mm² voor meter, EMS en laadpaal. CAT5E of beter voor CT en parallel.
 
 ### Volgorde van aansluiten
 
-1. **Eerst de aarde** van de omvormerkast, bij demontage als laatste. De kastaarde vervangt de PE in de AC-kabel niet (p. 148).
-2. **PV (alleen EHA):** polariteit en spanning meten met een multimeter, nooit een string op twee omvormers (p. 149-150).
-3. **Batterij:** bij een gestapelde opstelling via de blinde stekker. Bij een tweede stapel komen er uitbreidingskabels en een eigen aarde (p. 148, 151-152).
-4. **AC:** BACK-UP en GRID niet verwisselen. Hexagonale perstang gebruiken (p. 154).
-5. **CT en meter:** stroomrichting van huis naar net, anders volgt een foutmelding (p. 119, 161).
+1. **Eerst de aarde** van de omvormerkast. Bij demontage gaat hij er als laatste af. De kastaarde vervangt de PE in de AC-kabel niet (p. 148).
+2. **PV (alleen EHA):** polariteit en spanning meten met een multimeter. Nooit een string op twee omvormers (p. 149-150).
+3. **Batterij:** bij een gestapelde opstelling via de blinde stekker. Bij een tweede stapel komen er uitbreidingskabels en een eigen aarde bij (p. 148, 151-152).
+4. **AC:** BACK-UP en GRID niet verwisselen. Gebruik een hexagonale perstang (p. 154).
+5. **CT en meter:** stroomrichting van huis naar net, anders krijg je een foutmelding (p. 119, 161).
 6. **Communicatie:** poorten voor parallel, CT, RCR/DRED (netbeheerderssignalen), meter, noodstop/NS-beveiliging, droge contacten en EMS/laadpaal (p. 163-165).
 
 ### N en PE in back-up
 
-Hoe N en PE aan de BACK-UP-kant lopen verschilt per land (p. 107). De handleiding heeft aparte schema's voor Australië en voor overige regio's. Voor Europa zijn er schema's waarin N en PE apart in de verdeelkast lopen (p. 111-115). De N van net- en back-upzijde moeten verbonden blijven, anders werkt off-grid niet goed (p. 107). Of N en PE in off-grid worden doorverbonden, stel je in de app in onder "Relaischakelaar voor N en PE van back-upvoeding" (p. 113).
+Hoe N en PE aan de BACK-UP-kant lopen, verschilt per land (p. 107). Er zijn aparte schema's voor Australië en voor overige regio's. In de Europese schema's lopen N en PE apart in de verdeelkast (p. 111-115). De N van net- en back-upzijde moet verbonden blijven, anders werkt off-grid niet goed (p. 107). Of N en PE in off-grid worden doorverbonden, stel je in de app in onder "Relaischakelaar voor N en PE van back-upvoeding" (p. 113).
 
-Een **handmatige omschakelaar** (2-polig in Europa, niet meegeleverd) laat het huis bij onderhoud op het net draaien. De gemeenschappelijke contacten moeten aan de BACK-UP-kant zitten, anders staat er bij een storing spanning op de netzijde (p. 116-118). Omschakelaar en STS niet allebei plaatsen (p. 120).`
+Met een **handmatige omschakelaar** (2-polig in Europa, niet meegeleverd) draait het huis bij onderhoud gewoon op het net. De gemeenschappelijke contacten moeten aan de BACK-UP-kant zitten, anders staat er bij een storing spanning op de netzijde (p. 116-118). Plaats niet zowel een omschakelaar als een STS (p. 120).`
     },
     {
       id: 'inbedrijfstelling',
       kop: 'Inbedrijfstelling en app',
       tekst: `### Controle vooraf (Gebruikershandleiding p. 169)
 
-Vast gemonteerd, kabels goed vast, ongebruikte doorvoeren afgedicht, netspanning en frequentie binnen de grenzen.
+Alles vast gemonteerd, kabels goed vast, ongebruikte doorvoeren afgedicht, netspanning en frequentie binnen de grenzen.
 
 ### Inschakelen zonder STS (p. 170-171)
 
-1. Batterijschakelaar(s) aan en kort op de multifunctionele knop van een module drukken. Een druk start alle modules.
+1. Batterijschakelaar(s) aan en kort op de multifunctionele knop van een module drukken. Eén druk start alle modules.
 2. DC-schakelaar van de omvormer aan (alleen EHA).
 3. Eventueel de PV-automaat aan.
 4. ON-GRID-automaat aan.
 5. Handmatige omschakelaar op BACK-UP, dan de BACK-UP-automaat aan.
 
-Binnen 15 minuten moeten omvormer en batterij met elkaar communiceren, anders schakelt de batterij zichzelf af (p. 170). Met STS is de volgorde: batterij, DC, PV, dan in de STS GRID, INV, BACK-UP en SMART-PORT (p. 173-174).
+Omvormer en batterij moeten binnen 15 minuten met elkaar communiceren, anders schakelt de batterij zichzelf af (p. 170). Met STS is de volgorde: batterij, DC, PV en dan in de STS GRID, INV, BACK-UP en SMART-PORT (p. 173-174).
 
-**Zwarte start:** geen zon en geen net? Batterijschakelaars aan, 15 seconden wachten en 2 seconden op de knop drukken. De batterij start dan de omvormer in off-grid (p. 174).
+**Zwarte start:** geen zon en geen net? Zet de batterijschakelaars aan, wacht 15 seconden en druk 2 seconden op de knop. Dan start de batterij de omvormer in off-grid (p. 174).
 
 ### Lampjes (p. 175-183)
 
-- **Omvormer:** een blauwpaars ademlicht voor de status, rood knipperen bij een storing, en vier SOC-segmenten van 25% (vast is laden, knipperen is ontladen).
+- **Omvormer:** een blauwpaars ademlicht voor de status en rood knipperen bij een storing. Vier SOC-segmenten van 25% laten de lading zien: vast is laden, knipperen is ontladen.
 - **Batterij:** groen vast is in bedrijf, 1 keer per seconde knipperen is standby, 3 keer per seconde is communicatieverlies met de omvormer, rood is een storing.
-- **WiFi/LAN Kit-20:** 1 keer knipperen wacht op Bluetooth, 2 keer geen router, 4 keer geen server. Dubbelklik op Reload zet Bluetooth 5 minuten aan.
+- **WiFi/LAN Kit-20:** 1 keer knipperen wacht op Bluetooth, 2 keer geen router, 4 keer geen server. Dubbelklik je op Reload, dan staat Bluetooth 5 minuten aan.
 
 ### App
 
-Instellen gaat via de **SEMS+ App** (Android 7.0 of hoger, iOS 15.1 of hoger) of via **SEMS+ WEB** (p. 184-185). De QIG noemt daarnaast de SolarGo-app (QIG p. 2). De menu's zelf staan in de aparte SEMS+-handleiding, die niet in deze set zit. Een paar instellingen noemt de handleiding wel:
+Instellen gaat via de **SEMS+ App** (Android 7.0 of hoger, iOS 15.1 of hoger) of via **SEMS+ WEB** (p. 184-185). De QIG noemt daarnaast de SolarGo-app (QIG p. 2). De menu's staan in een aparte SEMS+-handleiding die niet in deze set zit. Een paar instellingen noemt de handleiding wel:
 
-- Netcode: de lijst bevat voor Nederland NL-16/20A en NL-A tot en met NL-D (p. 345). Welke je kiest, staat er niet bij.
+- Netcode: de lijst bevat voor Nederland NL-16/20A en NL-A tot en met NL-D (p. 345). Welke je kiest, staat er helaas niet bij.
 - Bij volledige back-up zonder externe meter: metertype "Ingebouwde CT, extern geen meter geen CT" (p. 27).
-- Terugleverbeperking, parallel master en slave, DRED/RCR en noodstop pas aanzetten als ze zijn aangesloten, anders gaat de omvormer niet aan het net (p. 120, 162).
-- Meter/CT hulpdetectie om te controleren of meter en CT goed zitten (p. 341).`
+- Terugleverbeperking, parallel master en slave, DRED/RCR en noodstop zet je pas aan als ze zijn aangesloten. Anders gaat de omvormer niet aan het net (p. 120, 162).
+- Met de Meter/CT hulpdetectie controleer je of meter en CT goed zitten (p. 341).`
     },
     {
       id: 'storingen',
       kop: 'Storingen, uitschakelen en onderhoud',
       tekst: `### Foutcodes
 
-Alle storingen staan in de SEMS+ App onder Energiecentrale, Alarm, met oorzaak en oplossing (Gebruikershandleiding p. 195). De handleiding heeft een complete tabel: omvormercodes F01 tot F40 (p. 198-215), F41 tot F80 (p. 216-227), F81 tot F121 (p. 228-238), F122 tot F163 (p. 239-251), storingen zonder code (p. 252-273) en batterijstoringen (p. 274-298). Een paar die je als installateur snel tegenkomt:
+Alle storingen staan in de SEMS+ App onder Energiecentrale, Alarm, met oorzaak en oplossing (Gebruikershandleiding p. 195). De handleiding heeft een complete tabel: omvormercodes F01 tot F40 (p. 198-215), F41 tot F80 (p. 216-227), F81 tot F121 (p. 228-238), F122 tot F163 (p. 239-251), storingen zonder code (p. 252-273) en batterijstoringen (p. 274-298). Deze kom je als installateur snel tegen:
 
 | Code | Wat | Eerst controleren |
 |---|---|---|
@@ -326,7 +335,7 @@ Alle storingen staan in de SEMS+ App onder Energiecentrale, Alarm, met oorzaak e
 | F143 en F144 | CT niet aangesloten of omgekeerd | CT-bedrading en richting (p. 246) |
 | F145 | PE-verlies | PE controleren (p. 246) |
 
-De handleiding meldt zelf dat de lijst per model kan verschillen en dat de app leidend is (p. 195). De oudere Nederlandse probleemoplossingsgids (2023) helpt bij klachten zonder foutcode: vreemd laden of ontladen komt vaak door een **verkeerd georiënteerde CT** of een meter op een andere fase (Probleemoplossingsgids p. 20). Die gids gaat over oudere omvormers en apps (SolarGo, SEMS Portal), dus de lampjes en menu's kunnen afwijken.
+Volgens de handleiding kan de lijst per model verschillen en is de app leidend (p. 195). Bij klachten zonder foutcode helpt de oudere Nederlandse probleemoplossingsgids (2023). Vreemd laden of ontladen komt vaak door een **verkeerd georiënteerde CT** of een meter op een andere fase (Probleemoplossingsgids p. 20). Die gids gaat wel over oudere omvormers en apps (SolarGo, SEMS Portal), dus lampjes en menu's kunnen afwijken.
 
 ### Uitschakelen (p. 187-192)
 
@@ -336,27 +345,27 @@ De handleiding meldt zelf dat de lijst per model kan verschillen en dat de app l
 4. Eventueel de PV-automaat uit.
 5. DC-schakelaar uit. Zet de handmatige omschakelaar op net, zodat het huis stroom houdt.
 
-Met STS staat er een eigen volgorde, en tijdens onderhoud aan de omvormer moet in de STS **QF1 INV** open zijn (p. 187, 191-192).
+Met STS geldt een eigen volgorde. Tijdens onderhoud aan de omvormer moet in de STS **QF1 INV** open zijn (p. 187, 191-192).
 
 ### Periodiek onderhoud (p. 193-195)
 
 - Koelvinnen en luchtopeningen schoonhouden: elk half jaar.
 - Bevestiging, behuizing en elektrische verbindingen: elk half jaar tot jaarlijks.
 - Afdichting van de doorvoeren: jaarlijks.
-- Batterij die lang stilstaat of niet vol wordt: regelmatig laden, de tabel noemt eens per 15 dagen.
+- Een batterij die lang stilstaat of niet vol wordt regelmatig laden. De tabel noemt eens per 15 dagen.
 
-**Opslag:** batterijen op 30 tot 40% SOC, bij -20 tot 35 °C binnen 12 maanden onderhoudsladen (p. 86-87).`
+**Opslag:** batterijen op 30 tot 40% SOC bij -20 tot 35 °C. Binnen 12 maanden moet je ze onderhoudsladen (p. 86-87).`
     },
     {
       id: 'wat-niet-in-handleiding',
       kop: 'Wat niet in de handleiding staat',
-      tekst: `- De **menu's van de SEMS+ App**: de handleiding verwijst naar een aparte app-handleiding.
-- **Welke Nederlandse netcode** (NL-16/20A of NL-A tot en met NL-D) bij welke aansluiting hoort.
-- **Hoe je een GoodWe-laadpaal instelt**: alleen dat het kan en via welke poort.
-- **Wat een "STS VERSION"-omvormer is** en hoe je die aan de typecode herkent. Alleen die versie past op de STS (p. 31).
-- De **vrije ruimte rond het systeem** en de **aanhaalmomenten** staan alleen in tekeningen.
-- De **eisen van de Nederlandse netbeheerder** en NEN 1010, zoals de 30 mA-aardlekbeveiliging op eindgroepen. De handleiding verwijst alleen naar lokale regels.
-- **Hoe het laad- en ontlaadvermogen optelt** bij meerdere batterijmodules.
+      tekst: `- De menu's van de SEMS+ App. De handleiding verwijst naar een aparte app-handleiding.
+- Welke Nederlandse netcode (NL-16/20A of NL-A tot en met NL-D) bij welke aansluiting hoort.
+- Hoe je een GoodWe-laadpaal instelt. Er staat alleen dat het kan en via welke poort.
+- Wat een "STS VERSION"-omvormer is en hoe je die aan de typecode herkent. Alleen die versie past op de STS (p. 31).
+- De vrije ruimte rond het systeem en de aanhaalmomenten. Die staan alleen in tekeningen.
+- De eisen van de Nederlandse netbeheerder en NEN 1010, zoals de 30 mA-aardlekbeveiliging op eindgroepen. De handleiding verwijst alleen naar lokale regels.
+- Hoe het laad- en ontlaadvermogen optelt bij meerdere batterijmodules.
 
 ### Tegenstrijdigheden om te onthouden
 

@@ -13,7 +13,7 @@ KENNIS.addProduct({
   naam: 'Enphase IQ Gateway (Standard en Metered) met stroomtransformatoren',
   rol: 'sensor',
   toepassingen: ['zonnepanelen', 'thuisbatterij', 'laadpaal'],
-  korteOmschrijving: 'Het DIN-railkastje dat met de micro-omvormers praat over de stroomkabels, de netinstellingen doorgeeft, met stroomtransformatoren productie en verbruik meet en alles naar de Enphase-cloud stuurt. Het schakelt geen noodstroom: dat doet de IQ System Controller.',
+  korteOmschrijving: 'Het DIN-railkastje dat over de stroomkabels met de micro-omvormers praat, de netinstellingen doorgeeft, met stroomtransformatoren productie en verbruik meet en alles naar de Enphase-cloud stuurt. Noodstroom schakelt het niet, dat doet de IQ System Controller.',
 
   varianten: {
     kop: ['Model', 'Naam', 'Meting', 'Stroomtransformatoren', 'Max. micro-omvormers', 'Batterijen', 'Bron'],
@@ -40,22 +40,22 @@ KENNIS.addProduct({
     {
       id: 'wat-is-het',
       kop: 'Wat is het',
-      tekst: `De **IQ Gateway** is een kastje van 213 x 126 x 45 mm op een DIN-rail, in of naast de groepenkast. Het is het **communicatie- en meetcentrum** van een Enphase-systeem. Oudere documenten noemen hem **Envoy** of **Envoy-S**; het is hetzelfde soort apparaat.
+      tekst: `De **IQ Gateway** is een kastje van 213 x 126 x 45 mm op een DIN-rail, in of naast de groepenkast. Het is het **communicatie- en meetcentrum** van een Enphase-systeem. In oudere documenten heet hij **Envoy** of **Envoy-S**, maar het is hetzelfde soort apparaat.
 
 ### Wat hij doet
 
-- **Praten met de apparaten over de stroomkabels.** Micro-omvormers en het IQ Relay hebben geen eigen internet. De gateway spreekt ze aan via **powerline communicatie** (PLC): signalen op de gewone 230 V-bedrading. Daarom moet hij dicht bij de groepenkast zitten. Let op: de nieuwere **IQ Battery 5P with FlexPhase** gebruikt volgens de batterijdocumenten geen PLC maar een aparte bedrade besturingskabel via de Communications Kit 2 of de IQ System Controller. Alleen oudere Enphase-batterijen praatten via PLC of draadloos.
+- **Praten over de stroomkabels.** Micro-omvormers en het IQ Relay hebben geen eigen internet. De gateway spreekt ze aan via **powerline communicatie** (PLC), signalen op de gewone 230 V-bedrading, dus hij moet dicht bij de groepenkast zitten. Let op: de nieuwere **IQ Battery 5P with FlexPhase** gebruikt volgens de batterijdocumenten geen PLC maar een aparte bedrade besturingskabel via de Communications Kit 2 of de IQ System Controller. Alleen oudere Enphase-batterijen praatten via PLC of draadloos.
 - **Netprofiel doorgeven.** De micro-omvormers krijgen hun netinstellingen van de gateway. Zonder gateway en netprofiel produceren IQ8-micro-omvormers niets.
-- **Meten** (alleen Metered). Met **stroomtransformatoren** (CT's) meet hij wat de panelen produceren en wat het huis van het net haalt of teruglevert.
+- **Meten**, alleen bij de Metered. Met **stroomtransformatoren** (CT's) meet hij wat de panelen produceren en wat het huis van het net haalt of teruglevert.
 - **Sturen.** Exportbeperking (PEL) en beheer van fase-onbalans (PIM) lopen via de gateway. Voor een deel van die functies zijn volgens de gegevensbladen de Metered met CT's en/of een IQ Relay nodig.
 - **Naar de cloud.** Via wifi, ethernet of een mobiel modem naar de Enphase App en het Installer Platform, ook voor software-updates.
 
 !!! kern Gateway betekent hier iets anders
-Bij Sigenergy is de **Sigen Gateway** een schakelkast met contactoren en een bypass, die het huis bij netuitval loskoppelt van het net en op noodstroom zet. De Enphase IQ Gateway schakelt **niets**: hij meet en communiceert. Daarom staat hij in deze kennisbank onder de rol **Meting en sensoren**. De noodstroomschakelaar van Enphase is de **IQ System Controller 3 INT**, die volgens de IQ9N-handleiding zelf ook een communicatie-gateway in de behuizing heeft.
+Bij Sigenergy is de **Sigen Gateway** een schakelkast met contactoren en een bypass, die het huis bij netuitval loskoppelt van het net en op noodstroom zet. De Enphase IQ Gateway schakelt **niets**, hij meet en communiceert alleen. Daarom staat hij in deze kennisbank onder de rol **Meting en sensoren**. De noodstroomschakelaar van Enphase is de **IQ System Controller 3 INT**, met volgens de IQ9N-handleiding een eigen communicatie-gateway in de behuizing.
 !!!
 
 !!! info Als je Sigenergy al kent
-De IQ Gateway Metered doet ongeveer wat bij Sigenergy de **Sigen Power Sensor** (meten aan de netzijde met CT's) en de **CommMod** (internet) samen doen. Het verschil: bij Sigenergy praat de sensor via RS485 met de omvormer en heeft de omvormer de regie. Bij Enphase is er geen centrale omvormer, dus de gateway is het brein waar alles samenkomt, en de communicatie loopt niet via een buskabel maar over de stroomkabels.
+De IQ Gateway Metered doet ongeveer wat bij Sigenergy de **Sigen Power Sensor** (meten aan de netzijde met CT's) en de **CommMod** (internet) samen doen. Bij Sigenergy praat de sensor via RS485 met de omvormer en heeft de omvormer de regie. Bij Enphase is er geen centrale omvormer, dus is de gateway het brein waar alles samenkomt. De communicatie loopt daar ook niet via een buskabel maar over de stroomkabels.
 !!!`
     },
     {
@@ -63,9 +63,9 @@ De IQ Gateway Metered doet ongeveer wat bij Sigenergy de **Sigen Power Sensor** 
       kop: 'Standard of Metered en de onderdelen',
       tekst: `### Standard of Metered
 
-De **Standard** (ENV-S-WB-230) bewaakt alleen wat de micro-omvormers zelf melden: ongeveer 5 % nauwkeurig, geen CT-klemmen, geen batterijen. De **Metered** (ENV-S-EM-230) heeft een ingebouwde productie- en verbruiksmeter van 1 %, klemmen voor zes CT's, een digitale in- en uitgang voor sturing door de netbeheerder en ondersteunt batterijen. Wil je weten wat het huis verbruikt, gebruik je een batterij of een IQ EV Charger 2 met lastbeheer, dan heb je de Metered nodig.
+De **Standard** (ENV-S-WB-230) bewaakt alleen wat de micro-omvormers zelf melden: ongeveer 5 % nauwkeurig, geen CT-klemmen, geen batterijen. De **Metered** (ENV-S-EM-230) heeft een ingebouwde productie- en verbruiksmeter van 1 %, klemmen voor zes CT's en een digitale in- en uitgang voor sturing door de netbeheerder. Hij ondersteunt ook batterijen. Wil je het verbruik van het huis weten, gebruik je een batterij of een IQ EV Charger 2 met lastbeheer, dan heb je de Metered nodig.
 
-Beide: 230 V (Metered ook 230/400 V), 50 Hz, maximaal 20 A beveiliging (B-karakteristiek), 3 tot 5 W, 12 DIN-modulebreedtes, 0,5 kg, IP30. Buiten of in een open ruimte moet hij in een behuizing van **IP54** of hoger.
+Voor allebei: 230 V (Metered ook 230/400 V), 50 Hz, maximaal 20 A beveiliging (B-karakteristiek), 3 tot 5 W, 12 DIN-modulebreedtes, 0,5 kg, IP30. Buiten of in een open ruimte moet hij in een behuizing van **IP54** of hoger.
 
 ### Stroomtransformatoren
 
@@ -74,11 +74,11 @@ Beide: 230 V (Metered ook 230/400 V), 50 Hz, maximaal 20 A beveiliging (B-karakt
 | CT-100-SPLIT-ROW | Deelbare CT van 100 A, voor kleinere panelen met geleiders tot 16 mm2, als set van vier te bestellen. Twee zitten bij de Metered. |
 | CT-100-SPLIT | Deelbare CT, als set van vier, voor meerfase of dikkere geleiders. Het blad noemt hier 200 A. |
 
-Voor een driefasige installatie heb je **per fase een CT voor productie en een voor verbruik** nodig, dus zes. Er zitten er twee in de doos.
+Stel dat je een driefasige installatie hebt. Dan heb je **per fase een CT voor productie en een voor verbruik** nodig, dus zes. In de doos zitten er twee, dus je hebt er vier extra nodig.
 
 ### EMI Line Filter
 
-De kit ENV-S-EM-230-LF-KIT bevat ook een **EMI Line Filter** (ELF-020-1P, 20 A, tot 250 V). Volgens de verkorte handleiding is dat in Europa verplicht bij **IQ7-micro-omvormers**, om storende ruis buiten het huisnet en het openbare net te houden. Bij driefase drie filters. Het filter verbetert de PLC-communicatie **niet**.
+De kit ENV-S-EM-230-LF-KIT bevat ook een **EMI Line Filter** (ELF-020-1P, 20 A, tot 250 V). Volgens de verkorte handleiding is dat in Europa verplicht bij **IQ7-micro-omvormers**, zodat storende ruis buiten het huisnet en het openbare net blijft. Bij driefase drie filters. De PLC-communicatie wordt er **niet** beter van.
 
 ### Overige accessoires
 
@@ -89,7 +89,7 @@ De kit ENV-S-EM-230-LF-KIT bevat ook een **EMI Line Filter** (ELF-020-1P, 20 A, 
     {
       id: 'plek-in-systeem',
       kop: 'Plek in het systeem',
-      tekst: `De gateway heeft twee kanten. Aan de ene kant de **stroomkabels** naar micro-omvormers en IQ Relay (PLC); de IQ Battery 5P with FlexPhase heeft een eigen besturingskabel. Aan de andere kant het **thuisnetwerk** naar de router en internet.
+      tekst: `De gateway heeft twee kanten. Aan de ene kant de **stroomkabels** naar micro-omvormers en IQ Relay (PLC), met een eigen besturingskabel voor de IQ Battery 5P with FlexPhase. Aan de andere kant het **thuisnetwerk** naar de router en internet.
 
 1. **Voeding:** een eigen automaat van maximaal 20 A (1-, 2- of 3-polig), kabel 2,5 mm2 koper, geschikt voor 75 graden. In het Enphase-voorbeeldschema voor micro-omvormers staat er een automaat van 6 A.
 2. **Productie-CT's** om de fasedraden die van de PV-installatie komen.
@@ -98,11 +98,12 @@ De kit ENV-S-EM-230-LF-KIT bevat ook een **EMI Line Filter** (ELF-020-1P, 20 A, 
 
 ### Batterij en laadpaal
 
-- **IQ Battery:** de Metered houdt de batterijen bij en stuurt ze. Volgens de storingsgids moet de verbruiksmeter bij een systeem met batterij op "Load with Solar" staan.
-- **IQ EV Charger 2:** voor **dynamisch lastbeheer** haalt de lader het verbruik per fase op uit de gateway. Daarvoor zijn verbruiks-CT's op alle drie fasen nodig (een bij een eenfasige lader), en moeten gateway en lader op hetzelfde thuisnetwerk zitten. Valt de gateway uit of de verbinding weg, dan laadt de lader nog maar met 8 A. Zonder internet maar met werkend thuisnetwerk blijft het lastbeheer werken.
+De Metered houdt de **IQ Battery** bij en stuurt hem. Volgens de storingsgids moet de verbruiksmeter bij een systeem met batterij op "Load with Solar" staan.
+
+Voor **dynamisch lastbeheer** haalt de **IQ EV Charger 2** het verbruik per fase op uit de gateway. Daarvoor zijn verbruiks-CT's op alle drie fasen nodig (een bij een eenfasige lader) en moeten gateway en lader op hetzelfde thuisnetwerk zitten. Valt de gateway uit of de verbinding weg, dan laadt de lader nog maar met 8 A. Zonder internet maar met werkend thuisnetwerk blijft het lastbeheer gewoon werken.
 
 !!! kern De Metered is het meetpunt van het huis
-Alles wat "slim" is (verbruik tonen, exportbeperking, batterij sturen, laadstroom van de auto aanpassen) hangt af van goed geplaatste verbruiks-CT's. Een verkeerd geplaatste CT geeft niet alleen een rare grafiek, maar laat het hele systeem verkeerde beslissingen nemen.
+Alles wat "slim" is hangt af van goed geplaatste verbruiks-CT's: verbruik tonen, exportbeperking, batterij sturen en de laadstroom van de auto aanpassen. Een verkeerd geplaatste CT geeft dus meer dan een rare grafiek: het hele systeem neemt dan verkeerde beslissingen.
 !!!`
     },
     {
@@ -113,12 +114,12 @@ Alles wat "slim" is (verbruik tonen, exportbeperking, batterij sturen, laadstroo
 ### Voorbereiden
 
 1. **Labels:** markeer de CT's en de kabeluiteinden met kleur of met de labels uit de doos. CT-101 gebruikt P1, P2, P3 voor productie en C1, C2, C3 voor verbruik.
-2. **Fasen herkennen:** markeer elke fasedraad op drie plekken: bij de invoer in de groepenkast, bij de gateway en bij de PV-automaat. Kleuren zijn niet altijd betrouwbaar; meet bij twijfel.
+2. **Fasen herkennen:** markeer elke fasedraad op drie plekken: bij de invoer in de groepenkast, bij de gateway en bij de PV-automaat. Kleuren zijn niet altijd betrouwbaar, dus meet bij twijfel.
 3. **Ruimte:** plaats CT's niet in een kast waar ze meer dan 75 % van de bedradingsruimte in een doorsnede innemen.
 
 ### Aansluiten en klemmen
 
-- **Eerst de CT-draden op de klemmen van de gateway, pas daarna de CT om de draad, en pas daarna stroom op het circuit.** Witte draad op de klem met de punt (I1 met punt), blauwe draad op de gewone klem (I1). CT-101 zegt het als: wit boven, blauw onder.
+- **Eerst de CT-draden op de klemmen van de gateway. Pas daarna de CT om de draad en pas daarna stroom op het circuit.** Witte draad op de klem met de punt (I1 met punt), blauwe draad op de gewone klem (I1). CT-101 zegt het als: wit boven, blauw onder.
 - **Productie-CT:** om de fasedraad van de PV-installatie, met de **pijl naar de groepenkast** (van de panelen af). Eenfase alleen L1, driefase L1, L2 en L3.
 - **Verbruiks-CT:** om de hoofdtoevoer, met de **pijl naar de groepenkast** (van het net af).
 - Alleen **fasedraden van dezelfde fase** door een CT. Meerdere draden van dezelfde fase mag, als ze passen.
@@ -126,14 +127,14 @@ Alles wat "slim" is (verbruik tonen, exportbeperking, batterij sturen, laadstroo
 
 ### Kabels verlengen
 
-De CT-kabel is 4 m. Verlengen mag met getwiste kabel van 0,75 tot 2,5 mm2, maximaal 1,5 ohm per draad (3 ohm per CT-lus). De Envoy-S-handleiding geeft 64 m bij 0,75 mm2 tot 213 m bij 2,5 mm2; de verkorte handleiding en dezelfde handleiding elders zeggen maximaal 148 m.
+De CT-kabel is 4 m. Verlengen mag met getwiste kabel van 0,75 tot 2,5 mm2, maximaal 1,5 ohm per draad (3 ohm per CT-lus). De Envoy-S-handleiding geeft 64 m bij 0,75 mm2 tot 213 m bij 2,5 mm2. De verkorte handleiding en dezelfde handleiding elders zeggen maximaal 148 m.
 
 ### De spanningstest uit CT-101
 
-Voor elke fase meet je de spanning tussen de draad waar de CT om zit en de bijbehorende L-klem van de gateway. **0 V** betekent dezelfde fase: goed. **400 V** betekent dat de fasen verwisseld zijn en de meting fout wordt. CT-101 zegt er nadrukkelijk bij: niet lukraak draden of CT's verplaatsen, eerst meten.
+Per fase meet je de spanning tussen de draad waar de CT om zit en de bijbehorende L-klem van de gateway. Bij **0 V** is het dezelfde fase en zit het goed. Bij **400 V** zijn de fasen verwisseld en wordt de meting fout. CT-101 zegt er nadrukkelijk bij: niet lukraak draden of CT's verplaatsen, eerst meten.
 
 !!! gevaar Dit is meten onder spanning
-CT-101 laat deze test doen met de hele installatie ingeschakeld. Dat is werken in de buurt van spanning. Doe het alleen met een geschikte meter (meetcategorie III of hoger), geisoleerde meetpennen en als je daarvoor bevoegd bent. Zie les 1.2 en 7.2. Dit is algemene vakkennis; CT-101 zegt er zelf niets over.
+CT-101 laat deze test doen met de hele installatie ingeschakeld. Dat is werken in de buurt van spanning. Doe het alleen met een geschikte meter (meetcategorie III of hoger), geisoleerde meetpennen en als je daarvoor bevoegd bent. Zie les 1.2 en 7.2. Dit is algemene vakkennis, want CT-101 zegt er zelf niets over.
 !!!`
     },
     {
@@ -143,14 +144,14 @@ CT-101 laat deze test doen met de hele installatie ingeschakeld. Dat is werken i
 Installeer stroomtransformatoren nooit terwijl er stroom door het gemeten circuit loopt. Sluit de CT-draden altijd eerst aan op de klemmen. Koppel CT-draden niet los van de klemmen zolang er stroom op het circuit staat. (Verkorte handleiding pagina 1 en 3, Envoy-S-handleiding pagina 5, 16 en 40.)
 !!!
 
-- **Hoofdschakelaar uit** voordat je de gateway plaatst en bedraadt. Bij aansluiten op een onderverdeling eerst die onderverdeling spanningsloos maken. Werk volgens de vijf stappen van les 1.3.
-- **Geen ongebruikte klemmen aansluiten** en de gateway niet openmaken. Met de kap eraf vervalt de garantie.
-- **Temperatuur:** in een behuizing mag het niet warmer worden dan 46 graden.
-- **Aardlek:** de verkorte handleiding raadt een aardlekschakelaar aan en verwijst naar de lokale regels (les 6.3).
-- **Software-update:** zet de gateway niet uit zolang de leds om de beurt groen knipperen.
+- Zet de **hoofdschakelaar uit** voordat je de gateway plaatst en bedraadt, of bij een onderverdeling eerst die onderverdeling. Werk volgens de vijf stappen van les 1.3.
+- Sluit **geen ongebruikte klemmen** aan en maak de gateway niet open. Met de kap eraf vervalt de garantie.
+- In een behuizing mag het niet warmer worden dan **46 graden**.
+- De verkorte handleiding raadt een **aardlekschakelaar** aan en verwijst naar de lokale regels (les 6.3).
+- Zet de gateway niet uit tijdens een **software-update**, dus zolang de leds om de beurt groen knipperen.
 
 ?? Waarom mag je een CT niet open laten?
-Bij een stroomtransformator met een stroomuitgang kan de secundaire wikkeling een hoge spanning opbouwen als hij openstaat terwijl er stroom door de primaire draad loopt. Dat is **algemene vakkennis**. De Enphase-documenten leggen dat zo niet uit. Op de tekening van de klemmen staat bij de CT-ingangen "100A 0.5V", wat op een CT met spanningsuitgang kan wijzen, maar dat staat er niet met zoveel woorden. Houd je daarom gewoon aan de volgorde van de handleiding.
+Bij een stroomtransformator met een stroomuitgang kan de secundaire wikkeling een hoge spanning opbouwen als hij openstaat terwijl er stroom door de primaire draad loopt. Dat is **algemene vakkennis**, want de Enphase-documenten leggen het zo niet uit. Bij de CT-ingangen op de tekening van de klemmen staat "100A 0.5V". Dat kan op een CT met spanningsuitgang wijzen, maar het staat er niet met zoveel woorden. Houd je dus gewoon aan de volgorde van de handleiding.
 ??`
     },
     {
@@ -158,18 +159,18 @@ Bij een stroomtransformator met een stroomuitgang kan de secundaire wikkeling ee
       kop: 'Installatie in tien stappen',
       tekst: `De verkorte handleiding (pagina 2 en 3) en de Envoy-S-handleiding (pagina 12 tot 23) volgen dezelfde volgorde.
 
-1. **Locatie:** dicht bij de groepenkast (sterkste PLC-signaal) en binnen bereik van de 4 m CT-kabels. Droog en beschermd. Horizontaal op de DIN-rail. Een metalen behuizing dempt wifi. Geen gaten boven in de behuizing boren.
+1. **Locatie:** dicht bij de groepenkast (sterkste PLC-signaal) en binnen bereik van de 4 m CT-kabels. Droog en beschermd, horizontaal op de DIN-rail. Een metalen behuizing dempt wifi. Boor geen gaten boven in de behuizing.
 2. **Voeding en meting:** voeding op L1 (en L2, L3) en N, CT's zoals hierboven.
-3. **Inschakelen:** klemmenafdekking dicht, automaat aan. Alle vier de leds knipperen rood (oudere versie: oranje), ongeveer 2 minuten. Daarna blijft de apparaatcommunicatie-led rood tot de micro-omvormers zijn gevonden.
+3. **Inschakelen:** klemmenafdekking dicht, automaat aan. Alle vier de leds knipperen ongeveer 2 minuten rood (oudere versie: oranje). Daarna blijft de apparaatcommunicatie-led rood tot de micro-omvormers gevonden zijn.
 4. **Systeem aanmaken** in de Enphase Installer App.
-5. **Apparaten toevoegen** door de barcodes te scannen. Bij IQ8 niet de scanknop op de gateway gebruiken (ING-00056).
+5. **Apparaten toevoegen** door de barcodes te scannen. Bij IQ8 gebruik je niet de scanknop op de gateway (ING-00056).
 6. **Tarief** invoeren (optioneel).
-7. **Verbinding:** AP-modusknop ongeveer een seconde indrukken, telefoon op het wifinetwerk van de gateway. Daarna de gateway op wifi, ethernet of mobiel aansluiten. WPS: AP-knop 5 seconden vasthouden.
-8. **Apparaten inrichten:** de app werkt het netprofiel bij en richt alles in. Voor IQ8 is gateway-software 8.03.5263 of hoger nodig; de update duurt tot 30 minuten.
+7. **Verbinding:** AP-modusknop ongeveer een seconde indrukken, telefoon op het wifinetwerk van de gateway. Daarna de gateway op wifi, ethernet of mobiel. Voor WPS de AP-knop 5 seconden vasthouden.
+8. **Apparaten inrichten:** de app werkt het netprofiel bij en richt alles in. Voor IQ8 is gateway-software 8.03.5263 of hoger nodig, de update duurt tot 30 minuten.
 9. **Meters configureren:** eerst de productiemeter, dan de verbruiksmeter.
 10. **Rapport** delen en het overzicht met de bewoner doornemen.
 
-Bij driefase komt de **fasekoppelaar** aan de belastingzijde van de overstroombeveiliging. Het **EMI Line Filter** (alleen met IQ7) komt binnen of in een IP54-behuizing; leg de ingaande en uitgaande kabels niet naast elkaar.`
+Bij driefase komt de **fasekoppelaar** aan de belastingzijde van de overstroombeveiliging. Het **EMI Line Filter** (alleen met IQ7) komt binnen of in een IP54-behuizing, met ingaande en uitgaande kabels niet naast elkaar.`
     },
     {
       id: 'inbedrijfstelling',
@@ -180,7 +181,7 @@ Bij driefase komt de **fasekoppelaar** aan de belastingzijde van de overstroombe
 
 1. Kies Meterconfiguratie, Productiemeter en de fasen (bij een driefasige woning L1+L2+L3).
 2. Controleer dat de metingen per fase **positief** zijn. Negatief betekent een fout in de installatie.
-3. **Schakel de PV uit** en controleer dat de productie nul of bijna nul is. Zitten gateway en IQ Relay op dezelfde aardlekautomaat, schakel die dan niet uit: dan valt de gateway weg en begin je opnieuw. Gebruik een werkschakelaar of de testknop van het IQ Relay.
+3. **Schakel de PV uit** en controleer dat de productie nul of bijna nul is. Zitten gateway en IQ Relay op dezelfde aardlekautomaat, schakel die dan niet uit, want dan valt de gateway weg en begin je opnieuw. Gebruik een werkschakelaar of de testknop van het IQ Relay.
 4. Inschakelen.
 
 ### Verbruiksmeter
@@ -191,7 +192,7 @@ Bij driefase komt de **fasekoppelaar** aan de belastingzijde van de overstroombe
 4. Vergelijk met de kWh-meter van het huis en schakel in.
 
 !!! info Kies het metertype in een keer goed
-Volgens de Envoy-S-handleiding kun je het type verbruiksmeter niet meer wijzigen nadat de meter is ingeschakeld.
+Volgens de Envoy-S-handleiding kun je het type verbruiksmeter niet meer wijzigen als de meter eenmaal is ingeschakeld.
 !!!
 
 ### De vier leds
@@ -208,23 +209,23 @@ Volgens de Envoy-S-handleiding kun je het type verbruiksmeter niet meer wijzigen
       kop: 'Storingen',
       tekst: `### Apparaten worden niet gevonden
 
-Vaak gewoon te weinig licht: micro-omvormers zonder zon praten niet. Is er wel licht, controleer dan in de app wie ontbreekt, of de PV-automaten aan staan, of de panelen aangesloten zijn en of de paneelspanning klopt. Meerdere gateways op een groepenkast kunnen elkaar storen ("domeinoverschrijdend verkeer"); neem ze dan een voor een in gebruik.
+Vaak is er gewoon te weinig licht, want micro-omvormers zonder zon praten niet. Is er wel licht, kijk dan in de app wie ontbreekt en of PV-automaten, paneelaansluiting en paneelspanning in orde zijn. Meerdere gateways op een groepenkast kunnen elkaar storen ("domeinoverschrijdend verkeer"), dus neem ze een voor een in gebruik.
 
 ### Ruis op de stroomkabels
 
-Produceert het systeem 's nachts of springt de grafiek raar, dan kan **PLC-ruis** de oorzaak zijn. De storingsgids noemt stekkerdozen, aardlekstopcontacten, dimmers, grote apparaten, alarmsystemen en slechte automaten. In de app zit een ruisdetectie. Oplossingen: een powerline-filter (de gids noemt een "radius power line filter"), bij een Standard eerst de gateway op een andere groep zetten, ferrietringen op de verdachte groep, of een aparte groep vanaf de hoofdverdeler.
+Produceert het systeem 's nachts of springt de grafiek raar, dan kan **PLC-ruis** de oorzaak zijn. De storingsgids noemt stekkerdozen, aardlekstopcontacten, dimmers, grote apparaten, alarmsystemen en slechte automaten. In de app zit een ruisdetectie. Oplossingen: een powerline-filter (de gids noemt een "radius power line filter"), bij een Standard eerst de gateway op een andere groep, ferrietringen op de verdachte groep of een aparte groep vanaf de hoofdverdeler.
 
 ### Verbruik loopt gelijk met productie
 
-Dan zitten de CT's verkeerd of op de verkeerde fase, en zie je negatief verbruik ook zonder zon. Controleer eerst het metertype, dan de polariteit per fase. De polariteit kun je in het Installer Platform omdraaien; zet daarna de startdatum van de meter op de volgende dag.
+Dan zitten de CT's verkeerd of op de verkeerde fase en zie je ook zonder zon negatief verbruik. Controleer eerst het metertype, dan de polariteit per fase. Die kun je in het Installer Platform omdraaien. Zet daarna de startdatum van de meter op de volgende dag.
 
 ### Geen productie
 
-Produceert niets: netspanning, frequentie, automaat en bedrading vanaf de groepenkast. Alles op een groep: die groep en de aansluitdoos. Een enkele: de AC-stekker op de IQ Cable en de startspanning van het paneel.
+Produceert er niets, kijk dan naar netspanning, frequentie, automaat en bedrading vanaf de groepenkast. Valt alles op een groep weg, dan naar die groep en de aansluitdoos. Is het er maar een, dan naar de AC-stekker op de IQ Cable en de startspanning van het paneel.
 
 ### Internet
 
-Netwerk-led uit bij wifi: WPS verlopen, router of metalen kast. Rood: router heeft geen internet. Nieuwe router: wifi-instellingen in de gateway aanpassen. Vanaf softwareversie 7.6.358 zet de gateway zelf AP-modus aan als hij offline is.
+Netwerk-led uit bij wifi: WPS verlopen, of het ligt aan de router of een metalen kast. Rood: de router heeft geen internet. Nieuwe router: wifi-instellingen in de gateway aanpassen. Vanaf softwareversie 7.6.358 zet de gateway zelf AP-modus aan als hij offline is.
 
 ### Vervangen
 
@@ -233,7 +234,7 @@ Alleen na een RMA van Enphase. Volgorde in de Envoy-S-handleiding (pagina 40 en 
     {
       id: 'niet-in-handleiding',
       kop: 'Wat niet in de handleiding staat',
-      tekst: `- Hoeveel IQ Battery 5P een Metered aankan: het gegevensblad noemt alleen IQ Battery 3T en 10T.
+      tekst: `- Hoeveel IQ Battery 5P een Metered aankan. Het gegevensblad noemt alleen IQ Battery 3T en 10T.
 - Of het IQ Relay en welke fasekoppelaar in Nederland verplicht zijn.
 - Of de CT's een stroom- of spanningsuitgang hebben.
 - Hoe je de spanningstest van CT-101 veilig uitvoert.
@@ -243,10 +244,10 @@ Alleen na een RMA van Enphase. Volgorde in de Envoy-S-handleiding (pagina 40 en 
 - **Capaciteit:** 300 micro-omvormers (gegevensblad, IQ8-handleiding) tegenover 600 en 39 batterijen (Envoy-S-handleiding uit 2016). De IQ8-handleiding noemt 20 batterijen, het gegevensblad 12 of 4.
 - **CT-kabel verlengen:** tot 148 m tegenover tot 213 m.
 - **Leds:** rood in de nieuwe documenten, oranje in de oude.
-- **Omgeving:** het gegevensblad noemt -40 tot 65 graden buiten en tegelijk IP30 met verplichte behuizing buiten; vochtigheid 85 % tegenover 95 %, hoogte 2500 m tegenover 2000 m.
+- **Omgeving:** het gegevensblad noemt -40 tot 65 graden buiten en tegelijk IP30 met verplichte behuizing buiten. Vochtigheid 85 % tegenover 95 %, hoogte 2500 m tegenover 2000 m.
 - **CT-100-SPLIT:** het gegevensblad noemt hem 200 A, de naam en de klemtekening zeggen 100 A.
-- **Scanknop:** de verkorte handleiding beschrijft de 15-minutenscan, ING-00056 zegt die bij IQ8 juist niet te gebruiken.
-- **Kopje fout:** in de verkorte handleiding staat bij stap C "verbruiks-trafo's" terwijl de tekst over productie-CT's gaat.
+- **Scanknop:** de verkorte handleiding beschrijft de 15-minutenscan, maar ING-00056 zegt die bij IQ8 juist niet te gebruiken.
+- **Kopje fout:** in de verkorte handleiding staat bij stap C "verbruiks-trafo's", terwijl de tekst over productie-CT's gaat.
 - **Onder spanning:** de Envoy-S-handleiding laat een erkende elektricien een verbruiks-CT plaatsen als de toevoer niet uit kan, terwijl dezelfde handleiding dat elders verbiedt. Volg de strengste regel.`
     }
   ],

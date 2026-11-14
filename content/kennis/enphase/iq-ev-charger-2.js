@@ -12,7 +12,7 @@ KENNIS.addProduct({
   naam: 'Enphase IQ EV Charger 2 (stopcontact of vaste kabel, 1- en 3-fase)',
   rol: 'lader',
   toepassingen: ['laadpaal', 'thuisbatterij'],
-  korteOmschrijving: 'Een AC-laadpaal van Enphase voor aan de muur, met een Type 2-stopcontact of een vaste kabel van 7,5 m. Je sluit hem eenfasig of driefasig aan en stelt de laadstroom in tussen 6 en 32 A. Werkt los of samen met zonnepanelen en IQ Battery, met ingebouwde MID-meter, gelijkstroomlekdetectie van 6 mA en dynamische load balancing via de IQ Gateway.',
+  korteOmschrijving: 'Een AC-laadpaal van Enphase voor aan de muur, met een Type 2-stopcontact of een vaste kabel van 7,5 m. Je sluit hem eenfasig of driefasig aan en stelt de laadstroom in tussen 6 en 32 A. Hij werkt los of samen met zonnepanelen en IQ Battery. Er zitten een MID-meter en gelijkstroomlekdetectie van 6 mA in. Via de IQ Gateway doet hij ook dynamische load balancing.',
 
   varianten: {
     kop: ['Uitvoering', 'SKU', 'Aansluiting auto', 'Meegeleverd', 'Afmetingen (L x B x D)', 'Gewicht'],
@@ -36,30 +36,30 @@ KENNIS.addProduct({
     {
       id: 'wat-is-het',
       kop: 'Wat is het',
-      tekst: `De IQ EV Charger 2 is een laadpaal voor aan de muur die een auto laadt met wisselstroom (AC). De lader in de auto zet die om naar gelijkstroom voor de accu. De laadpaal zelf schakelt en bewaakt alleen de wisselstroom.
+      tekst: `De IQ EV Charger 2 is een laadpaal voor aan de muur die een auto laadt met wisselstroom (AC). De lader in de auto maakt daar gelijkstroom van voor de accu. De laadpaal zelf schakelt en bewaakt alleen de wisselstroom.
 
-Hij werkt **standalone** (alleen de lader op een eigen groep, bediend met de Enphase App) of **geïntegreerd** met zonnepanelen, een IQ Gateway en eventueel een IQ Battery. Dan laadt de auto met zonne-overschot en past de lader zijn vermogen aan aan het verbruik van het huis.
+Hij werkt **standalone**: alleen de lader op een eigen groep, bediend met de Enphase App. Of hij werkt **geïntegreerd** met zonnepanelen, een IQ Gateway en eventueel een IQ Battery. Dan laadt de auto met zonne-overschot en past de lader zijn vermogen aan aan het verbruik van het huis.
 
-Hij past op elke auto met een **Type 2**-laadpoort (ook Mennekes genoemd), de Europese standaardstekker voor AC-laden. Ingebouwd zit een **MID-meter**: een gecertificeerde kWh-meter (klasse B, 1% nauwkeurig) waarmee laadsessies officieel te registreren zijn, bijvoorbeeld voor een vergoeding.
+Hij past op elke auto met een **Type 2**-laadpoort (ook Mennekes genoemd), de Europese standaardstekker voor AC-laden. Er zit een **MID-meter** in. Dat is een gecertificeerde kWh-meter (klasse B, 1% nauwkeurig) waarmee je laadsessies officieel kunt registreren, bijvoorbeeld voor een vergoeding.
 
 !!! info Als je Sigenergy al kent
-De Sigen EV AC Charger bestaat in drie aparte vermogens (7, 11 en 22 kW). Bij Enphase is er één lader die je eenfasig of driefasig aansluit en in de app instelt op 6 tot 32 A. Grote verschillen voor jou als installateur:
+De Sigen EV AC Charger bestaat in drie aparte vermogens (7, 11 en 22 kW). Bij Enphase is er één lader die je eenfasig of driefasig aansluit en in de app instelt op 6 tot 32 A. Voor jou als installateur zijn dit de grote verschillen:
 
 - **Lekstroom:** Sigen heeft zowel 6 mA DC- als 30 mA AC-detectie ingebouwd. Enphase heeft alleen de 6 mA DC-detectie (RDC-DD) en eist daarnaast een eigen **30 mA aardlek type A** of een RCBO type A in de groepenkast.
 - **Automaat:** Sigen schrijft karakteristiek B voor, Enphase **karakteristiek C** op 125% van de ingestelde laadstroom.
 - **Meting voor load balancing:** Sigen gebruikt de Sigen Power Sensor via RS485. Enphase gebruikt de **IQ Gateway Metered met consumptie-CT's**, die via het thuisnetwerk (Wi-Fi of Ethernet) met de lader praat.
-- Enphase schakelt automatisch tussen drie fasen en één fase, heeft een MID-meter en een kabel van 7,5 m (Sigen: 5 m). Beschermingsgraad IP55, Sigen IP65.
+- Enphase schakelt automatisch tussen drie fasen en één fase, heeft een MID-meter en een kabel van 7,5 m (Sigen: 5 m). De beschermingsgraad is IP55, bij Sigen IP65.
 !!!`
     },
     {
       id: 'varianten-en-keuze',
       kop: 'Uitvoeringen en hoe je kiest',
-      tekst: `Er zijn twee uitvoeringen (zie de tabel). Het verschil zit alleen in hoe de auto wordt aangesloten:
+      tekst: `Er zijn twee uitvoeringen (zie de tabel). Het verschil zit alleen in hoe je de auto aansluit.
 
-- **Met contactdoos:** de bestuurder gebruikt een eigen laadkabel. Klepjes in het stopcontact gaan pas open als er een Type 2-stekker in wordt gedrukt. Kabel en holster zijn los te koop. De kabel moet bij het vermogen van de lader passen, anders laadt de auto langzamer.
-- **Vast:** met kabel van 7,5 m en holster. Kies de plek zo dat de kabel makkelijk bij de laadpoort komt.
+- Met contactdoos gebruikt de bestuurder een eigen laadkabel. De klepjes in het stopcontact gaan pas open als er een Type 2-stekker in wordt gedrukt. Kabel en holster zijn los te koop. De kabel moet wel bij het vermogen van de lader passen, anders laadt de auto langzamer.
+- De vaste uitvoering heeft een kabel van 7,5 m en een holster. Kies de plek zo dat de kabel makkelijk bij de laadpoort komt.
 
-**Eenfasig of driefasig** is geen aparte uitvoering: je bepaalt het met de bekabeling en de instelling bij de inbedrijfstelling.
+Eenfasig of driefasig is geen aparte uitvoering. Dat bepaal je met de bekabeling en de instelling bij de inbedrijfstelling.
 
 | Netvorm | Spanning | Maximaal laadvermogen |
 |---|---|---|
@@ -67,41 +67,41 @@ De Sigen EV AC Charger bestaat in drie aparte vermogens (7, 11 en 22 kW). Bij En
 | Driefasig ster met nul (TN/TT) | 400 V | tot 22 kW |
 | Driefasig zonder nul (IT, "delta") | 3 x 230 V | tot 12,7 kW |
 
-De stroom is 32 A per fase en instelbaar vanaf 6 A. Het gegevensblad geeft als voorbeeld: wil je een driefasige lader beperken tot 11 kW, stel dan bij de inbedrijfstelling 16 A in.
+De stroom is 32 A per fase en instelbaar vanaf 6 A. Het gegevensblad geeft een voorbeeld: wil je een driefasige lader beperken tot 11 kW, stel dan bij de inbedrijfstelling 16 A in.
 
 ### Overige specificaties (gegevensblad)
 
-- IP55 en IK10, binnen en buiten, -40 tot 55 graden Celsius.
+- IP55 en IK10, voor binnen en buiten, -40 tot 55 graden Celsius.
 - Kabelinvoer onder of achter, met een M32-wartel (kabel 15 tot 25,4 mm) en een M25-wartel (11 tot 17,9 mm).
-- Wi-Fi, Bluetooth, Ethernet, RS-485, CAN en 4G LTE. OCPP, API en Modbus TCP. Als ondersteunde meters: Linky, P1 (DSMR 4.x en 5.0) en HAN.
+- Wi-Fi, Bluetooth, Ethernet, RS-485, CAN en 4G LTE. OCPP, API en Modbus TCP. Ondersteunde meters: Linky, P1 (DSMR 4.x en 5.0) en HAN.
 - Overspanningsbeveiliging, RDC-DD (6 mA), detectie van vastgelaste relais en overstroomdetectie. 5 jaar garantie.`
     },
     {
       id: 'plek-in-systeem',
       kop: 'Hoe het in het systeem past',
-      tekst: `Het document "installatieconfiguraties" (TEB-00211) beschrijft vier opstellingen, telkens met de lader op een eigen groep met MCB en aardlek type A:
+      tekst: `Het document "installatieconfiguraties" (TEB-00211) beschrijft vier opstellingen. De lader zit daarin steeds op een eigen groep met MCB en aardlek type A.
 
 1. **Standalone:** alleen de lader op het net.
-2. **Zonne-energie:** IQ7- of IQ8-micro-omvormers of een string-omvormer, met een IQ Gateway Metered of IQ Combiner 3P EU. Plannen, groen laden en laden buiten de piekuren.
+2. **Zonne-energie:** IQ7- of IQ8-micro-omvormers of een string-omvormer, met een IQ Gateway Metered of IQ Combiner 3P EU. Dan kun je plannen, groen laden en buiten de piekuren laden.
 3. **Zonne-energie met IQ Battery:** de auto laadt ook met zonne-overschot en batterij-energie.
-4. **Met HEMS:** daarbij de IQ Energy Router (energiebeheer voor het huis), die ook een lader van een ander merk en een warmtepomp in het schema heeft. Alleen in een beperkt aantal landen.
+4. **Met HEMS:** met daarbij de IQ Energy Router (energiebeheer voor het huis), die ook een lader van een ander merk en een warmtepomp in het schema heeft. Dit kan alleen in een beperkt aantal landen.
 
 ### CT's: de meetpunten van het systeem
 
-Een **CT** (stroomtransformator) is een meetklem om een geleider. De **productie-CT** meet wat de zonnepanelen leveren, de **consumptie-CT** meet wat er tussen elektriciteitsmeter en groepenkast door gaat, dus het verbruik of de teruglevering van het hele huis. Voor laden met zonne-overschot moeten beide op alle fasen zitten, ook als de PV of batterij maar op één of twee fasen zit.
+Een **CT** (stroomtransformator) is een meetklem om een geleider. De **productie-CT** meet wat de zonnepanelen leveren. De **consumptie-CT** meet wat er tussen elektriciteitsmeter en groepenkast door gaat, dus het verbruik of de teruglevering van het hele huis. Voor laden met zonne-overschot moeten beide op alle fasen zitten, ook als de PV of batterij maar op één of twee fasen zit.
 
 ### Fasen afstemmen
 
-- Sluit de lader bij voorkeur aan op **dezelfde fase als de PV of batterij**: beter groen laden, minder onbalans.
+- Sluit de lader het liefst aan op **dezelfde fase als de PV of batterij**. Dan laad je groener en heb je minder onbalans.
 - Een eenfasige lader op een driefasig PV-systeem raadt Enphase af vanwege fase-onbalans (TEB-00211, 7.4).
 - Klem L1 van de lader moet dezelfde fase zijn als L1 van de IQ Gateway Metered.
 
 ### Faseschakeling
 
-Driefasig laden vraagt minimaal 4,2 kW (6 A op drie fasen), eenfasig 1,38 kW. Is het zonne-overschot kleiner dan 4,2 kW, dan schakelt een driefasig aangesloten lader zelf naar één fase en laadt hij al vanaf ongeveer 1,4 kW.
+Driefasig laden vraagt minimaal 4,2 kW (6 A op drie fasen), eenfasig 1,38 kW. Is het zonne-overschot kleiner dan 4,2 kW, dan schakelt een driefasig aangesloten lader zelf naar één fase. Hij laadt dan al vanaf ongeveer 1,4 kW.
 
 !!! info Thuisbatterij en noodstroom
-De lader is niet volledig opgenomen in de IQ System Controller voor off-grid (noodstroom). Enphase raadt aan hem aan te sluiten als belasting die niet op de noodstroom zit (TEB-00211, pagina 5). Een belasting buiten de noodstroom krijgt bij netuitval geen spanning (algemene vakkennis), dus reken er niet op dat de auto dan uit de batterij laadt.
+De lader is niet volledig opgenomen in de IQ System Controller voor off-grid (noodstroom). Enphase raadt aan hem aan te sluiten als belasting die niet op de noodstroom zit (TEB-00211, pagina 5). Zo'n belasting krijgt bij netuitval geen spanning (algemene vakkennis). Reken er dus niet op dat de auto dan uit de batterij laadt.
 !!!
 
 Verder volgens TEB-00211: kies de modus Zelfverbruik niet bij een terugleverlimiet (PEL) van 1,4 kW eenfasig of 4,14 kW driefasig. Dynamische tarieven zijn er alleen in België, Duitsland en Nederland.`
@@ -111,19 +111,19 @@ Verder volgens TEB-00211: kies de modus Zelfverbruik niet bij een terugleverlimi
       kop: 'Dynamische load balancing uitgelegd',
       tekst: `### Het probleem
 
-Een huis heeft een maximale aansluitwaarde, bijvoorbeeld 3 x 25 A. Een laadpaal op 3 x 16 A gebruikt daar uren achter elkaar een groot deel van. Gaan tegelijk oven en warmtepomp aan, dan kan op één fase meer stroom lopen dan de hoofdzekering toelaat.
+Een huis heeft een maximale aansluitwaarde, bijvoorbeeld 3 x 25 A. Een laadpaal op 3 x 16 A gebruikt daar uren achter elkaar een groot deel van. Gaan tegelijk de oven en de warmtepomp aan, dan kan er op één fase meer stroom lopen dan de hoofdzekering toelaat.
 
 ### De oplossing
 
-Bij **dynamische load balancing** (DLB) kijkt de lader continu hoeveel het huis al verbruikt en neemt hij alleen de rest. Bij Enphase werkt dat zo (TEB-00274):
+Bij **dynamische load balancing** (DLB) kijkt de lader steeds hoeveel het huis al verbruikt en neemt hij alleen wat over is. Bij Enphase werkt dat zo (TEB-00274):
 
 1. De consumptie-CT's meten per fase hoeveel stroom het huis uit het net haalt.
 2. De **IQ Gateway Metered** stuurt die meting via het thuisnetwerk naar de lader.
-3. Jij hebt in de Installer App ingevuld hoeveel stroom per fase het huis mag afnemen. In Nederland en België heet dat de **netinterconnectiecapaciteit (GIC)** en vul je het in ampère in (in het Verenigd Koninkrijk: maximum-invoerlimiet, MIL).
+3. In de Installer App heb je ingevuld hoeveel stroom per fase het huis mag afnemen. In Nederland en België heet dat de **netinterconnectiecapaciteit (GIC)**. Je vult het in ampère in (in het Verenigd Koninkrijk heet het maximum-invoerlimiet, MIL).
 4. De lader rekent per fase uit hoeveel er nog over is en laadt op het **laagste** van die drie getallen.
 
 ?? Rekenvoorbeeld (eigen voorbeeld, geen getallen uit de handleiding)
-Je vult 25 A per fase in. Het huis gebruikt op dat moment 6 A op L1, 14 A op L2 en 9 A op L3. Er is dan nog 19, 11 en 16 A over. Een driefasige lader laadt op alle fasen even hard, dus hij gaat naar 11 A, het minimum. Gaat de waterkoker op L2 aan, dan zakt de lader verder.
+Stel dat je 25 A per fase invult en het huis op dat moment 6 A op L1, 14 A op L2 en 9 A op L3 gebruikt. Dan is er nog 19, 11 en 16 A over. Een driefasige lader laadt op alle fasen even hard, dus hij gaat naar 11 A, het minimum. Gaat de waterkoker op L2 aan, dan zakt de lader verder.
 ??
 
 Wordt het beschikbare vermogen op drie fasen kleiner dan 4,1 kW, dan schakelt de lader over naar **eenfasig laden op L1**. Daarom raadt Enphase aan de minst belaste fase van het huis op L1 van de lader aan te sluiten.
@@ -131,13 +131,13 @@ Wordt het beschikbare vermogen op drie fasen kleiner dan 4,1 kW, dan schakelt de
 ### Wat je nodig hebt
 
 - Een IQ Gateway Metered met consumptie-CT's op alle fasen (eenfasig: één), tussen elektriciteitsmeter en groepenkast. Dat kan ook bij een standalone lader zonder PV of batterij.
-- Firmware lader 25.7.1.7 of hoger (wordt bij de inbedrijfstelling zelf bijgewerkt, tot 10 minuten, paarse lichtbalk), Installer App 4.5.0 of hoger, gateway-software 7.6.168 of hoger.
+- Firmware van de lader 25.7.1.7 of hoger. Die wordt bij de inbedrijfstelling zelf bijgewerkt (tot 10 minuten, paarse lichtbalk). Verder Installer App 4.5.0 of hoger en gateway-software 7.6.168 of hoger.
 - Gateway en lader op **hetzelfde netwerk**, met een juiste fasetoewijzing.
 
-In de Installer App vul je eerst de GIC in onder Site-instellingen, daarna maak je de lokale verbinding en zet je DLB aan. Stap 5 (validatie) wordt nog niet ondersteund: overslaan.
+In de Installer App vul je eerst de GIC in onder Site-instellingen. Daarna maak je de lokale verbinding en zet je DLB aan. Stap 5 (validatie) wordt nog niet ondersteund, dus die sla je over.
 
 !!! kern Wat als de verbinding wegvalt
-Valt de IQ Gateway uit of verliest de lader de lokale verbinding met de gateway, dan beperkt de lader zichzelf tot **8 A** (fail-safe). Het internet is niet nodig: zolang gateway en lader elkaar via het thuisnetwerk zien, blijft DLB werken.
+Valt de IQ Gateway uit of verliest de lader de lokale verbinding met de gateway, dan beperkt de lader zichzelf tot **8 A** (fail-safe). Internet is niet nodig. Zolang gateway en lader elkaar via het thuisnetwerk zien, blijft DLB gewoon werken.
 !!!`
     },
     {
@@ -155,7 +155,7 @@ Valt de IQ Gateway uit of verliest de lader de lokale verbinding met de gateway,
 Verbreek je de verzegeling of de labels tegen openmaken, dan vervalt de garantie.
 
 !!! gevaar Isolatiemeting alleen op 250 V
-Volgens een voetnoot in het gegevensblad (pagina 3) is de lader getest op 500 V gelijkspanning, maar mag de isolatietest op het eindproduct door de overspanningsbeveiliging alleen met **250 V** worden gedaan. Meet je de groep met een installatietester, stel die dan in op 250 V. De lader loskoppelen tijdens de meting is algemene vakkennis en staat niet in de handleiding (zie les 7.4).
+Volgens een voetnoot in het gegevensblad (pagina 3) is de lader getest op 500 V gelijkspanning. Door de overspanningsbeveiliging mag de isolatietest op het eindproduct alleen met **250 V**. Meet je de groep met een installatietester, zet die dan op 250 V. De lader loskoppelen tijdens de meting is algemene vakkennis en staat niet in de handleiding (zie les 7.4).
 !!!`
     },
     {
@@ -163,17 +163,17 @@ Volgens een voetnoot in het gegevensblad (pagina 3) is de lader getest op 500 V 
       kop: 'Plaatsing en montage',
       tekst: `### Locatie
 
-- Een vlakke, verticale, gladde ondergrond die het gewicht draagt: houten of betonnen muur, of één verticale houten staander. Helling minder dan 5 graden.
+- Een vlakke, verticale, gladde ondergrond die het gewicht draagt: een houten of betonnen muur, of één verticale houten staander. Helling minder dan 5 graden.
 - Montagehoogte **tussen 800 en 1200 mm** boven de vloer.
 - Een stabiele internetverbinding via Wi-Fi of Ethernet voor de slimme functies.
 
-De gereedschapslijst staat in hoofdstuk 5 (onder meer Torx-bits M3 tot M5 en een krimptang).
+De gereedschapslijst staat in hoofdstuk 5, met onder meer Torx-bits M3 tot M5 en een krimptang.
 
 ### Stappen
 
-1. **Muurbeugel.** Begin op de plek die het dichtst bij de voeding ligt, zet een waterpaslijn, gebruik de beugel als sjabloon en teken drie gaten af. Boor 8 mm, minstens 55 mm diep, en let op leidingen in de muur. Gebruik pluggen en de meegeleverde schroeven.
-2. **Lader ophangen.** Zet eerst de nok aan de onderkant in de voet van de beugel, laat dan de pennen links en rechts in de openingen achterop glijden. Zet vast met de schroeven, **7 Nm**.
-3. **Holster** (vast model, of los gekocht). Zelfde manier van boren en daarna de afdekking erop.
+1. **Muurbeugel.** Begin op de plek die het dichtst bij de voeding ligt. Zet een waterpaslijn, gebruik de beugel als sjabloon en teken drie gaten af. Boor 8 mm en minstens 55 mm diep. Let op leidingen in de muur en gebruik pluggen en de meegeleverde schroeven.
+2. **Lader ophangen.** Zet eerst de nok aan de onderkant in de voet van de beugel. Laat dan de pennen links en rechts in de openingen achterop glijden en zet hem vast met de schroeven, **7 Nm**.
+3. **Holster** (vast model, of los gekocht). Zelfde manier van boren, daarna de afdekking erop.
 4. **Afwerken na activering.** Klik de afdekking (esthetische hoes) op de voorkant en zet die onderaan vast met twee M3-schroeven, **0,6 Nm**. Dicht alle ongebruikte kabelinvoeren af met de meegeleverde pluggen.`
     },
     {
@@ -186,60 +186,60 @@ De lader krijgt een **eigen groep** die voldoet aan IEC 60364 en de lokale regel
 - een aparte **aardlekschakelaar 30 mA type A** plus een **MCB karakteristiek C**, of
 - een **RCBO** (aardlekautomaat) met type A-aardlek van 30 mA en karakteristiek C.
 
-De automaat kies je op **125% van de laadstroom** die je instelt: 16 A laadstroom, 20 A automaat (voorbeeld uit de gids). Bij 32 A is dat 40 A (eigen rekensom).
+De automaat kies je op **125% van de laadstroom** die je instelt. Bij 16 A laadstroom wordt dat een automaat van 20 A (voorbeeld uit de gids). Stel je 32 A in, dan is het 40 A (eigen rekensom).
 
 !!! kern Aardlek type A met ingebouwde DC-lekdetectie
-Enphase schrijft type A voor, omdat de lader zelf een **RDC-DD van 6 mA** heeft: een detector die gelijkstroomlekkage naar aarde meet (IEC 62955). Algemene vakkennis (les 10.3): een gladde gelijkstroomlekstroom kan een type A-aardlek blind maken, daarom vraagt een laadpaal een type B, of type A met zo'n ingebouwde detectie. De 30 mA AC-bescherming komt van de aardlek of RCBO in de kast. Zie ook les 6.3.
+Enphase schrijft type A voor, omdat de lader zelf een **RDC-DD van 6 mA** heeft. Dat is een detector die gelijkstroomlekkage naar aarde meet (IEC 62955). Uit de algemene vakkennis (les 10.3): een gladde gelijkstroomlekstroom kan een type A-aardlek blind maken. Daarom vraagt een laadpaal een type B, of een type A met zo'n ingebouwde detectie. De 30 mA AC-bescherming komt van de aardlek of RCBO in de kast. Zie ook les 6.3.
 !!!
 
-De doorsnede van de voedingskabel staat niet in de handleiding. Die bepaal je zelf (les 4.2).
+De doorsnede van de voedingskabel staat helaas niet in de handleiding. Die bepaal je zelf (les 4.2).
 
 ### Voeding aansluiten
 
 1. Open het servicepaneel: vier hoekschroeven, bij het contactdoosmodel ook twee langere schroeven naast het stopcontact.
-2. **Achter:** prik de afdichtingsdoorvoer door. **Onder:** vervang de plug door de M32-wartel (**11,3 Nm**), eenfasig mag de M25-wartel met verloopstuk.
+2. **Achter:** prik de afdichtingsdoorvoer door. **Onder:** vervang de plug door de M32-wartel (**11,3 Nm**). Eenfasig mag ook de M25-wartel met verloopstuk.
 3. Sluit aan volgens het schema voor jouw net. Klemschroeven **1,5 Nm**.
-4. Controleer het aanhaalmoment van **alle** aansluitingen, ook die uit de fabriek: ze kunnen los zijn geraakt tijdens transport.
-5. Sluit het servicepaneel (**1,8 Nm**), grootste ronding onderaan.
+4. Controleer het aanhaalmoment van **alle** aansluitingen, ook die uit de fabriek. Ze kunnen tijdens het transport los zijn geraakt.
+5. Sluit het servicepaneel (**1,8 Nm**), met de grootste ronding onderaan.
 
 ### Netvormen (hoofdstuk 9.3)
 
 Er zijn schema's voor TN of TT met nul (eenfasig en driefasig) en voor IT zonder nul (tweefasig en driefasig).
 
-Bij meerdere laadpunten raadt Enphase **fasedraaiing** aan (1-2-3, 2-3-1, 3-1-2), zodat auto's die alleen op L1 laden niet allemaal op dezelfde fase komen. Leg de draaiing vast bij de activering, anders kloppen de verbruiksgegevens niet.
+Heb je meerdere laadpunten, dan raadt Enphase **fasedraaiing** aan (1-2-3, 2-3-1, 3-1-2). Zo komen auto's die alleen op L1 laden niet allemaal op dezelfde fase. Leg de draaiing vast bij de activering, anders kloppen de verbruiksgegevens niet.
 
 ### Communicatie
 
-Op de print zitten USB-C, RS-485, CAN 1, CAN 2 en LAN 1 (CAN werkte nog niet bij de lancering). Ethernet voer je achter in via de vrije middelste invoer (contactdoosmodel: rechtsonder) of onder via de M25-wartel (**9 Nm**) met een afdichtingsinzetstuk. Laat de afdichtpluggen in de ongebruikte gaten.`
+Op de print zitten USB-C, RS-485, CAN 1, CAN 2 en LAN 1 (CAN werkte nog niet bij de lancering). Ethernet voer je achter in via de vrije middelste invoer (contactdoosmodel: rechtsonder), of onder via de M25-wartel (**9 Nm**) met een afdichtingsinzetstuk. Laat de afdichtpluggen in de ongebruikte gaten zitten.`
     },
     {
       id: 'inbedrijfstelling',
       kop: 'Inbedrijfstelling met de app',
-      tekst: `Inbedrijfstellen heet bij Enphase **activeren**. Zonder activering laadt de lader wel, maar zonder slimme functies zoals load balancing en toegangscontrole. Activeren vraagt internet via Ethernet of Wi-Fi. Er zijn twee routes:
+      tekst: `Inbedrijfstellen heet bij Enphase **activeren**. Zonder activering laadt de lader wel, maar zonder slimme functies zoals load balancing en toegangscontrole. Voor activeren heb je internet nodig via Ethernet of Wi-Fi. Er zijn twee routes:
 
-- **Enphase Installer App:** voor Enphase-gecertificeerde installateurs. Op een locatie met PV of batterij moet de integratie door zo'n installateur gebeuren (TEB-00211, 4.2).
-- **Enphase App:** voor een elektricien samen met de huiseigenaar, bijvoorbeeld bij een standalone lader. De technische stappen zijn alleen voor een bekwame elektricien.
+- De **Enphase Installer App** is voor Enphase-gecertificeerde installateurs. Op een locatie met PV of batterij moet de integratie door zo'n installateur gebeuren (TEB-00211, 4.2).
+- De **Enphase App** is voor een elektricien samen met de huiseigenaar, bijvoorbeeld bij een standalone lader. De technische stappen zijn alleen voor een bekwame elektricien.
 
 Begin pas als de **witte** LED brandt.
 
 ### Stappen in de Enphase App (USG-00067)
 
-1. Account aanmaken of inloggen, IQ EV Charger 2 toevoegen en de locatie invullen.
-2. Verbinden via Wi-Fi en Bluetooth (de app heeft toestemming nodig voor camera, Bluetooth en locatie).
+1. Account aanmaken of inloggen, de IQ EV Charger 2 toevoegen en de locatie invullen.
+2. Verbinden via Wi-Fi en Bluetooth. De app heeft toestemming nodig voor camera, Bluetooth en locatie.
 3. De QR-code aan de binnenkant of onderkant scannen. Pas daarna sluit je de frontplaat.
 4. **Elektrische installatie** (alleen de elektricien): type net, eenfasig of driefasig met fasetoewijzing, de **maximale stroom (6 tot 32 A per fase)** en bevestigen dat er een **aardlek type A** zit. Kies de stroom zo dat lader en huis samen binnen de aansluitwaarde blijven.
-5. Internet via Wi-Fi of Ethernet koppelen, afronden, eventueel autogegevens invullen.
+5. Internet koppelen via Wi-Fi of Ethernet, afronden en eventueel de autogegevens invullen.
 
-Na een geslaagde activering wordt de LED **groen**. Zodra de auto goed is aangesloten, wordt hij **blauw**.
+Na een geslaagde activering wordt de LED **groen**. Is de auto goed aangesloten, dan wordt hij **blauw**.
 
 ### Wat de gebruiker in de app doet (USG-00093)
 
-Onder Menu, Instellingen, IQ EV Charger kiest de gebruiker **Opladen volgens planning** (bijvoorbeeld daluren) of **Handmatig opladen** (direct op maximale stroom), en zet hij **authenticatie** aan zodat elk laden eerst toestemming vraagt. De gids voor groen laden in een geïntegreerd systeem zit niet bij onze bestanden.`
+Onder Menu, Instellingen, IQ EV Charger kiest de gebruiker **Opladen volgens planning** (bijvoorbeeld daluren) of **Handmatig opladen** (direct op maximale stroom). Hij kan ook **authenticatie** aanzetten, zodat elk laden eerst toestemming vraagt. De gids voor groen laden in een geïntegreerd systeem zit helaas niet bij onze bestanden.`
     },
     {
       id: 'storingen',
       kop: 'LED-indicator, MID-display en storingen',
-      tekst: `Er zijn **geen foutcodes** met nummers in de documenten. De status lees je af aan de lichtbalk op de voorkant en in de app.
+      tekst: `In de documenten staan **geen foutcodes** met nummers. De status lees je af aan de lichtbalk op de voorkant en in de app.
 
 ### Lichtbalk na activering (snelle installatiegids, pagina 25)
 
@@ -258,13 +258,13 @@ Onder Menu, Instellingen, IQ EV Charger kiest de gebruiker **Opladen volgens pla
 | Rood | 5 seconden knipperen | Activering of update mislukt |
 | Rood | Blijft knipperen | Storing of fout |
 
-Bij een lader die nog **niet** geactiveerd is, betekent wit "geen auto aangesloten" en groen van links naar rechts "opstarten".
+Is de lader nog **niet** geactiveerd, dan betekent wit "geen auto aangesloten" en groen van links naar rechts "opstarten".
 
 ### MID-display
 
-Bij inschakelen toont het display de MID-firmwareversie, een controlegetal (CRC) en de totaal geladen energie. Tijdens het laden wisselt het tussen spanning en stroom per fase, vermogen en sessie-energie.
+Bij het inschakelen toont het display de MID-firmwareversie, een controlegetal (CRC) en de totaal geladen energie. Tijdens het laden wisselt het tussen spanning en stroom per fase, vermogen en sessie-energie.
 
-Wat je bij een rode storing moet doen, staat niet in de documenten. De gids verwijst naar de FAQ en Enphase Support.`
+Wat je bij een rode storing moet doen, staat er helaas niet in. De gids verwijst naar de FAQ en Enphase Support.`
     },
     {
       id: 'niet-in-handleiding',
@@ -273,7 +273,7 @@ Wat je bij een rode storing moet doen, staat niet in de documenten. De gids verw
 
 - De kabeldoorsnede en de maximale aderdoorsnede van de klemmen.
 - Een lijst met foutcodes of een stappenplan bij een rode storing.
-- Of load balancing ook via de P1-poort van de slimme meter werkt. Het gegevensblad noemt P1, de DLB-gids beschrijft alleen de IQ Gateway met CT's.
+- Of load balancing ook via de P1-poort van de slimme meter werkt. Het gegevensblad noemt P1, maar de DLB-gids beschrijft alleen de IQ Gateway met CT's.
 - Of 4G een eigen SIM-kaart vraagt, en waarvoor de RS-485-poort dient.
 
 ### Documenten spreken elkaar tegen
@@ -284,7 +284,7 @@ Wat je bij een rode storing moet doen, staat niet in de documenten. De gids verw
 - **Grens voor faseschakeling:** 4,1 kW in de DLB-gids, 4,2 kW in TEB-00211.
 - **Witte LED:** voor activering moet wit branden, maar bij een geactiveerde lader betekent wit "netwerkverbinding verloren".
 - **Kleur update:** paars in de installatiegids, magenta in de app-gidsen.
-- **App-versie:** de installatiegids noemt Installer App 4.4.0, voor DLB is 4.5.0 nodig.
+- **App-versie:** de installatiegids noemt Installer App 4.4.0, maar voor DLB is 4.5.0 nodig.
 - **SKU-tabel:** TEB-00211 noemt beide SKU's "driefasig", de andere documenten driefasig en eenfasig.
 
 Het gegevensblad (juni 2026) is nieuwer dan de installatiegids (november 2024).`
@@ -293,12 +293,12 @@ Het gegevensblad (juni 2026) is nieuwer dan de installatiegids (november 2024).`
       id: 'bidirectioneel',
       kop: 'Apart product: IQ Bidirectional EV Charger',
       tekst: `!!! info IQ Bidirectional EV Charger is een ander product
-Dit is **geen uitvoering** van de IQ EV Charger 2, maar een aparte lader. Er is alleen een voorlopig Engelstalig gegevensblad (DSH-00921). Een installatiehandleiding zit niet bij onze bestanden. Volgens dat gegevensblad:
+Dit is **geen uitvoering** van de IQ EV Charger 2 maar een aparte lader. Er is alleen een voorlopig Engelstalig gegevensblad (DSH-00921). Een installatiehandleiding zit niet bij onze bestanden. Volgens dat gegevensblad:
 
-- Het is een **DC-lader**: de omzetting gebeurt in de lader, niet in de auto. De auto krijgt een **CCS Type 2**-connector (IEC 62196-3) aan een kabel van 7,5 m.
+- Het is een **DC-lader**: de omzetting gebeurt in de lader en niet in de auto. De auto krijgt een **CCS Type 2**-connector (IEC 62196-3) aan een kabel van 7,5 m.
 - Energie kan twee kanten op: de auto laden, het huis voeden vanuit de auto (**V2H**) en terugleveren aan het net (**V2G**).
 - Tot 11 kW driefasig en 7,4 kW eenfasig. Of je dat mag, hangt af van de netbeheerder.
-- Met een IQ System Controller of IQ Grid Switch kan hij een spanningsloos huis opstarten bij netuitval (**Dark Start**).
+- Met een IQ System Controller of IQ Grid Switch kan hij bij netuitval een spanningsloos huis opstarten (**Dark Start**).
 - 400 x 650 x 180 mm, 38 kg, IP55 en IK10, RDC-DD 6 mA, 10 jaar garantie.
 - Specificaties en functies kunnen per land verschillen en hangen af van goedkeuring.
 !!!`

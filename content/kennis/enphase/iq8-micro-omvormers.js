@@ -12,7 +12,7 @@ KENNIS.addProduct({
   naam: 'Enphase IQ8-micro-omvormers en IQ9N',
   rol: 'omvormer',
   toepassingen: ['zonnepanelen', 'thuisbatterij'],
-  korteOmschrijving: 'Kleine omvormers die onder elk zonnepaneel apart hangen en de gelijkspanning van dat ene paneel direct omzetten in 230 V wisselspanning. De familie bestaat uit IQ8+, IQ8M, IQ8MC, IQ8AC, IQ8HC, IQ8X en de nieuwe IQ9N. Ze werken alleen samen met de IQ Cable en een IQ Gateway.',
+  korteOmschrijving: 'Kleine omvormers die elk onder een eigen zonnepaneel hangen en de gelijkspanning van dat ene paneel direct omzetten in 230 V wisselspanning. De familie bestaat uit IQ8+, IQ8M, IQ8MC, IQ8AC, IQ8HC, IQ8X en de nieuwe IQ9N. Ze werken alleen samen met de IQ Cable en een IQ Gateway.',
 
   varianten: {
     kop: ['Model', 'Max. AC-vermogen', 'Max. DC-vermogen paneel', 'MPP-spanning', 'Max. DC-spanning', 'Max. ingangsstroom', 'Max. per 20 A-groep (1-fase / 3-fase)', 'Max. per IQ Cable-sectie (1-fase / 3-fase)', 'Panelen'],
@@ -43,9 +43,9 @@ KENNIS.addProduct({
     {
       id: 'wat-is-het',
       kop: 'Wat is een micro-omvormer',
-      tekst: `Een **micro-omvormer** is een kleine omvormer voor **een zonnepaneel**. Hij hangt onder het paneel op het montagerek, het paneel steekt zijn twee DC-stekkers (MC4) erin, en er komt 230 V wisselspanning uit. Alle micro-omvormers op een rij hangen aan een gezamenlijke AC-kabel, bij Enphase de **IQ Cable**, die naar een aansluitdoos en daarna naar een eigen groep in de groepenkast loopt.
+      tekst: `Een **micro-omvormer** is een kleine omvormer voor **een zonnepaneel**. Hij hangt eronder op het montagerek. De twee DC-stekkers (MC4) van het paneel gaan erin en er komt 230 V wisselspanning uit. Alle micro-omvormers op een rij hangen aan een gezamenlijke AC-kabel, bij Enphase de **IQ Cable**. Die loopt naar een aansluitdoos en dan naar een eigen groep in de groepenkast.
 
-Elke micro-omvormer heeft zijn eigen **MPPT** (de regeling die het werkpunt zoekt waarop het paneel het meeste vermogen levert). Ligt er schaduw op een paneel, dan levert alleen dat paneel minder. Stringberekeningen zijn niet nodig.
+Elke micro-omvormer heeft zijn eigen **MPPT**, de regeling die het werkpunt zoekt waarop het paneel het meeste vermogen levert. Schaduw op een paneel kost dus alleen dat paneel vermogen en stringberekeningen zijn niet nodig.
 
 ### Drie soorten omvormers naast elkaar
 
@@ -58,47 +58,47 @@ Elke micro-omvormer heeft zijn eigen **MPPT** (de regeling die het werkpunt zoek
 | Batterij | Apart, op de AC-kant (IQ Battery) | Meestal niet | Direct op de DC-kant |
 | Schaduw op een paneel | Alleen dat paneel levert minder | Kan de hele string remmen | Kan de string remmen |
 
-De kolommen string- en hybride omvormer zijn **algemene vakkennis**, aangevuld met de waarden van de Sigenergy-pagina. Zie les 10.1 voor het grote plaatje van een PV-installatie.
+De kolommen string- en hybride omvormer zijn **algemene vakkennis**, aangevuld met de waarden van de Sigenergy-pagina. Het grote plaatje van een PV-installatie staat in les 10.1.
 
 !!! kern Waarom dit voor jou uitmaakt
-Vanaf het dak loopt alleen **wisselspanning** naar binnen. De gelijkspanning blijft op de korte kabel tussen paneel en micro-omvormer. Volgens de handleiding valt daarmee het risico van gevaarlijk hoge gelijkspanning weg. Ongevaarlijk is de DC-kant niet, zie Veiligheid.
+Vanaf het dak loopt alleen **wisselspanning** naar binnen, want de gelijkspanning blijft op de korte kabel tussen paneel en micro-omvormer. Volgens de handleiding valt daarmee het risico van gevaarlijk hoge gelijkspanning weg. Maar ongevaarlijk is de DC-kant niet, zie Veiligheid.
 !!!
 
 !!! info Als je Sigenergy al kent
-De Sigen Hybrid is een omvormer voor het hele huis: strings tot 600 V (SP2) of 1100 V (TP2) gaan erin en de batterij hangt via de SigenStor BC aan de DC-kant. Bij Enphase heeft elk paneel zijn eigen omvormer en is alles al op het dak wisselspanning. Ook de batterij is AC-gekoppeld: volgens het gegevensblad van de IQ Gateway zitten in een IQ Battery 5P zes eigen micro-omvormers. Er is geen centrale omvormer en geen DC-schakelaar, maar je hebt altijd een IQ Gateway nodig voor de regie.
+De Sigen Hybrid is een omvormer voor het hele huis, met strings tot 600 V (SP2) of 1100 V (TP2) en de batterij via de SigenStor BC aan de DC-kant. Bij Enphase heeft elk paneel zijn eigen omvormer en is alles al op het dak wisselspanning. Ook de batterij is AC-gekoppeld: volgens het gegevensblad van de IQ Gateway zitten in een IQ Battery 5P zes eigen micro-omvormers. Er is geen centrale omvormer en geen DC-schakelaar, maar je hebt wel altijd een IQ Gateway nodig voor de regie.
 !!!`
     },
     {
       id: 'varianten',
       kop: 'De familie en hoe je kiest',
-      tekst: `De tabel bovenaan zet de zeven modellen naast elkaar. De waarden komen uit de gegevensbladen (IQ8MC, AC, HC, IQ8+ en IQ8M, IQ9N) en voor de IQ8X uit hoofdstuk 7.4 van de handleiding, want de IQ8X staat niet in het gegevensblad.
+      tekst: `De waarden van de zeven modellen in de tabel bovenaan komen uit de gegevensbladen (IQ8MC, AC, HC, IQ8+ en IQ8M, IQ9N). Die van de IQ8X komen uit hoofdstuk 7.4 van de handleiding, want hij staat niet in het gegevensblad.
 
 ### De keuze in drie vragen
 
 1. **Hoeveel cellen heeft het paneel?** Panelen van 54 tot 72 cellen (of 108 tot 144 halve cellen) passen op IQ8+, IQ8M, IQ8MC, IQ8AC en IQ8HC. Voor panelen met 80 of 88 halve cellen of 96 cellen is er de **IQ8X**, met een hoger spanningsbereik (MPP 43 tot 60 V).
-2. **Hoe sterk is het paneel?** Hoe zwaarder het paneel, hoe zwaarder het model: IQ8MC (480 W DC), IQ8AC (530 W), IQ8HC (560 W), IQ9N (600 W). Een hard maximum per paneel is er niet, er is "geen opgelegde DC/AC-verhouding". Een te zwaar paneel geeft wel extra **clipping**: het vermogen boven wat de omvormer kan leveren gaat verloren.
-3. **Is het paneel elektrisch compatibel?** De nullastspanning (Voc) van het paneel mag de maximale ingangsspanning nooit overschrijden, ook niet bij de laagste temperatuur. De kortsluitstroom (Isc) van het paneel mag maximaal 20 A zijn (IQ8X: 13 A). Enphase verwijst steeds naar de **compatibiliteitscalculator** op de website. Een incompatibel paneel laat de garantie vervallen.
+2. **Hoe sterk is het paneel?** Hoe zwaarder het paneel, hoe zwaarder het model: IQ8MC (480 W DC), IQ8AC (530 W), IQ8HC (560 W), IQ9N (600 W). Een hard maximum per paneel is er niet, want er is "geen opgelegde DC/AC-verhouding". Maar een te zwaar paneel geeft wel extra **clipping**: het vermogen boven wat de omvormer kan leveren gaat verloren.
+3. **Is het paneel elektrisch compatibel?** De nullastspanning (Voc) van het paneel mag nooit boven de maximale ingangsspanning komen, ook niet bij de laagste temperatuur. De kortsluitstroom (Isc) van het paneel mag maximaal 20 A zijn (IQ8X: 13 A). Enphase verwijst steeds naar de **compatibiliteitscalculator** op de website. Met een incompatibel paneel vervalt de garantie.
 
-IQ8+ en IQ8M zijn de oudere modellen (handleiding uit 2022, met oude namen als Enlighten). De **IQ9N** is nieuw (november 2025) en het sterkst, dus er passen er minder op een groep.
+IQ8+ en IQ8M zijn de oudere modellen (handleiding uit 2022, met oude namen als Enlighten). De **IQ9N** is nieuw (november 2025) en het sterkst, dus daar passen er minder van op een groep.
 
 ### Mengen met oudere systemen
 
-Bij uitbreiden gelden vaste regels. IQ8 mag bij een bestaand IQ7-systeem op dezelfde gateway, maar niet andersom. IQ9N mag bij IQ7 of IQ8, maar ook niet andersom. In een gemengd systeem werkt de IQ8-functie **Sunlight Jump Start** niet (wat die precies doet, leggen de bronnen niet uit), behalve bij de combinatie IQ8 met IQ9N. Met batterij mag het piekvermogen van de panelen niet meer zijn dan 150 % van het vermogen van de batterijen (IQ8 met IQ9N: 200 %). Anders moet er PV-afschakeling komen voor de stand zonder net.`
+IQ8 mag bij een bestaand IQ7-systeem op dezelfde gateway, maar niet andersom. Voor IQ9N bij IQ7 of IQ8 geldt hetzelfde. In een gemengd systeem werkt de IQ8-functie **Sunlight Jump Start** niet, behalve bij de combinatie IQ8 met IQ9N. Wat die functie precies doet, staat er helaas niet in. Met batterij mag het piekvermogen van de panelen niet meer zijn dan 150 % van het vermogen van de batterijen (IQ8 met IQ9N: 200 %). Anders moet er PV-afschakeling komen voor de stand zonder net.`
     },
     {
       id: 'plek-in-systeem',
       kop: 'Hoe het systeem in elkaar zit',
-      tekst: `Volg de stroom van het dak naar de meterkast. Het voorbeeldschema van Enphase (eenfase en meerfase) tekent het zo:
+      tekst: `Zo tekent het voorbeeldschema van Enphase (eenfase en meerfase) de weg van dak naar meterkast:
 
-1. **Paneel naar micro-omvormer.** Een korte DC-kabel met Staubli MC4-stekkers. Volgens de IQ9N-handleiding en de snelle installatiegids maximaal 3 m.
-2. **Micro-omvormer naar IQ Cable.** De AC-stekker klikt op een aftakking van de IQ Cable: 2 x 2,5 mm2 (L, N) voor eenfase of 4 x 2,5 mm2 (L1, L2, L3, N) voor meerfase. Het open einde krijgt een **IQ Terminator**.
-3. **IQ Cable naar aansluitdoos.** Een aansluitdoos of AC-scheider bij het rek. Daarvandaan gaat een gewone kabel (L, N, PE of 5-aderig) naar de groepenkast.
-4. **Groepenkast.** Per IQ Cable een **installatieautomaat van 20 A, B-karakteristiek** ("MCB-productie"), daarvoor een **aardlekschakelaar 40 A, 30 mA** ("RCD-productie"), en in het schema ook het **IQ Relay**.
+1. **Paneel naar micro-omvormer.** Een korte DC-kabel met Staubli MC4-stekkers, volgens de IQ9N-handleiding en de snelle installatiegids maximaal 3 m.
+2. **Micro-omvormer naar IQ Cable.** De AC-stekker klikt op een aftakking van de IQ Cable: 2 x 2,5 mm2 (L, N) voor eenfase of 4 x 2,5 mm2 (L1, L2, L3, N) voor meerfase. Op het open einde komt een **IQ Terminator**.
+3. **IQ Cable naar aansluitdoos.** Bij het rek zit een aansluitdoos of AC-scheider. Daarvandaan gaat een gewone kabel (L, N, PE of 5-aderig) naar de groepenkast.
+4. **Groepenkast.** Per IQ Cable een **installatieautomaat van 20 A, B-karakteristiek** ("MCB-productie") met daarvoor een **aardlekschakelaar 40 A, 30 mA** ("RCD-productie"). In het schema staat daar ook het **IQ Relay**.
 5. **IQ Gateway Metered.** In het schema op een eigen automaat van 6 A, met een stroomtransformator op de productiekabel en een op de netaansluiting. De gateway praat met de micro-omvormers over de stroomkabels zelf (powerline communicatie, PLC).
 
 ### Wat doet het IQ Relay
 
-Het IQ Relay is een fysiek ontkoppelrelais met netbeveiliging; de netconformiteit volgens EN 50549-1 geldt **met** IQ Relay. Het meerfasige IQ Relay koppelt ook het PLC-signaal tussen de fasen. Zonder IQ Relay heb je bij driefase een fasekoppelaar nodig (Legrand LPC-01). Of het IQ Relay in Nederland verplicht is, staat er niet in ("niet in alle landen"); het schema tekent hem wel.
+Het IQ Relay is een fysiek ontkoppelrelais met netbeveiliging. De netconformiteit volgens EN 50549-1 geldt **met** IQ Relay. Het meerfasige IQ Relay koppelt ook het PLC-signaal tussen de fasen, dus zonder IQ Relay heb je bij driefase een fasekoppelaar nodig (Legrand LPC-01). Of het IQ Relay in Nederland verplicht is, staat er niet in ("niet in alle landen"). Het schema tekent hem wel.
 
 ### Batterij en noodstroom
 
@@ -113,67 +113,67 @@ Zonder IQ Gateway en het juiste **netprofiel** (de netinstellingen voor het land
       kop: 'Veiligheid',
       tekst: `### Lage DC-spanning, maar niet spanningsloos
 
-Per paneel is de DC-spanning laag: maximaal 60 V (IQ8X 79,5 V), tegenover honderden volts bij een string. Toch waarschuwen alle handleidingen dat de **DC-geleiders ongeaard zijn en onder spanning staan** zodra er licht op het paneel valt. Er is geen schakelaar die dat uitzet. Het IQ9N-gegevensblad deelt de DC-kant in als spanningsklasse **DVC B** (AC-kant DVC C) en legt niet uit wat dat in de praktijk betekent. De gegevensbladen noemen "rapid shutdown" voor brandveiligheid, maar leggen ook niet uit hoe dat werkt.
+Per paneel is de DC-spanning laag: maximaal 60 V (IQ8X 79,5 V), tegenover honderden volts bij een string. Toch waarschuwen alle handleidingen dat de **DC-geleiders ongeaard zijn en onder spanning staan** zodra er licht op het paneel valt. Er is geen schakelaar die dat uitzet. Het IQ9N-gegevensblad deelt de DC-kant in als spanningsklasse **DVC B** (AC-kant DVC C), zonder uit te leggen wat dat in de praktijk betekent. Hetzelfde geldt voor "rapid shutdown" voor brandveiligheid, dat de gegevensbladen wel noemen.
 
 !!! gevaar Nooit onder belasting loskoppelen
 Maak de AC-groep altijd spanningsloos voor onderhoud en koppel **DC- of AC-stekkers nooit los onder belasting**. Een stekker die je onder stroom lostrekt kan een vlamboog geven (algemene vakkennis, zie les 10.2). De handleiding geeft voor het loskoppelen een vaste volgorde, zie Storingen.
 !!!
 
 !!! gevaar Losse AC-stekkers staan onder spanning
-Elke ongebruikte aftakking op de IQ Cable staat onder spanning zodra het systeem aan staat. Zet er altijd een **IQ Sealing Cap** op. Installeer de **IQ Terminator nooit** als er spanning op staat. Laat geen stekker lang open liggen.
+Elke ongebruikte aftakking op de IQ Cable staat onder spanning zodra het systeem aan staat, dus zet er altijd een **IQ Sealing Cap** op. Installeer de **IQ Terminator nooit** onder spanning en laat geen stekker lang open liggen.
 !!!
 
-- **Met IQ System Controller 3 en IQ Battery 5P** (IQ9N-handleiding): zet de systeemuitschakelaar op UIT, wacht minstens een minuut en meet met een multimeter de AC-spanning op PV, IQ Battery, net en belasting. Pas als er nergens spanning is, ga je verder. Batterij en panelen kunnen het huis voeden terwijl het net weg is. Zie les 1.3 voor de vijf stappen.
-- **Hete behuizing.** De behuizing is het koellichaam. Normaal 20 graden boven de omgeving, in extreme gevallen 90 graden (IQ8-handleidingen) of 100 graden (IQ9N en de snelle gids).
-- **Alleen deskundig personeel.** Niet openmaken of repareren, dan vervalt de garantie. Geen slimme panelen, windturbines, DC-generatoren of andere batterijen op de ingang.
-- **Galvanische scheiding.** Een hoogfrequente transformator scheidt DC en AC. Dubbel geisoleerd, klasse II, met aardlekbeveiliging (GFP); de paneelkabels moeten daarom het label PV Wire of PV Cable hebben.
-- **Pas inschakelen** als de installatie klaar is en de netbeheerder akkoord heeft gegeven.`
+- Met **IQ System Controller 3 en IQ Battery 5P** (IQ9N-handleiding): systeemuitschakelaar op UIT, minstens een minuut wachten en met een multimeter de AC-spanning meten op PV, IQ Battery, net en belasting. Pas als er nergens spanning is ga je verder, want batterij en panelen kunnen het huis voeden terwijl het net weg is. Zie les 1.3 voor de vijf stappen.
+- De behuizing is het koellichaam en wordt **heet**: normaal 20 graden boven de omgeving, in extreme gevallen 90 graden (IQ8-handleidingen) of 100 graden (IQ9N en de snelle gids).
+- Alleen **deskundig personeel**. Niet openmaken of repareren, want dan vervalt de garantie. Geen slimme panelen, windturbines, DC-generatoren of andere batterijen op de ingang.
+- Een hoogfrequente transformator zorgt voor **galvanische scheiding** tussen DC en AC. Dubbel geisoleerd, klasse II, met aardlekbeveiliging (GFP), dus de paneelkabels moeten het label PV Wire of PV Cable hebben.
+- Schakel **pas in** als de installatie klaar is en de netbeheerder akkoord heeft gegeven.`
     },
     {
       id: 'montage',
       kop: 'Plaatsing en montage',
-      tekst: `De stappen staan in hoofdstuk 4 van de IQ8-handleiding (pagina 16 tot 23) en hoofdstuk 4 van de IQ9N-handleiding (pagina 14 tot 16).
+      tekst: `De stappen staan in hoofdstuk 4 van de IQ8-handleiding (pagina 16 tot 23) en van de IQ9N-handleiding (pagina 14 tot 16).
 
-1. **Controleer de productiedatum.** De installatie moet binnen een jaar na productie zijn. De datum zit in het serienummer (jaar en werkweek).
+1. **Productiedatum.** Installeer binnen een jaar na productie. De datum zit in het serienummer (jaar en werkweek).
 2. **Leg de IQ Cable** zo dat elke aftakking bij het midden van een paneel uitkomt. Aftakafstand 1,3 m (staand) of 2,0 en 2,3 m (liggend). IQ9N: minstens 15 cm over na de laatste aftakking.
-3. **Monteer de micro-omvormer onder het paneel**, beschut tegen regen, zon en UV. Horizontaal met de beugel naar boven (naar de achterkant van het paneel) of verticaal. Nooit ondersteboven en nooit met de stekkers naar boven.
-4. **Vrije ruimte:** minimaal 19 mm tussen dak en micro-omvormer, 13 mm tussen achterkant paneel en bovenkant micro-omvormer. Verticaal: meer dan 300 mm vanaf de rand van het paneel.
+3. **Monteer de micro-omvormer onder het paneel**, beschut tegen regen, zon en UV. Horizontaal met de beugel naar boven (naar de achterkant van het paneel) of verticaal. Nooit ondersteboven of met de stekkers naar boven.
+4. **Vrije ruimte:** minimaal 19 mm tussen dak en micro-omvormer, 13 mm tussen achterkant paneel en bovenkant micro-omvormer. Verticaal meer dan 300 mm vanaf de rand van het paneel.
 5. **Aanhaalmomenten:** 5 Nm voor 6 mm bevestigingsmateriaal, 9 Nm voor 8 mm. Niet te vast.
-6. **Installatiekaart.** Plak het serienummerlabel van elke micro-omvormer op de papieren kaart op zijn plek, later ook die van gateway en batterij.
-7. **Kabelbeheer.** Bevestig de IQ Cable minstens elke 300 mm aan het rek. Lussen niet kleiner dan 120 mm diameter en niet op het dak. DC-kabel: buigradius minimaal 8 keer de buitendiameter, niet om de micro-omvormer wikkelen.
-8. **Aansluiten.** Klik de micro-omvormer op de IQ Cable (je hoort een klik). Dop ongebruikte aftakkingen af. Een dop of stekker haal je alleen los met de **IQ Disconnect Tool**.
-9. **Panelen aansluiten** en daarna pas het paneel boven de micro-omvormer monteren. Bij gelijkspanning knippert de led zes keer groen.`
+6. **Installatiekaart.** Plak het serienummerlabel van elke micro-omvormer op zijn plek op de papieren kaart, later ook die van gateway en batterij.
+7. **Kabels.** IQ Cable minstens elke 300 mm aan het rek vastzetten. Lussen niet kleiner dan 120 mm diameter en niet op het dak. DC-kabel: buigradius minimaal 8 keer de buitendiameter, niet om de micro-omvormer wikkelen.
+8. **Aansluiten.** Klik de micro-omvormer op de IQ Cable tot je een klik hoort en dop ongebruikte aftakkingen af. Een dop of stekker krijg je alleen los met de **IQ Disconnect Tool**.
+9. **Panelen aansluiten**, pas daarna het paneel boven de micro-omvormer monteren. Bij gelijkspanning knippert de led zes keer groen.`
     },
     {
       id: 'elektrisch',
       kop: 'Elektrische aansluiting en beveiliging',
       tekst: `### Hoeveel micro-omvormers per groep
 
-De tabel bovenaan geeft per model het maximum per groep van 20 A (bijvoorbeeld IQ8HC: 9 eenfase, 27 driefase) en per stuk IQ Cable. De gegevensbladen rekenen met **16 A per fase** (IQ Cable 2,5 mm2, veiligheidsfactor 1,25). Beveilig elke groep met maximaal 20 A; de 25 A-variant uit de handleidingen is **niet beschikbaar in Europa**. Mix je modellen op een groep, dan blijft de totale uitgangsstroom onder 16 A. **Centraal voeden** (de groep in het midden aansluiten, twee helften onder een automaat) is de beste werkwijze. Bij kans op hoge netspanning kan het nodig zijn het aantal per IQ Cable tot 50 % te verlagen.
+De tabel bovenaan geeft per model het maximum per groep van 20 A en per stuk IQ Cable, bijvoorbeeld IQ8HC: 9 eenfase, 27 driefase. De gegevensbladen rekenen met **16 A per fase** (IQ Cable 2,5 mm2, veiligheidsfactor 1,25). Beveilig elke groep met maximaal 20 A, want de 25 A-variant uit de handleidingen is **niet beschikbaar in Europa**. Mix je modellen op een groep, houd dan de totale uitgangsstroom onder 16 A. **Centraal voeden** is de beste werkwijze: de groep in het midden aansluiten, met twee helften onder een automaat. Bij kans op hoge netspanning moet het aantal per IQ Cable soms tot 50 % omlaag.
 
 ### Spanningsstijging
 
-Een omvormer die teruglevert duwt de spanning omhoog (algemene vakkennis, zie les 4.2). Enphase adviseert minder dan 2 % stijging van de verste micro-omvormer tot de groepenkast, en hooguit 1 % op de kabel tussen IQ Cable en groepenkast. Het schema noemt 6 mm2 als aanbevolen minimum voor die kabel.
+Een omvormer die teruglevert duwt de spanning omhoog (algemene vakkennis, zie les 4.2). Enphase adviseert minder dan 2 % stijging van de verste micro-omvormer tot de groepenkast. Op de kabel tussen IQ Cable en groepenkast is dat hooguit 1 %, met 6 mm2 als aanbevolen minimum in het schema.
 
 ### Aansluiten in de doos
 
-- **Kleuren IQ Cable:** bruin L1, zwart L2, grijs L3, blauw N. **Blauw alleen voor N**: een verkeerde aansluiting maakt alle aangesloten micro-omvormers onherstelbaar kapot.
-- De meerfasige IQ Cable wisselt de fasen intern per micro-omvormer. Laat zo min mogelijk aftakkingen leeg, anders ontstaat fase-onbalans.
-- **IQ Terminator** (open einde): eenfase 13 mm mantel eraf, meerfase 20 mm. Alleen de zeskantmoer draaien, eenfase 7 Nm. Eenmalig te gebruiken.
+- Kleuren IQ Cable: bruin L1, zwart L2, grijs L3, blauw N. **Blauw alleen voor N**, want verkeerd aansluiten maakt alle aangesloten micro-omvormers onherstelbaar kapot.
+- De meerfasige IQ Cable wisselt de fasen intern per micro-omvormer. Laat dus zo min mogelijk aftakkingen leeg, anders krijg je fase-onbalans.
+- **IQ Terminator** op het open einde: eenfase 13 mm mantel eraf, meerfase 20 mm. Alleen de zeskantmoer draaien, eenfase 7 Nm. Eenmalig te gebruiken.
 - Meet voor het inschakelen de netspanning: eenfase 184 tot 276 V (L-N), driefase 319 tot 478 V (L-L).
-- Controleer bij IQ9N en de snelle gids voor het inschakelen de **impedantie** tussen alle geleiders (L-L en L-N) om verkeerde bedrading uit te sluiten.
+- IQ9N en snelle gids: controleer voor het inschakelen de **impedantie** tussen alle geleiders (L-L en L-N), zodat je verkeerde bedrading uitsluit.
 
 ### Aardlek, overspanning en vereffening
 
-Het schema zegt dat waar een aardlekschakelaar verplicht is, een **type AC** volstaat, vanwege de galvanische scheiding. Neem dat niet zomaar over: in les 6.3 leer je dat type AC verouderd is en dat type A de standaard is voor woninginstallaties. Volg de Nederlandse regels en de eisen van de groepenkast, en kies bij twijfel het strengere type. Overspanningsbeveiliging (SPD) en aardlek volgens de lokale normen; de micro-omvormers hebben zelf al overspanningsbeveiliging. Vereffen de panelframes, het rek en de metalen montagebeugels volgens de lokale normen (les 3.5).`
+Volgens het schema volstaat een **type AC** waar een aardlekschakelaar verplicht is, vanwege de galvanische scheiding. Neem dat niet zomaar over. In les 6.3 leer je dat type AC verouderd is en type A de standaard voor woninginstallaties. Volg dus de Nederlandse regels en de eisen van de groepenkast en kies bij twijfel het strengere type. Overspanningsbeveiliging (SPD) en aardlek gaan volgens de lokale normen, al hebben de micro-omvormers zelf ook overspanningsbeveiliging. Vereffen panelframes, rek en metalen montagebeugels ook volgens de lokale normen (les 3.5).`
     },
     {
       id: 'inbedrijfstelling',
       kop: 'Inbedrijfstelling met de app',
-      tekst: `Dit loopt via de **Enphase Installer App** en de IQ Gateway. Het gidsje ING-00056 zet de valkuilen voor een eerste IQ8-systeem op een rij.
+      tekst: `Dit loopt via de **Enphase Installer App** en de IQ Gateway. Het gidsje ING-00056 noemt de valkuilen voor een eerste IQ8-systeem.
 
 1. **Op kantoor:** installeer de nieuwste Installer App (oranje logo) en log in met internet. Download in de app de IQ Gateway-software (minimaal 8.03.5263).
-2. **Ter plaatse:** zet de nieuwe software op de gateway. Dat duurt tot 30 minuten; je telefoon blijft in AP-modus binnen 3 tot 5 m van de gateway. Begin er zo vroeg mogelijk mee.
+2. **Ter plaatse:** zet de nieuwe software op de gateway. Dat duurt tot 30 minuten en je telefoon moet in AP-modus binnen 3 tot 5 m van de gateway blijven. Begin er dus zo vroeg mogelijk mee.
 3. **Systeem registreren en scannen.** Scan de barcodes van de micro-omvormers met de app. **Gebruik niet de PLC-scanknop op de gateway.**
 4. **Netprofiel instellen** en de apparaten inrichten ("bevoorrading" of "provisioning").
 5. **Groep inschakelen.** Eerst de automaat van de groep, dan de hoofdschakelaar. De IQ8 begint pas na het netprofiel te produceren: 10 tot 15 minuten na het inrichten (ING-00056), of 20 tot 30 minuten voor vol vermogen (snelle gids en IQ9N-handleiding).
@@ -195,11 +195,11 @@ Na het aansluiten van het paneel brandt de led eerst ongeveer zes seconden groen
       kop: 'Storingen en vervangen',
       tekst: `### DC-weerstand laag
 
-De micro-omvormer meet de isolatieweerstand van PV+ en PV- naar aarde. Komt een van beide onder **ongeveer 7 kilo-ohm** (normaal: megaohms), dan stopt hij en brandt de led rood. Oorzaak: slechte isolatie van paneel, kabels of stekkers, of vocht. De fout blijft staan tot hij gewist wordt, en dat kan alleen via de gateway: Enphase Installer Platform, Gebeurtenissen, serienummer, Taken, "Wis GFI". Over isolatieweerstand meten: les 7.4.
+De micro-omvormer meet de isolatieweerstand van PV+ en PV- naar aarde. Komt een van beide onder **ongeveer 7 kilo-ohm** (normaal: megaohms), dan stopt hij en brandt de led rood. Oorzaak is slechte isolatie van paneel, kabels of stekkers, of vocht. De fout blijft staan tot hij gewist wordt. Dat kan alleen via de gateway: Enphase Installer Platform, Gebeurtenissen, serienummer, Taken, "Wis GFI". Over isolatieweerstand meten: les 7.4.
 
 ### Een micro-omvormer die niet werkt
 
-De handleiding geeft 14 stappen in vaste volgorde (IQ8 pagina 25 en 26): automaten en netspanning controleren, spanning meten op de IQ Cable-aftakking, stekkers nakijken (ook op knaagdierschade), DC opnieuw aansluiten en de led volgen, en ten slotte de DC-kabels **verwisselen met een goed werkend buurpaneel**. Verhuist de fout mee, dan is het paneel kapot; blijft hij, dan de micro-omvormer.
+De handleiding geeft 14 stappen in vaste volgorde (IQ8 pagina 25 en 26). Je controleert automaten en netspanning, meet op de IQ Cable-aftakking, kijkt de stekkers na (ook op knaagdierschade) en sluit DC opnieuw aan terwijl je de led volgt. Als laatste **verwissel je de DC-kabels met een goed werkend buurpaneel**. Verhuist de fout mee, dan is het paneel kapot. Blijft hij, dan is het de micro-omvormer.
 
 ### Loskoppelen in deze volgorde
 
@@ -209,14 +209,14 @@ De handleiding geeft 14 stappen in vaste volgorde (IQ8 pagina 25 en 26): automat
 4. Met een stroomtang controleren dat er **geen DC-stroom** meer loopt. Let op: de meeste tangen moet je eerst op nul zetten.
 5. DC-stekkers losmaken met de Disconnect Tool en de micro-omvormer van het rek halen.
 
-Vervangen gaat alleen na een RMA-nummer van Enphase. Daarna haal je in de app het oude serienummer uit de gateway, scan je het nieuwe en richt je het apparaat opnieuw in. Andere fouten dan DC-weerstand laag meldt de micro-omvormer aan de gateway: zie de IQ Gateway-pagina.`
+Vervangen kan alleen met een RMA-nummer van Enphase. Daarna haal je in de app het oude serienummer uit de gateway, scan je het nieuwe en richt je het apparaat opnieuw in. Andere fouten dan DC-weerstand laag meldt de micro-omvormer aan de gateway: zie de IQ Gateway-pagina.`
     },
     {
       id: 'niet-in-handleiding',
       kop: 'Wat niet in de handleiding staat',
       tekst: `- Of het IQ Relay in Nederland verplicht is. De bladen zeggen alleen "niet in alle landen".
-- Hoe "rapid shutdown" werkt, wat DVC B voor aanraakveiligheid betekent en wat Sunlight Jump Start doet.
-- Gegevensblad van de IQ8X: die staat alleen in de handleiding.
+- Hoe "rapid shutdown" werkt, wat DVC B betekent voor aanraakveiligheid en wat Sunlight Jump Start doet.
+- Een gegevensblad van de IQ8X. Die staat alleen in de handleiding.
 - Hoe je de vijf stappen van de NEN 3140 toepast op een dak met panelen. Dat is je eigen werk, zie les 1.3 en 10.2.
 
 ### Waar de bronnen elkaar tegenspreken
@@ -226,7 +226,7 @@ Vervangen gaat alleen na een RMA-nummer van Enphase. Daarna haal je in de app he
 - **Gateway-capaciteit:** 300 micro-omvormers en 20 batterijen (IQ8-handleiding) tegenover 600 en 39 (IQ8+/IQ8M-handleiding, oudere Envoy-S).
 - **Tijd tot productie:** 6 minuten (IQ8-handleiding), 10 tot 15 minuten (ING-00056), 20 tot 30 minuten voor vol vermogen (snelle gids).
 - De IQ8-handleiding noemt vol vermogen "tot 60" zonder eenheid, de specificaties zeggen -40 tot 65 graden.
-- De veiligheidstekst van de snelle gids noemt 25 A meerfase, de tabel zegt dat die optie in Europa niet bestaat.`
+- De veiligheidstekst van de snelle gids noemt 25 A meerfase, maar de tabel zegt dat die optie in Europa niet bestaat.`
     }
   ],
 

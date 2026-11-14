@@ -14,7 +14,7 @@ KENNIS.addProduct({
   naam: 'GoodWe ESA 5 kW / 5,4-10,8 kWh (GW5048-ESA, oudere generatie)',
   rol: 'systeem',
   toepassingen: ['thuisbatterij', 'zonnepanelen'],
-  korteOmschrijving: 'De eerdere ESA van GoodWe: een 1-fase hybride omvormer van 5 kW met ingebouwde schakelkast (BoS) en een batterijkast eronder met 48 V-lithiumpakketten, samen 5,4 tot 10,8 kWh. Je komt hem tegen bij bestaande installaties. Deze pagina helpt je hem te herkennen en de juiste handleiding te vinden.',
+  korteOmschrijving: 'De eerdere ESA van GoodWe: een 1-fase hybride omvormer van 5 kW met ingebouwde schakelkast (BoS) en daaronder een batterijkast met 48 V-lithiumpakketten van samen 5,4 tot 10,8 kWh. Je komt hem tegen bij bestaande installaties. Hier lees je hoe je hem herkent en welke handleiding je nodig hebt.',
 
   varianten: {
     kop: ['Onderdeel', 'Typenummer', 'Belangrijkste gegevens', 'Bron'],
@@ -38,44 +38,44 @@ KENNIS.addProduct({
     {
       id: 'wat-is-het',
       kop: 'Wat is het en hoe herken je hem',
-      tekst: `GoodWe gebruikt de naam **ESA** voor zijn alles-in-een thuisbatterijen. De ESA op deze pagina is de eerdere generatie: een **5 kW 1-fase hybride omvormer** voor een **48 V-batterij**. De datasheet (juli 2023) beschrijft het systeem als omvormer, batterijcellen, lader en UPS in één behuizing, met 2 MPPT's en 5,4 tot 10,8 kWh opslag. De installatiehandleiding dateert van 2022.
+      tekst: `GoodWe gebruikt de naam **ESA** voor zijn alles-in-een thuisbatterijen. De ESA op deze pagina is de eerdere generatie: een **5 kW 1-fase hybride omvormer** voor een **48 V-batterij**. Volgens de datasheet (juli 2023) zitten omvormer, batterijcellen, lader en UPS in één behuizing, met 2 MPPT's en 5,4 tot 10,8 kWh opslag. De installatiehandleiding is van 2022.
 
-De documenten noemen dit systeem zelf geen voorganger van de huidige ESA-reeksen, maar de datums en de opbouw maken duidelijk dat het om de oudere generatie gaat. Het grote verschil met de huidige **ESA 3-10 kW** (zie die pagina): die werkt met hoogspanningsbatterijen van rond 380 V (Lynx D G2), terwijl deze oude ESA een **laagspanningsbatterij van 48 V** heeft.
+De documenten noemen dit systeem zelf geen voorganger van de huidige ESA-reeksen. Maar uit de datums en de opbouw blijkt wel dat het de oudere generatie is. Het grote verschil met de huidige **ESA 3-10 kW** (zie die pagina) is de batterij. Die nieuwe werkt met hoogspanningsbatterijen van rond 380 V (Lynx D G2), deze oude ESA met een **laagspanningsbatterij van 48 V**.
 
 ### Zo herken je hem op locatie
 
 - Het typeplaatje noemt **GW5048-ESA** (5 kW, 48 V).
-- Aan de muur hangen drie delen boven elkaar: bovenaan de **omvormer**, daaronder de **BoS** (Balance of System, een schakelkast met de aansluitingen en automaten) en op de vloer de hoge **batterijkast** (ruim 1,2 m).
-- Achter een klepje in de BoS zitten zichtbaar een batterij-automaat (125 A, DC), een net-automaat (40 A), een back-up-automaat (25 A), een PV-scheidingsschakelaar en een **draaischakelaar met drie standen** voor de bypass (Installatiehandleiding p. 19).
+- Er zitten drie delen boven elkaar: bovenaan de **omvormer**, daaronder de **BoS** (Balance of System, een schakelkast met de aansluitingen en automaten) en op de vloer de hoge **batterijkast** (ruim 1,2 m).
+- Achter een klepje in de BoS zie je een batterij-automaat (125 A, DC), een net-automaat (40 A), een back-up-automaat (25 A), een PV-scheidingsschakelaar en een **draaischakelaar met drie standen** voor de bypass (Installatiehandleiding p. 19).
 - Op de voorkant staan acht lampjes met tekst: SYSTEM, BACKUP, SOLAR, BATTERY, GRID, ENERGY, COMMUNICATIONS en ERROR (p. 33).
 - De wifi-module zendt een netwerk uit met de naam **Solar-WiFi** plus de laatste tekens van het serienummer (p. 34).
 
 !!! info Als je Sigenergy al kent
-Net als SigenStor Home is dit een systeem waarin omvormer en batterij samen zijn ontworpen. De verschillen: SigenStor werkt met batterijen van 300 tot 900 V en heeft een aparte Sigen Gateway nodig voor noodstroom. Deze GoodWe heeft een **48 V-batterij** met dikke DC-kabels en een batterij-automaat, en de noodstroomuitgang zit al in de BoS, inclusief een handmatige bypass. De app is SolarGo in plaats van mySigen, en de meter is een DIN-railmeter met stroomtang in plaats van de Sigen Power Sensor.
+Net als bij SigenStor Home zijn omvormer en batterij hier samen ontworpen. Maar SigenStor werkt met batterijen van 300 tot 900 V en heeft een aparte Sigen Gateway nodig voor noodstroom. Deze GoodWe heeft een **48 V-batterij** met dikke DC-kabels en een batterij-automaat. De noodstroomuitgang zit al in de BoS, met een handmatige bypass erbij. De app is SolarGo in plaats van mySigen en de meter is een DIN-railmeter met stroomtang in plaats van de Sigen Power Sensor.
 !!!`
     },
     {
       id: 'hoe-werkt-het',
       kop: 'Hoe het werkt',
-      tekst: `De omvormer koppelt twee PV-strings, de batterij, het net en een aparte groep voor noodstroom. In de standaardmodus (**General mode**) gaat zonnestroom eerst naar het huis, dan naar de batterij en dan naar het net. Is er te weinig zon, dan levert de batterij en daarna het net. Valt het net weg, dan houden zon en batterij de back-upgroep in de lucht (Installatiehandleiding p. 11-13).
+      tekst: `De omvormer koppelt twee PV-strings, de batterij, het net en een aparte groep voor noodstroom. In de standaardmodus (**General mode**) gaat zonnestroom eerst naar het huis, dan naar de batterij en dan naar het net. Bij te weinig zon levert de batterij en daarna het net. Valt het net weg, dan houden zon en batterij de back-upgroep in de lucht (Installatiehandleiding p. 11-13).
 
-De andere modi, in te stellen met SolarGo:
+De andere modi stel je in met SolarGo:
 
-- **Off-grid mode:** zon en batterij als eilandsysteem zonder net.
-- **Standby mode:** de batterij laadt alleen en ontlaadt pas bij netuitval, zoals een UPS.
-- **Economic mode:** laden in daltarief, ontladen in piektarief.
+- In **Off-grid mode** werken zon en batterij als eilandsysteem zonder net.
+- In **Standby mode** laadt de batterij alleen en ontlaadt pas bij netuitval, zoals een UPS.
+- In **Economic mode** laadt hij in het daltarief en ontlaadt in het piektarief.
 
-Volgens de handleiding moet het systeem minstens 80% van zijn levensduur aan het net hangen; lang off-grid gebruik verkort de levensduur van de batterijen (p. 9).
+Volgens de handleiding moet het systeem minstens 80% van zijn levensduur aan het net hangen, want lang off-grid gebruik verkort de levensduur van de batterijen (p. 9).
 
 ### Noodstroom: wat wel en niet
 
-De back-upuitgang levert volgens de handleiding 5000 W continu en 6900 W gedurende 10 seconden voor het aanlopen (p. 11). Het technische blad en de datasheet noemen 4600 VA nominaal met dezelfde piek (p. 38, datasheet p. 2). Reken dus met 4600 VA. Boven 45 °C omgeving neemt het vermogen af, boven 60 °C schakelt hij uit.
+De back-upuitgang levert volgens de handleiding 5000 W continu en 6900 W gedurende 10 seconden voor het aanlopen (p. 11). Maar het technische blad en de datasheet noemen 4600 VA nominaal met dezelfde piek (p. 38, datasheet p. 2), dus reken met 4600 VA. Boven 45 °C omgeving neemt het vermogen af en boven 60 °C schakelt hij uit.
 
 | Geschikt op back-up | Niet geschikt op back-up |
 |---|---|
 | Kleine keukenapparaten, magnetron, tv, computer | Boiler en geiser |
 | Verlichting (led) | Airco |
-| Koelkast en vriezer | Elektrisch kookplaat en oven |
+| Koelkast en vriezer | Elektrische kookplaat en oven |
 | | Sauna of spa, waterpompen |
 
 De back-upgroep deelt de nulleider met het net, zodat de verbinding tussen nul en aarde in alle standen intact blijft (p. 11).`
@@ -84,16 +84,16 @@ De back-upgroep deelt de nulleider met het net, zodat de verbinding tussen nul e
       id: 'veiligheid',
       kop: 'Veiligheid',
       tekst: `!!! gevaar Alle bronnen uit en 5 minuten wachten
-Er zijn drie bronnen: net, panelen en batterij. Schakel ze alle drie af en controleer met een spanningsmeter voor minstens 1000 V AC en DC dat er niets meer op staat. Wacht na het afschakelen minstens 5 minuten voor je iets binnenin aanraakt (Installatiehandleiding p. 5-7). Panelen geven al spanning bij weinig licht; plaats daarom een DC-scheider of zekering volgens de lokale regels (p. 6). Open nooit het bovenste omvormergedeelte.
+Er zijn drie bronnen: net, panelen en batterij. Schakel ze alle drie af en controleer met een spanningsmeter voor minstens 1000 V AC en DC dat er niets meer op staat. Wacht na het afschakelen minstens 5 minuten voor je iets binnenin aanraakt (Installatiehandleiding p. 5-7). Panelen geven al spanning bij weinig licht, dus plaats een DC-scheider of zekering volgens de lokale regels (p. 6). Open nooit het bovenste omvormergedeelte.
 !!!
 
-- **Werk nooit alleen** aan dit systeem (p. 6).
-- **Polariteit batterij.** Omgekeerd aansluiten beschadigt de omvormer en kost de garantie (p. 7 en 22).
-- **Alleen goedgekeurde lithium-ionbatterijen.** Andere batterijen zijn niet toegestaan, omdat de BMS-communicatie alleen met geteste modellen werkt (p. 23).
-- **Nooit een bevroren batterij laden**, en bij het losnemen eerst de geaarde pool los (p. 8).
-- **Niet voor medische of levensondersteunende apparatuur** (p. 6).
-- **Brand.** Geen brandbare spullen in dezelfde ruimte: de relais en schakelaars zijn niet vonkvrij (p. 7).
-- **Transformatorloos.** De omvormer heeft geen scheidingstransformator; alle andere onderdelen moeten daarmee overweg kunnen (p. 9).`
+- Werk nooit alleen aan dit systeem (p. 6).
+- Let op de polariteit van de batterij. Omgekeerd aansluiten beschadigt de omvormer en kost de garantie (p. 7 en 22).
+- Gebruik alleen goedgekeurde lithium-ionbatterijen. Andere zijn niet toegestaan, omdat de BMS-communicatie alleen met geteste modellen werkt (p. 23).
+- Laad nooit een bevroren batterij. Bij het losnemen haal je eerst de geaarde pool los (p. 8).
+- Niet voor medische of levensondersteunende apparatuur (p. 6).
+- Zet geen brandbare spullen in dezelfde ruimte, want de relais en schakelaars zijn niet vonkvrij (p. 7).
+- De omvormer is transformatorloos. Er zit geen scheidingstransformator in, dus alle andere onderdelen moeten daarmee overweg kunnen (p. 9).`
     },
     {
       id: 'montage',
@@ -101,22 +101,22 @@ Er zijn drie bronnen: net, panelen en batterij. Schakel ze alle drie af en contr
       tekst: `### Plaats (Installatiehandleiding p. 10 en 14)
 
 - Vrije ruimte: 300 mm boven, 500 mm aan elke zijkant en 1200 mm voor.
-- Binnen of buiten, maar beschut tegen zon, regen en sneeuw; boven 45 °C neemt het vermogen af.
+- Binnen of buiten, maar beschut tegen zon, regen en sneeuw. Boven 45 °C neemt het vermogen af.
 - Een muur die het hele systeem draagt. De handleiding noemt 50 kg voor de wandplaat met omvormer.
-- Uit de buurt van radioapparatuur onder 30 MHz (minstens 30 m), of met een ferrietkern of filter op de kabels.
+- Minstens 30 m uit de buurt van radioapparatuur onder 30 MHz, of met een ferrietkern of filter op de kabels.
 
 ### Volgorde
 
-1. **Batterijkast eerst** (p. 16). Schroef de voeten eronder, zet hem waterpas tegen de muur, schroef hem vast en kit de zes schroefgaten af (Batterijkasthandleiding p. 6-7). Laat minstens 150 mm ruimte voor luchtcirculatie.
-2. **Wandplaat** (p. 16). Komt de batterijkast pas later, monteer de omvormer dan op 1206 mm van de vloer.
-3. **BoS** op de twee haken van de wandplaat hangen (p. 16).
-4. **Omvormer** op de BoS zetten zodat de connectoren in elkaar vallen, bovenkant vastschroeven, antenne erop (p. 17). Zet de omvormer nooit rechtop op zijn connectoren.
-5. **Batterijen** in de kast schuiven, van onder naar boven, met de batterijschakelaars uit. Sluit de voedingskabels en de aardverbindingen in de kast aan (Batterijkasthandleiding p. 7-9).`
+1. Eerst de batterijkast (p. 16). Schroef de voeten eronder, zet hem waterpas tegen de muur, schroef hem vast en kit de zes schroefgaten af (Batterijkasthandleiding p. 6-7). Laat minstens 150 mm ruimte voor luchtcirculatie.
+2. Dan de wandplaat (p. 16). Komt de batterijkast pas later, monteer de omvormer dan op 1206 mm van de vloer.
+3. Hang de BoS op de twee haken van de wandplaat (p. 16).
+4. Zet de omvormer op de BoS zodat de connectoren in elkaar vallen. Schroef de bovenkant vast en zet de antenne erop (p. 17). Zet de omvormer nooit rechtop op zijn connectoren.
+5. Schuif de batterijen in de kast, van onder naar boven, met de batterijschakelaars uit. Sluit de voedingskabels en de aardverbindingen in de kast aan (Batterijkasthandleiding p. 7-9).`
     },
     {
       id: 'aansluiting',
       kop: 'Elektrische aansluiting',
-      tekst: `Alle aansluitingen zitten in de BoS, achter de afdekplaat met vier inbusbouten. De PV-scheider moet uit (horizontaal) staan voor de kap eraf kan (Installatiehandleiding p. 18).
+      tekst: `Alle aansluitingen zitten in de BoS, achter de afdekplaat met vier inbusbouten. De kap kan er pas af als de PV-scheider uit (horizontaal) staat (Installatiehandleiding p. 18).
 
 | Aansluiting | Kabel | Aanhaalmoment | Pagina |
 |---|---|---|---|
@@ -126,70 +126,70 @@ Er zijn drie bronnen: net, panelen en batterij. Schakel ze alle drie af en contr
 | Batterijkast naar aarde | 16 mm² | 3,5 Nm | 22 |
 | Net en back-up (L, N, PE) | 16 mm² | 3,5 Nm | 25-27 |
 
-- **Net:** van de groepenkast naar de net-automaat in de BoS; zorg dat de hoofdverdeler goed geaard is (p. 26).
-- **Back-up:** naar een aparte back-upverdeler met eigen aardverbinding (p. 27).
-- **BMS-communicatie:** verplicht bij elke installatie met batterijen (p. 23). In de batterijkast gaat een kabel van de BMS-doorvoer naar COM 1 van de hoofdbatterij, en van COM 2 naar COM 1 van de tweede batterij (Batterijkasthandleiding p. 11-12).
-- **Energiemeter** (p. 28-29): klik de meter op de DIN-rail in de groepenkast, zet de stroomtang om de inkomende fasedraad met de pijl de goede kant op, zwarte en witte draad op klem 7 en 8. Spanningsmeting: fase (rood) via de meegeleverde zekering van 0,1 A op klem 10, nul (zwart) op klem 9. De netwerkkabel gaat naar de poort "kWh meter" van de omvormer.
+- Het net gaat van de groepenkast naar de net-automaat in de BoS. Zorg dat de hoofdverdeler goed geaard is (p. 26).
+- De back-up gaat naar een aparte back-upverdeler met eigen aardverbinding (p. 27).
+- BMS-communicatie is verplicht bij elke installatie met batterijen (p. 23). In de batterijkast gaat een kabel van de BMS-doorvoer naar COM 1 van de hoofdbatterij. Van COM 2 gaat er een naar COM 1 van de tweede batterij (Batterijkasthandleiding p. 11-12).
+- De **energiemeter** klik je op de DIN-rail in de groepenkast (p. 28-29). Zet de stroomtang om de inkomende fasedraad met de pijl de goede kant op, met de zwarte en witte draad op klem 7 en 8. Voor de spanningsmeting gaat de fase (rood) via de meegeleverde zekering van 0,1 A naar klem 10 en de nul (zwart) naar klem 9. De netwerkkabel gaat naar de poort "kWh meter" van de omvormer.
 
 !!! kern De bypass-schakelaar
-De draaischakelaar in de BoS bepaalt waar de back-upgroep zijn stroom vandaan haalt (p. 30). **Stand I** (onder, standaard): uit de omvormer, dus ononderbroken bij netuitval. **Stand O** (midden): back-upgroep helemaal los. **Stand II** (boven): rechtstreeks uit het net, de omvormer is overbrugd. Stand II gebruik je bij onderhoud, zodat de klant stroom houdt.
+De draaischakelaar in de BoS bepaalt waar de back-upgroep zijn stroom vandaan haalt (p. 30). In **stand I** (onder, standaard) komt die uit de omvormer, dus ononderbroken bij netuitval. In **stand O** (midden) is de back-upgroep helemaal los. In **stand II** (boven) komt hij rechtstreeks uit het net en is de omvormer overbrugd. Stand II gebruik je bij onderhoud, zodat de klant stroom houdt.
 !!!
 
-Welke aardlekbeveiliging of welke groepsgrootte in de groepenkast hoort, staat niet in de handleiding. Zie les m06l03 en les m02l06.`
+Welke aardlekbeveiliging of welke groepsgrootte in de groepenkast hoort staat er helaas niet in. Zie les m06l03 en les m02l06.`
     },
     {
       id: 'inbedrijfstelling',
       kop: 'Inbedrijfstelling',
       tekst: `### Batterij eerst (Batterijkasthandleiding p. 10-15)
 
-1. Stel bij een SECU-A5.4L de **DIP-schakelaars** in: anders bij een los pakket dan bij meerdere pakketten. Schakelaar 2 is de eindweerstand (laatste batterij), schakelaar 3 het GoodWe-protocol (p. 10).
-2. Sluit de batterijkast aan op de omvormer: de MC4-stekkers bovenop de kast naar de batterijconnectoren onder de omvormer, en de aardkabel naar de aardklem (p. 13).
-3. Druk op elk pakket de batterij-automaat in (groen lampje), en dan de batterijschakelaar van de hoofdbatterij. De hoofdbatterij geeft de adressen zelf uit (p. 15).
-4. Kies in **SolarGo** het juiste batterijtype. Een verkeerde keuze geeft een BMS-communicatiefout (p. 11).
+1. Stel bij een SECU-A5.4L de **DIP-schakelaars** in. Die staan anders bij een los pakket dan bij meerdere pakketten. Schakelaar 2 is de eindweerstand (laatste batterij), schakelaar 3 het GoodWe-protocol (p. 10).
+2. Sluit de batterijkast aan op de omvormer: de MC4-stekkers bovenop de kast naar de batterijconnectoren onder de omvormer en de aardkabel naar de aardklem (p. 13).
+3. Druk op elk pakket de batterij-automaat in (groen lampje) en dan de batterijschakelaar van de hoofdbatterij. De hoofdbatterij geeft zelf de adressen uit (p. 15).
+4. Kies in **SolarGo** het juiste batterijtype, want een verkeerde keuze geeft een BMS-communicatiefout (p. 11).
 
 ### Systeem aan (Installatiehandleiding p. 31)
 
-Met alle kappen dicht: batterij-automaat aan, PV-scheider aan, net-automaat aan, back-up-automaat aan, en dan de groep in de groepenkast. Uitschakelen gaat in omgekeerde volgorde: back-up, net, PV, batterij, groep (p. 32).
+Met alle kappen dicht zet je in deze volgorde aan: batterij-automaat, PV-scheider, net-automaat, back-up-automaat en dan de groep in de groepenkast. Uitschakelen gaat in omgekeerde volgorde: back-up, net, PV, batterij, groep (p. 32).
 
 ### Internet
 
-Verbind je telefoon met het **Solar-WiFi**-netwerk van de omvormer en stel via de webpagina van de module of via SolarGo de router in (p. 34-35). Gebruik daarvoor het wachtwoord uit de handleiding en wijzig het na de eerste keer, zoals de storingsgids aanraadt (Storingsgids p. 11). Met SolarGo stel je ook de landinstelling (netcode) en de exportbegrenzing in.
+Verbind je telefoon met het **Solar-WiFi**-netwerk van de omvormer en stel de router in via de webpagina van de module of via SolarGo (p. 34-35). Je gebruikt daarvoor het wachtwoord uit de handleiding. Wijzig het na de eerste keer, want dat raadt de storingsgids aan (Storingsgids p. 11). In SolarGo stel je ook de landinstelling (netcode) en de exportbegrenzing in.
 
 !!! info Meter controleren
-Met de functie **Meter Detectie** in SolarGo controleer je of de stroomtang de goede kant op zit. Een verkeerd gedraaide stroomtang is volgens de storingsgids een bekende oorzaak van vreemd laden en ontladen van de batterij (Storingsgids p. 20). De metertest faalt als er minder dan 150 W van het net wordt afgenomen (p. 21). Zie de GoodWe-merkpagina voor de stappen.
+Met de functie **Meter Detectie** in SolarGo controleer je of de stroomtang de goede kant op zit. Een verkeerd gedraaide stroomtang is volgens de storingsgids een bekende oorzaak van vreemd laden en ontladen van de batterij (Storingsgids p. 20). Let op: de metertest faalt als er minder dan 150 W van het net wordt afgenomen (p. 21). De stappen staan op de GoodWe-merkpagina.
 !!!`
     },
     {
       id: 'storingen',
       kop: 'Storingen',
-      tekst: `De installatiehandleiding geeft alleen een lijst met foutnamen en een korte uitleg (p. 36), zoals Utility Loss (net weg), PV over voltage, Isolation failure, Ground I failure (lekstroom), Relay-check failure, Battery communication failure en Over Load (back-up overbelast).
+      tekst: `De installatiehandleiding geeft alleen een lijst met foutnamen en een korte uitleg (p. 36). Bijvoorbeeld Utility Loss (net weg), PV over voltage, Isolation failure, Ground I failure (lekstroom), Relay-check failure, Battery communication failure en Over Load (back-up overbelast).
 
-Voor de aanpak gebruik je de algemene **Probleemoplossingsgids** van GoodWe, die de ESA-serie noemt naast ET, EH, ES en andere hybride omvormers:
+Voor de aanpak gebruik je de algemene **Probleemoplossingsgids** van GoodWe, die de ESA-serie naast ET, EH, ES en andere hybride omvormers noemt:
 
-1. **Lampjes** (p. 5-9). Bijvoorbeeld: COM knippert bij een BMS- of meterprobleem, FAULT knippert een keer bij overbelasting van de back-up.
-2. **Foutcode in SolarGo of SEMS Portal** (p. 10-19), met per code de oorzaak en de oplossing.
-3. **Problemen zonder melding** (p. 20-23), zoals vreemd laden, een uitgeschakelde back-up, lage PV-opbrengst of een batterij die niet communiceert.
-4. **Batterijalarmen** (p. 24), **wifi** (p. 25-26) en **firmware** bijwerken (p. 28-31).
+1. De lampjes (p. 5-9). COM knippert bijvoorbeeld bij een BMS- of meterprobleem en FAULT knippert een keer bij overbelasting van de back-up.
+2. De foutcode in SolarGo of SEMS Portal (p. 10-19), met per code de oorzaak en de oplossing.
+3. Problemen zonder melding (p. 20-23), zoals vreemd laden, een uitgeschakelde back-up, lage PV-opbrengst of een batterij die niet communiceert.
+4. Batterijalarmen (p. 24), wifi (p. 25-26) en firmware bijwerken (p. 28-31).
 
 | Melding | Wat de gids aanraadt |
 |---|---|
-| Geen netcontact, FAC-fout | Netspanning op de AC-klemmen meten, aansluitingen en automaat controleren, L en N niet verwisseld; automaat 5 minuten uit en weer aan |
+| Geen netcontact, FAC-fout | Netspanning op de AC-klemmen meten, aansluitingen en automaat controleren en kijken of L en N niet verwisseld zijn. Daarna de automaat 5 minuten uit en weer aan |
 | Aardfout, relaisfout | Spanning tussen nul en aarde meten (onder 10 V), aansluiting van N en PE controleren |
 | PV-overspanning | Open klemspanning per string meten, zo nodig panelen uit de string halen |
-| Isolatiefout | Strings een voor een aansluiten om de slechte te vinden; bij vocht kan het tijdelijk zijn |
+| Isolatiefout | Strings een voor een aansluiten om de slechte te vinden. Bij vocht kan het tijdelijk zijn |
 | Te hoge temperatuur | Ventilatie verbeteren, 15 minuten uit en weer aan |
 
-Blijft een storing, dan neem je contact op met de GoodWe-service (Storingsgids p. 36).`
+Blijft de storing, neem dan contact op met de GoodWe-service (Storingsgids p. 36).`
     },
     {
       id: 'wat-niet-in-handleiding',
       kop: 'Wat niet in de handleiding staat of niet klopt',
-      tekst: `- **Batterijkast:** de omvormerhandleiding noemt hem BCL0096, de eigen handleiding BCL9600.
-- **Pakketcapaciteit:** hoofdstuk 2 van de batterijkasthandleiding spreekt van twee SECU-A-pakketten van 4,8 kWh (samen 9,6 kWh), hoofdstuk 3 en de datasheet van 5,4 kWh per pakket (tot 10,8 kWh). Kijk op het typeplaatje van het pakket.
-- **Aantal pakketten:** de kast houdt er twee, de DIP-tabel spreekt van maximaal vier. Dat past bij twee gekoppelde kasten, wat de handleiding als optie noemt, maar niet uitwerkt.
-- **Back-upvermogen:** 5000 W in de tekst, 4600 VA in het technische blad.
-- **"14A" in de naam van de datasheet** wordt in de datasheet zelf niet uitgelegd.
-- **Niet beschreven:** aardlektype, groepsgrootte, netcode-instellingen voor Nederland, en de opslag van de batterijen.`
+      tekst: `- De omvormerhandleiding noemt de batterijkast BCL0096, de eigen handleiding BCL9600.
+- Hoofdstuk 2 van de batterijkasthandleiding spreekt van twee SECU-A-pakketten van 4,8 kWh (samen 9,6 kWh). Hoofdstuk 3 en de datasheet noemen 5,4 kWh per pakket (tot 10,8 kWh). Kijk dus op het typeplaatje van het pakket.
+- De kast houdt twee pakketten, maar de DIP-tabel spreekt van maximaal vier. Dat past bij twee gekoppelde kasten, wat de handleiding als optie noemt maar niet uitwerkt.
+- Het back-upvermogen is 5000 W in de tekst en 4600 VA in het technische blad.
+- Wat "14A" in de naam van de datasheet betekent, legt de datasheet zelf niet uit.
+- Niet beschreven zijn het aardlektype, de groepsgrootte, de netcode-instellingen voor Nederland en de opslag van de batterijen.`
     }
   ],
 

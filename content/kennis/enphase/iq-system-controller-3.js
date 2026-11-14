@@ -13,14 +13,14 @@ KENNIS.addProduct({
   naam: 'Enphase IQ System Controller 3 INT (noodstroom en eilandbedrijf)',
   rol: 'gateway',
   toepassingen: ['thuisbatterij', 'zonnepanelen'],
-  korteOmschrijving: 'De IQ System Controller 3 INT is de wandkast die het huis, het net, de IQ Batteries en de zonnepanelen met micro-omvormers verbindt. Hij schakelt bij netuitval automatisch over op noodstroom (eilandbedrijf) en heeft een IQ Gateway, CT-meters, de functie van een IQ Relay en vier hulpcontacten voor PV-afschakeling ingebouwd. Een model: SC100G-M230ROW, 1-fase en 3-fase, tot 80 A per fase.',
+  korteOmschrijving: 'De IQ System Controller 3 INT is de wandkast die het huis, het net, de IQ Batteries en de zonnepanelen met micro-omvormers verbindt. Valt het net uit, dan schakelt hij automatisch over op noodstroom (eilandbedrijf). Er zitten een IQ Gateway, CT-meters, de functie van een IQ Relay en vier hulpcontacten voor PV-afschakeling in. Er is een model: SC100G-M230ROW, voor 1-fase en 3-fase, tot 80 A per fase.',
 
   varianten: {
     kop: ['Onderdeel', 'Bestelcode', 'Wat het is'],
     rijen: [
       ['IQ System Controller 3 INT', 'SC100G-M230ROW', 'Een model voor 1-fase en 3-fase: 230 / 400 V, 80 A per fase voor net, PV en batterij samen, en back-upbelasting'],
       ['System Shutdown Switch (SSD)', 'SC-INT-SSD-KIT', 'Meegeleverde vergrendelbare noodschakelaar voor buiten, tot 60 m van de controller'],
-      ['Mobiel modem Mobile Connect', 'CELLMODEM-M1-06-AT-05 of CELLMODEM-07-INT-05', 'Meegeleverd, voorgeinstalleerd, met een data-abonnement van 5 jaar; alleen als reserveverbinding'],
+      ['Mobiel modem Mobile Connect', 'CELLMODEM-M1-06-AT-05 of CELLMODEM-07-INT-05', 'Meegeleverd en voorgeinstalleerd, met een data-abonnement van 5 jaar. Alleen als reserveverbinding'],
       ['CTRL-koppen', 'CTRL-040-HDR-INT', 'Losse connectoren voor de besturingskabel naar de IQ Battery 5P'],
       ['Vervangbare printplaten', 'SC-IQG-PCBA-ROW, SC-ECB-PCBA-ROW, SC-IOB-PCBA-ROW en andere', 'IQ Gateway-plaat, controller, I/O-kaart, relaisplaat en netrelais zijn in het veld te vervangen']
     ]
@@ -40,33 +40,33 @@ KENNIS.addProduct({
     {
       id: 'wat-is-het',
       kop: 'Wat is het',
-      tekst: `De IQ System Controller 3 INT is een kunststof wandkast (760 x 500 x 158 mm, 15,2 kg, IP55) die tussen **het net**, **de groepen van het huis**, **de IQ Batteries** en **de zonnepanelen** zit. Hij is het onderdeel dat een Enphase-systeem **noodstroom** geeft. Zonder deze kast is een Enphase-batterij alleen netgekoppeld en valt hij uit als het net wegvalt.
+      tekst: `De IQ System Controller 3 INT is een kunststof wandkast (760 x 500 x 158 mm, 15,2 kg, IP55) tussen **het net**, **de groepen van het huis**, **de IQ Batteries** en **de zonnepanelen**. Dit is het onderdeel dat een Enphase-systeem **noodstroom** geeft. Zonder deze kast is een Enphase-batterij alleen netgekoppeld en valt hij uit als het net wegvalt.
 
 ### Wat zit erin
 
-- **Een automatische omschakelaar (ATS).** Valt het net weg, dan opent het netrelais en draait het huis los van het net op batterij en zon: eilandbedrijf, in de handleiding *off-grid* of *back-upmodus*. Het gegevensblad noemt een overgangstijd van 0 ms voor de belasting en maximaal 120 ms tot het netrelais open is. Die 0 ms geldt alleen als het vermogen van de batterijen groter is dan de belasting op dat moment (voetnoot 2).
-- **Een ingebouwde IQ Gateway.** Het brein van het systeem: communiceert met de micro-omvormers, de batterijen en de Enphase-cloud. Een aparte IQ Gateway is dus niet nodig.
-- **Voorbedrade CT-meters** voor productie en verbruik op de PV- en netklemmen.
-- **De functie van een IQ Relay** (de netbeveiliging die in een netgekoppeld systeem een los IQ Relay doet).
-- **DIN-rails** voor de automaten en aardlekschakelaars van PV, batterij, net en belasting. Die automaten zijn **niet** meegeleverd.
-- **Vier hulpcontacten** voor PV-afschakeling, een stringomvormer van een ander merk en het afschakelen van grote belastingen.
-- **Een mobiel modem** als reserveverbinding en een aansluiting voor de **System Shutdown Switch**.
+- Een **automatische omschakelaar (ATS)**. Valt het net weg, dan opent het netrelais en draait het huis los van het net op batterij en zon. Dat heet eilandbedrijf, in de handleiding *off-grid* of *back-upmodus*. Het gegevensblad noemt een overgangstijd van 0 ms voor de belasting en maximaal 120 ms tot het netrelais open is. Die 0 ms geldt alleen als het vermogen van de batterijen op dat moment groter is dan de belasting (voetnoot 2).
+- Een ingebouwde **IQ Gateway**, het brein van het systeem. Die praat met de micro-omvormers, de batterijen en de Enphase-cloud, dus een aparte IQ Gateway is niet nodig.
+- Voorbedrade **CT-meters** voor productie en verbruik op de PV- en netklemmen.
+- De functie van een **IQ Relay**: de netbeveiliging die in een netgekoppeld systeem een los IQ Relay doet.
+- **DIN-rails** voor de automaten en aardlekschakelaars van PV, batterij, net en belasting. Die automaten zitten er **niet** bij.
+- Vier **hulpcontacten** voor PV-afschakeling, een stringomvormer van een ander merk en het afschakelen van grote belastingen.
+- Een **mobiel modem** als reserveverbinding en een aansluiting voor de **System Shutdown Switch**.
 
 ### Wat hij ondersteunt
 
 - IQ7 en IQ8 micro-omvormers (en S Series in Australie en Nieuw-Zeeland).
 - IQ Battery 5P with FlexPhase. De controller werkt alleen met bedrade besturing naar de batterij.
 - Aardingsstelsels **TN-C-S, TN-S en TT**. Niet TN-C en niet IT.
-- Werkingsmodi eigen verbruik en volledige back-up.
+- De werkingsmodi eigen verbruik en volledige back-up.
 
 !!! info Als je Sigenergy al kent
-De Sigen Gateway en de IQ System Controller doen hetzelfde werk: het huis bij netuitval loskoppelen en op batterij en zon laten doordraaien. Het verschil zit in wat erachter hangt. Bij Sigenergy komt een hybride omvormer aan de omvormerpoort, met zon en batterij aan de gelijkspanningskant. Bij Enphase komen de **PV-groepen met micro-omvormers** en de **batterijgroepen** elk als AC-groep met een eigen automaat in de controller binnen. Verder zit de IQ Gateway (het brein) bij Enphase in de controller, terwijl bij Sigenergy de omvormer het systeem regelt. De bypass-schakelaar QS1 bij Sigenergy heet bij Enphase de handmatige opheffing (MOR). Nieuw bij Enphase is de verplichte System Shutdown Switch buiten.
+De Sigen Gateway en de IQ System Controller doen hetzelfde werk: bij netuitval het huis loskoppelen en op batterij en zon laten doordraaien. Het verschil zit in wat erachter hangt. Bij Sigenergy komt er een hybride omvormer aan de omvormerpoort, met zon en batterij aan de gelijkspanningskant. Bij Enphase komen de **PV-groepen met micro-omvormers** en de **batterijgroepen** elk als AC-groep met een eigen automaat de controller in. Ook zit bij Enphase de IQ Gateway (het brein) in de controller, terwijl bij Sigenergy de omvormer het systeem regelt. De bypass-schakelaar QS1 van Sigenergy heet bij Enphase de handmatige opheffing (MOR). Nieuw bij Enphase is de verplichte System Shutdown Switch buiten.
 !!!`
     },
     {
       id: 'plek-in-systeem',
       kop: 'Plek in het systeem',
-      tekst: `Teken het zo: links het net en de meter, in het midden de controller, rechts het huis. PV en batterijen komen van onderen de controller in.
+      tekst: `Teken het zo: links het net en de meter, in het midden de controller en rechts het huis. PV en batterijen komen van onderen de controller in.
 
 ### De aansluitingen (QIG pagina 12 en 13)
 
@@ -84,17 +84,17 @@ In de controller lopen de faseklemmen van links naar rechts **L3, L2, L1**. L1 z
 
 ### Back-up van alles of van een deel
 
-De gebruikershandleiding noemt **back-up van het hele huis** en **back-up van een deel** (alleen de groepen die de klant met de installateur als essentieel heeft aangewezen). In de kast zie je dat terug: wat op BACKUP LOADS zit, blijft aan; wat op NON-BACKUP LOADS zit, valt uit. Bij een adres met alleen PV en geen batterij komen alle belastingen op NON-BACKUP (checklist).
+De gebruikershandleiding noemt **back-up van het hele huis** en **back-up van een deel**: alleen de groepen die de klant met de installateur als onmisbaar heeft aangewezen. In de kast zie je dat terug. Wat op BACKUP LOADS zit, blijft aan. Wat op NON-BACKUP LOADS zit, valt uit. Heeft een adres alleen PV en geen batterij, dan komen alle belastingen op NON-BACKUP (checklist).
 
 ### Met oudere of vreemde PV
 
-- **Stringomvormer van een ander merk** op de PV-klemmen via een externe contactor (NO), aangestuurd door IO1. De ingebouwde productie-CT meet hem mee. Off-grid blijft hij alleen meedraaien als zijn AC-vermogen per fase niet groter is dan dat van de batterijen (TEB-00366).
+- Een **stringomvormer van een ander merk** komt op de PV-klemmen via een externe contactor (NO), aangestuurd door IO1. De ingebouwde productie-CT meet hem mee. Off-grid draait hij alleen mee als zijn AC-vermogen per fase niet groter is dan dat van de batterijen (TEB-00366).
 - **M Series** micro-omvormers houden hun eigen gateway en worden als stringomvormer behandeld, met een PLC-filter ertussen.
-- **Te veel PV** voor de batterij in eilandbedrijf: zie PV-afschakeling hieronder.
+- Is er **te veel PV** voor de batterij in eilandbedrijf, zie dan PV-afschakeling hieronder.
 
 ### Met een EV-lader
 
-Het gegevensblad van de IQ Bidirectional EV Charger noemt de System Controller als eilandingsapparaat waarmee de auto een spanningsloos huis kan opstarten (Dark Start). De gidsen van de controller zelf noemen geen laadpaal.`
+Het gegevensblad van de IQ Bidirectional EV Charger noemt de System Controller als eilandingsapparaat waarmee de auto een spanningsloos huis kan opstarten (Dark Start). De gidsen van de controller zelf noemen helaas geen laadpaal.`
     },
     {
       id: 'specificaties',
@@ -124,20 +124,20 @@ Alle klemmen zijn geschikt voor 90 graden.`
       id: 'veiligheid',
       kop: 'Veiligheid',
       tekst: `!!! gevaar Veel spanningsbronnen
-In deze kast komen net, batterijen en zonnepanelen samen. De QIG waarschuwt dat de klemmen onder spanning kunnen komen als een van de bronnen aan staat. Meet de spanning van elke batterij, PV-groep en andere bron. Bedraad de controller nooit onder spanning en open de dead-front (de binnenafdekking) alleen als de kast volledig spanningsloos is.
+In deze kast komen net, batterijen en zonnepanelen samen. Volgens de QIG kunnen de klemmen onder spanning komen als een van de bronnen aan staat. Meet dus de spanning van elke batterij, PV-groep en andere bron. Bedraad de controller nooit onder spanning en open de dead-front (de binnenafdekking) alleen als de kast helemaal spanningsloos is.
 !!!
 
-- **Wie.** Alleen gekwalificeerde elektriciens, en volgens de QIG door Enphase gekwalificeerde installateurs. Zonder de certificeringstrainingen voor IQ Battery 5P with FlexPhase en IQ System Controller blokkeert de Installer App de inbedrijfstelling (TEB-00349 pagina 9).
-- **Voor installatie of onderhoud**: AC van het PV-systeem af en de DC-schakelaars van alle IQ Batteries uit.
-- **Niet alleen werken**, niet repareren of openen (vervalt de garantie), geen brandbare spullen in de buurt.
-- **Overstroming**: zo hoog monteren dat water er niet bij kan. Is water in contact geweest, eerst een inspectie.
-- **Brand of rook**: DC-schakelaars van de batterijen uit, PV- en batterijautomaten in de controller uit, AC-automaat van de controllergroep uit, brandweer, ruimte verlaten.
-- **Aarding.** Voor veilig back-upbedrijf is een **lokale aardelektrode** nodig (QIG pagina 15). Waar de lokale regels het vragen, verbind je de aardrail met minstens 10 mm2 koper, groen-geel, met de aarde van het gebouw.
-- **Aardlek in het back-upcircuit is verplicht** in de Europese scenario's (QIG pagina 40 en 42, en de checklist).
-- **Niet voor levensondersteunende of medische apparatuur** als noodstroombron.
+- Alleen gekwalificeerde elektriciens, en volgens de QIG door Enphase gekwalificeerde installateurs. Zonder de certificeringstrainingen voor IQ Battery 5P with FlexPhase en IQ System Controller blokkeert de Installer App de inbedrijfstelling (TEB-00349 pagina 9).
+- Voor installatie of onderhoud gaat de AC van het PV-systeem af en gaan de DC-schakelaars van alle IQ Batteries uit.
+- Werk niet alleen. Niet repareren of openen, want dan vervalt de garantie. Geen brandbare spullen in de buurt.
+- In overstromingsgebied zo hoog monteren dat water er niet bij kan. Is er water mee in contact geweest, dan eerst een inspectie.
+- Bij brand of rook: DC-schakelaars van de batterijen uit, PV- en batterijautomaten in de controller uit, AC-automaat van de controllergroep uit, brandweer bellen en de ruimte verlaten.
+- Voor veilig back-upbedrijf is een **lokale aardelektrode** nodig (QIG pagina 15). Waar de lokale regels het vragen, verbind je de aardrail met minstens 10 mm2 koper, groen-geel, met de aarde van het gebouw.
+- Een **aardlek in het back-upcircuit is verplicht** in de Europese scenario's (QIG pagina 40 en 42, en de checklist).
+- Niet als noodstroombron voor levensondersteunende of medische apparatuur.
 
 !!! info Algemene vakkennis: waarom een eigen aarding
-In eilandbedrijf is het net, en daarmee de aarding van de netbeheerder, losgekoppeld. Om de aardlekschakelaars te laten werken heeft het eiland een eigen aardverbinding nodig. Daarom vraagt Enphase een lokale aardelektrode en schakelt de controller in de Europese scenario's ook de nul van het net los. Zie de lessen over aarding en over PV en je veiligheidsprocedure.
+In eilandbedrijf is het net losgekoppeld, en daarmee ook de aarding van de netbeheerder. Het eiland heeft dus een eigen aardverbinding nodig, anders werken de aardlekschakelaars niet. Daarom vraagt Enphase een lokale aardelektrode en schakelt de controller in de Europese scenario's ook de nul van het net los. Zie de lessen over aarding en over PV en je veiligheidsprocedure.
 !!!`
     },
     {
@@ -145,20 +145,20 @@ In eilandbedrijf is het net, en daarmee de aarding van de netbeheerder, losgekop
       kop: 'Plaatsing en montage',
       tekst: `### Plek kiezen (QIG pagina 6 en 7)
 
-- Binnen of buiten (IP55), maar **niet in directe regen en niet in direct zonlicht**, niet in veel stof.
-- **Alleen aan de wand**, rechtop, niet op de grond of aan het plafond, niet meer dan 10 graden uit het lood en niet voorover gekanteld.
-- De wand moet 15,2 kg dragen. Met twee personen optillen en uitlijnen.
+- Binnen of buiten (IP55), maar **niet in directe regen en niet in direct zonlicht**. Ook niet in veel stof.
+- **Alleen aan de wand** en rechtop. Niet op de grond of aan het plafond, niet meer dan 10 graden uit het lood en niet voorover gekanteld.
+- De wand moet 15,2 kg dragen. Optillen en uitlijnen doe je met twee personen.
 - -40 tot 50 graden, niet hoger dan 2000 m. In overstromingsgebied hoog genoeg.
-- Vrije ruimte volgens de tekening 150 mm rondom en **minstens 600 mm voor de kast**. Bij montage in het pad van een auto adviseert Enphase minstens 91 cm hoogte.
+- Vrije ruimte volgens de tekening: 150 mm rondom en **minstens 600 mm voor de kast**. Hangt hij in het pad van een auto, dan adviseert Enphase minstens 91 cm hoogte.
 - Kies een plek waar de kabels van PV, net en batterijen makkelijk binnenkomen.
 
 ### Montage in stappen
 
 1. **Deur eraf** (niet verder dan 90 graden openen) en opzij leggen.
-2. **Kabelinvoer boren voordat de kast aan de wand hangt.** Er zijn invoeren onder, links, rechts en achter, gemarkeerd op de kast (tot 51 mm onder, reken 10 mm extra voor de wartel). Na montage boren mag niet: stof op de printplaten kan kortsluiting geven. Ongebruikte gaten dichten. Buiten: wartels of leidingen van minstens IP55.
+2. **Kabelinvoer boren voordat de kast aan de wand hangt.** Er zijn invoeren onder, links, rechts en achter, gemarkeerd op de kast (onder tot 51 mm, reken 10 mm extra voor de wartel). Na montage boren mag niet, want stof op de printplaten kan kortsluiting geven. Dicht ongebruikte gaten. Buiten gebruik je wartels of leidingen van minstens IP55.
 3. **Ophangen** met twee M6-schroeven van ongeveer 80 mm (afhankelijk van de wand) en ringen, waterpas. Het bovenste bevestigingspunt heeft een sleutelgat.
-4. **Dead-front eraf** (1,4 Nm), eerst de kabel van het modem losmaken. Wijzig de dead-front niet, behalve het uitnemen van vulplaten.
-5. **Automaten en aardlekschakelaars** op de DIN-rails plaatsen, gedimensioneerd volgens de lokale regels. Voor een adres met een PV-groep en een batterijgroep raadt Enphase aardlekautomaten (RCBO) aan, zodat alles in de controller past.`
+4. **Dead-front eraf** (1,4 Nm), maar maak eerst de kabel van het modem los. Verander niets aan de dead-front, behalve het uitnemen van vulplaten.
+5. **Automaten en aardlekschakelaars** op de DIN-rails, gedimensioneerd volgens de lokale regels. Heeft een adres een PV-groep en een batterijgroep, dan raadt Enphase aardlekautomaten (RCBO) aan, zodat alles in de controller past.`
     },
     {
       id: 'elektrische-aansluiting',
@@ -173,72 +173,72 @@ De QIG geeft per regio een scenario (tabel pagina 14, tekeningen pagina 33 tot 4
 | A8 en A9 | Driefasig, 3-polig | Ja | Nee | IQBATTERY-5P-3P-INT |
 | A10 en A11 | Driefasig, 4-polig | Ja | Ja | IQBATTERY-5P-3P-INT |
 
-De tekeningen A9 en A11 tonen per PV-groep en per batterijgroep een eigen aardlekschakelaar (R1 en R2). Een aardlekautomaat mag ook, maar dan apart voor PV en batterij. Welk scenario in Nederland verplicht is, staat niet in de gids.
+De tekeningen A9 en A11 tonen per PV-groep en per batterijgroep een eigen aardlekschakelaar (R1 en R2). Een aardlekautomaat mag ook, maar dan apart voor PV en batterij. Welk scenario in Nederland verplicht is, staat er helaas niet in.
 
 ### Netvoeding en groepen
 
-- Volgorde: eerst de netkabel op GRID/MAINS volgens het label, nul op de netnul.
-- Back-upgroepen op BACKUP LOADS. Met een driefasige FlexPhase-batterij in de juiste fasevolgorde; met een eenfasige 1P-batterij alleen op de L1-back-upklem.
-- **De nullen van de back-upgroepen moeten in de hoofdverdeler gescheiden zijn** van de andere nullen en op de back-upnulklem in de controller komen (checklist).
+- Eerst de netkabel op GRID/MAINS volgens het label, nul op de netnul.
+- Back-upgroepen op BACKUP LOADS. Met een driefasige FlexPhase-batterij in de juiste fasevolgorde, met een eenfasige 1P-batterij alleen op de L1-back-upklem.
+- **De nullen van de back-upgroepen moeten in de hoofdverdeler gescheiden zijn** van de andere nullen. Ze komen op de back-upnulklem in de controller (checklist).
 - PV-nul op de PV-nulaansluiting, batterijnul op de nulrail.
-- In een driefasig huis de nul niet doorlussen naar batterijen op verschillende fasen: elke batterijfase een eigen nul naar de nulrail.
+- Lus in een driefasig huis de nul niet door naar batterijen op verschillende fasen. Elke batterijfase krijgt een eigen nul naar de nulrail.
 
 ### Besturingskabel naar de batterijen
 
-Zelfde regels als bij de batterij: kabel CTRL-BL-EU-01, klem 1 CTRL L, 2 CTRL H, 3 CTRL G, 4 niet gebruikt, 0,2 Nm. **Afsluitweerstand** op de twee uiteinden van de bus. Zit de controller aan het eind, dan op de controller en de laatste batterij. Zit hij in het midden, dan sluit je op beide connectoren draden aan en zitten de weerstanden op de eerste en de laatste batterij. **Afvoerdraad** per kabelstuk aan een kant, totaal maximaal 100 m. Noteer kleur en nummer van elke ader en doe een doorgangsmeting voordat je de kabel door de buis trekt.
+Hier gelden dezelfde regels als bij de batterij: kabel CTRL-BL-EU-01, klem 1 CTRL L, 2 CTRL H, 3 CTRL G, 4 niet gebruikt, 0,2 Nm. De **afsluitweerstand** komt op de twee uiteinden van de bus. Zit de controller aan het eind, dan op de controller en de laatste batterij. Zit hij in het midden, dan sluit je op beide connectoren draden aan en zitten de weerstanden op de eerste en de laatste batterij. De **afvoerdraad** sluit je per kabelstuk aan een kant aan. Alle kabel samen is maximaal 100 m. Noteer kleur en nummer van elke ader en doe een doorgangsmeting voordat je de kabel door de buis trekt.
 
 ### System Shutdown Switch (SSD)
 
-- **Elk systeem met deze controller heeft een SSD nodig.** De schakelaar is tweepolig en vergrendelbaar en moet **buiten, goed bereikbaar** hangen, maximaal 60 m van de controller.
-- De SSD-kop op de IO-kaart is af fabriek doorverbonden. Haal die draadbrug weg en sluit de SSD aan: klem 1 tot 4 op pen 1 tot 4. Draad 0,5 tot 1,5 mm2 met adereindhuls, 1,2 Nm op de schakelaar, 0,2 Nm op de kop.
-- **Bedraad de SSD voor je inschakelt en laat hem op AAN staan tot de inbedrijfstelling klaar is.** Staat hij tijdens de inbedrijfstelling uit, dan blijven de DER-relais open, komt er geen spanning op de PV- en batterijklemmen en branden beide LED's rood (TEB-00349).
+- **Elk systeem met deze controller heeft een SSD nodig.** De schakelaar is tweepolig en vergrendelbaar. Hij moet **buiten en goed bereikbaar** hangen, maximaal 60 m van de controller.
+- De SSD-kop op de IO-kaart is af fabriek doorverbonden. Haal die draadbrug weg en sluit de SSD aan: klem 1 tot 4 op pen 1 tot 4. Draad 0,5 tot 1,5 mm2 met adereindhuls, 1,2 Nm op de schakelaar en 0,2 Nm op de kop.
+- **Bedraad de SSD voor je inschakelt en laat hem op AAN staan tot de inbedrijfstelling klaar is.** Staat hij tijdens de inbedrijfstelling uit, dan blijven de DER-relais open. Er komt dan geen spanning op de PV- en batterijklemmen en beide LED's branden rood (TEB-00349).
 
 ### Hulpcontacten en PV-afschakeling
 
-IO1 en IO2 zijn NC-contacten (NC1, NC2), IO3 en IO4 NO-contacten (NO1, NO2), 1 A bij 230 V AC of 24 V DC. Je stelt hun functie in met de Installer App.
+IO1 en IO2 zijn NC-contacten (NC1, NC2), IO3 en IO4 NO-contacten (NO1, NO2), 1 A bij 230 V AC of 24 V DC. Hun functie stel je in met de Installer App.
 
-- **PV-afschakeling** (PV shedding): als er meer PV is dan de batterijen in eilandbedrijf aankunnen, koppelt een contactor een deel van de PV-groepen los zodra het systeem off-grid gaat. Gebruik een NO-contactor van 25 A (AC-7a of AC-7b). Stuurdraad van de contactor op de IO-pen, de referentie op de IQ Gateway-automaat, de back-upautomaat of het back-uppaneel. In de Installer App kies je dan altijd Basic mode.
+- **PV-afschakeling** (PV shedding). Is er meer PV dan de batterijen in eilandbedrijf aankunnen, dan koppelt een contactor een deel van de PV-groepen los zodra het systeem off-grid gaat. Gebruik een NO-contactor van 25 A (AC-7a of AC-7b). De stuurdraad van de contactor gaat op de IO-pen, de referentie op de IQ Gateway-automaat, de back-upautomaat of het back-uppaneel. In de Installer App kies je dan altijd Basic mode.
 - **Belasting afschakelen**: grote, minder belangrijke verbruikers off-grid uitschakelen via een NO-contactor die bij de belasting past (230 V, IEC EN 61095).
-- **Stringomvormer van derden**: via een NO-contactor op IO1. In Advanced mode kies je bij welke laadtoestand hij off-grid wordt losgekoppeld (80 tot 90 %) en weer bijgeschakeld (20 tot 70 %).
+- **Stringomvormer van derden** via een NO-contactor op IO1. In Advanced mode kies je bij welke laadtoestand hij off-grid wordt losgekoppeld (80 tot 90 %) en weer bijgeschakeld (20 tot 70 %).
 
-De voorbeeldcontactor die TEB-00366 noemt, is een Hager ESC425 (driefasig) of ESC225 (eenfasig).`
+TEB-00366 noemt als voorbeeldcontactor een Hager ESC425 (driefasig) of ESC225 (eenfasig).`
     },
     {
       id: 'inbedrijfstelling',
       kop: 'Controle en inbedrijfstelling',
-      tekst: `Gebruik de **installatiechecklist** (Nederlands op pagina 7). Hij is een samenvatting van de QIG en het invullen en fotograferen is volgens de checklist een verplichte stap in de Installer App.
+      tekst: `Gebruik de **installatiechecklist** (Nederlands op pagina 7). Dat is een samenvatting van de QIG. Invullen en fotograferen is volgens de checklist een verplichte stap in de Installer App.
 
 ### Voor het inschakelen
 
 1. Lokale aarde aanwezig en op de aardrail. Kast schoon, klemmen aangedraaid, alle automaten uit.
 2. Net, nul, back-up- en niet-back-upgroepen, PV-nul en batterijnul op de juiste klemmen (zie boven).
 3. SSD bedraad en op AAN. Handmatige opheffing (MOR) uit, hendel omlaag.
-4. Afvoerdraad van de besturingskabel aan een kant (staat in de Engelse en niet in de Nederlandse checklist).
+4. Afvoerdraad van de besturingskabel aan een kant. Dit staat in de Engelse checklist en niet in de Nederlandse.
 5. **Netspanning meten** aan de netkant van de hoofdautomaat: L-N 230 V plus of min 8 %, per fase noteren, ook N-PE.
-6. **Draairichting meten** met een draaiveldmeter of Duspol: rechtsom op L1-L2, L2-L3 en L3-L1. Fout? Verwissel L2 en L3. Houd volgens de QIG de L2-sonde (met het display) in je linkerhand, omdat L1 rechts zit.
+6. **Draairichting meten** met een draaiveldmeter of Duspol: rechtsom op L1-L2, L2-L3 en L3-L1. Klopt het niet, verwissel dan L2 en L3. Volgens de QIG houd je de L2-sonde (met het display) in je linkerhand, omdat L1 rechts zit.
 7. Aanvullende metingen volgens de lokale regels, zoals aardmeting en isolatieweerstand.
 
 ### Na het inschakelen
 
-1. Hoofdautomaat in, wachten op de klik van de relais en de LED's.
-2. Gaat de controller niet aan, dan de eerste stappen opnieuw. Sluiten de relais niet, dan opnieuw spanning en draairichting.
-3. Spanning en draairichting op de netklemmen in de kast nogmaals meten. Op back-up-, gateway- en PV-klemmen moet dezelfde spanning staan als het net.
+1. Hoofdautomaat in en wachten op de klik van de relais en de LED's.
+2. Gaat de controller niet aan, loop dan de eerste stappen opnieuw na. Sluiten de relais niet, meet dan opnieuw spanning en draairichting.
+3. Spanning en draairichting op de netklemmen in de kast nog een keer meten. Op de back-up-, gateway- en PV-klemmen moet dezelfde spanning staan als op het net.
 4. Automaten van PV, batterij, back-up en niet-back-up in.
 5. Lusimpedantie, netimpedantie en test van de aardlek in het back-upcircuit volgens de lokale regels.
 6. Foto's maken van de bedrading zonder dead-front en van de ingevulde checklist.
-7. Dead-front terug (geen draden afknellen), vulplaat aan de netkant, daarna de modemkabel op de USB-poort van de IQ Gateway.
+7. Dead-front terug (geen draden afknellen), vulplaat aan de netkant en daarna de modemkabel op de USB-poort van de IQ Gateway.
 
 ### In de app
 
-- Stel de controller in bedrijf met de **Enphase Installer App**. Zie je hem niet, controleer of de AP-modus-LED van de IQ Gateway groen is, druk anders op de AP-knop en verbind je telefoon met het Wi-Fi van de gateway.
+- Je stelt de controller in bedrijf met de **Enphase Installer App**. Zie je hem niet, kijk dan of de AP-modus-LED van de IQ Gateway groen is. Is hij dat niet, druk dan op de AP-knop en verbind je telefoon met het Wi-Fi van de gateway.
 - Richt **Ethernet of Wi-Fi** van de klant in als hoofdverbinding. Het modem is alleen reserve.
 - Na de inbedrijfstelling deur dicht en vergrendelen.
-- **Achteraf toevoegen** aan een bestaand systeem: in de app bestaande IQ Relays buiten gebruik stellen en de controller toevoegen met de optie Oude IQ Gateway vervangen (TEB-00349 pagina 6). Anders krijg je een gatewayconflict.`
+- Voeg je de controller **achteraf** toe aan een bestaand systeem, stel dan in de app de bestaande IQ Relays buiten gebruik en voeg de controller toe met de optie Oude IQ Gateway vervangen (TEB-00349 pagina 6). Anders krijg je een gatewayconflict.`
     },
     {
       id: 'storingen',
       kop: 'Bediening, LED en storingen',
-      tekst: `Er is geen foutcodelijst. De controller heeft twee status-LED's; daarnaast heeft de ingebouwde IQ Gateway zijn eigen LED's.
+      tekst: `Er is geen foutcodelijst. De controller heeft twee status-LED's. Daarnaast heeft de ingebouwde IQ Gateway zijn eigen LED's.
 
 ### Veelvoorkomende fouten (TEB-00349 pagina 3)
 
@@ -252,11 +252,11 @@ De voorbeeldcontactor die TEB-00366 noemt, is een Hager ESC425 (driefasig) of ES
 
 ### De System Shutdown Switch gebruiken (QIG pagina 26)
 
-Alleen na de inbedrijfstelling. **Uitschakelen**: SSD uit, DC-schakelaars van alle batterijen uit, PV-automaten en batterijautomaten in de controller uit, een minuut wachten en de AC-spanning op PV- en batterijklemmen meten. Een lage spanning van ongeveer 20 V DC op die draden is normaal: daarmee kan het systeem later zichzelf opstarten op zonlicht (Sunlight Jump Start). **Weer aan**: in omgekeerde volgorde, als laatste de DC-schakelaars van de batterijen indrukken.
+Alleen na de inbedrijfstelling. **Uitschakelen**: SSD uit, DC-schakelaars van alle batterijen uit, PV-automaten en batterijautomaten in de controller uit. Wacht een minuut en meet de AC-spanning op de PV- en batterijklemmen. Een lage spanning van ongeveer 20 V DC op die draden is normaal, want daarmee kan het systeem later zichzelf opstarten op zonlicht (Sunlight Jump Start). **Weer aan** gaat in omgekeerde volgorde, met als laatste de DC-schakelaars van de batterijen indrukken.
 
 ### Handmatige opheffing (MOR)
 
-Alleen in nood of op aanwijzing van Enphase Support. Eerst de DC-schakelaars van alle batterijen uit, alle batterijautomaten uit, alle PV-automaten uit, dan het klepje open en de MOR op Active. Het huis draait dan alleen op het net; PV en batterijen zijn losgekoppeld. Doe je het zonder die stappen, dan kan de apparatuur beschadigen.
+Alleen in nood of op aanwijzing van Enphase Support. Eerst de DC-schakelaars van alle batterijen uit, alle batterijautomaten uit en alle PV-automaten uit. Dan het klepje open en de MOR op Active. Het huis draait dan alleen op het net, want PV en batterijen zijn losgekoppeld. Sla je die stappen over, dan kan de apparatuur beschadigen.
 
 ### Uitschakelprocedure van het hele systeem (QIG pagina 26)
 
@@ -269,18 +269,18 @@ Alleen in nood of op aanwijzing van Enphase Support. Eerst de DC-schakelaars van
 7. Dead-front eraf en op alle klemmen (PV, batterij, net, belasting) meten dat er geen spanning staat.
 8. Dead-front en deur dicht en vergrendelen.
 
-Dit is de fabrikantvolgorde. Het veiligstellen volgens NEN 3140 (vergrendelen, spanningsloosheid aantonen) doe je daarnaast, zie de les over de vijf stappen.
+Dit is de volgorde van de fabrikant. Het veiligstellen volgens NEN 3140 (vergrendelen, spanningsloosheid aantonen) doe je daarnaast, zie de les over de vijf stappen.
 
 ### Herstel na een uitval (gebruikershandleiding pagina 18)
 
-Controleer de automaten in de controller. Melding "Microinverters not reporting" of "Batteries not reporting": tot 20 minuten wachten, het systeem herstelt bedrade communicatie meestal zelf. Werkt de IQ Gateway niet, dan ontladen de batterijen ook niet.`
+Controleer de automaten in de controller. Zie je "Microinverters not reporting" of "Batteries not reporting", wacht dan tot 20 minuten. Het systeem herstelt de bedrade communicatie meestal zelf. Werkt de IQ Gateway niet, dan ontladen de batterijen ook niet.`
     },
     {
       id: 'niet-in-handleiding',
       kop: 'Wat niet in de handleiding staat',
       tekst: `### Ontbreekt
 
-- Een foutcodelijst; alleen LED's en Enphase Support.
+- Een foutcodelijst. Er zijn alleen LED's en Enphase Support.
 - Welk Europees bedradingsscenario (2-, 3- of 4-polig) in Nederland moet, en welk type aardlekschakelaar.
 - Waarom de nul bij back-up losgeschakeld wordt en hoe je dat zelf test.
 - De betekenis van de maat 900 mm op de tekening van de vrije ruimte.
@@ -289,10 +289,10 @@ Controleer de automaten in de controller. Melding "Microinverters not reporting"
 ### Tegenstrijdig of onduidelijk
 
 - **LED 1 en LED 2 zijn omgewisseld.** In de QIG (pagina 27) is LED 1 de batterij-LED (batterij niet gevonden, laadtoestand herstellen, geel is off-grid) en LED 2 de net-LED (gesynchroniseerd, blauw is off-grid, rood is SSD of MOR). In de gebruikershandleiding (pagina 19) is het andersom.
-- **Grens voor PV-afschakeling.** De QIG (pagina 22) zegt: verplicht boven 150 % van het batterijvermogen per fase en noemt IQ7 en S Series. TEB-00366 (pagina 10) noemt 150 % voor IQ7 en 200 % voor IQ8.
-- **Nederlandse checklist.** Bij de draairichting staat "Rechtsom (R)/linksom", en de stappen over de afvoerdraad en het adres met alleen PV ontbreken ten opzichte van de Engelse versie. Gebruik de Engelse pagina 2 als controle.
-- **MOR.** De gebruikershandleiding zegt dat het systeem dan alleen op het net draait, TEB-00349 en de QIG zeggen dat de MOR de controller omzeilt en PV en batterijen loskoppelt van net en huis. Dat komt op hetzelfde neer, maar de woorden verschillen.
-- **Batterijnaam.** Het gegevensblad zet IQBATTERY-5P-1P-INT onder "with FlexPhase"; volgens de veiligheidsinstructies van de batterij is alleen IQBATTERY-5P-3P-INT de FlexPhase-uitvoering.`
+- **Grens voor PV-afschakeling.** De QIG (pagina 22) zegt verplicht boven 150 % van het batterijvermogen per fase en noemt IQ7 en S Series. TEB-00366 (pagina 10) noemt 150 % voor IQ7 en 200 % voor IQ8.
+- **Nederlandse checklist.** Bij de draairichting staat "Rechtsom (R)/linksom". Ook ontbreken de stappen over de afvoerdraad en het adres met alleen PV, die wel in de Engelse versie staan. Gebruik de Engelse pagina 2 als controle.
+- **MOR.** Volgens de gebruikershandleiding draait het systeem dan alleen op het net. TEB-00349 en de QIG zeggen dat de MOR de controller omzeilt en PV en batterijen loskoppelt van net en huis. Dat komt op hetzelfde neer, alleen de woorden verschillen.
+- **Batterijnaam.** Het gegevensblad zet IQBATTERY-5P-1P-INT onder "with FlexPhase", maar volgens de veiligheidsinstructies van de batterij is alleen IQBATTERY-5P-3P-INT de FlexPhase-uitvoering.`
     }
   ],
 

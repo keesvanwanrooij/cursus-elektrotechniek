@@ -80,7 +80,7 @@ Voor slim laden heeft de paal een verbinding nodig (wifi, bekabeld of mobiel) en
       id: 'los-of-systeem',
       kop: 'Los of onderdeel van een energiesysteem',
       tekst: `
-Een laadpaal kan op zichzelf staan of onderdeel zijn van een systeem met zonnepanelen en een batterij. Dat bepaalt hoe de meting en het slim laden werken.
+Een laadpaal kan los staan of onderdeel zijn van een systeem met zonnepanelen en een batterij. Dat maakt uit voor de meting en het slim laden.
 
 | Laadpaal | Hoe hij werkt | Meting voor load balancing |
 |---|---|---|
@@ -89,8 +89,8 @@ Een laadpaal kan op zichzelf staan of onderdeel zijn van een systeem met zonnepa
 | **Enphase IQ EV Charger 2** | Los te gebruiken of samen met Enphase-panelen en IQ Battery | Via de IQ Gateway Metered met stroomtransformatoren |
 | **Zaptec Go en Go 2** | Losse laadpaal met eigen app en het Zaptec Portal, merkonafhankelijk | Volgens Zaptec met een aparte meter, de Zaptec Sense |
 
-!!! kern Lees altijd de eisen van de paal zelf
-Het type aardlek, de beveiliging, de kabeldoorsnede en het instellen van fasen verschillen per merk. Enphase vraagt bijvoorbeeld een 30 mA type A naast de ingebouwde gelijkstroomdetectie. Kijk op de productpagina en in de handleiding van de paal die je installeert.
+!!! kern De eisen van de paal zelf gaan voor
+Het type aardlek, de beveiliging, de kabeldoorsnede en het instellen van de fasen verschillen per merk. Enphase vraagt bijvoorbeeld een 30 mA type A naast de gelijkstroomdetectie die al in de paal zit. Kijk dus altijd op de productpagina en in de handleiding van de paal die je installeert.
 !!!
 `
     },
