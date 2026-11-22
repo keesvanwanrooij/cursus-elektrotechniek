@@ -13,7 +13,7 @@ window.CURSUS = {
      (github.com/sponsors/keesvanwanrooij toont dan een echte pagina i.p.v. door te sturen naar het profiel).
      Zolang het uit staat verdwijnen de knoppen, de mijlpaalkaart en de footerknop. tools/build-seo.js meldt
      bij elke build of de pagina al live is. Ander kanaal (Ko-fi, PayPal.me)? Alleen url aanpassen. */
-  donatie: { actief: false, url: 'https://github.com/sponsors/keesvanwanrooij' },
+  donatie: { actief: true, url: 'https://github.com/sponsors/keesvanwanrooij' },
 
   addModule: function (m) {
     /* Leesbare URL-slugs (zoekwoorden in het pad). Uniek per soort, bij dubbelen komt het lesnummer erbij. */
